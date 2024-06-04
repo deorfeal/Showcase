@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo-colored.png" alt="logo">
+                </a>
+                <a class="header__catalog-link catalog-link" href="#">
+                    <span>
+                        Каталог продукции
+                    </span>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="6" height="6" fill="white" />
+                        <rect y="8" width="6" height="6" fill="white" />
+                        <rect y="16" width="6" height="6" fill="white" />
+                        <rect x="8" width="6" height="6" fill="white" />
+                        <rect x="8" y="8" width="6" height="6" fill="white" />
+                        <rect x="8" y="16" width="6" height="6" fill="white" />
+                        <rect x="16" width="6" height="6" fill="white" />
+                        <rect x="16" y="8" width="6" height="6" fill="white" />
+                        <rect x="16" y="16" width="6" height="6" fill="white" />
+                    </svg>
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Направления деятельности
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <div class="user-nav__phone phone">
+                        <div class="phone__box phone-box">
+                            <div class="phone-box__link">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_61_694)">
+                                        <path
+                                            d="M12.6462 9.54069L10.832 7.7265C10.1841 7.07858 9.08261 7.33777 8.82344 8.18005C8.62907 8.76321 7.98114 9.08717 7.39801 8.95756C6.10216 8.6336 4.35276 6.94899 4.0288 5.58835C3.83442 5.00519 4.22318 4.35727 4.80631 4.16292C5.64861 3.90375 5.90778 2.80227 5.25986 2.15435L3.44567 0.34016C2.92733 -0.113387 2.14982 -0.113387 1.69627 0.34016L0.465215 1.57122C-0.765842 2.86707 0.5948 6.30107 3.64005 9.34631C6.68529 12.3916 10.1193 13.817 11.4151 12.5211L12.6462 11.2901C13.0998 10.7717 13.0998 9.99424 12.6462 9.54069Z"
+                                            fill="#FF1616" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_61_694">
+                                            <rect width="13" height="13" fill="#212329" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>
+                                    8 (7122) 93-40-20
+                                </span>
+                            </div>
+                            <svg class="phone-box__arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_61_690)">
+                                    <path
+                                        d="M5.00211 5.96335L1.26098 2.22238C1.15821 2.11937 1.02081 2.0627 0.874309 2.0627C0.727724 2.0627 0.590407 2.11937 0.48748 2.22238L0.159837 2.55018C0.056748 2.65303 6.13773e-08 2.79051 5.96302e-08 2.93701C5.78832e-08 3.08351 0.056748 3.22083 0.159837 3.32376L4.61398 7.77799C4.71724 7.88132 4.8552 7.9379 5.00187 7.9375C5.14919 7.9379 5.28699 7.8814 5.39033 7.77799L9.84016 3.3279C9.94325 3.22498 10 3.08766 10 2.94108C10 2.79457 9.94325 2.65725 9.84016 2.55425L9.51252 2.22652C9.29927 2.01327 8.95211 2.01327 8.73894 2.22652L5.00211 5.96335Z"
+                                        fill="#212329" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_61_690">
+                                        <rect width="10" height="10" fill="#212329"
+                                            transform="translate(0 10) rotate(-90)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <ul class="phone__list">
+                            <li class="phone__list-item">
+                                <a class="phone__list-link" href="tel:87122934020">
+                                    8 (7122) 93-40-20
+                                </a>
+                            </li>
+                            <li class="phone__list-item">
+                                <a class="phone__list-link" href="tel:87122934020">
+                                    8 (7122) 93-40-20
+                                </a>
+                            </li>
+                            <li class="phone__list-item">
+                                <a class="phone__list-link" href="tel:87122934020">
+                                    8 (7122) 93-40-20
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-nav__box user-nav-box">
+                        <a class="user-nav-box__email email" href="mailto:info@castechsol.com">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.8574 1H1.14258C0.966701 1 0.802043 1.04803 0.653076 1.12721L6.47461 7.59405L7.77941 6.20108C7.77941 6.20108 7.77951 6.20094 7.77954 6.20088C7.77956 6.20083 7.77966 6.20077 7.77966 6.20077L12.3471 1.12732C12.1981 1.04809 12.0334 1 11.8574 1Z"
+                                    fill="#FF1616" />
+                                <path
+                                    d="M12.8856 2.00024L8.5874 6.50012L12.8855 11.0001C12.9567 10.8441 13 10.6717 13 10.4876V2.51256C13 2.32852 12.9568 2.15616 12.8856 2.00024Z"
+                                    fill="#FF1616" />
+                                <path
+                                    d="M0.114512 2C0.0432402 2.15596 0 2.32836 0 2.5125V10.4875C0 10.6715 0.0431895 10.844 0.11441 10.9999L4.41261 6.5L0.114512 2Z"
+                                    fill="#FF1616" />
+                                <path
+                                    d="M8.04882 7.09845L6.74384 8.49158C6.66944 8.57422 6.572 8.61554 6.47457 8.61554C6.37715 8.61554 6.27967 8.57422 6.2053 8.49158L4.95111 7.09839L0.652832 11.8728C0.801824 11.952 0.966584 12.0001 1.14252 12.0001H11.8574C12.0332 12.0001 12.1979 11.9521 12.3469 11.8729L8.04882 7.09845Z"
+                                    fill="#FF1616" />
+                            </svg>
+                            <span>
+                                info@castechsol.com
+                            </span>
+                        </a>
+                        <div class="user-nav-box__lang lang">
+                            <div class="lang__current">
+                                <picture class="lang__current-img">
+                                    <img src="images/flag-icon-1.png" alt="img">
+                                </picture>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_61_690)">
+                                        <path
+                                            d="M5.00211 5.96335L1.26098 2.22238C1.15821 2.11937 1.02081 2.0627 0.874309 2.0627C0.727724 2.0627 0.590407 2.11937 0.48748 2.22238L0.159837 2.55018C0.056748 2.65303 6.13773e-08 2.79051 5.96302e-08 2.93701C5.78832e-08 3.08351 0.056748 3.22083 0.159837 3.32376L4.61398 7.77799C4.71724 7.88132 4.8552 7.9379 5.00187 7.9375C5.14919 7.9379 5.28699 7.8814 5.39033 7.77799L9.84016 3.3279C9.94325 3.22498 10 3.08766 10 2.94108C10 2.79457 9.94325 2.65725 9.84016 2.55425L9.51252 2.22652C9.29927 2.01327 8.95211 2.01327 8.73894 2.22652L5.00211 5.96335Z"
+                                            fill="#212329" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_61_690">
+                                            <rect width="10" height="10" fill="#212329"
+                                                transform="translate(0 10) rotate(-90)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <ul class="lang__list lang-list">
+                                <li class="lang-list__item">
+                                    <a class="lang-list__link" href="#">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li class="lang-list__item">
+                                    <a class="lang-list__link" href="#">
+                                        Казахский
+                                    </a>
+                                </li>
+                                <li class="lang-list__item">
+                                    <a class="lang-list__link" href="#">
+                                        Английский
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__burger burger">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="22" height="2" rx="1" fill="white" />
+                        <rect y="10" width="22" height="2" rx="1" fill="white" />
+                        <rect y="20" width="22" height="2" rx="1" fill="white" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.0376" y="21.991" width="29.5964" height="2" rx="1"
+                            transform="rotate(-46.2122 1.0376 21.991)" fill="white" />
+                        <rect x="2.24268" y="0.829102" width="29.5964" height="2" rx="1"
+                            transform="rotate(45 2.24268 0.829102)" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__catalog-services catalog-services">
+                <div class="container">
+                    <div class="catalog-services__inner">
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                        <a class="catalog-services__link catalog-services-link" href="#">
+                            <div class="catalog-services-link__img">
+                                <picture class="catalog-services-link__img-image">
+                                    <img src="images/services-icon-1.png" alt="icon">
+                                </picture>
+                            </div>
+                            <div class="catalog-services-link__inner">
+                                <h4 class="catalog-services-link__title">
+                                    Капитальный ремонт, модернизация и обновление агрегатов
+                                </h4>
+                                <p class="catalog-services-link__text">
+                                    Непрерывная конструкторская работа способствует совершенствованию выпускаемой техники
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__carte carte" style="background-image: url(images/carte-bg.jpg);">
+                <div class="container">
+                    <div class="carte__top carte-top">
+                        <a class="carte-top__logo logo" href="#">
+                            <img class="logo__img" src="images/logo-colored.png" alt="logo">
+                        </a>
+                        <div class="carte-top__user-nav user-nav">
+                            <div class="user-nav__phone phone">
+                                <div class="phone__box phone-box">
+                                    <div class="phone-box__link">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_61_694)">
+                                                <path
+                                                    d="M12.6462 9.54069L10.832 7.7265C10.1841 7.07858 9.08261 7.33777 8.82344 8.18005C8.62907 8.76321 7.98114 9.08717 7.39801 8.95756C6.10216 8.6336 4.35276 6.94899 4.0288 5.58835C3.83442 5.00519 4.22318 4.35727 4.80631 4.16292C5.64861 3.90375 5.90778 2.80227 5.25986 2.15435L3.44567 0.34016C2.92733 -0.113387 2.14982 -0.113387 1.69627 0.34016L0.465215 1.57122C-0.765842 2.86707 0.5948 6.30107 3.64005 9.34631C6.68529 12.3916 10.1193 13.817 11.4151 12.5211L12.6462 11.2901C13.0998 10.7717 13.0998 9.99424 12.6462 9.54069Z"
+                                                    fill="#FF1616" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_61_694">
+                                                    <rect width="13" height="13" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            8 (7122) 93-40-20
+                                        </span>
+                                    </div>
+                                    <svg class="phone-box__arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_61_690)">
+                                            <path
+                                                d="M5.00211 5.96335L1.26098 2.22238C1.15821 2.11937 1.02081 2.0627 0.874309 2.0627C0.727724 2.0627 0.590407 2.11937 0.48748 2.22238L0.159837 2.55018C0.056748 2.65303 6.13773e-08 2.79051 5.96302e-08 2.93701C5.78832e-08 3.08351 0.056748 3.22083 0.159837 3.32376L4.61398 7.77799C4.71724 7.88132 4.8552 7.9379 5.00187 7.9375C5.14919 7.9379 5.28699 7.8814 5.39033 7.77799L9.84016 3.3279C9.94325 3.22498 10 3.08766 10 2.94108C10 2.79457 9.94325 2.65725 9.84016 2.55425L9.51252 2.22652C9.29927 2.01327 8.95211 2.01327 8.73894 2.22652L5.00211 5.96335Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_61_690">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(0 10) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <ul class="phone__list">
+                                    <li class="phone__list-item">
+                                        <a class="phone__list-link" href="tel:87122934020">
+                                            8 (7122) 93-40-20
+                                        </a>
+                                    </li>
+                                    <li class="phone__list-item">
+                                        <a class="phone__list-link" href="tel:87122934020">
+                                            8 (7122) 93-40-20
+                                        </a>
+                                    </li>
+                                    <li class="phone__list-item">
+                                        <a class="phone__list-link" href="tel:87122934020">
+                                            8 (7122) 93-40-20
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-nav__box user-nav-box">
+                                <a class="user-nav-box__email email" href="mailto:info@castechsol.com">
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8574 1H1.14258C0.966701 1 0.802043 1.04803 0.653076 1.12721L6.47461 7.59405L7.77941 6.20108C7.77941 6.20108 7.77951 6.20094 7.77954 6.20088C7.77956 6.20083 7.77966 6.20077 7.77966 6.20077L12.3471 1.12732C12.1981 1.04809 12.0334 1 11.8574 1Z"
+                                            fill="#FF1616" />
+                                        <path
+                                            d="M12.8856 2.00024L8.5874 6.50012L12.8855 11.0001C12.9567 10.8441 13 10.6717 13 10.4876V2.51256C13 2.32852 12.9568 2.15616 12.8856 2.00024Z"
+                                            fill="#FF1616" />
+                                        <path
+                                            d="M0.114512 2C0.0432402 2.15596 0 2.32836 0 2.5125V10.4875C0 10.6715 0.0431895 10.844 0.11441 10.9999L4.41261 6.5L0.114512 2Z"
+                                            fill="#FF1616" />
+                                        <path
+                                            d="M8.04882 7.09845L6.74384 8.49158C6.66944 8.57422 6.572 8.61554 6.47457 8.61554C6.37715 8.61554 6.27967 8.57422 6.2053 8.49158L4.95111 7.09839L0.652832 11.8728C0.801824 11.952 0.966584 12.0001 1.14252 12.0001H11.8574C12.0332 12.0001 12.1979 11.9521 12.3469 11.8729L8.04882 7.09845Z"
+                                            fill="#FF1616" />
+                                    </svg>
+                                    <span>
+                                        info@castechsol.com
+                                    </span>
+                                </a>
+                                <div class="user-nav-box__lang lang">
+                                    <div class="lang__current">
+                                        <picture class="lang__current-img lozad">
+                                            <img src="images/flag-icon-1.png" alt="img">
+                                        </picture>
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_61_690)">
+                                                <path
+                                                    d="M5.00211 5.96335L1.26098 2.22238C1.15821 2.11937 1.02081 2.0627 0.874309 2.0627C0.727724 2.0627 0.590407 2.11937 0.48748 2.22238L0.159837 2.55018C0.056748 2.65303 6.13773e-08 2.79051 5.96302e-08 2.93701C5.78832e-08 3.08351 0.056748 3.22083 0.159837 3.32376L4.61398 7.77799C4.71724 7.88132 4.8552 7.9379 5.00187 7.9375C5.14919 7.9379 5.28699 7.8814 5.39033 7.77799L9.84016 3.3279C9.94325 3.22498 10 3.08766 10 2.94108C10 2.79457 9.94325 2.65725 9.84016 2.55425L9.51252 2.22652C9.29927 2.01327 8.95211 2.01327 8.73894 2.22652L5.00211 5.96335Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_61_690">
+                                                    <rect width="10" height="10" fill="white"
+                                                        transform="translate(0 10) rotate(-90)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <ul class="lang__list lang-list">
+                                        <li class="lang-list__item">
+                                            <a class="lang-list__link" href="#">
+                                                Русский
+                                            </a>
+                                        </li>
+                                        <li class="lang-list__item">
+                                            <a class="lang-list__link" href="#">
+                                                Казахский
+                                            </a>
+                                        </li>
+                                        <li class="lang-list__item">
+                                            <a class="lang-list__link" href="#">
+                                                Английский
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carte-top__burger burger">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.0376" y="21.991" width="29.5964" height="2" rx="1"
+                                    transform="rotate(-46.2122 1.0376 21.991)" fill="white" />
+                                <rect x="2.24268" y="0.829102" width="29.5964" height="2" rx="1"
+                                    transform="rotate(45 2.24268 0.829102)" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="carte__inner">
+                        <nav class="carte__menu carte-menu">
+                            <ul class="carte-menu__list">
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Дивизион «НЕФТЕГАЗ»
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Доработка базовых шасси
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Реконструкция, модернизация, ремонт
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Монтаж нового оборудования, изготовление специальной техники
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Дивизион «ПЕРМЯК»
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+                                </li>
+                                <li class="carte-menu__list-item">
+                                    <a class="carte-menu__list-link" href="#">
+                                        Каталог продукции
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="carte__catalog-block catalog-block">
+                            <h2 class="catalog-block__titling">
+                                <span>
+                                    Каталог продукции
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_139_2922)">
+                                        <path
+                                            d="M5.00211 4.03665L1.26098 7.77762C1.15821 7.88063 1.02081 7.9373 0.874309 7.9373C0.727724 7.9373 0.590406 7.88063 0.48748 7.77762L0.159837 7.44982C0.056748 7.34697 0 7.20949 0 7.06299C0 6.91649 0.056748 6.77917 0.159837 6.67624L4.61398 2.22201C4.71724 2.11868 4.8552 2.0621 5.00187 2.0625C5.14919 2.0621 5.28699 2.1186 5.39033 2.22201L9.84016 6.6721C9.94325 6.77502 10 6.91234 10 7.05892C10 7.20543 9.94325 7.34275 9.84016 7.44575L9.51252 7.77348C9.29927 7.98673 8.95211 7.98673 8.73894 7.77348L5.00211 4.03665Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_139_2922">
+                                            <rect width="10" height="10" fill="white" transform="matrix(0 1 1 0 0 0)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </h2>
+                            <h2 class="catalog-block__title">
+                                Каталог:
+                            </h2>
+                            <ul class="catalog-block__list">
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Дивизион «НЕФТЕГАЗ»
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Доработка базовых шасси
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Реконструкция, модернизация, ремонт
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Монтаж нового оборудования, изготовление специальной техники
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Дивизион «ПЕРМЯК»
+                                    </a>
+
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Каталог продукции
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Дивизион «НЕФТЕГАЗ»
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Доработка базовых шасси
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Дивизион «НЕФТЕГАЗ»
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Спецпроекты
+                                    </a>
+                                </li>
+                                <li class="catalog-block__list-item">
+                                    <a class="catalog-block__list-link" href="#">
+                                        Доработка базовых шасси
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="carte__wrapper">
+                            <div class="carte__contacts carte-contacts">
+                                <h2 class="carte-contacts__title">
+                                    Есть вопросы?
+                                </h2>
+                                <ul class="carte-contacts__contacts footer-contacts">
+                                    <li class="footer-contacts__item">
+                                        <a class="footer-contacts__link" href="#">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99213 0C3.38599 0 1.26562 2.12036 1.26562 4.72659C1.26562 5.8093 2.0267 7.32715 3.5278 9.23785C4.62177 10.6305 5.6976 11.7063 5.74283 11.7514L5.99213 12L6.24152 11.7514C6.28674 11.7063 7.36258 10.6305 8.45663 9.23785C9.95764 7.32715 10.7187 5.8093 10.7187 4.7265C10.7187 2.12036 8.59836 0 5.99213 0V0ZM5.99213 7.32083C4.40717 7.32083 3.11774 6.0314 3.11774 4.44644C3.11774 2.86148 4.40717 1.57196 5.99213 1.57196C7.57709 1.57196 8.86661 2.86148 8.86661 4.44644C8.86661 6.0314 7.57709 7.32083 5.99213 7.32083Z"
+                                                    fill="#FF1616"></path>
+                                            </svg>
+                                            <span>
+                                                Республика Казахстан,
+                                                г. Атырау, ул. Атамбаева, 13А
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-contacts__item">
+                                        <a class="footer-contacts__link" href="tel:+380674113141">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_61_694)">
+                                                    <path
+                                                        d="M12.6462 9.54069L10.832 7.7265C10.1841 7.07858 9.08261 7.33777 8.82344 8.18005C8.62907 8.76321 7.98114 9.08717 7.39801 8.95756C6.10216 8.6336 4.35276 6.94899 4.0288 5.58835C3.83442 5.00519 4.22318 4.35727 4.80631 4.16292C5.64861 3.90375 5.90778 2.80227 5.25986 2.15435L3.44567 0.34016C2.92733 -0.113387 2.14982 -0.113387 1.69627 0.34016L0.465215 1.57122C-0.765842 2.86707 0.5948 6.30107 3.64005 9.34631C6.68529 12.3916 10.1193 13.817 11.4151 12.5211L12.6462 11.2901C13.0998 10.7717 13.0998 9.99424 12.6462 9.54069Z"
+                                                        fill="#FF1616"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_61_694">
+                                                        <rect width="13" height="13" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>
+                                                +380 67 411-31-41
+                                            </span>
+                                        </a>
+                                        <a class="footer-contacts__link" href="tel:+380674113141">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_61_694)">
+                                                    <path
+                                                        d="M12.6462 9.54069L10.832 7.7265C10.1841 7.07858 9.08261 7.33777 8.82344 8.18005C8.62907 8.76321 7.98114 9.08717 7.39801 8.95756C6.10216 8.6336 4.35276 6.94899 4.0288 5.58835C3.83442 5.00519 4.22318 4.35727 4.80631 4.16292C5.64861 3.90375 5.90778 2.80227 5.25986 2.15435L3.44567 0.34016C2.92733 -0.113387 2.14982 -0.113387 1.69627 0.34016L0.465215 1.57122C-0.765842 2.86707 0.5948 6.30107 3.64005 9.34631C6.68529 12.3916 10.1193 13.817 11.4151 12.5211L12.6462 11.2901C13.0998 10.7717 13.0998 9.99424 12.6462 9.54069Z"
+                                                        fill="#FF1616"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_61_694">
+                                                        <rect width="13" height="13" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>
+                                                +380 67 411-31-41
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-contacts__item">
+                                        <a class="footer-contacts__link" href="mailto:info@castechsol.com">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.8574 1H1.14258C0.966701 1 0.802043 1.04803 0.653076 1.12721L6.47461 7.59405L7.77941 6.20108C7.77941 6.20108 7.77951 6.20094 7.77954 6.20088C7.77956 6.20083 7.77966 6.20077 7.77966 6.20077L12.3471 1.12732C12.1981 1.04809 12.0334 1 11.8574 1Z"
+                                                    fill="#FF1616"></path>
+                                                <path
+                                                    d="M12.8856 2.00024L8.5874 6.50012L12.8855 11.0001C12.9567 10.8441 13 10.6717 13 10.4876V2.51256C13 2.32852 12.9568 2.15616 12.8856 2.00024Z"
+                                                    fill="#FF1616"></path>
+                                                <path
+                                                    d="M0.114512 2C0.0432402 2.15596 0 2.32836 0 2.5125V10.4875C0 10.6715 0.0431895 10.844 0.11441 10.9999L4.41261 6.5L0.114512 2Z"
+                                                    fill="#FF1616"></path>
+                                                <path
+                                                    d="M8.04882 7.09845L6.74384 8.49158C6.66944 8.57422 6.572 8.61554 6.47457 8.61554C6.37715 8.61554 6.27967 8.57422 6.2053 8.49158L4.95111 7.09839L0.652832 11.8728C0.801824 11.952 0.966584 12.0001 1.14252 12.0001H11.8574C12.0332 12.0001 12.1979 11.9521 12.3469 11.8729L8.04882 7.09845Z"
+                                                    fill="#FF1616"></path>
+                                            </svg>
+                                            <span>
+                                                info@castechsol.com
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carte__contact contact" style="background-image: url(images/contact-bg.jpg);">
+                                <div class="contact__inner">
+                                    <h2 class="contact__title">
+                                        Контакты:
+                                    </h2>
+                                    <form class="contact__form contact-form" action="#">
+                                        <div class="contact-form__inner">
+                                            <input class="contact-form__input" type="text" placeholder="Ваше имя">
+                                            <input class="contact-form__input" type="tel" placeholder="Ваш телефон">
+                                        </div>
+                                        <button class="contact-form__button btn" type="button">
+                                            Заказать звонок
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__heading heading" style="background-image: url(images/heading-bg.jpg);">
+                <div class="container">
+                    <div class="heading__inner">
+                        <div class="heading__breadcrumbs breadcrumbs" data-aos="fade-right">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__list-item">
+                                    <a class="breadcrumbs__list-link" href="#">
+                                        Главная
+                                    </a>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8082 6.46613L7.47455 10.7998C7.35085 10.9236 7.18597 10.9915 7.01017 10.9915C6.83417 10.9915 6.66939 10.9235 6.54569 10.7998L6.15223 10.4063C6.02862 10.2828 5.96052 10.1178 5.96052 9.9419C5.96052 9.7661 6.02862 9.59557 6.15223 9.47205L8.6804 6.93832H0.648286C0.286143 6.93832 0 6.65481 0 6.29257V5.73619C0 5.37394 0.286143 5.06185 0.648286 5.06185H8.70908L6.15232 2.51397C6.02872 2.39026 5.96062 2.22978 5.96062 2.05388C5.96062 1.87817 6.02872 1.71534 6.15232 1.59173L6.54578 1.19944C6.66949 1.07574 6.83427 1.00832 7.01027 1.00832C7.18607 1.00832 7.35095 1.07662 7.47465 1.20032L11.8083 5.53394C11.9323 5.65804 12.0005 5.8237 12 5.99979C12.0004 6.17647 11.9323 6.34223 11.8082 6.46613Z"
+                                            fill="white" />
+                                    </svg>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    Каталог услуг и продуктов
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 class="heading__title" data-aos="fade-right">
+                            Каталог услуг и продуктов
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <section class="main__catalog catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <aside class="catalog__aside catalog-aside">
+                            <h3 class="catalog-aside__title">
+                                Категории
+                            </h3>
+                            <ul class="catalog-aside__list">
+                                <li class="catalog-aside__list-item">
+                                    <a class="catalog-aside__link" href="#">
+                                        Первый пункт меню
+                                    </a>
+                                </li>
+                                <li class="catalog-aside__list-item catalog-aside__list-item--acitve">
+                                    <a class="catalog-aside__link" href="#">
+                                        Второй пункт
+                                    </a>
+                                </li>
+                                <li class="catalog-aside__list-item">
+                                    <a class="catalog-aside__link" href="#">
+                                        Третий
+                                    </a>
+                                </li>
+                                <li class="catalog-aside__list-item">
+                                    <a class="catalog-aside__link" href="#">
+                                        Четвертый
+                                    </a>
+                                </li>
+                                <li class="catalog-aside__list-item">
+                                    <a class="catalog-aside__link" href="#">
+                                        Пятый
+                                    </a>
+                                </li>
+                                <li class="catalog-aside__list-item">
+                                    <a class="catalog-aside__link" href="#">
+                                        Шестой
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="catalog__wrapper">
+                            <div class="catalog__top catalog-top" data-aos="fade-down">
+                                <div class="catalog-top__sort sort">
+                                    <p class="sort__text">
+                                        Сортировать:
+                                    </p>
+                                    <div class="sort__select custom-select">
+                                        <select>
+                                            <option value="0">По умолчанию</option>
+                                            <option value="1">По первой</option>
+                                            <option value="2">По второй</option>
+                                            <option value="3">По третей</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="catalog-top__tiles tiles">
+                                    <button class="tiles__button tiles__button--active" type="button" id="0">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="6" height="6" fill="white"></rect>
+                                            <rect y="8" width="6" height="6" fill="white"></rect>
+                                            <rect y="16" width="6" height="6" fill="white"></rect>
+                                            <rect x="8" width="6" height="6" fill="white"></rect>
+                                            <rect x="8" y="8" width="6" height="6" fill="white"></rect>
+                                            <rect x="8" y="16" width="6" height="6" fill="white"></rect>
+                                            <rect x="16" width="6" height="6" fill="white"></rect>
+                                            <rect x="16" y="8" width="6" height="6" fill="white"></rect>
+                                            <rect x="16" y="16" width="6" height="6" fill="white"></rect>
+                                        </svg>
+                                    </button>
+                                    <button class="tiles__button" type="button" id="1">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="22" height="6" fill="#FF1616" />
+                                            <rect y="8" width="22" height="6" fill="#FF1616" />
+                                            <rect y="16" width="22" height="6" fill="#FF1616" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog__services services">
+                                <a class="services__item services-item" href="#" data-aos="flip-down">
+                                    <div class="services-item__inner">
+                                        <div class="services-item__top">
+                                            <h3 class="services-item__top-title">
+                                                Капитальный ремонт, модернизация и обновление агрегатов
+                                            </h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                viewBox="0 0 36 36" fill="none">
+                                                <g clip-path="url(#clip0_335_177)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329" />
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5"
+                                                        stroke="#212329" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_335_177">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <picture class="services-item__top-img lozad">
+                                                <img src="images/services-icon-1.png" alt="icon">
+                                            </picture>
+                                        </div>
+                                        <div class="services-item__bottom">
+                                            <div class="services-item__bottom-line">
+
+                                            </div>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_301_1297)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329"></path>
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5" stroke="#212329">
+                                                    </line>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_301_1297">
+                                                        <rect width="36" height="36" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="services__item services-item" href="#" data-aos="flip-down">
+                                    <div class="services-item__inner">
+                                        <div class="services-item__top">
+                                            <h3 class="services-item__top-title">
+                                                Производство агрегатов и компонентов к ним
+                                            </h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                viewBox="0 0 36 36" fill="none">
+                                                <g clip-path="url(#clip0_335_177)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329" />
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5"
+                                                        stroke="#212329" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_335_177">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <picture class="services-item__top-img lozad">
+                                                <img src="images/services-icon-2.png" alt="icon">
+                                            </picture>
+                                        </div>
+                                        <div class="services-item__bottom">
+                                            <div class="services-item__bottom-line">
+
+                                            </div>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_301_1297)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329"></path>
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5" stroke="#212329">
+                                                    </line>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_301_1297">
+                                                        <rect width="36" height="36" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="services__item services-item" href="#" data-aos="flip-down">
+                                    <div class="services-item__inner">
+                                        <div class="services-item__top">
+                                            <h3 class="services-item__top-title">
+                                                Монтаж импортного оборудования
+                                            </h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                viewBox="0 0 36 36" fill="none">
+                                                <g clip-path="url(#clip0_335_177)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329" />
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5"
+                                                        stroke="#212329" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_335_177">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <picture class="services-item__top-img lozad">
+                                                <img src="images/services-icon-3.png" alt="icon">
+                                            </picture>
+                                        </div>
+                                        <div class="services-item__bottom">
+                                            <div class="services-item__bottom-line">
+
+                                            </div>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_301_1297)">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#212329"></path>
+                                                    <line x1="31" y1="18.5" x2="5.6895e-06" y2="18.5" stroke="#212329">
+                                                    </line>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_301_1297">
+                                                        <rect width="36" height="36" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__products products">
+                                <div class="products__inner">
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card card" data-aos="zoom-out">
+                                        <div class="card__wrapper">
+                                            <div class="card__img">
+                                                <picture class="card__img-picture lozad">
+                                                    <img src="images/staff-img-1.png" alt="product">
+                                                </picture>
+                                            </div>
+                                            <div class="card__wrap">
+                                                <h3 class="card__title">
+                                                    Очень длинное название товара
+                                                </h3>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                                <div class="card__inner">
+                                                    <div class="card__price card-price">
+                                                        <p class="card-price__current">
+                                                            <ins>
+                                                                552 000
+                                                            </ins>
+                                                            тенге
+                                                        </p>
+                                                        <del class="card-price__past">
+                                                            560 000 тенге
+                                                        </del>
+                                                    </div>
+                                                    <a class="card__link btn" href="#">
+                                                        Купить
+                                                    </a>
+                                                    <p class="card__art">
+                                                        Арт:
+                                                        <span>
+                                                            EVD1S24T0H
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p class="card__text">
+                                                    Таким образом реализация намеченных плановых заданий требуют
+                                                    определения и
+                                                    уточнения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__wrap" data-aos="fade-down">
+                                    <button class="products__link btn" type="button">
+                                        Показать больше
+                                    </button>
+                                </div>
+                                <div class="products__pagination pagination" data-aos="zoom-out">
+                                    <a class="pagination__link pagination__link--disabled" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <g clip-path="url(#clip0_90_2445)">
+                                                <path
+                                                    d="M0.223804 6.45631L5.27969 1.4003C5.42401 1.25598 5.61636 1.17676 5.82147 1.17676C6.0268 1.17676 6.21904 1.25609 6.36337 1.4003L6.8224 1.85945C6.96661 2.00355 7.04606 2.19602 7.04606 2.40124C7.04606 2.60634 6.96661 2.8053 6.8224 2.94939L3.87287 5.90541L13.2437 5.90541C13.6662 5.90541 14 6.23618 14 6.65879L14 7.30791C14 7.73052 13.6662 8.09463 13.2437 8.09463L3.83941 8.09463L6.82229 11.0672C6.9665 11.2115 7.04594 11.3987 7.04594 11.6039C7.04594 11.8089 6.9665 11.9989 6.82229 12.1431L6.36325 12.6008C6.21893 12.7451 6.02669 12.8237 5.82136 12.8237C5.61625 12.8237 5.4239 12.7441 5.27957 12.5997L0.223691 7.54386C0.0790258 7.39908 -0.000534484 7.20581 3.48414e-05 7.00037C-0.000420079 6.79424 0.0790257 6.60086 0.223804 6.45631Z"
+                                                    fill="#FF1616" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_90_2445">
+                                                    <rect width="14" height="14" fill="white"
+                                                        transform="matrix(-1 8.74232e-08 8.74224e-08 1 14 0)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <ul class="pagination__list">
+                                        <li class="pagination__list-item pagination__list-item--active">
+                                            <p class="pagination__list-text">
+                                                1
+                                            </p>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item pagination__list-item--dots">
+                                            <a class="pagination__list-link" href="#">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">
+                                                18
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">
+                                                19
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="pagination__link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <g clip-path="url(#clip0_90_2451)">
+                                                <path
+                                                    d="M13.7762 7.54369L8.72031 12.5997C8.57599 12.744 8.38364 12.8232 8.17853 12.8232C7.9732 12.8232 7.78096 12.7439 7.63663 12.5997L7.1776 12.1405C7.03339 11.9965 6.95394 11.804 6.95394 11.5988C6.95394 11.3937 7.03339 11.1947 7.1776 11.0506L10.1271 8.09458L0.756332 8.09459C0.333833 8.09459 -1.32951e-06 7.76382 -1.44056e-06 7.34121L-1.61114e-06 6.69209C-1.72219e-06 6.26948 0.333832 5.90537 0.756332 5.90537L10.1606 5.90537L7.17771 2.93284C7.0335 2.78852 6.95405 2.60128 6.95405 2.39607C6.95405 2.19108 7.0335 2.00111 7.17771 1.8569L7.63675 1.39923C7.78107 1.25491 7.97331 1.17626 8.17864 1.17626C8.38375 1.17626 8.5761 1.25593 8.72042 1.40025L13.7763 6.45614C13.921 6.60092 14.0005 6.79419 14 6.99963C14.0004 7.20576 13.921 7.39914 13.7762 7.54369Z"
+                                                    fill="#ff1616" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_90_2451">
+                                                    <rect width="14" height="14" fill="white"
+                                                        transform="matrix(1 -1.31007e-07 -2.62779e-07 -1 0 14)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__order order" style="background-image: url(images/order-bg.jpg);">
+                <div class="container">
+                    <div class="order__wrapper">
+                        <svg class="order__gear order__gear--first" width="641" height="641" viewBox="0 0 641 641"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.05" clip-path="url(#clip0_92_2268)">
+                                <path
+                                    d="M68.9896 498.31C70.5196 494.52 71.6296 490.48 73.6696 486.99C83.1796 470.75 92.8796 454.62 102.68 438.55C104.34 435.83 104.43 433.73 103.11 430.79C98.2896 420.01 93.6796 409.13 89.3696 398.14C88.1196 394.95 86.4096 393.39 83.1596 392.61C61.1496 387.29 39.1796 381.81 17.1996 376.37C5.19957 373.4 0.0395703 366.93 0.0195703 354.74C-0.0104297 331.58 -0.0104297 308.41 0.0195703 285.25C0.0395703 273.29 5.25957 266.62 16.7696 263.76C38.7496 258.31 60.7096 252.8 82.7296 247.52C86.4096 246.64 88.2296 244.83 89.5396 241.32C92.9596 232.13 96.7096 223.04 100.67 214.07C101.98 211.1 101.77 208.93 100.13 206.24C89.3396 188.43 78.7096 170.52 67.9996 152.67C60.8896 140.82 61.7996 132.9 71.5196 123.17C87.2896 107.37 103.08 91.5801 118.89 75.8101C128.49 66.2301 136.41 65.3001 147.96 72.2501C165.23 82.6401 182.55 92.9501 199.75 103.46C202.69 105.25 205.01 105.15 208.06 103.78C219.29 98.7501 230.59 93.8701 242.02 89.3201C245.24 88.0401 246.7 86.2701 247.48 83.0401C252.8 61.0301 258.27 39.0601 263.7 17.0801C266.63 5.22007 273.18 0.0500684 285.44 0.0300684C308.6 6.83591e-05 331.77 6.83591e-05 354.93 0.0300684C366.81 0.0500684 373.46 5.31007 376.33 16.8901C381.77 38.8701 387.24 60.8401 392.54 82.8601C393.37 86.3001 394.97 88.1201 398.35 89.4301C408.89 93.5101 419.32 97.9301 429.64 102.55C432.76 103.94 435.03 103.83 437.92 102.07C454.27 92.0901 470.75 82.3301 487.17 72.4601C499.19 65.2401 506.74 66.0601 516.62 75.9101C532.44 91.6701 548.23 107.45 563.99 123.27C573.81 133.13 574.64 140.78 567.44 152.73C557.47 169.28 547.45 185.81 537.74 202.51C536.65 204.38 536.6 207.63 537.41 209.71C541.65 220.55 546.5 231.15 550.74 241.99C552 245.22 553.79 246.68 557 247.46C579.01 252.79 600.98 258.27 622.96 263.71C634.86 266.66 640.01 273.19 640.03 285.43C640.06 308.59 640.06 331.76 640.03 354.92C640.01 366.83 634.77 373.44 623.17 376.31C601.19 381.75 579.22 387.24 557.21 392.54C553.76 393.37 551.95 394.97 550.64 398.35C546.62 408.74 542.25 419 537.72 429.18C536.41 432.11 536.48 434.22 538.16 436.97C548.07 453.17 557.75 469.51 567.54 485.78C574.67 497.63 573.74 505.34 563.87 515.22C548.09 531.02 532.31 546.82 516.52 562.6C507.14 571.98 499.17 573.01 487.84 566.25C471.68 556.6 455.51 546.96 439.44 537.17C436.61 535.44 434.41 535.14 431.23 536.6C420.5 541.51 409.62 546.12 398.65 550.49C395.2 551.86 393.35 553.63 392.46 557.34C387.24 579.2 381.77 601 376.38 622.82C373.37 634.99 366.92 640.03 354.29 640.04C331.46 640.06 308.63 640.06 285.8 640.04C273.15 640.03 266.69 634.99 263.69 622.84C258.3 601.02 252.83 579.22 247.61 557.36C246.73 553.66 244.91 551.87 241.43 550.51C230.9 546.4 220.46 542.03 210.16 537.37C206.9 535.89 204.53 535.87 201.46 537.74C185.69 547.39 169.79 556.83 153.91 566.3C142.79 572.94 134.71 571.94 125.62 562.85C109.47 546.71 93.3296 530.57 77.1896 514.42C72.8096 510.05 69.3596 505.27 68.9896 498.31ZM320.11 451.2C392.3 451.12 451.16 392.23 451.2 320.06C451.24 247.93 392.41 189.01 320.19 188.84C247.94 188.67 188.64 248 188.85 320.22C189.06 392.48 248 451.29 320.11 451.2Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_92_2268">
+                                    <rect width="640.05" height="640.04" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg class="order__gear order__gear--second" width="641" height="641" viewBox="0 0 641 641"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.05" clip-path="url(#clip0_92_2268)">
+                                <path
+                                    d="M68.9896 498.31C70.5196 494.52 71.6296 490.48 73.6696 486.99C83.1796 470.75 92.8796 454.62 102.68 438.55C104.34 435.83 104.43 433.73 103.11 430.79C98.2896 420.01 93.6796 409.13 89.3696 398.14C88.1196 394.95 86.4096 393.39 83.1596 392.61C61.1496 387.29 39.1796 381.81 17.1996 376.37C5.19957 373.4 0.0395703 366.93 0.0195703 354.74C-0.0104297 331.58 -0.0104297 308.41 0.0195703 285.25C0.0395703 273.29 5.25957 266.62 16.7696 263.76C38.7496 258.31 60.7096 252.8 82.7296 247.52C86.4096 246.64 88.2296 244.83 89.5396 241.32C92.9596 232.13 96.7096 223.04 100.67 214.07C101.98 211.1 101.77 208.93 100.13 206.24C89.3396 188.43 78.7096 170.52 67.9996 152.67C60.8896 140.82 61.7996 132.9 71.5196 123.17C87.2896 107.37 103.08 91.5801 118.89 75.8101C128.49 66.2301 136.41 65.3001 147.96 72.2501C165.23 82.6401 182.55 92.9501 199.75 103.46C202.69 105.25 205.01 105.15 208.06 103.78C219.29 98.7501 230.59 93.8701 242.02 89.3201C245.24 88.0401 246.7 86.2701 247.48 83.0401C252.8 61.0301 258.27 39.0601 263.7 17.0801C266.63 5.22007 273.18 0.0500684 285.44 0.0300684C308.6 6.83591e-05 331.77 6.83591e-05 354.93 0.0300684C366.81 0.0500684 373.46 5.31007 376.33 16.8901C381.77 38.8701 387.24 60.8401 392.54 82.8601C393.37 86.3001 394.97 88.1201 398.35 89.4301C408.89 93.5101 419.32 97.9301 429.64 102.55C432.76 103.94 435.03 103.83 437.92 102.07C454.27 92.0901 470.75 82.3301 487.17 72.4601C499.19 65.2401 506.74 66.0601 516.62 75.9101C532.44 91.6701 548.23 107.45 563.99 123.27C573.81 133.13 574.64 140.78 567.44 152.73C557.47 169.28 547.45 185.81 537.74 202.51C536.65 204.38 536.6 207.63 537.41 209.71C541.65 220.55 546.5 231.15 550.74 241.99C552 245.22 553.79 246.68 557 247.46C579.01 252.79 600.98 258.27 622.96 263.71C634.86 266.66 640.01 273.19 640.03 285.43C640.06 308.59 640.06 331.76 640.03 354.92C640.01 366.83 634.77 373.44 623.17 376.31C601.19 381.75 579.22 387.24 557.21 392.54C553.76 393.37 551.95 394.97 550.64 398.35C546.62 408.74 542.25 419 537.72 429.18C536.41 432.11 536.48 434.22 538.16 436.97C548.07 453.17 557.75 469.51 567.54 485.78C574.67 497.63 573.74 505.34 563.87 515.22C548.09 531.02 532.31 546.82 516.52 562.6C507.14 571.98 499.17 573.01 487.84 566.25C471.68 556.6 455.51 546.96 439.44 537.17C436.61 535.44 434.41 535.14 431.23 536.6C420.5 541.51 409.62 546.12 398.65 550.49C395.2 551.86 393.35 553.63 392.46 557.34C387.24 579.2 381.77 601 376.38 622.82C373.37 634.99 366.92 640.03 354.29 640.04C331.46 640.06 308.63 640.06 285.8 640.04C273.15 640.03 266.69 634.99 263.69 622.84C258.3 601.02 252.83 579.22 247.61 557.36C246.73 553.66 244.91 551.87 241.43 550.51C230.9 546.4 220.46 542.03 210.16 537.37C206.9 535.89 204.53 535.87 201.46 537.74C185.69 547.39 169.79 556.83 153.91 566.3C142.79 572.94 134.71 571.94 125.62 562.85C109.47 546.71 93.3296 530.57 77.1896 514.42C72.8096 510.05 69.3596 505.27 68.9896 498.31ZM320.11 451.2C392.3 451.12 451.16 392.23 451.2 320.06C451.24 247.93 392.41 189.01 320.19 188.84C247.94 188.67 188.64 248 188.85 320.22C189.06 392.48 248 451.29 320.11 451.2Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_92_2268">
+                                    <rect width="640.05" height="640.04" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="order__inner">
+                            <div class="order__top">
+                                <h2 class="order__top-title">
+                                    Оформление заявки/заказа
+                                </h2>
+                                <button class="order__top-close" type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1.0376" y="21.991" width="29.5964" height="2" rx="1"
+                                            transform="rotate(-46.2122 1.0376 21.991)" fill="white" />
+                                        <rect x="2.24268" y="0.829102" width="29.5964" height="2" rx="1"
+                                            transform="rotate(45 2.24268 0.829102)" fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="order__product order-product">
+                                <div class="order-product__img">
+                                    <picture class="order-product__img-picture lozad">
+                                        <img src="images/order-product-img.jpg" alt="img">
+                                    </picture>
+                                </div>
+                                <div class="order-product__inner">
+                                    <h4 class="order-product__title">
+                                        Бензиновый генератор Sigma 2.2/2.5кВт (инверторный), (5710631) Казахстан Купить
+                                        цена
+                                    </h4>
+                                    <div class="order-product__bottom">
+                                        <p class="order-product__bottom-art">
+                                            Арт:
+                                            <span>
+                                                EVD1S24T0H
+                                            </span>
+                                        </p>
+                                        <p class="order-product__bottom-price">
+                                            <span>
+                                                552 000
+                                            </span>
+                                            тенге
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="order__form order-form" action="#">
+                                <div class="order-form__inner">
+                                    <input class="order-form__input" type="text" placeholder="Имя *">
+                                    <input class="order-form__input" type="text" placeholder="Фимилия *">
+                                    <input class="order-form__input" type="tel" placeholder="Телефон *">
+                                    <input class="order-form__input" type="email" placeholder="Email">
+                                    <div class="order-form__img">
+                                        <picture class="order-form__img-image lozad">
+                                            <img src="images/recaptcha-img.png" alt="recaptcha-img">
+                                        </picture>
+                                    </div>
+                                    <div class="order-form__checkbox">
+                                        <label class="container">
+                                            Я согласен на обработку личных данных
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="order-form__button btn" type="submit">
+                                    Отправить заказ
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contact contact" style="background-image: url(images/contact-bg.jpg);">
+                <div class="container">
+                    <div class="contact__inner">
+                        <h2 class="contact__title" data-aos="fade-right">
+                            Остались вопросы?
+                        </h2>
+                        <form class="contact__form contact-form" action="#" data-aos="zoom-out">
+                            <div class="contact-form__inner">
+                                <input class="contact-form__input" type="text" placeholder="Ваше имя">
+                                <input class="contact-form__input" type="tel" placeholder="Ваш телефон">
+                            </div>
+                            <button class="contact-form__button btn" type="button">
+                                Заказать звонок
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" data-aos="fade">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <nav class="footer__menu footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Направления деятельности
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="footer__contacts footer-contacts">
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link" href="#">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.99213 0C3.38599 0 1.26562 2.12036 1.26562 4.72659C1.26562 5.8093 2.0267 7.32715 3.5278 9.23785C4.62177 10.6305 5.6976 11.7063 5.74283 11.7514L5.99213 12L6.24152 11.7514C6.28674 11.7063 7.36258 10.6305 8.45663 9.23785C9.95764 7.32715 10.7187 5.8093 10.7187 4.7265C10.7187 2.12036 8.59836 0 5.99213 0V0ZM5.99213 7.32083C4.40717 7.32083 3.11774 6.0314 3.11774 4.44644C3.11774 2.86148 4.40717 1.57196 5.99213 1.57196C7.57709 1.57196 8.86661 2.86148 8.86661 4.44644C8.86661 6.0314 7.57709 7.32083 5.99213 7.32083Z"
+                                        fill="#FF1616" />
+                                </svg>
+                                <span>
+                                    Республика Казахстан,
+                                    г. Атырау, ул. Атамбаева, 13А
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link" href="tel:87122934020">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_61_694)">
+                                        <path
+                                            d="M12.6462 9.54069L10.832 7.7265C10.1841 7.07858 9.08261 7.33777 8.82344 8.18005C8.62907 8.76321 7.98114 9.08717 7.39801 8.95756C6.10216 8.6336 4.35276 6.94899 4.0288 5.58835C3.83442 5.00519 4.22318 4.35727 4.80631 4.16292C5.64861 3.90375 5.90778 2.80227 5.25986 2.15435L3.44567 0.34016C2.92733 -0.113387 2.14982 -0.113387 1.69627 0.34016L0.465215 1.57122C-0.765842 2.86707 0.5948 6.30107 3.64005 9.34631C6.68529 12.3916 10.1193 13.817 11.4151 12.5211L12.6462 11.2901C13.0998 10.7717 13.0998 9.99424 12.6462 9.54069Z"
+                                            fill="#FF1616" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_61_694">
+                                            <rect width="13" height="13" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>
+                                    8 (7122) 93-40-20
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link" href="mailto:info@castechsol.com">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.8574 1H1.14258C0.966701 1 0.802043 1.04803 0.653076 1.12721L6.47461 7.59405L7.77941 6.20108C7.77941 6.20108 7.77951 6.20094 7.77954 6.20088C7.77956 6.20083 7.77966 6.20077 7.77966 6.20077L12.3471 1.12732C12.1981 1.04809 12.0334 1 11.8574 1Z"
+                                        fill="#FF1616" />
+                                    <path
+                                        d="M12.8856 2.00024L8.5874 6.50012L12.8855 11.0001C12.9567 10.8441 13 10.6717 13 10.4876V2.51256C13 2.32852 12.9568 2.15616 12.8856 2.00024Z"
+                                        fill="#FF1616" />
+                                    <path
+                                        d="M0.114512 2C0.0432402 2.15596 0 2.32836 0 2.5125V10.4875C0 10.6715 0.0431895 10.844 0.11441 10.9999L4.41261 6.5L0.114512 2Z"
+                                        fill="#FF1616" />
+                                    <path
+                                        d="M8.04882 7.09845L6.74384 8.49158C6.66944 8.57422 6.572 8.61554 6.47457 8.61554C6.37715 8.61554 6.27967 8.57422 6.2053 8.49158L4.95111 7.09839L0.652832 11.8728C0.801824 11.952 0.966584 12.0001 1.14252 12.0001H11.8574C12.0332 12.0001 12.1979 11.9521 12.3469 11.8729L8.04882 7.09845Z"
+                                        fill="#FF1616" />
+                                </svg>
+                                <span>
+                                    info@castechsol.com
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__box footer-box">
+                        <p class="footer-box__text">
+                            © Caspian Tech Solution 2023
+                        </p>
+                        <a class="footer-box__link" href="#">
+                            <span>
+                                Политика конфиденциальности
+                            </span>
+                        </a>
+                        <a class="footer-box__link" href="#">
+                            <span>
+                                Разработка сайта:
+                            </span>
+                            <svg width="112" height="30" viewBox="0 0 112 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_302_190)">
+                                    <path d="M98.0188 26.0137L100.181 29.6631H98.0188V26.0137Z" fill="#FFB71B" />
+                                    <path
+                                        d="M111.175 9.06445V21.0282H104.146V23.6536H107.159L103.851 29.2204V29.6629H103.687L100.724 25.1454L103.417 21.0282H100.075L98.0186 24.4121V17.914H95.0477V29.6629H93.4632V26.8984H90.5808V9.06445H111.175Z"
+                                        fill="#FFB71B" />
+                                    <path d="M108.01 27.0202L111.175 21.6768V27.0202H108.01Z" fill="#FFB71B" />
+                                    <path d="M23.4381 25.6599V13.9658H19.0723V29.6042H29.0007V25.6599H23.4381V25.6599Z"
+                                        fill="white" />
+                                    <path
+                                        d="M38.2884 13.5693C33.2611 13.5693 29.6707 17.008 29.6707 21.7868C29.6707 26.5655 33.2611 30 38.2884 30C43.299 30 46.8725 26.574 46.8725 21.7868C46.8725 16.9912 43.299 13.5693 38.2884 13.5693ZM38.2884 25.9882C35.9075 25.9882 34.1586 24.2183 34.1586 21.7868C34.1586 19.351 35.9075 17.5769 38.2884 17.5769C40.6652 17.5769 42.3887 19.3384 42.3887 21.7868C42.3887 24.2352 40.6652 25.9882 38.2884 25.9882Z"
+                                        fill="white" />
+                                    <path
+                                        d="M58.853 13.9658V22.1706L52.848 13.9658H49.0764V29.6042H53.2567V21.1171L59.4641 29.6042H63.0292V13.9658H58.853Z"
+                                        fill="white" />
+                                    <path d="M66.0591 13.9658V29.6042H70.4249V13.9658H66.0591Z" fill="white" />
+                                    <path
+                                        d="M83.2315 13.9658V22.1706L77.2264 13.9658H73.4548V29.6042H77.6311V21.1171L83.8426 29.6042H87.4077V13.9658H83.2315Z"
+                                        fill="white" />
+                                    <path
+                                        d="M2.58677 5.35993C1.49529 5.17872 0.530248 5.01439 0.530248 4.01144C0.530248 3.16863 1.31411 2.60393 2.51095 2.60393C3.72033 2.60393 4.46201 3.1644 4.52951 4.10835H4.90873C4.84556 2.9537 3.93947 2.2373 2.51516 2.2373C1.10341 2.2373 0.142584 2.95792 0.142584 4.01985C0.142584 5.33463 1.33942 5.54115 2.49829 5.74342C3.60233 5.92884 4.69381 6.1311 4.69381 7.2942C4.69381 8.2213 3.84677 8.81969 2.5699 8.81969C1.30146 8.81969 0.505041 8.24236 0.399691 7.24363H0.0078125C0.113162 8.45729 1.0529 9.19475 2.56146 9.19475C4.07436 9.19475 5.08569 8.432 5.08569 7.28158C5.08569 5.79398 3.7583 5.55378 2.58677 5.35993Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.35467 8.68947C8.30959 8.68947 7.71112 8.0742 7.71112 7.01649V2.73076H10.1426V2.38101H7.71112V0.400391H7.31502V2.38101H5.77271V2.73076H7.31502V7.03334C7.31502 8.30178 8.07358 9.06875 9.32093 9.06875H10.1975V8.68947H9.35467Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.7209 2.36816V6.2114C16.7209 7.80855 15.7938 8.80729 14.2978 8.80729C12.8018 8.80729 11.8705 7.81274 11.8705 6.2114V2.36816H11.4744V6.25775C11.4744 8.04454 12.57 9.19497 14.2978 9.19497C16.0255 9.19497 17.117 8.04454 17.117 6.25775V2.36816H16.7209Z"
+                                        fill="white" />
+                                    <path
+                                        d="M25.2839 0V4.05394C24.7318 2.95407 23.6277 2.23767 22.2539 2.23767C20.2944 2.23767 18.8406 3.73366 18.8406 5.7185C18.8406 7.6949 20.2944 9.19511 22.2539 9.19511C23.6361 9.19511 24.7445 8.47028 25.2924 7.35779L25.3471 9.06448H25.68V0H25.2839ZM22.275 8.80743C20.5431 8.80743 19.2409 7.47576 19.2409 5.71851C19.2409 3.94859 20.5431 2.62536 22.275 2.62536C24.0238 2.62536 25.3007 3.93596 25.3007 5.71851C25.3007 7.49683 24.0238 8.80743 22.275 8.80743Z"
+                                        fill="white" />
+                                    <path
+                                        d="M28.1199 2.36812V9.0643H28.516V2.36812H28.1199ZM28.0271 0.189453V0.880567H28.6087V0.189453H28.0271Z"
+                                        fill="white" />
+                                    <path
+                                        d="M33.851 2.2373C31.862 2.2373 30.366 3.71223 30.366 5.71813C30.366 7.70716 31.862 9.19475 33.851 9.19475C35.8485 9.19475 37.3361 7.70717 37.3361 5.71813C37.3361 3.72488 35.8485 2.2373 33.851 2.2373ZM33.851 8.80706C32.0896 8.80706 30.7663 7.48805 30.7663 5.71814C30.7663 3.9356 32.0811 2.625 33.851 2.625C35.6209 2.625 36.9315 3.944 36.9315 5.71814C36.9315 7.48805 35.6209 8.80706 33.851 8.80706Z"
+                                        fill="white" />
+                                    <path
+                                        d="M8.65456 23.5347C9.62121 23.5347 10.4048 22.7511 10.4048 21.7844C10.4048 20.8178 9.62121 20.0342 8.65456 20.0342C7.68792 20.0342 6.9043 20.8178 6.9043 21.7844C6.9043 22.7511 7.68792 23.5347 8.65456 23.5347Z"
+                                        fill="#FFB71B" />
+                                    <path
+                                        d="M12.4897 23.5356V25.7817H8.49479C6.29505 25.7817 4.49564 23.9907 4.49564 21.7868C4.49564 19.5786 6.29506 17.7876 8.49479 17.7876C10.0751 17.7876 11.4404 18.7063 12.0894 20.0337H16.5226C15.7219 16.338 12.4308 13.5693 8.49479 13.5693C3.96044 13.5693 0.277344 17.244 0.277344 21.7868C0.277337 26.3211 3.96044 30 8.49479 30H16.7122V23.5356H12.4897Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_302_190">
+                                        <rect width="111.183" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="footer__top-link top-link" href="#header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <g clip-path="url(#clip0_47_555)">
+                                <path d="M18.4999 -1.19408e-06L13 5L17.4175 5L19.5824 5L24 5L18.4999 -1.19408e-06Z"
+                                    fill="white" />
+                                <line x1="18.5" y1="5" x2="18.5" y2="36" stroke="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_47_555">
+                                    <rect width="36" height="36" fill="white" transform="translate(0 36) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
