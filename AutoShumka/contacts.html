@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="css/u-mobile-menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header" data-aos="fade">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu menu">
+                        <ul class="menu-list">
+                            <li class="menu-list-item">
+                                <a class="menu-list__link" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list__link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-list__item menu-list__item--inner">
+                                <p class="menu-list__text">
+                                    <span>
+                                        Пакеты
+                                    </span>
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.776 0.999991L5.88802 5.96649L1 0.999991" stroke="white"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </p>
+                                <ul class="menu-list__sublist menu-sublist">
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Classic Comfort
+                                        </a>
+                                    </li>
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Enhanced Silence
+                                        </a>
+                                    </li>
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Ultimate Silence
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list__link" href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__wrapper">
+                        <div class="header__lang lang">
+                            <div class="lang__current">
+                                <p class="lang__current-text">
+                                    RU
+                                </p>
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.42093 0.579341C6.636 0.579341 6.85103 0.661458 7.015 0.825345L12.1747 5.98513C12.503 6.31335 12.503 6.84551 12.1747 7.17361C11.8466 7.5017 11.3146 7.5017 10.9863 7.17361L6.42093 2.60795L1.85551 7.17345C1.52728 7.50154 0.995282 7.50154 0.667215 7.17345C0.33883 6.84535 0.33883 6.31319 0.667215 5.98497L5.82686 0.825185C5.99091 0.661272 6.20595 0.579341 6.42093 0.579341Z"
+                                        fill="#fff" />
+                                </svg>
+                            </div>
+                            <ul class="lang__list">
+                                <li class="lang__list-item">
+                                    <a class="lang__list-link" href="#">
+                                        RU
+                                    </a>
+                                </li>
+                                <li class="lang__list-item">
+                                    <a class="lang__list-link" href="#">
+                                        UA
+                                    </a>
+                                </li>
+                                <li class="lang__list-item">
+                                    <a class="lang__list-link" href="#">
+                                        EN
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="header__call call" href="#">
+                            <span>
+                                Заказать звонок
+                            </span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_14_549)">
+                                    <path
+                                        d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_14_549">
+                                        <rect width="14" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="header__burger burger u-mobile-menu-switcher">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <main class="main">
+                <!-- Universal Mobile Menu -->
+                <div class="u-mobile-menu">
+                    <div class="u-mobile-menu__wrapper">
+                        <div class="u-mobile-menu__content">
+                            <a href="#" class="u-logo">
+                                <img src="images/logo.svg" alt="">
+                            </a>
+
+                            <!-- Категории -->
+                            <ul class="u-nav-group">
+                                <li class="u-highlight">
+                                    <a href="#">
+                                        <svg viewBox="0 0 448 512" width="20px" height="20px">
+                                            <path fill="currentColor"
+                                                d="M288 48v32c0 6.627-5.373 12-12 12H12C5.373 92 0 86.627 0 80V48c0-6.627 5.373-12 12-12h264c6.627 0 12 5.373 12 12zM12 220h424c6.627 0 12-5.373 12-12v-32c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12zm0 256h424c6.627 0 12-5.373 12-12v-32c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12zm264-184H12c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h264c6.627 0 12-5.373 12-12v-32c0-6.627-5.373-12-12-12z"
+                                                class=""></path>
+                                        </svg>
+                                        <span>Пакеты</span>
+                                    </a>
+
+                                    <!-- Level 1 -->
+                                    <div class="u-nav-wrapper">
+                                        <div class="u-nav-content">
+                                            <ul>
+                                                <li><a href="#"><span>Первый пункт</span></a></li>
+                                                <li><a href="#"><span>Второй пункт</span></a></li>
+                                                <li><a href="#"><span>Третий пункт</span></a></li>
+                                                <li><a href="#"><span>Четвертый пункт</span></a></li>
+                                                <li><a href="#"><span>Пятый пункт</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Level 1 End -->
+                                </li>
+                            </ul>
+
+                            <!-- Навигация -->
+                            <ul class="u-nav-group">
+                                <li><a href="index.html"><span>Главная</span></a></li>
+                                <li><a href="about.html"><span>О нас</span></a></li>
+                                <li><a href="news.html"><span>Услуги</span></a></li>
+                                <li><a href="contacts.html"><span>Контакты</span></a></li>
+                            </ul>
+
+                            <!-- Контакты -->
+                            <div class="u-contacts">
+                                <a href="tel:+77122762113" class="u-contacts__item"><i
+                                        class="fas fa-phone-alt"></i><span>+7
+                                        (7122) 762 113</span></a>
+                                <a href="mailto:Info-ecotrans@askartau.kz" class="u-contacts__item"><i
+                                        class="fas fa-envelope"></i><span>Info-ecotrans@askartau.kz</span></a>
+                            </div>
+
+                            <!-- Заказать звонок -->
+
+                            <div class="wrp">
+                                <a href="#application" class="callback_btn">
+                                    Заказать звонок
+                                </a>
+    
+                                <div class="header__lang lang">
+                                    <div class="lang__current">
+                                        <p class="lang__current-text">
+                                            RU
+                                        </p>
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.42093 0.579341C6.636 0.579341 6.85103 0.661458 7.015 0.825345L12.1747 5.98513C12.503 6.31335 12.503 6.84551 12.1747 7.17361C11.8466 7.5017 11.3146 7.5017 10.9863 7.17361L6.42093 2.60795L1.85551 7.17345C1.52728 7.50154 0.995282 7.50154 0.667215 7.17345C0.33883 6.84535 0.33883 6.31319 0.667215 5.98497L5.82686 0.825185C5.99091 0.661272 6.20595 0.579341 6.42093 0.579341Z"
+                                                fill="#265799 " />
+                                        </svg>
+                                    </div>
+                                    <ul class="lang__list">
+                                        <li class="lang__list-item">
+                                            <a class="lang__list-link" href="#">
+                                                RU
+                                            </a>
+                                        </li>
+                                        <li class="lang__list-item">
+                                            <a class="lang__list-link" href="#">
+                                                UA
+                                            </a>
+                                        </li>
+                                        <li class="lang__list-item">
+                                            <a class="lang__list-link" href="#">
+                                                EN
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="u-mobile-menu__close">Закрыть</button>
+                    </div>
+                </div>
+                <div class="u-menu-overlay"></div>
+                <!-- Universal Mobile Menu End -->
+            <section class="main__page-heading page-heading">
+                <img class="page-heading__img" src="images/page-head-img-1.jpg" alt="img">
+                <div class="container">
+                    <div class="page-heading__inner">
+                        <div class="page-heading__breadcrumbs breadcrumbs" data-aos="fade-right">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__list-item">
+                                    <a class="breadcrumbs__list-link" href="#">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    Контакты
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 class="page-heading__title" data-aos="fade-right">
+                            КОНТАКТЫ
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contacts-section contacts-section">
+                <div class="container">
+                    <div class="contacts-section__inner">
+                        <div class="contacts-section__box contacts-section-box" data-aos="fade-down">
+                            <div class="contacts-section-box__row">
+                                <div class="contacts-section-box__row-icon">
+                                    <svg width="14" height="19" viewBox="0 0 14 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.87423 0C3.29024 0 0.374512 2.91616 0.374512 6.50024C0.374512 9.95022 6.27182 18.0106 6.52292 18.3519L6.75727 18.6709C6.78467 18.7083 6.82831 18.7303 6.87423 18.7303C6.92085 18.7303 6.96421 18.7083 6.9919 18.6709L7.2261 18.3519C7.47735 18.0106 13.3745 9.95022 13.3745 6.50024C13.3745 2.91616 10.4583 0 6.87423 0ZM6.87423 4.17186C8.15838 4.17186 9.2026 5.21613 9.2026 6.50024C9.2026 7.78368 8.15833 8.82861 6.87423 8.82861C5.59083 8.82861 4.54586 7.78368 4.54586 6.50024C4.54586 5.21613 5.59079 4.17186 6.87423 4.17186Z"
+                                            fill="#2D65AF" />
+                                    </svg>
+                                </div>
+                                <p class="contacts-section-box__row-text">
+                                    Республика Казахстан, 060011 г. Атырау, улица Академик Бинеш Жарбосынов, строение 5
+                                </p>
+                            </div>
+                            <div class="contacts-section-box__row">
+                                <div class="contacts-section-box__row-icon">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_14_549)">
+                                            <path
+                                                d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                                fill="#2D65AF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_14_549">
+                                                <rect width="14" height="14" fill="#2D65AF" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="contacts-section-box__row-text">
+                                    Тел:
+                                    <a href="tel:+77122762113">
+                                        +7 (7122) 762 113
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="contacts-section-box__row">
+                                <div class="contacts-section-box__row-icon">
+                                    <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.1792 0.99115H4.82227V4.53775H17.1792V0.99115Z"
+                                            fill="url(#paint0_linear)"></path>
+                                        <path
+                                            d="M20.9303 5.81512H1.07534C0.481905 5.81512 0 6.29703 0 6.88766V14.7672H3.22673V9.98603H18.7761V14.7672H22V6.88766C21.9993 6.29703 21.5223 5.81512 20.9303 5.81512ZM3.05137 8.44281C2.57998 8.44281 2.19488 8.05981 2.19488 7.58632C2.19488 7.11353 2.57998 6.72983 3.05137 6.72983C3.52415 6.72983 3.90926 7.11353 3.90926 7.58632C3.90855 8.05911 3.52345 8.44281 3.05137 8.44281ZM19.6992 7.92092H4.82256V6.89187H19.6992V7.92092Z"
+                                            fill="url(#paint1_linear)"></path>
+                                        <path
+                                            d="M15.7567 19.5407H8.83601L6.22868 19.5568V11.2529H4.66932V19.7118C4.66932 19.7118 4.6111 21.0095 5.94318 21.0095C7.27736 21.0095 16.2252 21.0095 16.2252 21.0095C17.2073 21.0095 17.3335 20.259 17.3335 19.3323V11.2529H15.7742L15.7567 19.5407Z"
+                                            fill="url(#paint2_linear)"></path>
+                                        <path d="M14.8627 13.4997H7V14.8577H14.8627V13.4997Z"
+                                            fill="url(#paint3_linear)"></path>
+                                        <path d="M14.9358 16.5762H7.07031V17.9322H14.9358V16.5762Z"
+                                            fill="url(#paint4_linear)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="11.0008" y1="0.99115" x2="11.0008"
+                                                y2="4.53775" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#2D65AF"></stop>
+                                                <stop offset="1" stop-color="#265799"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear" x1="11" y1="5.81512" x2="11" y2="14.7672"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#2D65AF"></stop>
+                                                <stop offset="1" stop-color="#265799"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear" x1="11.0012" y1="11.2529" x2="11.0012"
+                                                y2="21.0095" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#2D65AF"></stop>
+                                                <stop offset="1" stop-color="#265799"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear" x1="10.9314" y1="13.4997" x2="10.9314"
+                                                y2="14.8577" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#2D65AF"></stop>
+                                                <stop offset="1" stop-color="#265799"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint4_linear" x1="11.0031" y1="16.5762" x2="11.0031"
+                                                y2="17.9322" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#2D65AF"></stop>
+                                                <stop offset="1" stop-color="#265799"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="contacts-section-box__row-text">
+                                    Факс:
+                                    <a href="tel:+77122762113">
+                                        +7 (7122) 762 113
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="contacts-section-box__row">
+                                <div class="contacts-section-box__row-icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_32_610)">
+                                            <path d="M10.6062 8.08208L16.0002 11.4921V4.52808L10.6062 8.08208Z"
+                                                fill="#2D65AF" />
+                                            <path d="M0 4.52808V11.4921L5.394 8.08208L0 4.52808Z" fill="#2D65AF" />
+                                            <path
+                                                d="M15 2.5H1.00003C0.501029 2.5 0.105029 2.872 0.0300293 3.351L8.00003 8.602L15.97 3.351C15.895 2.872 15.499 2.5 15 2.5Z"
+                                                fill="#2D65AF" />
+                                            <path
+                                                d="M9.68925 8.68606L8.27425 9.61806C8.19025 9.67306 8.09525 9.70006 7.99925 9.70006C7.90325 9.70006 7.80825 9.67306 7.72425 9.61806L6.30925 8.68506L0.03125 12.6561C0.10825 13.1311 0.50225 13.5001 0.99925 13.5001H14.9993C15.4963 13.5001 15.8903 13.1311 15.9673 12.6561L9.68925 8.68606Z"
+                                                fill="#2D65AF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_32_610">
+                                                <rect width="16" height="16" fill="#2D65AF" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="contacts-section-box__row-text">
+                                    E-mail:
+                                    <a href="mailto:Info-ecotrans@askartau.kz">
+                                        Info-ecotrans@askartau.kz
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <img class="contacts-section__img" src="images/map-image.jpg" alt="map" data-aos="fade">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" data-aos="fade">
+            <div class="container">
+                <div class="footer__body footer-body">
+                    <a class="footer-body__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <nav class="footer-body__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">
+                                    Пакеты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-body__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-body__footer-contacts footer-contacts">
+                        <a class="footer-contacts__link" href="tel:77122762113">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_14_549)">
+                                    <path
+                                        d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_14_549">
+                                        <rect width="14" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>
+                                +7 (7122) 762 113
+                            </span>
+                        </a>
+                        <a class="footer-contacts__link" href="mailto:email@domain.kz">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_32_610)">
+                                    <path d="M10.6062 8.08208L16.0002 11.4921V4.52808L10.6062 8.08208Z" fill="white" />
+                                    <path d="M0 4.52808V11.4921L5.394 8.08208L0 4.52808Z" fill="white" />
+                                    <path
+                                        d="M15 2.5H1.00003C0.501029 2.5 0.105029 2.872 0.0300293 3.351L8.00003 8.602L15.97 3.351C15.895 2.872 15.499 2.5 15 2.5Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.68925 8.68606L8.27425 9.61806C8.19025 9.67306 8.09525 9.70006 7.99925 9.70006C7.90325 9.70006 7.80825 9.67306 7.72425 9.61806L6.30925 8.68506L0.03125 12.6561C0.10825 13.1311 0.50225 13.5001 0.99925 13.5001H14.9993C15.4963 13.5001 15.8903 13.1311 15.9673 12.6561L9.68925 8.68606Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_32_610">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>
+                                email@domain.kz
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">
+                © 2023 autoshumka
+            </p>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/jquery.u-mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
