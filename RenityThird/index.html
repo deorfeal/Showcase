@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&family=Lexend+Deca:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="img">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list menu-list">
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    home
+                                </a>
+                            </li>
+                            <li class="menu-list__item menu-list__item--categories">
+                                <button class="menu-list__btn" type="button">
+                                    <span>
+                                        Categories
+                                    </span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <ul class="menu-list__submenu menu-list-submenu">
+                                    <li class="menu-list-submenu__item">
+                                        <button class="menu-list-submenu__btn" type="button" id="0">
+                                            Category Style 1
+                                        </button>
+                                        <ul class="menu-list-submenu__items" id="0">
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Full Width Header
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    BG Image Header
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Top Content Area
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-list-submenu__item">
+                                        <button class="menu-list-submenu__btn" type="button" id="1">
+                                            Category Style 2
+                                        </button>
+                                        <ul class="menu-list-submenu__items" id="1">
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Full Width Header 2
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    BG Image Header
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Top Content Area
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-list-submenu__item">
+                                        <button class="menu-list-submenu__btn" type="button" id="2">
+                                            Category Style 3
+                                        </button>
+                                        <ul class="menu-list-submenu__items" id="2">
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Full Width Header 3
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    BG Image Header
+                                                </button>
+                                            </li>
+                                            <li class="menu-list-submenu__items-item">
+                                                <button class="menu-list-submenu__items-btn" type="button">
+                                                    Top Content Area
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    equipments
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    News Blog
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link" href="#">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25"
+                                    stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z"
+                                    stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a class="user-nav__link btn" href="#">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span>
+                                start renting
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__section-top section-top" style="background-image: url(images/section-top-bg.jpg);">
+                <div class="container">
+                    <div class="section-top__inner">
+                        <h1 class="section-top__title">
+                            search tourist equipment’s
+                        </h1>
+                        <div class="section-top__buttons">
+                            <button class="section-top__buttons-btn section-top__buttons-btn--active" type="button"
+                                id="0">
+                                All
+                            </button>
+                            <button class="section-top__buttons-btn" type="button" id="0">
+                                For Rent
+                            </button>
+                            <button class="section-top__buttons-btn" type="button" id="0">
+                                For Sale
+                            </button>
+                            <button class="section-top__buttons-btn" type="button" id="0">
+                                Buy
+                            </button>
+                        </div>
+                        <form class="section-top__deal-form deal-form" action="#">
+                            <div class="deal-form__inner">
+                                <div class="deal-form__custom-select custom-select" style="width:200px;">
+                                    <select>
+                                        <option value="0">Select Equipment Type</option>
+                                        <option value="1">Type 1</option>
+                                        <option value="2">Type 2</option>
+                                    </select>
+                                </div>
+                                <div class="deal-form__datapicker">
+                                    <input type="text" id="date-range" value="15/10/2022 - 28/11/2022">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2V6" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 2V6" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 10H21" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <button class="deal-form__btn" type="button">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span>
+                                        FIND NOW
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="deal-form__buttons">
+                                <label class="container">
+                                    Owner Super Deliver
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">
+                                    Self Pick-up
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__brands brands">
+                <div class="container">
+                    <h4 class="brands__title">
+                        World’s known brands equipment's
+                    </h4>
+                    <div class="brands__inner">
+                        <ul class="brands__list">
+                            <li class="brands__list-item">
+                                <img class="brands__list-img" src="images/brands-img-1.png" alt="brand">
+                            </li>
+                            <li class="brands__list-item">
+                                <img class="brands__list-img" src="images/brands-img-2.png" alt="brand">
+                            </li>
+                            <li class="brands__list-item">
+                                <img class="brands__list-img" src="images/brands-img-3.png" alt="brand">
+                            </li>
+                            <li class="brands__list-item">
+                                <img class="brands__list-img" src="images/brands-img-4.png" alt="brand">
+                            </li>
+                            <li class="brands__list-item">
+                                <img class="brands__list-img" src="images/brands-img-5.png" alt="brand">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__about about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__posters posters">
+                            <div class="posters__img">
+                                <img class="posters__img-image" src="images/posters-img-1.jpg" alt="img">
+                            </div>
+                            <div class="posters__img">
+                                <img class="posters__img-image" src="images/posters-img-2.jpg" alt="img">
+                            </div>
+                            <div class="posters__customers customers">
+                                <p class="customers__text">
+                                    users that recently rent equipments
+                                </p>
+                                <ul class="customers__list">
+                                    <li class="customers__list-item">
+                                        <img class="customers__list-img" src="images/customers-img-1.png" alt="img">
+                                    </li>
+                                    <li class="customers__list-item">
+                                        <img class="customers__list-img" src="images/customers-img-2.png" alt="img">
+                                    </li>
+                                    <li class="customers__list-item">
+                                        <img class="customers__list-img" src="images/customers-img-3.png" alt="img">
+                                    </li>
+                                    <li class="customers__list-item">
+                                        <img class="customers__list-img" src="images/customers-img-4.png" alt="img">
+                                    </li>
+                                    <li class="customers__list-item">
+                                        <p class="customers__list-count">
+                                            9+
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about__body about-body">
+                            <div class="about-body__heading heading">
+                                <p class="heading__text">
+                                    Tourists Travel Equipment Rental
+                                    <span></span>
+                                </p>
+                                <h2 class="heading__title">
+                                    about renity tourists
+                                    equipments rental
+                                </h2>
+                            </div>
+                            <p class="about-body__text">
+                                Cursus ullamcorper ultricies amet imperdiet amet risus volutpat autms. Nibh iaculis ut
+                                nam libero tellus sem interdum. Aed donec suspendisse. Sit vitae non tellus aliquam.
+                            </p>
+                            <ul class="about-body__list">
+                                <li class="about-body__list-item">
+                                    <p class="about-body__list-text">
+                                        Malesuada enim sed
+                                    </p>
+                                </li>
+                                <li class="about-body__list-item">
+                                    <p class="about-body__list-text">
+                                        Neque urna mattis ipsum
+                                    </p>
+                                </li>
+                                <li class="about-body__list-item">
+                                    <p class="about-body__list-text">
+                                        Fermentum justo erosd
+                                    </p>
+                                </li>
+                                <li class="about-body__list-item">
+                                    <p class="about-body__list-text">
+                                        Kagnis turpis integer naeque
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="about-body__bottom about-body-bottom">
+                                <div class="about-body-bottom__item">
+                                    <div class="about-body-bottom__item-icon">
+                                        <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M42 5C42 4.35708 42.3511 4 43 4H50C50.649 4 51 4.35708 51 5V12H55V5C55 2.21363 52.8122 0 50 0H43C40.1878 0 38 2.21363 38 5V12H42V5Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M24 62C23.1373 60.7001 23 59.6287 23 58V29H5C2.45979 29 0 30.5367 0 33V58C0 60.2466 1.77043 61.6893 4 62V64C4 65.0574 4.90963 66 6 66C7.09037 66 8 65.0574 8 64V62H24ZM8 36C8 34.9426 8.90963 34 10 34C11.0904 34 12 34.9426 12 36V55C12 56.0574 11.0904 57 10 57C8.90963 57 8 56.0574 8 55V36Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M18 22C18 21.366 18.3471 21 19 21H22C22 19.714 22.4603 18.0877 23 17H19C16.1705 17 14 19.2524 14 22V25H18V22Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M61 16H31C28.5098 16 26 17.5218 26 20V58C26 60.2601 27.8143 61.6875 30 62V64C30 65.0637 30.9311 66 32 66C33.0689 66 34 65.0637 34 64V62H58V64C58 65.0637 58.9311 66 60 66C61.0689 66 62 65.0637 62 64V62C64.1855 61.6875 66 60.2601 66 58V20C66 17.5217 63.4902 16 61 16ZM38 55C38 56.0637 37.0689 57 36 57C34.9311 57 34 56.0637 34 55V23C34 21.9363 34.9311 21 36 21C37.0689 21 38 21.9363 38 23V55ZM56 57C54.9311 57 54 56.0637 54 55V23C54 21.9363 54.9311 21 56 21C57.0689 21 58 21.9363 58 23V55C58 56.0637 57.0689 57 56 57Z"
+                                                fill="#F5AB1A" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="about-body-bottom__item-title">
+                                        tourists renting
+                                        equipment leaders
+                                    </h4>
+                                </div>
+                                <div class="about-body-bottom__item">
+                                    <div class="about-body-bottom__item-icon">
+                                        <svg width="72" height="66" viewBox="0 0 72 66" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.2728 15.1781L40.414 13.1357C41.9301 10.4225 45.2936 9.37671 48.0756 10.6858L50.6199 3.81181C50.7621 3.42791 50.7269 3.00111 50.524 2.64529C50.321 2.28947 49.9708 2.04035 49.5665 1.96454L39.2275 0.0241421C38.7885 -0.0582222 38.3363 0.072812 38.0106 0.376686C37.6849 0.680561 37.5247 1.12093 37.5794 1.56177L39.2728 15.1781Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M71.2553 48.9654L57.4085 31.5312C56.2647 30.0911 54.1856 29.7967 52.6829 30.862L46.2616 35.4145L42.8879 31.4724C42.1384 31.851 41.2747 31.9845 40.4335 31.8299L29.1084 29.7295L40.195 28.8518C41.1578 28.7757 42.0182 28.2254 42.4874 27.386L48.0832 17.3715C48.8567 15.9873 48.3551 14.2415 46.9626 13.4725C45.5703 12.7031 43.8143 13.202 43.0409 14.5866L38.196 23.2572L28.6512 24.0128L34.6726 21.8727L34.037 21.13C32.498 19.3317 29.784 19.1143 27.9751 20.6444L22.4022 25.3588C21.489 26.1313 20.9416 27.2479 20.8923 28.4391C20.8429 29.6302 21.296 30.7877 22.1424 31.6324L37.1665 46.6277C37.9445 47.4043 39.0321 47.7922 40.1291 47.6846C40.985 47.6006 41.775 47.2208 42.3712 46.6251C42.3734 46.6235 42.3756 46.6224 42.3778 46.6209L54.0188 38.3676L65.8232 53.2304C67.0084 54.7228 69.1846 54.9757 70.6841 53.7986C72.184 52.6207 72.4397 50.4569 71.2553 48.9654Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M21.9859 18.8664C25.5016 18.8664 28.3517 16.0328 28.3517 12.5374C28.3517 9.04206 25.5016 6.2085 21.9859 6.2085C18.4702 6.2085 15.6201 9.04206 15.6201 12.5374C15.6201 16.0328 18.4702 18.8664 21.9859 18.8664Z"
+                                                fill="#F5AB1A" />
+                                            <path
+                                                d="M52.4797 42.3901L39.0749 51.9852L15.5809 28.6271C16.6694 28.858 17.7503 28.5161 18.4984 27.7724C19.7415 26.5364 19.7415 24.5326 18.4984 23.2967L10.394 15.2393C9.15084 14.0034 7.13545 14.0037 5.89233 15.2393C5.10014 16.0271 4.81505 17.1261 5.03251 18.1399L4.07542 17.1885C3.14311 16.2616 1.63153 16.2616 0.699228 17.1885C-0.233076 18.1154 -0.233076 19.6182 0.699228 20.5451L35.149 54.7954L25.5029 61.7002C24.4328 62.4659 24.1899 63.9493 24.9603 65.0133C25.7309 66.0772 27.223 66.3185 28.2927 65.5526L38.5697 58.1964L45.7195 65.3048C46.652 66.2319 48.1634 66.2318 49.0957 65.3048C50.0282 64.3779 50.0282 62.8751 49.0957 61.9482L42.4957 55.3863L55.2698 46.2428C56.3397 45.477 56.5827 43.9937 55.8122 42.9297C55.0419 41.8656 53.5501 41.6242 52.4797 42.3901Z"
+                                                fill="#F5AB1A" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="about-body-bottom__item-title">
+                                        smart solutions
+                                        for smarter users
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__equipments equipments" style="background-image: url(images/equipments-bg.jpg);">
+                <div class="container">
+                    <div class="equipments__heading heading">
+                        <p class="heading__text">
+                            Tourists Travel Equipment Rental
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            trending equipments
+                        </h2>
+                    </div>
+                    <div class="equipments__inner">
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-1.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    perfect Camping Chair
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-2.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    Camp - 3/4 Person
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-3.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    Hard Hat Cap
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-4.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    20×50 Binoculars
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-5.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    Ultimate Pro Knife
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-6.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    LED Light With Lenses
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-7.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    Hiking Bag - 75L
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                        <div class="equipments__item equipments-item">
+                            <a class="equipments-item__product equipments-item-product" href="#">
+                                <div class="equipments-item-product__img">
+                                    <img class="equipments-item-product__img-image" src="images/equipments-img-8.png"
+                                        alt="img">
+                                </div>
+                            </a>
+                            <div class="equipments-item__inner">
+                                <h4 class="equipments-item__title">
+                                    LifeStraw Water Filter
+                                </h4>
+                                <p class="equipments-item__text">
+                                    Price starts from
+                                    <span>
+                                        $340.00
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="equipments-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    View All Deals
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__categories categories">
+                <div class="container">
+                    <div class="categories__heading heading">
+                        <p class="heading__text">
+                            Easy Audio Video Rental Services
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            easy search by category
+                        </h2>
+                    </div>
+                    <div class="categories__inner">
+                        <div class="categories__item categories-item">
+                            <div class="categories-item__top categories-item-top">
+                                <div class="categories-item-top__icon">
+                                    <svg width="98" height="80" viewBox="0 0 98 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.0348 80H64.9652L49.0004 55.2224L33.0348 80Z" fill="#490083" />
+                                        <path
+                                            d="M95.7733 75.5559H92.5302L51.6529 12.5259L57.5525 3.43009C58.2206 2.39902 57.9245 1.02289 56.891 0.356393C55.8584 -0.310105 54.4792 -0.0146973 53.8111 1.01638L49.0004 8.43493L44.1889 1.01638C43.5217 -0.0146973 42.1424 -0.310105 41.109 0.356393C40.0755 1.02289 39.7794 2.39902 40.4475 3.43009L46.3463 12.5259L5.46977 75.5559H2.22755C0.997545 75.5559 0 76.5503 0 77.7775C0 79.0047 0.997545 80 2.22755 80H27.7388L47.1277 49.9091C47.5624 49.3102 48.259 48.9554 49.0004 48.9554C49.7418 48.9554 50.4376 49.3102 50.8731 49.9091L70.2612 80H95.7733C97.0033 80 98 79.0047 98 77.7775C98 76.5503 97.0033 75.5559 95.7733 75.5559Z"
+                                            fill="#490083" />
+                                    </svg>
+                                </div>
+                                <h4 class="categories-item-top__title">
+                                    protection equipments
+                                </h4>
+                            </div>
+                            <ul class="categories-item__list">
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Helmets
+                                    </span>
+                                    <span>
+                                        19
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Tents 3/4 Persons
+                                    </span>
+                                    <span>
+                                        6
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Guards & Traps
+                                    </span>
+                                    <span>
+                                        11
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Tent Accessories
+                                    </span>
+                                    <span>
+                                        8
+                                    </span>
+                                </li>
+                            </ul>
+                            <a class="categories-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    view all
+                                </span>
+                            </a>
+                        </div>
+                        <div class="categories__item categories-item">
+                            <div class="categories-item__top categories-item-top">
+                                <div class="categories-item-top__icon">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_432_119)">
+                                            <path
+                                                d="M57.9998 12H51.9998V6C51.9961 2.68799 49.3125 0.0036621 45.9998 0H33.9998C30.6877 0.0036621 28.0034 2.68799 27.9998 6V12H21.9998C16.4795 12.0059 12.0059 16.4795 12 21.9998V33.9998C12.0037 37.3125 14.688 39.9961 18 39.9998H27.9998V38.0002C27.9998 36.8958 28.8955 36 30 36C31.1045 36 32.0002 36.8958 32.0002 38.0002V39.9998H48V38.0002C48 36.8958 48.8958 36 50.0002 36C51.1047 36 51.9998 36.8958 51.9998 38.0002V39.9998H62.0002C65.3123 39.9961 67.9966 37.3125 68.0002 33.9998V21.9998C67.9944 16.4795 63.5208 12.0059 57.9998 12ZM48 12H32.0002V6C32.0017 4.89624 32.896 4.00122 33.9998 3.99976H45.9998C47.1042 4.00122 47.9985 4.89624 48 6V12Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M74.0002 48H72V69.9998C71.9795 70.6091 71.918 71.2156 71.8162 71.8162C76.552 70.9409 79.9907 66.8152 80.0002 62.0002V54C79.9966 50.688 77.3123 48.0037 74.0002 48Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M8.00024 48H6C2.68799 48.0037 0.0036621 50.688 0 54V62.0002C0.00878906 66.8152 3.44824 70.9409 8.18335 71.8162C8.08228 71.2156 8.02075 70.6091 8.00024 69.9998V48Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M51.9998 44.0002V50.0002C51.9998 51.1047 51.1047 51.9998 50.0002 51.9998C48.8958 51.9998 48 51.1047 48 50.0002V44.0002H32.0002V50.0002C32.0002 51.1047 31.1045 51.9998 30 51.9998C28.8955 51.9998 27.9998 51.1047 27.9998 50.0002V44.0002H18C15.8291 43.9929 13.7212 43.2722 12 41.9495V69.9998C12.0059 75.5208 16.4795 79.9944 21.9998 80.0002H57.9998C63.5208 79.9944 67.9944 75.5208 68.0002 69.9998V41.9495C66.2791 43.2722 64.1704 43.9929 62.0002 44.0002H51.9998Z"
+                                                fill="#490083" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_432_119">
+                                                <rect width="80" height="80" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h4 class="categories-item-top__title">
+                                    Backpacks
+                                </h4>
+                            </div>
+                            <ul class="categories-item__list">
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Alpine
+                                    </span>
+                                    <span>
+                                        19
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Hiking
+                                    </span>
+                                    <span>
+                                        6
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Waterproof
+                                    </span>
+                                    <span>
+                                        11
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Accessories
+                                    </span>
+                                    <span>
+                                        8
+                                    </span>
+                                </li>
+                            </ul>
+                            <a class="categories-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    view all
+                                </span>
+                            </a>
+                        </div>
+                        <div class="categories__item categories-item">
+                            <div class="categories-item__top categories-item-top">
+                                <div class="categories-item-top__icon">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_432_128)">
+                                            <path
+                                                d="M56.3472 13.7658L55.7119 14.4011L65.598 24.2872C72.9856 17.6969 63.6722 7.19755 56.3472 13.7658Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M74.5195 5.47969C67.2132 -1.82656 55.3672 -1.82656 48.061 5.47969L39.1704 14.3703L65.6289 40.8289L74.5195 31.9383C81.8257 24.6321 81.8257 12.7859 74.5195 5.47969ZM69.5477 26.9666L65.598 30.9163L49.0829 14.4012L53.0326 10.4515C64.3886 -0.0736316 80.0703 15.6178 69.5477 26.9666Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M5.4806 74.5188C11.6078 80.6463 21.0251 81.7059 28.3209 77.346L2.65332 51.6785C-1.65659 58.8653 -0.714264 68.3239 5.4806 74.5188Z"
+                                                fill="#490083" />
+                                            <path
+                                                d="M35.8552 17.6853C28.9171 11.2441 19.3228 20.8498 25.7611 27.7797C18.8234 21.3386 9.22846 30.9438 15.6669 37.8738C12.8795 35.0864 8.3602 35.0864 5.57276 37.8738C2.78532 40.6613 2.78532 45.1805 5.57276 47.968L31.97 74.3654C38.8942 80.802 48.5079 71.2125 42.0642 64.2711C49.0017 70.7122 58.5968 61.1069 52.1583 54.1769C54.9458 56.9643 59.465 56.9643 62.2525 54.1769C65.0399 51.3895 65.0399 46.8702 62.2525 44.0827C62.2526 44.0827 35.8552 17.6853 35.8552 17.6853ZM50.5573 49.2614L47.2428 52.5759L43.9571 49.2901L30.44 62.8072L27.1256 59.4927L47.4305 39.1877L50.7449 42.5022L47.2716 45.9755L50.5573 49.2614Z"
+                                                fill="#490083" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_432_128">
+                                                <rect width="80" height="80" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h4 class="categories-item-top__title">
+                                    sleeping Bags & mats
+                                </h4>
+                            </div>
+                            <ul class="categories-item__list">
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Camping Mats
+                                    </span>
+                                    <span>
+                                        19
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Sleeping Bags
+                                    </span>
+                                    <span>
+                                        6
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Self-Inflating Pads
+                                    </span>
+                                    <span>
+                                        11
+                                    </span>
+                                </li>
+                                <li class="categories-item__list-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                            stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 4L12 14.01L9 11.01" stroke="#515151" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Foaming Pads
+                                    </span>
+                                    <span>
+                                        8
+                                    </span>
+                                </li>
+                            </ul>
+                            <a class="categories-item__link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    view all
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__steps steps">
+                <div class="container">
+                    <div class="steps__heading heading">
+                        <p class="heading__text">
+                            Tourists Travel Equipment Rental
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            easy steps for rent your
+                            favorite equipment
+                        </h2>
+                    </div>
+                    <div class="steps__inner">
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__icon steps-item-icon">
+                                <svg width="263" height="244" viewBox="0 0 263 244" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M70.3212 182.271C45.004 169.09 26.9255 155.17 20.6347 138.211C14.3439 121.252 19.638 100.798 30.7135 89.6682C41.9435 78.4487 58.4696 76.7843 69.7206 75.2303C81.0368 73.4328 87.3023 71.8907 112.826 61.8906C138.26 51.7361 183.044 33.547 204.036 43.8714C224.784 54.1304 222.295 93.2893 210.859 127.689C199.423 162.089 179.243 191.791 153.381 200.134C127.518 208.477 95.484 195.54 70.3212 182.271Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="263" height="244" viewBox="0 0 263 244" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M70.3212 182.271C45.004 169.09 26.9255 155.17 20.6347 138.211C14.3439 121.252 19.638 100.798 30.7135 89.6682C41.9435 78.4487 58.4696 76.7843 69.7206 75.2303C81.0368 73.4328 87.3023 71.8907 112.826 61.8906C138.26 51.7361 183.044 33.547 204.036 43.8714C224.784 54.1304 222.295 93.2893 210.859 127.689C199.423 162.089 179.243 191.791 153.381 200.134C127.518 208.477 95.484 195.54 70.3212 182.271Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="100" height="50" viewBox="0 0 100 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M96.9695 0H3.03047C1.35938 0 0 1.38176 0 3.08014V31.7218C0 33.4202 1.35938 34.8018 3.03047 34.8018H14.1113L14.1326 44.5869C14.134 45.1949 14.4988 45.741 15.0547 45.9663C15.2309 46.0377 15.4148 46.0723 15.5973 46.0723C15.9904 46.0723 16.3758 45.9113 16.6578 45.6107L20.9824 41L24.64 49.13C24.8861 49.677 25.4174 50 25.973 50C26.1768 50 26.384 49.9565 26.5812 49.8648C27.317 49.523 27.6408 48.6397 27.3043 47.8919L23.6467 39.7619L29.907 39.4542C30.5047 39.4249 31.0246 39.0291 31.2205 38.4546C31.4162 37.8801 31.2488 37.2421 30.7971 36.8434L28.4852 34.802H96.9695C98.6406 34.802 100 33.4202 100 31.722V3.08034C100 1.38177 98.6406 0 96.9695 0ZM21.3441 36.8942C20.9684 36.9126 20.6141 37.0772 20.3547 37.3539L17.0545 40.8727L17.0279 28.629L26.1221 36.6593L21.3441 36.8942ZM97.0703 31.7218C97.0703 31.7784 97.0252 31.8243 96.9695 31.8243H68.6869V11.0368C68.6869 10.2147 68.0311 9.54809 67.2221 9.54809C66.4131 9.54809 65.7572 10.2147 65.7572 11.0368V31.8245H25.1133L16.5164 24.2334C16.083 23.8505 15.4691 23.7606 14.9465 24.0033C14.424 24.2461 14.0895 24.7767 14.0908 25.3605L14.1049 31.8245H3.03047C2.9748 31.8245 2.92969 31.7784 2.92969 31.722V3.08034C2.92969 3.02377 2.9748 2.97791 3.03047 2.97791H65.7572V4.67152C65.7572 5.49371 66.4131 6.16028 67.2221 6.16028C68.0311 6.16028 68.6869 5.49371 68.6869 4.67152V2.97791H96.9695C97.0252 2.97791 97.0703 3.02377 97.0703 3.08034V31.7218Z"
+                                        fill="white" />
+                                    <path
+                                        d="M91.7428 24.3045L87.7119 20.208C88.5502 18.9523 89.0404 17.4383 89.0404 15.81C89.0404 11.4795 85.5738 7.95654 81.3131 7.95654C77.0524 7.95654 73.5858 11.4797 73.5858 15.81C73.5858 20.1403 77.0524 23.6635 81.3131 23.6635C82.9152 23.6635 84.4049 23.1653 85.6404 22.3133L89.6713 26.4098C89.9572 26.7006 90.3322 26.8459 90.707 26.8459C91.0818 26.8459 91.4568 26.7006 91.7428 26.4098C92.3149 25.8284 92.3149 24.8859 91.7428 24.3045ZM81.3131 20.6864C78.6676 20.6864 76.5154 18.4989 76.5154 15.8104C76.5154 13.1219 78.6678 10.9345 81.3131 10.9345C83.9584 10.9345 86.1108 13.1219 86.1108 15.8104C86.1108 18.4987 83.9586 20.6864 81.3131 20.6864Z"
+                                        fill="white" />
+                                    <path
+                                        d="M7.72736 6.36475C6.91837 6.36475 6.26251 7.03131 6.26251 7.8535V26.9479C6.26251 27.7701 6.91837 28.4367 7.72736 28.4367C8.53634 28.4367 9.1922 27.7701 9.1922 26.9479V7.8535C9.1922 7.03151 8.53654 6.36475 7.72736 6.36475Z"
+                                        fill="white" />
+                                </svg>
+                                <p class="steps-item-icon__count">
+                                    01
+                                </p>
+                            </div>
+                            <div class="steps-item__inner">
+                                <h4 class="steps-item__title">
+                                    search equipment
+                                </h4>
+                                <p class="steps-item__text">
+                                    Malesuada enim sed mauris. Est vitae
+                                    faucibus lectus amets dui fringila matis
+                                    sed ipsum vitae donec.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__icon steps-item-icon">
+                                <svg width="263" height="244" viewBox="0 0 263 244" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M70.3212 182.271C45.004 169.09 26.9255 155.17 20.6347 138.211C14.3439 121.252 19.638 100.798 30.7135 89.6682C41.9435 78.4487 58.4696 76.7843 69.7206 75.2303C81.0368 73.4328 87.3023 71.8907 112.826 61.8906C138.26 51.7361 183.044 33.547 204.036 43.8714C224.784 54.1304 222.295 93.2893 210.859 127.689C199.423 162.089 179.243 191.791 153.381 200.134C127.518 208.477 95.484 195.54 70.3212 182.271Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="263" height="244" viewBox="0 0 263 244" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M70.3212 182.271C45.004 169.09 26.9255 155.17 20.6347 138.211C14.3439 121.252 19.638 100.798 30.7135 89.6682C41.9435 78.4487 58.4696 76.7843 69.7206 75.2303C81.0368 73.4328 87.3023 71.8907 112.826 61.8906C138.26 51.7361 183.044 33.547 204.036 43.8714C224.784 54.1304 222.295 93.2893 210.859 127.689C199.423 162.089 179.243 191.791 153.381 200.134C127.518 208.477 95.484 195.54 70.3212 182.271Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="70" height="50" viewBox="0 0 70 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.6176 25C25.8816 25 28.8235 22.1417 28.8235 18C28.8235 13.8579 25.8816 10 21.6176 10C17.3537 10 13.3823 13.8579 13.3823 18C13.3879 22.1399 17.356 24.9946 21.6176 25ZM21.6176 13C24.2319 13 25.7353 15.46 25.7353 18C25.7353 20.5396 24.2319 22 21.6176 22C19.0029 22 16.4706 20.5396 16.4706 18C16.4715 15.4604 19.0033 13.0009 21.6176 13Z"
+                                        fill="white" />
+                                    <path
+                                        d="M20.5882 26.9999C17.5715 26.9779 14.4556 27.8616 12.3529 29.9999C10.2137 32.1571 9.26471 35.8134 9.26471 38.9999C9.26694 39.7776 9.50752 39.9977 10.2941 39.9999H30.8824C31.669 39.9977 31.9095 39.7776 31.9118 38.9999C31.9118 35.8134 30.9627 32.1571 28.8235 29.9999C26.7209 27.8616 23.6054 26.9779 20.5882 26.9999ZM12.3529 36.9999C12.5972 35.1564 13.1006 33.3332 14.4118 31.9999C15.9899 30.4212 18.343 29.9999 20.5882 29.9999C22.8335 29.9999 25.1866 30.4212 26.7647 31.9999C28.0732 33.3345 28.5766 35.1573 28.8235 36.9999H12.3529Z"
+                                        fill="white" />
+                                    <path
+                                        d="M62.7941 0H7.20588C3.17952 0.00176554 0.00182292 3.10037 0 7V43C0.00182292 46.8996 3.17952 49.9982 7.20588 50H62.7941C66.8205 49.9982 69.9982 46.8996 70 43V7C69.9982 3.10037 66.8205 0.00176554 62.7941 0ZM66.9118 43C66.9049 45.3371 65.2072 46.9934 62.7941 47H7.20588C4.7928 46.9934 3.09507 45.3371 3.08824 43V7C3.09507 4.66287 4.7928 3.00662 7.20588 3H62.7941C65.2072 3.00662 66.9049 4.66287 66.9118 7V43Z"
+                                        fill="white" />
+                                    <path
+                                        d="M59.7059 24H42.2059C41.4146 24 41.1765 25.1712 41.1765 26C41.1765 26.8288 41.4146 27 42.2059 27H59.7059C60.4971 27 60.7353 26.8288 60.7353 26C60.7353 25.1712 60.4971 24 59.7059 24Z"
+                                        fill="white" />
+                                    <path
+                                        d="M59.7059 33H42.2059C41.4146 33 41.1765 34.1712 41.1765 35C41.1765 35.8288 41.4146 36 42.2059 36H59.7059C60.4971 36 60.7353 35.8288 60.7353 35C60.7353 34.1712 60.4971 33 59.7059 33Z"
+                                        fill="white" />
+                                    <path
+                                        d="M59.7059 15H42.2059C41.4146 15 41.1765 16.1712 41.1765 17C41.1765 17.8288 41.4146 18 42.2059 18H59.7059C60.4971 18 60.7353 17.8288 60.7353 17C60.7353 16.1712 60.4971 15 59.7059 15Z"
+                                        fill="white" />
+                                </svg>
+                                <p class="steps-item-icon__count">
+                                    02
+                                </p>
+                            </div>
+                            <div class="steps-item__inner">
+                                <h4 class="steps-item__title">
+                                    contact the seller
+                                </h4>
+                                <p class="steps-item__text">
+                                    Malesuada enim sed mauris. Est vitae
+                                    faucibus lectus amets dui fringila matis
+                                    sed ipsum vitae donec.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__icon steps-item-icon">
+                                <svg width="212" height="160" viewBox="0 0 212 160" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M189.384 101.401C204.72 77.3276 213.416 56.2329 210.384 38.4008C207.353 20.5688 192.541 5.50221 177.384 1.40085C162.049 -2.70052 146.905 4.12115 136.384 8.40085C125.686 12.5022 119.488 14.2995 92.3845 18.4008C65.2805 22.3239 17.4015 28.9639 4.38445 48.4008C-8.45426 67.6594 13.2805 100.328 40.3844 124.401C67.4884 148.474 99.8154 164.107 126.384 158.401C152.953 152.695 174.228 125.474 189.384 101.401Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="212" height="160" viewBox="0 0 212 160" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M189.384 101.401C204.72 77.3276 213.416 56.2329 210.384 38.4008C207.353 20.5688 192.541 5.50221 177.384 1.40085C162.049 -2.70052 146.905 4.12115 136.384 8.40085C125.686 12.5022 119.488 14.2995 92.3845 18.4008C65.2805 22.3239 17.4015 28.9639 4.38445 48.4008C-8.45426 67.6594 13.2805 100.328 40.3844 124.401C67.4884 148.474 99.8154 164.107 126.384 158.401C152.953 152.695 174.228 125.474 189.384 101.401Z"
+                                        fill="#490083" />
+                                </svg>
+                                <svg width="73" height="57" viewBox="0 0 73 57" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M62 20.0001H60L56 12.0001C54.8084 9.2146 53.508 6.69822 51 5.00014C48.492 3.30206 45.0274 2.07114 42 2.00014C41.7894 1.62743 41.3693 1.21652 41 1.00014C40.6307 0.783759 40.4279 1.00161 40 1.00014H33C32.5721 1.00161 32.3693 0.783759 32 1.00014C31.6307 1.21652 31.2106 1.62743 31 2.00014C27.9726 2.07114 24.508 3.30206 22 5.00014C19.492 6.69822 18.1916 9.2146 17 12.0001L13 20.0001H11C8.09687 20.0034 5.05283 21.9461 3 24.0001C0.947174 26.0542 0.00322034 28.0953 0 31.0001V52.0001C0 53.2916 0.087323 55.0869 1 56.0001C1.91268 56.9134 3.70928 57.0001 5 57.0001H68C69.2907 57.0001 71.0873 56.9134 72 56.0001C72.9127 55.0869 73 53.2916 73 52.0001V31.0001C72.9968 28.0953 72.0528 26.0542 70 24.0001C67.9472 21.9461 64.9031 20.0034 62 20.0001ZM43 5.00014C45.4923 5.13196 47.9535 5.57062 50 7.00014C52.0465 8.42966 53.0173 10.7046 54 13.0001L57 20.0001H55L52 14.0001C51.2034 12.1453 49.6493 10.163 48 9.00014C46.3507 7.83728 45.0136 7.1267 43 7.00014V5.00014ZM33 3.00014H40V7.00014H33V3.00014ZM31 10.0001H42C43.6669 9.99985 45.6083 10.0822 47 11.0001C48.3917 11.9181 49.3433 13.4672 50 15.0001L52 20.0001H21L23 15.0001C23.6568 13.4672 24.6083 11.9181 26 11.0001C27.3917 10.0822 29.3331 9.99985 31 10.0001ZM19 13.0001C19.9827 10.7046 20.9535 8.42966 23 7.00014C25.0465 5.57062 27.5077 5.13196 30 5.00014V7.00014C27.9864 7.1267 26.6493 7.83728 25 9.00014C23.3507 10.163 21.7966 12.1453 21 14.0001L18 20.0001H16L19 13.0001ZM71 52.0001C71 52.6459 70.4563 53.5435 70 54.0001C69.5437 54.4568 68.6454 55.0001 68 55.0001H5C4.35464 55.0001 3.45634 54.4568 3 54.0001C2.54366 53.5435 2 52.6459 2 52.0001V51.0001H71V52.0001ZM71 48.0001H2V31.0001C2.0029 28.7409 3.40344 26.5976 5 25.0001C6.59656 23.4026 8.74213 23.003 11 23.0001H62C64.2579 23.003 66.4034 23.4026 68 25.0001C69.5966 26.5976 70.9971 28.7409 71 31.0001V48.0001Z"
+                                        fill="white" />
+                                    <path
+                                        d="M46 29H28C27.3517 29 27.4584 29.5312 27 30C26.5416 30.4688 26 31.337 26 32V39C26 40.3261 26.0832 42.0623 27 43C27.9168 43.9377 29.7034 44 31 44H43C44.2966 44 46.0832 43.9377 47 43C47.9168 42.0623 48 40.3261 48 39V32C48 31.337 47.4584 30.4688 47 30C46.5416 29.5312 46.6483 29 46 29ZM46 39C46 39.663 45.4584 40.5312 45 41C44.5416 41.4688 43.6483 42 43 42H31C30.3517 42 29.4584 41.4688 29 41C28.5416 40.5312 28 39.663 28 39V32H46V39Z"
+                                        fill="white" />
+                                </svg>
+
+                                <p class="steps-item-icon__count">
+                                    03
+                                </p>
+                            </div>
+                            <div class="steps-item__inner">
+                                <h4 class="steps-item__title">
+                                    rent the equipment
+                                </h4>
+                                <p class="steps-item__text">
+                                    Malesuada enim sed mauris. Est vitae
+                                    faucibus lectus amets dui fringila matis
+                                    sed ipsum vitae donec.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__wrap">
+                        <a class="steps__link btn" href="#">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            <span>
+                                start renting
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__choose choose">
+                <div class="container">
+                    <div class="choose__heading heading">
+                        <p class="heading__text">
+                            Tourists Travel Equipment Rental
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            reasons to choose renity
+                        </h2>
+                    </div>
+                    <div class="choose__inner">
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_434_168)">
+                                        <path
+                                            d="M24.7404 39.0446C23.2047 40.018 21.4571 40.6071 19.6455 40.762C19.0928 38.7423 17.2606 37.3396 15.1667 37.3331H9.33335C6.75602 37.3331 4.66669 39.4225 4.66669 41.9998V65.3331C4.66669 67.9105 6.75602 69.9998 9.33335 69.9998H15.1667C17.2789 69.9915 19.1221 68.5655 19.6607 66.5231C20.6513 66.5752 21.6222 66.8201 22.519 67.2441C22.9694 67.4576 23.3999 67.7108 23.8315 67.9605C24.4756 68.3533 25.1465 68.7003 25.8394 68.9988C27.6458 69.6881 29.5667 70.0278 31.5 69.9998H52.5C54.2252 69.9989 55.8092 69.0463 56.6187 67.5228C57.4282 65.9993 57.3312 64.1535 56.3664 62.7233C57.734 62.2526 58.8045 61.1718 59.2619 59.7996C59.7192 58.4274 59.5114 56.9205 58.6997 55.7233C60.4147 55.1363 61.6301 53.6035 61.8108 51.7999C61.9915 49.9962 61.1042 48.2528 59.5397 47.3373C60.2628 46.5031 60.6627 45.4371 60.6667 44.3331C60.6667 41.7558 58.5773 39.6665 56 39.6665H41.2627C43.0874 36.1921 46.403 28.4256 43.176 22.7766C41.7562 20.2951 38.7894 18.3538 35.6382 19.9591C32.3505 21.6298 33.0867 24.9303 33.4414 26.5146C34.3455 30.5793 31.4184 34.7956 24.7404 39.0446ZM15.1667 67.6665H9.33335C8.04469 67.6665 7.00002 66.6218 7.00002 65.3331V41.9998C7.00002 40.7111 8.04469 39.6665 9.33335 39.6665H15.1667C16.4554 39.6665 17.5 40.7111 17.5 41.9998V65.3331C17.5 66.6218 16.4554 67.6665 15.1667 67.6665ZM35.7187 26.0071C35.1914 23.647 35.4282 22.6833 36.6964 22.0405C38.7544 20.9905 40.4659 22.7405 41.1507 23.9363C44.6379 30.0426 38.3379 40.1075 38.2737 40.209C38.0462 40.5682 38.0322 41.0227 38.237 41.3952C38.4419 41.7678 38.8332 41.9994 39.2584 41.9998H56C57.2887 41.9998 58.3334 43.0445 58.3334 44.3331C58.3334 45.6218 57.2887 46.6665 56 46.6665H49C48.3557 46.6665 47.8334 47.1888 47.8334 47.8331C47.8334 48.4775 48.3557 48.9998 49 48.9998H57.1667C58.4553 48.9998 59.5 50.0445 59.5 51.3331C59.5 52.6218 58.4553 53.6665 57.1667 53.6665H49C48.3557 53.6665 47.8334 54.1888 47.8334 54.8331C47.8334 55.4775 48.3557 55.9998 49 55.9998H54.8334C56.122 55.9998 57.1667 57.0445 57.1667 58.3331C57.1667 59.6218 56.122 60.6665 54.8334 60.6665H49C48.3557 60.6665 47.8334 61.1888 47.8334 61.8331C47.8334 62.4775 48.3557 62.9998 49 62.9998H52.5C53.7887 62.9998 54.8334 64.0445 54.8334 65.3331C54.8334 66.6218 53.7887 67.6665 52.5 67.6665H31.5C29.8674 67.695 28.2441 67.4131 26.7167 66.8358C26.1255 66.5779 25.5528 66.2792 25.0029 65.9421C24.5175 65.6598 24.0299 65.3798 23.5247 65.1383C22.3656 64.5931 21.1123 64.2762 19.8334 64.205V43.1093C22.0254 42.9151 24.1381 42.1947 25.9922 41.0093C33.5872 36.1816 36.8597 31.1335 35.7187 26.0071Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M49.0117 1.13307V1.15757V1.1669C49.0117 1.59623 48.9055 11.6669 39.6678 11.6669C39.0235 11.6669 38.5012 12.1892 38.5012 12.8336C38.5012 13.4779 39.0235 14.0002 39.6678 14.0002C48.8693 14.0002 49.0105 24.0732 49.0117 24.5002C49.003 25.1446 49.5182 25.674 50.1626 25.6827C50.8069 25.6914 51.3363 25.1761 51.345 24.5317V24.5072V24.5002C51.345 24.0709 51.4512 14.0002 60.69 14.0002C61.3343 14.0002 61.8567 13.4779 61.8567 12.8336C61.8567 12.1892 61.3343 11.6669 60.69 11.6669C51.4873 11.6669 51.3473 1.5939 51.345 1.1669C51.3537 0.522568 50.8384 -0.00681799 50.1941 -0.0155165C49.5497 -0.024215 49.0204 0.491068 49.0117 1.1354V1.13307ZM55.37 12.8336C52.981 14.0938 51.1344 16.1831 50.1772 18.7089C49.2205 16.1828 47.3738 14.0933 44.9843 12.8336C47.3738 11.5738 49.2205 9.48435 50.1772 6.95823C51.1344 9.48401 52.981 11.5733 55.37 12.8336Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M19.8333 15.1668V15.1598C19.8314 14.5154 19.3075 13.9947 18.6632 13.9966C18.0188 13.9985 17.4981 14.5224 17.5 15.1668C17.5 15.4526 17.402 22.1668 11.6667 22.1668C11.0223 22.1668 10.5 22.6891 10.5 23.3334C10.5 23.9778 11.0223 24.5001 11.6667 24.5001C17.402 24.5001 17.5 31.2166 17.5 31.5001V31.5071C17.5019 32.1514 18.0258 32.6722 18.6702 32.6703C19.3145 32.6683 19.8353 32.1444 19.8333 31.5001C19.8333 31.2143 19.9313 24.5001 25.6667 24.5001C26.311 24.5001 26.8333 23.9778 26.8333 23.3334C26.8333 22.6891 26.311 22.1668 25.6667 22.1668C19.9313 22.1668 19.8333 15.4503 19.8333 15.1668ZM21.4013 23.3334C20.22 24.1214 19.2748 25.2154 18.6667 26.4986C18.0585 25.2154 17.1133 24.1214 15.932 23.3334C17.1136 22.5457 18.0588 21.4517 18.6667 20.1683C19.2745 21.4517 20.2198 22.5457 21.4013 23.3334Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M59.5 24.5C58.8556 24.5 58.3333 25.0223 58.3333 25.6667V28C58.3333 28.6443 58.8556 29.1667 59.5 29.1667C60.1443 29.1667 60.6666 28.6443 60.6666 28V25.6667C60.6666 25.0223 60.1443 24.5 59.5 24.5Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M59.5 36.1667C60.1443 36.1667 60.6666 35.6443 60.6666 35V32.6667C60.6666 32.0223 60.1443 31.5 59.5 31.5C58.8556 31.5 58.3333 32.0223 58.3333 32.6667V35C58.3333 35.6443 58.8556 36.1667 59.5 36.1667Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M61.8334 31.4998H64.1667C64.811 31.4998 65.3334 30.9775 65.3334 30.3332C65.3334 29.6888 64.811 29.1665 64.1667 29.1665H61.8334C61.189 29.1665 60.6667 29.6888 60.6667 30.3332C60.6667 30.9775 61.189 31.4998 61.8334 31.4998Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M57.1667 31.4998C57.811 31.4998 58.3334 30.9775 58.3334 30.3332C58.3334 29.6888 57.811 29.1665 57.1667 29.1665H54.8334C54.189 29.1665 53.6667 29.6888 53.6667 30.3332C53.6667 30.9775 54.189 31.4998 54.8334 31.4998H57.1667Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M30.0919 10.7417L31.8419 12.4917C32.2996 12.9338 33.0273 12.9275 33.4773 12.4775C33.9273 12.0275 33.9337 11.2998 33.4915 10.842L31.7415 9.09204C31.4486 8.78876 31.0148 8.66712 30.6069 8.77389C30.199 8.88066 29.8805 9.19921 29.7737 9.60711C29.6669 10.015 29.7886 10.4488 30.0919 10.7417Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M26.5918 7.24132C27.0496 7.68346 27.7773 7.67714 28.2273 7.22711C28.6773 6.77709 28.6836 6.04943 28.2415 5.59166L26.4915 3.84166C26.0337 3.39952 25.3061 3.40585 24.8561 3.85587C24.406 4.30589 24.3997 5.03355 24.8418 5.49132L26.5918 7.24132Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M24.8418 12.4917C25.2974 12.9472 26.0359 12.9472 26.4915 12.4917L28.2415 10.7417C28.5448 10.4488 28.6664 10.015 28.5596 9.60711C28.4529 9.19921 28.1343 8.88066 27.7264 8.77389C27.3185 8.66712 26.8847 8.78876 26.5918 9.09204L24.8418 10.842C24.3864 11.2976 24.3864 12.0361 24.8418 12.4917Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M30.9167 7.58354C31.2261 7.58347 31.5228 7.46051 31.7415 7.24171L33.4915 5.49171C33.7948 5.19878 33.9164 4.76501 33.8097 4.35711C33.7029 3.94921 33.3844 3.63066 32.9765 3.52389C32.5686 3.41712 32.1348 3.53876 31.8419 3.84204L30.0919 5.59204C29.7583 5.9257 29.6585 6.42742 29.8391 6.8633C30.0196 7.29919 30.4449 7.58344 30.9167 7.58354Z"
+                                            fill="#490083" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_434_168">
+                                            <rect width="70" height="70" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    Rent smarter way
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="65" height="70" viewBox="0 0 65 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M48.1304 67.6667H5.86957C4.93554 67.6667 4.03977 67.2979 3.37932 66.6415C2.71887 65.9852 2.34783 65.0949 2.34783 64.1667V5.83333C2.34783 4.90508 2.71887 4.01484 3.37932 3.35846C4.03977 2.70208 4.93554 2.33333 5.86957 2.33333H42.2609V8.16667C42.2609 9.09492 42.6319 9.98516 43.2924 10.6415C43.9528 11.2979 44.8486 11.6667 45.7826 11.6667H51.6522V21H54V10.5C53.9999 10.1906 53.8762 9.89391 53.656 9.67517L44.2647 0.341833C44.0446 0.123026 43.7461 6.6077e-05 43.4348 0H5.86957C4.31343 0.0018525 2.82157 0.617029 1.72121 1.71059C0.620861 2.80415 0.00186401 4.28681 0 5.83333V64.1667C0.00186401 65.7132 0.620861 67.1958 1.72121 68.2894C2.82157 69.383 4.31343 69.9981 5.86957 70H48.1304C49.5601 70.0006 50.9407 69.482 52.0126 68.5417L50.4595 66.7917C49.8162 67.3554 48.9881 67.6666 48.1304 67.6667ZM44.6087 8.16667V3.983L49.9923 9.33333H45.7826C45.4713 9.33333 45.1727 9.21042 44.9525 8.99162C44.7324 8.77283 44.6087 8.47609 44.6087 8.16667Z"
+                                        fill="#490083" />
+                                    <path
+                                        d="M61.5179 51.3332H59.1965C59.197 51.1042 59.1282 50.8804 58.9991 50.6916L57.4554 48.3582C57.0746 47.7851 56.8725 47.1108 56.875 46.4216V43.1549C56.8924 41.3544 57.4867 39.6075 58.5697 38.1732C59.4346 36.9831 60.0068 35.604 60.2395 34.1488C60.4722 32.6936 60.3587 31.2037 59.9083 29.8011C59.4579 28.3985 58.6835 27.123 57.6483 26.0791C56.6132 25.0352 55.3468 24.2525 53.9529 23.7952C52.5589 23.3378 51.077 23.2188 49.6285 23.4479C48.1799 23.6769 46.806 24.2475 45.619 25.1129C44.4321 25.9783 43.4659 27.114 42.7997 28.4269C42.1334 29.7398 41.7859 31.1927 41.7857 32.6666C41.7771 34.7184 42.4512 36.7142 43.7009 38.3366C44.7323 39.7234 45.2827 41.4119 45.2679 43.1432V46.4216C45.2704 47.1108 45.0683 47.7851 44.6875 48.3582L43.1438 50.6916C43.0147 50.8804 42.9459 51.1042 42.9465 51.3332H40.625C39.7024 51.336 38.8183 51.7056 38.1658 52.3614C37.5134 53.0172 37.1456 53.9058 37.1429 54.8332V59.4999C37.1429 59.8093 37.2652 60.1061 37.4828 60.3249C37.7005 60.5437 37.9958 60.6666 38.3036 60.6666H39.4643V64.1666C39.4643 64.476 39.5866 64.7727 39.8043 64.9915C40.022 65.2103 40.3172 65.3332 40.625 65.3332H61.5179C61.8257 65.3332 62.121 65.2103 62.3386 64.9915C62.5563 64.7727 62.6786 64.476 62.6786 64.1666V60.6666H63.8393C64.1472 60.6666 64.4424 60.5437 64.6601 60.3249C64.8777 60.1061 65 59.8093 65 59.4999V54.8332C64.9973 53.9058 64.6295 53.0172 63.9771 52.3614C63.3247 51.7056 62.4406 51.336 61.5179 51.3332ZM44.1072 32.6666C44.1067 31.5614 44.3666 30.4719 44.8656 29.4871C45.3646 28.5023 46.0884 27.6503 46.9779 27.0007C47.8674 26.3511 48.8973 25.9225 49.9833 25.7498C51.0693 25.5771 52.1805 25.6654 53.2261 26.0073C54.2716 26.3492 55.2218 26.9351 55.9988 27.717C56.7758 28.4989 57.3576 29.4546 57.6965 30.5059C58.0355 31.5572 58.122 32.6742 57.9489 33.7656C57.7759 34.8569 57.3482 35.8916 56.7009 36.7849C55.3258 38.6228 54.5732 40.8554 54.5536 43.1549V46.4216C54.5516 47.5723 54.8911 48.6974 55.5286 49.6532L56.6429 51.3332H45.5L46.6143 49.6532C47.2518 48.6974 47.5913 47.5723 47.5893 46.4216V43.1432C47.6028 40.9018 46.8852 38.7176 45.5465 36.9249C44.6108 35.7048 44.1046 34.2071 44.1072 32.6666ZM60.3572 62.9999H41.7857V60.6666H60.3572V62.9999ZM62.6786 58.3332H39.4643V54.8332C39.4643 54.5238 39.5866 54.2271 39.8043 54.0083C40.022 53.7895 40.3172 53.6666 40.625 53.6666H61.5179C61.8257 53.6666 62.121 53.7895 62.3386 54.0083C62.5563 54.2271 62.6786 54.5238 62.6786 54.8332V58.3332Z"
+                                        fill="#490083" />
+                                    <path
+                                        d="M18.5714 62.9998C20.8671 62.9998 23.1112 62.3156 25.02 61.0337C26.9288 59.7517 28.4165 57.9296 29.295 55.7978C30.1736 53.666 30.4034 51.3202 29.9556 49.0571C29.5077 46.794 28.4022 44.7152 26.7789 43.0836C25.1556 41.452 23.0874 40.3408 20.8359 39.8907C18.5843 39.4405 16.2505 39.6716 14.1296 40.5546C12.0086 41.4376 10.1959 42.933 8.92045 44.8515C7.64504 46.7701 6.96429 49.0257 6.96429 51.3332C6.96767 54.4263 8.19165 57.3918 10.3677 59.579C12.5437 61.7662 15.4941 62.9964 18.5714 62.9998ZM18.5714 41.9998C20.408 41.9998 22.2033 42.5472 23.7303 43.5728C25.2573 44.5984 26.4475 46.056 27.1503 47.7615C27.8531 49.4669 28.037 51.3435 27.6787 53.154C27.3204 54.9645 26.4361 56.6275 25.1374 57.9328C23.8388 59.2381 22.1842 60.127 20.383 60.4872C18.5817 60.8473 16.7147 60.6625 15.0179 59.9561C13.3212 59.2496 11.871 58.0534 10.8506 56.5185C9.83032 54.9836 9.28572 53.1791 9.28572 51.3332C9.28849 48.8587 10.2677 46.4863 12.0085 44.7366C13.7493 42.9868 16.1096 42.0026 18.5714 41.9998Z"
+                                        fill="#490083" />
+                                    <path
+                                        d="M17.4107 55.9998C17.7186 55.9997 18.0137 55.8768 18.2314 55.658L25.1957 48.658L23.5544 47.0083L17.4107 53.1835L14.7492 50.5083L13.108 52.158L16.5901 55.658C16.8077 55.8768 17.1029 55.9997 17.4107 55.9998Z"
+                                        fill="#490083" />
+                                    <path
+                                        d="M27.8572 17.5H25.5357C25.2279 17.5 24.9327 17.3771 24.715 17.1583C24.4973 16.9395 24.375 16.6428 24.375 16.3333H22.0536C22.0536 17.2616 22.4205 18.1518 23.0735 18.8082C23.7265 19.4646 24.6122 19.8333 25.5357 19.8333V21H27.8572V19.8333C28.7807 19.8333 29.6664 19.4646 30.3194 18.8082C30.9724 18.1518 31.3393 17.2616 31.3393 16.3333C31.3393 15.4051 30.9724 14.5148 30.3194 13.8585C29.6664 13.2021 28.7807 12.8333 27.8572 12.8333H25.5357C25.2279 12.8333 24.9327 12.7104 24.715 12.4916C24.4973 12.2728 24.375 11.9761 24.375 11.6667C24.375 11.3572 24.4973 11.0605 24.715 10.8417C24.9327 10.6229 25.2279 10.5 25.5357 10.5H27.8572C28.165 10.5 28.4602 10.6229 28.6779 10.8417C28.8956 11.0605 29.0179 11.3572 29.0179 11.6667H31.3393C31.3393 10.7384 30.9724 9.84817 30.3194 9.19179C29.6664 8.53542 28.7807 8.16667 27.8572 8.16667V7H25.5357V8.16667C24.6122 8.16667 23.7265 8.53542 23.0735 9.19179C22.4205 9.84817 22.0536 10.7384 22.0536 11.6667C22.0536 12.5949 22.4205 13.4852 23.0735 14.1415C23.7265 14.7979 24.6122 15.1667 25.5357 15.1667H27.8572C28.165 15.1667 28.4602 15.2896 28.6779 15.5084C28.8956 15.7272 29.0179 16.0239 29.0179 16.3333C29.0179 16.6428 28.8956 16.9395 28.6779 17.1583C28.4602 17.3771 28.165 17.5 27.8572 17.5Z"
+                                        fill="#490083" />
+                                    <path d="M33.6607 12.8335H35.9821V15.1668H33.6607V12.8335Z" fill="#490083" />
+                                    <path d="M17.4107 12.8335H19.7321V15.1668H17.4107V12.8335Z" fill="#490083" />
+                                    <path d="M6.96429 23.3335H11.6072V25.6668H6.96429V23.3335Z" fill="#490083" />
+                                    <path d="M13.9286 23.3335H41.7857V25.6668H13.9286V23.3335Z" fill="#490083" />
+                                    <path d="M6.96429 28H39.4643V30.3333H6.96429V28Z" fill="#490083" />
+                                    <path d="M6.96429 32.6665H39.4643V34.9998H6.96429V32.6665Z" fill="#490083" />
+                                    <path d="M6.96429 37.3335H11.6072V39.6668H6.96429V37.3335Z" fill="#490083" />
+                                    <path d="M25.5357 37.3335H39.4643V39.6668H25.5357V37.3335Z" fill="#490083" />
+                                    <path d="M31.3393 42H40.625V44.3333H31.3393V42Z" fill="#490083" />
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    legal protection
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M58.1219 20.7815C59.7098 19.5045 60.8623 17.7663 61.4204 15.8066C61.9785 13.8468 61.9147 11.7622 61.2378 9.84027C60.5609 7.91833 59.3043 6.25382 57.6412 5.07638C55.9782 3.89894 53.9908 3.2666 51.9531 3.2666C49.9155 3.2666 47.928 3.89894 46.265 5.07638C44.602 6.25382 43.3453 7.91833 42.6684 9.84027C41.9915 11.7622 41.9277 13.8468 42.4858 15.8066C43.0439 17.7663 44.1965 19.5045 45.7844 20.7815H41.0484C40.8015 20.7899 40.559 20.7145 40.3604 20.5676C40.1618 20.4206 40.0188 20.2107 39.9547 19.9721L39.7031 19.0315L41.0484 14.8643C41.2754 14.166 41.3346 13.4241 41.2211 12.6986C41.1077 11.9732 40.8248 11.2848 40.3954 10.6892C39.966 10.0936 39.4022 9.60764 38.7498 9.27074C38.0975 8.93385 37.3748 8.75551 36.6406 8.75021C36.0807 8.75201 35.5254 8.85197 35 9.04553C34.4752 8.84973 33.9195 8.7497 33.3594 8.75021C32.6224 8.75036 31.8959 8.92492 31.2393 9.25963C30.5827 9.59433 30.0146 10.0797 29.5815 10.676C29.1484 11.2723 28.8626 11.9626 28.7474 12.6906C28.6322 13.4185 28.6909 14.1634 28.9188 14.8643L30.2641 19.0205L30.0125 19.9721C29.9484 20.2107 29.8054 20.4206 29.6068 20.5676C29.4082 20.7145 29.1657 20.7899 28.9188 20.7815H24.2156C25.8035 19.5045 26.9561 17.7663 27.5142 15.8066C28.0723 13.8468 28.0085 11.7622 27.3316 9.84027C26.6547 7.91833 25.398 6.25382 23.735 5.07638C22.072 3.89894 20.0845 3.2666 18.0469 3.2666C16.0092 3.2666 14.0218 3.89894 12.3588 5.07638C10.6957 6.25382 9.43907 7.91833 8.76216 9.84027C8.08525 11.7622 8.02146 13.8468 8.57957 15.8066C9.13769 17.7663 10.2902 19.5045 11.8781 20.7815C9.00394 20.8217 6.26112 21.9918 4.24294 24.0386C2.22477 26.0855 1.09347 28.8445 1.09375 31.719V42.394C1.09638 43.2225 1.31988 44.0353 1.74123 44.7487C2.16258 45.4621 2.76653 46.0502 3.49084 46.4525C4.21515 46.8548 5.03363 47.0566 5.86193 47.0373C6.69023 47.0179 7.49839 46.7781 8.20312 46.3424V63.4377C8.21183 64.5109 8.5361 65.5578 9.13555 66.448C9.73499 67.3381 10.5831 68.0323 11.5742 68.4439C12.5654 68.8555 13.6557 68.9664 14.7094 68.7627C15.7631 68.5591 16.7336 68.0499 17.5 67.2987C17.6973 67.1202 17.8802 66.9263 18.0469 66.719C18.7356 67.6372 19.6957 68.3155 20.7913 68.6577C21.8869 68.9999 23.0624 68.9888 24.1512 68.6258C25.2401 68.2629 26.1872 67.5665 26.8584 66.6353C27.5295 65.7042 27.8906 64.5855 27.8906 63.4377V31.6096C30.1656 31.2847 32.3154 30.3682 34.125 28.9518C34.4313 28.7002 34.7266 28.4487 35 28.1971C35.2734 28.4487 35.5687 28.7002 35.875 28.9518C37.6846 30.3682 39.8344 31.2847 42.1094 31.6096V63.4377C42.1094 64.5855 42.4705 65.7042 43.1416 66.6353C43.8128 67.5665 44.7599 68.2629 45.8488 68.6258C46.9376 68.9888 48.1131 68.9999 49.2087 68.6577C50.3043 68.3155 51.2644 67.6372 51.9531 66.719C52.1091 66.939 52.2809 67.1473 52.4672 67.3424C53.2346 68.1074 54.212 68.6273 55.2753 68.8359C56.3386 69.0445 57.44 68.9326 58.4396 68.5142C59.4391 68.0959 60.2919 67.39 60.8897 66.4862C61.4874 65.5823 61.8032 64.5213 61.7969 63.4377V46.3205C62.498 46.7664 63.3062 47.0153 64.1367 47.041C64.9672 47.0667 65.7892 46.8682 66.5165 46.4665C67.2439 46.0648 67.8496 45.4747 68.2701 44.7581C68.6906 44.0415 68.9103 43.2248 68.9062 42.394V31.719C68.9065 28.8445 67.7752 26.0855 65.7571 24.0386C63.7389 21.9918 60.9961 20.8217 58.1219 20.7815ZM44.2969 13.1252C44.2969 11.6109 44.7459 10.1307 45.5872 8.87163C46.4285 7.61256 47.6242 6.63124 49.0232 6.05176C50.4222 5.47228 51.9616 5.32066 53.4468 5.61607C54.9319 5.91149 56.2962 6.64068 57.3669 7.71143C58.4377 8.78217 59.1668 10.1464 59.4623 11.6316C59.7577 13.1167 59.6061 14.6561 59.0266 16.0551C58.4471 17.4541 57.4658 18.6499 56.2067 19.4912C54.9476 20.3324 53.4674 20.7815 51.9531 20.7815C49.9226 20.7815 47.9752 19.9748 46.5393 18.539C45.1035 17.1032 44.2969 15.1558 44.2969 13.1252ZM30.9969 14.219C30.8784 13.8526 30.8484 13.4634 30.9092 13.0832C30.97 12.703 31.12 12.3426 31.3469 12.0315C31.6656 11.6072 32.1093 11.2935 32.6156 11.1346C32.4114 11.4783 32.2498 11.8456 32.1344 12.2283L31.3141 15.2033L30.9969 14.219ZM10.3906 13.1252C10.3906 11.6109 10.8397 10.1307 11.6809 8.87163C12.5222 7.61256 13.718 6.63124 15.117 6.05176C16.516 5.47228 18.0554 5.32066 19.5405 5.61607C21.0257 5.91149 22.3899 6.64068 23.4607 7.71143C24.5314 8.78217 25.2606 10.1464 25.556 11.6316C25.8514 13.1167 25.6998 14.6561 25.1203 16.0551C24.5408 17.4541 23.5595 18.6499 22.3005 19.4912C21.0414 20.3324 19.5611 20.7815 18.0469 20.7815C16.0163 20.7815 14.0689 19.9748 12.6331 18.539C11.1973 17.1032 10.3906 15.1558 10.3906 13.1252ZM32.8125 27.2236C31.0658 28.5982 28.9394 29.4037 26.7203 29.5315C26.4437 29.5509 26.1848 29.6746 25.9959 29.8777C25.8071 30.0807 25.7024 30.3479 25.7031 30.6252V63.4377C25.7031 64.308 25.3574 65.1426 24.7421 65.7579C24.1267 66.3733 23.2921 66.719 22.4219 66.719C21.5516 66.719 20.717 66.3733 20.1017 65.7579C19.4863 65.1426 19.1406 64.308 19.1406 63.4377V48.1252C19.1406 47.8351 19.0254 47.5569 18.8203 47.3518C18.6152 47.1467 18.337 47.0315 18.0469 47.0315C17.7568 47.0315 17.4786 47.1467 17.2735 47.3518C17.0684 47.5569 16.9531 47.8351 16.9531 48.1252V63.4377C16.9531 64.308 16.6074 65.1426 15.9921 65.7579C15.3767 66.3733 14.5421 66.719 13.6719 66.719C12.8016 66.719 11.967 66.3733 11.3517 65.7579C10.7363 65.1426 10.3906 64.308 10.3906 63.4377V31.719C10.3906 31.4289 10.2754 31.1507 10.0703 30.9456C9.86516 30.7404 9.58696 30.6252 9.29688 30.6252C9.00679 30.6252 8.7286 30.7404 8.52348 30.9456C8.31836 31.1507 8.20312 31.4289 8.20312 31.719V42.394C8.20023 43.0447 7.93968 43.6679 7.47848 44.127C7.01728 44.5862 6.39298 44.844 5.74219 44.844C5.09315 44.8383 4.47213 44.5787 4.01215 44.1208C3.55217 43.6628 3.2898 43.043 3.28125 42.394V31.719C3.28125 29.3983 4.20312 27.1727 5.84407 25.5318C7.48501 23.8908 9.71061 22.969 12.0312 22.969H28.9516C29.6691 22.9686 30.3667 22.7331 30.9376 22.2986C31.5085 21.864 31.9212 21.2542 32.1125 20.5627L34.2344 12.7752C34.3845 12.2408 34.7028 11.7691 35.1422 11.4299C35.2593 11.3459 35.3838 11.2727 35.5141 11.2111C36.0427 10.9487 36.6468 10.8805 37.2206 11.0185C37.7945 11.1565 38.3015 11.4918 38.6531 11.9658C38.88 12.2769 39.03 12.6374 39.0908 13.0176C39.1516 13.3978 39.1216 13.787 39.0031 14.1533L36.4984 21.8752C36.0114 23.3527 35.2217 24.7123 34.1797 25.8674C33.7677 26.3616 33.31 26.8157 32.8125 27.2236ZM66.7188 42.394C66.713 43.042 66.4531 43.6618 65.9949 44.1201C65.5366 44.5783 64.9168 44.8383 64.2687 44.844C63.9437 44.8463 63.6214 44.7837 63.3209 44.6597C63.0203 44.5358 62.7476 44.353 62.5187 44.1221C62.2882 43.8953 62.1055 43.6245 61.9815 43.3257C61.8575 43.027 61.7947 42.7065 61.7969 42.383V31.719C61.7969 31.4289 61.6816 31.1507 61.4765 30.9456C61.2714 30.7404 60.9932 30.6252 60.7031 30.6252C60.413 30.6252 60.1348 30.7404 59.9297 30.9456C59.7246 31.1507 59.6094 31.4289 59.6094 31.719V63.4377C59.6094 64.308 59.2637 65.1426 58.6483 65.7579C58.033 66.3733 57.1984 66.719 56.3281 66.719C55.4579 66.719 54.6233 66.3733 54.0079 65.7579C53.3926 65.1426 53.0469 64.308 53.0469 63.4377V48.1252C53.0469 47.8351 52.9316 47.5569 52.7265 47.3518C52.5214 47.1467 52.2432 47.0315 51.9531 47.0315C51.663 47.0315 51.3848 47.1467 51.1797 47.3518C50.9746 47.5569 50.8594 47.8351 50.8594 48.1252V63.4377C50.8594 64.308 50.5137 65.1426 49.8983 65.7579C49.283 66.3733 48.4484 66.719 47.5781 66.719C46.7079 66.719 45.8733 66.3733 45.2579 65.7579C44.6426 65.1426 44.2969 64.308 44.2969 63.4377V30.6252C44.2976 30.3479 44.1929 30.0807 44.004 29.8777C43.8152 29.6746 43.5563 29.5509 43.2797 29.5315C41.0606 29.4037 38.9342 28.5982 37.1875 27.2236C36.9157 27.0251 36.6597 26.8057 36.4219 26.5674C37.3487 25.3752 38.0628 24.0321 38.5328 22.5971L38.7188 22.0283C39.329 22.6279 40.1492 22.9654 41.0047 22.969H57.9688C60.2894 22.969 62.515 23.8908 64.1559 25.5318C65.7969 27.1727 66.7188 29.3983 66.7188 31.719V42.394Z"
+                                        fill="#490083" stroke="#490083" stroke-width="0.2" />
+                                    <path
+                                        d="M35.7027 5.07769C35.5163 5.26405 35.2636 5.36875 35 5.36875C34.7364 5.36875 34.4837 5.26405 34.2973 5.07769C34.1109 4.89132 34.0063 4.63856 34.0063 4.375V2.1875C34.0063 1.92394 34.1109 1.67118 34.2973 1.48481C34.4837 1.29845 34.7364 1.19375 35 1.19375C35.2636 1.19375 35.5163 1.29845 35.7027 1.48481C35.8891 1.67118 35.9938 1.92394 35.9938 2.1875V4.375C35.9938 4.63856 35.8891 4.89132 35.7027 5.07769Z"
+                                        fill="#490083" stroke="#490083" stroke-width="0.2" />
+                                    <path
+                                        d="M38.3673 5.5197L38.3673 5.5197L38.3681 5.51842L39.4608 3.60618C39.5946 3.3936 39.8041 3.23959 40.047 3.17519C40.2899 3.11078 40.5481 3.14079 40.7697 3.25913C40.9945 3.39196 41.1579 3.60791 41.2247 3.86033C41.2917 4.11337 41.2562 4.38263 41.1258 4.60961C41.1258 4.60961 41.1258 4.60962 41.1258 4.60962L40.0325 6.5119C39.8981 6.73542 39.6812 6.89715 39.4286 6.96216C39.1764 7.02706 38.9088 6.99037 38.6834 6.86004C38.4682 6.72094 38.315 6.50403 38.2558 6.2546C38.1965 6.00443 38.2365 5.74102 38.3673 5.5197Z"
+                                        fill="#490083" stroke="#490083" stroke-width="0.2" />
+                                    <path
+                                        d="M29.8812 6.56269C30.0325 6.80076 30.27 6.97114 30.544 7.03826C30.818 7.10538 31.1074 7.06403 31.3516 6.92285C31.5958 6.78167 31.7761 6.55159 31.8547 6.28066C31.9333 6.00973 31.9041 5.7189 31.7734 5.46894L30.6796 3.56581C30.6073 3.44139 30.5111 3.33248 30.3965 3.24532C30.282 3.15816 30.1514 3.09446 30.0121 3.05788C29.8729 3.02131 29.7279 3.01256 29.5853 3.03215C29.4427 3.05175 29.3054 3.09929 29.1812 3.17206C28.9329 3.31816 28.7522 3.55634 28.6785 3.83486C28.6048 4.11338 28.6439 4.40974 28.7874 4.65956L29.8812 6.56269Z"
+                                        fill="#490083" stroke="#490083" stroke-width="0.2" />
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    trusted partnership
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M43.3716 4.32676H8.71518C6.72237 4.32676 5.10663 5.94223 5.10663 7.93518V57.6698C5.10663 59.6627 6.72237 61.2783 8.71518 61.2783H44.4619C46.4548 61.2783 48.0704 59.6627 48.0704 57.6698V27.059"
+                                        stroke="#490083" stroke-width="2.73437" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M38.9067 20.8979H14.2703V15.1238H38.9067V20.8979Z" stroke="#490083"
+                                        stroke-width="2.73437" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.2703 28.3872H38.9067" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.2703 34.8721H38.9067" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.2703 41.3564H38.9067" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.2703 47.8408H38.9067" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M64.8933 14.3633C64.8933 21.5408 59.076 27.3594 51.9 27.3594C44.724 27.3594 38.9068 21.5408 38.9068 14.3633C38.9068 7.18584 44.724 1.36723 51.9 1.36723C59.076 1.36723 64.8933 7.18584 64.8933 14.3633Z"
+                                        stroke="#490083" stroke-width="2.73437" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M51.906 12.5722V21.9209" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M53.2672 8.17285C53.2672 8.92781 52.6551 9.54004 51.9 9.54004C51.145 9.54004 50.5328 8.92781 50.5328 8.17285C50.5328 7.41775 51.145 6.80566 51.9 6.80566C52.6551 6.80566 53.2672 7.41775 53.2672 8.17285Z"
+                                        fill="#490083" />
+                                    <path d="M57.3841 26.7558V33.7002" stroke="#490083" stroke-width="2.73437"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M57.3841 46.0611V65.0243C57.3841 67.0172 55.7686 68.6328 53.7756 68.6328H18.0291C16.036 68.6328 14.4205 67.0172 14.4205 65.0243V61.6883"
+                                        stroke="#490083" stroke-width="2.73437" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    Full information
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_434_250)">
+                                        <path
+                                            d="M25.9771 14.1087C24.8582 14.866 23.3255 15.9031 23.3255 18.0159C23.3255 18.771 23.9375 19.383 24.6927 19.383C25.4478 19.383 26.0599 18.771 26.0599 18.0159C26.0599 17.414 26.4791 17.0706 27.5093 16.3736C28.6287 15.6163 30.1614 14.5792 30.1614 12.4659C30.1614 10.3527 28.6287 9.31608 27.5093 8.55879C26.4791 7.86185 26.0599 7.51845 26.0599 6.91657C26.0599 6.31468 26.4791 5.97129 27.5093 5.27434C28.6287 4.51705 30.1614 3.48045 30.1614 1.36718C30.1614 0.612563 29.5489 0 28.7942 0C28.0391 0 27.4271 0.612563 27.4271 1.36718C27.4271 1.96907 27.0073 2.31246 25.9771 3.00941C24.8582 3.7667 23.3255 4.8033 23.3255 6.91657C23.3255 9.02983 24.8577 10.0664 25.9771 10.8237C27.0073 11.5207 27.4271 11.8641 27.4271 12.4665C27.4271 13.0684 27.0073 13.4118 25.9771 14.1087Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M35.4085 14.1087C34.2897 14.866 32.7569 15.9026 32.7569 18.0159C32.7569 18.771 33.369 19.383 34.1241 19.383C34.8793 19.383 35.4913 18.771 35.4913 18.0159C35.4913 17.414 35.9105 17.0706 36.9407 16.3736C38.0601 15.6163 39.5929 14.5792 39.5929 12.4659C39.5929 10.3527 38.0601 9.31608 36.9407 8.55879C35.9105 7.86185 35.4908 7.51845 35.4908 6.91657C35.4908 6.31468 35.9105 5.97129 36.9407 5.27434C38.0601 4.51705 39.5929 3.47991 39.5929 1.36718C39.5929 0.612029 38.9803 0 38.2257 0C37.4705 0 36.8585 0.612029 36.8585 1.36718C36.8585 1.96853 36.4387 2.31246 35.4085 3.00941C34.2892 3.7667 32.7564 4.8033 32.7564 6.91657C32.7564 9.02929 34.2892 10.0664 35.4085 10.8232C36.4387 11.5207 36.8585 11.8641 36.8585 12.4659C36.8585 13.0684 36.4393 13.4118 35.4085 14.1087Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M44.84 14.1087C43.7212 14.866 42.1884 15.9031 42.1884 18.0159C42.1884 18.771 42.8004 19.383 43.5556 19.383C44.3108 19.383 44.9228 18.771 44.9228 18.0159C44.9228 17.414 45.3426 17.0706 46.3727 16.3736C47.4916 15.6163 49.0243 14.5792 49.0243 12.4659C49.0243 10.3527 47.4916 9.31608 46.3727 8.55879C45.3426 7.86185 44.9228 7.51845 44.9228 6.91657C44.9228 6.31468 45.3426 5.97129 46.3727 5.27434C47.4916 4.51705 49.0243 3.48045 49.0243 1.36718C49.0243 0.612563 48.4118 0 47.6572 0C46.902 0 46.29 0.612563 46.29 1.36718C46.29 1.96907 45.8702 2.31246 44.84 3.00941C43.7212 3.7667 42.1884 4.8033 42.1884 6.91657C42.1884 9.02983 43.7212 10.0664 44.84 10.8237C45.8702 11.5207 46.29 11.8641 46.29 12.4665C46.29 13.0684 45.8702 13.4118 44.84 14.1087Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M65.2714 31.3692H60.27C60.4275 30.3967 60.53 29.4066 60.5738 28.401C62.1488 27.8509 63.282 26.3512 63.282 24.591C63.282 22.3661 61.4716 20.5557 59.2462 20.5557H10.6737C8.44831 20.5557 6.63839 22.3661 6.63839 24.591C6.63839 26.3512 7.77112 27.8509 9.34606 28.401C9.39038 29.4066 9.49292 30.3967 9.64994 31.3687H4.6485C3.89334 31.3687 3.28131 31.9813 3.28131 32.7359C3.28131 33.491 3.89334 34.1031 4.6485 34.1031H10.2481C12.1317 40.8957 16.7465 46.5637 22.831 49.8444L19.5962 55.9156C19.5941 55.9193 19.5925 55.9225 19.5903 55.9262L13.5485 67.2653H11.4684C10.7132 67.2653 10.1012 67.8779 10.1012 68.6325C10.1012 69.3877 10.7132 69.9997 11.4684 69.9997H17.2699C18.025 69.9997 18.637 69.3877 18.637 68.6325C18.637 67.8779 18.025 67.2653 17.2699 67.2653H16.6466L21.6165 57.9391H48.6291L53.5985 67.2653H52.65C51.8954 67.2653 51.2828 67.8779 51.2828 68.6325C51.2828 69.3877 51.8954 69.9997 52.65 69.9997H58.4515C59.2066 69.9997 59.8187 69.3877 59.8187 68.6325C59.8187 67.8779 59.2066 67.2653 58.4515 67.2653H56.6971L50.6543 55.9257C50.6527 55.9225 50.6511 55.9193 50.6495 55.9161L47.3404 49.7066C53.3005 46.4061 57.8144 40.8017 59.6718 34.1036H65.2714C66.026 34.1036 66.6386 33.491 66.6386 32.7364C66.6386 31.9813 66.0266 31.3692 65.2714 31.3692ZM23.0734 55.2047L25.3069 51.0124C28.2885 52.2284 31.5468 52.9003 34.9599 52.9003C38.4751 52.9003 41.8268 52.1889 44.88 50.9029L47.1722 55.2047H23.0734ZM34.9599 50.1659C22.7883 50.1659 12.803 40.6239 12.0938 28.6269H57.8261C57.1169 40.6239 47.1322 50.1659 34.9599 50.1659ZM59.2462 25.8925H10.6737C9.95648 25.8925 9.37276 25.3088 9.37276 24.591C9.37276 23.8738 9.95648 23.29 10.6737 23.29H59.2462C59.9639 23.29 60.5477 23.8738 60.5477 24.591C60.5477 25.3088 59.9639 25.8925 59.2462 25.8925Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M34.96 47.7603C42.0608 47.7603 48.5586 44.1559 52.3424 38.119C52.7435 37.4792 52.5502 36.6354 51.9098 36.2343C51.27 35.8332 50.4262 36.0271 50.0257 36.6669C46.745 41.9006 41.1134 45.0259 34.96 45.0259C34.2048 45.0259 33.5928 45.6379 33.5928 46.3931C33.5928 47.1477 34.2048 47.7603 34.96 47.7603Z"
+                                            fill="#490083" />
+                                        <path
+                                            d="M52.1224 32.9155C52.3451 33.449 52.8925 33.7935 53.4704 33.7566C54.0183 33.7214 54.4995 33.3513 54.6779 32.8322C54.8691 32.2762 54.6677 31.6348 54.1913 31.2898C53.7513 30.9705 53.1489 30.9416 52.6821 31.2204C52.1085 31.5633 51.8655 32.2981 52.1224 32.9155Z"
+                                            fill="#490083" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_434_250">
+                                            <rect width="70" height="70" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    brand equipments
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="choose__item choose-item">
+                            <div class="choose-item__icon">
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_434_264)">
+                                        <path d="M9.13489 21.0776L28.8451 1.36744L33.9761 6.49836" stroke="#490083"
+                                            stroke-width="2.73438" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M19.5195 20.955L39.1075 1.36703L59.5982 21.8579L59.5821 21.874"
+                                            stroke="#490083" stroke-width="2.73438" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M2.32422 51.0074V63.1641C2.32422 66.1843 4.77271 68.6328 7.79297 68.6328H56.7383C59.7585 68.6328 62.207 66.1843 62.207 63.1641V53.6051"
+                                            stroke="#490083" stroke-width="2.73438" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M62.207 36.105V26.5462C62.207 23.5258 59.7585 21.0774 56.7383 21.0774H7.79297C4.77271 21.0774 2.32422 23.5258 2.32422 26.5462V38.7026"
+                                            stroke="#490083" stroke-width="2.73438" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M67.6758 36.105H40.0586C35.2261 36.105 31.3086 40.0225 31.3086 44.855C31.3086 49.6874 35.2261 53.605 40.0586 53.605H67.6758V36.105Z"
+                                            stroke="#490083" stroke-width="2.73438" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M42.793 44.855C42.793 43.3448 41.5688 42.1206 40.0586 42.1206C38.5484 42.1206 37.3242 43.3448 37.3242 44.855C37.3242 46.3652 38.5484 47.5894 40.0586 47.5894C41.5688 47.5894 42.793 46.3652 42.793 44.855Z"
+                                            stroke="#490083" stroke-width="2.73438" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_434_264">
+                                            <rect width="70" height="70" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="choose-item__inner">
+                                <h4 class="choose-item__title">
+                                    price guarantee
+                                </h4>
+                                <p class="choose-item__text">
+                                    Cursus ullamcorper ultricies amet imperdiet amet risus volutpat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__funnel funnel" style="background-image: url(images/funnel-bg.jpg);">
+                <div class="container">
+                    <div class="funnel__inner">
+                        <div class="funnel__img">
+                            <img class="funnel__img-image" src="images/funnel-img.jpg" alt="img">
+                        </div>
+                        <div class="funnel__box">
+                            <h2 class="funnel__box-title">
+                                Quality & guaranteed equipment's
+                                With 100% user Satisfaction
+                            </h2>
+                            <a class="funnel__box-link btn" href="#">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 3.75L14.25 9L9 14.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    start renting
+                                </span>
+                            </a>
+                        </div>
+                        <p class="funnel__text">
+                            Cursus ullamcorper ultricies amet imperdiet amet risus volutpat autms. Nibh iaculis ut nam
+                            libero tellus sem interdum.
+                        </p>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__blog blog">
+                <div class="container">
+                    <div class="blog__heading heading">
+                        <p class="heading__text">
+                            Tourists Travel Equipment Rental
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            renting tips & guides
+                        </h2>
+                    </div>
+                    <div class="blog__inner">
+                        <div class="blog__item blog-item">
+                            <div class="blog-item__wrapper">
+                                <a class="blog-item__box blog-item-box" href="#">
+                                    <div class="blog-item-box__img">
+                                        <img class="blog-item-box__img-image" src="images/blog-img-1.jpg" alt="img">
+                                    </div>
+                                    <p class="blog-item-box__text">
+                                        <span>25</span>
+                                        <span>OCT</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="blog-item__inner">
+                                <h2 class="blog-item__title">
+                                    <a class="blog-item__title-link" href="#">
+                                        modi quae consequatur nostrum
+                                        et obcaecati voluptatem.
+                                    </a>
+                                </h2>
+                                <div class="blog-item__text">
+                                    Varius sedu. Magna sollicitud volutpat nim
+                                    quis. Sed sit leoys quis nibh...
+                                </div>
+                                <div class="blog-item__bottom">
+                                    <span>
+
+                                    </span>
+                                    <div class="blog-item__bottom-text">
+                                        By John Deo
+                                    </div>
+                                    <a class="blog-item__bottom-link" href="#">
+                                        2 Comments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item blog-item">
+                            <div class="blog-item__wrapper">
+                                <a class="blog-item__box blog-item-box" href="#">
+                                    <div class="blog-item-box__img">
+                                        <img class="blog-item-box__img-image" src="images/blog-img-2.jpg" alt="img">
+                                    </div>
+                                    <p class="blog-item-box__text">
+                                        <span>25</span>
+                                        <span>OCT</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="blog-item__inner">
+                                <h2 class="blog-item__title">
+                                    <a class="blog-item__title-link" href="#">
+                                        modi quae consequatur nostrum
+                                        et obcaecati voluptatem.
+                                    </a>
+                                </h2>
+                                <div class="blog-item__text">
+                                    Varius sedu. Magna sollicitud volutpat nim
+                                    quis. Sed sit leoys quis nibh...
+                                </div>
+                                <div class="blog-item__bottom">
+                                    <span>
+
+                                    </span>
+                                    <div class="blog-item__bottom-text">
+                                        By John Deo
+                                    </div>
+                                    <a class="blog-item__bottom-link" href="#">
+                                        2 Comments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item blog-item">
+                            <div class="blog-item__wrapper">
+                                <a class="blog-item__box blog-item-box" href="#">
+                                    <div class="blog-item-box__img">
+                                        <img class="blog-item-box__img-image" src="images/blog-img-3.jpg" alt="img">
+                                    </div>
+                                    <p class="blog-item-box__text">
+                                        <span>25</span>
+                                        <span>OCT</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="blog-item__inner">
+                                <h2 class="blog-item__title">
+                                    <a class="blog-item__title-link" href="#">
+                                        modi quae consequatur nostrum
+                                        et obcaecati voluptatem.
+                                    </a>
+                                </h2>
+                                <div class="blog-item__text">
+                                    Varius sedu. Magna sollicitud volutpat nim
+                                    quis. Sed sit leoys quis nibh...
+                                </div>
+                                <div class="blog-item__bottom">
+                                    <span>
+
+                                    </span>
+                                    <div class="blog-item__bottom-text">
+                                        By John Deo
+                                    </div>
+                                    <a class="blog-item__bottom-link" href="#">
+                                        2 Comments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__subscribe subscribe" style="background-image: url(images/subscribe-bg.jpg);">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe__heading heading">
+                            <p class="heading__text">
+                                affordable & Easy Rental Services
+                            </p>
+                            <h2 class="heading__title">
+                                signup to receive latest
+                                news 7& updates
+                            </h2>
+                        </div>
+                        <form class="subscribe__form" action="#">
+                            <input class="subscribe__form-input" type="text" placeholder="Enter your email...">
+                            <button class="subscribe__form-btn" type="submit">
+                                <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.5453 9.53796L25.4654 3.48244V15.5244L18.5453 9.53796ZM9.62815 10.5635L12.0583 12.6881C12.4396 13.0144 12.9369 13.2116 13.4803 13.2116H13.4994H13.4983H13.5141C14.0586 13.2116 14.5559 13.0133 14.9417 12.6847L14.9384 12.687L17.3685 10.5623L24.7555 16.9521H2.24447L9.62815 10.5635ZM2.23434 2.04674H24.769L13.945 11.5153C13.8233 11.6123 13.6726 11.665 13.5174 11.6649H13.5017H13.5028H13.4871C13.3313 11.6651 13.1802 11.6119 13.0584 11.5142L13.0595 11.5153L2.23434 2.04674ZM1.53569 3.4813L8.45473 9.53683L1.53569 15.5198V3.4813ZM25.8367 0.715298C25.5667 0.57932 25.2494 0.5 24.913 0.5H2.09146C1.76538 0.500078 1.44378 0.576499 1.15205 0.723229L1.16442 0.717564C0.815179 0.891061 0.521063 1.15947 0.315299 1.49246C0.109535 1.82545 0.00032328 2.20977 0 2.60198L0 16.3946C0.000595604 16.9528 0.221018 17.488 0.612903 17.8827C1.00479 18.2774 1.53613 18.4994 2.09034 18.5H24.9097C25.4639 18.4994 25.9952 18.2774 26.3871 17.8827C26.779 17.488 26.9994 16.9528 27 16.3946V2.60198C27 1.77819 26.5286 1.06431 25.8423 0.720963L25.83 0.715298H25.8367Z"
+                                        fill="white"></path>
+                                </svg>
+                                <span>
+                                    subscribe
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section> 
+        </main>
+        <footer class="footer" style="background-image: url(images/footer-bg.png);">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box footer-box">
+                        <a class="footer-box__logo logo" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <p class="footer-box__text">
+                            The lucts portter sed tore mauris amet
+                            port masa varu sed. Magna sollic ipsum eudin tempore volutpat.
+                        </p>
+                    </div>
+                    <nav class="footer__menu footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <h3 class="footer-menu__list-title">
+                                    Useful links
+                                </h3>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    About Renity
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    How It Works
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Latest News
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <h3 class="footer-menu__list-title">
+                                    Explore Renity
+                                </h3>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Browse Tools
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Latest Equipments
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Recent Rentals
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    Read FAQ’s
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <h3 class="footer-menu__list-title">
+                                    Contact us
+                                </h3>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="#">
+                                    4495 Meadow Drive, Roseville
+                                    California - 95678
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="tel:18002360011">
+                                    Call us 1 (800) 236 0011
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a class="footer-menu__list-link" href="mailto:tool.rentals@my-domain.com">
+                                    tool.rentals@my-domain.com
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__subscribe footer-subscribe">
+                    <div class="footer-subscribe__heading heading">
+                        <p class="heading__text">
+                            Tourists Travel Equipment Rental
+                            <span></span>
+                        </p>
+                        <h2 class="heading__title">
+                            subscribe newsletter
+                        </h2>
+                    </div>
+                    <form class="footer-subscribe__form footer-form" action="#">
+                        <input class="footer-form__input" type="email" placeholder="Enter your email...">
+                        <button class="footer-form__button" type="submit">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.5453 9.53796L25.4654 3.48244V15.5244L18.5453 9.53796ZM9.62815 10.5635L12.0583 12.6881C12.4396 13.0144 12.9369 13.2116 13.4803 13.2116H13.4994H13.4983H13.5141C14.0586 13.2116 14.5559 13.0133 14.9417 12.6847L14.9384 12.687L17.3685 10.5623L24.7555 16.9521H2.24447L9.62815 10.5635ZM2.23434 2.04674H24.769L13.945 11.5153C13.8233 11.6123 13.6726 11.665 13.5174 11.6649H13.5017H13.5028H13.4871C13.3313 11.6651 13.1802 11.6119 13.0584 11.5142L13.0595 11.5153L2.23434 2.04674ZM1.53569 3.4813L8.45473 9.53683L1.53569 15.5198V3.4813ZM25.8367 0.715298C25.5667 0.57932 25.2494 0.5 24.913 0.5H2.09146C1.76538 0.500078 1.44378 0.576499 1.15205 0.723229L1.16442 0.717564C0.815179 0.891061 0.521063 1.15947 0.315299 1.49246C0.109535 1.82545 0.00032328 2.20977 0 2.60198L0 16.3946C0.000595604 16.9528 0.221018 17.488 0.612903 17.8827C1.00479 18.2774 1.53613 18.4994 2.09034 18.5H24.9097C25.4639 18.4994 25.9952 18.2774 26.3871 17.8827C26.779 17.488 26.9994 16.9528 27 16.3946V2.60198C27 1.77819 26.5286 1.06431 25.8423 0.720963L25.83 0.715298H25.8367Z"
+                                    fill="white"></path>
+                            </svg>
+                            <span>
+                                subscribe
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p class="footer__copy">
+                © 2022 Renity Audio & Video Equipment Rental. All Rights Reserved.
+            </p>
+        </footer> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
