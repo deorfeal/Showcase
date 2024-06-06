@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Размеры
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Адрес
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__phone" href="tel:+78122070007">
+                        +7 812 207-00-07
+                    </a>
+                </div>
+                <a class="header__rent" href="#">
+                    Арендовать бокс
+                </a>
+                <div class="header__burger burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M2.25 9H15.75" stroke="#2B2E34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2.25 4.5H15.75" stroke="#2B2E34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2.25 13.5H15.75" stroke="#2B2E34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 5L5 15M5 5L15 15" stroke="#2B2E34" stroke-width="1.33" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <a class="header__exit" href="#">
+                    <span>
+                        Выйти из аккуанта
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M12.25 27.25H7.25C6.58696 27.25 5.95107 26.9866 5.48223 26.5178C5.01339 26.0489 4.75 25.413 4.75 24.75V7.25C4.75 6.58696 5.01339 5.95107 5.48223 5.48223C5.95107 5.01339 6.58696 4.75 7.25 4.75H12.25"
+                            stroke="#2B2E34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21 22.25L27.25 16L21 9.75" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M27.25 16H12.25" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__mobile header-mobile">
+                <nav class="header-mobile__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Адреса
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Размеры
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header-mobile__phone" href="tel:+78122070007">
+                    +7 812 207-00-07
+                </a>
+                <p class="header-mobile__text">
+                    Ежедневно 9:00–21:00
+                </p>
+                <div class="header-mobile__socials socials">
+                    <ul class="socials__list">
+                        <li class="socials__list-item">
+                            <a class="socials__list-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.4 5.45C20.15 3.2 17.15 2 14 2C7.4 2 2 7.4 2 14C2 16.1 2.60001 18.2 3.65001 20L2 26L8.30002 24.35C10.1 25.25 12.05 25.85 14 25.85C20.6 25.85 26 20.45 26 13.85C26 10.7 24.65 7.7 22.4 5.45ZM14 23.9C12.2 23.9 10.4 23.45 8.90001 22.55L8.59999 22.4L4.84999 23.45L5.90001 19.85L5.59999 19.4C4.54999 17.75 4.09999 15.95 4.09999 14.15C4.09999 8.75 8.6 4.25 14 4.25C16.7 4.25 19.1 5.3 21.05 7.1C23 9.05 23.9 11.45 23.9 14.15C23.9 19.4 19.55 23.9 14 23.9ZM19.4 16.4C19.1 16.25 17.6 15.5 17.3 15.5C17 15.35 16.85 15.35 16.7 15.65C16.55 15.95 15.95 16.55 15.8 16.85C15.65 17 15.5 17 15.2 17C14.9 16.85 14 16.55 12.8 15.5C11.9 14.75 11.3 13.7 11.15 13.4C11 13.1 11.15 12.95 11.3 12.8C11.45 12.65 11.6 12.5 11.75 12.35C11.9 12.2 11.9 12.05 12.05 11.9C12.2 11.75 12.05 11.6 12.05 11.45C12.05 11.3 11.45 9.8 11.15 9.2C11 8.75 10.7 8.75 10.55 8.75C10.4 8.75 10.25 8.75 9.94998 8.75C9.79998 8.75 9.49998 8.75 9.19998 9.05C8.89998 9.35 8.15001 10.1 8.15001 11.6C8.15001 13.1 9.19999 14.45 9.34999 14.75C9.49999 14.9 11.45 18.05 14.45 19.25C17 20.3 17.45 20 18.05 20C18.65 20 19.85 19.25 20 18.65C20.3 17.9 20.3 17.3 20.15 17.3C20 16.55 19.7 16.55 19.4 16.4Z"
+                                        fill="#2B2E34" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a class="socials__list-link" href="#">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.51239 12.749C10.418 10.2088 14.3559 8.5341 16.3263 7.72499C21.9521 5.41482 23.1211 5.01352 23.883 5.00013C24.0506 4.99736 24.4253 5.03836 24.668 5.23279C24.873 5.39697 24.9294 5.61876 24.9563 5.77442C24.9833 5.93008 25.0169 6.28467 24.9902 6.56174C24.6854 9.72419 23.3662 17.3986 22.6951 20.9406C22.4111 22.4394 21.852 22.9419 21.3107 22.9911C20.1343 23.098 19.2409 22.2235 18.1015 21.4861C16.3186 20.3323 15.3113 19.614 13.5807 18.488C11.5806 17.1868 12.8772 16.4716 14.017 15.3028C14.3153 14.9969 19.4986 10.3423 19.5989 9.92011C19.6115 9.8673 19.6231 9.67045 19.5046 9.56651C19.3862 9.46257 19.2114 9.49812 19.0852 9.52638C18.9064 9.56645 16.0581 11.4251 10.5403 15.1023C9.73187 15.6504 8.99958 15.9174 8.34347 15.9035C7.62016 15.888 6.2288 15.4997 5.19447 15.1678C3.92583 14.7606 2.91753 14.5454 3.00533 13.8539C3.05106 13.4938 3.55341 13.1255 4.51239 12.749Z"
+                                        fill="#2B2E34" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header-mobile__exit" href="#">
+                    <span>
+                        Выйти из аккуанта
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__bills bills">
+                <div class="container">
+                    <div class="bills__top">
+                        <a class="bills__top-back back" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path d="M14.25 9L3.75 9" stroke="#818796" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 14.25L3.75 9L9 3.75" stroke="#818796" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>
+                                Все боксы
+                            </span>
+                        </a>
+                        <h1 class="bills__top-title">
+                            Архив счетов
+                        </h1>
+                    </div>
+                    <div class="bills__inner">
+                        <div class="bills__item bills-item bills-item--archive">
+                            <div class="bills-item__title">
+                                PRO-SS-20-01235
+                                <div class="bills-item__files files">
+                                    <div class="files__wrapper">
+                                        <div class="files__close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path d="M24 8L8 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M8 8L24 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="files__title">
+                                            Счет PRO-SS-20-01235
+                                        </h3>
+                                        <div class="files__inner">
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>Скачать файл отчета</span>
+                                            </a>
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14 2V8H20" stroke="#2B2E34" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M16 13H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M16 17H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M10 9H9H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    Скачать акт
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bills-item__row bills-item-row">
+                                <div class="bills-item-row__info">
+                                    <div class="bills-item-row__info-text">
+                                        5-D101
+                                    </div>
+                                    <div class="bills-item-row__info-text">
+                                        610 руб.
+                                    </div>
+                                </div>
+                                <div class="bills-item-row__date">
+                                    от 25 декабря
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bills__item bills-item bills-item--archive">
+                            <div class="bills-item__title">
+                                PRO-SS-20-01235
+                                <div class="bills-item__files files">
+                                    <div class="files__wrapper">
+                                        <div class="files__close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path d="M24 8L8 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M8 8L24 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="files__title">
+                                            Счет PRO-SS-20-01235
+                                        </h3>
+                                        <div class="files__inner">
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>Скачать файл отчета</span>
+                                            </a>
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14 2V8H20" stroke="#2B2E34" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M16 13H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M16 17H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M10 9H9H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    Скачать акт
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bills-item__row bills-item-row">
+                                <div class="bills-item-row__info">
+                                    <div class="bills-item-row__info-text">
+                                        1-B001
+                                    </div>
+                                    <div class="bills-item-row__info-text">
+                                        610 руб.
+                                    </div>
+                                </div>
+                                <div class="bills-item-row__date">
+                                    от 18 декабря
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bills__item bills-item bills-item--archive">
+                            <div class="bills-item__title">
+                                PRO-DD-52-04125
+                                <div class="bills-item__files files">
+                                    <div class="files__wrapper">
+                                        <div class="files__close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path d="M24 8L8 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M8 8L24 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="files__title">
+                                            Счет PRO-DD-52-04125
+                                        </h3>
+                                        <div class="files__inner">
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>Скачать файл отчета</span>
+                                            </a>
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14 2V8H20" stroke="#2B2E34" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M16 13H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M16 17H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M10 9H9H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    Скачать акт
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bills-item__row bills-item-row">
+                                <div class="bills-item-row__info">
+                                    <div class="bills-item-row__info-text">
+                                        1-B001
+                                    </div>
+                                    <div class="bills-item-row__info-text">
+                                        700 руб.
+                                    </div>
+                                </div>
+                                <div class="bills-item-row__date">
+                                    от 17 декабря
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bills__item bills-item bills-item--archive">
+                            <div class="bills-item__title">
+                                PRO-SS-20-01235
+                                <div class="bills-item__files files">
+                                    <div class="files__wrapper">
+                                        <div class="files__close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path d="M24 8L8 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M8 8L24 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="files__title">
+                                            Счет PRO-SS-20-01235
+                                        </h3>
+                                        <div class="files__inner">
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>Скачать файл отчета</span>
+                                            </a>
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14 2V8H20" stroke="#2B2E34" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M16 13H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M16 17H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M10 9H9H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    Скачать акт
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bills-item__row bills-item-row">
+                                <div class="bills-item-row__info">
+                                    <div class="bills-item-row__info-text">
+                                        1-C101
+                                    </div>
+                                    <div class="bills-item-row__info-text">
+                                        510 руб.
+                                    </div>
+                                </div>
+                                <div class="bills-item-row__date">
+                                    от 12 декабря
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bills__item bills-item bills-item--archive">
+                            <div class="bills-item__title">
+                                PRO-SS-20-01235
+                                <div class="bills-item__files files">
+                                    <div class="files__wrapper">
+                                        <div class="files__close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path d="M24 8L8 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M8 8L24 24" stroke="#818796" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="files__title">
+                                            Счет PRO-SS-20-01235
+                                        </h3>
+                                        <div class="files__inner">
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>Скачать файл отчета</span>
+                                            </a>
+                                            <a class="files__link" download="" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                                        stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M14 2V8H20" stroke="#2B2E34" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M16 13H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M16 17H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M10 9H9H8" stroke="#2B2E34" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    Скачать акт
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bills-item__row bills-item-row">
+                                <div class="bills-item-row__info">
+                                    <div class="bills-item-row__info-text">
+                                        1-D111
+                                    </div>
+                                    <div class="bills-item-row__info-text">
+                                        1 234 руб.
+                                    </div>
+                                </div>
+                                <div class="bills-item-row__date">
+                                    от 1 декабря
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
