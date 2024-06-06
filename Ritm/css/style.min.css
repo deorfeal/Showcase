@@ -1,0 +1,32 @@
+@media (max-width: 1260px) {
+    .categories__inner .swiper-button-next {
+        right: 50%;
+        -webkit-transform: translateX(150%) rotate(180deg);
+        -ms-transform: translateX(150%) rotate(180deg);
+        transform: translateX(150%) rotate(180deg);
+        top: unset;
+        bottom: -70rem;
+    }
+    .categories__inner .swiper-button-prev {
+        left: 50%;
+        -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+        transform: translateX(-150%);
+        top: unset;
+        bottom: -70rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu--active .header-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border: unset;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+    }
+}
