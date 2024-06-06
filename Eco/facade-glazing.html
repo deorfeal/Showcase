@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facade-glazing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <div class="header__wrapper">
+          <div class="container">
+            <div class="header__top">
+              <nav class="menu">
+                <ul class="menu__list menu-list">
+                  <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">
+                      Объекты
+                    </a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">
+                      Акции
+                    </a>
+                  </li>
+                </ul>
+                <div class="user-nav" style="display: none;">
+                  <a class="user-nav__link" href="#">
+                    Цены
+                  </a>
+                  <a class="user-nav__link" href="#">
+                    Контакты
+                  </a>
+                  <div class="user-nav__box">
+                    <p class="user-nav__box-phone">
+                      +7 (8412) 44 - 94 -44
+                    </p>
+                    <button class="user-nav__box-btn" type="button">
+                      заказать звонок
+                    </button>
+                  </div>
+                </div>
+              </nav>
+              <a class="header__logo logo" href="#">
+                <img class="logo-img" src="images/logo.png" alt="logo">
+              </a>
+              <div class="user-nav">
+                <a class="user-nav__link" href="#">
+                  Цены
+                </a>
+                <a class="user-nav__link" href="#">
+                  Контакты
+                </a>
+                <div class="user-nav__box">
+                  <p class="user-nav__box-phone">
+                    +7 (8412) 44 - 94 -44
+                  </p>
+                  <button class="user-nav__box-btn" type="button">
+                    заказать звонок
+                  </button>
+                </div>
+              </div>
+              <button class="menu-btn">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom-wrapper">
+          <div class="container">
+            <div class="header__bottom header-bottom">
+              <nav class="header-bottom__menu header-bottom-menu">
+                <ul class="header-bottom-menu__list">
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Окна
+                    </a>
+                  </li>
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Двери
+                    </a>
+                  </li>
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Перегородки
+                    </a>
+                  </li>
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Балконы и лоджии
+                    </a>
+                  </li>
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Остеклениие коттеджей
+                    </a>
+                  </li>
+                  <li class="header-bottom-menu__list-item">
+                    <a class="header-bottom-menu__list-link" href="#">
+                      Фасадное остекление
+                    </a>
+                  </li>
+                </ul>
+                <button class="header-bottom__menu-btn">
+                  <span></span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class="wrapper">
+        <main class="main main__facade-glazing">
+            <section class="main__glazing-facade partitions">
+                <div class="container">
+                    <h1 class="partitions__title">
+                        Фасадное остекление в Пензе
+                    </h1>
+                    <div class="partitions__inner">
+                        <div class="partitions__top partitions-top">
+                            <div class="partitions-top__item partitions-top-item">
+                                <img class="partitions-top-item__img" src="images/partitions-img-10.jpg" alt="picture">
+                                <p class="partitions-top-item__text">
+                                    Классическое <br>
+                                    фасадное остекление
+                                </p>
+                                <div class="partitions-top-item__box partitions-top-item-box">
+                                    <p class="partitions-top-item-box__price">
+                                        от 9 690 руб/м2
+                                    </p>
+                                    <div class="partitions-top-item-box__row">
+                                        <a class="partitions-top-item-box__row-link" href="#">
+                                            Подробнее
+                                        </a>
+                                        <a class="partitions-top-item-box__row-btn" href="#">
+                                            Консультация
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partitions-top__item partitions-top-item">
+                                <img class="partitions-top-item__img" src="images/partitions-img-11.jpg" alt="picture">
+                                <p class="partitions-top-item__text">
+                                    Структурное <br>
+                                    фасадное остекление
+                                </p>
+                                <div class="partitions-top-item__box partitions-top-item-box">
+                                    <p class="partitions-top-item-box__price">
+                                        от 11 690 руб/м2
+                                    </p>
+                                    <div class="partitions-top-item-box__row">
+                                        <a class="partitions-top-item-box__row-link" href="#">
+                                            Подробнее
+                                        </a>
+                                        <a class="partitions-top-item-box__row-btn" href="#">
+                                            Консультация
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partitions-top__item partitions-top-item">
+                                <img class="partitions-top-item__img" src="images/partitions-img-12.jpg" alt="picture">
+                                <p class="partitions-top-item__text">
+                                    Имитация <br>
+                                    структурного <br>
+                                    остекления
+                                </p>
+                                <div class="partitions-top-item__box partitions-top-item-box">
+                                    <p class="partitions-top-item-box__price">
+                                        от 13 590 руб/м2
+                                    </p>
+                                    <div class="partitions-top-item-box__row">
+                                        <a class="partitions-top-item-box__row-link" href="#">
+                                            Подробнее
+                                        </a>
+                                        <a class="partitions-top-item-box__row-btn" href="#">
+                                            Консультация
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partitions-top__item partitions-top-item">
+                                <img class="partitions-top-item__img" src="images/partitions-img-13.jpg" alt="picture">
+                                <p class="partitions-top-item__text">
+                                    Планарное <br>
+                                    (спайдерное) <br>
+                                    остекление
+                                </p>
+                                <div class="partitions-top-item__box partitions-top-item-box">
+                                    <p class="partitions-top-item-box__price">
+                                        от 15 590 руб/м2
+                                    </p>
+                                    <div class="partitions-top-item-box__row">
+                                        <a class="partitions-top-item-box__row-link" href="#">
+                                            Подробнее
+                                        </a>
+                                        <a class="partitions-top-item-box__row-btn" href="#">
+                                            Консультация
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__facade-section facade-section">
+                <div class="container">
+                    <h2 class="facade-section__title">
+                        Фасадное остекление от компании «Экосоюз»
+                    </h2>
+                    <div class="facade-section__inner">
+                        <h3 class="facade-section__title-bottom">
+                            Ключевым направлением Компании «ЭКОСОЮЗ» является производство и монтаж стекло-алюминиевых
+                            конструкций для фасадного остекления.
+                        </h3>
+                        <p class="facade-section__text">
+                            <span>
+                                Фасадное остекление или фасады из стекла
+                            </span>
+                            - самый современный, высокотехнологичный и надежный способ отделки наружных поверхностей
+                            зданий, способный придать зданию представительный, престижный внешний вид. <br> <br>
+
+                            Современные лики городов невозможно уже представить без сверкающих на солнце, стеклянных
+                            фасадов крупных банков, ресторанов, развлекательных, торговых и бизнес центров и прочих
+                            объектов социальной инфраструктуры. Фасадное остекление позволяет создавать стильные фасады
+                            с эффектом сплошных светопрозрачных и непрозрачных стен различных цветовых оттенков, текстур
+                            и декоративной отделки. <br> <br>
+
+                            В последнее время, фасадное остекление широко применяется и в строительстве жилых зданий.
+                            Практически все вновь проектируемые и строящиеся, как городские, так и загородные объекты
+                            недвижимости используют те или иные виды светопрозрачных алюминиевых конструкций. <br> <br>
+
+                            Сплошное остекление зоны лоджий и балконов в многоквартирных домах является лишь одним из
+                            примеров фасадного остекления.
+                        </p>
+                        <h4 class="facade-section__subtitle">
+                            Фасадное остекление от Компании «ЭКОСОЮЗ»
+                        </h4>
+                        <p class="facade-section__text">
+                            Компанией «ЭКОСОЮЗ» за годы своей работы спроектированы и выполнены стеклянные фасады на
+                            более восьмидесяти крупных строительных объектах г.Пензы, Кузнецка, Саранска, Нижнего
+                            Ломова. <br> <br>
+
+                            И каждый год в арсенале Компании появляются новые строительные объекты, фасады которых
+                            привлекают внимание, радуют глаз своим оригинальным архитектурным решением. В их числе такие
+                            объекты, как :
+                        </p>
+                        <ul class="facade-section__list">
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ГБУК Библиотека им. М.Ю. Лермонтова,
+                                </p>
+                            </li>
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ТЦ «Новый Арбат»
+                                </p>
+                            </li>
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ТЦ «Онежский»
+                                </p>
+                            </li>
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ТЦ «Сан и Март»
+                                </p>
+                            </li>
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ТЦ «Высшая лига»
+                                </p>
+                            </li>
+                            <li class="facade-section__list-item">
+                                <p class="facade-section__list-text">
+                                    ТЦ «Суворовский» Автосалоны «RENAULT”, VW “Аллер-Авто», BMW “Аллер-Авто», «Мотор» и
+                                    др.
+                                    объекты
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__facade-gallery facade-gallery">
+                <div class="container">
+                    <h2 class="facade-gallery__title">
+                        Галерея наших работ по фасадному остеклению
+                    </h2>
+                    <div class="facade-gallery__inner">
+                        <div class="facade-gallery-swiper swiper">
+                            <div class="facade-gallery-swiper-wrapper swiper-wrapper">
+                                <div class="facade-gallery-swiper-slide swiper-slide">
+                                    <div class="facade-gallery-swiper-slide__box">
+                                        <img class="facade-gallery-swiper-slide__box-img"
+                                            src="images/facade-gallery-img-1.jpg" alt="picture">
+                                        <p class="facade-gallery-swiper-slide__box-text">
+                                            Автосалон VW “Аллер-Авто»
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="facade-gallery-swiper-slide swiper-slide">
+                                    <div class="facade-gallery-swiper-slide__box">
+                                        <img class="facade-gallery-swiper-slide__box-img"
+                                            src="images/facade-gallery-img-2.jpg" alt="picture">
+                                        <p class="facade-gallery-swiper-slide__box-text">
+                                            ГБУК Библиотека им. М.Ю. Лермонтова
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facade-gallery-swiper-prev swiper-button-prev">
+                            <img class="" src="images/facade-gallery-arrow.png" alt="arrow">
+                        </div>
+                        <div class="facade-gallery-swiper-next swiper-button-next">
+                            <img class="" src="images/facade-gallery-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                    <a class="facade-gallery__link" href="#">
+                        Посмотреть больше объектов
+                    </a>
+                </div>
+            </section>
+            <section class="main__facade-info facade-info">
+                <div class="container">
+                    <div class="facade-info__inner">
+                        <p class="facade-info__text">
+                            Гарантией долговременной эксплуатации объектов, выполненных специалистами нашей компании,
+                            является <span> качество применяемых материалов, точность подготовки конструкторских
+                                решений,
+                                система качества изготовления и монтажа, </span> применяемая компанией и, конечно, опыт
+                            выполнения
+                            сложных светопрозрачных конструкций.
+                        </p>
+                        <h4 class="facade-info__title">
+                            Алюминиевые профили
+                        </h4>
+                        <p class="facade-info__text">
+                            Компания «ЭКОСОЮЗ» для изготовления алюминиевых конструкций фасадов использует системы
+                            сертифицированных профилей «VIDNAL AF 50” , «ТАТПРОФ» и «Алютех»— ведущих производителей
+                            систем алюминиевых профилей. <br> <br>
+
+                            Производителями алюминиевых профилей используется только первичное высококачественное сырьё,
+                            соответствующее требованиям ГОСТ 4784-97 и международным стандартам DIN 573-3. <br> <br>
+
+                            Применяемые алюминиевые системы имеют отличные показатели по статике, хорошую теплотехнику и
+                            высокую технологичность сборки конструкций. <br> <br>
+
+                            Высокое качество, многообразие применяемых системных решений позволяют реализовать самые
+                            смелые новаторские концепции фасадов.
+                        </p>
+                        <h4 class="facade-info__title">
+                            Преимущества стекло-алюминиевых фасадов:
+                        </h4>
+                        <ul class="facade-info__list">
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; эстетичность и современность;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; достаточная прочность конструкций при высокой коррозионной стойкости и
+                                    долговечности;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; хорошая теплоизоляция;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; звукоизоляция; светопроницаемость с возможностью регулирования уровня пропускания
+                                    солнечных лучей посредством тонировки стекла или применения стёкол с различными
+                                    оптическими показателями;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; эффективное использование полезной площади зданий за счёт компактности фасадных
+                                    конструкций простота в эксплуатации;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; уменьшение нагрузки на фундамент строения;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; возможность воплощать любые дизайнерские решения и проекты архитекторов за счёт
+                                    разнообразия функциональных элементов, форм , видов стеклянных поверхностей,
+                                    цветовых решений профилей.
+                                    Стекло-алюминиевые фасады, применяемые при строительстве современных зданий, имеют
+                                    большое разнообразие по архитектурным, эстетическим и техническим характеристикам.
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="facade-info__text">
+                            Сегодня, для создания современных фасадов применяются следующие виды фасадного остекления,
+                            различающиеся способом крепления стекла (стеклопакетов) в несущем каркасе профильной
+                            алюминиевой системы:
+                        </p>
+                        <ul class="facade-info__list">
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; классический фасад;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; структурный фасад;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; полуструктурный фасад;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; планарное (спайдерное) остекление;
+                                </p>
+                            </li>
+                            <li class="facade-info__list-item">
+                                <p class="facade-info__list-text">
+                                    &ensp; &ensp; &ensp; имитация структурного остекления;
+                                </p>
+                            </li>
+                        </ul>
+                        <h4 class="facade-info__title">
+                            Остекление фасадных витражей.
+                        </h4>
+                        <p class="facade-info__text">
+                            Светопрозрачные алюминиевые фасады могут изготавливаться с применением любого вида стекла и
+                            стеклопакетов, в зависимости от назначения здания. <br> <br>
+
+                            Сегодня в фасадном остеклении применяется стекло со следующими свойствами: тонированное,
+                            солнцезащитное, энергосберегающее, с рефлектным зеркальным покрытием, шумопоглащающее,
+                            противопожарное, самоочищающееся. В целях повышения прочностных характеристик и обеспечения
+                            безопасности эксплуатации зданий и сооружений, рекомендуется использование «безопасных»
+                            стёкол. Безопасные стёкла — это общее название группы стекол, разрушение которых носит
+                            безопасный характер. К ним относятся закалённые стёкла, триплекс, армированные, стёкла с
+                            защитными свойствами разных классов и др. <br> <br>
+
+                            Всю необходимую информацию по ценам, конструктивным особенностям фасадных систем, видам и
+                            характеристикам архитектурного стекла и стеклопакетов, Вы можете получить у наших
+                            специалистов, обратившись в центральный офис или разместив заявку на сайте. <br> <br>
+
+                            Компания «ЭКОСОЮЗ» предлагает различные, удобные формы взаимовыгодного сотрудничества по
+                            производству и монтажу светопрозрачных конструкций и вентилируемых фасадов на правах
+                            Подрядчика. <br> <br>
+
+                            Мы гарантируем профессиональный подход к каждому проекту точность и качество выполняемых
+                            работ. <br> <br>
+
+                            Надеемся на долгосрочное, взаимовыгодное сотрудничество!
+                        </p>
+                        <h4 class="facade-info__subtitle">
+                            Более подробная информация на сайте производителя
+                        </h4>
+                        <img class="facade-info__img" src="images/facade-info-img.png" alt="picture">
+                    </div>
+                </div>
+            </section> 
+            <section class="main__invite invite">
+                <div class="container">
+                    <div class="invite__inner">
+                        <h2 class="invite__title">
+                            Пригласить
+                            замерщика
+                        </h2>
+                        <form class="invite__form invite-form" action="#" method="post">
+                            <h3 class="invite-form__title">
+                                Запись на бесплатный замер
+                            </h3>
+                            <p class="invite-form__text">
+                                Заполните форму и мы свяжемся
+                                с Вами в удобное для Вас время!
+                            </p>
+                            <div class="invite-form__row">
+                                <p class="invite-form__row-text">
+                                    Ваше имя
+                                </p>
+                                <input class="invite-form__row-input" type="text">
+                            </div>
+                            <div class="invite-form__row">
+                                <p class="invite-form__row-text">
+                                    Ваш телефон
+                                </p>
+                                <input class="invite-form__row-input" type="tel">
+                            </div>
+                            <div class="invite-form__row">
+                                <p class="invite-form__row-text">
+                                    Комментарий
+                                </p>
+                                <textarea class="invite-form__row-textarea" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="invite-form__btn" type="submit">
+                                отправить
+                            </button>
+                        </form>
+                    </div>
+                    <p class="invite__text">
+                        Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a>
+                    </p>
+                </div>
+            </section>
+            <section class="main__recalls recalls">
+                <div class="container">
+                    <h2 class="recalls__title title">
+                        отзывы наших клиентов
+                    </h2>
+                    <div class="recalls-swiper swiper">
+                        <div class="recalls-swiper-wrapper swiper-wrapper">
+                            <div class="recalls-swiper-slide swiper-slide">
+                                <div class="recalls-swiper-slide__box recalls-swiper-slide-box">
+                                    <img class="recalls-swiper-slide-box__img" src="images/recalls-img-5.jpg"
+                                        alt="picture">
+                                    <div class="recalls-swiper-slide-box__content recalls-swiper-slide-box-content">
+                                        <div
+                                            class="recalls-swiper-slide-box-content__top recalls-swiper-slide-box-content-top">
+                                            <img class="recalls-swiper-slide-box-content-top__img"
+                                                src="images/recalls-person-2.png" alt="picture">
+                                            <div class="recalls-swiper-slide-box-content-top__row">
+                                                <p class="recalls-swiper-slide-box-content-top__row-name">
+                                                    Николай Васильев
+                                                </p>
+                                                <p class="recalls-swiper-slide-box-content-top__row-text">
+                                                    <span>
+                                                        Услуга:
+                                                    </span>
+                                                    изготовление и установка
+                                                    входной группы
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="recalls-swiper-slide-box-content__stars">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-half-star.png" alt="star">
+                                        </div>
+                                        <p class="recalls-swiper-slide-box-content__text">
+                                            Заказывали входную группу для мини-гостиницы. Изготовили быстро по хорошей
+                                            цене. Установили правильно, работой компании “Экосоюз” довольны. Рекомендуем
+                                            данную компанию.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recalls-swiper-slide swiper-slide">
+                                <div class="recalls-swiper-slide__box recalls-swiper-slide-box">
+                                    <img class="recalls-swiper-slide-box__img" src="images/recalls-img-5.jpg"
+                                        alt="picture">
+                                    <div class="recalls-swiper-slide-box__content recalls-swiper-slide-box-content">
+                                        <div
+                                            class="recalls-swiper-slide-box-content__top recalls-swiper-slide-box-content-top">
+                                            <img class="recalls-swiper-slide-box-content-top__img"
+                                                src="images/recalls-person-2.png" alt="picture">
+                                            <div class="recalls-swiper-slide-box-content-top__row">
+                                                <p class="recalls-swiper-slide-box-content-top__row-name">
+                                                    Николай Васильев
+                                                </p>
+                                                <p class="recalls-swiper-slide-box-content-top__row-text">
+                                                    <span>
+                                                        Услуга:
+                                                    </span>
+                                                    изготовление и установка
+                                                    входной группы
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="recalls-swiper-slide-box-content__stars">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-half-star.png" alt="star">
+                                        </div>
+                                        <p class="recalls-swiper-slide-box-content__text">
+                                            Заказывали входную группу для мини-гостиницы. Изготовили быстро по хорошей
+                                            цене. Установили правильно, работой компании “Экосоюз” довольны. Рекомендуем
+                                            данную компанию.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recalls-swiper-slide swiper-slide">
+                                <div class="recalls-swiper-slide__box recalls-swiper-slide-box">
+                                    <img class="recalls-swiper-slide-box__img" src="images/recalls-img-5.jpg"
+                                        alt="picture">
+                                    <div class="recalls-swiper-slide-box__content recalls-swiper-slide-box-content">
+                                        <div
+                                            class="recalls-swiper-slide-box-content__top recalls-swiper-slide-box-content-top">
+                                            <img class="recalls-swiper-slide-box-content-top__img"
+                                                src="images/recalls-person-2.png" alt="picture">
+                                            <div class="recalls-swiper-slide-box-content-top__row">
+                                                <p class="recalls-swiper-slide-box-content-top__row-name">
+                                                    Николай Васильев
+                                                </p>
+                                                <p class="recalls-swiper-slide-box-content-top__row-text">
+                                                    <span>
+                                                        Услуга:
+                                                    </span>
+                                                    изготовление и установка
+                                                    входной группы
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="recalls-swiper-slide-box-content__stars">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-star.png" alt="star">
+                                            <img class="recalls-swiper-slide-box-content__stars-icon"
+                                                src="images/recalls-half-star.png" alt="star">
+                                        </div>
+                                        <p class="recalls-swiper-slide-box-content__text">
+                                            Заказывали входную группу для мини-гостиницы. Изготовили быстро по хорошей
+                                            цене. Установили правильно, работой компании “Экосоюз” довольны. Рекомендуем
+                                            данную компанию.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recalls-pagination swiper-pagination">
+
+                        </div>
+                        <div class="recalls-prev swiper-button-prev">
+                            <img src="images/recalls-arrow.png" alt="arrow">
+                        </div>
+                        <div class="recalls-next swiper-button-next">
+                            <img src="images/recalls-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top footer-top">
+                    <a class="footer__top-logo logo" href="#">
+                        <img class="logo-img" src="images/footer-logo.png" alt="picture">
+                    </a>
+                    <a class="footer-top__link" href="#">
+                        Бесплатный <br>
+                        замер
+                    </a>
+                    <div class="footer-top__box footer-top-box">
+                        <div class="footer-top-box__row">
+                            <p class="footer-top-box__row-text">
+                                +7 (8412) 44 - 94 -44
+                            </p>
+                            <a class="footer-top-box__row-link" href="#">
+                                заказать звонок
+                            </a>
+                        </div>
+                        <p class="footer-top-box__text">
+                            Пн-Пт – 8:00 - 18:00 l Сб – 8:00-13:00 l Вс – вых.
+                            г. Пенза ул. Лозицкая 1
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__bottom footer-bottom">
+                    <ul class="footer-bottom__list footer-bottom-list">
+                        <li class="footer-bottom-list__item">
+                            <p class="footer-bottom-list__text">
+                                о компании
+                            </p>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Миссия и ценности
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Преимущества
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Лицензии и сертификаты
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                История
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Производство
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list footer-bottom-list">
+                        <li class="footer-bottom-list__item">
+                            <p class="footer-bottom-list__text">
+                                покупателям
+                            </p>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Скидки и акции
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Наши инновации
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Часто задаваемые вопросы
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list footer-bottom-list">
+                        <li class="footer-bottom-list__item">
+                            <p class="footer-bottom-list__text">
+                                B2B
+                            </p>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Сотрудничество
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Галерея объектов
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list footer-bottom-list">
+                        <li class="footer-bottom-list__item">
+                            <p class="footer-bottom-list__text">
+                                Дилерам
+                            </p>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Наша продукция
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Преимущества работы
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Как стать дилером
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list footer-bottom-list">
+                        <li class="footer-bottom-list__item">
+                            <p class="footer-bottom-list__text">
+                                Контакты
+                            </p>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Наши офисы
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Заявка на замер
+                            </a>
+                        </li>
+                        <li class="footer-bottom-list__item">
+                            <a class="footer-bottom-list__link" href="#">
+                                Письмо генеральному
+                                директору
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
