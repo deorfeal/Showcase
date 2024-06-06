@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="ru">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Склады
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Офисы и коворкинг
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Документация
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__phone" href="tel:+78122070007">
+                        <span>
+                            +7 812 207-00-07
+                        </span>
+                    </a>
+                </div>
+                <a class="header__call" href="#">
+                    <span>
+                        Заказать звонок
+                    </span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 5C5 16.0457 13.9543 25 25 25V19L21 16L17.8859 19.6141C14.6253 18.0239 11.9761 15.3747 10.3859 12.1141L12.5 10L12 4L5 5Z"
+                            stroke="#2B2E34" stroke-width="2.25" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a class="header__rent" href="#">
+                    Арендовать бокс
+                </a>
+                <a class="header__account" href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.7643 3.21888L21.7811 7.23566C22.2414 7.69596 22.5 8.32025 22.5 8.9712V11.0288C22.5 11.6798 22.2414 12.304 21.7811 12.7643L17.7643 16.7811C17.304 17.2414 16.6798 17.5 16.0288 17.5H13.9712C13.3202 17.5 12.696 17.2414 12.2357 16.7811L8.21888 12.7643C7.75859 12.304 7.5 11.6798 7.5 11.0288V8.9712C7.5 8.32025 7.75859 7.69596 8.21888 7.23566L12.2357 3.21888C12.696 2.75859 13.3202 2.5 13.9712 2.5L16.0288 2.5C16.6798 2.5 17.304 2.75859 17.7643 3.21888ZM20.0331 11.0413C20.6082 10.4662 20.6082 9.53378 20.0331 8.95868L16.0413 4.96694C15.4662 4.39184 14.5338 4.39184 13.9587 4.96694L9.96694 8.95868C9.39184 9.53378 9.39184 10.4662 9.96694 11.0413L13.9587 15.0331C14.5338 15.6082 15.4662 15.6082 16.0413 15.0331L20.0331 11.0413Z"
+                            fill="#2B2E34" />
+                        <path
+                            d="M5 26.4489H7.5V24.375C7.5 23.3395 8.33947 22.5 9.375 22.5H20.625C21.6605 22.5 22.5 23.3395 22.5 24.375V26.4489H25V25.0624C25 24.5651 24.8025 24.0882 24.4508 23.7365L21.2635 20.5492C20.9118 20.1975 20.4349 20 19.9376 20H10.0624C9.56508 20 9.08817 20.1975 8.73654 20.5492L5.54917 23.7365C5.19754 24.0882 5 24.5651 5 25.0624V26.4489Z"
+                            fill="#2B2E34" />
+                    </svg>
+                </a>
+                <button class="header__burger" type="button">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 9H26" stroke="#2B2E34" stroke-width="2" />
+                        <path d="M4 15H26" stroke="#2B2E34" stroke-width="2" />
+                        <path d="M4 21H26" stroke="#2B2E34" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__place place">
+                <div class="container">
+                    <div class="place__inner">
+                        <div class="place__swiper place-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="place-swiper__slide place-swiper-slide place-slide swiper-slide">
+                                    <img class="place-slide__img" src="images/place-img-1.jpg" alt="img">
+                                </div>
+                                <div class="place-swiper__slide place-swiper-slide place-slide swiper-slide">
+                                    <img class="place-slide__img" src="images/place-img-1.jpg" alt="img">
+                                </div>
+                                <div class="place-swiper__slide place-swiper-slide place-slide swiper-slide">
+                                    <img class="place-slide__img" src="images/place-img-1.jpg" alt="img">
+                                </div>
+                                <div class="place-swiper__slide place-swiper-slide place-slide swiper-slide">
+                                    <img class="place-slide__img" src="images/place-img-1.jpg" alt="img">
+                                </div>
+                                <div class="place-swiper__slide place-swiper-slide place-slide swiper-slide">
+                                    <img class="place-slide__img" src="images/place-img-1.jpg" alt="img">
+                                </div>
+                            </div>
+                            <div class="place-swiper__pagination swiper-pagination"></div>
+                            <div class="place-swiper__prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#2B2E34"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </div>
+                            <div class="place-swiper__next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#2B2E34"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__wrapper">
+                            <div class="place__info place-info">
+                                <div class="place-info__top place-info-top">
+                                    <p class="place-info-top__text">
+                                        Теплый склад 24/7
+                                    </p>
+                                    <div class="place-info-top__raiting raiting">
+                                        <div class="raiting__stars">
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z" fill="#FDAA08"></path>
+                                            </svg>
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z" fill="#FDAA08"></path>
+                                            </svg>
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z" fill="#FDAA08"></path>
+                                            </svg>
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z" fill="#FDAA08"></path>
+                                            </svg>
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z" fill="#FDAA08"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="raiting__digit">
+                                            5.0
+                                        </p>
+                                    </div>
+                                </div>
+                                <h3 class="place-info__title">
+                                    Московское шоссе, 25 к1в, м. Звездная
+                                </h3>
+                                <a class="place-info__phone" href="tel:+78122070007">
+                                    +7 (812) 207-00-07
+                                </a>
+                            </div>
+                            <div class="place__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2005.6501875486579!2d30.355994677390218!3d59.82173107150913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696251a4e005b2b%3A0x53d890cbe378b88c!2z0JzQvtGB0LrQvtCy0YHQutC-0LUg0YguLCAyNSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGW0Y8sIDE5NjE1OA!5e0!3m2!1suk!2sus!4v1700905515475!5m2!1suk!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__heading heading">
+                <div class="container">
+                    <div class="heading__posters posters">
+                        <div class="posters__swiper posters-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="posters-swiper__slide posters-slide swiper-slide">
+                                    <a class="posters-slide__item posters-item posters-item--purple" href="#">
+                                        <div class="posters-item__box posters-item-box">
+                                            <p class="posters-item-box__text">
+                                                до
+                                            </p>
+                                            <p class="posters-item-box__subtext">
+                                                –50%
+                                            </p>
+                                        </div>
+                                        <p class="posters-item__text">
+                                            на боксы 3м²
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="posters-swiper__slide posters-slide swiper-slide">
+                                    <a class="posters-slide__item posters-item posters-item--blue" href="#">
+                                        <div class="posters-item__box posters-item-box">
+                                            <p class="posters-item-box__text">
+                                                Боксы
+                                            </p>
+                                            <p class="posters-item-box__subtext">
+                                                от 1 до 3м²
+                                            </p>
+                                        </div>
+                                        <p class="posters-item__text">
+                                            За пол цены
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="posters-swiper__slide posters-slide swiper-slide">
+                                    <a class="posters-slide__item posters-item posters-item--black" href="#">
+                                        <img class="posters-item__img" src="images/box-img.png" alt="box">
+                                        <div class="posters-item__box posters-item-box">
+                                            <p class="posters-item-box__text">
+                                                Коробки
+                                            </p>
+                                            <p class="posters-item-box__subtext posters-item-box__subtext--x">
+                                                10
+                                                <span>
+
+                                                </span>
+                                                4
+                                                <span>
+
+                                                </span>
+                                                2
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="posters-swiper__slide posters-slide swiper-slide">
+                                    <a class="posters-slide__item posters-item posters-item--red" href="#">
+                                        <div class="posters-item__box posters-item-box">
+                                            <p class="posters-item-box__text">
+                                                Локеры
+                                            </p>
+                                            <p class="posters-item-box__subtext posters-item-box__subtext--x">
+                                                1
+                                                <span>
+
+                                                </span>
+                                                1
+                                                <span>
+
+                                                </span>
+                                                1
+                                            </p>
+                                            <p class="posters-item__text">
+                                                За пол цены
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="posters-swiper__slide posters-slide swiper-slide">
+                                    <a class="posters-slide__item posters-item posters-item--green" href="#">
+                                        <div class="posters-item__box posters-item-box">
+                                            <p class="posters-item-box__text">
+                                                Коворкинг
+                                            </p>
+                                            <p class="posters-item-box__subtext">
+                                                – 70% на абонемент
+                                            </p>
+                                            <p class="posters-item__text">
+                                                на Выборгской
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__approach approach" id="approach">
+                <div class="container">
+                    <div class="approach__wrapper">
+                        <div class="approach__section section">
+                            <div class="section__titling titling">
+                                <p class="titling__text">
+                                    Подход к аренде
+                                </p>
+                                <h2 class="titling__title">
+                                    Для вашего спокойствия и удобства
+                                </h2>
+                                <p class="titling__subtext">
+                                    Аренда боксов в просторе – это удобно
+                                    и полностью безопасно
+                                </p>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="approach__inner">
+                            <p class="approach__text">
+                                Простор поможет вам в самых
+                                разнообразных жизненных ситуациях
+                            </p>
+                            <div class="approach__body approach-body">
+                                <a class="approach-body__card approach-card" href="#">
+                                    <h3 class="approach-card__title">
+                                        Доступ к вашим
+                                        вещам 24/7
+                                    </h3>
+                                    <p class="approach-card__text">
+                                        Приходите в любое время дня и ночи, полный контроль над вашими вещами, а ещё у
+                                        нас круглосуточная охрана
+                                    </p>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="approach-body__card approach-card" href="#">
+                                    <h3 class="approach-card__title">
+                                        Заезд и оплата
+                                        «в три клика»
+                                    </h3>
+                                    <p class="approach-card__text">
+                                        Управляйте процессом в любое время суток и оплачивайте  «в три клика» с телефона
+                                    </p>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="approach-body__card approach-card approach-card--img" href="#">
+                                    <p class="approach-card__suptext">
+                                        Надёжное хранение
+                                    </p>
+                                    <h3 class="approach-card__title">
+                                        5 степеней безопасности
+                                        для ваших вещей
+                                    </h3>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                    <img class="approach-card__img" src="images/approach-img-1.png" alt="img">
+                                </a>
+                                <a class="approach-body__card approach-card" href="#">
+                                    <h3 class="approach-card__title">
+                                        Любой размер
+                                        бокса от 1м2
+                                    </h3>
+                                    <p class="approach-card__text">
+                                        Объединив несколько боксов,
+                                        вы можете создать для себя склад необходимого размера
+                                    </p>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="approach-body__card approach-card approach-card--black" href="#">
+                                    <h3 class="approach-card__title">
+                                        Сопутствующие материалы
+                                    </h3>
+                                    <p class="approach-card__text">
+                                        У нас есть все что нужно:
+                                    </p>
+                                    <ul class="approach-card__list">
+                                        <li class="approach-card__list-item">
+                                            коробки
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            перчатки
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            мешки
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            пленка
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            погрузчики
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            инструменты
+                                        </li>
+                                        <li class="approach-card__list-item">
+                                            и прочее
+                                        </li>
+                                    </ul>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="approach-body__card approach-card approach-card--img" href="#">
+                                    <p class="approach-card__suptext">
+                                        Что нельзя хранить
+                                    </p>
+                                    <h3 class="approach-card__title">
+                                        Список вещей которые нельзя хранить
+                                        на складе
+                                    </h3>
+                                    <div class="approach-card__plus">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                            <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34" stroke-width="2">
+                                            </line>
+                                        </svg>
+                                    </div>
+                                    <img class="approach-card__img" src="images/approach-img-2.png" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__size size" id="size">
+                <div class="container">
+                    <div class="size__wrapper">
+                        <div class="size__section section">
+                            <div class="section__titling titling">
+                                <p class="titling__text">
+                                    Выбор бокса
+                                </p>
+                                <h2 class="titling__title">
+                                    Выберите размер
+                                    своего бокса
+                                </h2>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="size__inner">
+                            <div class="size__choose choose-size">
+                                <form class="choose-size__form choose-size-form" action="#">
+                                    <div class="choose-size-form__box choose-size-form-box">
+                                        <p class="choose-size-form-box__text">
+                                            Небольшие боксы
+                                        </p>
+                                        <div class="choose-size-form-box__inner">
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="1">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="2">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="3">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="4">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="5">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="6">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="7">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-size-form__box choose-size-form-box">
+                                        <p class="choose-size-form-box__text">
+                                            Среднего размера боксы
+                                        </p>
+                                        <div class="choose-size-form-box__inner">
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-size-form__box choose-size-form-box">
+                                        <p class="choose-size-form-box__text">
+                                            Большие огромные боксы
+                                        </p>
+                                        <div class="choose-size-form-box__inner">
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                            <div class="choose-size-form-box__item choice-office-item" id="0">
+                                                <div class="choice-office-item__tags">
+                                                    <div class="choice-office-item__tags-tag">
+                                                        Высота 1 м
+                                                    </div>
+                                                </div>
+                                                <p class="choice-office-item__text">
+                                                    1 м²
+                                                </p>
+                                                <p class="choice-office-item__subtext">
+                                                    1 800 руб./мес
+                                                </p>
+                                                <input class="choice-office-item__input" type="radio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <a class="size__next-btn next-btn" href="#">
+                                <span>
+                                    Продолжить оформление
+                                </span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                        stroke-width="2"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__view view" id="view">
+                <div class="container">
+                    <div class="view__wrapper">
+                        <div class="view__section section">
+                            <div class="section__titling titling">
+                                <p class="titling__text">
+                                    Рабочие места
+                                </p>
+                                <h2 class="titling__title">
+                                    Ощутите простор. Осмотритесь!
+                                </h2>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="view__inner" data-fancybox="gallery" href="images/view-img.jpg">
+                            <a class="view__map view-map">
+                                <div class="view-map__resize">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 8L21 3M21 3H16M21 3V8M8 8L3 3M3 3L3 8M3 3L8 3M8 16L3 21M3 21H8M3 21L3 16M16 16L21 21M21 21V16M21 21H16"
+                                            stroke="#87D10E" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <img class="view-map__img" src="images/view-img.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__places places" id="places">
+                <div class="container">
+                    <div class="places__wrapper">
+                        <div class="places__section section">
+                            <div class="places__titling titling">
+                                <p class="titling__text">
+                                    рабочие места
+                                </p>
+                                <h2 class="titling__title">
+                                    На складе есть удобные рабочие места
+                                </h2>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="places__inner">
+                            <div class="places__swiper places-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="places-swiper__slide places-slide swiper-slide">
+                                        <div class="places-slide__inner">
+                                            <div class="places-slide__count">
+                                                01
+                                            </div>
+                                            <h3 class="places-slide__title">
+                                                Смартофисы
+                                            </h3>
+                                        </div>
+                                        <img class="places-slide__img" src="images/places-img-1.jpg" alt="img">
+                                    </div>
+                                    <div class="places-swiper__slide places-slide swiper-slide">
+                                        <div class="places-slide__inner">
+                                            <div class="places-slide__count">
+                                                02
+                                            </div>
+                                            <h3 class="places-slide__title">
+                                                Коворкинги
+                                            </h3>
+                                        </div>
+                                        <img class="places-slide__img" src="images/places-img-2.jpg" alt="img">
+                                    </div>
+                                    <div class="places-swiper__slide places-slide swiper-slide">
+                                        <div class="places-slide__inner">
+                                            <div class="places-slide__count">
+                                                03
+                                            </div>
+                                            <h3 class="places-slide__title">
+                                                Небольшие офисы
+                                            </h3>
+                                        </div>
+                                        <img class="places-slide__img" src="images/places-img-2.jpg" alt="img">
+                                    </div>
+                                    <div class="places-swiper__slide places-slide swiper-slide">
+                                        <div class="places-slide__inner">
+                                            <div class="places-slide__count">
+                                                04
+                                            </div>
+                                            <h3 class="places-slide__title">
+                                                Аренда
+                                                больших помещений
+                                            </h3>
+                                        </div>
+                                        <img class="places-slide__img" src="images/places-img-2.jpg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="places-swiper__prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                            stroke="#2B2E34" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="places-swiper__next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                            stroke="#2B2E34" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__recalls recalls" id="recalls">
+                <div class="container">
+                    <div class="recalls__wrapper">
+                        <div class="recalls__section section">
+                            <div class="section__titling titling">
+                                <p class="titling__text">
+                                    ОТЗЫВЫ
+                                </p>
+                                <h2 class="titling__title">
+                                    Дорожите своими клиентами. И это взаимно!
+                                </h2>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recalls__inner">
+                            <div class="recalls__swiper recalls-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__raiting raiting">
+                                            <div class="raiting__stars">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.1863 7.10921H19.2614L13.5376 11.2632L15.7239 17.9846L10 13.8306L4.27612 17.9846L6.46245 11.2632L0.738565 7.10921H7.81367L10 0.387855L12.1863 7.10921ZM6.90075 5.85408L8.80498 0H11.195L13.0992 5.85408H19.2614L20 8.12463L15.0147 11.7426L16.9189 17.5967L14.9853 19L10 15.382L5.01468 19L3.08109 17.5967L4.98532 11.7426L0 8.12463L0.738565 5.85408H6.90075Z"
+                                                        fill="#8F95A3" />
+                                                </svg>
+                                            </div>
+                                            <p class="raiting__digit">
+                                                4.0
+                                            </p>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Прекрасная команда! Спасибо, что поддерживали заботой и доброжелательностью
+                                            в период моих скитаний-переездов. Почти год прошел. Очень всем рекомендую -
+                                            удобный большой павильон. Сервис уровня "Америка-Европа". Круглосуточный
+                                            доступ по пинкоду. Заходи, хоть ночью.
+                                        </p>
+                                        <p class="recalls-slide__name">
+                                            Евгения
+                                        </p>
+
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__raiting raiting">
+                                            <div class="raiting__stars">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.1863 7.10921H19.2614L13.5376 11.2632L15.7239 17.9846L10 13.8306L4.27612 17.9846L6.46245 11.2632L0.738565 7.10921H7.81367L10 0.387855L12.1863 7.10921ZM6.90075 5.85408L8.80498 0H11.195L13.0992 5.85408H19.2614L20 8.12463L15.0147 11.7426L16.9189 17.5967L14.9853 19L10 15.382L5.01468 19L3.08109 17.5967L4.98532 11.7426L0 8.12463L0.738565 5.85408H6.90075Z"
+                                                        fill="#8F95A3" />
+                                                </svg>
+                                            </div>
+                                            <p class="raiting__digit">
+                                                4.0
+                                            </p>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Прекрасная команда! Спасибо, что поддерживали заботой и доброжелательностью
+                                            в период моих скитаний-переездов. Почти год прошел. Очень всем рекомендую -
+                                            удобный большой павильон. Сервис уровня "Америка-Европа". Круглосуточный
+                                            доступ по пинкоду. Заходи, хоть ночью.
+                                        </p>
+                                        <p class="recalls-slide__name">
+                                            Евгения
+                                        </p>
+
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__raiting raiting">
+                                            <div class="raiting__stars">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.1863 7.10921H19.2614L13.5376 11.2632L15.7239 17.9846L10 13.8306L4.27612 17.9846L6.46245 11.2632L0.738565 7.10921H7.81367L10 0.387855L12.1863 7.10921ZM6.90075 5.85408L8.80498 0H11.195L13.0992 5.85408H19.2614L20 8.12463L15.0147 11.7426L16.9189 17.5967L14.9853 19L10 15.382L5.01468 19L3.08109 17.5967L4.98532 11.7426L0 8.12463L0.738565 5.85408H6.90075Z"
+                                                        fill="#8F95A3" />
+                                                </svg>
+                                            </div>
+                                            <p class="raiting__digit">
+                                                4.0
+                                            </p>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Прекрасная команда! Спасибо, что поддерживали заботой и доброжелательностью
+                                            в период моих скитаний-переездов. Почти год прошел. Очень всем рекомендую -
+                                            удобный большой павильон. Сервис уровня "Америка-Европа". Круглосуточный
+                                            доступ по пинкоду. Заходи, хоть ночью.
+                                        </p>
+                                        <p class="recalls-slide__name">
+                                            Евгения
+                                        </p>
+
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__raiting raiting">
+                                            <div class="raiting__stars">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.80498 0L6.90075 5.85408H0.738565L0 8.12463L4.98532 11.7426L3.08109 17.5967L5.01468 19L10 15.382L14.9853 19L16.9189 17.5967L15.0147 11.7426L20 8.12463L19.2614 5.85408H13.0992L11.195 0H8.80498Z"
+                                                        fill="#FDAA08" />
+                                                </svg>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.1863 7.10921H19.2614L13.5376 11.2632L15.7239 17.9846L10 13.8306L4.27612 17.9846L6.46245 11.2632L0.738565 7.10921H7.81367L10 0.387855L12.1863 7.10921ZM6.90075 5.85408L8.80498 0H11.195L13.0992 5.85408H19.2614L20 8.12463L15.0147 11.7426L16.9189 17.5967L14.9853 19L10 15.382L5.01468 19L3.08109 17.5967L4.98532 11.7426L0 8.12463L0.738565 5.85408H6.90075Z"
+                                                        fill="#8F95A3" />
+                                                </svg>
+                                            </div>
+                                            <p class="raiting__digit">
+                                                4.0
+                                            </p>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Прекрасная команда! Спасибо, что поддерживали заботой и доброжелательностью
+                                            в период моих скитаний-переездов. Почти год прошел. Очень всем рекомендую -
+                                            удобный большой павильон. Сервис уровня "Америка-Европа". Круглосуточный
+                                            доступ по пинкоду. Заходи, хоть ночью.
+                                        </p>
+                                        <p class="recalls-slide__name">
+                                            Евгения
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="recalls-swiper__bottom recalls-swiper-bottom">
+                                    <div class="recalls-swiper__prev">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                stroke="#2B2E34" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="recalls-swiper__next">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                stroke="#2B2E34" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <a class="recalls-swiper-bottom__link" href="#">
+                                        <span>
+                                            Все отзывы на
+                                        </span>
+                                        <svg width="46" height="10" viewBox="0 0 46 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1232_1997)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M9.28847 4.77796C9.28847 2.14958 7.25813 0.0189238 4.75366 0.0189238C2.24909 0.0189238 0.21875 2.14958 0.21875 4.77796C0.21875 7.40618 2.24909 9.53711 4.75366 9.53711C7.25813 9.53711 9.28847 7.40618 9.28847 4.77796Z"
+                                                    fill="#FC3F1D" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.36011 2.7156H4.94437C4.16966 2.7156 3.77281 3.1318 3.77281 3.72691C3.77281 4.40122 4.05621 4.71843 4.62312 5.13477L5.09558 5.47194L3.73509 7.6135H2.71484L3.94288 5.7098C3.24377 5.17453 2.84704 4.65891 2.84704 3.80612C2.84704 2.7156 3.56503 1.98177 4.94437 1.98177H6.30475V7.6333H5.36011V2.7156Z"
+                                                    fill="white" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14.5512 0.0279055C12.5402 0.0279055 10.9102 1.73856 10.9102 3.84887C10.9102 4.90356 11.3176 5.85873 11.976 6.55025C12.6349 7.24207 14.1869 8.24301 14.2779 9.29393C14.2917 9.45153 14.4003 9.58057 14.5512 9.58057C14.7018 9.58057 14.8105 9.45153 14.8243 9.29393C14.9153 8.24301 16.4674 7.24207 17.1262 6.55025C17.7846 5.85873 18.192 4.90356 18.192 3.84887C18.192 1.73856 16.562 0.0279055 14.5512 0.0279055Z"
+                                                    fill="#FF4433" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14.5477 5.18652C15.2514 5.18652 15.8218 4.58763 15.8218 3.84921C15.8218 3.11052 15.2514 2.51166 14.5477 2.51166C13.8438 2.51166 13.2734 3.11052 13.2734 3.84921C13.2734 4.58763 13.8438 5.18652 14.5477 5.18652Z"
+                                                    fill="white" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M42.2247 7.28431H41.6826V5.62416H42.2523C42.7541 5.62416 43.0481 5.86137 43.0481 6.45916C43.0481 7.05693 42.7232 7.28431 42.2247 7.28431ZM44.6857 3.0704V8.25265H45.8561V3.0704H44.6857ZM40.5158 3.0704V8.25265H42.2928C43.4414 8.25265 44.2556 7.63533 44.2556 6.41699C44.2556 5.26343 43.5282 4.65609 42.3111 4.65609H41.6826V3.0704H40.5158ZM39.8285 4.03861V3.0704H35.9122V4.03861H37.2866V8.25265H38.4537V4.03861H39.8285ZM33.5002 7.3852C32.8812 7.3852 32.5655 6.86203 32.5655 5.6663C32.5655 4.46102 32.8999 3.93785 33.5593 3.93785C34.1968 3.93785 34.5096 4.46102 34.5096 5.65674C34.5096 6.86203 34.1754 7.3852 33.5002 7.3852ZM32.4788 3.0704H31.3983V9.7439H32.5655V7.64503C32.8628 8.10637 33.2929 8.35341 33.7946 8.35341C34.9308 8.35341 35.7171 7.39813 35.7171 5.65674C35.7171 3.92478 34.9525 2.96978 33.8534 2.96978C33.3024 2.96978 32.8502 3.23609 32.5377 3.73971L32.4788 3.0704ZM29.29 7.01478C29.1414 7.24214 28.8659 7.42736 28.454 7.42736C27.9649 7.42736 27.7173 7.13816 27.7173 6.69635C27.7173 6.10826 28.1198 5.89381 29.1229 5.89381H29.29V7.01478ZM30.4571 4.71764C30.4571 3.46357 29.8471 2.98906 28.6119 2.98906C27.838 2.98906 27.2282 3.24592 26.8751 3.46357V4.48378C27.1879 4.23368 27.8752 3.96709 28.4757 3.96709C29.033 3.96709 29.29 4.17185 29.29 4.73071V5.01654H29.1012C27.3147 5.01654 26.5223 5.63709 26.5223 6.68665C26.5223 7.73608 27.129 8.32418 28.033 8.32418C28.7202 8.32418 29.0144 8.08697 29.2403 7.84007H29.29C29.2992 7.97315 29.3395 8.14867 29.3767 8.25265H30.5159C30.4756 7.83024 30.4571 7.40796 30.4571 6.98554V4.71764ZM25.0888 8.25265H26.4727L24.0486 4.4935L26.2467 1.09492H25.0392L22.9279 4.3895V1.09492H21.7422V8.25265H22.9279V4.89316L25.0888 8.25265Z"
+                                                    fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1232_1997">
+                                                    <rect width="46" height="10" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__faq faq" id="faq">
+                <div class="container">
+                    <div class="faq__wrapper">
+                        <div class="faq__section section">
+                            <div class="section__titling titling">
+                                <p class="titling__text">
+                                    FAQ
+                                </p>
+                                <h2 class="titling__title">
+                                    Остались вопросы?
+                                </h2>
+                            </div>
+                            <div class="section__arrows arrows">
+                                <ul class="arrows__list">
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#approach">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Подход к аренде
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Выбор бокса
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#view">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                3D-тур
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#places">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Рабочие места
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item">
+                                        <a class="arrows__list-link" href="#recalls">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="arrows__list-item arrows__list-item--active">
+                                        <a class="arrows__list-link" href="#faq">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                    stroke="#2B2E34" stroke-width="2"></path>
+                                            </svg>
+                                            <span>
+                                                Вопрос/ответ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="faq__inner">
+                            <div class="faq__box faq-box">
+                                <h4 class="faq-box__title">
+                                    Онлайн аренда бокса
+                                </h4>
+                                <ul class="faq-box__list faq-box-list">
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Что будет после того как я арендую бокс на сайте?
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Мне кто-то поможет на складе? У Вас есть грузчики?
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Что можно/нельзя хранить?
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Как заключить договор на ЮЛ?
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="faq__box faq-box">
+                                <h4 class="faq-box__title">
+                                    Оплата
+                                </h4>
+                                <ul class="faq-box__list faq-box-list">
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Я не подключал автоплатеж, как отключить, почему он подключился?
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                    <li class="faq-box-list__item">
+                                        <div class="faq-box-list__top faq-box-list-top">
+                                            <p class="faq-box-list-top__text">
+                                                Система не принимает пароль, не могу
+                                                зарегистрироваться в ЛК
+                                            </p>
+                                            <div class="faq-box-list-top__icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                    <line x1="22" y1="12" x2="2" y2="12" stroke="#2B2E34"
+                                                        stroke-width="2" />
+                                                </svg>
+                                                <svg width="20" height="2" viewBox="0 0 20 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="20" y1="1" x2="-8.74228e-08" y2="0.999998"
+                                                        stroke="#2B2E34" stroke-width="2" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="faq-box-list__text">
+                                            Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все
+                                            разберем, упакуем, бережно погрузим, доставим до склада, разместим и
+                                            предоставим фотоотчет. Вам даже необязательно присутствовать.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="faq__info faq-info">
+                                <p class="faq-info__text">
+                                    Напишите нам в Telegram или WhatsApp, если у вас остались вопросы
+                                </p>
+                                <div class="faq-info__links links">
+                                    <a class="links__link" href="#">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.09992 6.07841C5.39487 4.20717 8.25885 2.97353 9.69185 2.37749C13.7834 0.675697 14.6335 0.380077 15.1877 0.370212C15.3095 0.368169 15.582 0.398373 15.7586 0.541606C15.9076 0.662549 15.9486 0.825926 15.9683 0.940593C15.9879 1.05526 16.0123 1.31648 15.9929 1.52058C15.7712 3.85021 14.8118 9.50361 14.3237 12.1128C14.1172 13.2169 13.7105 13.5871 13.3168 13.6233C12.4613 13.702 11.8116 13.0579 10.9829 12.5147C9.68624 11.6647 8.95369 11.1356 7.69503 10.3061C6.24042 9.34756 7.18338 8.82072 8.01236 7.95971C8.22931 7.73438 11.999 4.30558 12.0719 3.99453C12.0811 3.95563 12.0895 3.81062 12.0034 3.73405C11.9172 3.65749 11.7901 3.68367 11.6983 3.70449C11.5683 3.73401 9.4968 5.10319 5.48389 7.81201C4.89591 8.21577 4.36333 8.41249 3.88616 8.40218C3.36012 8.39082 2.34822 8.10475 1.59598 7.86023C0.673328 7.56031 -0.0599784 7.40174 0.00387615 6.89239C0.0371355 6.62708 0.402482 6.35576 1.09992 6.07841Z"
+                                                fill="white" />
+                                        </svg>
+                                        <span>
+                                            Написать в Telegram
+                                        </span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                stroke="#fff" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                    <a class="links__link" href="#">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.6 2.67012C12.1 1.17012 10.1 0.370117 8 0.370117C3.6 0.370117 0 3.97012 0 8.37012C0 9.77012 0.400006 11.1701 1.10001 12.3701L0 16.3701L4.20001 15.2701C5.40001 15.8701 6.7 16.2701 8 16.2701C12.4 16.2701 16 12.6701 16 8.27012C16 6.17012 15.1 4.17012 13.6 2.67012ZM8 14.9701C6.8 14.9701 5.60001 14.6701 4.60001 14.0701L4.39999 13.9701L1.89999 14.6701L2.60001 12.2701L2.39999 11.9701C1.69999 10.8701 1.39999 9.67012 1.39999 8.47012C1.39999 4.87012 4.4 1.87012 8 1.87012C9.8 1.87012 11.4 2.57012 12.7 3.77012C14 5.07012 14.6 6.67012 14.6 8.47012C14.6 11.9701 11.7 14.9701 8 14.9701ZM11.6 9.97012C11.4 9.87012 10.4 9.37012 10.2 9.37012C10 9.27012 9.89999 9.27012 9.79999 9.47012C9.69999 9.67012 9.30001 10.0701 9.20001 10.2701C9.10001 10.3701 8.99999 10.3701 8.79999 10.3701C8.59999 10.2701 8.00001 10.0701 7.20001 9.37012C6.60001 8.87012 6.20001 8.17012 6.10001 7.97012C6.00001 7.77012 6.10001 7.67012 6.20001 7.57012C6.30001 7.47012 6.4 7.37012 6.5 7.27012C6.6 7.17012 6.60001 7.07012 6.70001 6.97012C6.80001 6.87012 6.70001 6.77012 6.70001 6.67012C6.70001 6.57012 6.30001 5.57012 6.10001 5.17012C6.00001 4.87012 5.80001 4.87012 5.70001 4.87012C5.60001 4.87012 5.49999 4.87012 5.29999 4.87012C5.19999 4.87012 4.99999 4.87012 4.79999 5.07012C4.59999 5.27012 4.10001 5.77012 4.10001 6.77012C4.10001 7.77012 4.79999 8.67012 4.89999 8.87012C4.99999 8.97012 6.29999 11.0701 8.29999 11.8701C9.99999 12.5701 10.3 12.3701 10.7 12.3701C11.1 12.3701 11.9 11.8701 12 11.4701C12.2 10.9701 12.2 10.5701 12.1 10.5701C12 10.0701 11.8 10.0701 11.6 9.97012Z"
+                                                fill="white" />
+                                        </svg>
+                                        <span>
+                                            Написать в WhatsApp
+                                        </span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                stroke="#fff" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <p class="faq-info__subtext">
+                                    Отвечаем на вопросы
+                                    <span>
+                                        с 9:00 до 21:00
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__cookies cookies">
+                <div class="cookies__inner">
+                    <h3 class="cookies__title">
+                        Мы используем Cookies
+                    </h3>
+                    <p class="cookies__text">
+                        Наш сайт использует cookie. Оставаясь на сайте, вы соглашаетесь с условиями
+                        <a href="#">
+                            Пользовательского соглашения
+                        </a>
+                    </p>
+                    <button class="cookies__close" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="#8F95A3" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="cookies__btn" type="button">
+                        <span>
+                            Согласен
+                        </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <div class="main__popup popup just--popup">
+                <div class="popup__wrapper">
+                    <button class="popup__close" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup__inner">
+                        <h3 class="popup__title">
+                            Доступ к вашим вещам 24/7
+                        </h3>
+                        <p class="popup__text">
+                            Приходите в любое время дня и ночи, полный контроль над вашими вещами,
+                            а ещё у нас круглосуточная охрана
+                        </p>
+                        <p class="popup__text">
+                            Приходите в любое время дня и ночи, полный контроль над вашими вещами,
+                            а ещё у нас круглосуточная охрана
+                        </p>
+                        <p class="popup__text">
+                            Приходите в любое время дня и ночи, полный контроль над вашими вещами,
+                            а ещё у нас круглосуточная охрана
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup popup histories--popup">
+                <div class="popup__wrapper">
+                    <button class="popup__close" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="histories__swiper histories-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="histories-swiper__slide histories-slide swiper-slide">
+                                <img class="histories-slide__img" src="images/histories-img-1.jpg" alt="img">
+                            </div>
+                            <div class="histories-swiper__slide histories-slide swiper-slide">
+                                <img class="histories-slide__img" src="images/histories-img-2.jpg" alt="img">
+                            </div>
+                            <div class="histories-swiper__slide histories-slide swiper-slide">
+                                <img class="histories-slide__img" src="images/histories-img-3.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="histories-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup popup popup--call-order">
+                <div class="popup__wrapper">
+                    <button class="popup__close" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4L4 20M4 4L20 20" stroke="#8F95A3" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup__call-order call-order">
+                        <h3 class="call-order__title">
+                            Заказ звонка
+                        </h3>
+                        <p class="call-order__text">
+                            Позвоним с 9:00 до 21:00
+                        </p>
+                        <form class="call-order__form call-order-form" action="#">
+                            <div class="call-order-form__inner">
+                                <input class="call-order-form__input" type="text" placeholder="Имя">
+                                <input class="call-order-form__input tel-input" type="tel" placeholder="Номер телефона">
+                            </div>
+                            <div class="call-order-form__btn">
+                                <button class="call-order-form__next-btn next-btn" type="button">
+                                    <span>
+                                        Заказать звонок
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                            stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="call-order__subtext">
+                            Нажав на кнопку «Заказать звонок»,
+                            вы соглашаетесь с
+                            <a href="#">
+                                политикой обработки персональных данных
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup popup popup--thanks">
+                <div class="popup__wrapper">
+                    <div class="popup__thanks thanks">
+                        <div class="thanks__inner">
+                            <div class="thanks__icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.6" y="1.6" width="60.8" height="60.8" rx="11.2" fill="white" />
+                                    <rect x="1.6" y="1.6" width="60.8" height="60.8" rx="11.2" stroke="#87D10E"
+                                        stroke-width="3.2" />
+                                    <path d="M20 29.0526L29.75 40L44 24" stroke="#87D10E" stroke-width="4"
+                                        stroke-linejoin="bevel" />
+                                </svg>
+                            </div>
+                            <h3 class="thanks__title">
+                                Спасибо
+                            </h3>
+                            <p class="thanks__text">
+                                Скоро позвоним вам
+                            </p>
+                        </div>
+                        <div class="thanks__next-btn next-btn" type="button">
+                            <span>
+                                Вернуться на главную
+                            </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__mobile-menu mobile-menu">
+                <div class="mobile-menu__inner">
+                    <div class="mobile-menu__top mobile-menu-top">
+                        <a class="mobile-menu-top__logo logo" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <div class="mobile-menu-top__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path d="M23 6.99976L7 22.9998M7 6.99976L23 22.9998" stroke="#2B2E34"
+                                    stroke-width="2.25002" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <nav class="mobile-menu__nav mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__list-item ">
+                                <a class="mobile-nav__list-link" href="#">
+                                    Склады
+                                </a>
+                            </li>
+                            <li class="mobile-nav__list-item">
+                                <a class="mobile-nav__list-link" href="#">
+                                    Офисы и коворкинг
+                                </a>
+                            </li>
+                            <li class="mobile-nav__list-item">
+                                <a class="mobile-nav__list-link" href="#">
+                                    Документация
+                                </a>
+                            </li>
+                            <li class="mobile-nav__list-item">
+                                <a class="mobile-nav__list-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu__phone mobile-phone">
+                        <a class="mobile-phone__link" href="tel:+78122070007">
+                            +7 (812) 207-00-07
+                        </a>
+                        <p class="mobile-phone__text">
+                            Ежедневно 9:00–21:00
+                        </p>
+                    </div>
+                    <div class="mobile-menu__socials socials">
+                        <ul class="socials__list">
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.6 2.67012C12.1 1.17012 10.1 0.370117 8 0.370117C3.6 0.370117 0 3.97012 0 8.37012C0 9.77012 0.400006 11.1701 1.10001 12.3701L0 16.3701L4.20001 15.2701C5.40001 15.8701 6.7 16.2701 8 16.2701C12.4 16.2701 16 12.6701 16 8.27012C16 6.17012 15.1 4.17012 13.6 2.67012ZM8 14.9701C6.8 14.9701 5.60001 14.6701 4.60001 14.0701L4.39999 13.9701L1.89999 14.6701L2.60001 12.2701L2.39999 11.9701C1.69999 10.8701 1.39999 9.67012 1.39999 8.47012C1.39999 4.87012 4.4 1.87012 8 1.87012C9.8 1.87012 11.4 2.57012 12.7 3.77012C14 5.07012 14.6 6.67012 14.6 8.47012C14.6 11.9701 11.7 14.9701 8 14.9701ZM11.6 9.97012C11.4 9.87012 10.4 9.37012 10.2 9.37012C10 9.27012 9.89999 9.27012 9.79999 9.47012C9.69999 9.67012 9.30001 10.0701 9.20001 10.2701C9.10001 10.3701 8.99999 10.3701 8.79999 10.3701C8.59999 10.2701 8.00001 10.0701 7.20001 9.37012C6.60001 8.87012 6.20001 8.17012 6.10001 7.97012C6.00001 7.77012 6.10001 7.67012 6.20001 7.57012C6.30001 7.47012 6.4 7.37012 6.5 7.27012C6.6 7.17012 6.60001 7.07012 6.70001 6.97012C6.80001 6.87012 6.70001 6.77012 6.70001 6.67012C6.70001 6.57012 6.30001 5.57012 6.10001 5.17012C6.00001 4.87012 5.80001 4.87012 5.70001 4.87012C5.60001 4.87012 5.49999 4.87012 5.29999 4.87012C5.19999 4.87012 4.99999 4.87012 4.79999 5.07012C4.59999 5.27012 4.10001 5.77012 4.10001 6.77012C4.10001 7.77012 4.79999 8.67012 4.89999 8.87012C4.99999 8.97012 6.29999 11.0701 8.29999 11.8701C9.99999 12.5701 10.3 12.3701 10.7 12.3701C11.1 12.3701 11.9 11.8701 12 11.4701C12.2 10.9701 12.2 10.5701 12.1 10.5701C12 10.0701 11.8 10.0701 11.6 9.97012Z"
+                                            fill="#2B2E34" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none">
+                                        <path
+                                            d="M1.09992 6.07841C5.39487 4.20717 8.25885 2.97353 9.69185 2.37749C13.7834 0.675697 14.6335 0.380077 15.1877 0.370212C15.3095 0.368169 15.582 0.398373 15.7586 0.541606C15.9076 0.662549 15.9486 0.825926 15.9683 0.940593C15.9879 1.05526 16.0123 1.31648 15.9929 1.52058C15.7712 3.85021 14.8118 9.50361 14.3237 12.1128C14.1172 13.2169 13.7105 13.5871 13.3168 13.6233C12.4613 13.702 11.8116 13.0579 10.9829 12.5147C9.68624 11.6647 8.95369 11.1356 7.69503 10.3061C6.24042 9.34756 7.18338 8.82072 8.01236 7.95971C8.22931 7.73438 11.999 4.30558 12.0719 3.99453C12.0811 3.95563 12.0895 3.81062 12.0034 3.73405C11.9172 3.65749 11.7901 3.68367 11.6983 3.70449C11.5683 3.73401 9.4968 5.10319 5.48389 7.81201C4.89591 8.21577 4.36333 8.41249 3.88616 8.40218C3.36012 8.39082 2.34822 8.10475 1.59598 7.86023C0.673328 7.56031 -0.0599784 7.40174 0.00387615 6.89239C0.0371355 6.62708 0.402482 6.35576 1.09992 6.07841Z"
+                                            fill="#2B2E34" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="mobile-menu__link next-btn" href="#">
+                        <span>
+                            Арендовать бокс
+                        </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <svg class="footer__logo" width="1888" height="303" viewBox="0 0 1888 303" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 297.637H53.2782V196.781H113.158C168.092 196.781 206.5 157.272 206.5 100.453C206.5 43.6467 168.092 5.36279 113.158 5.36279H0V297.637ZM53.2782 150.672V51.0452H104.062C134.228 51.0452 152.4 70.3881 152.4 100.453C152.4 130.924 134.228 150.672 103.229 150.672H53.2782Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M254.772 297.637H307.503V188.552H358.199L415.409 297.637H474.682L415 188.968C409.272 178.258 405.602 173.738 405.602 173.738V172.922C436.251 160.563 454.252 127.619 454.252 93.0388C454.252 53.5262 435.031 25.5162 405.203 13.1765C392.939 7.82196 379.032 5.36279 350.433 5.36279H254.772V297.637ZM307.503 142.433V51.0452H345.926C361.876 51.0452 370.434 52.6938 377.797 56.0044C393.747 62.5905 400.697 77.3885 400.697 95.9342C400.697 124.758 383.113 142.433 354.907 142.433H307.503Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M497.478 149.454C497.478 235.728 560.222 303 648.99 303C737.76 303 800.523 235.728 800.523 149.454C800.523 65.6389 737.76 0 648.99 0C560.222 0 497.478 65.6389 497.478 149.454ZM552.401 149.454C552.401 92.4916 592.859 48.7279 648.99 48.7279C705.152 48.7279 745.61 92.4916 745.61 149.454C745.61 208.892 705.152 254.304 648.99 254.304C592.859 254.304 552.401 208.892 552.401 149.454Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M830.022 262.955C856.533 289.376 894.23 303 930.704 303C993.681 303 1028.48 263.793 1028.48 216.316C1028.48 123.022 891.337 137.051 891.337 82.584C891.337 62.3372 909.146 49.1271 936.093 49.1271C959.292 49.1271 984.569 60.2743 1000.7 74.7269L1024.35 31.3902C1001.14 10.323 968.818 0 938.151 0C880.971 0 837.887 33.4397 837.887 85.0366C837.887 176.271 975.024 164.714 975.024 220.434C975.024 240.26 958.452 253.885 931.945 253.885C904.592 253.885 876.402 238.595 859.011 222.916L830.022 262.955Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1148.33 297.637H1200.93V51.0452H1296.66V5.36279H1052.61V51.0452H1148.33V297.637Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1310.07 149.454C1310.07 235.728 1372.81 303 1461.59 303C1550.35 303 1613.11 235.728 1613.11 149.454C1613.11 65.6389 1550.35 0 1461.59 0C1372.81 0 1310.07 65.6389 1310.07 149.454ZM1364.99 149.454C1364.99 92.4916 1405.45 48.7279 1461.59 48.7279C1517.74 48.7279 1558.21 92.4916 1558.21 149.454C1558.21 208.892 1517.74 254.304 1461.59 254.304C1405.45 254.304 1364.99 208.892 1364.99 149.454Z"
+                        fill="#2B2E34" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1665.41 297.637H1718.78V188.552H1770.09L1828.01 297.637H1888L1827.6 188.968C1821.79 178.258 1818.07 173.738 1818.07 173.738V172.922C1849.1 160.563 1867.3 127.619 1867.3 93.0388C1867.3 53.5262 1847.85 25.5162 1817.66 13.1765C1805.25 7.82196 1791.18 5.36279 1762.23 5.36279H1665.41V297.637ZM1718.78 142.433V51.0452H1757.67C1773.81 51.0452 1782.49 52.6938 1789.94 56.0044C1806.08 62.5905 1813.11 77.3885 1813.11 95.9342C1813.11 124.758 1795.32 142.433 1766.78 142.433H1718.78Z"
+                        fill="#2B2E34" />
+                </svg>
+
+                <div class="footer__inner">
+                    <div class="footer__body footer-body">
+                        <div class="footer-body__info footer-body-info">
+                            <a class="footer-body-info__link" href="tel:+78122070007">
+                                +7 (812) 207-00-07
+                            </a>
+                            <a class="footer-body-info__link" href="mailto:sales@prostor-sklad.ru">
+                                sales@prostor-sklad.ru
+                            </a>
+                            <p class="footer-body-info__text">
+                                191186, Санкт-Петербург, Невский проспект, <br>
+                                д. 32-34, лит. А, помещение 4
+                            </p>
+                        </div>
+                        <div class="footer-body__wrapper">
+                            <nav class="footer-body__menu footer-menu">
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Тарифы
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Шаблон договора
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Правила аренды
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Правила коворкинга
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Пользовательское соглашение
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Политика конфиденциальности
+                                        </a>
+                                    </li>
+                                    <li class="footer-menu__list-item">
+                                        <a class="footer-menu__list-link" href="#">
+                                            Реквизиты
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                            <div class="footer-body__box">
+                                <p class="footer-body__box-text">
+                                    Режим работы склада:
+                                    <span>
+                                        24/7
+                                    </span>
+                                </p>
+                                <p class="footer-body__box-text">
+                                    Режим работы ресепшена:
+                                    <span>
+                                        Ежедневно 9:00–21:00
+                                    </span>
+                                </p>
+                            </div>
+                            <ul class="footer-body__list">
+                                <li class="footer-body__list-item">
+                                    <p class="footer-body__list-text">
+                                        Способы оплаты:
+                                    </p>
+                                </li>
+                                <li class="footer-body__list-item">
+                                    <p class="footer-body__list-link">
+                                        Онлайн оплата
+                                    </p>
+                                </li>
+                                <li class="footer-body__list-item">
+                                    <p class="footer-body__list-link">
+                                        Оплата по счету
+                                    </p>
+                                </li>
+                                <li class="footer-body__list-item">
+                                    <p class="footer-body__list-link">
+                                        Оплата наличными
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom footer-bottom">
+                        <p class="footer-bottom__copy">
+                            © 2019 – 2023 ООО «Простор»
+                        </p>
+                        <p class="footer-bottom__design">
+                            Дизайн — Crauch
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

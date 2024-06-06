@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__order order">
+                <div class="container">
+                    <div class="order__payment payment">
+                        <div class="payment__inner">
+                            <div class="payment__body payment-body">
+                                <div class="payment-body__inner">
+                                    <div class="payment-body__heading">
+                                        <h2 class="payment-body__heading-title">
+                                            <span>
+                                                Вы арендовали <br>
+                                                бокс!
+                                            </span>
+                                            <span>
+                                                Бронирование подтверждено!
+                                            </span>
+                                        </h2>
+                                        <p class="payment-body__heading-text">
+                                            На ваш номер прислали смс-сообщение с пин-кодом, а на электронную почту
+                                            договор
+                                            оказания
+                                            услуг.
+                                        </p>
+                                    </div>
+                                    <div class="payment-body__info payment-info">
+                                        <div class="payment-info__item payment-info-item payment-info-item--big">
+                                            <p class="payment-info-item__suptext">
+                                                Адрес склада
+                                            </p>
+                                            <h4 class="payment-info-item__title">
+                                                ​Евпаторийский переулок, 7А (м. Выборгская) ​
+                                            </h4>
+                                            <a class="payment-info-item__link" href="#">
+                                                Схема проезда
+                                            </a>
+                                        </div>
+                                        <div class="payment-info__item payment-info-item">
+                                            <p class="payment-info-item__suptext">
+                                                Бокс
+                                            </p>
+                                            <h4 class="payment-info-item__title">
+                                                X1-101, 5 м2
+                                            </h4>
+                                            <a class="payment-info-item__link payment-info-item__link--instructions"
+                                                href="#">
+                                                Инструкция доступа
+                                            </a>
+                                        </div>
+                                        <div class="payment-info__item payment-info-item">
+                                            <p class="payment-info-item__suptext">
+                                                Пин-код
+                                            </p>
+                                            <h4 class="payment-info-item__title">
+                                                *55831#
+                                            </h4>
+                                            <a class="payment-info-item__link payment-info-item__link--pin" href="#">
+                                                Для чего он нужен?
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="payment-body__text">
+                                        Склад доступен 24/7
+                                    </p>
+                                    <p class="payment-body__text">
+                                        Для разгрузки или погрузки в плохую погоду воспользуйтесь крытой парковкой.
+                                    </p>
+                                </div>
+                                <div class="payment-body__payment-bottom payment-bottom">
+                                    <p class="payment-bottom__text">
+                                        Управляйте подпиской на боксы в своем личном кабинете
+                                    </p>
+                                    <a class="payment-bottom__next-btn next-btn" href="#">
+                                        <span>
+                                            В личный кабинет
+                                        </span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667"
+                                                stroke="#fff" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="payment__content payment-content">
+                                <div class="payment-content__steps payment-steps">
+                                    <p class="payment-steps__text">
+                                        Что делать на месте
+                                    </p>
+                                    <ol class="payment-steps__list">
+                                        <li class="payment-steps__list-item">
+                                            <p class="payment-steps__list-count">
+                                                01
+                                            </p>
+                                            <p class="payment-steps__list-text">
+                                                <span>
+                                                    Оказавшись на складе PROSTOR введите пин-код на пин-паде для доступа
+                                                    в
+                                                    секцию боксов.
+                                                </span>
+                                                <span>
+                                                    Оказавшись на складе “Простор” введите пин-код на пин-паде для
+                                                    доступа в секцию боксов.
+                                                </span>
+                                            </p>
+                                        </li>
+                                        <li class="payment-steps__list-item">
+                                            <p class="payment-steps__list-count">
+                                                02
+                                            </p>
+                                            <p class="payment-steps__list-text">
+                                                <span>
+                                                    После успешного ввода откроются двери, снимется сигнализация с бокса
+                                                    и у
+                                                    вашего бокса загорится световая дорожка.
+                                                </span>
+                                                <span>
+                                                    После успешного ввода откроются двери и загорится подсветка по
+                                                    направлению
+                                                    к вашему боксу
+                                                </span>
+                                            </p>
+                                        </li>
+                                        <li class="payment-steps__list-item">
+                                            <p class="payment-steps__list-count">
+                                                03
+                                            </p>
+                                            <p class="payment-steps__list-text">
+                                                <span>
+                                                    Внутри бокса на двери вы найдете индивидуальный механический замок.
+                                                    Используйте его, чтобы закрыть ваш бокс.
+                                                </span>
+                                                <span>
+                                                    Внутри бокса вы найдете индивидуальный замок. Используйте его, чтобы
+                                                    закрыть бокс.
+                                                </span>
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="payment-content__connection connection">
+                                    <div class="connection__top">
+                                        <h3 class="connection__top-title">
+                                            Если у вас остались вопросы позвоните или напишите нам
+                                        </h3>
+                                        <p class="connection__top-text">
+                                            Ресепшен (9:00 – 21:00)
+                                        </p>
+                                    </div>
+                                    <div class="connection__inner">
+                                        <ul class="connection__list">
+                                            <li class="connection__list-item">
+                                                <a class="connection__list-link" href="#">
+                                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.09992 6.07841C5.39487 4.20717 8.25885 2.97353 9.69185 2.37749C13.7834 0.675697 14.6335 0.380077 15.1877 0.370212C15.3095 0.368169 15.582 0.398373 15.7586 0.541606C15.9076 0.662549 15.9486 0.825926 15.9683 0.940593C15.9879 1.05526 16.0123 1.31648 15.9929 1.52058C15.7712 3.85021 14.8118 9.50361 14.3237 12.1128C14.1172 13.2169 13.7105 13.5871 13.3168 13.6233C12.4613 13.702 11.8116 13.0579 10.9829 12.5147C9.68624 11.6647 8.95369 11.1356 7.69503 10.3061C6.24042 9.34756 7.18338 8.82072 8.01236 7.95971C8.22931 7.73438 11.999 4.30558 12.0719 3.99453C12.0811 3.95563 12.0895 3.81062 12.0034 3.73405C11.9172 3.65749 11.7901 3.68367 11.6983 3.70449C11.5683 3.73401 9.4968 5.10319 5.48389 7.81201C4.89591 8.21577 4.36333 8.41249 3.88616 8.40218C3.36012 8.39082 2.34822 8.10475 1.59598 7.86023C0.673328 7.56031 -0.0599784 7.40174 0.00387615 6.89239C0.0371355 6.62708 0.402482 6.35576 1.09992 6.07841Z"
+                                                            fill="#2B2E34" />
+                                                    </svg>
+                                                    <span>
+                                                        Написать в Telegram
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="connection__list-item">
+                                                <a class="connection__list-link" href="#">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M13.6 2.67012C12.1 1.17012 10.1 0.370117 8 0.370117C3.6 0.370117 0 3.97012 0 8.37012C0 9.77012 0.400006 11.1701 1.10001 12.3701L0 16.3701L4.20001 15.2701C5.40001 15.8701 6.7 16.2701 8 16.2701C12.4 16.2701 16 12.6701 16 8.27012C16 6.17012 15.1 4.17012 13.6 2.67012ZM8 14.9701C6.8 14.9701 5.60001 14.6701 4.60001 14.0701L4.39999 13.9701L1.89999 14.6701L2.60001 12.2701L2.39999 11.9701C1.69999 10.8701 1.39999 9.67012 1.39999 8.47012C1.39999 4.87012 4.4 1.87012 8 1.87012C9.8 1.87012 11.4 2.57012 12.7 3.77012C14 5.07012 14.6 6.67012 14.6 8.47012C14.6 11.9701 11.7 14.9701 8 14.9701ZM11.6 9.97012C11.4 9.87012 10.4 9.37012 10.2 9.37012C10 9.27012 9.89999 9.27012 9.79999 9.47012C9.69999 9.67012 9.30001 10.0701 9.20001 10.2701C9.10001 10.3701 8.99999 10.3701 8.79999 10.3701C8.59999 10.2701 8.00001 10.0701 7.20001 9.37012C6.60001 8.87012 6.20001 8.17012 6.10001 7.97012C6.00001 7.77012 6.10001 7.67012 6.20001 7.57012C6.30001 7.47012 6.4 7.37012 6.5 7.27012C6.6 7.17012 6.60001 7.07012 6.70001 6.97012C6.80001 6.87012 6.70001 6.77012 6.70001 6.67012C6.70001 6.57012 6.30001 5.57012 6.10001 5.17012C6.00001 4.87012 5.80001 4.87012 5.70001 4.87012C5.60001 4.87012 5.49999 4.87012 5.29999 4.87012C5.19999 4.87012 4.99999 4.87012 4.79999 5.07012C4.59999 5.27012 4.10001 5.77012 4.10001 6.77012C4.10001 7.77012 4.79999 8.67012 4.89999 8.87012C4.99999 8.97012 6.29999 11.0701 8.29999 11.8701C9.99999 12.5701 10.3 12.3701 10.7 12.3701C11.1 12.3701 11.9 11.8701 12 11.4701C12.2 10.9701 12.2 10.5701 12.1 10.5701C12 10.0701 11.8 10.0701 11.6 9.97012Z"
+                                                            fill="#2B2E34" />
+                                                    </svg>
+                                                    <span>
+                                                        Написать в WhatsApp
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a class="connection__call" href="#">
+                                            Заказать звонок
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="payment-content__qr qr">
+                                    <p class="qr__text">
+                                        Открыть инструкцию на телефоне
+                                    </p>
+                                    <div class="qr__img">
+                                        <img class="qr__img-image" src="images/qr-icon.png" alt="qr">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment__bottom payment-bottom">
+                            <a class="payment-bottom__next-btn next-btn" href="#">
+                                <span>
+                                    В личный кабинет
+                                </span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L12 19M22 10.6667L13.6667 19L10.3333 19L2 10.6667" stroke="#fff"
+                                        stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__popup popup popup--pin">
+                <div class="popup__wrapper">
+                    <button class="popup__close" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4L4 20M4 4L20 20" stroke="#8F95A3" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup__pin pin">
+                        <h3 class="pin__title">
+                            Для чего нужен пин-код?
+                        </h3>
+                        <p class="pin__text">
+                            Пин-код вводится на пин-паде для доступа в секцию боксов.
+                        </p>
+                        <div class="pin__img">
+                            <img class="pin__img-image" src="images/pin-img.jpg" alt="pin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup popup popup--acitve popup--instructions">
+                <div class="popup__wrapper">
+                    <button class="popup__close" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4L4 20M4 4L20 20" stroke="#8F95A3" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup__instructions instructions">
+                        <h3 class="instructions__title">
+                            Инструкция доступа
+                        </h3>
+                        <ol class="instructions__list">
+                            <li class="instructions__list-item">
+                                <p class="instructions__list-count">
+                                    01.
+                                </p>
+                                <p class="instructions__list-text">
+                                    После успешного ввода откроются двери, снимется сигнализация с бокса и у вашего
+                                    бокса загорится световая дорожка.
+                                </p>
+                            </li>
+                            <li class="instructions__list-item">
+                                <p class="instructions__list-count">
+                                    02.
+                                </p>
+                                <p class="instructions__list-text">
+                                    После успешного ввода откроются двери, снимется сигнализация с бокса и у вашего
+                                    бокса загорится световая дорожка.
+                                </p>
+
+                            </li>
+                            <li class="instructions__list-item">
+                                <p class="instructions__list-count">
+                                    03.
+                                </p>
+                                <p class="instructions__list-text">
+                                    Внутри бокса на двери вы найдете индивидуальный механический замок. Используйте его,
+                                    чтобы закрыть бокс.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
