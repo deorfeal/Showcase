@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    Для партнеров
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    Команда
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__text">
+                            <img src="images/flag-3.png" alt="img">
+                            <span>
+                                Ru
+                            </span>
+                        </div>
+                        <div class="lang__inner">
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-1.svg" alt="img">
+                                <span>
+                                    Ukr
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-3.png" alt="img">
+                                <span>
+                                    Ru
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-2.svg" alt="img">
+                                <span>
+                                    Eng
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link btn" href="#">
+                            Login
+                        </a>
+                        <a class="user-nav__link btn-unvsb" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <button class="header__person" type="button">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.629 11.3097C15.6008 10.3364 16.9608 8.3048 16.9608 5.961C16.9608 2.67408 14.2868 0 11 0C7.71317 0 5.03915 2.67408 5.03915 5.961C5.03915 8.3048 6.3992 10.3364 8.37097 11.3097C3.57102 12.4405 0 16.5953 0 21.5337C0 21.791 0.209027 22 0.466334 22H21.5337C21.791 22 22 21.791 22 21.5337C22 16.5953 18.429 12.4405 13.629 11.3097ZM5.97182 5.96045C5.97182 3.18761 8.22723 0.932143 11 0.932143C13.7728 0.932143 16.0282 3.18761 16.0282 5.96045C16.0282 8.73328 13.7728 10.9888 11 10.9888C8.22723 10.9888 5.97182 8.73328 5.97182 5.96045ZM0.944189 21.0673C1.2004 15.9918 5.61247 11.9374 11 11.9374C16.3875 11.9374 20.7996 15.9918 21.0558 21.0673H0.944189Z"
+                            fill="#063AC0" />
+                    </svg>
+                </button>
+                <button class="header__burger burger burger--menu" type="button">
+                    <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 2.5C0 1.11929 1.11929 0 2.5 0H32.5C33.8807 0 35 1.11929 35 2.5C35 3.88071 33.8807 5 32.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M10 13.5C10 12.1193 11.1193 11 12.5 11H32.5C33.8807 11 35 12.1193 35 13.5C35 14.8807 33.8807 16 32.5 16H12.5C11.1193 16 10 14.8807 10 13.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M0 24.5C0 23.1193 1.11929 22 2.5 22H32.5C33.8807 22 35 23.1193 35 24.5C35 25.8807 33.8807 27 32.5 27H2.5C1.11929 27 0 25.8807 0 24.5Z"
+                            fill="#4443F0" />
+                    </svg>
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.767389 25.5161C-0.208921 24.5398 -0.208921 22.9569 0.767389 21.9806L21.9806 0.767389C22.9569 -0.208921 24.5398 -0.208921 25.5161 0.767389C26.4924 1.7437 26.4924 3.32661 25.5161 4.30292L4.30292 25.5161C3.32661 26.4924 1.7437 26.4924 0.767389 25.5161Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M25.517 25.5161C26.4933 24.5398 26.4933 22.9569 25.517 21.9806L4.30381 0.767389C3.3275 -0.208921 1.74459 -0.208921 0.768275 0.767389C-0.208036 1.7437 -0.208036 3.32661 0.768275 4.30292L21.9815 25.5161C22.9578 26.4924 24.5407 26.4924 25.517 25.5161Z"
+                            fill="#4443F0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__list-link" href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <p class="breadcrumbs__list-text">
+                                Наша команда
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main__team team">
+                <div class="container">
+                    <h1 class="team__title title">
+                        <span>
+                            Наша
+                        </span>
+                        команда
+                        <span>
+
+                        </span>
+                    </h1>
+                    <div class="team__swiper team-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="team-swiper__slide team-slide swiper-slide">
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-1.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        MR DANIEL SHEEHAN
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Главный исполнительный директор
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-2.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Đặng minh duy
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Технический директор
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-3.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Miranda Chesterton
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Директор юридического департамента
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-4.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Deborah Reynolds
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Риск менеджер
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-5.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Zachary Graham
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Руководитель отдела Blockchain-разработчики
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-6.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Jasper Hughes
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Ведущий разработчик DevOps отдела
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-swiper__slide team-slide swiper-slide">
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-7.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Amabelle Garza 
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Системный аналитик
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-8.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Dmitriy Timchenko
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Дата - инженер
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-9.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Bethany Osborn
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Руководитель отдела маркетинга
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-10.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Mesha Chaudhari
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Менеджер продукта  
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-11.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        David Chen
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Менеджер команды трейдинга
+                                    </p>
+                                </div>
+                                <div class="team-slide__box team-slide-box">
+                                    <div class="team-slide-box__img">
+                                        <img class="team-slide-box__img-image" src="images/team-img-12.jpg" alt="img">
+                                    </div>
+                                    <p class="team-slide-box__name">
+                                        Abhishek Mukherjee
+                                    </p>
+                                    <p class="team-slide-box__text">
+                                        Ведущий разработчик отдела full-stack
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__images images images--team">
+                <div class="container">
+                    <div class="images__inner">
+                        <div class="images__wrapper">
+                            <a class="images__img" data-fancybox href="images/images-img-11.jpg">
+                                <img class="images__img-image" src="images/images-img-11.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-12.jpg">
+                                <img class="images__img-image" src="images/images-img-12.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-13.jpg">
+                                <img class="images__img-image" src="images/images-img-13.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-14.jpg">
+                                <img class="images__img-image" src="images/images-img-14.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-15.jpg">
+                                <img class="images__img-image" src="images/images-img-15.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-16.jpg">
+                                <img class="images__img-image" src="images/images-img-16.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="images__wrapper">
+                            <a class="images__img" data-fancybox href="images/images-img-17.jpg">
+                                <img class="images__img-image" src="images/images-img-17.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-18.jpg">
+                                <img class="images__img-image" src="images/images-img-18.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-9.jpg">
+                                <img class="images__img-image" src="images/images-img-9.jpg" alt="img">
+                            </a>
+                            <a class="images__img" data-fancybox href="images/images-img-10.jpg">
+                                <img class="images__img-image" src="images/images-img-10.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <div class="main__partners partners">
+                <div class="container">
+                    <div class="partners__swiper partners-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-1.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-2.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-3.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-4.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-5.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-6.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-7.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-8.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-9.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-10.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-11.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-12.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-13.svg" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partners-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="main__bg-2" src="images/bg-2.svg" alt="img">
+            <img class="main__bg-3" src="images/bg-3.svg" alt="img">
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__wrapper">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo-img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для партнеров
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper">
+                        <div class="footer__box footer-box">
+                            <p class="footer-box__mail">
+                                Техподдержка:
+                                <a class="footer-box__mail-link" href="mailto:support@refino.net">
+                                    support@refino.net
+                                </a>
+                            </p>
+                            <p class="footer-box__mail">
+                                Для рекламодателей:
+                                <a class="footer-box__mail-link" href="mailto:partners@refino.net">
+                                    partners@refino.net
+                                </a>
+                            </p>
+                        </div>
+                        <div class="footer__box footer-box">
+                            <a class="footer-box__link" href="#">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="socials">
+                                        <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                        <path id="Vector"
+                                            d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                - техподдержка
+                            </a>
+                            <a class="footer-box__link" href="#">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="socials">
+                                        <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                        <path id="Vector"
+                                            d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                - для рекламодателей
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Для партнеров
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Команда
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__text">
+                            <img src="images/flag-3.png" alt="img">
+                            <span>
+                                Ru
+                            </span>
+                        </div>
+                        <div class="lang__inner">
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-1.svg" alt="img">
+                                <span>
+                                    Ukr
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-3.png" alt="img">
+                                <span>
+                                    Ru
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-2.svg" alt="img">
+                                <span>
+                                    Eng
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link btn" href="#">
+                            Login
+                        </a>
+                        <a class="user-nav__link btn-unvsb" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <button class="header__person" type="button">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.629 11.3097C15.6008 10.3364 16.9608 8.3048 16.9608 5.961C16.9608 2.67408 14.2868 0 11 0C7.71317 0 5.03915 2.67408 5.03915 5.961C5.03915 8.3048 6.3992 10.3364 8.37097 11.3097C3.57102 12.4405 0 16.5953 0 21.5337C0 21.791 0.209027 22 0.466334 22H21.5337C21.791 22 22 21.791 22 21.5337C22 16.5953 18.429 12.4405 13.629 11.3097ZM5.97182 5.96045C5.97182 3.18761 8.22723 0.932143 11 0.932143C13.7728 0.932143 16.0282 3.18761 16.0282 5.96045C16.0282 8.73328 13.7728 10.9888 11 10.9888C8.22723 10.9888 5.97182 8.73328 5.97182 5.96045ZM0.944189 21.0673C1.2004 15.9918 5.61247 11.9374 11 11.9374C16.3875 11.9374 20.7996 15.9918 21.0558 21.0673H0.944189Z"
+                            fill="#063AC0" />
+                    </svg>
+                </button>
+                <button class="header__burger burger burger--menu" type="button">
+                    <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 2.5C0 1.11929 1.11929 0 2.5 0H32.5C33.8807 0 35 1.11929 35 2.5C35 3.88071 33.8807 5 32.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M10 13.5C10 12.1193 11.1193 11 12.5 11H32.5C33.8807 11 35 12.1193 35 13.5C35 14.8807 33.8807 16 32.5 16H12.5C11.1193 16 10 14.8807 10 13.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M0 24.5C0 23.1193 1.11929 22 2.5 22H32.5C33.8807 22 35 23.1193 35 24.5C35 25.8807 33.8807 27 32.5 27H2.5C1.11929 27 0 25.8807 0 24.5Z"
+                            fill="#4443F0" />
+                    </svg>
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.767389 25.5161C-0.208921 24.5398 -0.208921 22.9569 0.767389 21.9806L21.9806 0.767389C22.9569 -0.208921 24.5398 -0.208921 25.5161 0.767389C26.4924 1.7437 26.4924 3.32661 25.5161 4.30292L4.30292 25.5161C3.32661 26.4924 1.7437 26.4924 0.767389 25.5161Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M25.517 25.5161C26.4933 24.5398 26.4933 22.9569 25.517 21.9806L4.30381 0.767389C3.3275 -0.208921 1.74459 -0.208921 0.768275 0.767389C-0.208036 1.7437 -0.208036 3.32661 0.768275 4.30292L21.9815 25.5161C22.9578 26.4924 24.5407 26.4924 25.517 25.5161Z"
+                            fill="#4443F0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__entrance entrance">
+                <div class="container">
+                    <div class="entrance__inner">
+                        <div class="entrance__wrapper">
+                            <h1 class="entrance__title title">
+                                <span>
+                                    Регистрация
+                                </span>
+                                <span>
+
+                                </span>
+                            </h1>
+                            <form class="entrance__form entrance-form" action="#">
+                                <div class="entrance-form__box">
+                                    <p class="entrance-form__box-text">
+                                        Введите свой email
+                                    </p>
+                                    <input class="entrance-form__box-input" type="email" placeholder="">
+                                </div>
+                                <div class="entrance-form__box">
+                                    <p class="entrance-form__box-text">
+                                        Введите логин
+                                    </p>
+                                    <input class="entrance-form__box-input" type="text" placeholder="">
+                                </div>
+                                <div class="entrance-form__box">
+                                    <p class="entrance-form__box-text">
+                                        Введите пароль
+                                    </p>
+                                    <input class="entrance-form__box-input" type="password" placeholder="">
+                                </div>
+                                <div class="entrance-form__box">
+                                    <p class="entrance-form__box-text">
+                                        Повторите пароль
+                                    </p>
+                                    <input class="entrance-form__box-input" type="password" placeholder="">
+                                </div>
+                                <div class="entrance-form__box">
+                                    <p class="entrance-form__box-text">
+                                        Кто вас пригласил?
+                                    </p>
+                                    <input class="entrance-form__box-input" type="email" placeholder="">
+                                </div>
+                                <img class="entrance-form__img" src="images/recaptcha-img.png" alt="img">
+                                <div class="entrance-form__buttons">
+                                    <button class="entrance-form__buttons-btn btn" type="submit">
+                                        Продолжить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="entrance__img">
+                            <svg width="153" height="136" viewBox="0 0 153 136" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M151.957 87.987C153.346 68.6953 120.688 50.6054 79.0144 47.5822C37.3405 44.5589 2.43138 57.7472 1.0427 77.0389C-0.345991 96.3306 32.3116 114.42 73.9856 117.444C115.659 120.467 150.569 107.279 151.957 87.987Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M149.183 83.9885C149.728 65.16 117.129 48.933 76.3705 47.7445C35.6124 46.5559 2.12977 60.8558 1.58495 79.6842C1.04012 98.5127 33.6394 114.74 74.3975 115.928C115.156 117.117 148.638 102.817 149.183 83.9885Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M74.8223 114.525C114.641 113.879 146.679 98.4058 146.382 79.9653C146.085 61.5247 113.565 47.0998 73.7465 47.7462C33.9282 48.3927 1.88998 63.8658 2.18705 82.3063C2.48412 100.747 35.004 115.172 74.8223 114.525Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M75.2296 113.038C114.134 110.556 144.747 93.9425 143.607 75.9298C142.467 57.917 110.005 45.3267 71.1007 47.8084C32.1966 50.2901 1.58284 66.9041 2.72299 84.9168C3.86313 102.93 36.3254 115.52 75.2296 113.038Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M75.6417 111.585C113.655 107.265 142.866 89.5401 140.888 71.9961C138.909 54.4521 106.49 43.7322 68.4769 48.0526C30.4639 52.3729 1.25217 70.0974 3.23068 87.6414C5.20919 105.185 37.6287 115.905 75.6417 111.585Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M76.157 110.125C113.235 103.968 141.004 85.0808 138.179 67.9396C135.355 50.7983 103.007 41.894 65.9288 48.0512C28.8505 54.2085 1.08226 73.0956 3.90672 90.2369C6.73117 107.378 39.0787 116.282 76.157 110.125Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M135.333 63.9277C138.984 80.6242 112.718 100.68 76.5136 108.621C40.3092 116.562 8.16133 109.538 4.51047 92.8411C0.859603 76.1446 27.1255 56.0885 63.3299 48.1475C99.4329 40.1047 131.682 47.2313 135.333 63.9277Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M132.595 59.8554C137.057 76.1446 112.211 97.3206 77.0207 107.094C41.8304 116.868 9.58111 111.675 5.11894 95.3863C0.555364 79.1988 25.4015 58.0229 60.6932 48.2493C95.8835 38.374 128.031 43.668 132.595 59.8554Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M129.755 55.8849C135.13 71.7669 111.602 94.0628 77.3249 105.669C43.0474 117.275 11.0009 113.915 5.62601 98.1351C0.251126 82.2531 23.7789 59.9572 58.0565 48.3511C92.334 36.6433 124.482 40.0029 129.755 55.8849Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M127.017 51.9144C133.203 67.3892 111.197 90.8049 77.832 104.244C44.4671 117.682 12.4207 116.155 6.23449 100.782C0.0483003 85.3073 22.0549 61.8915 55.4197 48.4529C88.7846 34.9125 120.831 36.4396 127.017 51.9144Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M124.279 47.8421C131.277 62.8078 110.69 87.4453 78.2376 102.716C45.7855 118.089 13.8405 118.293 6.74155 103.327C-0.255938 88.3615 20.3309 63.8259 52.783 48.4529C85.2351 33.08 117.18 32.8764 124.279 47.8421Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M121.44 43.8716C129.35 58.4301 110.183 84.0856 78.6433 101.291C47.1039 118.497 15.1588 120.533 7.35003 105.974C-0.458764 91.4158 18.7083 65.6584 50.1463 48.5548C81.5843 31.4511 113.631 29.3131 121.44 43.8716Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M118.701 39.7993C127.423 53.9506 109.676 80.8278 79.0489 99.764C48.4222 118.802 16.5786 122.671 7.85709 108.519C-0.864416 94.3682 16.8828 67.491 47.5095 48.5548C78.1362 29.6185 109.98 25.648 118.701 39.7993Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M115.963 35.8288C125.496 49.5728 109.169 77.5699 79.556 98.3387C49.842 119.209 18.0998 124.91 8.56698 111.268C-0.965828 97.5242 15.3616 69.5271 44.9742 48.7584C74.5868 27.8878 106.43 22.0848 115.963 35.8288Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M113.124 31.7565C123.468 45.0933 108.661 74.2103 79.8602 96.9134C51.059 119.616 19.4182 127.15 8.97263 113.915C-1.37148 100.578 13.4348 71.4615 42.2361 48.7584C71.0373 26.0553 102.78 18.5215 113.124 31.7565Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M110.386 27.786C121.642 40.6138 108.154 70.9524 80.3673 95.4881C52.5802 119.922 20.9394 129.39 9.68252 116.562C-1.57431 103.734 11.9136 73.3958 39.7007 48.8602C67.4879 24.3245 99.1287 14.9582 110.386 27.786Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M107.647 23.7137C119.715 36.1342 107.749 67.5928 80.8744 93.9609C53.9999 120.329 22.3591 131.63 10.291 119.107C-1.77713 106.687 10.1896 75.2283 37.064 48.8602C63.9384 22.5938 95.5792 11.2932 107.647 23.7137Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M104.909 19.7432C117.789 31.7565 107.242 64.3349 81.28 92.5356C55.3183 120.635 23.7789 133.768 10.7981 121.754C-2.18278 109.741 8.46557 77.1627 34.4273 49.0638C60.389 20.8631 91.9284 7.7299 104.909 19.7432Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M102.07 15.7727C115.862 27.3788 106.633 61.0771 81.6857 91.1103C56.6367 121.144 25.1987 136.109 11.4065 124.503C-2.38561 112.897 6.84296 79.1988 31.7905 49.1656C56.7381 19.1324 88.3789 4.16663 102.07 15.7727Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M99.3315 11.7004C113.935 22.8992 106.228 57.7174 82.0913 89.5832C57.955 121.449 26.6185 138.247 12.015 127.048C-2.58843 115.85 5.11894 81.0314 29.2552 49.1656C53.2901 17.2998 84.728 0.603367 99.3315 11.7004Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M96.5933 7.7299C112.008 18.4197 105.72 54.4596 82.5984 88.1579C59.4762 121.856 28.1397 140.487 12.6235 129.695C-2.79126 119.006 3.49634 82.9657 26.6185 49.2674C49.7406 15.5691 81.0772 -3.06171 96.5933 7.7299Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M93.7538 3.6576C110.081 13.9402 105.213 51.0999 82.9026 86.6308C60.5918 122.162 29.3566 142.625 13.1306 132.342C-3.0955 122.06 1.67091 84.9001 23.9817 49.3692C46.2926 13.8384 77.5277 -6.62497 93.7538 3.6576Z"
+                                    stroke="#063AC0" stroke-width="0.8" stroke-miterlimit="10"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__partners partners">
+                <div class="container">
+                    <div class="partners__swiper partners-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-1.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-2.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-3.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-4.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-5.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-6.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-7.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-8.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-9.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-10.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-11.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-12.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-13.svg" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partners-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="main__bg-1" src="images/bg-1.svg" alt="img">
+            <img class="main__bg-2" src="images/bg-2.svg" alt="img">
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__wrapper">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo-img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для партнеров
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper">
+                        <div class="footer__box footer-box">
+                            <p class="footer-box__mail">
+                                Техподдержка:
+                                <a class="footer-box__mail-link" href="mailto:support@refino.net">
+                                    support@refino.net
+                                </a>
+                            </p>
+                            <p class="footer-box__mail">
+                                Для рекламодателей:
+                                <a class="footer-box__mail-link" href="mailto:partners@refino.net">
+                                    partners@refino.net
+                                </a>
+                            </p>
+                        </div>
+                        <div class="footer__box footer-box">
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - техподдержка
+                        </a>
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - для рекламодателей
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    Для партнеров
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Команда
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__text">
+                            <img src="images/flag-3.png" alt="img">
+                            <span>
+                                Ru
+                            </span>
+                        </div>
+                        <div class="lang__inner">
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-1.svg" alt="img">
+                                <span>
+                                    Ukr
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-3.png" alt="img">
+                                <span>
+                                    Ru
+                                </span>
+                            </a>
+                            <a class="lang__link" href="#">
+                                <img src="images/flag-2.svg" alt="img">
+                                <span>
+                                    Eng
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link btn" href="#">
+                            Login
+                        </a>
+                        <a class="user-nav__link btn-unvsb" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <button class="header__person" type="button">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.629 11.3097C15.6008 10.3364 16.9608 8.3048 16.9608 5.961C16.9608 2.67408 14.2868 0 11 0C7.71317 0 5.03915 2.67408 5.03915 5.961C5.03915 8.3048 6.3992 10.3364 8.37097 11.3097C3.57102 12.4405 0 16.5953 0 21.5337C0 21.791 0.209027 22 0.466334 22H21.5337C21.791 22 22 21.791 22 21.5337C22 16.5953 18.429 12.4405 13.629 11.3097ZM5.97182 5.96045C5.97182 3.18761 8.22723 0.932143 11 0.932143C13.7728 0.932143 16.0282 3.18761 16.0282 5.96045C16.0282 8.73328 13.7728 10.9888 11 10.9888C8.22723 10.9888 5.97182 8.73328 5.97182 5.96045ZM0.944189 21.0673C1.2004 15.9918 5.61247 11.9374 11 11.9374C16.3875 11.9374 20.7996 15.9918 21.0558 21.0673H0.944189Z"
+                            fill="#063AC0" />
+                    </svg>
+                </button>
+                <button class="header__burger burger burger--menu" type="button">
+                    <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 2.5C0 1.11929 1.11929 0 2.5 0H32.5C33.8807 0 35 1.11929 35 2.5C35 3.88071 33.8807 5 32.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M10 13.5C10 12.1193 11.1193 11 12.5 11H32.5C33.8807 11 35 12.1193 35 13.5C35 14.8807 33.8807 16 32.5 16H12.5C11.1193 16 10 14.8807 10 13.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M0 24.5C0 23.1193 1.11929 22 2.5 22H32.5C33.8807 22 35 23.1193 35 24.5C35 25.8807 33.8807 27 32.5 27H2.5C1.11929 27 0 25.8807 0 24.5Z"
+                            fill="#4443F0" />
+                    </svg>
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.767389 25.5161C-0.208921 24.5398 -0.208921 22.9569 0.767389 21.9806L21.9806 0.767389C22.9569 -0.208921 24.5398 -0.208921 25.5161 0.767389C26.4924 1.7437 26.4924 3.32661 25.5161 4.30292L4.30292 25.5161C3.32661 26.4924 1.7437 26.4924 0.767389 25.5161Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M25.517 25.5161C26.4933 24.5398 26.4933 22.9569 25.517 21.9806L4.30381 0.767389C3.3275 -0.208921 1.74459 -0.208921 0.768275 0.767389C-0.208036 1.7437 -0.208036 3.32661 0.768275 4.30292L21.9815 25.5161C22.9578 26.4924 24.5407 26.4924 25.517 25.5161Z"
+                            fill="#4443F0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a class="breadcrumbs__list-link" href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <p class="breadcrumbs__list-text">
+                                FAQ
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main__faq-section faq-section">
+                <div class="container">
+                    <h1 class="faq-section__title title">
+                        Часто задаваемые
+                        <span>
+                           вопросы
+                        </span>
+                    </h1>
+                    <div class="faq-section__inner">
+                        <ul class="faq__list faq-list">
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Как стать инвестором Refino Limited?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Чтобы осуществить свою первую инвестицию в систему, Вам необходимо пройти быструю и анонимную регистрацию в системе. После регистрации у Вас появится возможность инвестировать средства по удобному для Вас тарифному плану. 
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Какие способы оплаты вы принимаете?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Вы можете осуществить инвестиции, через платежные системы ePayCore, PerfectMoney, Visa, MasterCard, также - мы принимаем криптовалюты Tether_TRC20 , Tether_BEP20 , Tether_ERC20 , USDC , Bitcoin , Litecoin , Ether , Tron , BNB_BEP20 , BNB_BEP2 , Dogecoin , BitcoinCash , Dash и другие.
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Безопасны ли инвестиции с Refino Capital?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Когда речь идет об инвестициях в целом и о криптовалютном рынке в частности, очень сложно говорить об абсолютной безопасности и надежных прогнозах, поскольку факторы, влияющие на цены токенов и ценных бумаг, огромны. Однако наш подход и используемая нами технология показали впечатляющие и многообещающие результаты, причем показатели успешности транзакций в несколько раз превышают средние по отрасли. Мы внимательно отслеживаем все события и тенденции  на криптовалютном рынке и принимаем взвешенные решения для минимизации потенциальных рисков.
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Законна ли деятельность компании?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Refino Capital является налоговым резидентом Великобритании и имеет лицензию на торговлю цифровыми активами. Компания действует на законных основаниях, имеет учредительные документы и должным образом зарегистрирована в качестве налогоплательщика. Таким образом, мы принимаем все меры для обеспечения законности деятельности нашей организации и установления честных партнерских отношений с нашими инвесторами.
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Есть ли ограничения по количеству активных инвестиционных планов, или я могу активировать сразу несколько пакетов?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Ограничений нет, одновременно Вы можете инвестировать в любые доступные тарифные планы. 
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Как часто происходят начисления по активным депозитам?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Проценты начисляются ежедневно.
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        В какие дни осуществляется вывод?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Вывод средств круглосуточный. 
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Как быстро выводятся средства на мой счет (кошелек)?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Мгновенно, для некоторых видов криптовалют - задержка может происходить до десяти минут. 
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Могу ли я сделать реинвест с баланса?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Да, такая возможность предусмотрена в личном кабинете. 
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Как вывести средства?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Войдите в свою учетную запись, используя свое имя пользователя и пароль, и проверьте раздел «Вывод средств».
+                                </p>
+                            </li>
+                            <li class="faq-list__item">
+                                <div class="faq-list__top">
+                                    <p class="faq-list__top-text">
+                                        Есть ли у вас партнерская программа?
+                                    </p>
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6V8H9V6H7Z"
+                                            fill="#060EC0" />
+                                    </svg>
+                                </div>
+                                <p class="faq-list__answer">
+                                    Да, вы можете ознакомиться с ней в соответствующем разделе сайта и в личном кабинете. 
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="faq-section__img">
+                            <img class="faq-section__img-image" src="images/faq-icon-2.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__partners partners">
+                <div class="container">
+                    <div class="partners__swiper partners-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-1.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-2.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-3.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-4.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-5.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-6.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-7.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-8.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-9.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-10.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-11.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-12.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <a class="partners-slide__link" href="#">
+                                    <img class="partners-slide__link-img" src="images/partners-icon-13.svg" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partners-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="main__bg-1" src="images/bg-1.svg" alt="img">
+            <img class="main__bg-2" src="images/bg-2.svg" alt="img">
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__wrapper">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo-img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для партнеров
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper">
+                        <div class="footer__box footer-box">
+                            <p class="footer-box__mail">
+                                Техподдержка:
+                                <a class="footer-box__mail-link" href="mailto:support@refino.net">
+                                    support@refino.net
+                                </a>
+                            </p>
+                            <p class="footer-box__mail">
+                                Для рекламодателей:
+                                <a class="footer-box__mail-link" href="mailto:partners@refino.net">
+                                    partners@refino.net
+                                </a>
+                            </p>
+                        </div>
+                        <div class="footer__box footer-box">
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - техподдержка
+                        </a>
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - для рекламодателей
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
