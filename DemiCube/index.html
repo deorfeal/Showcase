@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <div class="header__wrapper">
+          <nav class="header__menu menu">
+            <ul class="menu__list menu-list">
+              <li class="menu-list__item menu-list__item--active">
+                <a class="menu-list__link" href="index.html">
+                  Обмен
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="reserves.html">
+                  Резервы
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="for-partners.html">
+                  Партнёрам
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="recalls.html">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="rules.html">
+                  ПРАВИЛА
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__lang header-lang" type="button">
+            <p class="header-lang__text">
+              <span>
+                RU
+              </span>
+              <span>
+                Eng
+              </span>
+            </p>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="white" />
+            </svg>
+            <ul class="header-lang__list">
+              <li class="header-lang__list-item">
+                <a href="#" class="header-lang__list-text">
+                  RU
+                </a>
+              </li>
+              <li class="header-lang__list-item">
+                <a href="#" class="header-lang__list-text">
+                  Eng
+                <a>
+              </li>
+            </ul>
+          </button>
+        </div>
+        <a class="header__link-tg" href="#">
+          <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_306_969)">
+              <path
+                d="M15.8555 0C20.2125 0.027 23.9305 1.459 27.0345 4.385C30.1295 7.31 31.8185 10.939 32.0235 15.199C32.2365 19.753 30.7785 23.737 27.6215 27.036C24.5175 30.282 20.6845 31.954 16.1845 31.999C11.9945 32.043 8.32247 30.639 5.24447 27.801C1.61647 24.448 -0.126531 20.251 0.0604691 15.315C0.210469 11.179 1.80347 7.622 4.72947 4.705C7.81547 1.619 11.5865 0.08 15.8555 0Z"
+                fill="#2B76BA" />
+              <path
+                d="M11.1234 18.16C10.2524 17.894 9.37139 17.618 8.50039 17.351L7.21939 16.951C7.06124 16.9069 6.91106 16.838 6.77439 16.747C6.52539 16.56 6.50739 16.329 6.72139 16.097C6.86339 15.937 7.04139 15.831 7.23739 15.75L8.78439 15.137C12.3424 13.767 15.8994 12.389 19.4654 11.019L22.8454 9.71202C22.9956 9.64404 23.1619 9.61945 23.3254 9.64102C23.6634 9.69402 23.9214 9.97002 23.9574 10.325C23.9744 10.521 23.9664 10.717 23.9304 10.913C23.4944 12.958 23.0584 15.013 22.6234 17.058C22.2674 18.748 21.9034 20.438 21.5464 22.136L21.3064 23.283C21.2741 23.4689 21.2141 23.6489 21.1284 23.817C20.9514 24.147 20.6664 24.271 20.3014 24.199C20.0848 24.1535 19.8814 24.0594 19.7064 23.924C18.4784 23.017 17.2514 22.101 16.0154 21.194C15.9614 21.149 15.8994 21.114 15.8454 21.078C15.6324 21.015 15.4814 20.855 15.3124 20.731C14.7254 20.304 14.1384 19.859 13.5524 19.432C13.5074 19.397 13.4624 19.362 13.4274 19.317C13.3734 19.227 13.4274 19.175 13.4804 19.121C14.2804 18.41 15.0724 17.681 15.8724 16.969C16.4504 16.444 17.0374 15.919 17.6164 15.395C18.1944 14.87 18.7724 14.355 19.3504 13.838C19.8034 13.429 20.2574 13.029 20.7024 12.62L20.8084 12.513C20.8354 12.478 20.8714 12.443 20.8534 12.398C20.8354 12.344 20.7824 12.344 20.7374 12.344C20.5774 12.326 20.4444 12.389 20.3104 12.469C19.8214 12.762 19.3504 13.074 18.8704 13.376C17.4114 14.292 15.9434 15.216 14.4854 16.133C13.4783 16.7641 12.4733 17.3984 11.4704 18.036C11.3544 18.098 11.2744 18.213 11.1234 18.16Z"
+                fill="#FCFDFE" />
+              <path
+                d="M11.124 18.16C11.364 18.063 11.569 17.903 11.791 17.77C12.431 17.37 13.071 16.969 13.712 16.56C14.166 16.275 14.61 15.982 15.064 15.697C15.811 15.226 16.567 14.754 17.323 14.283C17.848 13.953 18.373 13.616 18.906 13.278L20.293 12.398C20.4378 12.3028 20.6103 12.2588 20.783 12.273C20.836 12.282 20.889 12.282 20.907 12.335C20.934 12.389 20.916 12.442 20.872 12.495C20.765 12.602 20.667 12.718 20.542 12.815C20.32 12.993 20.124 13.198 19.911 13.385C19.564 13.678 19.244 13.998 18.897 14.292C18.755 14.416 18.621 14.55 18.479 14.674C18.275 14.844 18.079 15.048 17.883 15.226C17.581 15.501 17.27 15.768 16.967 16.035C16.834 16.16 16.691 16.284 16.567 16.409C16.237 16.719 15.891 17.013 15.562 17.325C15.162 17.689 14.752 18.045 14.362 18.419C14.077 18.685 13.774 18.934 13.481 19.192C13.437 19.228 13.437 19.263 13.463 19.308C13.401 20.313 13.33 21.318 13.267 22.323C13.25 22.59 13.214 22.847 13.223 23.114C13.223 23.194 13.223 23.265 13.161 23.328C13.107 23.346 13.045 23.346 12.991 23.346C12.831 23.336 12.716 23.256 12.671 23.106C12.627 22.946 12.574 22.794 12.529 22.634C12.094 21.202 11.658 19.761 11.222 18.33C11.1846 18.2762 11.1518 18.2193 11.124 18.16Z"
+                fill="#CCD9E9" />
+              <path
+                d="M13.1336 23.319C13.1066 22.972 13.1696 22.625 13.1786 22.287C13.1956 21.914 13.2316 21.54 13.2486 21.167L13.3286 20.028C13.3386 19.833 13.3556 19.637 13.3556 19.45C13.3556 19.388 13.3736 19.343 13.4356 19.308C14.1556 19.842 14.8766 20.366 15.5886 20.9C15.6686 20.962 15.7576 21.007 15.8196 21.087C15.1526 21.736 14.4766 22.385 13.8096 23.034C13.6316 23.212 13.4186 23.354 13.1336 23.319Z"
+                fill="#B1C8DB" />
+            </g>
+            <defs>
+              <clipPath id="clip0_306_969">
+                <rect width="32" height="32" fill="white" transform="translate(0.046875)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <button class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <section class="main__exchange exchange">
+        <div class="container">
+          <h1 class="exchange__title">
+            DemiCube - лучший Обменник криптовалют и токенов
+          </h1>
+          <div class="exchange__inner">
+            <div class="exchange__column exchange-column exchange-column--first" id="1">
+              <div class="exchange-column__top exchange-column-top">
+                <div class="exchange-column-top__box">
+                  <h2 class="exchange-column-top__box-title">
+                    Отдаете
+                  </h2>
+                  <p class="exchange-column-top__box-text">
+                    Выберите валюту и сумму, которую хотите обменять
+                  </p>
+                </div>
+                <button class="exchange-column-top__button" type="button">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_306_777)">
+                      <path
+                        d="M1 7.125H24.579M24.579 7.125L18.684 13.02M24.579 7.125L18.684 1.23M1 19.151H24.579M1 19.151L6.474 13.678M1 19.151L6.474 24.625"
+                        stroke="#2B76BA" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_306_777">
+                        <rect width="26" height="25" fill="white" transform="translate(0 0.625)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div class="exchange-column__wrapper">
+                <div class="exchange-column__choose exchange-column-choose">
+                  <div class="exchange-column-choose__top exchange-column-choose-top">
+                    <div class="exchange-column-choose-top__box">
+                      <img class="exchange-column-choose-top__box-img" src="images/reserves-icon-1.svg" alt="img">
+                      <p class="exchange-column-choose-top__box-text exchange-column-choose-top__box-text--first">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <button class="exchange-column-choose-top__btn" type="button">
+                      <p class="exchange-column-choose-top__btn-text">
+                        Выбрать
+                      </p>
+                      <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.07812L5 5.07812L9 1.07812" stroke="#145896" stroke-width="2" />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="exchange-column-choose__text">
+                    Валюта
+                  </p>
+                </div>
+                <ul class="exchange-column__list exchange-column-list mix item-first">
+                  <li class="exchange-column-list__item exchange-column-list__item--active" id="1">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                  </li>
+                  <li class=" exchange-column-list__item exchange-column-list__item--disabled" id="2">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="3">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="4">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="5">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="6">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="7">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="8">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="9">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="10">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="11">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="12">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="13">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="14">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="15">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="16">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="17">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="18">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="19">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="20">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <form class="exchange-column__bottom exchange-column-bottom" action="#">
+                <div class="exchange-column-bottom__box">
+                  <p class="exchange-column-bottom__box-crypto">
+                    BTC
+                  </p>
+                  <input class="exchange-column-bottom__box-input" type="text" placeholder="Сумма">
+                </div>
+                <p class="exchange-column-bottom__text">
+                  Минимальная сумма: <span>0.01176975 </span>
+                  <span class="exchange-column-bottom__text--first">BTC</span>
+                </p>
+              </form>
+            </div>
+            <div class="exchange__column exchange-column exchange-column--second" id="2">
+              <div class="exchange-column__top exchange-column-top">
+                <div class="exchange-column-top__box">
+                  <h2 class="exchange-column-top__box-title">
+                    Получаете
+                  </h2>
+                  <p class="exchange-column-top__box-text">
+                    Выберите валюту для получения
+                  </p>
+                </div>
+              </div>
+              <div class="exchange-column__wrapper">
+                <div class="exchange-column__choose exchange-column-choose">
+                  <div class="exchange-column-choose__top exchange-column-choose-top">
+                    <div class="exchange-column-choose-top__box">
+                      <img class="exchange-column-choose-top__box-img" src="images/reserves-icon-2.svg" alt="img">
+                      <p class="exchange-column-choose-top__box-text exchange-column-choose-top__box-text--second">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <button class="exchange-column-choose-top__btn" type="button">
+                      <p class="exchange-column-choose-top__btn-text">
+                        Выбрать
+                      </p>
+                      <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.07812L5 5.07812L9 1.07812" stroke="#145896" stroke-width="2" />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="exchange-column-choose__text">
+                    Резерв <span class="exchange-column-choose__text--reserve">84 383 988.65 </span>
+                    <span class="exchange-column-choose__text-short--second">ETH</span>
+                  </p>
+                </div>
+                <ul class="exchange-column__list exchange-column-list mix item-first">
+                  <li
+                    class="exchange-column-list__item exchange-column-list__item--disabled exchange-column-list__item--first"
+                    id="1">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+
+                  </li>
+                  <li class="exchange-column-list__item exchange-column-list__item--active" id="2">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="3">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+
+                  </li>
+                  <li class="exchange-column-list__item" id="4">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+
+                  </li>
+                  <li class="exchange-column-list__item" id="5">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+
+                  </li>
+                  <li class="exchange-column-list__item" id="6">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+
+                  </li>
+                  <li class="exchange-column-list__item" id="7">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="8">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="9">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="10">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="11">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="12">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="13">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="14">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="15">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="16">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="17">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="18">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="19">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="20">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="21">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard USD
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="22">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard EUR
+                      </p>
+                    </div>
+                  </li>
+                  <li class="exchange-column-list__item" id="23">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard KZT
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <form class="exchange-column__bottom exchange-column-bottom" action="#">
+                <div class="exchange-column-bottom__box">
+                  <p class="exchange-column-bottom__box-crypto exchange-column-bottom__box-crypto--second">
+                    ETH
+                  </p>
+                  <input class="exchange-column-bottom__box-input" type="text" placeholder="Сумма">
+                </div>
+                <p class="exchange-column-bottom__text">
+                  Курс обмена: 1
+                  <span class="exchange-column-bottom__text-short--first">
+                    BTC
+                  </span>
+                  <span> - 21319.7726971 </span>
+                  <span class="exchange-column-bottom__text-short-reserve--second">ETH</span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__details details">
+        <div class="container">
+          <div class="details__inner">
+            <div class="details__top details-top">
+              <h2 class="details-top__title">
+                Детали обмена
+              </h2>
+              <div class="details-top__box">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_306_833)">
+                    <path
+                      d="M19.8762 16.8566L11.4842 2.32064C11.3435 2.07638 11.141 1.8735 10.8969 1.73243C10.6529 1.59136 10.376 1.51709 10.0942 1.51709C9.81229 1.51709 9.5354 1.59136 9.29138 1.73243C9.04735 1.8735 8.84481 2.07638 8.70415 2.32064L0.312153 16.8566C0.171086 17.1006 0.0967673 17.3774 0.0966798 17.6591C0.0965922 17.9409 0.170738 18.2178 0.311654 18.4618C0.45257 18.7058 0.655283 18.9084 0.899387 19.0492C1.14349 19.1899 1.42037 19.2639 1.70215 19.2636H18.4872C18.7689 19.2639 19.0458 19.1899 19.2899 19.0492C19.534 18.9084 19.7367 18.7058 19.8777 18.4618C20.0186 18.2178 20.0927 17.9409 20.0926 17.6591C20.0925 17.3774 20.0182 17.1006 19.8772 16.8566H19.8762ZM18.4862 17.7936H1.70215C1.67852 17.7939 1.65522 17.7879 1.63468 17.7763C1.61413 17.7646 1.59707 17.7476 1.58526 17.7271C1.57344 17.7067 1.56729 17.6834 1.56745 17.6598C1.56761 17.6361 1.57406 17.613 1.58615 17.5926L9.97815 3.05464C10.0302 2.96464 10.1582 2.96464 10.2102 3.05464L18.6032 17.5916C18.615 17.6119 18.6212 17.635 18.6213 17.6585C18.6213 17.682 18.6151 17.7051 18.6033 17.7254C18.5915 17.7457 18.5746 17.7625 18.5542 17.7742C18.5338 17.7858 18.5106 17.7918 18.4872 17.7916L18.4862 17.7936Z"
+                      fill="#4B94D6" />
+                    <path
+                      d="M10.0934 7.61664C9.89846 7.61664 9.71151 7.69408 9.57367 7.83191C9.43583 7.96975 9.3584 8.1567 9.3584 8.35164V12.5666C9.3584 12.7616 9.43583 12.9485 9.57367 13.0864C9.71151 13.2242 9.89846 13.3016 10.0934 13.3016C10.2883 13.3016 10.4753 13.2242 10.6131 13.0864C10.751 12.9485 10.8284 12.7616 10.8284 12.5666V8.35064C10.8281 8.15588 10.7506 7.96918 10.6128 7.83156C10.475 7.69394 10.2882 7.61664 10.0934 7.61664ZM10.0934 14.2566C9.89846 14.2566 9.71151 14.3341 9.57367 14.4719C9.43583 14.6098 9.3584 14.7967 9.3584 14.9916V15.4316C9.3584 15.6266 9.43583 15.8135 9.57367 15.9514C9.71151 16.0892 9.89846 16.1666 10.0934 16.1666C10.2883 16.1666 10.4753 16.0892 10.6131 15.9514C10.751 15.8135 10.8284 15.6266 10.8284 15.4316V14.9916C10.8284 14.7967 10.751 14.6098 10.6131 14.4719C10.4753 14.3341 10.2883 14.2566 10.0934 14.2566Z"
+                      fill="#4B94D6" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_306_833">
+                      <rect width="20" height="20" fill="white" transform="translate(0.09375 0.390625)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="details-top__box-text">
+                  Внимательно введите ваши данные
+                </p>
+              </div>
+            </div>
+            <form class="details__form details-form" action="#">
+              <div class="details-form__column details-form-column">
+                <p class="details-form-column__text">
+                  Ваш E-mail ящик
+                </p>
+                <div class="details-form-column__box">
+                  <input class="details-form-column__box-input" type="text" placeholder="jack@gmail.com">
+                </div>
+              </div>
+              <div class="details-form__column details-form-column">
+                <p class="details-form-column__text">
+                  Кошелёк для получения
+                </p>
+                <div class="details-form-column__box">
+                  <input class="details-form-column__box-input" type="text"
+                    placeholder="Например: 0xDA4A75FA6ae176BF8131c41C6DaE1f89D3FcC874">
+                </div>
+              </div>
+              <div class="details-form__start details-form-start">
+                <div class="details-form-start__top">
+                  <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <p class="details-form-start__top-text">
+                    Я согласен с
+                    <a href="#">
+                      правилами обмена
+                    </a>
+                  </p>
+                </div>
+                <button class="details-form-start__btn" type="submit">
+                  Начать обмен
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="main__info info">
+        <div class="container">
+          <div class="info__inner">
+            <div class="info__box info-box">
+              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_306_867)">
+                  <path
+                    d="M48.9688 24.2155L44.8607 18.8635L45.7798 12.2155L39.5098 9.72852L37.0228 3.45851L30.3738 4.37752L24.9688 0.215515L19.6178 4.32352L12.9688 3.40352L10.4827 9.67552L4.21275 12.1615L5.13075 18.8115L0.96875 24.2145L5.07675 29.5645L4.15775 36.2145L10.4277 38.7005L12.9148 44.9705L19.5637 44.0515L24.9137 48.1595L30.2658 44.0515L36.9147 44.9715L39.4007 38.7015L45.6707 36.1605L44.7528 29.5105L48.9688 24.2155ZM23.0228 31.9975L15.0227 25.4035L16.7528 23.2955L22.6987 28.1595L32.8608 16.4295L34.9147 18.2145L23.0228 31.9975Z"
+                    fill="url(#paint0_linear_306_867)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_306_867" x1="0.96875" y1="21.1145" x2="48.9688" y2="21.1145"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <clipPath id="clip0_306_867">
+                    <rect width="48" height="48" fill="white" transform="translate(0.96875 0.1875)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h3 class="info-box__title">
+                Гарантия
+              </h3>
+              <p class="info-box__text">
+                Мы даём 100% гарантию перевода. Надежность
+                нашего сервиса, подтверждают многочисленные
+                отзывы довольных клиентов на авторитетных
+                ресурсах.
+              </p>
+            </div>
+            <div class="info__box info-box">
+              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_306_875)">
+                  <path
+                    d="M30.2754 0.795492L26.3574 4.40249C25.9286 4.79524 25.3683 5.01309 24.7869 5.01309C24.2054 5.01309 23.6451 4.79524 23.2164 4.40249L19.2604 0.834492C18.0584 -0.251508 16.1584 0.174492 15.5374 1.64849L12.3184 9.40549H37.2164L33.9974 1.61049C33.3774 0.136492 31.4784 -0.289508 30.2754 0.795492Z"
+                    fill="url(#paint0_linear_306_875)" />
+                  <path
+                    d="M4.9507 16.5025C3.8257 17.0455 4.2527 18.7125 5.4547 18.7125H44.0417C45.2817 18.7125 45.6707 17.0455 44.5847 16.5025L39.8527 14.0585H9.6817L4.9507 16.5025Z"
+                    fill="url(#paint1_linear_306_875)" />
+                  <path
+                    d="M0.994304 35.1565L3.0493 46.3265C3.2433 47.4505 4.2133 48.1875 5.3373 48.1875H44.2363C45.3603 48.1875 46.3303 47.4115 46.5243 46.3265L48.5793 35.1565C48.675 34.6247 48.5846 34.0761 48.3235 33.603C48.0623 33.1298 47.6463 32.761 47.1453 32.5585C42.1803 30.6185 36.9843 29.5725 32.8733 28.9515C31.8263 28.7965 30.8173 29.3785 30.4293 30.3085L26.5123 39.1895C25.8143 40.7405 23.6043 40.7405 22.9443 39.1505L19.1443 30.3475C18.7173 29.3775 17.7083 28.7965 16.6613 28.9505C12.5513 29.5325 7.3543 30.6185 2.4283 32.5575C1.91639 32.7458 1.48954 33.1123 1.22613 33.5899C0.962709 34.0675 0.880399 34.6231 0.994304 35.1565Z"
+                    fill="url(#paint2_linear_306_875)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_306_875" x1="12.3184" y1="4.20549" x2="37.2164" y2="4.20549"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_306_875" x1="4.2957" y1="16.0875" x2="45.2207" y2="16.0875"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_306_875" x1="0.945304" y1="37.3225" x2="48.6163" y2="37.3225"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <clipPath id="clip0_306_875">
+                    <rect width="48" height="48" fill="white" transform="translate(0.78125 0.1875)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h3 class="info-box__title">
+                Конфиденциальность
+              </h3>
+              <p class="info-box__text">
+                Мы не храним и не передаем
+                Вашу персональную
+                информацию 3-им лицам.
+              </p>
+            </div>
+            <div class="info__box info-box">
+              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_306_885)">
+                  <path
+                    d="M48.1562 32.6715C48.1562 26.7155 44.7392 21.3995 39.6212 18.8135C39.4622 30.2335 30.2032 39.4935 18.7822 39.6535C21.3682 44.7695 26.6842 48.1875 32.6402 48.1875C35.4179 48.1908 38.1451 47.4457 40.5352 46.0305L48.0882 48.1205L45.9992 40.5665C47.4144 38.1764 48.1595 35.4491 48.1562 32.6715Z"
+                    fill="url(#paint0_linear_306_885)" />
+                  <path
+                    d="M36.8122 18.5155C36.8122 8.4095 28.5902 0.1875 18.4842 0.1875C8.37825 0.1875 0.15625 8.4095 0.15625 18.5155C0.15625 21.8095 1.03325 25.0155 2.69825 27.8315L0.22325 36.7775L9.16825 34.3035C11.9895 35.9707 15.2072 36.8483 18.4842 36.8445C28.5902 36.8445 36.8122 28.6225 36.8122 18.5165V18.5155ZM15.6722 14.2505H12.8593C12.8606 12.759 13.4536 11.3289 14.5082 10.2741C15.5628 9.21937 16.9927 8.62609 18.4842 8.6245C19.9758 8.62609 21.4057 9.21937 22.4603 10.2741C23.5149 11.3289 24.1079 12.759 24.1092 14.2505C24.1081 15.0312 23.9449 15.8032 23.6299 16.5176C23.3149 17.232 22.855 17.8731 22.2792 18.4005L19.8902 20.5885V22.7815H17.0783V19.3495L20.3813 16.3265C20.9713 15.7865 21.2973 15.0485 21.2973 14.2505C21.2965 13.5047 20.9998 12.7897 20.4725 12.2623C19.9451 11.7349 19.2301 11.4383 18.4842 11.4375C17.7386 11.4386 17.0238 11.7353 16.4967 12.2626C15.9695 12.79 15.673 13.5049 15.6722 14.2505ZM17.0783 25.5935H19.8902V28.4065H17.0783V25.5935Z"
+                    fill="url(#paint1_linear_306_885)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_306_885" x1="18.7822" y1="31.6175" x2="48.1562" y2="31.6175"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_306_885" x1="0.15625" y1="16.1655" x2="36.8122" y2="16.1655"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#145896" />
+                    <stop offset="1" stop-color="#377EBF" />
+                  </linearGradient>
+                  <clipPath id="clip0_306_885">
+                    <rect width="48" height="48" fill="white" transform="translate(0.15625 0.1875)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h3 class="info-box__title">
+                Поддержка
+              </h3>
+              <p class="info-box__text">
+                Вежливая техническая поддержка, круглосуточно готова помочь Вам по любому вопросу.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__about about">
+        <div class="container">
+          <h2 class="about__title">
+            Наш сервис помогает производить обмен Биткоин безопасно и быстро.
+          </h2>
+          <p class="about__text">
+            Для вас время – это деньги? Онлайн-сервис для покупки и обмена криптовалют DemiCube поможет вам его
+            сэкономить! Теперь вы можете купить биткоин по-настоящему быстро – все обмены на DemiCube обрабатываются не
+            более 15 минут.
+
+            <br> <br>
+
+            Принцип работы обменника – уважение к пользователю. Поэтому мы предложим вам наиболее выгодный курс обмена
+            или покупки биткоина и любой другой цифровой валюты на реальные деньги, и проведем обмен максимально быстро
+            и безопасно. А вежливые сотрудники службы технической поддержки ответят на ваши вопросы в любое время,
+            круглосуточно.
+
+            <br> <br>
+
+            DemiCube гарантирует конфиденциальность и защищенность проводимых операций, мы никогда не передаем
+            информацию о пользователях третьим лицам. Надежность нашего сервиса подтверждает множество отзывов довольных
+            клиентов на авторитетных ресурсах.
+
+            <br> <br>
+
+            Обменник DemiCube позволяет не только купить или обменять биткоины, но и заработать, участвуя в реферальной
+            программе. Теперь, приглашая пользователей, вы можете получать деньги в качестве процента от дохода
+            DemiCube. Также, для постоянных клиентов предусмотрена накопительная система скидок, размер которых
+            определяется суммой успешно выполненных конверсионных действий конкретным пользователем.
+
+            <br> <br>
+
+            Покупка биткоинов с DemiCube – это быстро, выгодно и безопасно!
+          </p>
+        </div>
+      </section>
+      <section class="main__partners partners">
+        <div class="container">
+          <h2 class="partners__title">
+            Наши партнеры
+          </h2>
+          <p class="partners__text">
+            Гарантии надежности обменника
+          </p>
+          <ul class="partners__list partners-list">
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#">
+                <img class="partners-list__link-img" src="images/partners-img-1.png" alt="partner">
+              </a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#">
+                <img class="partners-list__link-img" src="images/partners-img-1.png" alt="partner">
+              </a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#">
+                <img class="partners-list__link-img" src="images/partners-img-1.png" alt="partner">
+              </a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#">
+                <img class="partners-list__link-img" src="images/partners-img-1.png" alt="partner">
+              </a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#">
+                <img class="partners-list__link-img" src="images/partners-img-1.png" alt="partner">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__box">
+            <a class="footer__box-logo logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <p class="footer__box-copy">
+              ©2017-2023, demicube.org
+            </p>
+          </div>
+          <nav class="footer__nav footer-menu">
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Обмен
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Резервы
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Правила
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__user-nav footer-user-nav">
+            <a href="#" class="footer-user-nav__top">
+              <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_306_969)">
+                  <path
+                    d="M15.8555 0C20.2125 0.027 23.9305 1.459 27.0345 4.385C30.1295 7.31 31.8185 10.939 32.0235 15.199C32.2365 19.753 30.7785 23.737 27.6215 27.036C24.5175 30.282 20.6845 31.954 16.1845 31.999C11.9945 32.043 8.32247 30.639 5.24447 27.801C1.61647 24.448 -0.126531 20.251 0.0604691 15.315C0.210469 11.179 1.80347 7.622 4.72947 4.705C7.81547 1.619 11.5865 0.08 15.8555 0Z"
+                    fill="#2B76BA" />
+                  <path
+                    d="M11.1234 18.16C10.2524 17.894 9.37139 17.618 8.50039 17.351L7.21939 16.951C7.06124 16.9069 6.91106 16.838 6.77439 16.747C6.52539 16.56 6.50739 16.329 6.72139 16.097C6.86339 15.937 7.04139 15.831 7.23739 15.75L8.78439 15.137C12.3424 13.767 15.8994 12.389 19.4654 11.019L22.8454 9.71202C22.9956 9.64404 23.1619 9.61945 23.3254 9.64102C23.6634 9.69402 23.9214 9.97002 23.9574 10.325C23.9744 10.521 23.9664 10.717 23.9304 10.913C23.4944 12.958 23.0584 15.013 22.6234 17.058C22.2674 18.748 21.9034 20.438 21.5464 22.136L21.3064 23.283C21.2741 23.4689 21.2141 23.6489 21.1284 23.817C20.9514 24.147 20.6664 24.271 20.3014 24.199C20.0848 24.1535 19.8814 24.0594 19.7064 23.924C18.4784 23.017 17.2514 22.101 16.0154 21.194C15.9614 21.149 15.8994 21.114 15.8454 21.078C15.6324 21.015 15.4814 20.855 15.3124 20.731C14.7254 20.304 14.1384 19.859 13.5524 19.432C13.5074 19.397 13.4624 19.362 13.4274 19.317C13.3734 19.227 13.4274 19.175 13.4804 19.121C14.2804 18.41 15.0724 17.681 15.8724 16.969C16.4504 16.444 17.0374 15.919 17.6164 15.395C18.1944 14.87 18.7724 14.355 19.3504 13.838C19.8034 13.429 20.2574 13.029 20.7024 12.62L20.8084 12.513C20.8354 12.478 20.8714 12.443 20.8534 12.398C20.8354 12.344 20.7824 12.344 20.7374 12.344C20.5774 12.326 20.4444 12.389 20.3104 12.469C19.8214 12.762 19.3504 13.074 18.8704 13.376C17.4114 14.292 15.9434 15.216 14.4854 16.133C13.4783 16.7641 12.4733 17.3984 11.4704 18.036C11.3544 18.098 11.2744 18.213 11.1234 18.16Z"
+                    fill="#FCFDFE" />
+                  <path
+                    d="M11.124 18.16C11.364 18.063 11.569 17.903 11.791 17.77C12.431 17.37 13.071 16.969 13.712 16.56C14.166 16.275 14.61 15.982 15.064 15.697C15.811 15.226 16.567 14.754 17.323 14.283C17.848 13.953 18.373 13.616 18.906 13.278L20.293 12.398C20.4378 12.3028 20.6103 12.2588 20.783 12.273C20.836 12.282 20.889 12.282 20.907 12.335C20.934 12.389 20.916 12.442 20.872 12.495C20.765 12.602 20.667 12.718 20.542 12.815C20.32 12.993 20.124 13.198 19.911 13.385C19.564 13.678 19.244 13.998 18.897 14.292C18.755 14.416 18.621 14.55 18.479 14.674C18.275 14.844 18.079 15.048 17.883 15.226C17.581 15.501 17.27 15.768 16.967 16.035C16.834 16.16 16.691 16.284 16.567 16.409C16.237 16.719 15.891 17.013 15.562 17.325C15.162 17.689 14.752 18.045 14.362 18.419C14.077 18.685 13.774 18.934 13.481 19.192C13.437 19.228 13.437 19.263 13.463 19.308C13.401 20.313 13.33 21.318 13.267 22.323C13.25 22.59 13.214 22.847 13.223 23.114C13.223 23.194 13.223 23.265 13.161 23.328C13.107 23.346 13.045 23.346 12.991 23.346C12.831 23.336 12.716 23.256 12.671 23.106C12.627 22.946 12.574 22.794 12.529 22.634C12.094 21.202 11.658 19.761 11.222 18.33C11.1846 18.2762 11.1518 18.2193 11.124 18.16Z"
+                    fill="#CCD9E9" />
+                  <path
+                    d="M13.1336 23.319C13.1066 22.972 13.1696 22.625 13.1786 22.287C13.1956 21.914 13.2316 21.54 13.2486 21.167L13.3286 20.028C13.3386 19.833 13.3556 19.637 13.3556 19.45C13.3556 19.388 13.3736 19.343 13.4356 19.308C14.1556 19.842 14.8766 20.366 15.5886 20.9C15.6686 20.962 15.7576 21.007 15.8196 21.087C15.1526 21.736 14.4766 22.385 13.8096 23.034C13.6316 23.212 13.4186 23.354 13.1336 23.319Z"
+                    fill="#B1C8DB" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_306_969">
+                    <rect width="32" height="32" fill="white" transform="translate(0.046875)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="footer-user-nav__top-text">
+                Поддержка в Telegram
+              </p>
+            </a>
+            <button class="footer-user-nav__btn" type="button">
+              Задать вопрос
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
