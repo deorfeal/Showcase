@@ -1,0 +1,155 @@
+html,
+body {
+	height: 100%;
+	// font-family: "Inter", sans-serif;
+	// font-family: "Montserrat", sans-serif;
+	font-family: "Nunito", sans-serif;
+	// font-family: "Roboto", sans-serif;
+	// max-width: 1920px;
+	// margin-left: auto;
+	// margin-right: auto;
+	overflow-x: hidden;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 1680px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.big-container {
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.big-title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
+	color: #2f3a5c;
+	span {
+		background: linear-gradient(82.22deg, #4c60e9 22.97%, #7485ff 88.76%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+}
+
+.title {
+	font-weight: 700;
+	color: #2f3a5c;
+	@include adaptiv-value("padding-bottom", 15, 10, 1);
+	position: relative;
+	display: inline-block;
+
+	@include adaptiv-value("font-size", 48, 32, 1);
+	@include adaptiv-value("line-height", 67, 42, 1);
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-image: url(../images/subtitle-icon.svg);
+		width: 55px;
+		height: 7px;
+	}
+}
+
+.btn {
+	width: 200px;
+	position: relative;
+	height: 60px;
+	display: block;
+	&:hover {
+		span:first-child {
+			opacity: 0;
+		}
+		span:last-child {
+			opacity: 1;
+			z-index: 11;
+		}
+	}
+	span:first-child {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ffffff;
+		background: linear-gradient(82.22deg, #4c60e9 22.97%, #7485ff 88.76%);
+		box-shadow: 0px 10px 30px rgba(66, 90, 255, 0.2);
+		border-radius: 100px;
+		max-width: 200px;
+		padding: 15px 5px;
+		width: 200px;
+		border: 1px solid transparent;
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		opacity: 1;
+		transition: opacity 0.3s;
+	}
+	span:last-child {
+		box-shadow: 0px 10px 30px rgba(66, 90, 255, 0.2);
+		border-radius: 100px;
+		max-width: 200px;
+		padding: 15px 5px;
+		width: 200px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ffffff;
+
+		background: linear-gradient(82.22deg, #4c60e9 22.97%, #7485ff 88.76%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		border: 1px solid #4c60e9;
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+}
+
+.subtitle {
+	font-size: 18px;
+	line-height: 22px;
+	color: #7582a7;
+
+	@include adaptiv-value("font-size", 18, 14, 1);
+	@include adaptiv-value("line-height", 22, 22, 1);
+}
