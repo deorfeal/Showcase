@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__burger burger">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="14" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="18" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="1.5" y="1.5" width="27" height="27" stroke="#EA3C12" stroke-width="3" />
+                    </svg>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Cars
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <div class="header__lang lang">
+                    <ul class="lang__list">
+                        <li class="lang__list-item lang__list-item--active">
+                            <a class="lang__list-link" href="#">
+                                En
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Ру
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Vi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__login login" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M10 6C8.344 6 7 7.34579 7 9.004C7 10.6302 8.272 11.9519 9.96 12C9.984 12 10.016 12 10.032 12C10.048 12 10.072 12 10.088 12C10.096 12 10.104 12 10.104 12C11.72 11.9439 12.992 10.6302 13 9.004C13 7.34579 11.656 6 10 6Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M15 15.9281C13.6873 17.2103 11.9322 18 10 18C8.06785 18 6.31268 17.2103 5 15.9281C5.17699 15.2166 5.65634 14.5676 6.35693 14.0672C8.37021 12.6443 11.6445 12.6443 13.6431 14.0672C14.351 14.5676 14.823 15.2166 15 15.9281Z"
+                            fill="#EA3C12" />
+                    </svg>
+                    <span>
+                        Login
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading heading vehicles-heading"
+                style="background-image: url(images/heading-bg.png);">
+                <style>
+                    @media(max-width: 550px) {
+                        .heading {
+                            background-image: url(images/heading-bg-mobile.png) !important;
+                        }
+                    }
+                </style>
+                <div class="container">
+                    <div class="heading__inner">
+                        <div class="heading__body heading-body heading-body--centered">
+                            <h1 class="heading-body__title">
+                                Discover our fleet of vehicles
+                            </h1>
+                            <p class="heading-body__text">
+                                Explore a diverse range of cars for every adventure
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="main__rent-section rent-section vehicles-rent-section">
+                <div class="container">
+                    <form class="heading__rent rent" action="#">
+                        <div class="rent__radios rent-tubs">
+                            <label class="rent-tubs__checkbox rent-tubs__checkbox--active container">
+                                Car
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="rent-tubs__checkbox container">
+                                Vans & Trucks
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="rent-tubs__checkbox container">
+                                Prestige
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="rent__inner">
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Pick up location
+                                </label>
+                                <div class="rent-box__custom-select custom-select">
+                                    <select>
+                                        <option value="0">Ukraine, Dnipropetrovskaya</option>
+                                        <option value="1">Kharkiv</option>
+                                        <option value="2">Sumy</option>
+                                        <option value="3">Dnipro</option>
+                                        <option value="4">Kyiv</option>
+                                        <option value="5">Chernivtsi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Return location
+                                </label>
+                                <div class="rent-box__custom-select custom-select">
+                                    <select>
+                                        <option value="0">Airport, city or adress</option>
+                                        <option value="1">Kharkiv</option>
+                                        <option value="2">Sumy</option>
+                                        <option value="3">Dnipro</option>
+                                        <option value="4">Kyiv</option>
+                                        <option value="5">Chernivtsi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Pick-up date
+                                </label>
+                                <div class="rent-box__datapicker">
+                                    <input class="rent-box__datapicker-input" type="text" id="datetimepicker"
+                                        value="Jul 29 | 4:20 pm">
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Return date
+                                </label>
+                                <div class="rent-box__datapicker">
+                                    <input class="rent-box__datapicker-input" type="text" id="datetimepicker"
+                                        value="Jul 29 | 4:20 pm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__bottom rent-bottom">
+                            <label class="rent-bottom__ckeckbox container">
+                                Apply corporate rate & have a negoriated rate
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <a class="rent-bottom__link btn" href="#">
+                                show cars
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="main__back back">
+                <div class="container">
+                    <a class="back__link" href="#">
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 8L0 0L16 0L8 8Z" fill="#EA3C12" />
+                        </svg>
+                        <span>
+                            to back page
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <section class="main__vehicles vehicles">
+                <div class="container">
+                    <div class="vehicles__heading vehicles-header">
+                        <h2 class="vehicles-header__title title">
+                            Four wheel
+                        </h2>
+                        <div class="vehicles-header__box">
+                            <p class="vehicles-header__box-text">
+                                <span>
+                                    219
+                                </span>
+                                results
+                            </p>
+                            <button class="vehicles-header__box-button" type="button">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.8123 11.5575L14.1749 10.92C14.5049 10.4175 14.6998 9.82499 14.6998 9.17999C14.6998 7.42499 13.2748 6 11.5198 6C9.76484 6 8.33984 7.42499 8.33984 9.17999C8.33984 10.935 9.76484 12.36 11.5198 12.36C12.1648 12.36 12.7648 12.165 13.2598 11.835L13.8974 12.4725C14.0249 12.6 14.1899 12.66 14.3549 12.66C14.5199 12.66 14.6848 12.6 14.8123 12.4725C15.0598 12.2175 15.0598 11.805 14.8123 11.5575Z"
+                                        fill="#EA3C12" />
+                                    <path opacity="0.4"
+                                        d="M4.05762 1.5H13.9352C14.7601 1.5 15.4352 2.18249 15.4352 3.01499V4.67999C15.4352 5.28749 15.0602 6.045 14.6852 6.42L11.4676 9.3C11.0176 9.6825 10.7176 10.44 10.7176 11.04V14.295C10.7176 14.7525 10.4176 15.3525 10.0426 15.585L8.99263 16.2675C8.01763 16.875 6.67516 16.1925 6.67516 14.9775V10.965C6.67516 10.4325 6.37512 9.75 6.07512 9.375L3.23264 6.34499C2.85764 5.96249 2.55762 5.2875 2.55762 4.83V3.09C2.56512 2.1825 3.24012 1.5 4.05762 1.5Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                                <span>Filter</span>
+                            </button>
+                        </div>
+                    </div>
+                    <form class="vehicles__categories vehicles-categories" action="#">
+                        <div class="vehicles-categories__box vehicles-categories-box">
+                            <label class="vehicles-categories-box__text" for="">
+                                Transmission
+                            </label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Automatic</option>
+                                    <option value="1">Automatic</option>
+                                    <option value="2">Automatic2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="vehicles-categories__box vehicles-categories-box">
+                            <label class="vehicles-categories-box__text" for="">
+                                Driver age
+                            </label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">25+</option>
+                                    <option value="1">25+</option>
+                                    <option value="2">35+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="vehicles-categories__box vehicles-categories-box">
+                            <label class="vehicles-categories-box__text" for="">
+                                Number of seats
+                            </label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">of seats </option>
+                                    <option value="1">of seats </option>
+                                    <option value="2">of seats2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="vehicles-categories__box vehicles-categories-box">
+                            <label class="vehicles-categories-box__text" for="">
+                                Equipment
+                            </label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">A/C</option>
+                                    <option value="1">A/C</option>
+                                    <option value="2">A/C2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="vehicles__catalog vehicles-catalog">
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-1.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-2.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-3.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-4.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="vehicles-catalog__card card vehicles-card" href="#">
+                            <div class="card__poster">
+                                <img class="card__poster-img" src="images/vehicles-img-5.png" alt="img">
+                            </div>
+                            <div class="card__innner">
+                                <h3 class="card__title">
+                                    Chevrolet Suburban
+                                </h3>
+                                <p class="card__price">
+                                    30 €/h
+                                </p>
+                                <div class="card__info">
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-1.png" alt="icon">
+                                        <span>
+                                            5 seats
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-2.png" alt="icon">
+                                        <span>
+                                            4 doors
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-3.png" alt="icon">
+                                        <span>
+                                            Automatic
+                                        </span>
+                                    </div>
+                                    <div class="card__info-text">
+                                        <img src="images/card-info-icon-4.png" alt="icon">
+                                        <span>
+                                            A/C
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vehicles__paging paging">
+                        <button class="paging__more-btn btn" type="button">
+                            SHOW MORE
+                        </button>
+                        <ul class="paging__list">
+                            <li class="paging__list-item">
+                                <a class="paging__list-link" href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li class="paging__list-item paging__list-item--active">
+                                <a class="paging__list-link" href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li class="paging__list-item">
+                                <a class="paging__list-link" href="#">
+                                    3
+                                </a>
+                            </li>
+                            <li class="paging__list-item">
+                                <a class="paging__list-link" href="#">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="paging__list-item">
+                                <a class="paging__list-link" href="#">
+                                    88
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo__img" src="images/logo.png" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            <span>
+                                VINRENT
+                            </span>
+                            - best service rent a car of Vietnam
+                        </p>
+                    </div>
+                    <div class="footer__wrapper">
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Navigation
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Rent terms
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Contacts
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Cars
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Vans & Trucks
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Four wheel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Electric
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Prestige
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Sports
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Diesel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        SUVs
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Convertible
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Follow us
+                            </h3>
+                            <ul class="footer-menu__socials-list socials-list">
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM18.459 8.691C18.468 8.832 18.468 8.979 18.468 9.123C18.468 13.527 15.114 18.6 8.985 18.6C7.095 18.6 5.343 18.051 3.867 17.106C4.137 17.136 4.395 17.148 4.671 17.148C6.231 17.148 7.665 16.62 8.808 15.726C7.344 15.696 6.114 14.736 5.694 13.416C6.207 13.491 6.669 13.491 7.197 13.356C6.44318 13.2029 5.76562 12.7934 5.27945 12.1973C4.79327 11.6012 4.52846 10.8552 4.53 10.086V10.044C4.971 10.293 5.49 10.446 6.033 10.467C5.57653 10.1628 5.20217 9.75063 4.94313 9.26709C4.68409 8.78355 4.54837 8.24356 4.548 7.695C4.548 7.074 4.71 6.507 5.001 6.015C5.83771 7.04501 6.88179 7.88743 8.06539 8.4875C9.249 9.08757 10.5456 9.43186 11.871 9.498C11.4 7.233 13.092 5.4 15.126 5.4C16.086 5.4 16.95 5.802 17.559 6.45C18.312 6.309 19.032 6.027 19.674 5.649C19.425 6.42 18.903 7.071 18.21 7.482C18.882 7.41 19.53 7.224 20.13 6.963C19.677 7.629 19.11 8.22 18.459 8.691Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM20.268 7.005H18.351C16.848 7.005 16.557 7.719 16.557 8.769V11.082H20.145L19.677 14.703H16.557V24H12.816V14.706H9.687V11.082H12.816V8.412C12.816 5.313 14.709 3.624 17.475 3.624C18.801 3.624 19.938 3.723 20.271 3.768V7.005H20.268Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="footer-menu__link btn" href="#">
+                                WRITE US
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom-text">
+                        2023 © All rights reserved
+                    </p>
+                    <a class="footer__bottom-link" href="#">
+                        Cookies
+                    </a>
+                    <a class="footer__bottom-link" href="#">
+                        Privacy Policy
+                    </a>
+                    <p class="footer__bottom-text">
+                        thefrest.design
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header header--colored">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__burger burger">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="14" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="18" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="1.5" y="1.5" width="27" height="27" stroke="#EA3C12" stroke-width="3" />
+                    </svg>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Cars
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <div class="header__lang lang">
+                    <ul class="lang__list">
+                        <li class="lang__list-item lang__list-item--active">
+                            <a class="lang__list-link" href="#">
+                                En
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Ру
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Vi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__login login" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M10 6C8.344 6 7 7.34579 7 9.004C7 10.6302 8.272 11.9519 9.96 12C9.984 12 10.016 12 10.032 12C10.048 12 10.072 12 10.088 12C10.096 12 10.104 12 10.104 12C11.72 11.9439 12.992 10.6302 13 9.004C13 7.34579 11.656 6 10 6Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M15 15.9281C13.6873 17.2103 11.9322 18 10 18C8.06785 18 6.31268 17.2103 5 15.9281C5.17699 15.2166 5.65634 14.5676 6.35693 14.0672C8.37021 12.6443 11.6445 12.6443 13.6431 14.0672C14.351 14.5676 14.823 15.2166 15 15.9281Z"
+                            fill="#EA3C12" />
+                    </svg>
+                    <span>
+                        Login
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__reserve reserve">
+                <div class="container">
+                    <div class="reserve__back back">
+                        <a class="back__link" href="#">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8L0 0L16 0L8 8Z" fill="#EA3C12" />
+                            </svg>
+                            <span>
+                                to back page
+                            </span>
+                        </a>
+                    </div>
+                    <div class="reserve__top reserve-top">
+                        <div class="reserve-top__wrapper">
+                            <h1 class="reserve-top__title title">
+                                <span>
+                                    Reserve
+                                </span>
+                                car
+                            </h1>
+                            <p class="reserve-top__text">
+                                The open road becomes your playground as the wind caresses your skin and the engine's
+                                melody
+                                dances in your ears
+                            </p>
+                        </div>
+                        <h2 class="reserve-top__subtitle title">
+                            Your order
+                            <span>
+                                #4201
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="reserve__block reserve-block">
+                        <div class="reserve-block__inner">
+                            <div class="reserve-block__img">
+                                <img class="reserve-block__img-image" src="images/reserve-block-img.jpg" alt="img">
+                            </div>
+                            <div class="reserve-block__info reserve-info">
+                                <h2 class="reserve-info__title title">
+                                    BMW 8 series Convertible
+                                </h2>
+                                <ul class="reserve-info__car-info car-info">
+                                    <li class="car-info__item">
+                                        <img class="car-info__img" src="images/card-info-icon-gray-1.png" alt="icon">
+                                        <span>5 seats</span>
+                                    </li>
+                                    <li class="car-info__item">
+                                        <img class="car-info__img" src="images/card-info-icon-gray-2.png" alt="icon">
+                                        <span>4 doors</span>
+                                    </li>
+                                    <li class="car-info__item">
+                                        <img class="car-info__img" src="images/card-info-icon-gray-3.png" alt="icon">
+                                        <span>Automatic</span>
+                                    </li>
+                                    <li class="car-info__item">
+                                        <img class="car-info__img" src="images/card-info-icon-gray-4.png" alt="icon">
+                                        <span>A/C</span>
+                                    </li>
+                                </ul>
+                                <form class="reserve-info__form reserve-info-form" action="#">
+                                    <div class="reserve-info-form__wrapper">
+                                        <p class="reserve-info-form__text">
+                                            Your coupon code
+                                        </p>
+                                        <div class="reserve-info-form__box">
+                                            <input class="reserve-info-form__box-input" type="text"
+                                                placeholder="Please enter">
+                                            <button class="reserve-info-form__box-btn btn" type="button">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="reserve-info-form__inner">
+                                        <label class="reserve-info-form__checkbox container">
+                                            Дополнительный водитель 50$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Более 100 км/день 77$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            GPS навигатор 66$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Выезд за город 55$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Наш водитель 42$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Дополнительная страхова 32$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Детское сиденье 22$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <button class="reserve-info-form__box-btn reserve-info-form__box-btn--last btn" type="button">
+                                        Apply
+                                    </button>
+                                </form>
+                                <div class="reserve-info__bottom reserve-info-bottom">
+                                    <div class="reserve-info-bottom__box">
+                                        <p class="reserve-info-bottom__box-text">
+                                            Termin
+                                        </p>
+                                        <p class="reserve-info-bottom__box-subtext">
+                                            7 days
+                                        </p>
+                                    </div>
+                                    <div class="reserve-info-bottom__box">
+                                        <p class="reserve-info-bottom__box-text">
+                                            Net price
+                                        </p>
+                                        <p class="reserve-info-bottom__box-subtext">
+                                            $ 21<span>0000</span>
+                                        </p>
+                                    </div>
+                                    <div class="reserve-info-bottom__box">
+                                        <p class="reserve-info-bottom__box-text">
+                                            Tax
+                                        </p>
+                                        <p class="reserve-info-bottom__box-subtext">
+                                            $ 0<span>00</span>
+                                        </p>
+                                    </div>
+                                    <div class="reserve-info-bottom__box">
+                                        <p class="reserve-info-bottom__box-text">
+                                            Total price
+                                        </p>
+                                        <p class="reserve-info-bottom__box-subtext">
+                                            $ 2<span>000000000</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reserve-block__date reserve-date">
+                                <h3 class="reserve-date__title">
+                                    Pick up & return
+                                </h3>
+                                <div class="reserve-date__box">
+                                    <p class="reserve-date__box-suptext">
+                                        Pick up
+                                    </p>
+                                    <p class="reserve-date__box-text reserve-date__box-text--pick-up">
+                                        Noi Bai International Airport, Phú Minh, Sóc Sơn, Hà Nội, Vietnam
+                                    </p>
+                                    <p class="reserve-date__box-subtext">
+                                        18.08.2023 at 04:20
+                                    </p>
+                                </div>
+                                <div class="reserve-date__box">
+                                    <p class="reserve-date__box-suptext">
+                                        Return
+                                    </p>
+                                    <p class="reserve-date__box-text reserve-date__box-text--return">
+                                        Noi Bai International Airport, Phú Minh, Sóc Sơn, Hà Nội, Vietnam
+                                    </p>
+                                    <p class="reserve-date__box-subtext">
+                                        18.08.2023 at 04:20
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve__details details">
+                        <div class="details__top">
+                            <h2 class="details__top-title title">
+                                Driver details
+                            </h2>
+                            <p class="details__top-text">
+                                <span>
+                                    *
+                                </span>
+                                Mandatory information
+                            </p>
+                        </div>
+                        <form class="details__form details-form" action="#">
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__label" for="">
+                                    Fitst name<span>*</span>
+                                </label>
+                                <input class="details-form-box__input" type="text" placeholder="Please enter">
+                            </div>
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__label" for="">
+                                    Last name<span>*</span>
+                                </label>
+                                <input class="details-form-box__input" type="text" placeholder="Please enter">
+                            </div>
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__label" for="">
+                                    Date of birth<span>*</span>
+                                </label>
+                                <input class="details-form-box__input" type="text" placeholder="Please enter">
+                            </div>
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__label" for="">
+                                    E-mail<span>*</span>
+                                </label>
+                                <input class="details-form-box__input" type="email" placeholder="Please enter">
+                            </div>
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__label" for="">
+                                    Phone number<span>*</span>
+                                </label>
+                                <input class="details-form-box__input" type="tel" placeholder="420 0 420">
+                            </div>
+                            <div class="details-form__box details-form-box">
+                                <label class="details-form-box__checkbox container">
+                                    I consent to rceive news and special offers from Vinrent
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="details-form-box__checkbox container">
+                                    I wish to receive news and special offers from Vinrent business partners/ For a full
+                                    list of partners who may send you emails, please consult our
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <button class="details-form__button btn" type="submit">
+                                Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="main__payment payment">
+                <div class="container">
+                    <h2 class="payment__title title">
+                        <span>
+                            Guarantee
+                        </span>
+                        your booking
+                    </h2>
+                    <div class="payment__tubs">
+                        <button class="payment__tubs-button payment__tubs-button--active" type="button" id="0">
+                            Payment by Credit card
+                        </button>
+                        <button class="payment__tubs-button" type="button" id="1">
+                            Payment by cash
+                        </button>
+                    </div>
+                    <div class="payment__inner">
+                        <div class="payment__wrapper payment__wrapper--active" id="0">
+                            <div class="payment__info">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM11 15H9V9H11V15ZM11 7H9V5H11V7Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                                <p class="payment__info-text">
+                                    We ned your credit card details to guarantee your booking. You will not be charged
+                                    now. Your
+                                    booking will be paid at the station the day of the vehicle pick up.
+                                    <a href="#">
+                                        more info
+                                    </a>
+                                </p>
+                            </div>
+                            <form class="payment__form payment-form" action="#">
+                                <div class="payment-form__inner">
+                                    <div class="payment-form__payments payments">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
+                                                fill="#1A1F71" />
+                                        </svg>
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
+                                                fill="#EA001B" />
+                                            <path
+                                                d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
+                                                fill="#FFA200" fill-opacity="0.8" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="payment-form__title">
+                                        Credit card
+                                    </h3>
+                                    <p class="payment-form__text">
+                                        The payment card
+                                    </p>
+                                    <div class="payment-form__wrapper">
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                Card number
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--number"
+                                                type="text" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                                        </div>
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                Expiry date
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--date"
+                                                type="text" placeholder="MM | YY" maxlength="7">
+                                        </div>
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                CVV
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--cvv"
+                                                type="text" placeholder="XXX" maxlength="3">
+                                        </div>
+                                    </div>
+                                    <p class="payment-form__text">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_44_1756)">
+                                                <path
+                                                    d="M6.66667 5H33.3333C33.7754 5 34.1993 5.17559 34.5118 5.48816C34.8244 5.80072 35 6.22464 35 6.66667V33.3333C35 33.7754 34.8244 34.1993 34.5118 34.5118C34.1993 34.8244 33.7754 35 33.3333 35H6.66667C6.22464 35 5.80072 34.8244 5.48816 34.5118C5.17559 34.1993 5 33.7754 5 33.3333V6.66667C5 6.22464 5.17559 5.80072 5.48816 5.48816C5.80072 5.17559 6.22464 5 6.66667 5ZM18.3333 21.32V26.6667H21.6667V21.32C22.544 20.9371 23.2627 20.2638 23.702 19.4133C24.1413 18.5628 24.2744 17.587 24.0788 16.6499C23.8832 15.7128 23.3709 14.8717 22.6281 14.2679C21.8853 13.6641 20.9573 13.3345 20 13.3345C19.0427 13.3345 18.1147 13.6641 17.3719 14.2679C16.6291 14.8717 16.1168 15.7128 15.9212 16.6499C15.7256 17.587 15.8587 18.5628 16.298 19.4133C16.7373 20.2638 17.456 20.9371 18.3333 21.32Z"
+                                                    fill="#EA3C12" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_44_1756">
+                                                    <rect width="40" height="40" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            For your security, verification of your identity may be requested. Contact
+                                            your bank
+                                            for more info.
+                                        </span>
+                                    </p>
+                                    <div class="payment-form__payments payments">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
+                                                fill="#1A1F71" />
+                                        </svg>
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
+                                                fill="#EA001B" />
+                                            <path
+                                                d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
+                                                fill="#FFA200" fill-opacity="0.8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="payment-form__bottom payment-form-bottom">
+                                    <div class="payment-form-bottom__wrapper">
+                                        <label class="payment-form-bottom__checkbox container">
+                                            I consent to rceive news and special offers
+                                            <a href="#">
+                                                from Vinrent
+                                            </a>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="payment-form-bottom__checkbox container">
+                                            I wish to receive news and special offers from Vinrent business partners/
+                                            For a full
+                                            list of partners who may send you emails, please consult our
+                                            <a href="#">
+                                                Privacy Policy
+                                            </a>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <button class="payment-form-bottom__button btn" type="submit">
+                                        pay at desk
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="payment__wrapper" id="1">
+                            <div class="payment__info payment__info--cash">
+                                <p class="payment__info-text">
+                                    You can pay in our office or at the meeting in cash.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora deleniti
+                                    consectetur amet. Quos animi maiores natus quibusdam dolor commodi porro,
+                                    consequatur molestias veniam, iure dicta nulla eaque, tenetur voluptas?
+                                    <a href="#">
+                                        more info
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="payment__text">
+                        The open road becomes your playground as the wind caresses your skin and the engine's melody
+                        dances in your ears. The BMW 8 Series Convertible is not merely a car; it's an orchestra of
+                        engineering excellence that delivers an experience beyond imagination.
+                    </p>
+                    <p class="payment__text">
+                        With its retractable soft-top, you have the freedom to choose between sheltered refinement and
+                        open-air liberation.
+                    </p>
+                    <p class="payment__text">
+                        Seamlessly transitioning between these two worlds, the BMW 8 Series Convertible ensures that
+                        you're in control of your journey, regardless of the elements
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo__img" src="images/logo.png" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            <span>
+                                VINRENT
+                            </span>
+                            - best service rent a car of Vietnam
+                        </p>
+                    </div>
+                    <div class="footer__wrapper">
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Navigation
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Rent terms
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Contacts
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Cars
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Vans & Trucks
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Four wheel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Electric
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Prestige
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Sports
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Diesel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        SUVs
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Convertible
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Follow us
+                            </h3>
+                            <ul class="footer-menu__socials-list socials-list">
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM18.459 8.691C18.468 8.832 18.468 8.979 18.468 9.123C18.468 13.527 15.114 18.6 8.985 18.6C7.095 18.6 5.343 18.051 3.867 17.106C4.137 17.136 4.395 17.148 4.671 17.148C6.231 17.148 7.665 16.62 8.808 15.726C7.344 15.696 6.114 14.736 5.694 13.416C6.207 13.491 6.669 13.491 7.197 13.356C6.44318 13.2029 5.76562 12.7934 5.27945 12.1973C4.79327 11.6012 4.52846 10.8552 4.53 10.086V10.044C4.971 10.293 5.49 10.446 6.033 10.467C5.57653 10.1628 5.20217 9.75063 4.94313 9.26709C4.68409 8.78355 4.54837 8.24356 4.548 7.695C4.548 7.074 4.71 6.507 5.001 6.015C5.83771 7.04501 6.88179 7.88743 8.06539 8.4875C9.249 9.08757 10.5456 9.43186 11.871 9.498C11.4 7.233 13.092 5.4 15.126 5.4C16.086 5.4 16.95 5.802 17.559 6.45C18.312 6.309 19.032 6.027 19.674 5.649C19.425 6.42 18.903 7.071 18.21 7.482C18.882 7.41 19.53 7.224 20.13 6.963C19.677 7.629 19.11 8.22 18.459 8.691Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM20.268 7.005H18.351C16.848 7.005 16.557 7.719 16.557 8.769V11.082H20.145L19.677 14.703H16.557V24H12.816V14.706H9.687V11.082H12.816V8.412C12.816 5.313 14.709 3.624 17.475 3.624C18.801 3.624 19.938 3.723 20.271 3.768V7.005H20.268Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="footer-menu__link btn" href="#">
+                                WRITE US
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom-text">
+                        2023 © All rights reserved
+                    </p>
+                    <a class="footer__bottom-link" href="#">
+                        Cookies
+                    </a>
+                    <a class="footer__bottom-link" href="#">
+                        Privacy Policy
+                    </a>
+                    <p class="footer__bottom-text">
+                        thefrest.design
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
