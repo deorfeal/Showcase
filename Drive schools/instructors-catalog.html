@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <p class="menu__list-text">
+                                Автошколи
+                            </p>
+                        </li>
+                        <li class="menu__list-item menu__list-item--active">
+                            <p class="menu__list-text" href="#">
+                                Інструктори
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link header-mobile-menu-list__link--acitve" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="heading-section__top" style="background-image: url(images/section-top-bg-img.png);">
+                    <div class="container">
+                        <h1 class="heading-section__title">
+                            Каталог практичних занять
+                        </h1>
+                    </div>
+                </div>
+                <div class="heading-section__bottom heading-section-bottom">
+                    <div class="container">
+                        <div class="heading-section-bottom__inner">
+                            <div class="heading-section-bottom__breadcrumbs breadcrumbs">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                                <p class="breadcrumbs__text">
+                                    Інструктори
+                                </p>
+                            </div>
+                            <a class="heading-section-bottom__search" data-fancybox href="#search-popup"
+                            data-options='{"touch" : false}'>
+                            <span class="icon-ic-search">
+
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__catalog catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <aside class="catalog__aside catalog-aside">
+                            <form class="catalog-aside__inner" action="#">
+                                <div class="catalog-aside__box">
+                                    <p class="catalog-aside__box-text">
+                                        Регіон
+                                    </p>
+                                    <div class="catalog-aside__box-select custom-select">
+                                        <select>
+                                            <option value="0">Всі</option>
+                                            <option value="1">Всі</option>
+                                            <option value="2">Вижницький</option>
+                                            <option value="3">Рубіжний</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="catalog-aside__box">
+                                    <p class="catalog-aside__box-text">
+                                        Школа
+                                    </p>
+                                    <div class="catalog-aside__box-select custom-select">
+                                        <select>
+                                            <option value="0">Всі</option>
+                                            <option value="1">Всі</option>
+                                            <option value="2">Перша</option>
+                                            <option value="3">Друга</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="catalog-aside__box">
+                                    <p class="catalog-aside__box-text">
+                                        Ціна
+                                    </p>
+                                    <div class="catalog-aside__box-range catalog-aside-box-range">
+                                        <div class="catalog-aside-box-range__polzunok polzunok-container-5">
+                                            <div class="catalog-aside-box-range__polzunok-inner">
+                                                <input type="text" class="polzunok-input-5-left" />
+                                                <span>
+                                                    —
+                                                </span>
+                                                <input type="text" class="polzunok-input-5-right " />
+                                            </div>
+                                            <div class="polzunok-5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-aside__categories catalog-aside-categories">
+                                    <p class="catalog-aside-categories__text">
+                                        Категорія
+                                    </p>
+                                    <div class="catalog-aside-categories__inner">
+                                        <div class="catalog-aside-categories__wrapper">
+                                            <label class="container">
+                                                <span>
+                                                    A1
+                                                </span>
+                                                мопеди, моторолери
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    A
+                                                </span>
+                                                мотоцикли
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    B1
+                                                </span>
+                                                квадро- та трицикли
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    B
+                                                </span>
+                                                авто до 3,5т
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    С1
+                                                </span>
+                                                вантажні авто
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    С
+                                                </span>
+                                                вантажні авто від 7,5т
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    D1
+                                                </span>
+                                                автобуси до 16 місць
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    D
+                                                </span>
+                                                автобуси від 16 місць
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="catalog-aside-categories__wrapper catalog-aside-categories__wrapper--more">
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="catalog-aside-categories__btn" type="button">
+                                        <span>
+                                            Показати більше
+                                        </span>
+                                        <span>
+                                            Показати менше
+                                        </span>
+                                    </button>
+                                </div>
+                                <button class="catalog-aside__btn" type="submit">
+                                    Застосувати фільтр
+                                </button>
+                                <button class="catalog-aside__reset" type="reset">
+                                   <span class="icon-ic-close"></span>
+                                    <span>
+                                        скинути всі фільтри
+                                    </span>
+                                </button>
+                            </form>
+                        </aside>
+                        <section class="catalog__schools-catalog schools-catalog">
+                            <div class="schools-catalog__inner">
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                              
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                 
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <svg class="lessons-item__top-svg" width="20" height="20"
+                                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
+                                                        stroke="#A9AEBD" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M17.4012 17.7999H16.2012" stroke="#A9AEBD"
+                                                        stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M18.6012 19.4L17.4012 17.8C18.0643 17.8 18.6012 17.2631 18.6012 16.6C18.6012 15.9369 18.0643 15.4 17.4012 15.4H16.2012V19.4"
+                                                        stroke="#A9AEBD" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M7.40039 6.59998V19.4" stroke="#A9AEBD" stroke-width="1.4"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M13 6.59998V19.4" stroke="#A9AEBD" stroke-width="1.4"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M7.40039 13H17.0004C17.8848 13 18.6004 12.2844 18.6004 11.4V6.59998"
+                                                        stroke="#A9AEBD" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__instructor schools-catalog-instructor">
+                                    <div class="schools-catalog-instructor__box schools-catalog-instructor-box">
+                                        <a class="schools-catalog-instructor-box__img" href="#">
+                                            <img class="schools-catalog-instructor-box__img-image"
+                                                src="images/instructor-type-img.png" alt="img">
+                                        </a>
+                                        <div class="schools-catalog-instructor-box__info">
+                                            <div class="schools-catalog-instructor-box__info-icon">
+                                                <span class="icon-ic-corob-m">
+
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-box__info-text">
+                                                A1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__inner">
+                                        <a class="schools-catalog-instructor__link" href="#">
+                                            <h3 class="schools-catalog-instructor__title">
+                                                YADEA EM215 Pro 2500W Red
+                                            </h3>
+                                        </a>
+                                        <div class="schools-catalog-instructor__about schools-catalog-instructor-about">
+                                            <div class="schools-catalog-instructor-about__inner">
+                                                <div class="schools-catalog-instructor-about__img">
+                                                    <img class="schools-catalog-instructor-about__img-image"
+                                                        src="images/lessons-teacher-img-1.png" alt="teacher-img">
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-instructor-about__box schools-catalog-instructor-about-box">
+                                                    <p class="schools-catalog-instructor-about-box__text">
+                                                        Юрченко <br>
+                                                        <span>
+                                                            Василий Федорович
+                                                        </span>
+                                                    </p>
+                                                    <p class="schools-catalog-instructor-about-box__count">
+                                                        <span class="icon-ic-calendar">
+
+                                                        </span>
+                                                        <span>
+                                                            Стаж
+                                                            11
+                                                            лет
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <a class="schools-catalog-instructor-about__bottom schools-catalog-instructor-about-bottom"
+                                                href="#">
+                                                <div class="schools-catalog-instructor-about-bottom__img">
+                                                    <img class="schools-catalog-instructor-about-bottom__image"
+                                                        src="images/instructor-school-img.png" alt="img">
+                                                </div>
+                                                <p class="schools-catalog-instructor-about-bottom__text">
+                                                    Філія "Чернігівський державний обласний навчально-
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="schools-catalog-instructor__info schools-catalog-instructor-info">
+                                        <div class="schools-catalog-instructor-info__inner">
+                                            <div class="schools-catalog-instructor-info__text">
+                                                Тривалість
+                                                <span>
+                                                    1 час 30 хвилин
+                                                </span>
+                                            </div>
+                                            <p class="schools-catalog-instructor-info__count">
+                                                200 ₴
+                                            </p>
+                                        </div>
+                                        <a class="schools-catalog-instructor-info__link" href="#">
+                                            Записатись
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schools-catalog__page-info page-info">
+                                <div class="page-info__links page-info-links">
+                                    <a class="page-info-links__link" href="#">
+                                        <span class="icon-ic-str">
+            
+                                        </span>
+                                    </a>
+                                    <ul class="page-info-links__list">
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item page-info-links__list-item--active">
+                                            <p class="page-info-links__list-link">
+                                                2
+                                            </p>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                4
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                5
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="page-info-links__link" href="#">
+                                        <span class="icon-ic-str">
+            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="page-info__count">
+                                    Сторінка
+                                    <span>
+                                        2
+                                    </span>
+                                    з
+                                    <span>
+                                        38
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="main__text-block text-block">
+                                <h1 class="text-block__title title">
+                                    Каталог автошкіл України
+                                </h1>
+                                <p class="text-block__text">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                    Вдали
+                                    от
+                                    всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    Маленький
+                                    ручеек
+                                    Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта
+                                    парадигматическая
+                                    страна, в которой жаренные члены предложения залетают прямо в рот.
+                                </p>
+                                <p class="text-block__text">
+                                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими
+                                    безорфографичный
+                                    образ
+                                    жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+                                    выйти в
+                                    большой
+                                    мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса
+                                    и
+                                    коварных
+                                    точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных
+                                    букв,
+                                    подпоясал инициал за пояс и пустился в дорогу.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="main__search-popup search-popup" id="search-popup"
+        style="background-image: url(images/search-result-bg.png);">
+        <h2 class="search-popup__title">
+            Поиск автошкол
+        </h2>
+        <form class="search-popup__form search-form" action="#">
+            <div class="search-form__inner">
+                <button class="search-form__btn icon-ic-search" type="submit">
+                </button>
+                <input class="search-form__input" placeholder="Пошук автошкіл...">
+                <div class="search-form__box">
+                    <span class="icon-ic-location">
+
+                    </span>
+                    <div class="search-form__box-select custom-select">
+                        <select>
+                            <option value="0">По області</option>
+                            <option value="1">Київська область</option>
+                            <option value="2">Чернівецька область</option>
+                            <option value="3">Житомирська область</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="search-form__button" type="submit">
+                Шукати
+            </button>
+        </form>
+        <p class="search-popup__text">
+            Например:
+            <a href="#" class="search-popup__text-link">АктивДрайв</a>
+        </p>
+    </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--active">
+                            <p class="menu__list-text">
+                                Автошколи
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link  header-mobile-menu-list__link--acitve" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="heading-section__top" style="background-image: url(images/section-top-bg-img.png);">
+                    <div class="container">
+                        <h1 class="heading-section__title">
+                            Каталог автошкіл
+                        </h1>
+                    </div>
+                </div>
+                <div class="heading-section__bottom heading-section-bottom">
+                    <div class="container">
+                        <div class="heading-section-bottom__inner">
+                            <div class="heading-section-bottom__breadcrumbs breadcrumbs">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                                <p class="breadcrumbs__text">
+                                    Автошколи
+                                </p>
+                            </div>
+                            <a class="heading-section-bottom__search" data-fancybox href="#search-popup"
+                            data-options='{"touch" : false}'>
+                            <span class="icon-ic-search">
+
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main__catalog catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <aside class="catalog__aside catalog-aside">
+                            <form class="catalog-aside__inner" action="#">
+                                <div class="catalog-aside__box">
+                                    <p class="catalog-aside__box-text">
+                                        Регіон
+                                    </p>
+                                    <div class="catalog-aside__box-select custom-select">
+                                        <select>
+                                            <option value="0">Всі</option>
+                                            <option value="1">Всі</option>
+                                            <option value="2">Вижницький</option>
+                                            <option value="3">Рубіжний</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="catalog-aside__categories catalog-aside-categories">
+                                    <p class="catalog-aside-categories__text">
+                                        Категорія
+                                    </p>
+                                    <div class="catalog-aside-categories__inner">
+                                        <div class="catalog-aside-categories__wrapper">
+                                            <label class="container">
+                                                <span>
+                                                    A1
+                                                </span>
+                                                мопеди, моторолери
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    A
+                                                </span>
+                                                мотоцикли
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    B1
+                                                </span>
+                                                квадро- та трицикли
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    B
+                                                </span>
+                                                авто до 3,5т
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    С1
+                                                </span>
+                                                вантажні авто
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    С
+                                                </span>
+                                                вантажні авто від 7,5т
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    D1
+                                                </span>
+                                                автобуси до 16 місць
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    D
+                                                </span>
+                                                автобуси від 16 місць
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="catalog-aside-categories__wrapper catalog-aside-categories__wrapper--more">
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                                <span>
+                                                    T
+                                                </span>
+                                                трамваї та тролейбуси
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="catalog-aside-categories__btn" type="button">
+                                        <span>
+                                            Показати більше
+                                        </span>
+                                        <span>
+                                            Показати менше
+                                        </span>
+                                    </button>
+                                </div>
+                                <button class="catalog-aside__btn" type="submit">
+                                    Застосувати фільтр
+                                </button>
+                                <button class="catalog-aside__reset" type="reset">
+                                    <span class="icon-ic-close">
+
+                                    </span>
+                                    <span>
+                                        скинути всі фільтри
+                                    </span>
+                                </button>
+                            </form>
+                        </aside>
+                        <section class="catalog__schools-catalog schools-catalog">
+                            <div class="schools-catalog__inner">
+                                <div class="schools-catalog__item schools-catalog-item">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-2.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Укрінтеравтосервіс
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+                                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                            "Укрінтеравтосервіс"
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <div class="schools-catalog-item-info__rate schools-catalog-item-info-rate">
+                                            <p class="schools-catalog-item-info-rate__text">
+                                                <span>
+                                                    3.2
+                                                </span>
+                                                з
+                                                <span>
+                                                    5
+                                                </span>
+                                            </p>
+                                            <div class="schools-catalog-item-info-rate__stars">
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item schools-catalog-item--raw">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-1.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                                "Укрінтеравтосервіс"
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-2.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Укрінтеравтосервіс
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+                                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                            "Укрінтеравтосервіс"
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <div class="schools-catalog-item-info__rate schools-catalog-item-info-rate">
+                                            <p class="schools-catalog-item-info-rate__text">
+                                                <span>
+                                                    3.2
+                                                </span>
+                                                з
+                                                <span>
+                                                    5
+                                                </span>
+                                            </p>
+                                            <div class="schools-catalog-item-info-rate__stars">
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item schools-catalog-item--raw">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-1.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                                "Укрінтеравтосервіс"
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-2.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Укрінтеравтосервіс
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+                                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                            "Укрінтеравтосервіс"
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <div class="schools-catalog-item-info__rate schools-catalog-item-info-rate">
+                                            <p class="schools-catalog-item-info-rate__text">
+                                                <span>
+                                                    3.2
+                                                </span>
+                                                з
+                                                <span>
+                                                    5
+                                                </span>
+                                            </p>
+                                            <div class="schools-catalog-item-info-rate__stars">
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item schools-catalog-item--raw">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-1.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                                "Укрінтеравтосервіс"
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-2.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Укрінтеравтосервіс
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+                                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                            "Укрінтеравтосервіс"
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <div class="schools-catalog-item-info__rate schools-catalog-item-info-rate">
+                                            <p class="schools-catalog-item-info-rate__text">
+                                                <span>
+                                                    3.2
+                                                </span>
+                                                з
+                                                <span>
+                                                    5
+                                                </span>
+                                            </p>
+                                            <div class="schools-catalog-item-info-rate__stars">
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item schools-catalog-item--raw">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-1.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                                "Укрінтеравтосервіс"
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-2.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Укрінтеравтосервіс
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+                                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                            "Укрінтеравтосервіс"
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <div class="schools-catalog-item-info__rate schools-catalog-item-info-rate">
+                                            <p class="schools-catalog-item-info-rate__text">
+                                                <span>
+                                                    3.2
+                                                </span>
+                                                з
+                                                <span>
+                                                    5
+                                                </span>
+                                            </p>
+                                            <div class="schools-catalog-item-info-rate__stars">
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div class="schools-catalog-item-info-rate__stars-star">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#F9AE00" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="schools-catalog-item-info-rate__stars-star schools-catalog-item-info-rate__stars-star--disabled">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                            fill="#A9AEBD" fill-opacity="0.25" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="schools-catalog__item schools-catalog-item schools-catalog-item--raw">
+                                    <a class="schools-catalog-item__img" href="#">
+                                        <img class="schools-catalog-item__img-image"
+                                            src="images/catalog-school-img-1.png" alt="school-icon">
+                                    </a>
+                                    <div class="schools-catalog-item__box schools-catalog-item-box">
+                                        <a class="schools-catalog-item-box__link" href="#">
+                                            <h3 class="schools-catalog-item-box__link-title">
+                                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                                "Укрінтеравтосервіс"
+                                            </h3>
+                                        </a>
+                                        <p class="schools-catalog-item-box__text">
+
+                                        </p>
+                                        <ul class="schools-catalog-item-box__categories">
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    A,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    B,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    BE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    C,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    CE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D1E,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    D,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    DE,
+                                                </p>
+                                            </li>
+                                            <li class="schools-catalog-item-box__categories-item">
+                                                <p class="schools-catalog-item-box__categories-text">
+                                                    T
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="schools-catalog-item__info schools-catalog-item-info">
+                                        <a class="schools-catalog-item-info__link" href="#">
+                                            Детальніше
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="schools-catalog__page-info page-info">
+                                <div class="page-info__links page-info-links">
+                                    <a class="page-info-links__link" href="#">
+                                        <span class="icon-ic-str">
+            
+                                        </span>
+                                    </a>
+                                    <ul class="page-info-links__list">
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item page-info-links__list-item--active">
+                                            <p class="page-info-links__list-link">
+                                                2
+                                            </p>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                4
+                                            </a>
+                                        </li>
+                                        <li class="page-info-links__list-item">
+                                            <a class="page-info-links__list-link" href="#">
+                                                5
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="page-info-links__link" href="#">
+                                        <span class="icon-ic-str">
+            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="page-info__count">
+                                    Сторінка
+                                    <span>
+                                        2
+                                    </span>
+                                    з
+                                    <span>
+                                        38
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="main__text-block text-block">
+                                <h1 class="text-block__title title">
+                                    Каталог автошкіл України
+                                </h1>
+                                <p class="text-block__text">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                    Вдали
+                                    от
+                                    всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    Маленький
+                                    ручеек
+                                    Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта
+                                    парадигматическая
+                                    страна, в которой жаренные члены предложения залетают прямо в рот.
+                                </p>
+                                <p class="text-block__text">
+                                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими
+                                    безорфографичный
+                                    образ
+                                    жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+                                    выйти в
+                                    большой
+                                    мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса
+                                    и
+                                    коварных
+                                    точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных
+                                    букв,
+                                    подпоясал инициал за пояс и пустился в дорогу.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="main__search-popup search-popup" id="search-popup"
+        style="background-image: url(images/search-result-bg.png);">
+        <h2 class="search-popup__title">
+            Поиск автошкол
+        </h2>
+        <form class="search-popup__form search-form" action="#">
+            <div class="search-form__inner">
+                <button class="search-form__btn icon-ic-search" type="submit">
+                </button>
+                <input class="search-form__input" placeholder="Пошук автошкіл...">
+                <div class="search-form__box">
+                    <span class="icon-ic-location">
+
+                    </span>
+                    <div class="search-form__box-select custom-select">
+                        <select>
+                            <option value="0">По області</option>
+                            <option value="1">Київська область</option>
+                            <option value="2">Чернівецька область</option>
+                            <option value="3">Житомирська область</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="search-form__button" type="submit">
+                Шукати
+            </button>
+        </form>
+        <p class="search-popup__text">
+            Например:
+            <a href="#" class="search-popup__text-link">АктивДрайв</a>
+        </p>
+    </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

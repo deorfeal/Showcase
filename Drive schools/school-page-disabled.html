@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--active">
+                            <p class="menu__list-text">
+                                Автошколи
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link  header-mobile-menu-list__link--acitve" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="heading-section__top" style="background-image: url(images/section-top-bg-img.png);">
+                    <div class="container">
+                        <h1 class="heading-section__title">
+                            Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                            "Укрінтеравтосервіс"
+                        </h1>
+                    </div>
+                </div>
+                <div class="heading-section__bottom heading-section-bottom">
+                    <div class="container">
+                        <div class="heading-section-bottom__inner">
+                            <div class="heading-section-bottom__breadcrumbs breadcrumbs">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                                <a class="breadcrumbs__link" href="#">
+                                    Автошколи
+                                </a>
+                                <a class="breadcrumbs__link" href="#">
+                                    Чернігівська область
+                                </a>
+                                <p class="breadcrumbs__text">
+                                    Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                    "Укрінтеравтосервіс"
+                                </p>
+                            </div>
+                            <a class="heading-section-bottom__search" data-fancybox href="#search-popup"
+                            data-options='{"touch" : false}'>
+                            <span class="icon-ic-search">
+
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__school school">
+                <div class="container">
+                    <div class="school__inner">
+                        <section class="school__school-info school-info">
+                            <div class="school-info__inner">
+                                <div class="school-info__img">
+                                    <img class="school-info__img-image" src="images/catalog-school-img-1.png" alt="img">
+                                </div>
+                                <div class="school-info__box school-info-box">
+                                    <p class="school-info-box__subtext">
+                                        Філія "Чернігівський державний обласний
+                                        навчально-курсовий комбінат" УДП "Укрінтеравтосервіс"
+                                    </p>
+                                    <ul class="school-info-box__list">
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                A1,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                A,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                B1,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                B,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                BE,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                C1,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                C1E,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                C,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                CE,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                D1,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                D1E,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                D,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                DE,
+                                            </p>
+                                        </li>
+                                        <li class="school-info-box__list-item">
+                                            <p class="school-info-box__list-text">
+                                                T
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="school-info__adress school-info-adress">
+                                    <div class="school-info-adress__map" id="map"></div>
+                                    <div class="school-info-adress__inner">
+                                        <div class="school-info-adress__top school-info-adress-top">
+                                            <div class="school-info-adress-top__wrapper">
+                                                <a class="school-info-adress-top__box school-info-adress-top__box--active" target="_blank" href="https://goo.gl/maps/pP8Nh8iVe2tHMxsX6"
+                                                    id="0">
+                                                    <p class="school-info-adress-top__box-text">
+                                                        Адреса автошколи
+                                                    </p>
+                                                    <p class="school-info-adress-top__box-subtext">
+                                                        м. Чернігів, вул. Івана Богуна, буд. 55
+                                                    </p>
+                                                </a>
+                                                <a class="school-info-adress-top__box" target="_blank" id="1" href="https://goo.gl/maps/1h3jtr1ywVHwhaob8">
+                                                    <p class="school-info-adress-top__box-text">
+                                                        Адреса автошколи
+                                                    </p>
+                                                    <p class="school-info-adress-top__box-subtext">
+                                                        м. Чернігів, вул. Івана Богуна, буд. 15
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <button class="school-info-adress-top__btn" type="button">
+                                                <span class="icon-ic-str">
+
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <ul class="school-info-adress__list">
+                                            <li class="school-info-adress__list-item school-info-adress__list-item--active"
+                                                id="0">
+                                                <div class="school-info-adress__list-link">
+                                                    <span>
+                                                        Офис:
+                                                    </span>
+                                                    м. Чернігів, вул. Івана Богуна, буд. 55
+                                                </div>
+                                            </li>
+                                            <li class="school-info-adress__list-item" id="1">
+                                                <div class="school-info-adress__list-link">
+                                                    <span>
+                                                        Класс:
+                                                    </span>
+                                                    м. Чернігів, вул. Івана Богуна, буд. 15
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section class="main__share-popup share-popup" id="share-popup">
+                <h3 class="share-popup__title">
+                    Поділитися
+                </h3>
+                <ul class="share-popup__socials share-popup-socials">
+                    <li class="share-popup-socials__item">
+                        <a class="share-popup-socials__link" href="#">
+                            <div class="share-popup-socials__link-icon">
+                                <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.3482 5.47684C24.3647 5.71553 24.3647 5.95421 24.3647 6.1951C24.3647 13.5349 18.7667 22 8.53041 22V21.9956C5.50658 22 2.54557 21.1355 0 19.5054C0.439689 19.5582 0.881582 19.5846 1.32458 19.5857C3.83047 19.5879 6.26474 18.7486 8.23618 17.2032C5.85481 17.1581 3.76656 15.6083 3.03705 13.3457C3.87125 13.5063 4.73079 13.4733 5.54956 13.2501C2.9533 12.7265 1.08545 10.4496 1.08545 7.8054V7.735C1.85904 8.16507 2.72519 8.40376 3.61118 8.43016C1.16589 6.79896 0.41214 3.55196 1.88879 1.01332C4.71426 4.48361 8.88304 6.59327 13.3582 6.81656C12.9097 4.88728 13.5224 2.86561 14.9682 1.50939C17.2096 -0.593674 20.7348 -0.485881 22.8418 1.75028C24.0881 1.50499 25.2827 1.04852 26.3758 0.401763C25.9604 1.68758 25.0909 2.77981 23.9294 3.47387C25.0325 3.34408 26.1103 3.0493 27.1252 2.59942C26.378 3.71695 25.437 4.69039 24.3482 5.47684Z"
+                                        fill="#5D7082" />
+                                </svg>
+                            </div>
+                            <p class="share-popup-socials__link-text">
+                                Twitter
+                            </p>
+                        </a>
+                    </li>
+                    <li class="share-popup-socials__item">
+                        <a class="share-popup-socials__link" href="#">
+                            <div class="share-popup-socials__link-icon">
+                                <svg width="13" height="26" viewBox="0 0 13 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.41156 25.0028V13.5991H12.2323L12.8044 9.15489H8.41156V6.3174C8.41156 5.03072 8.76825 4.15378 10.6101 4.15378L12.9592 4.1527V0.177859C12.5528 0.123895 11.1584 0.00292969 9.53622 0.00292969C6.14937 0.00292969 3.83066 2.07395 3.83066 5.87748V9.15501H0V13.5992H3.83054V25.0029L8.41156 25.0028Z"
+                                        fill="#5D7082" />
+                                </svg>
+                            </div>
+                            <p class="share-popup-socials__link-text">
+                                Facebook
+                            </p>
+                        </a>
+                    </li>
+                    <li class="share-popup-socials__item">
+                        <a class="share-popup-socials__link" href="#">
+                            <div class="share-popup-socials__link-icon">
+                                <svg width="26" height="21" viewBox="0 0 26 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.3036 20.7681C19.6417 21.0075 20.0775 21.0674 20.466 20.9204C20.8545 20.7723 21.1401 20.4405 21.2262 20.0384C22.1386 15.7502 24.352 4.89631 25.1826 0.995557C25.2456 0.701556 25.1406 0.396006 24.9096 0.199656C24.6786 0.00330571 24.3583 -0.0533945 24.0727 0.0526557C19.6701 1.68226 6.11142 6.76951 0.569518 8.82016C0.217768 8.95036 -0.0111323 9.28847 0.000417747 9.65912C0.0130178 10.0308 0.262918 10.3532 0.623068 10.4613C3.10842 11.2047 6.37077 12.239 6.37077 12.239C6.37077 12.239 7.89538 16.8432 8.69023 19.1847C8.78998 19.4787 9.01993 19.7097 9.32338 19.7895C9.62578 19.8683 9.94918 19.7853 10.1749 19.5722C11.4517 18.3668 13.4257 16.503 13.4257 16.503C13.4257 16.503 17.1763 19.253 19.3036 20.7681ZM7.74313 11.6573L9.50608 17.4722L9.89773 13.7898C9.89773 13.7898 16.7091 7.64626 20.592 4.14451C20.7054 4.04161 20.7211 3.86941 20.6266 3.74866C20.5332 3.62791 20.361 3.59956 20.2318 3.68146C15.7315 6.55531 7.74313 11.6573 7.74313 11.6573Z"
+                                        fill="#5D7082" />
+                                </svg>
+                            </div>
+                            <p class="share-popup-socials__link-text">
+                                Telegram
+                            </p>
+                        </a>
+                    </li>
+                    <li class="share-popup-socials__item">
+                        <a class="share-popup-socials__link" href="#">
+                            <div class="share-popup-socials__link-icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.0423 2.44495C20.419 1.88728 17.9259 0.0502517 12.3164 0.0174475C12.3164 0.0174475 5.72278 -0.376206 2.50797 2.57617C0.70374 4.3804 0.0804594 6.97193 0.0148511 10.2195C-0.0507572 13.4672 -0.149161 19.5359 5.72278 21.2089V23.7348C5.72278 23.7348 5.68998 24.7518 6.34606 24.9486C7.16616 25.211 7.62542 24.4237 8.41272 23.6036C8.83917 23.1444 9.42964 22.4883 9.8561 21.9634C13.8582 22.2915 16.9418 21.537 17.3026 21.4057C18.1227 21.1433 22.6825 20.5528 23.437 14.4841C24.2243 8.18568 23.109 4.21638 21.0423 2.44495ZM21.7312 13.992C21.1079 19.0767 17.4011 19.4047 16.7122 19.6015C16.4169 19.6999 13.727 20.356 10.3154 20.1592C10.3154 20.1592 7.78944 23.21 6.96934 24.0301C6.83812 24.1613 6.7069 24.1941 6.60849 24.1941C6.47727 24.1613 6.44447 23.9973 6.44447 23.7676C6.44447 23.4396 6.47727 19.5687 6.47727 19.5687C1.52385 18.1909 1.81908 13.0079 1.85189 10.2851C1.91749 7.5624 2.40956 5.36452 3.91855 3.85553C6.6413 1.39522 12.2508 1.75606 12.2508 1.75606C16.9746 1.78887 19.2381 3.19944 19.763 3.69151C21.4688 5.2005 22.3545 8.77616 21.7312 13.992Z"
+                                        fill="#5D7082" />
+                                    <path d="M14.6136 10.0884C14.548 8.84178 13.9247 8.18567 12.7109 8.12006"
+                                        stroke="#5D7082" stroke-width="0.93" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.2527 10.6134C16.2855 9.46521 15.9246 8.48105 15.2357 7.72652C14.514 6.93919 13.5298 6.51272 12.2832 6.41431"
+                                        stroke="#5D7082" stroke-width="0.93" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.8932 11.2695C17.8932 9.26836 17.2699 7.6937 16.0889 6.54551C14.9079 5.39732 13.4316 4.80682 11.6602 4.80682"
+                                        stroke="#5D7082" stroke-width="0.93" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.7758 14.32C12.7758 14.32 13.2351 14.3528 13.4647 14.0575L13.924 13.4671C14.1536 13.1718 14.6785 12.975 15.2361 13.2703C15.5314 13.4343 16.0562 13.7623 16.3843 14.0247C16.7451 14.2872 17.4668 14.8777 17.4668 14.8777C17.8277 15.1729 17.8933 15.5993 17.6636 16.0586C17.434 16.4851 17.106 16.8787 16.6795 17.2396C16.3515 17.5348 16.0234 17.666 15.6954 17.7316H15.5642C15.433 17.7316 15.2689 17.6988 15.1377 17.666C14.6457 17.5348 13.8256 17.1739 12.415 16.4195C11.5293 15.9274 10.7748 15.4025 10.1515 14.9105C9.82346 14.648 9.46261 14.3528 9.13457 13.9919L9.00335 13.8607C8.64251 13.4999 8.34726 13.1718 8.08483 12.8438C7.59277 12.2205 7.0679 11.466 6.57584 10.5803C5.82134 9.20253 5.4605 8.38243 5.32928 7.85757C5.29648 7.72635 5.26367 7.59514 5.26367 7.43112V7.29989C5.29648 6.97185 5.4605 6.64381 5.75573 6.31577C6.11658 5.92212 6.51023 5.59408 6.93669 5.33164C7.39594 5.10201 7.8224 5.16762 8.11764 5.52847C8.11764 5.52847 8.70811 6.25017 8.97055 6.61101C9.20018 6.93905 9.52821 7.46392 9.72504 7.75916C10.0203 8.28402 9.82345 8.84169 9.56102 9.07132L8.97055 9.53058C8.67531 9.76021 8.70811 10.2195 8.70811 10.2195C8.70811 10.2195 9.52822 13.4671 12.7758 14.32Z"
+                                        fill="#5D7082" />
+                                </svg>
+                            </div>
+                            <p class="share-popup-socials__link-text">
+                                Viber
+                            </p>
+                        </a>
+                    </li>
+                    <li class="share-popup-socials__item">
+                        <a class="share-popup-socials__link" href="#">
+                            <div class="share-popup-socials__link-icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0585938 25L1.81589 18.5802C0.73151 16.701 0.161719 14.5708 0.16276 12.3865C0.165885 5.55729 5.72318 0 12.5513 0C15.8648 0.00104167 18.9753 1.29167 21.3148 3.63333C23.6534 5.975 24.9409 9.0875 24.9398 12.3979C24.9367 19.2281 19.3794 24.7854 12.5513 24.7854C10.4784 24.7844 8.43568 24.2646 6.6263 23.2771L0.0585938 25ZM6.93047 21.0344C8.6763 22.0708 10.343 22.6917 12.5471 22.6927C18.2221 22.6927 22.8451 18.074 22.8482 12.3958C22.8503 6.70625 18.2492 2.09375 12.5555 2.09167C6.8763 2.09167 2.25651 6.71042 2.25443 12.3875C2.25339 14.7052 2.93255 16.4406 4.07318 18.2562L3.03255 22.0562L6.93047 21.0344ZM18.7919 15.3427C18.7148 15.2135 18.5086 15.1365 18.1982 14.9812C17.8888 14.826 16.3669 14.0771 16.0826 13.974C15.7992 13.8708 15.593 13.8187 15.3857 14.1292C15.1794 14.4385 14.5857 15.1365 14.4055 15.3427C14.2253 15.549 14.044 15.575 13.7346 15.4198C13.4253 15.2646 12.4273 14.9385 11.2451 13.8833C10.3253 13.0625 9.70339 12.049 9.52318 11.7385C9.34297 11.4292 9.50443 11.2615 9.65859 11.1073C9.79818 10.9688 9.96797 10.7458 10.1232 10.5646C10.2805 10.3854 10.3315 10.2563 10.4357 10.049C10.5388 9.84271 10.4878 9.66146 10.4096 9.50625C10.3315 9.35208 9.71276 7.82812 9.45547 7.20833C9.20339 6.60521 8.94818 6.68646 8.75859 6.67708L8.16484 6.66667C7.95859 6.66667 7.62318 6.74375 7.33984 7.05417C7.05651 7.36458 6.25651 8.1125 6.25651 9.63646C6.25651 11.1604 7.36589 12.6323 7.52005 12.8385C7.67526 13.0448 9.70234 16.1719 12.8076 17.5125C13.5461 17.8312 14.1232 18.0219 14.5721 18.1646C15.3138 18.4 15.9888 18.3667 16.5221 18.2875C17.1169 18.199 18.3534 17.5385 18.6117 16.8156C18.8701 16.0917 18.8701 15.4719 18.7919 15.3427Z"
+                                        fill="#5D7082" />
+                                </svg>
+                            </div>
+                            <p class="share-popup-socials__link-text">
+                                WhatsApp
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <p class="share-popup__text">
+                    Посилання сторінки
+                </p>
+                <form class="share-popup__form" action="#">
+                    <input class="share-popup__form-input" type="text" name="myvalue" id="myvalue"
+                        value="https://drive-schools.com/school/28">
+                    <button class="share-popup__form-btn" type="button" onclick="copyToClipboard()">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.5 0H12.3781C12.775 0 13.1562 0.159375 13.4375 0.440625L15.5594 2.5625C15.8406 2.84375 16 3.225 16 3.62188V10.5C16 11.3281 15.3281 12 14.5 12H8.5C7.67188 12 7 11.3281 7 10.5V1.5C7 0.671875 7.67188 0 8.5 0ZM1.5 4H6V6H2V14H8V13H10V14.5C10 15.3281 9.32812 16 8.5 16H1.5C0.671875 16 0 15.3281 0 14.5V5.5C0 4.67188 0.671875 4 1.5 4Z"
+                                fill="#5D7082" />
+                        </svg>
+                    </button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="main__search-popup search-popup" id="search-popup"
+        style="background-image: url(images/search-result-bg.png);">
+        <h2 class="search-popup__title">
+            Поиск автошкол
+        </h2>
+        <form class="search-popup__form search-form" action="#">
+            <div class="search-form__inner">
+                <button class="search-form__btn icon-ic-search" type="submit">
+                </button>
+                <input class="search-form__input" placeholder="Пошук автошкіл...">
+                <div class="search-form__box">
+                    <span class="icon-ic-location">
+
+                    </span>
+                    <div class="search-form__box-select custom-select">
+                        <select>
+                            <option value="0">По області</option>
+                            <option value="1">Київська область</option>
+                            <option value="2">Чернівецька область</option>
+                            <option value="3">Житомирська область</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="search-form__button" type="submit">
+                Шукати
+            </button>
+        </form>
+        <p class="search-popup__text">
+            Например:
+            <a href="#" class="search-popup__text-link">АктивДрайв</a>
+        </p>
+    </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

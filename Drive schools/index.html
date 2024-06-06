@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+</head>
+
+<style>
+    .popular-swiper-slide:nth-child(1) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 60%;
+    }
+
+    .popular-swiper-slide:nth-child(2) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 100%;
+    }
+
+    .popular-swiper-slide:nth-child(3) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(4) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 80%;
+    }
+
+    .popular-swiper-slide:nth-child(5) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(6) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(7) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(8) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(9) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+
+    .popular-swiper-slide:nth-child(10) .popular-slide-item-bottom-rating__stars-star:first-child::before {
+        width: 65%;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item--active">
+                            <p class="menu__list-text" href="#">
+                                Головна
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <p class="menu__list-text">
+                                Автошколи
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link header-mobile-menu-list__link--acitve" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__section-top section-top"
+                style="background-image: url(images/section-top-bg-img.png);">
+                <div class="container">
+                    <div class="section-top__inner">
+                        <div class="section-top__body section-top-body">
+                            <h1 class="section-top-body__title">
+                                Повний каталог
+                                <span>
+                                    Автошкіл України
+                                </span>
+                            </h1>
+                            <p class="section-top-body__text">
+                                Наші спеціалісти формують базу автошкіл та актуальних цін на навчання, що дозволяє
+                                користувачам
+                                порівнювати вартість навчання в автошколах свого міста.
+                            </p>
+                            <form class="section-top-body__form search-form" action="#">
+                                <div class="search-form__inner">
+                                    <button class="search-form__btn icon-ic-search" type="submit">
+                                    </button>
+                                    <input class="search-form__input" placeholder="Пошук автошкіл...">
+                                    <div class="search-form__box">
+                                        <span class="icon-ic-location">
+
+                                        </span>
+                                        <div class="search-form__box-select custom-select">
+                                            <select>
+                                                <option value="0">Не выбран</option>
+                                                <option value="1">Не выбран</option>
+                                                <option value="2">Київська область</option>
+                                                <option value="3">Чернівецька область</option>
+                                                <option value="4">Житомирська область</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="search-form__button" type="submit">
+                                    Шукати
+                                </button>
+                            </form>
+                            <div class="section-top-body__inner">
+                                <div class="section-top-body__item section-top-body-item">
+                                    <div class="section-top-body-item__wrapper">
+                                        <div class="section-top-body-item__icon">
+                                            <span class="icon-ic-home-1">
+
+                                            </span>
+                                        </div>
+                                        <p class="section-top-body-item__count">
+                                            + 321
+                                        </p>
+                                        <p class="section-top-body-item__text">
+                                            Шкіл у каталозі
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-top-body__item section-top-body-item">
+                                    <div class="section-top-body-item__wrapper">
+                                        <div class="section-top-body-item__icon">
+                                           <span class="icon-ic-home-2">
+
+                                           </span>
+                                        </div>
+                                        <p class="section-top-body-item__count">
+                                            +35
+                                        </p>
+                                        <p class="section-top-body-item__text">
+                                            Груп у каталозі
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-top-body__item section-top-body-item">
+                                    <div class="section-top-body-item__wrapper">
+                                        <div class="section-top-body-item__icon">
+                                           <span class="icon-ic-home-3">
+
+                                           </span>
+                                        </div>
+                                        <p class="section-top-body-item__count">
+                                            + 498
+                                        </p>
+                                        <p class="section-top-body-item__text">
+                                            Інструкторів
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-top-body__item section-top-body-item">
+                                    <div class="section-top-body-item__wrapper">
+                                        <div class="section-top-body-item__icon">
+                                          <span class="icon-ic-home-4">
+
+                                          </span>
+                                        </div>
+                                        <p class="section-top-body-item__count">
+                                            + 954
+                                        </p>
+                                        <p class="section-top-body-item__text">
+                                            Автомобілів
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top__view section-top-view">
+                            <div class="section-top-view__box section-top-view-box">
+                                <div class="section-top-view-box__person">
+                                    <img class="section-top-view-box__person-img"
+                                        src="images/section-top-person-img.png" alt="person">
+                                    <img class="section-top-view-box__person-img"
+                                        src="images/section-top-person-bg-img.svg" alt="person">
+                                </div>
+                                <img class="section-top-view-box__map" src="images/section-top-map.svg" alt="map">
+                            </div>
+                            <div class="section-top-view__inner">
+                                <div class="section-top-view__item section-top-view-item" id="2">
+                                    <img class="section-top-view-item__img" src="images/region-area-icon-1.svg"
+                                        alt="region-area">
+                                    <div class="section-top-view-item__inner">
+                                        <div class="section-top-view-item__icon">
+                                            <img class="section-top-view-item__icon-img" src="images/region-icon-1.png"
+                                                alt="region-icon">
+                                            <span>
+
+                                            </span>
+                                        </div>
+                                        <p class="section-top-view-item__text">
+                                            Київська обл.
+                                        </p>
+                                        <p class="section-top-view-item__count">
+                                            <span>
+                                                
+                                            </span>
+                                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.59766 0.105469C6.38672 -0.0351563 6.11328 -0.0351563 5.90234 0.105469L3.24805 1.875H0.9375C0.419922 1.875 0 2.29492 0 2.8125V9.0625C0 9.58008 0.419922 10 0.9375 10H11.5625C12.0801 10 12.5 9.58008 12.5 9.0625V2.8125C12.5 2.29492 12.0801 1.875 11.5625 1.875H9.25195L6.59766 0.105469ZM5 8.125C5 7.43555 5.56055 6.875 6.25 6.875C6.93945 6.875 7.5 7.43555 7.5 8.125V10H5V8.125ZM1.875 3.75H2.5C2.67188 3.75 2.8125 3.89062 2.8125 4.0625V5.3125C2.8125 5.48438 2.67188 5.625 2.5 5.625H1.875C1.70312 5.625 1.5625 5.48438 1.5625 5.3125V4.0625C1.5625 3.89062 1.70312 3.75 1.875 3.75ZM9.6875 4.0625C9.6875 3.89062 9.82812 3.75 10 3.75H10.625C10.7969 3.75 10.9375 3.89062 10.9375 4.0625V5.3125C10.9375 5.48438 10.7969 5.625 10.625 5.625H10C9.82812 5.625 9.6875 5.48438 9.6875 5.3125V4.0625ZM1.875 6.25H2.5C2.67188 6.25 2.8125 6.39062 2.8125 6.5625V7.8125C2.8125 7.98438 2.67188 8.125 2.5 8.125H1.875C1.70312 8.125 1.5625 7.98438 1.5625 7.8125V6.5625C1.5625 6.39062 1.70312 6.25 1.875 6.25ZM9.6875 6.5625C9.6875 6.39062 9.82812 6.25 10 6.25H10.625C10.7969 6.25 10.9375 6.39062 10.9375 6.5625V7.8125C10.9375 7.98438 10.7969 8.125 10.625 8.125H10C9.82812 8.125 9.6875 7.98438 9.6875 7.8125V6.5625ZM4.53125 3.4375C4.53125 2.98166 4.71233 2.54449 5.03466 2.22216C5.35699 1.89983 5.79416 1.71875 6.25 1.71875C6.70584 1.71875 7.14301 1.89983 7.46534 2.22216C7.78767 2.54449 7.96875 2.98166 7.96875 3.4375C7.96875 3.89334 7.78767 4.33051 7.46534 4.65284C7.14301 4.97517 6.70584 5.15625 6.25 5.15625C5.79416 5.15625 5.35699 4.97517 5.03466 4.65284C4.71233 4.33051 4.53125 3.89334 4.53125 3.4375ZM6.25 2.5C6.07812 2.5 5.9375 2.64062 5.9375 2.8125V3.4375C5.9375 3.60938 6.07812 3.75 6.25 3.75H6.875C7.04688 3.75 7.1875 3.60938 7.1875 3.4375C7.1875 3.26562 7.04688 3.125 6.875 3.125H6.5625V2.8125C6.5625 2.64062 6.42188 2.5 6.25 2.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>
+                                                312
+                                            </span>
+                                            шкiл
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-top-view__item section-top-view-item" id="3">
+                                    <img class="section-top-view-item__img" src="images/region-area-icon-2.svg"
+                                        alt="region-area">
+                                    <div class="section-top-view-item__inner">
+                                        <div class="section-top-view-item__icon">
+                                            <img class="section-top-view-item__icon-img" src="images/region-icon-2.png"
+                                                alt="region-icon">
+                                                <span>
+                                                
+                                                </span>
+                                        </div>
+                                        <p class="section-top-view-item__text">
+                                            Чернівецька обл.
+                                        </p>
+                                        <p class="section-top-view-item__count">
+                                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.59766 0.105469C6.38672 -0.0351563 6.11328 -0.0351563 5.90234 0.105469L3.24805 1.875H0.9375C0.419922 1.875 0 2.29492 0 2.8125V9.0625C0 9.58008 0.419922 10 0.9375 10H11.5625C12.0801 10 12.5 9.58008 12.5 9.0625V2.8125C12.5 2.29492 12.0801 1.875 11.5625 1.875H9.25195L6.59766 0.105469ZM5 8.125C5 7.43555 5.56055 6.875 6.25 6.875C6.93945 6.875 7.5 7.43555 7.5 8.125V10H5V8.125ZM1.875 3.75H2.5C2.67188 3.75 2.8125 3.89062 2.8125 4.0625V5.3125C2.8125 5.48438 2.67188 5.625 2.5 5.625H1.875C1.70312 5.625 1.5625 5.48438 1.5625 5.3125V4.0625C1.5625 3.89062 1.70312 3.75 1.875 3.75ZM9.6875 4.0625C9.6875 3.89062 9.82812 3.75 10 3.75H10.625C10.7969 3.75 10.9375 3.89062 10.9375 4.0625V5.3125C10.9375 5.48438 10.7969 5.625 10.625 5.625H10C9.82812 5.625 9.6875 5.48438 9.6875 5.3125V4.0625ZM1.875 6.25H2.5C2.67188 6.25 2.8125 6.39062 2.8125 6.5625V7.8125C2.8125 7.98438 2.67188 8.125 2.5 8.125H1.875C1.70312 8.125 1.5625 7.98438 1.5625 7.8125V6.5625C1.5625 6.39062 1.70312 6.25 1.875 6.25ZM9.6875 6.5625C9.6875 6.39062 9.82812 6.25 10 6.25H10.625C10.7969 6.25 10.9375 6.39062 10.9375 6.5625V7.8125C10.9375 7.98438 10.7969 8.125 10.625 8.125H10C9.82812 8.125 9.6875 7.98438 9.6875 7.8125V6.5625ZM4.53125 3.4375C4.53125 2.98166 4.71233 2.54449 5.03466 2.22216C5.35699 1.89983 5.79416 1.71875 6.25 1.71875C6.70584 1.71875 7.14301 1.89983 7.46534 2.22216C7.78767 2.54449 7.96875 2.98166 7.96875 3.4375C7.96875 3.89334 7.78767 4.33051 7.46534 4.65284C7.14301 4.97517 6.70584 5.15625 6.25 5.15625C5.79416 5.15625 5.35699 4.97517 5.03466 4.65284C4.71233 4.33051 4.53125 3.89334 4.53125 3.4375ZM6.25 2.5C6.07812 2.5 5.9375 2.64062 5.9375 2.8125V3.4375C5.9375 3.60938 6.07812 3.75 6.25 3.75H6.875C7.04688 3.75 7.1875 3.60938 7.1875 3.4375C7.1875 3.26562 7.04688 3.125 6.875 3.125H6.5625V2.8125C6.5625 2.64062 6.42188 2.5 6.25 2.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>
+                                                35
+                                            </span>
+                                            шкiл
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-top-view__item section-top-view-item" id="4">
+                                    <img class="section-top-view-item__img" src="images/region-area-icon-2.svg"
+                                        alt="region-area">
+                                    <div class="section-top-view-item__inner">
+                                        <div class="section-top-view-item__icon">
+                                            <img class="section-top-view-item__icon-img" src="images/region-icon-2.png"
+                                                alt="region-icon">
+                                                <span>
+                                                
+                                                </span>
+                                        </div>
+                                        <p class="section-top-view-item__text">
+                                            Житомирська обл.
+                                        </p>
+                                        <p class="section-top-view-item__count">
+                                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.59766 0.105469C6.38672 -0.0351563 6.11328 -0.0351563 5.90234 0.105469L3.24805 1.875H0.9375C0.419922 1.875 0 2.29492 0 2.8125V9.0625C0 9.58008 0.419922 10 0.9375 10H11.5625C12.0801 10 12.5 9.58008 12.5 9.0625V2.8125C12.5 2.29492 12.0801 1.875 11.5625 1.875H9.25195L6.59766 0.105469ZM5 8.125C5 7.43555 5.56055 6.875 6.25 6.875C6.93945 6.875 7.5 7.43555 7.5 8.125V10H5V8.125ZM1.875 3.75H2.5C2.67188 3.75 2.8125 3.89062 2.8125 4.0625V5.3125C2.8125 5.48438 2.67188 5.625 2.5 5.625H1.875C1.70312 5.625 1.5625 5.48438 1.5625 5.3125V4.0625C1.5625 3.89062 1.70312 3.75 1.875 3.75ZM9.6875 4.0625C9.6875 3.89062 9.82812 3.75 10 3.75H10.625C10.7969 3.75 10.9375 3.89062 10.9375 4.0625V5.3125C10.9375 5.48438 10.7969 5.625 10.625 5.625H10C9.82812 5.625 9.6875 5.48438 9.6875 5.3125V4.0625ZM1.875 6.25H2.5C2.67188 6.25 2.8125 6.39062 2.8125 6.5625V7.8125C2.8125 7.98438 2.67188 8.125 2.5 8.125H1.875C1.70312 8.125 1.5625 7.98438 1.5625 7.8125V6.5625C1.5625 6.39062 1.70312 6.25 1.875 6.25ZM9.6875 6.5625C9.6875 6.39062 9.82812 6.25 10 6.25H10.625C10.7969 6.25 10.9375 6.39062 10.9375 6.5625V7.8125C10.9375 7.98438 10.7969 8.125 10.625 8.125H10C9.82812 8.125 9.6875 7.98438 9.6875 7.8125V6.5625ZM4.53125 3.4375C4.53125 2.98166 4.71233 2.54449 5.03466 2.22216C5.35699 1.89983 5.79416 1.71875 6.25 1.71875C6.70584 1.71875 7.14301 1.89983 7.46534 2.22216C7.78767 2.54449 7.96875 2.98166 7.96875 3.4375C7.96875 3.89334 7.78767 4.33051 7.46534 4.65284C7.14301 4.97517 6.70584 5.15625 6.25 5.15625C5.79416 5.15625 5.35699 4.97517 5.03466 4.65284C4.71233 4.33051 4.53125 3.89334 4.53125 3.4375ZM6.25 2.5C6.07812 2.5 5.9375 2.64062 5.9375 2.8125V3.4375C5.9375 3.60938 6.07812 3.75 6.25 3.75H6.875C7.04688 3.75 7.1875 3.60938 7.1875 3.4375C7.1875 3.26562 7.04688 3.125 6.875 3.125H6.5625V2.8125C6.5625 2.64062 6.42188 2.5 6.25 2.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>
+                                                35
+                                            </span>
+                                            шкiл
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="maun__popular popular">
+                <div class="container">
+                    <div class="popular__top popular-top">
+                        <h2 class="popular-top__title title">
+                            Популярні автошколи
+                        </h2>
+                        <div class="popular-top__box">
+                            <div class="popular-top__box-prev swiper-button-prev">
+                                <span class="icon-ic-slide-nav-l">
+
+                                </span>
+                            </div>
+                            <div class="popular-top__box-next swiper-button-next">
+                                <span class="icon-ic-slide-nav-l">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-container">
+                    <div class="popular__swiper popular-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            1
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-1.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Drivingood
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    BE,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    C1...
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.2
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            2
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-2.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола KиЇв
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    C
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        132
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            3
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    C
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            4
+                                        </p>
+                                        
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-4.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Освіта-авто КАТ
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    4.3
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            5
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            6
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            7
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            8
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            9
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-swiper-slide popular-slide swiper-slide">
+                                <div class="popular-slide__item popular-slide-item">
+                                    <div class="popular-slide-item__inner">
+                                        <p class="popular-slide-item__count">
+                                            10
+                                        </p>
+                                        <a class="popular-slide-item__icon" href="#">
+                                            <img class="popular-slide-item__icon-img" src="images/popular-icon-3.png"
+                                                alt="school-icon">
+                                        </a>
+                                        <a class="popular-slide-item__link" href="#">
+                                            <h3 class="popular-slide-item__link-title">
+                                                Автошкола 4 колеса
+                                            </h3>
+                                        </a>
+                                        <p class="popular-slide-item__text">
+                                            Такий підхід кардинально відрізнається від стандартних афтошкіл, що
+                                            пропонують
+                                            загальну систему навчання
+                                        </p>
+                                    </div>
+                                    <div class="popular-slide-item__bottom popular-slide-item-bottom">
+                                        <div class="popular-slide-item-bottom__inner">
+                                            <ul class="popular-slide-item-bottom__categories">
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    <span class="icon-ic-cat">
+
+                                                    </span>
+                                                
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    A1,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    B,
+                                                </li>
+                                                <li class="popular-slide-item-bottom__categories-item">
+                                                    С
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="popular-slide-item-bottom__rating popular-slide-item-bottom-rating">
+                                                <div class="popular-slide-item-bottom-rating__stars">
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+
+                                                    </div>
+                                                    <div class="popular-slide-item-bottom-rating__stars-star">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                                                fill="#F9AE00" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <p class="popular-slide-item-bottom-rating__count">
+                                                    3.5
+                                                </p>
+                                                <p class="popular-slide-item-bottom-rating__text">
+                                                    <span>
+                                                        49
+                                                    </span>
+                                                    Відгуків
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="popular-slide-item-bottom__link" href="#">
+                                            Перейти до школи
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__connect connect">
+                <div class="container">
+                    <div class="connect__inner">
+                        <div class="connect__body connect-body">
+                            <h2 class="connect-body__title">
+                                Підключайтесь
+                                <span>
+                                    до каталогу та отримайте:
+                                </span>
+                            </h2>
+                            <ul class="connect-body__list connect-body-list">
+                                <li class="connect-body-list__item">
+                                    <div class="connect-body-list__icon">
+                                        <img src="images/connect-icon-1.svg" alt="">
+                                    </div>
+                                    <p class="connect-body-list__text">
+                                        Зручну CRM
+                                    </p>
+                                </li>
+                                <li class="connect-body-list__item">
+                                    <div class="connect-body-list__icon">
+                                        <img src="images/connect-icon-2.svg" alt="">
+                                    </div>
+                                    <p class="connect-body-list__text">
+                                        Сторінку в інтернеті
+                                    </p>
+                                </li>
+                                <li class="connect-body-list__item">
+                                    <div class="connect-body-list__icon">
+                                        <img src="images/connect-icon-3.svg" alt="">
+                                    </div>
+                                    <p class="connect-body-list__text">
+                                        Потік клієнтів
+                                    </p>
+                                </li>
+                            </ul>
+                            <a class="connect-body__link" href="#">
+                                Підключитися
+                            </a>
+                        </div>
+                        <div class="connect__img">
+                            <img class="connect__img-image" src="images/connect-img.png" alt="connect-img">
+                        </div>
+                    </div>
+                </div>
+
+            </section> 
+            <section class="main__lessons lessons lessons">
+                <div class="container">
+                    <div class="lessons__top">
+                        <h2 class="lessons__top-title title">
+                            Заняття від інструкторів
+                        </h2>
+                        <a class="lessons__top-link" href="#">
+                            Дивитися більше
+                        </a>
+                    </div>
+                    <div class="lessons__inner">
+                        <div class="lessons__item lessons-item">
+                            <a class="lessons-item__img" href="#">
+                                <img class="lessons-item__img-image" src="images/lessons-img-1.png" alt="lesson-img">
+                            </a>
+                            <div class="lessons-item__top">
+                                <a class="lessons-item__top-title" href="#">
+                                    YADEA EM215 Pro 2500W <br>
+                                    Red
+                                </a>
+                                <span class="icon-ic-corob-m">
+
+                                </span>
+                            </div>
+                            <div class="lessons-item__inner">
+                                <div class="lessons-item__info lessons-item-info">
+                                    <div class="lessons-item-info__img">
+                                        <img class="lessons-item-info__img-image" src="images/lessons-teacher-img-1.png"
+                                            alt="teacher">
+                                    </div>
+                                    <div class="lessons-item-info__box lessons-item-info-box">
+                                        <p class="lessons-item-info-box__text">
+                                            Юрченко
+                                            <span>
+                                                Василий Федорович
+                                            </span>
+                                        </p>
+                                        <p class="lessons-item-info-box__suptext">
+                                            <span class="icon-ic-calendar">
+
+                                            </span>
+                                            <span>
+                                                Стаж 11 лет
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <p class="lessons-item-info__category">
+                                        A1
+                                        <span></span>
+                                    </p>
+                                    <span class="lessons-item-info__icon icon-ic-cat-a1">
+
+                                    </span>
+                                </div>
+                                <div class="lessons-item__bottom lessons-item-bottom">
+                                    <p class="lessons-item-bottom__text">
+                                        Тривалість
+                                        <span>
+                                            1 час 30 хвилин
+                                        </span>
+                                    </p>
+                                    <p class="lessons-item-bottom__price">
+                                        200 ₴
+                                    </p>
+                                </div>
+                                <a class="lessons-item__link" href="#">
+                                    Записатись
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lessons__item lessons-item">
+                            <a class="lessons-item__img" href="#">
+                                <img class="lessons-item__img-image" src="images/lessons-img-2.png" alt="lesson-img">
+                            </a>
+                            <div class="lessons-item__top">
+                                <a class="lessons-item__top-title" href="#">
+                                    Musstang Active MT110-3 <br>
+                                    110 сс
+                                </a>
+                                <span class="icon-ic-corob-a">
+
+                                </span>
+                            </div>
+                            <div class="lessons-item__inner">
+                                <div class="lessons-item__info lessons-item-info">
+                                    <div class="lessons-item-info__img">
+                                        <img class="lessons-item-info__img-image" src="images/lessons-teacher-img-2.png"
+                                            alt="teacher">
+                                    </div>
+                                    <div class="lessons-item-info__box lessons-item-info-box">
+                                        <p class="lessons-item-info-box__text">
+                                            ПIлIпчук
+                                            <span>
+                                                Владлен Олександрович
+                                            </span>
+                                        </p>
+                                        <p class="lessons-item-info-box__suptext">
+                                            <span class="icon-ic-calendar">
+
+                                            </span>
+                                            <span>
+                                                Стаж 7 лет
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <p class="lessons-item-info__category">
+                                        A
+                                        <span></span>
+                                    </p>
+                                  <span class="lessons-item-info__icon icon-ic-cat-a">
+
+                                  </span>
+                                </div>
+                                <div class="lessons-item__bottom lessons-item-bottom">
+                                    <p class="lessons-item-bottom__text">
+                                        Тривалість
+                                        <span>
+                                            1 час 50 хвилин
+                                        </span>
+                                    </p>
+                                    <p class="lessons-item-bottom__price">
+                                        249 ₴
+                                    </p>
+                                </div>
+                                <a class="lessons-item__link" href="#">
+                                    Записатись
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lessons__item lessons-item">
+                            <a class="lessons-item__img" href="#">
+                                <img class="lessons-item__img-image" src="images/lessons-img-3.png" alt="lesson-img">
+                            </a>
+                            <div class="lessons-item__top">
+                                <a class="lessons-item__top-title" href="#">
+                                    Linhai LH300-D EFI ProMax <br>
+                                    (4X4) Хаки
+                                </a>
+                                <span class="icon-ic-corob-m">
+
+                                </span>
+                            </div>
+                            <div class="lessons-item__inner">
+                                <div class="lessons-item__info lessons-item-info">
+                                    <div class="lessons-item-info__img">
+                                        <img class="lessons-item-info__img-image" src="images/lessons-teacher-img-3.png"
+                                            alt="teacher">
+                                    </div>
+                                    <div class="lessons-item-info__box lessons-item-info-box">
+                                        <p class="lessons-item-info-box__text">
+                                            КостIн
+                                            <span>
+                                                Мирослав
+                                                Вячиславович
+                                            </span>
+                                        </p>
+                                        <p class="lessons-item-info-box__suptext">
+                                            <span class="icon-ic-calendar">
+
+                                            </span>
+                                            <span>
+                                                Стаж 15 лет
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <p class="lessons-item-info__category">
+                                        B1
+                                        <span></span>
+                                    </p>
+                                   <span class="lessons-item-info__icon icon-ic-cat-b1">
+
+                                   </span>
+                                </div>
+                                <div class="lessons-item__bottom lessons-item-bottom">
+                                    <p class="lessons-item-bottom__text">
+                                        Тривалість
+                                        <span>
+                                            2 часа
+                                        </span>
+                                    </p>
+                                    <p class="lessons-item-bottom__price">
+                                        199 ₴
+                                    </p>
+                                </div>
+                                <a class="lessons-item__link" href="#">
+                                    Записатись
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lessons__item lessons-item">
+                            <a class="lessons-item__img" href="#">
+                                <img class="lessons-item__img-image" src="images/lessons-img-4.png" alt="lesson-img">
+                            </a>
+                            <div class="lessons-item__top">
+                                <a class="lessons-item__top-title" href="#">
+                                    Mazda 6
+                                </a>
+                                <span class="icon-ic-corob-a">
+
+                                </span>
+                            </div>
+                            <div class="lessons-item__inner">
+                                <div class="lessons-item__info lessons-item-info">
+                                    <div class="lessons-item-info__img">
+                                        <img class="lessons-item-info__img-image" src="images/lessons-teacher-img-4.png"
+                                            alt="teacher">
+                                    </div>
+                                    <div class="lessons-item-info__box lessons-item-info-box">
+                                        <p class="lessons-item-info-box__text">
+                                            Рябчик
+                                            <span>
+                                                Дмитро Петрович
+                                            </span>
+                                        </p>
+                                        <p class="lessons-item-info-box__suptext">
+                                            <span class="icon-ic-calendar">
+
+                                            </span>
+                                            <span>
+                                                Стаж 9 лет
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <p class="lessons-item-info__category">
+                                        B
+                                        <span></span>
+                                    </p>
+                                    <span class="lessons-item-info__icon icon-ic-cat-b"></span>
+                                </div>
+                                <div class="lessons-item__bottom lessons-item-bottom">
+                                    <p class="lessons-item-bottom__text">
+                                        Тривалість
+                                        <span>
+                                            2 часа 30 хвилин
+                                        </span>
+                                    </p>
+                                    <p class="lessons-item-bottom__price">
+                                        385 ₴
+                                    </p>
+                                </div>
+                                <a class="lessons-item__link" href="#">
+                                    Записатись
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="mian__news news">
+                <div class="container">
+                    <div class="news__top">
+                        <h2 class="news__top-title title">
+                            Новини в автосвіті
+                        </h2>
+                        <a class="news__top-link" href="#">
+                            Дивитися більше
+                        </a>
+                    </div>
+                    <div class="news__inner">
+                        <div class="news_item news-item">
+                            <div class="news-item__wrapper">        
+                                <a class="news-item__img" href="#">
+                                    <img class="news-item__img-image" src="images/news-img-1.png" alt="news-img">
+                                </a>
+                                <a class="news-item__img-text" href="#">
+                                    Екзамени
+                                </a>
+                            </div>
+                            <a class="news-item__title" href="#">
+                                <h3 class="news-item__title-text">
+                                    Нові правила для отримання прав водія: що зміниться з липня 2023 року
+                                </h3>
+                            </a>
+                            <p class="news-item__text">
+                                Такий підхід кардинально відрізняється від стандартних автошкіл, що пропонують загальну
+                                систему навчання...
+                            </p>
+                            <div class="news-item__bottom">
+                                <p class="news-item__bottom-date">
+                                    <span class="icon-ic-date">
+
+                                    </span>
+                                    <span>
+                                        28.10.2022
+                                    </span>
+                                </p>
+                                <a class="news-item__link" href="#">
+                                    <span>
+                                        Читати
+                                    </span>
+                                    <span class="icon-ic-slide-nav-r">
+
+                                    </span>
+                                
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news_item news-item">
+                            <div class="news-item__wrapper">        
+                                <a class="news-item__img" href="#">
+                                    <img class="news-item__img-image" src="images/news-img-2.png" alt="news-img">
+                                </a>
+                                <a class="news-item__img-text" href="#">
+                                    Сервісні центри
+                                </a>
+                            </div>
+                            <a class="news-item__title" href="#">
+                                <h3 class="news-item__title-text">
+                                    МВС кардинально змінить складання іспитів
+                                </h3>
+                            </a>
+                            <p class="news-item__text">
+                                Такий підхід кардинально відрізняється від стандартних автошкіл, що пропонують загальну
+                                систему навчання...
+                            </p>
+                            <div class="news-item__bottom">
+                                <p class="news-item__bottom-date">
+                                    <span class="icon-ic-date">
+
+                                    </span>
+                                    <span>
+                                        28.10.2022
+                                    </span>
+                                </p>
+                                <a class="news-item__link" href="#">
+                                    <span>
+                                        Читати
+                                    </span>
+                                    <span class="icon-ic-slide-nav-r">
+
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news_item news-item">
+                            <div class="news-item__wrapper">        
+                                <a class="news-item__img" href="#">
+                                    <img class="news-item__img-image" src="images/news-img-3.png" alt="news-img">
+                                </a>
+                                <a class="news-item__img-text" href="#">
+                                    Екзамени
+                                </a>
+                            </div>
+                            <a class="news-item__title" href="#">
+                                <h3 class="news-item__title-text">
+                                    Як відновити права водія в Україні
+                                </h3>
+                            </a>
+                            <p class="news-item__text">
+                                Такий підхід кардинально відрізняється від стандартних автошкіл, що пропонують загальну
+                                систему навчання...
+                            </p>
+                            <div class="news-item__bottom">
+                                <p class="news-item__bottom-date">
+                                    <span class="icon-ic-date">
+
+                                    </span>
+                                    <span>
+                                        28.10.2022
+                                    </span>
+                                </p>
+                                <a class="news-item__link" href="#">
+                                    <span>
+                                        Читати
+                                    </span>
+                                    <span class="icon-ic-slide-nav-r">
+
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news_item news-item">
+                            <div class="news-item__wrapper">        
+                                <a class="news-item__img" href="#">
+                                    <img class="news-item__img-image" src="images/news-img-1.png" alt="news-img">
+                                </a>
+                                <a class="news-item__img-text" href="#">
+                                    Екзамени
+                                </a>
+                            </div>
+                            <a class="news-item__title" href="#">
+                                <h3 class="news-item__title-text">
+                                    Отримання прав водія: в МВС анонсували важливі зміни
+                                </h3>
+                            </a>
+                            <p class="news-item__text">
+                                Такий підхід кардинально відрізняється від стандартних автошкіл, що пропонують загальну
+                                систему навчання...
+                            </p>
+                            <div class="news-item__bottom">
+                                <p class="news-item__bottom-date">
+                                    <span class="icon-ic-date">
+
+                                    </span>
+                                    <span>
+                                        28.10.2022
+                                    </span>
+                                </p>
+                                <a class="news-item__link" href="#">
+                                    <span>
+                                        Читати
+                                    </span>
+                                    <span class="icon-ic-slide-nav-r">
+
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__text-block text-block">
+                <div class="container">
+                    <h2 class="text-block__title title">
+                        Каталог автошкіл України
+                    </h2>
+                    <p class="text-block__text">
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от
+                        всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек
+                        Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+                        страна, в которой жаренные члены предложения залетают прямо в рот.
+                    </p>
+                    <p class="text-block__text">
+                        Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+                        жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой
+                        мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных
+                        точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв,
+                        подпоясал инициал за пояс и пустился в дорогу.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

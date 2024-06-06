@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--active">
+                            <p class="menu__list-text">
+                                Автошколи
+                            </p>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link  header-mobile-menu-list__link--acitve" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="heading-section__top" style="background-image: url(images/section-top-bg-img.png);">
+                    <div class="container">
+                        <h1 class="heading-section__title">
+                            Записатися на навчання в автошколу “Укрінтеравтосервіс”
+                        </h1>
+                    </div>
+                </div>
+                <div class="heading-section__bottom heading-section-bottom">
+                    <div class="container">
+                        <div class="heading-section-bottom__inner">
+                            <div class="heading-section-bottom__breadcrumbs breadcrumbs">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                                <a class="breadcrumbs__link" href="#">
+                                    Автошколи
+                                </a>
+                                <a class="breadcrumbs__link" href="#">
+                                    Чернігівська область
+                                </a>
+                                <p class="breadcrumbs__text">
+                                    Записатися на навчання категорії водіння B
+                                </p>
+                            </div>
+                            <a class="heading-section-bottom__search" data-fancybox href="#search-popup"
+                            data-options='{"touch" : false}'>
+                            <span class="icon-ic-search">
+
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__school-info school-info">
+                <div class="container">
+                    <div class="school-info__inner">
+                        <div class="school-info__img">
+                            <img class="school-info__img-image" src="images/catalog-school-img-2.png" alt="img">
+                        </div>
+                        <div class="school-info__box school-info-box">
+                            <a class="school-info-box__link" href="#">
+                                <h2 class="school-info-box__link-title">
+                                    Укрінтеравтосервіс
+                                </h2>
+                            </a>
+                            <p class="school-info-box__text">
+                                Філія "Чернігівський державний обласний навчально-курсовий комбінат" УДП
+                                "Укрінтеравтосервіс"
+                            </p>
+                            <ul class="school-info-box__list">
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        A1,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        A,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        B1,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        B,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        BE,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        C1,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        C1E,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        C,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        CE,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        D1,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        D1E,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        D,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        DE,
+                                    </p>
+                                </li>
+                                <li class="school-info-box__list-item">
+                                    <p class="school-info-box__list-text">
+                                        T
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-info__adress school-info-adress">
+                            <div class="school-info-adress__map" id="map"></div>
+                            <div class="school-info-adress__inner">
+                                <div class="school-info-adress__top school-info-adress-top">
+                                    <div class="school-info-adress-top__wrapper">
+                                        <a class="school-info-adress-top__box school-info-adress-top__box--active" target="_blank" href="https://goo.gl/maps/pP8Nh8iVe2tHMxsX6"
+                                            id="0">
+                                            <p class="school-info-adress-top__box-text">
+                                                Адреса автошколи
+                                            </p>
+                                            <p class="school-info-adress-top__box-subtext">
+                                                м. Чернігів, вул. Івана Богуна, буд. 55
+                                            </p>
+                                        </a>
+                                        <a class="school-info-adress-top__box" target="_blank" id="1" href="https://goo.gl/maps/1h3jtr1ywVHwhaob8">
+                                            <p class="school-info-adress-top__box-text">
+                                                Адреса автошколи
+                                            </p>
+                                            <p class="school-info-adress-top__box-subtext">
+                                                м. Чернігів, вул. Івана Богуна, буд. 15
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <button class="school-info-adress-top__btn" type="button">
+                                        <span class="icon-ic-str">
+
+                                        </span>
+                                    </button>
+                                </div>
+                                <ul class="school-info-adress__list">
+                                    <li class="school-info-adress__list-item school-info-adress__list-item--active" id="0">
+                                        <div class="school-info-adress__list-link"
+                                            >
+                                            <span>
+                                                Офис:
+                                            </span>
+                                            м. Чернігів, вул. Івана Богуна, буд. 55
+                                        </div>
+                                    </li>
+                                    <li class="school-info-adress__list-item" id="1">
+                                        <div class="school-info-adress__list-link"
+                                            >
+                                            <span>
+                                                Класс:
+                                            </span>
+                                            м. Чернігів, вул. Івана Богуна, буд. 15
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="school-info__rating school-info-rating">
+                            <p class="school-info-rating__text">
+                                3.2
+                            </p>
+                            <div class="school-info-rating__stars">
+                                <svg class="school-info-rating__stars-star" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                        fill="#F9AE00" />
+                                </svg>
+                                <svg class="school-info-rating__stars-star" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                        fill="#F9AE00" />
+                                </svg>
+                                <svg class="school-info-rating__stars-star" width="20" height="21" viewBox="0 0 20 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                        fill="#F9AE00" />
+                                </svg>
+                                <svg class="school-info-rating__stars-star school-info-rating__stars-star--disablde"
+                                    width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                        fill="#A9AEBD" fill-opacity="0.25" />
+                                </svg>
+                                <svg class="school-info-rating__stars-star school-info-rating__stars-star--disablde"
+                                    width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.7208 1.32445C9.12344 0.0305245 10.8766 0.0305227 11.2792 1.32444L12.7178 5.94756C12.8979 6.52622 13.4143 6.918 13.997 6.918H18.6524C19.9554 6.918 20.4971 8.65896 19.443 9.45865L15.6767 12.3159C15.2053 12.6735 15.008 13.3074 15.1881 13.8861L16.6267 18.5092C17.0293 19.8031 15.611 20.8791 14.5569 20.0794L10.7906 17.2222C10.3192 16.8645 9.68083 16.8645 9.20941 17.2222L5.44311 20.0794C4.389 20.8791 2.97069 19.8031 3.37333 18.5092L4.81193 13.8861C4.99199 13.3074 4.79473 12.6735 4.32332 12.3159L0.557018 9.45865C-0.497097 8.65896 0.0446451 6.918 1.3476 6.918H6.00301C6.58571 6.918 7.10214 6.52622 7.2822 5.94756L8.7208 1.32445Z"
+                                        fill="#A9AEBD" fill-opacity="0.25" />
+                                </svg>
+                            </div>
+                            <p class="school-info-rating__subtext">
+                                На основі 120 відгуків
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__lesson lesson">
+                <div class="container">
+                    <div class="lesson__inner">
+                        <div class="lesson__content lesson-content">
+                            <div class="lesson-content__about-lesson about-lesson">
+                                <div class="about-lesson__information-block information-block">
+                                    <div class="information-block__top">
+                                        <p class="information-block__top-text">
+                                            Вільно 10 із 30 місць
+                                        </p>
+                                        <div class="information-block__top-row">
+                                            <span style="width: 70%">
+
+                                            </span>
+                                        </div>
+                                        <h4 class="information-block__top-title">
+                                            Категорія B
+                                        </h4>
+                                        <p class="information-block__top-subtext">
+                                            авто до 3,5т
+                                        </p>
+                                    </div>
+                                    <div class="information-block__bottom">
+                                        <p class="information-block__bottom-count">
+                                            15 300 ₴
+                                        </p>
+                                        <p class="information-block__bottom-text">
+                                            Починаємо
+                                        </p>
+                                        <p class="information-block__bottom-subtext">
+                                            30 травня 2023 р.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="about-lesson__top about-lesson-top">
+                                    <div class="about-lesson-top__img">
+                                        <img class="about-lesson-top__img-image" src="images/about-lesson-img.png"
+                                            alt="img">
+                                    </div>
+                                    <p class="about-lesson-top__text">
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="about-lesson__info about-lesson-info">
+                                    <p class="about-lesson-info__text">
+                                        У вартість входить:
+                                    </p>
+                                    <ul class="about-lesson-info__list">
+                                        <li class="about-lesson-info__list-item">
+                                            <span class="icon-ic-less-teor">
+
+                                            </span>
+                                            <span>
+                                                96 годин теорії,
+                                            </span>
+                                        </li>
+                                        <li class="about-lesson-info__list-item">
+                                          <span class="icon-ic-less-pract">
+                                                
+                                            </span>
+                                            <span>
+                                                20 годин практики,
+                                            </span>
+                                        </li>
+                                        <li class="about-lesson-info__list-item">
+                                            <span class="icon-ic-less-mat">
+                                                
+                                            </span>
+                                            <span>
+                                                Навчальні матеріали,
+                                            </span>
+                                        </li>
+                                        <li class="about-lesson-info__list-item">
+                                            <span class="icon-ic-less-fuel">
+                                                
+                                            </span>
+                                            <span>
+                                                Паливо
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-content__content blog-content">
+                                <div class="blog-content__inner">
+                                    <div class="blog-content__wrapper">
+                                        <div class="blog-content__box blog-content-box">
+                                            <h1>
+                                                Подробиці H1
+                                            </h1>
+                                            <p>
+                                                Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                                которыми
+                                                я наслаждаюсь от всего сердца.
+                                                <span>
+                                                    Я совсем один и блаженствую в здешнем краю,
+                                                    словно
+                                                    созданном для таких, как я.
+                                                </span>
+                                                Я так счастлив, мой друг, так упоен
+                                                ощущением покоя, что искусство мое страдает от этого. Ни одного штриха
+                                                не
+                                                мог бы я сделать, а никогда не был таким большим художником, как в эти
+                                                минуты.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="blog-content__box blog-content-box blog-content-box blog-content-box--small">
+                                            <h2>
+                                                Заголово H2
+                                            </h2>
+                                            <p>
+                                                Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                                которыми
+                                                я наслаждаюсь от всего сердца.
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Пунк нумерованого списка №1;
+                                                </li>
+                                                <li>
+                                                    Пунк нумерованого списка №2;
+                                                </li>
+                                                <li>
+                                                    Пунк нумерованого списка №3.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="blog-content__box blog-content-box blog-content-box--small">
+                                            <h3>
+                                                Заголово H3
+                                            </h3>
+                                            <p>
+                                                Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                                которыми
+                                                я наслаждаюсь от всего сердца.
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Пунк маркерованого списка №1;
+                                                </li>
+                                                <li>
+                                                    Пунк маркерованого списка №2;
+                                                </li>
+                                                <li>
+                                                    Пунк маркерованого списка №3.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="blog-content__files blog-content-files">
+                                            <p class="blog-content-files__text">
+                                                Прикріплені файли:
+                                            </p>
+                                            <a class="blog-content-files__link" href="#">
+                                                name-file-image.jpg
+                                                <span>
+                                                    [158 Kb]
+                                                </span>
+                                            </a>
+                                            <a class="blog-content-files__link" href="#">
+                                                name-file-document.doc
+                                                <span>
+                                                    [5 Mb]
+                                                </span>
+                                            </a>
+                                            <a class="blog-content-files__link" href="#">
+                                                name-file-archive.zip
+                                                <span>
+                                                    [1 Gb]
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="lesson__aside lesson-aside">
+                            <h3 class="lesson-aside__title">
+                                Записатися
+                            </h3>
+                            <form class="lesson-aside__form lesson-aside-form" action="#">
+                                <div class="lesson-aside-form__box">
+                                    <label class="lesson-aside-form__box-label" for="">
+                                        Прізвище Ім'я По батькові (ПІБ):
+                                    </label>
+                                    <div class="lesson-aside-form__box-wrapper">
+                                        <input class="lesson-aside-form__box-input" type="text">
+                                    </div>
+                                </div>
+                                <div class="lesson-aside-form__wrapper">
+                                    <div class="lesson-aside-form__box">
+                                        <label class="lesson-aside-form__box-label" for="">
+                                            Номер телефону:
+                                        </label>
+                                        <div class="lesson-aside-form__box-wrapper">
+                                            <input class="lesson-aside-form__box-input" id="lesson-aside-form__box-input" type="tel">
+                                        </div>
+                                    </div>
+                                    <div class="lesson-aside-form__box">
+                                        <label class="lesson-aside-form__box-label" for="">
+                                            Ваш Email:
+                                        </label>
+                                        <div class="lesson-aside-form__box-wrapper">
+                                            <input class="lesson-aside-form__box-input" type="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="lesson-aside-form__img" src="images/contact-recaptcha-img.png" alt="img">
+                                <a class="lesson-aside-form__btn" data-fancybox="" href="#accepted-popup">
+                                    Відправити
+                                </a>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="main__search-popup search-popup" id="search-popup"
+                style="background-image: url(images/search-result-bg.png);">
+                <h2 class="search-popup__title">
+                    Поиск автошкол
+                </h2>
+                <form class="search-popup__form search-form" action="#">
+                    <div class="search-form__inner">
+                        <button class="search-form__btn icon-ic-search" type="submit">
+                        </button>
+                        <input class="search-form__input" placeholder="Пошук автошкіл...">
+                        <div class="search-form__box">
+                            <span class="icon-ic-location">
+
+                            </span>
+                            <div class="search-form__box-select custom-select">
+                                <select>
+                                    <option value="0">По області</option>
+                                    <option value="1">Київська область</option>
+                                    <option value="2">Чернівецька область</option>
+                                    <option value="3">Житомирська область</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="search-form__button" type="submit">
+                        Шукати
+                    </button>
+                </form>
+                <p class="search-popup__text">
+                    Например:
+                    <a href="#" class="search-popup__text-link">АктивДрайв</a>
+                </p>
+            </section>
+        <section class="main__accepted-popup accepted-popup" id="accepted-popup">
+            <div class="accepted-popup__inner">
+                <img class="accepted-popup__emodji" src="images/accepted-popup-img.svg" alt="img">
+                <p class="accepted-popup__text">
+                    Заявка прийнята!
+                </p>
+                <p class="accepted-popup__subtext">
+                    Протягом години ми з Вами зв'яжемося!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

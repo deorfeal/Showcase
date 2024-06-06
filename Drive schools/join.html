@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-page</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav user-nav">
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-login">
+                            
+                        </span>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <a class="user-nav__btn" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <button class="user-nav__burger burger">
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                        <span>
+
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mobile-menu header-mobile-menu">
+                <div class="header-mobile-menu__inner">
+                    <button class="header-mobile-menu__btn icon-ic-close" type="button">
+                    
+                    </button>
+                    <a class="header-mobile-menu__button" href="#">
+                        <span class="icon-ic-join">
+                        </span>
+                        <span>
+                            Приєднатися
+                        </span>
+                    </a>
+                    <ul class="header-mobile-menu__list header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Автошколи
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Інструктори
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="heading-section__top" style="background-image: url(images/section-top-bg-img.png);">
+                    <div class="container">
+                        <h1 class="heading-section__title">
+                            Зворотній зв'язок
+                        </h1>
+                    </div>
+                </div>
+                <div class="heading-section__bottom heading-section-bottom">
+                    <div class="container">
+                        <div class="heading-section-bottom__inner">
+                            <div class="heading-section-bottom__breadcrumbs breadcrumbs">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                                <p class="breadcrumbs__text">
+                                    Підключитися до каталогу
+                                </p>
+                            </div>
+                            <a class="heading-section-bottom__search" data-fancybox href="#search-popup"
+                            data-options='{"touch" : false}'>
+                            <span class="icon-ic-search">
+
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__join join">
+                <div class="container">
+                    <div class="join__inner">
+                        <form class="join__form join-form" action="#">
+                            <h2 class="join-form__title">
+                                Приєднатися до
+                                каталогу
+                            </h2>
+                            <div class="join-form__box">
+                                <label class="join-form__box-text" for="">
+                                    Регион
+                                </label>
+                                <div class="join-form__box-select custom-select">
+                                    <select>
+                                        <option value="0">Не выбран</option>
+                                        <option value="1">Черновцы</option>
+                                        <option value="2">Киев</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="join-form__box join-form__box--disabled">
+                                <label class="join-form__box-text" for="">
+                                    Автошкола
+                                </label>
+                                <div class="join-form__box-select custom-select">
+                                    <select disabled="disabled">
+                                        <option value="0">Не выбран</option>
+                                        <option value="1">Первая</option>
+                                        <option value="2">Вторая</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="join-form__box">
+                                <label class="join-form__box-text" for="">
+                                    ФИО
+                                </label>
+                                <input class="join-form__box-input" type="text">
+                            </div>
+                            <div class="join-form__wrapper">
+                                <div class="join-form__box">
+                                    <label class="join-form__box-text" for="">
+                                        ЄДРПОУ
+                                    </label>
+                                    <input class="join-form__box-input" type="text">
+                                </div>
+                                <div class="join-form__box">
+                                    <label class="join-form__box-text" for="">
+                                        Телефон
+                                    </label>
+                                    <input class="join-form__box-input" id="join-form__box-input" type="text">
+                                </div>
+                            </div>
+                            <img class="join-form__img" src="images/contact-recaptcha-img.png" alt="recaptcha">
+                            <button class="join-form__btn" type="button">
+                                Подати заявку
+                            </button>
+                        </form>
+                        <div class="join__swiper join-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="join-swiper__slide join-slide swiper-slide">
+                                    <div class="join-slide__inner">
+                                        <div class="join-slide__img">
+                                            <img class="join-slide__img-image" src="images/join-img.png" alt="img">
+                                        </div>
+                                        <h4 class="join-slide__title">
+                                            Удобная и функциональная CRM система для Вашей автошколы
+                                        </h4>
+                                        <p class="join-slide__text">
+                                            Предоставляем вам удобную CRM для автоматизации бизнес процессов для вашей
+                                            автошколы.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="join-swiper__slide join-slide swiper-slide">
+                                    <div class="join-slide__inner">
+                                        <div class="join-slide__img">
+                                            <img class="join-slide__img-image" src="images/join-img.png" alt="img">
+                                        </div>
+                                        <h4 class="join-slide__title">
+                                            Удобная и функциональная CRM система для Вашей автошколы
+                                        </h4>
+                                        <p class="join-slide__text">
+                                            Предоставляем вам удобную CRM для автоматизации бизнес процессов для вашей
+                                            автошколы.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="join-swiper__slide join-slide swiper-slide">
+                                    <div class="join-slide__inner">
+                                        <div class="join-slide__img">
+                                            <img class="join-slide__img-image" src="images/join-img.png" alt="img">
+                                        </div>
+                                        <h4 class="join-slide__title">
+                                            Удобная и функциональная CRM система для Вашей автошколы
+                                        </h4>
+                                        <p class="join-slide__text">
+                                            Предоставляем вам удобную CRM для автоматизации бизнес процессов для вашей
+                                            автошколы.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="join-swiper__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo-img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            Ми беремо дані з Головний сервісний центр МВС України, в нашому каталозі тільки ті школи,
+                            які акредитовані в МВС.
+                        </p>
+                    </div>
+                    <nav class="footer__nav footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Користувачевю
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--acitve">
+                                <a class="footer-nav__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Автошколи
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструктори
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Автошколі
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Співпраця
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Інструкція
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Верифікація
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <h3 class="footer-nav__list-title">
+                                    Студенту
+                                </h3>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Кондентифікація
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a class="footer-nav__list-link" href="#">
+                                    Практичні заняття
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-nav__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="  icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__info footer-info">
+                        <div class="footer-info__socials footer-info-socials">
+                            <h3 class="footer-info-socials__title">
+                                Ми у соцмережах
+                            </h3>
+                            <ul class="footer-info-socials__list">
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tg">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-wc">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-vb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-fb">
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-info-socials__list-item">
+                                    <a class="footer-info-socials__list-link" href="#">
+                                        <span class="icon-ic-mess-tw">
+
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-info__support footer-info-support">
+                            <h3 class="footer-info-support__title">
+                                Служба підтримки
+                            </h3>
+                            <div class="footer-info-support__wrapper">
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З загальних питань
+                                    </p>
+                                    <a class="footer-info-support__box-link" href="mailto:support@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            support@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="footer-info-support__box">
+                                    <p class="footer-info-support__box-text">
+                                        З питань співробітництва
+                                    </p>
+                                    <a class="footer-info-support__box-link"
+                                        href="mailto:cooperation@drive-schools.com">
+                                        <span class="icon-ic-email">
+
+                                        </span>
+                                        <span>
+                                            cooperation@drive-schools.com
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-copy">
+                        16+ © Всі права захищені. 2019-2023 drive-schools.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="main__search-popup search-popup" id="search-popup"
+                style="background-image: url(images/search-result-bg.png);">
+                <h2 class="search-popup__title">
+                    Поиск автошкол
+                </h2>
+                <form class="search-popup__form search-form" action="#">
+                    <div class="search-form__inner">
+                        <button class="search-form__btn icon-ic-search" type="submit">
+                        </button>
+                        <input class="search-form__input" placeholder="Пошук автошкіл...">
+                        <div class="search-form__box">
+                            <span class="icon-ic-location">
+
+                            </span>
+                            <div class="search-form__box-select custom-select">
+                                <select>
+                                    <option value="0">По області</option>
+                                    <option value="1">Київська область</option>
+                                    <option value="2">Чернівецька область</option>
+                                    <option value="3">Житомирська область</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="search-form__button" type="submit">
+                        Шукати
+                    </button>
+                </form>
+                <p class="search-popup__text">
+                    Например:
+                    <a href="#" class="search-popup__text-link">АктивДрайв</a>
+                </p>
+            </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
