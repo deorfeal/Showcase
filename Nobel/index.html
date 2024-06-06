@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="big-wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner" data-aos="fade-down">
+                    <a href="#" class="header__logo logo">
+                        <img src="images/logo.svg" alt="logo" class="logo__img">
+                        <img src="images/logo-white.svg" alt="logo" class="logo__img logo__img--white">
+                    </a>
+                    <div class="header__wrapper">
+                        <img class="header__bg" src="images/mobile-menu-bg.svg" alt="bg" data-aos="fade">
+                        <div class="header__close close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                                fill="none">
+                                <path
+                                    d="M6.83668 6.83671C7.0789 6.59456 7.40738 6.45853 7.74989 6.45853C8.09239 6.45853 8.42087 6.59456 8.66309 6.83671L15.4999 13.6735L22.3367 6.83671C22.4558 6.71335 22.5984 6.61494 22.7559 6.54725C22.9135 6.47955 23.083 6.44392 23.2545 6.44243C23.426 6.44094 23.5961 6.47362 23.7549 6.53857C23.9136 6.60351 24.0578 6.69942 24.1791 6.8207C24.3004 6.94198 24.3963 7.0862 24.4612 7.24494C24.5262 7.40368 24.5589 7.57377 24.5574 7.74527C24.5559 7.91678 24.5203 8.08627 24.4526 8.24386C24.3849 8.40145 24.2865 8.54398 24.1631 8.66313L17.3263 15.4999L24.1631 22.3367C24.3984 22.5803 24.5286 22.9066 24.5256 23.2453C24.5227 23.5839 24.3868 23.9079 24.1474 24.1474C23.9079 24.3869 23.5839 24.5227 23.2452 24.5257C22.9066 24.5286 22.5803 24.3984 22.3367 24.1631L15.4999 17.3263L8.66309 24.1631C8.41948 24.3984 8.09321 24.5286 7.75453 24.5257C7.41586 24.5227 7.0919 24.3869 6.85241 24.1474C6.61293 23.9079 6.47708 23.5839 6.47414 23.2453C6.4712 22.9066 6.60139 22.5803 6.83668 22.3367L13.6735 15.4999L6.83668 8.66313C6.59453 8.42091 6.4585 8.09243 6.4585 7.74992C6.4585 7.40742 6.59453 7.07894 6.83668 6.83671Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <nav class="header__navigation navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Что мы предлагаем?
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item navigation__list-item--dropdown">
+                                    <div class="navigation__list-dropdown dropdown">
+                                        <div class="dropdown__text">
+                                            <span>
+                                                Другие услуги
+                                                <span>:</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"
+                                                viewBox="0 0 11 7" fill="none">
+                                                <path
+                                                    d="M6.01883 5.97886L10.6019 1.38772C10.6779 1.31231 10.7382 1.2226 10.7794 1.12375C10.8206 1.0249 10.8418 0.918881 10.8418 0.811799C10.8418 0.704717 10.8206 0.598694 10.7794 0.499847C10.7382 0.401 10.6779 0.311286 10.6019 0.235878C10.4499 0.0847995 10.2443 -2.61179e-08 10.03 -3.54851e-08C9.8157 -4.48522e-08 9.61011 0.0847994 9.45813 0.235878L5.40235 4.2511L1.38713 0.235878C1.23515 0.0847991 1.02955 -4.28907e-07 0.81526 -4.38274e-07C0.600963 -4.47641e-07 0.395375 0.084799 0.243395 0.235878C0.166751 0.311003 0.105776 0.400591 0.0640036 0.499451C0.0222317 0.59831 0.000494619 0.704477 4.92481e-05 0.811798C0.000494609 0.91912 0.0222317 1.02529 0.0640036 1.12415C0.105775 1.22301 0.166751 1.31259 0.243394 1.38772L4.82643 5.97886C4.90238 6.0612 4.99457 6.12691 5.09719 6.17185C5.1998 6.2168 5.3106 6.24 5.42263 6.24C5.53465 6.24 5.64546 6.2168 5.74807 6.17185C5.85068 6.12691 5.94287 6.0612 6.01883 5.97886Z"
+                                                    fill="#0075B6" />
+                                            </svg>
+                                        </div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Продвижение мобильных приложений
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Разработка мобильных приложений
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    SEO и Контекстная реклама
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Разработка веб-сайтов
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    SEO продвижение веб-сайтов
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="header__btn btn">Оставить заявку</a>
+                    <div class="header__burger burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M6 10H26" stroke="#050822" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M6 24H26" stroke="#050822" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M6 17H17.8182" stroke="#050822" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <main class="main">
+                <section class="heading">
+                    <div class="container">
+                        <div class="heading__inner">
+                            <div class="heading__box">
+                                <div class="heading__titling">
+                                    <h1 class="heading__titling-title" data-aos="fade-right">
+                                        <span>SMM</span><br>Social media marketing
+                                    </h1>
+                                    <p class="heading__titling-text text" data-aos="fade-right"
+                                        data-aos-duration="1000">
+                                        Комплексные услуги по СММ маркетингу - разработка стратегии, ведение страниц в
+                                        социальных сетях, таргетированная реклама, настройка систем аналитики.
+                                    </p>
+                                </div>
+                                <div class="heading__wrap" data-aos="fade-right" data-aos-duration="1250">
+                                    <a href="#" class="heading__button btn">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="heading__img" data-aos="zoom-out">
+                                <img src="images/heading-img.png" alt="img"
+                                    class="heading__img-image heading__img-image--dekstop">
+                                <img class="heading__img-image heading__img-image--mobile" alt="img"
+                                    src="images/heading-mobile.svg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="clients">
+                    <div class="container">
+                        <div class="clients__inner">
+                            <div class="clients__titling">
+                                <h2 class="clients__titling-title title" data-aos="fade-right">
+                                    Клиенты маркетингового агентства “Нобель”
+                                </h2>
+                                <p class="clients__titling-text text" data-aos="fade-right">
+                                    За 14 лет работы мы помогли сотням компаниям из разных сфер бизнеса. От стартапов до
+                                    гос. корпораций и нац. компаний.
+                                </p>
+                            </div>
+                            <div class="clients__box">
+                                <ul class="clients__list">
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-1.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-2.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-3.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-4.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-5.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-6.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-7.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                    <li class="clients__list-item" data-aos="zoom-out">
+                                        <a href="#" class="clients__list-link">
+                                            <img src="images/clients-8.png" alt="img" class="clients__list-link__img">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tasks">
+                    <div class="big-container">
+                        <div class="tasks__inner">
+                            <img src="images/tasks__bg.svg" alt="bg" class="tasks__bg" data-aos="fade-down">
+                            <div class="container">
+                                <div class="tasks__titling">
+                                    <h2 class="tasks__titling-title title" data-aos="fade-right">
+                                        Задачи, которые Мы сможем решить <span>для вашего бизнеса:</span>
+                                    </h2>
+                                </div>
+                                <ol class="tasks__list">
+                                    <li class="tasks__list-item tasks-item" data-aos="zoom-out">
+                                        <div class="tasks-item__number">
+                                            01
+                                        </div>
+                                        <p class="tasks-item__text">
+                                            Мощный, прогнозируемый источник продаж
+                                        </p>
+                                    </li>
+                                    <li class="tasks__list-item tasks-item" data-aos="zoom-out">
+                                        <div class="tasks-item__number">
+                                            02
+                                        </div>
+                                        <p class="tasks-item__text">
+                                            Рост узнаваемости и популярности бренда
+                                        </p>
+                                    </li>
+                                    <li class="tasks__list-item tasks-item" data-aos="zoom-out">
+                                        <div class="tasks-item__number">
+                                            03
+                                        </div>
+                                        <p class="tasks-item__text">
+                                            Оцифровка и анализ воронки продаж
+                                        </p>
+                                    </li>
+                                    <li class="tasks__list-item tasks-item" data-aos="zoom-out">
+                                        <div class="tasks-item__number">
+                                            04
+                                        </div>
+                                        <p class="tasks-item__text">
+                                            Продвижение мобильного приложения, рост установок
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="social">
+                    <div class="container">
+                        <div class="social__inner">
+                            <div class="social__titling">
+                                <h2 class="social__titling-title title" data-aos="fade-right">
+                                    Кому подойдёт продвижение в социальных сетях?
+                                </h2>
+                            </div>
+                            <div class="social__wrapper">
+                                <div class="social__item">
+                                    <div class="social__item-img" data-aos="zoom-out">
+                                        <img src="images/social-1.svg" alt="img" class="social__item-img__image">
+                                    </div>
+                                    <div class="social__box" data-aos="fade-up">
+                                        <div class="social__item-title">
+                                            Интернет <br>магазины
+                                        </div>
+                                        <p class="social__item-text">
+                                            Тонкая аналитика, AB тестирование и динамические объявления - это то, что
+                                            используют ваши конкуренты. Мы поможем оцифровать воронку и привлекать
+                                            качественный целевой трафик в ваш интернет-магазин.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="social__item">
+                                    <div class="social__item-img" data-aos="zoom-out">
+                                        <img src="images/social-2.svg" alt="img" class="social__item-img__image">
+                                    </div>
+                                    <div class="social__box" data-aos="fade-up">
+                                        <div class="social__item-title">
+                                            Стартап
+                                        </div>
+                                        <p class="social__item-text">
+                                            К нам часто обращаются стартаперы для раскрутки мобильных приложений и игр.
+                                            Социальные сети - это именно тот инструмент, который позволяет очень быстро
+                                            протестировать гипотезы и проверить свой стартап в бою.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="social__item">
+                                    <div class="social__item-img" data-aos="zoom-out">
+                                        <img src="images/social-3.svg" alt="img" class="social__item-img__image">
+                                    </div>
+                                    <div class="social__box" data-aos="fade-up">
+                                        <div class="social__item-title">
+                                            Сфера услуг
+                                        </div>
+                                        <p class="social__item-text">
+                                            Чем бы вы не занимались, если вы оказываете услуги населению - то
+                                            продвижение в
+                                            соц.сетях для вас лучшее решение. Мы успешно работаем с детскими садами,
+                                            саунами, туристическими и консалтинговыми компаниями. С удовольствием
+                                            поделимся
+                                            кейсами и опытом.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="social__item">
+                                    <div class="social__item-img" data-aos="zoom-out">
+                                        <img src="images/social-4.svg" alt="img" class="social__item-img__image">
+                                    </div>
+                                    <div class="social__box" data-aos="fade-up">
+                                        <div class="social__item-title">
+                                            HoReCa
+                                        </div>
+                                        <p class="social__item-text">
+                                            Кафе и гостиницы - наши самые преданные клиенты. С некоторыми компаниями мы
+                                            работаем более 5 лет. <br><br> Знаем специфику рынка и потребности их
+                                            клиентов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="offers">
+                    <div class="big-container">
+                        <div class="offers__inner">
+                            <img src="images/offers__bg.svg" alt="bg" class="offers__bg" data-aos="fade-left">
+                            <div class="container">
+                                <div class="offers__titling">
+                                    <h2 class="offers__titling-title title" data-aos="fade-right">
+                                        Что мы предлагаем?
+                                    </h2>
+                                </div>
+                                <ul class="offers__list offers-list" data-aos="fade-down">
+                                    <li class="offers-list__item offers-item offers-item--active" id="0">
+                                        <div class="offers-item__wrapper" >
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Аудит соцсетей
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Проанализируем контент (оценим содержание постов, частоту
+                                                            публикаций и тональность* коммуникации);
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Проанализируем визуальную составляющую;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Измерим вовлеченность аудитории;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Выявим существующие ошибки ведения соцсетей и подготовим
+                                                            рекомендации по их исправлению.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p class="offers-item__text">
+                                                    * Тональность (Tone of Voice) компании отражает индивидуальность и
+                                                    ценности бренда, а также включает в себя слова, интонации,
+                                                    профессиональную терминологию.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images offers-item__images--active" id="0"
+                                            data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-1.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="offers-list__item offers-item" id="1">
+                                        <div class="offers-item__wrapper" >
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Анализ конкурентов
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Определим список конкурентных сообществ;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Измерим вовлеченность аудитории конкурентов и сопоставим с
+                                                            вашей;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Оценим контентную и визуальную составляющие конкурентных
+                                                            страниц;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Определим вашу позицию на рынке, позицию конкурентов и
+                                                            выявим точки роста.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images" id="1" data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-2.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="offers-list__item offers-item" id="2">
+                                        <div class="offers-item__wrapper">
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Контент-план
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Определим виды (продающий, вовлекающий, вирусный,
+                                                            репутационный, экспертный и т.д.) и подберем типы (статьи,
+                                                            акции, новости рынка и компании, инфографика, шпаргалки и
+                                                            инструкции и т.д.) контента, которые подходят вашему
+                                                            бизнесу.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Подберем подходящий Tone of Voice (голос бренда).
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Составим рубрикатор публикаций (подберем 4–7 рубрик,
+                                                            опираясь на боли целевой аудитории. Каждая рубрика будет
+                                                            отвечать за свою цель: продавать, информировать или
+                                                            развлекать).
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Составим график публикации постов.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images" id="2" data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-3.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="offers-list__item offers-item" id="3">
+                                        <div class="offers-item__wrapper" >
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Ведение соцсетей
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Наполним аккаунты контентом и визуальной составляющей
+                                                            частота публикаций зависит от выбранного тарифа. В среднем
+                                                            это 120 публикаций в месяц (Посты + Reels + Stories).
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Будем отслеживать упоминания бренда в соцсетях, которые
+                                                            ведем, и реагировать на них. Мы будем отвечать на все
+                                                            комментарии, кроме тех, которые требуют ответа от менеджера
+                                                            по продажам.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Внедрим интерактивный контент (от разработки механики
+                                                            конкурсов до способа определения победителя). Баннеры, призы
+                                                            и их доставка — на стороне клиента
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images" id="3" data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-4.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="offers-list__item offers-item" id="4">
+                                        <div class="offers-item__wrapper" >
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Запуск таргетированной рекламы
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <p class="offers-item__text">
+                                                    Стоимость таргетированной рекламы оплачивается дополнительно: на
+                                                    основе рекламного бюджета по медиаплану и комиссии агентства.
+                                                </p>
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Создаем рекламный кабинет (если он отсутствует);
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Пробрасываем сквозную аналитику для сбора и анализа
+                                                            эффективности рекламных кампаний, расчет ROI, стоимости
+                                                            лида;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Задаем параметры аудитории (пол, возраст, геолокация,
+                                                            профессии, интересы);
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Подбираем правильные плейсменты — места, где будет
+                                                            отображаться ваша реклама;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Устанавливаем бюджет, график показа рекламы и срок действия
+                                                            рекламной кампании;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Готовим баннеры, reels, stories для рекламы в соцсетях;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Запускаем различные рекламные кампании, в том числе look
+                                                            alike, по интересам, по пикселю, по подписчикам, по
+                                                            конкурентам. Отслеживаем их эффективность, AB тестом
+                                                            выявляем “лидера” и концентрируемся на нем;
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Предоставляем ежемесячную отчетность.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images" id="4" data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-5.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="offers-list__item offers-item" id="5" >
+                                        <div class="offers-item__wrapper">
+                                            <div class="offers-item__line">
+                                                <span></span>
+                                            </div>
+                                            <h4 class="offers-item__title">
+                                                Реклама у блогеров
+                                            </h4>
+                                            <div class="offers-item__inner">
+                                                <ul class="offers-item__list">
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Составим список лидеров мнений в вашей тематике.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Свяжемся с каждым блогером лично и узнаем условия
+                                                            сотрудничества (плейсмент, стоимость и способ оплаты
+                                                            рекламного поста).
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Согласуем с вами площадки и форматы, в которых будем
+                                                            размещать рекламу. Мы будем основываться на соотношении
+                                                            количества подписчиков к стоимости публикации, а также ER*.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Подготовим текст (готовый баннер или фото предоставляет
+                                                            клиент), согласуем дату размещения.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Проконтролируем своевременную публикацию рекламного поста.
+                                                        </p>
+                                                    </li>
+                                                    <li class="offers-item__list-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                            viewBox="0 0 24 25" fill="none">
+                                                            <rect y="0.5" width="24" height="24" rx="4"
+                                                                fill="#0075B6" />
+                                                            <path
+                                                                d="M10.1575 16.9C9.82719 16.9001 9.51047 16.7689 9.27711 16.5351L6.61521 13.8742C6.32878 13.5877 6.32878 13.1233 6.61521 12.8368C6.90172 12.5503 7.36615 12.5503 7.65266 12.8368L10.1575 15.3416L16.7843 8.71482C17.0709 8.42839 17.5353 8.42839 17.8218 8.71482C18.1082 9.00132 18.1082 9.46574 17.8218 9.7523L11.038 16.5351C10.8046 16.7689 10.4878 16.9001 10.1575 16.9Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                        <p class="offers-item__list-text">
+                                                            Предоставим отчет по рекламной кампании у блогеров.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p class="offers-item__text">
+                                                    * Engagement rate — это соотношение числа подписчиков, которые
+                                                    увидели публикацию, к общему количеству подписчиков.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="offers-item__images" id="5" data-aos="zoom-in">
+                                            <img class="offers-item__images-img" src="images/offers-img-6.png"
+                                                alt="img">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="application">
+                    <div class="container">
+                        <div class="application__inner">
+                            <div class="application__img" data-aos="zoom-out">
+                                <img src="images/application-bg.png" alt="img"
+                                    class="application__img-image application__img-image--dekstop">
+                                <img class="application__img-image application__img-image--mobile" alt="img"
+                                    src="images/application-mobile.svg">
+                            </div>
+                            <div class="application__titling">
+                                <h2 class="application__titling-title title" data-aos="fade-down">
+                                    Оставьте заявку на обсуждение вашего проекта
+                                </h2>
+                            </div>
+                            <form class="application__form application-form" action="#">
+                                <div class="application-form__inner">
+                                    <div class="application-form__box application-box" data-aos="zoom-out">
+                                        <label for="" class="application-box__label">Имя</label>
+                                        <input placeholder="Введите имя" type="text" class="application-box__input">
+                                    </div>
+                                    <div class="application-form__box application-box" data-aos="zoom-out">
+                                        <label for="" class="application-box__label">Ссылка на сайт или соц.
+                                            сеть</label>
+                                        <input placeholder="Введите адрес" type="text" class="application-box__input">
+                                    </div>
+                                    <div class="application-form__box application-box" data-aos="zoom-out">
+                                        <label for="" class="application-box__label">Номер телефон</label>
+                                        <input placeholder="Введите номер телефона" type="text"
+                                            class="application-box__input">
+                                    </div>
+                                </div>
+                                <div class="application-form__wrap" data-aos="fade-up">
+                                    <button class="application-form__btn btn" type="submit">Оставить заявку</button>
+                                </div>
+                            </form>
+                            <img src="images/application-mobile.svg" alt="bg" class="application__img-mobile">
+                        </div>
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="container">
+                        <div class="description__titling">
+                            <h2 class="description__titling-title title" data-aos="fade-right">
+                                Что дает <span>Social media marketing?</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <section class="about about--first">
+                        <div class="big-container">
+                            <div class="about__inner">
+                                <div class="container">
+                                    <div class="about__box">
+                                        <div class="about__titling">
+                                            <h3 class="about__titling-title" data-aos="fade-right">
+                                                Широкий охват
+                                            </h3>
+                                            <p class="about__titling-text text" data-aos="fade-right">
+                                                77% жителей <span>Казахстана</span> являются пользователями интернета.
+                                                Соц.сети — самый
+                                                популярный вид общения.
+                                            </p>
+                                        </div>
+                                        <div class="about__img" data-aos="zoom-out">
+                                            <img src="images/about-1.png" alt="img" class="about__img-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about about--second">
+                        <div class="big-container">
+                            <div class="about__inner">
+                                <div class="container">
+                                    <div class="about__box">
+                                        <div class="about__img" data-aos="zoom-out">
+                                            <img src="images/about-2.png" alt="img" class="about__img-image">
+                                        </div>
+                                        <div class="about__titling">
+                                            <h3 class="about__titling-title" data-aos="fade-right">
+                                                Быстрый отклик
+                                            </h3>
+                                            <p class="about__titling-text text" data-aos="fade-right">
+                                                Аудитория реагирует моментально. Cоответственно, так же мы видим
+                                                результат и адаптируем стратегию.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about about--third">
+                        <div class="big-container">
+                            <div class="about__inner">
+                                <div class="container">
+                                    <div class="about__box">
+                                        <div class="about__titling">
+                                            <h3 class="about__titling-title" data-aos="fade-right">
+                                                Быстрый и удобный контакт
+                                            </h3>
+                                            <p class="about__titling-text text" data-aos="fade-right">
+                                                Любой пользователь сети — ваш потенциальный клиент. Соцсети позволяют
+                                                максимально быстро донести свой месседж до широких масс, рассказать о
+                                                скидках и спец. предложениях, а также получить обратную связь и
+                                                аналитику.и
+                                            </p>
+                                        </div>
+                                        <div class="about__img" data-aos="zoom-out">
+                                            <img src="images/about-3.png" alt="img" class="about__img-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about about--fourth">
+                        <div class="big-container">
+                            <div class="about__inner">
+                                <div class="container">
+                                    <div class="about__box">
+                                        <div class="about__img" data-aos="zoom-out">
+                                            <img src="images/about-4.png" alt="img" class="about__img-image">
+                                        </div>
+                                        <div class="about__titling">
+                                            <h3 class="about__titling-title" data-aos="fade-right">
+                                                Высокоэффективная реклама
+                                            </h3>
+                                            <p class="about__titling-text text" data-aos="fade-right">
+                                                Гибкие настройки аудитории, адекватные цены. Возможность запуска без
+                                                наличия
+                                                сайта.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="partners">
+                    <div class="partners__inner">
+                        <div class="container">
+                            <div class="partners__titling">
+                                <h2 class="partners__titling-title" data-aos="fade-right">
+                                    Аккредитованные партнеры
+                                </h2>
+                                <div class="partners__titling-box arrows-box">
+                                    <div class="arrows-box__arrow swiper-arrow swiper-arrow--prev partners--prev">
+                                        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M9.40772 10.0004L12.3577 7.05041C12.5129 6.89427 12.6001 6.68306 12.6001 6.46291C12.6001 6.24275 12.5129 6.03154 12.3577 5.87541C12.2802 5.7973 12.1881 5.73531 12.0865 5.693C11.985 5.65069 11.8761 5.62891 11.7661 5.62891C11.6561 5.62891 11.5471 5.65069 11.4456 5.693C11.344 5.73531 11.2518 5.7973 11.1744 5.87541L7.64103 9.4087C7.56292 9.4862 7.50092 9.57836 7.45861 9.67995C7.41631 9.78145 7.39453 9.89036 7.39453 10.0004C7.39453 10.1104 7.41631 10.2194 7.45861 10.3209C7.50092 10.4224 7.56292 10.5146 7.64103 10.592L11.1744 14.167C11.2522 14.2443 11.3446 14.3054 11.4461 14.3469C11.5476 14.3884 11.6564 14.4094 11.7661 14.4087C11.8757 14.4094 11.9844 14.3884 12.086 14.3469C12.1875 14.3054 12.2798 14.2443 12.3577 14.167C12.5129 14.0109 12.6001 13.7997 12.6001 13.5795C12.6001 13.3594 12.5129 13.1482 12.3577 12.992L9.40772 10.0004Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="arrows-box__arrow swiper-arrow swiper-arrow--next partners--next">
+                                        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M12.3574 9.4087L8.82406 5.87541C8.74665 5.7973 8.65448 5.73531 8.5529 5.693C8.4514 5.65069 8.34248 5.62891 8.23243 5.62891C8.12242 5.62891 8.0135 5.65069 7.91195 5.693C7.8104 5.73531 7.71824 5.7973 7.64076 5.87541C7.48555 6.03154 7.39844 6.24275 7.39844 6.46291C7.39844 6.68306 7.48555 6.89427 7.64076 7.05041L10.5907 10.0004L7.64076 12.9504C7.48555 13.1065 7.39844 13.3178 7.39844 13.5379C7.39844 13.758 7.48555 13.9693 7.64076 14.1254C7.71863 14.2026 7.81098 14.2638 7.91251 14.3052C8.01404 14.3467 8.12276 14.3677 8.23243 14.367C8.34206 14.3677 8.45081 14.3467 8.55231 14.3052C8.6539 14.2638 8.74623 14.2026 8.82406 14.1254L12.3574 10.592C12.4356 10.5146 12.4976 10.4224 12.5398 10.3209C12.5821 10.2194 12.6039 10.1104 12.6039 10.0004C12.6039 9.89036 12.5821 9.78145 12.5398 9.67995C12.4976 9.57836 12.4356 9.4862 12.3574 9.4087Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-container">
+                            <div class="partners__swiper partners-swiper swiper" data-aos="zoom-out">
+                                <div class="swiper-wrapper">
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-1.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-1.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-2.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-2.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-3.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-3.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-4.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-4.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-5.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-5.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-1.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-1.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-2.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-2.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-3.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-3.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-4.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-4.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <a data-fancybox="gallery" href="images/partners-5.png"
+                                            class="partners-slide__item">
+                                            <img src="images/partners-5.png" alt="img" class="partners-slide__item-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recalls">
+                    <div class="recalls__inner">
+                        <div class="container">
+                            <div class="recalls__titling">
+                                <h2 class="recalls__titling-title" data-aos="fade-right">
+                                    14 лет на рынке маркетинговых услуг и вот что о нас говорят:
+                                </h2>
+                                <div class="recalls__titling-box arrows-box">
+                                    <div class="arrows-box__arrow swiper-arrow swiper-arrow--prev recalls--prev">
+                                        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M9.40772 10.0004L12.3577 7.05041C12.5129 6.89427 12.6001 6.68306 12.6001 6.46291C12.6001 6.24275 12.5129 6.03154 12.3577 5.87541C12.2802 5.7973 12.1881 5.73531 12.0865 5.693C11.985 5.65069 11.8761 5.62891 11.7661 5.62891C11.6561 5.62891 11.5471 5.65069 11.4456 5.693C11.344 5.73531 11.2518 5.7973 11.1744 5.87541L7.64103 9.4087C7.56292 9.4862 7.50092 9.57836 7.45861 9.67995C7.41631 9.78145 7.39453 9.89036 7.39453 10.0004C7.39453 10.1104 7.41631 10.2194 7.45861 10.3209C7.50092 10.4224 7.56292 10.5146 7.64103 10.592L11.1744 14.167C11.2522 14.2443 11.3446 14.3054 11.4461 14.3469C11.5476 14.3884 11.6564 14.4094 11.7661 14.4087C11.8757 14.4094 11.9844 14.3884 12.086 14.3469C12.1875 14.3054 12.2798 14.2443 12.3577 14.167C12.5129 14.0109 12.6001 13.7997 12.6001 13.5795C12.6001 13.3594 12.5129 13.1482 12.3577 12.992L9.40772 10.0004Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="arrows-box__arrow swiper-arrow swiper-arrow--next recalls--next">
+                                        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M12.3574 9.4087L8.82406 5.87541C8.74665 5.7973 8.65448 5.73531 8.5529 5.693C8.4514 5.65069 8.34248 5.62891 8.23243 5.62891C8.12242 5.62891 8.0135 5.65069 7.91195 5.693C7.8104 5.73531 7.71824 5.7973 7.64076 5.87541C7.48555 6.03154 7.39844 6.24275 7.39844 6.46291C7.39844 6.68306 7.48555 6.89427 7.64076 7.05041L10.5907 10.0004L7.64076 12.9504C7.48555 13.1065 7.39844 13.3178 7.39844 13.5379C7.39844 13.758 7.48555 13.9693 7.64076 14.1254C7.71863 14.2026 7.81098 14.2638 7.91251 14.3052C8.01404 14.3467 8.12276 14.3677 8.23243 14.367C8.34206 14.3677 8.45081 14.3467 8.55231 14.3052C8.6539 14.2638 8.74623 14.2026 8.82406 14.1254L12.3574 10.592C12.4356 10.5146 12.4976 10.4224 12.5398 10.3209C12.5821 10.2194 12.6039 10.1104 12.6039 10.0004C12.6039 9.89036 12.5821 9.78145 12.5398 9.67995C12.4976 9.57836 12.4356 9.4862 12.3574 9.4087Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-container">
+                            <div class="recalls__swiper recalls-swiper swiper" data-aos="zoom-out">
+                                <div class="swiper-wrapper">
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__wrapping recalls-wrapping">
+                                            <div class="recalls-wrapping__img">
+                                                <img src="images/recalls-img.png" alt="img"
+                                                    class="recalls-wrapping__img-image">
+                                            </div>
+                                            <div class="recalls-wrapping__titling">
+                                                <h5 class="recalls-wrapping__titling-title">
+                                                    Arman Yerkinbayev
+                                                </h5>
+                                                <p class="recalls-wrapping__titling-subtitle">
+                                                    CEO SKJ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus,
+                                            massa non ultricies tempus, odio augue lobortis elit, non cursus libero
+                                            Lorem ipsum dolor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="discussion">
+                    <div class="big-container">
+                        <div class="discussion__inner">
+                            <img class="discussion__bg" src="images/discussion-bg.svg" alt="bg" data-aos="fade-down">
+                            <div class="container">
+                                <div class="discussion__wrapper">
+                                    <div class="discussion__titling">
+                                        <h2 class="discussion__titling-title" data-aos="fade-right">
+                                            Обсудить продвижение
+                                        </h2>
+                                        <p class="discussion__titling-text" data-aos="fade-right">
+                                            С 2010 года мы помогаем маленьким и большим компаниям повышать продажи и
+                                            прибыль
+                                            с помощью эффективных инструментов интернет-маркетинга.
+                                        </p>
+                                        <p class="discussion__titling-text" data-aos="fade-right">
+                                            Наша цель - настроить вам такую рекламу, которая будет генерировать
+                                            нескончаемый, контролируемый поток новых клиентов.
+                                        </p>
+                                        <p class="discussion__titling-text" data-aos="fade-right">
+                                            Оставляйте заявку и наши специалисты подготовят для вас стратегию
+                                            продвижения.
+                                        </p>
+                                    </div>
+                                    <form action="#" class="discussion__form discussion-form">
+                                        <div class="discussion-form__inner">
+                                            <div class="discussion-form__box discussion-box" data-aos="zoom-out">
+                                                <label for="" class="discussion-box__label">Имя</label>
+                                                <input placeholder="Введите имя" type="text"
+                                                    class="discussion-box__input">
+                                            </div>
+                                            <div class="discussion-form__box discussion-box" data-aos="zoom-out">
+                                                <label for="" class="discussion-box__label">Ссылка на сайт или соц.
+                                                    сеть</label>
+                                                <input placeholder="Введите адрес" type="text"
+                                                    class="discussion-box__input">
+                                            </div>
+                                            <div class="discussion-form__box discussion-box" data-aos="zoom-out">
+                                                <label for="" class="discussion-box__label">Номер телефона</label>
+                                                <input placeholder="Введите номер телефона" type="text"
+                                                    class="discussion-box__input">
+                                            </div>
+                                            <div class="discussion-form__box discussion-box" data-aos="zoom-out">
+                                                <label for="" class="discussion-box__label">Комментарий</label>
+                                                <textarea name="" id="" cols="30" rows="10"
+                                                    class="discussion-box__textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="iscussion-form__wrap" data-aos="zoom-out">
+                                            <button type="submit" class="discussion-form__btn btn">Отправить
+                                                заявку</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a class="arrow-up" href="#header">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="29.5" transform="rotate(-90 30 30)" fill="white" stroke="#0075B6" />
+                        <path d="M31 35L29 35L29 25L31 25L31 35Z" fill="#0075B6" />
+                        <path d="M24 31L30.5 24.5" stroke="#0075B6" stroke-width="2" />
+                        <path d="M36 31L29.5 24.5" stroke="#0075B6" stroke-width="2" />
+                    </svg>
+                </a>
+            </main>
+            <footer class="footer" data-aos="fade">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__wrap">
+                            <a href="#" class="footer__logo">
+                                <img src="images/logo.svg" alt="logo" class="footer__logo-img">
+                            </a>
+                            <p class="footer__text">
+                                2010-2024 © ТОО “Инженерная Компания “Нобель”.
+                            </p>
+                            <p class="footer__text">
+                                Делаем сайты и интернет рекламу с 2010 года!
+                            </p>
+                        </div>
+                        <div class="footer__wrapping">
+                            <nav class="footer__navigation">
+                                <ul class="footer__navigation-list footer-list">
+                                    <li class="footer-list__item">
+                                        <a href="#" class="footer-list__link">Главная</a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="#" class="footer-list__link">Что мы предлагаем?</a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="#" class="footer-list__link">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer__adress">
+                                <div class="footer__adress-title">
+                                    адрес:
+                                </div>
+                                <div class="footer__adress-box">
+                                    <p class="footer__adress-street">
+                                        г. Астана, ул. Алматы, д.1
+                                    </p>
+                                    <p class="footer__adress-street">
+                                        БЦ Асылтау, оф. 803
+                                    </p>
+                                    <a href="tel:+77782707779" class="footer__adress-tel">+7 778 2707779</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
