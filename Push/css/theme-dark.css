@@ -1,0 +1,18 @@
+/* Цветовая схема */
+:root{
+	--u-menu-theme-color: #FF5722;
+  --u-menu-theme-color-active: #e83800;
+	--u-menu-theme-text-color: #fff;
+  --u-menu-theme-border-color: #ff6e41;
+
+	--u-highlight-color: #ff669a;
+	--u-highlight-color-active: #f53e7c;
+	--u-highlight-border-color: #ff88b1;
+	--u-highlight-text-color: #fff;
+
+  --u-menu-body-color: #090f21;
+  --u-menu-text-color: #e4e4e4;
+  --u-menu-text-color-dark: #ffffff;
+  --u-menu-border-color: #1c233a;
+  --u-menu-active-color: #050a17;
+}
