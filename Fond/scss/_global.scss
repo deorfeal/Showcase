@@ -1,0 +1,78 @@
+html,
+body {
+	height: 100%;
+	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+	font-weight: 500;
+	background: #ededed;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.big-container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 13px;
+	background: #2029ff;
+	border: 1px solid transparent;
+	box-shadow: inset 0px 4px 10px rgba(32, 32, 32, 0.25);
+	border-radius: 10px;
+	min-width: 210px;
+	max-width: 210px;
+	transition: background 0.3s, border 0.3s, color 0.3s;
+	&:hover {
+		background: transparent;
+		color: #2029ff;
+		border: 1px solid #2029ff;
+	}
+}
+
+.dreadcrumbs {
+	display: flex;
+	align-items: center;
+	color: #000;
+	flex-wrap: wrap;
+	gap: 3px;
+	&__link {
+		font-size: 14px;
+		line-height: 17px;
+		color: #2594fb;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 17px;
+		color: #000;
+	}
+}
