@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__entrance entrance">
+                <div class="container">
+                    <div class="entrance__inner">
+                        <a class="entrance__logo logo" href="#">
+                            <img class="logo__img" src="images/white-logo.svg" alt="logo">
+                        </a>
+                        <div class="entrance__top">
+                            <h1 class="entrance__top-title">
+                                Регистрация
+                            </h1>
+                            <a class="entrance__top-link" href="#">
+                                Войти
+                            </a>
+                        </div>
+                        <form class="entrance__form entrance-form" action="#">
+                            <div class="entrance-form__box entrance-form__box--tel">
+                                <input class="entrance-form__box-input entrance-form__box-input--tel" type="text" placeholder="Ваш номер телефона" required>
+                                <p class="entrance-form__box-text">
+                                    Поле не может быть пустым
+                                </p>
+                            </div>
+                            <div class="entrance-form__box entrance-form__box--date">
+                                <input class="entrance-form__box-input entrance-form__box-input--date" type="text" id="birthdayInput" placeholder="Дата рождения" required>
+                                <p class="entrance-form__box-text">
+                                    Поле не может быть пустым
+                                </p>
+                            </div>
+                            <div class="entrance-form__button">
+                                <button class="entrance-form__button-btn btn--green" type="submit">
+                                    Отправить код
+                                </button>
+                            </div>
+                            <label class="container">
+                                Я ознакомился(лась) с <a href="#">политикой конфиденуиальности</a> и согласен(на) на
+                                <a href="#"> обработку моих данных</a>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
