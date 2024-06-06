@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+</head>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#materials">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#materials-info">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#equipment">
+                                    Технології
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#partners">
+                                    Партнери
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#news">
+                                    Новини
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#gallery">
+                                    Фотогалерея
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#footer">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__socials socials">
+                        <div class="socials__box socials-box">
+                            <h3 class="socials-box__title">
+                                соціальні мережі
+                            </h3>
+                            <ul class="socials-box__list">
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="8" height="19" viewBox="0 0 8 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.92955 4.06719C4.92955 3.30273 5.52551 3.02812 6.19271 3.02812C6.85992 3.02812 7.57247 3.26562 7.57247 3.26562L8 0.356249C8 0.356249 7.09312 0 4.92955 0C3.60162 0 2.83077 0.578905 2.26721 1.43242C1.73603 2.24141 1.7166 3.54023 1.7166 4.37891V6.28633H0V9.12891H1.7166V19H4.92955V9.12891H7.4753L7.66316 6.28633H4.92955V4.06719Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.5 17.7727C14.9643 17.7727 17.7727 14.9643 17.7727 11.5C17.7727 8.03567 14.9643 5.22727 11.5 5.22727C8.03567 5.22727 5.22727 8.03567 5.22727 11.5C5.22727 14.9643 8.03567 17.7727 11.5 17.7727ZM11.5 15.6818C13.8095 15.6818 15.6818 13.8095 15.6818 11.5C15.6818 9.19044 13.8095 7.31818 11.5 7.31818C9.19044 7.31818 7.31818 9.19044 7.31818 11.5C7.31818 13.8095 9.19044 15.6818 11.5 15.6818Z"
+                                                fill="#45494B" />
+                                            <path
+                                                d="M17.7727 4.18182C17.1953 4.18182 16.7273 4.64989 16.7273 5.22727C16.7273 5.80466 17.1953 6.27273 17.7727 6.27273C18.3501 6.27273 18.8182 5.80466 18.8182 5.22727C18.8182 4.64989 18.3501 4.18182 17.7727 4.18182Z"
+                                                fill="#45494B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.683685 3.42497C0 4.76678 0 6.52331 0 10.0364V12.9636C0 16.4767 0 18.2332 0.683685 19.575C1.28507 20.7553 2.24467 21.7149 3.42497 22.3163C4.76678 23 6.52331 23 10.0364 23H12.9636C16.4767 23 18.2332 23 19.575 22.3163C20.7553 21.7149 21.7149 20.7553 22.3163 19.575C23 18.2332 23 16.4767 23 12.9636V10.0364C23 6.52331 23 4.76678 22.3163 3.42497C21.7149 2.24467 20.7553 1.28507 19.575 0.683685C18.2332 0 16.4767 0 12.9636 0H10.0364C6.52331 0 4.76678 0 3.42497 0.683685C2.24467 1.28507 1.28507 2.24467 0.683685 3.42497ZM12.9636 2.09091H10.0364C8.24533 2.09091 7.02781 2.09254 6.08672 2.16942C5.17002 2.24432 4.70124 2.38007 4.37422 2.5467C3.58736 2.94763 2.94763 3.58736 2.5467 4.37422C2.38007 4.70124 2.24432 5.17002 2.16942 6.08672C2.09254 7.02781 2.09091 8.24533 2.09091 10.0364V12.9636C2.09091 14.7547 2.09254 15.9721 2.16942 16.9133C2.24432 17.83 2.38007 18.2988 2.5467 18.6258C2.94763 19.4126 3.58736 20.0523 4.37422 20.4533C4.70124 20.6199 5.17002 20.7557 6.08672 20.8306C7.02781 20.9074 8.24533 20.9091 10.0364 20.9091H12.9636C14.7547 20.9091 15.9721 20.9074 16.9133 20.8306C17.83 20.7557 18.2988 20.6199 18.6258 20.4533C19.4126 20.0523 20.0523 19.4126 20.4533 18.6258C20.6199 18.2988 20.7557 17.83 20.8306 16.9133C20.9074 15.9721 20.9091 14.7547 20.9091 12.9636V10.0364C20.9091 8.24533 20.9074 7.02781 20.8306 6.08672C20.7557 5.17002 20.6199 4.70124 20.4533 4.37422C20.0523 3.58736 19.4126 2.94763 18.6258 2.5467C18.2988 2.38007 17.83 2.24432 16.9133 2.16942C15.9721 2.09254 14.7547 2.09091 12.9636 2.09091Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.99431 20.5V7.00536H0.278768V20.4999H4.99431V20.5ZM2.63703 5.16358C4.28092 5.16358 5.30494 4.12648 5.30494 2.83155C5.27385 1.50782 4.28092 0.5 2.66786 0.5C1.05454 0.500041 0 1.50786 0 2.83159C0 4.12653 1.02345 5.16362 2.60599 5.16362L2.63703 5.16358ZM7.60418 20.5C7.60418 20.5 7.66605 8.27152 7.60418 7.0054H12.3205V8.96241H12.2892C12.9093 8.04152 14.0265 6.68852 16.5703 6.68852C19.6738 6.68852 22 8.61723 22 12.7623V20.5H17.2845V13.2808C17.2845 11.4668 16.6022 10.229 14.8952 10.229C13.5927 10.229 12.8164 11.0635 12.4755 11.8701C12.3508 12.1572 12.3205 12.5605 12.3205 12.9638V20.5H7.60418Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="socials__box socials-box">
+                            <h3 class="socials-box__title">
+                                Мессенджери
+                            </h3>
+                            <ul class="socials-box__list">
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="25" height="22" viewBox="0 0 25 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.8686 0.685394C22.8686 0.685394 25.1813 -0.223605 24.9886 1.98397C24.9244 2.89298 24.3462 6.07448 23.8965 9.51571L22.3547 19.7095C22.3547 19.7095 22.2263 21.2029 21.0699 21.4626C19.9135 21.7223 18.1791 20.5536 17.8578 20.2939C17.6008 20.0991 13.0398 17.1773 11.4337 15.7489C10.984 15.3593 10.4701 14.5801 11.4979 13.6711L18.2433 7.1783C19.0142 6.39914 19.7851 4.58114 16.573 6.78872L7.57923 12.957C7.57923 12.957 6.55137 13.6062 4.62417 13.0219L0.448465 11.7233C0.448465 11.7233 -1.09333 10.7494 1.54057 9.77539C7.96471 6.72374 15.8664 3.60716 22.8686 0.685394Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18.9852 16.9453C18.696 17.764 17.5464 18.4412 16.6296 18.6393C16.002 18.7725 15.1836 18.8779 12.426 17.7352C9.32879 16.452 5.028 11.8812 5.028 8.83945C5.028 7.29099 5.9208 5.48789 7.482 5.48789C8.2332 5.48789 8.3988 5.50254 8.646 6.09551C8.9352 6.79412 9.6408 8.51535 9.7248 8.6918C10.0716 9.41561 9.37199 9.83934 8.86439 10.4695C8.70239 10.6592 8.5188 10.8643 8.724 11.2172C8.92801 11.5629 9.6336 12.7129 10.6704 13.6359C12.0096 14.8291 13.0956 15.21 13.4844 15.3721C13.7736 15.4921 14.1192 15.4641 14.3304 15.2385C14.598 14.9492 14.9304 14.4692 15.2688 13.9963C15.5076 13.6578 15.8112 13.6155 16.1292 13.7355C16.344 13.81 19.074 15.0778 19.1892 15.2807C19.2744 15.4283 19.2744 16.1267 18.9852 16.9453ZM12.0024 0H11.9964C5.38079 0 0 5.38242 0 12C0 14.624 0.846008 17.0584 2.28481 19.033L0.789606 23.492L5.40121 22.0184C7.29841 23.2739 9.5628 24 12.0024 24C18.618 24 24 18.6176 24 12C24 5.38242 18.618 0 12.0024 0Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="26" height="28" viewBox="0 0 26 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.0189 16.0374C14.0189 16.0374 14.5069 16.0794 14.7687 15.749L15.2814 15.091C15.5281 14.7662 16.1231 14.559 16.707 14.8894C17.1444 15.1442 17.569 15.4213 17.9792 15.7196C18.3657 16.0094 19.1581 16.6856 19.1608 16.6856C19.5391 17.0118 19.6269 17.4891 19.3692 17.9931L19.3664 18.0043C19.0832 18.5058 18.7237 18.9581 18.3013 19.3441L18.2917 19.3511C17.9252 19.6638 17.5647 19.8416 17.2101 19.8845C17.1581 19.8942 17.1053 19.898 17.0525 19.8957C16.8966 19.897 16.7415 19.8724 16.5933 19.8229L16.5809 19.8061C16.0353 19.6479 15.1251 19.2545 13.6076 18.4005C12.73 17.9117 11.8945 17.3478 11.11 16.715C10.7166 16.3979 10.3413 16.0581 9.98596 15.6972L9.91057 15.6202L9.87218 15.5824L9.83517 15.5432C9.48174 15.1803 9.149 14.797 8.83859 14.3952C8.21899 13.594 7.66687 12.7407 7.18814 11.8444C6.35194 10.2946 5.96675 9.36641 5.81184 8.80641L5.79539 8.79521C5.74738 8.64378 5.72377 8.48538 5.72548 8.32621C5.72267 8.27235 5.72589 8.21833 5.73508 8.16522C5.77894 7.80402 5.95349 7.43535 6.25873 7.05922L6.26558 7.04942C6.64345 6.61789 7.0863 6.25067 7.57745 5.96163L7.58704 5.96023C8.08053 5.69703 8.54935 5.78663 8.86738 6.17023C8.87012 6.17163 9.53085 6.98223 9.81324 7.37702C10.1053 7.79641 10.3766 8.23049 10.6261 8.67761C10.951 9.27261 10.7481 9.8816 10.4287 10.1336L9.78445 10.6558C9.45957 10.9246 9.50207 11.423 9.50207 11.423C9.50207 11.423 10.4562 15.1092 14.0189 16.0374ZM12.8153 5.01244C12.7695 5.01188 12.7241 5.02059 12.6816 5.03805C12.6392 5.05552 12.6005 5.0814 12.5679 5.11419C12.5353 5.14699 12.5093 5.18606 12.4916 5.22915C12.4738 5.27223 12.4646 5.31848 12.4644 5.36524C12.4642 5.41175 12.473 5.45785 12.4903 5.50089C12.5075 5.54393 12.5329 5.58308 12.565 5.6161C12.5971 5.64912 12.6352 5.67537 12.6772 5.69334C12.7192 5.71131 12.7643 5.72065 12.8098 5.72083C14.6645 5.73483 16.1738 6.34663 17.4103 7.57722C18.6358 8.79801 19.2622 10.457 19.2787 12.6326C19.2789 12.6791 19.288 12.7251 19.3056 12.768C19.3232 12.8109 19.3489 12.8499 19.3812 12.8826C19.4136 12.9154 19.4519 12.9413 19.494 12.959C19.5362 12.9766 19.5813 12.9856 19.6269 12.9854C19.6725 12.9852 19.7177 12.9758 19.7598 12.9578C19.8019 12.9397 19.8401 12.9133 19.8722 12.8802C19.9043 12.847 19.9297 12.8077 19.9468 12.7645C19.964 12.7213 19.9727 12.675 19.9723 12.6284C19.9545 10.3128 19.2636 8.43401 17.8942 7.07042C16.5371 5.71943 14.8208 5.02644 12.8153 5.01244ZM13.45 6.85063C13.4045 6.84719 13.3589 6.85294 13.3156 6.86755C13.2723 6.88216 13.2323 6.90535 13.1978 6.93577C13.1633 6.9662 13.135 7.00327 13.1145 7.04487C13.094 7.08648 13.0818 7.13179 13.0785 7.17822C13.0751 7.22465 13.0808 7.2713 13.0951 7.31551C13.1094 7.35971 13.1321 7.4006 13.1619 7.43584C13.1917 7.47107 13.228 7.49997 13.2687 7.52086C13.3094 7.54176 13.3538 7.55425 13.3993 7.55762C14.7235 7.65702 15.705 8.09942 16.4219 8.89741C17.1402 9.6996 17.4816 10.6754 17.4555 11.8948C17.4546 11.9413 17.4627 11.9875 17.4793 12.0309C17.4959 12.0742 17.5206 12.1138 17.5522 12.1473C17.5838 12.1809 17.6215 12.2077 17.6633 12.2264C17.705 12.245 17.7499 12.2551 17.7955 12.256C17.887 12.2579 17.9755 12.2227 18.0418 12.1582C18.108 12.0937 18.1466 12.005 18.1491 11.9116C18.1779 10.5424 17.7708 9.35381 16.9332 8.42001C16.0874 7.47642 14.9044 6.95843 13.4514 6.85063H13.45ZM13.9695 8.75041C13.924 8.74796 13.8784 8.75471 13.8354 8.77028C13.7924 8.78585 13.7528 8.80993 13.719 8.84114C13.6851 8.87235 13.6576 8.91008 13.638 8.95217C13.6184 8.99426 13.6072 9.03988 13.6049 9.08641C13.6 9.18015 13.6318 9.27203 13.6933 9.34185C13.7547 9.41168 13.8407 9.45374 13.9325 9.45881C14.5302 9.49101 14.9332 9.66321 15.2074 9.9502C15.4788 10.2386 15.646 10.6726 15.6776 11.3096C15.6822 11.4031 15.7228 11.4909 15.7906 11.5538C15.8585 11.6168 15.9479 11.6498 16.0395 11.6456C16.1307 11.6409 16.2165 11.5995 16.2781 11.5306C16.3397 11.4617 16.3722 11.3707 16.3685 11.2774C16.3314 10.5256 16.1217 9.8998 15.705 9.45741C15.2869 9.01781 14.6865 8.78821 13.9695 8.75041ZM23.0662 2.73046C22.3849 2.08926 19.631 0.0480756 13.498 0.0200758C13.498 0.0200758 6.26695 -0.425121 2.74123 2.87745C0.7796 4.88224 0.088712 7.81522 0.0160591 11.4524C-0.0565938 15.0882 -0.15118 21.9033 6.28066 23.7513H6.28752L6.2834 26.5723C6.2834 26.5723 6.24228 27.7133 6.9784 27.9457C7.86943 28.2285 8.39034 27.3605 9.24024 26.4253C9.70769 25.9115 10.352 25.1583 10.8372 24.5815C15.2375 24.9595 18.6207 24.0957 19.0045 23.9669C19.8928 23.6729 24.9196 23.0149 25.7352 16.2012C26.5796 9.17741 25.3281 4.73384 23.0662 2.73046ZM23.812 15.6972C23.1211 21.3867 19.0443 21.7451 18.2931 21.9915C17.9737 22.0965 15.0018 22.8511 11.2649 22.6019C11.2649 22.6019 8.48081 26.0319 7.61035 26.9251C7.47464 27.0651 7.31562 27.1211 7.2087 27.0931C7.05791 27.0553 7.01679 26.8747 7.01953 26.6101L7.04283 21.9243C1.60072 20.3815 1.91874 14.58 1.98043 11.5434C2.04212 8.50541 2.60141 6.01763 4.26146 4.34324C7.24297 1.58526 13.3842 1.99686 13.3842 1.99686C18.5713 2.02066 21.058 3.61665 21.6337 4.15005C23.5474 5.82443 24.5234 9.8284 23.8106 15.6958L23.812 15.6972Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="header__burger burger" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34.4907 4.19662C35.4202 3.2671 35.4202 1.76007 34.4907 0.830515C33.5611 -0.0990342 32.0541 -0.0989989 31.1246 0.830517L17.6602 14.2949L4.19574 0.830517C3.26623 -0.0989989 1.75919 -0.0990342 0.829641 0.830515C-0.0999091 1.76007 -0.0998752 3.2671 0.829641 4.19662L14.2941 17.661L0.829641 31.1254C-0.0999091 32.055 -0.0999077 33.562 0.829641 34.4915C1.75919 35.4211 3.26619 35.4211 4.19574 34.4915L17.6602 21.0271L31.1246 34.4915C32.0541 35.4211 33.5611 35.4211 34.4907 34.4915C35.4202 33.562 35.4202 32.055 34.4907 31.1254L21.0263 17.661L34.4907 4.19662Z"
+                            fill="white" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__section-top section-top">
+                <div class="section-top__swiper section-top-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="section-top-swiper__slide section-top-slide swiper-slide">
+                            <div class="section-top-slide__img">
+                                <img class="section-top-slide__img-image" src="images/section-top-img.png" alt="img">
+                            </div>
+                            <div class="container">
+                                <div class="section-top-slide__box section-top-slide-box">
+                                    <h1 class="section-top-slide-box__title">
+                                        GOLOVINSKI
+                                    </h1>
+                                    <p class="section-top-slide-box__text">
+                                        Видобування
+                                        <span>
+                                            I Забезпечення
+                                        </span>
+                                        <span>
+                                            Натуральне Каміння
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top-swiper__slide section-top-slide swiper-slide">
+                            <div class="section-top-slide__img">
+                                <img class="section-top-slide__img-image" src="images/section-top-img.png" alt="img">
+                            </div>
+                            <div class="container">
+                                <div class="section-top-slide__box section-top-slide-box">
+                                    <h1 class="section-top-slide-box__title">
+                                        GOLOVINSKI
+                                    </h1>
+                                    <p class="section-top-slide-box__text">
+                                        Видобування 2
+                                        <span>
+                                            I Забезпечення
+                                        </span>
+                                        <span>
+                                            Натуральне Каміння
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top-swiper__slide section-top-slide swiper-slide">
+                            <div class="section-top-slide__img">
+                                <img class="section-top-slide__img-image" src="images/section-top-img.png" alt="img">
+                            </div>
+                            <div class="container">
+                                <div class="section-top-slide__box section-top-slide-box">
+                                    <h1 class="section-top-slide-box__title">
+                                        GOLOVINSKI
+                                    </h1>
+                                    <p class="section-top-slide-box__text">
+                                        Видобування 3
+                                        <span>
+                                            I Забезпечення
+                                        </span>
+                                        <span>
+                                            Натуральне Каміння
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-top__pagination">
+
+                    </div>
+                </div>
+            </section>
+            <section class="main__materials materials" id="materials">
+                <div class="container">
+                    <h2 class="materials__title">
+                        ПРАЦЮeМО З НАСТУПНИМИ МАТЕРiАЛАМИ
+                    </h2>
+                    <div class="materials__swiper materials-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m0" id="0">
+                                    <img class="materials-slide__link-img" src="images/materials-img-1.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Мармур
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m1" id="1">
+                                    <img class="materials-slide__link-img" src="images/materials-img-2.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Ландшафтний камінь
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m2" id="2">
+                                    <img class="materials-slide__link-img" src="images/materials-img-3.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Вапняк
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m3" id="3">
+                                    <img class="materials-slide__link-img" src="images/materials-img-4.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Граніт
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m4" id="4">
+                                    <img class="materials-slide__link-img" src="images/materials-img-5.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Шифер
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="materials-swiper__slide materials-slide swiper-slide">
+                                <a class="materials-slide__link" href="#m5" id="5">
+                                    <img class="materials-slide__link-img" src="images/materials-img-6.jpg" alt="img">
+                                    <p class="materials-slide__link-text">
+                                        Пісковик
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__info info">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__body info-body">
+                            <div class="info-body__buttons">
+                                <button class="info-body__buttons-button info-body__buttons-button--active"
+                                    type="button" id="0">
+                                    Минуле
+                                </button>
+                                <button class="info-body__buttons-button" type="button" id="1">
+                                    теперешнє
+                                </button>
+                                <button class="info-body__buttons-button" type="button" id="2">
+                                    майбутнє
+                                </button>
+                            </div>
+                            <div class="info-body__wrapper">
+                                <div class="info-body__box info-body-box info-body-box--active" id="0">
+                                    <h2 class="info-body-box__title">
+                                        <span>
+                                            GOLOVINSKI -
+                                        </span>
+                                        найстаріше каменеобробне підприємство в Україні
+                                    </h2>
+                                    <p class="info-body-box__text">
+                                        Він може похвалитися більш ніж 125-річним досвідом
+                                    </p>
+                                    <p class="info-body-box__subtext">
+                                        Звідси зрізано вигляд старих імперських столиць Європи та Азії, а також перших
+                                        хмарочосів нового світу.
+                                    </p>
+                                    <a class="info-body-box__link btn" href="#news">
+                                        Дізнитися більше про нас
+                                    </a>
+                                </div>
+                                <div class="info-body__box info-body-box" id="1">
+                                    <h2 class="info-body-box__title">
+                                        <span>
+                                            GOLOVINSKI -
+                                        </span>
+                                        найстаріше каменеобробне підприємство в Україні 2
+                                    </h2>
+                                    <p class="info-body-box__text">
+                                        Він може похвалитися більш ніж 125-річним досвідом
+                                    </p>
+                                    <p class="info-body-box__subtext">
+                                        Звідси зрізано вигляд старих імперських столиць Європи та Азії, а також перших
+                                        хмарочосів нового світу.
+                                    </p>
+                                    <a class="info-body-box__link btn" href="#">
+                                        Дізнитися більше про нас
+                                    </a>
+                                </div>
+                                <div class="info-body__box info-body-box" id="2">
+                                    <h2 class="info-body-box__title">
+                                        <span>
+                                            GOLOVINSKI -
+                                        </span>
+                                        найстаріше каменеобробне підприємство в Україні 3
+                                    </h2>
+                                    <p class="info-body-box__text">
+                                        Він може похвалитися більш ніж 125-річним досвідом
+                                    </p>
+                                    <p class="info-body-box__subtext">
+                                        Звідси зрізано вигляд старих імперських столиць Європи та Азії, а також перших
+                                        хмарочосів нового світу.
+                                    </p>
+                                    <a class="info-body-box__link btn" href="#">
+                                        Дізнитися більше про нас
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__img">
+                            <img class="info__img-image" src="images/info-img.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about about">
+                <div class="container-fluid">
+                    <div class="about__inner">
+                        <div class="about__img">
+                            <img class="about__img-image" src="images/about-img.jpg" alt="img">
+                        </div>
+                        <div class="about__body about-body">
+                            <div class="about-body__box">
+                                <p class="about-body__box-text">
+                                    Відповідальність
+                                </p>
+                                <p class="about-body__box-subtext">
+                                    Перше, що ми розглядаємо, це вплив. Наш невеликий вплив на навколишнє середовище
+                                    забезпечує великі переваги для суспільства
+                                </p>
+                            </div>
+                            <div class="about-body__box about-body__box--active">
+                                <p class="about-body__box-text">
+                                    Суть
+                                </p>
+                                <p class="about-body__box-subtext">
+                                    Наші природні камені є основою низьковуглецевої економіки на відміну від штучних
+                                    каменів, виготовлених зі смоли, пластику тощо.
+                                </p>
+                            </div>
+                            <div class="about-body__box">
+                                <p class="about-body__box-text">
+                                    заснування
+                                </p>
+                                <p class="about-body__box-subtext">
+                                    Гордий спадок відповідального виробництва основних природних каменів з 18 століття
+                                </p>
+                            </div>
+                            <div class="about-body__box">
+                                <p class="about-body__box-text">
+                                    Безпека
+                                </p>
+                                <p class="about-body__box-subtext">
+                                    Нашим першочерговим завданням є забезпечення безпеки наших працівників у робочий час
+                                    у суспільстві завдяки новітнім галузевим технологіям
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__map map">
+                <div class="container-fluid">
+                    <div class="map__bg">
+                        <img class="map__bg-img" src="images/map-img.jpg" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="map__inner">
+                            <div class="map__body map-body">
+                                <h2 class="map-body__title">
+                                    ПОДИВІТЬСЯ НА НАШІ
+                                    <span>
+                                        «СКАРБИ»
+                                    </span>
+                                    НА КАРТІ
+                                </h2>
+                                <ul class="map-body__list">
+                                    <li class="map-body__list-item">
+                                        <span class="map-body__list-circle">
+
+                                        </span>
+                                        <p class="map-body__list-text">
+                                            ШАХТА СЛІПЧИНСЬКА
+                                        </p>
+                                        <p class="map-body__list-subtext">
+                                            Родовища нашого габронориту, які можна знайти по всьому світу в різних
+                                            місцях,
+                                            добре відомі як "Чорна комета"
+                                            Місце з 1 620 000 м3 природного каменю, яке прослужить тисячі років
+                                        </p>
+                                    </li>
+                                    <li class="map-body__list-item">
+                                        <span class="map-body__list-circle">
+
+                                        </span>
+                                        <p class="map-body__list-text">
+                                            ГОЛОВИНСЬКИЙ ШАХТ
+                                        </p>
+                                        <p class="map-body__list-subtext">
+                                            Родовище нашого знаменитого лабрадориту, широко відомого як "Волзька
+                                            блакитна"
+                                            Місце з 814 000 м3 природного каменю, яке прослужить сотні років
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="map__img">
+                                <img class="map__img-image" src="images/map-img.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__materials-info materials-info" id="materials-info">
+                <div class="materials-info__lines">
+                    <div class="materials-info__lines-line"></div>
+                    <div class="materials-info__lines-line"></div>
+                </div>
+                <div class="container">
+                    <h1 class="materials-info__title">
+                        Наше сучасне обладнання може обробляти будь-який вид природного каменю в залежності від
+                        ваших
+                        потреб
+                    </h1>
+                </div>
+                <div class="container-fluid">
+                    <div class="materials-info__inner">
+                        <div class="materials-info__wrapper" id="m0">
+                            <div class="materials-info__item materials-info-item" id="0">
+                                <img class="materials-info-item__img" src="images/materials-info-img-1.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Мармур
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="materials-info__wrapper" id="m1">
+                            <div class="materials-info__item materials-info-item" id="1">
+                                <img class="materials-info-item__img" src="images/materials-info-img-2.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Ландшафтний камінь
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="materials-info__wrapper" id="m2">
+                            <div class="materials-info__item materials-info-item materials-info-item--active" id="2">
+                                <img class="materials-info-item__img" src="images/materials-info-img-3.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Вапняк
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="materials-info__wrapper" id="m3">
+                            <div class="materials-info__item materials-info-item" id="3">
+                                <img class="materials-info-item__img" src="images/materials-info-img-4.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Граніт
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="materials-info__wrapper" id="m4">
+                            <div class="materials-info__item materials-info-item" id="4">
+                                <img class="materials-info-item__img" src="images/materials-info-img-5.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Шифер
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="materials-info__wrapper" id="m5">
+                            <div class="materials-info__item materials-info-item" id="5">
+                                <img class="materials-info-item__img" src="images/materials-info-img-6.jpg" alt="img">
+                                <div class="materials-info-item__box">
+                                    <p class="materials-info-item__box-text">
+                                        Пісковик
+                                    </p>
+                                    <p class="materials-info-item__box-subtext">
+                                        Ландшафтні камені надають саду різноманітності та текстури, допомагаючи
+                                        впорядкувати
+                                        та визначити естетичні елементи. Камені також можуть відігравати певну роль у
+                                        контролі ерозії. Щоразу, коли ви додаєте великі камені, викопайте простір, у
+                                        якому
+                                        їх можна покласти, і вирівняйте подвір’я за потреби. Це забезпечує міцну основу
+                                        каменів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="materials-info__wrap">
+                        <a class="materials-info__link btn" href="#">
+                            Завантажити каталог
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__equipment equipment" id="equipment">
+                <div class="equipment__lines">
+                    <div class="equipment__lines-line"></div>
+                    <div class="equipment__lines-line"></div>
+                </div>
+                <div class="equipment__lines">
+                    <div class="equipment__lines-line"></div>
+                    <div class="equipment__lines-line"></div>
+                </div>
+                <div class="container-fluid">
+                    <div class="equipment__bg">
+                        <img class="equipment__bg-img" src="images/equipment-bg-img.png" alt="img">
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="equipment__title">
+                        Витратьте лише кілька секунд, щоб побачити найновіше обладнання, яке використовується на нашому
+                        заводі
+                    </h2>
+                    <div class="equipment__item equipment-item">
+                        <div class="equipment-item__img">
+                            <img class="equipment-item__img-imgae" src="images/equipment-img-1.jpg" alt="img">
+                        </div>
+                        <div class="equipment-item__box">
+                            <p class="equipment-item__box-text">
+                                БАГАТОПРОВОДНИЙ СТАНОК ДЛЯ ТОНКОГО РІЗАННЯ ГРАНІТНИХ БЛОКІВ
+                            </p>
+                            <p class="equipment-item__box-subtext">
+                                MULTIWIRE JUPITER від Pedrini SPA - це машина для промислового виробництва товстих
+                                гранітних плит. Він виконує швидке різання блоків серією алмазних дротів. Його можна
+                                використовувати для виробництва зовнішніх і внутрішніх облицювання, столів і меблів,
+                                стільниць для кухонь і ванних кімнат.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="equipment__item equipment-item">
+                        <div class="equipment-item__box">
+                            <p class="equipment-item__box-text">
+                                МАШИНА ДЛЯ КОНТОВОГО СВЕРДЛЕННЯ З ВІДТЮСХОМ
+                            </p>
+                            <p class="equipment-item__box-subtext">
+                                Новітнє обладнання від Fravizel - індивідуальний продукт для кожної операції буріння та
+                                різання дроту, необхідної для видобутку сировини в великому кам’яному кар’єрі, як-от наш
+                                природний кам’яний гранітний рудник з габронориту «чорна комета» та лабрадориту
+                                «волзький блакитний».
+                            </p>
+                        </div>
+                        <div class="equipment-item__img">
+                            <img class="equipment-item__img-imgae" src="images/equipment-img-2.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__partners partners" id="partners">
+                <div class="partners__lines">
+                    <div class="partners__lines-line"></div>
+                    <div class="partners__lines-line"></div>
+                </div>
+                <div class="container">
+                    <h2 class="partners__title">
+                        наші партнери
+                    </h2>
+                    <div class="partners__swiper partners-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-1.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-2.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-3.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-4.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-5.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-1.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-2.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-3.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-4.png" alt="img">
+                            </div>
+                            <div class="partners-swiper__slide partners-slide swiper-slide">
+                                <img class="partners-slide__img" src="images/partners-img-5.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__news news" id="news">
+                <div class="news__lines">
+                    <div class="news__lines-line"></div>
+                    <div class="news__lines-line"></div>
+                </div>
+                <div class="container">
+                    <div class="news__top news-top">
+                        <h2 class="news-top__title">
+                            Новини
+                        </h2>
+                        <div class="news-top__buttons">
+                            <div class="news-top__buttons-pev btn">
+                                <svg width="32" height="27" viewBox="0 0 32 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 13.5H30M30 13.5L18.3333 2M30 13.5L18.3333 25" stroke="#E1504C"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="news-top__buttons-next btn">
+                                <svg width="32" height="27" viewBox="0 0 32 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 13.5H30M30 13.5L18.3333 2M30 13.5L18.3333 25" stroke="#E1504C"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__swiper news-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="news-swiper__slide news-slide swiper-slide">
+                                <a class="news-slide__view" href="#">
+                                    <p class="news-slide__view-suptext">
+                                        12 січня
+                                    </p>
+                                    <img class="news-slide__view-img" src="images/news-img-1.jpg" alt="img">
+                                </a>
+                                <div class="news-slide__box news-slide-box">
+                                    <a class="news-slide-box__link" href="#">
+                                        <h3 class="news-slide-box__link-title">
+                                            МАШИНА ДЛЯ КОНТОВОГО СВЕРДЛЕННЯ З ВІДТЮСХОМ
+                                        </h3>
+                                    </a>
+                                    <p class="news-slide-box__text">
+                                        Новітнє обладнання від Fravizel - індивідуальний продукт для кожної операції
+                                        буріння та різання дроту, необхідної для видобутку сировини в великому кам’яному
+                                        кар’єрі, як-от наш природний кам’яний гранітний рудник з габронориту «чорна
+                                        комета» та лабрадориту «волзький блакитний».
+                                    </p>
+                                    <a class="news-slide-box__button btn" href="#">
+                                        Читати далi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-swiper__slide news-slide swiper-slide">
+                                <a class="news-slide__view" href="#">
+                                    <p class="news-slide__view-suptext">
+                                        12 січня
+                                    </p>
+                                    <img class="news-slide__view-img" src="images/news-img-2.jpg" alt="img">
+                                </a>
+                                <div class="news-slide__box news-slide-box">
+                                    <a class="news-slide-box__link" href="#">
+                                        <h3 class="news-slide-box__link-title">
+                                            МАШИНА ДЛЯ КОНТОВОГО СВЕРДЛЕННЯ З ВІДТЮСХОМ
+                                        </h3>
+                                    </a>
+                                    <p class="news-slide-box__text">
+                                        Новітнє обладнання від Fravizel - індивідуальний продукт для кожної операції
+                                        буріння та різання дроту, необхідної для видобутку сировини в великому кам’яному
+                                        кар’єрі, як-от наш природний кам’яний гранітний рудник з габронориту «чорна
+                                        комета» та лабрадориту «волзький блакитний».
+                                    </p>
+                                    <a class="news-slide-box__button btn" href="#">
+                                        Читати далi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-swiper__slide news-slide swiper-slide">
+                                <a class="news-slide__view" href="#">
+                                    <p class="news-slide__view-suptext">
+                                        12 січня
+                                    </p>
+                                    <img class="news-slide__view-img" src="images/news-img-3.jpg" alt="img">
+                                </a>
+                                <div class="news-slide__box news-slide-box">
+                                    <a class="news-slide-box__link" href="#">
+                                        <h3 class="news-slide-box__link-title">
+                                            МАШИНА ДЛЯ КОНТОВОГО СВЕРДЛЕННЯ З ВІДТЮСХОМ
+                                        </h3>
+                                    </a>
+                                    <p class="news-slide-box__text">
+                                        Новітнє обладнання від Fravizel - індивідуальний продукт для кожної операції
+                                        буріння та різання дроту, необхідної для видобутку сировини в великому кам’яному
+                                        кар’єрі, як-от наш природний кам’яний гранітний рудник з габронориту «чорна
+                                        комета» та лабрадориту «волзький блакитний».
+                                    </p>
+                                    <a class="news-slide-box__button btn" href="#">
+                                        Читати далi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__gallery gallery" id="gallery">
+                <div class="gallery__lines">
+                    <div class="gallery__lines-line"></div>
+                    <div class="gallery__lines-line"></div>
+                </div>
+                <div class="container-fluid">
+                    <h2 class="gallery__title">
+                        Фотогалерея
+                    </h2>
+                    <div class="gallery__swiper gallery-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="gallery-swiper__slide gallery-slide swiper-slide" id="0">
+                                <img class="gallery-slide__img" src="images/gallery-img-1.jpg" alt="img">
+                                <button class="gallery-slide__view" type="button">
+                                    <div class="gallery-slide__view-btn btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-swiper__slide gallery-slide swiper-slide" id="1">
+                                <img class="gallery-slide__img" src="images/gallery-img-2.jpg" alt="img">
+                                <button class="gallery-slide__view" type="button">
+                                    <div class="gallery-slide__view-btn btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-swiper__slide gallery-slide swiper-slide" id="2">
+                                <img class="gallery-slide__img" src="images/gallery-img-3.jpg" alt="img">
+                                <button class="gallery-slide__view" type="button">
+                                    <div class="gallery-slide__view-btn btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-swiper__slide gallery-slide swiper-slide" id="3">
+                                <img class="gallery-slide__img" src="images/gallery-img-4.jpg" alt="img">
+                                <button class="gallery-slide__view" type="button">
+                                    <div class="gallery-slide__view-btn btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-swiper__slide gallery-slide swiper-slide" id="4">
+                                <img class="gallery-slide__img" src="images/gallery-img-5.jpg" alt="img">
+                                <button class="gallery-slide__view" type="button">
+                                    <div class="gallery-slide__view-btn btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__locations locations">
+                <div class="container-fluid">
+                    <div class="locations__map locations-map" id="map"></div>
+                </div>
+                <div class="container">
+                    <div class="locations__inner">
+                        <div class="locations__item locations-item" id="0">
+                            <div class="locations-item__wrapper">
+                                <span class="locations-item__circle">
+                                </span>
+                                <div class="locations-item__box">
+                                    <p class="locations-item__box-text">
+                                        Розташування 1
+                                    </p>
+                                    <p class="locations-item__box-subtext">
+                                        Шахта власного природного каміння
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locations__item locations-item" id="1">
+                            <div class="locations-item__wrapper">
+                                <span class="locations-item__circle">
+                                </span>
+                                <div class="locations-item__box">
+                                    <p class="locations-item__box-text">
+                                        Розташування 2
+                                    </p>
+                                    <p class="locations-item__box-subtext">
+                                        Наш головний офіс в Києві
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locations__item locations-item" id="2">
+                            <div class="locations-item__wrapper">
+                                <span class="locations-item__circle">
+                                </span>
+                                <div class="locations-item__box">
+                                    <p class="locations-item__box-text">
+                                        Розташування 3
+                                    </p>
+                                    <p class="locations-item__box-subtext">
+                                        Наше представництво в Словаччині
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locations__item locations-item" id="3">
+                            <div class="locations-item__wrapper">
+                                <span class="locations-item__circle">
+                                </span>
+                                <div class="locations-item__box">
+                                    <p class="locations-item__box-text">
+                                        Розташування 4
+                                    </p>
+                                    <p class="locations-item__box-subtext">
+                                        Наше представництво в Болгарії
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__gallery-popup gallery-popup">
+                <div class="gallery-popup__inner">
+                    <button class="gallery-popup__button" type="button">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.4907 4.19662C35.4202 3.2671 35.4202 1.76007 34.4907 0.830515C33.5611 -0.0990342 32.0541 -0.0989989 31.1246 0.830517L17.6602 14.2949L4.19574 0.830517C3.26623 -0.0989989 1.75919 -0.0990342 0.829641 0.830515C-0.0999091 1.76007 -0.0998752 3.2671 0.829641 4.19662L14.2941 17.661L0.829641 31.1254C-0.0999091 32.055 -0.0999077 33.562 0.829641 34.4915C1.75919 35.4211 3.26619 35.4211 4.19574 34.4915L17.6602 21.0271L31.1246 34.4915C32.0541 35.4211 33.5611 35.4211 34.4907 34.4915C35.4202 33.562 35.4202 32.055 34.4907 31.1254L21.0263 17.661L34.4907 4.19662Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <div class="gallery-popup__view">
+                        <img class="gallery-popup__view-img gallery-popup__view-img--active"
+                            src="images/gallery-img-1.jpg" alt="img" id="0">
+                        <img class="gallery-popup__view-img" src="images/gallery-img-2.jpg" alt="img" id="1">
+                        <img class="gallery-popup__view-img" src="images/gallery-img-3.jpg" alt="img" id="2">
+                        <img class="gallery-popup__view-img" src="images/gallery-img-4.jpg" alt="img" id="3">
+                        <img class="gallery-popup__view-img" src="images/gallery-img-5.jpg" alt="img" id="4">
+                    </div>
+                    <div class="gallery-popup__swiper gallery-popup-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="gallery-popup__slide gallery-popup-slide gallery-popup-slide--active swiper-slide"
+                                id="0">
+                                <img class="gallery-popup-slide__img" src="images/gallery-img-1.jpg" alt="img">
+                                <button class="gallery-popup-slide__view" type="button">
+                                    <div class="gallery-popup-slide__view-btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-popup__slide gallery-popup-slide swiper-slide" id="1">
+                                <img class="gallery-popup-slide__img" src="images/gallery-img-2.jpg" alt="img">
+                                <button class="gallery-popup-slide__view" type="button">
+                                    <div class="gallery-popup-slide__view-btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-popup__slide gallery-popup-slide swiper-slide" id="2">
+                                <img class="gallery-popup-slide__img" src="images/gallery-img-3.jpg" alt="img">
+                                <button class="gallery-popup-slide__view" type="button">
+                                    <div class="gallery-popup-slide__view-btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-popup__slide gallery-popup-slide swiper-slide" id="3">
+                                <img class="gallery-popup-slide__img" src="images/gallery-img-4.jpg" alt="img">
+                                <button class="gallery-popup-slide__view" type="button">
+                                    <div class="gallery-popup-slide__view-btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="gallery-popup__slide gallery-popup-slide swiper-slide" id="4">
+                                <img class="gallery-popup-slide__img" src="images/gallery-img-5.jpg" alt="img">
+                                <button class="gallery-popup-slide__view" type="button">
+                                    <div class="gallery-popup-slide__view-btn">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 9.48363C0.04 9.56469 0.09 9.67614 0.15 9.81799C0.21 9.95984 0.36 10.2537 0.6 10.6995C0.84 11.1453 1.1 11.5708 1.38 11.9761C1.66 12.3814 2.05 12.8678 2.55 13.4351C3.05 14.0025 3.57 14.5395 4.11 15.0461C4.65 15.5528 5.32 16.0492 6.12 16.5356C6.92 17.0219 7.74 17.4475 8.58 17.8122C9.42 18.177 10.4 18.4607 11.52 18.6633C12.64 18.8659 13.8 18.9774 15 18.9977C16.2 19.0179 17.36 18.9065 18.48 18.6633C19.6 18.4201 20.59 18.1263 21.45 17.7818C22.31 17.4373 23.12 17.0219 23.88 16.5356C24.64 16.0492 25.31 15.5426 25.89 15.0158C26.47 14.4889 26.99 13.9721 27.45 13.4655C27.91 12.9589 28.3 12.4523 28.62 11.9457C28.94 11.4391 29.2 11.0237 29.4 10.6995C29.6 10.3753 29.75 10.0814 29.85 9.81799L30 9.48363C29.98 9.40258 29.93 9.29112 29.85 9.14927C29.77 9.00742 29.62 8.72373 29.4 8.29818C29.18 7.87263 28.92 7.44708 28.62 7.02154C28.32 6.59599 27.93 6.09952 27.45 5.53212C26.97 4.96472 26.45 4.43785 25.89 3.95151C25.33 3.46517 24.66 2.9687 23.88 2.4621C23.1 1.95549 22.28 1.52995 21.42 1.18545C20.56 0.840963 19.58 0.557265 18.48 0.334359C17.38 0.111453 16.22 0 15 0C13.78 0 12.62 0.111453 11.52 0.334359C10.42 0.557265 9.43 0.840963 8.55 1.18545C7.67 1.52995 6.86 1.95549 6.12 2.4621C5.38 2.9687 4.71 3.46517 4.11 3.95151C3.51 4.43785 2.99 4.96472 2.55 5.53212C2.11 6.09952 1.72 6.59599 1.38 7.02154C1.04 7.44708 0.78 7.87263 0.6 8.29818C0.42 8.72373 0.27 9.01756 0.15 9.17967L0 9.48363ZM9.39 9.48363C9.39 7.92329 9.93 6.58586 11.01 5.47133C12.09 4.3568 13.42 3.79953 15 3.79953C16.58 3.79953 17.91 4.3568 18.99 5.47133C20.07 6.58586 20.62 7.92329 20.64 9.48363C20.66 11.044 20.11 12.3915 18.99 13.5263C17.87 14.6611 16.54 15.2184 15 15.1981C13.46 15.1779 12.13 14.6206 11.01 13.5263C9.89 12.4321 9.35 11.0845 9.39 9.48363ZM11.25 9.48363C11.25 10.5374 11.62 11.4391 12.36 12.1889C13.1 12.9387 13.98 13.3034 15 13.2832C16.02 13.2629 16.9 12.8981 17.64 12.1889C18.38 11.4797 18.75 10.5779 18.75 9.48363C18.75 8.38937 18.38 7.49774 17.64 6.80876C16.9 6.11978 16.02 5.74489 15 5.6841C13.98 5.62331 13.1 5.9982 12.36 6.80876L15 9.48363H11.25Z"
+                                                fill="#E1504C" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-popup-swiper__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__connect connect">
+                        <h3 class="connect__title">
+                            ЯКЩО У ВАС Є ЗАПИТАННЯ
+                            БУДЬ ЛАСКА, ЗАПОВНІТЬ ФОРМУ
+                        </h3>
+                        <form class="connect__form connect-form" action="#">
+                            <div class="connect-form__wrapper">
+                                <input class="connect-form__input" type="text" placeholder="Імя">
+                                <input class="connect-form__input" type="text" placeholder="Електронна пошта">
+                            </div>
+                            <input class="connect-form__input" type="text" placeholder="Тема">
+                            <textarea class="connect-form__textarea" cols="30" rows="6"
+                                placeholder="Ваше повідомлення"></textarea>
+                            <button class="connect-form__button btn" type="submit">
+                                Надіслати
+                            </button>
+                        </form>
+                    </div>
+                    <nav class="footer__menu footer-menu">
+                        <h3 class="footer-menu__title">
+                            карта сайту
+                        </h3>
+                        <div class="footer-menu__wrapper">
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Про нас
+                                    </a>
+                                </li>
+
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Технології
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Партнери
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        новини
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Фотогалерея
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__socials socials">
+                        <div class="socials__box socials-box">
+                            <h3 class="socials-box__title">
+                                соціальні мережі
+                            </h3>
+                            <ul class="socials-box__list">
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="8" height="19" viewBox="0 0 8 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.92955 4.06719C4.92955 3.30273 5.52551 3.02812 6.19271 3.02812C6.85992 3.02812 7.57247 3.26562 7.57247 3.26562L8 0.356249C8 0.356249 7.09312 0 4.92955 0C3.60162 0 2.83077 0.578905 2.26721 1.43242C1.73603 2.24141 1.7166 3.54023 1.7166 4.37891V6.28633H0V9.12891H1.7166V19H4.92955V9.12891H7.4753L7.66316 6.28633H4.92955V4.06719Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.5 17.7727C14.9643 17.7727 17.7727 14.9643 17.7727 11.5C17.7727 8.03567 14.9643 5.22727 11.5 5.22727C8.03567 5.22727 5.22727 8.03567 5.22727 11.5C5.22727 14.9643 8.03567 17.7727 11.5 17.7727ZM11.5 15.6818C13.8095 15.6818 15.6818 13.8095 15.6818 11.5C15.6818 9.19044 13.8095 7.31818 11.5 7.31818C9.19044 7.31818 7.31818 9.19044 7.31818 11.5C7.31818 13.8095 9.19044 15.6818 11.5 15.6818Z"
+                                                fill="#45494B" />
+                                            <path
+                                                d="M17.7727 4.18182C17.1953 4.18182 16.7273 4.64989 16.7273 5.22727C16.7273 5.80466 17.1953 6.27273 17.7727 6.27273C18.3501 6.27273 18.8182 5.80466 18.8182 5.22727C18.8182 4.64989 18.3501 4.18182 17.7727 4.18182Z"
+                                                fill="#45494B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.683685 3.42497C0 4.76678 0 6.52331 0 10.0364V12.9636C0 16.4767 0 18.2332 0.683685 19.575C1.28507 20.7553 2.24467 21.7149 3.42497 22.3163C4.76678 23 6.52331 23 10.0364 23H12.9636C16.4767 23 18.2332 23 19.575 22.3163C20.7553 21.7149 21.7149 20.7553 22.3163 19.575C23 18.2332 23 16.4767 23 12.9636V10.0364C23 6.52331 23 4.76678 22.3163 3.42497C21.7149 2.24467 20.7553 1.28507 19.575 0.683685C18.2332 0 16.4767 0 12.9636 0H10.0364C6.52331 0 4.76678 0 3.42497 0.683685C2.24467 1.28507 1.28507 2.24467 0.683685 3.42497ZM12.9636 2.09091H10.0364C8.24533 2.09091 7.02781 2.09254 6.08672 2.16942C5.17002 2.24432 4.70124 2.38007 4.37422 2.5467C3.58736 2.94763 2.94763 3.58736 2.5467 4.37422C2.38007 4.70124 2.24432 5.17002 2.16942 6.08672C2.09254 7.02781 2.09091 8.24533 2.09091 10.0364V12.9636C2.09091 14.7547 2.09254 15.9721 2.16942 16.9133C2.24432 17.83 2.38007 18.2988 2.5467 18.6258C2.94763 19.4126 3.58736 20.0523 4.37422 20.4533C4.70124 20.6199 5.17002 20.7557 6.08672 20.8306C7.02781 20.9074 8.24533 20.9091 10.0364 20.9091H12.9636C14.7547 20.9091 15.9721 20.9074 16.9133 20.8306C17.83 20.7557 18.2988 20.6199 18.6258 20.4533C19.4126 20.0523 20.0523 19.4126 20.4533 18.6258C20.6199 18.2988 20.7557 17.83 20.8306 16.9133C20.9074 15.9721 20.9091 14.7547 20.9091 12.9636V10.0364C20.9091 8.24533 20.9074 7.02781 20.8306 6.08672C20.7557 5.17002 20.6199 4.70124 20.4533 4.37422C20.0523 3.58736 19.4126 2.94763 18.6258 2.5467C18.2988 2.38007 17.83 2.24432 16.9133 2.16942C15.9721 2.09254 14.7547 2.09091 12.9636 2.09091Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.99431 20.5V7.00536H0.278768V20.4999H4.99431V20.5ZM2.63703 5.16358C4.28092 5.16358 5.30494 4.12648 5.30494 2.83155C5.27385 1.50782 4.28092 0.5 2.66786 0.5C1.05454 0.500041 0 1.50786 0 2.83159C0 4.12653 1.02345 5.16362 2.60599 5.16362L2.63703 5.16358ZM7.60418 20.5C7.60418 20.5 7.66605 8.27152 7.60418 7.0054H12.3205V8.96241H12.2892C12.9093 8.04152 14.0265 6.68852 16.5703 6.68852C19.6738 6.68852 22 8.61723 22 12.7623V20.5H17.2845V13.2808C17.2845 11.4668 16.6022 10.229 14.8952 10.229C13.5927 10.229 12.8164 11.0635 12.4755 11.8701C12.3508 12.1572 12.3205 12.5605 12.3205 12.9638V20.5H7.60418Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="socials__box socials-box">
+                            <h3 class="socials-box__title">
+                                Мессенджери
+                            </h3>
+                            <ul class="socials-box__list">
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="25" height="22" viewBox="0 0 25 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.8686 0.685394C22.8686 0.685394 25.1813 -0.223605 24.9886 1.98397C24.9244 2.89298 24.3462 6.07448 23.8965 9.51571L22.3547 19.7095C22.3547 19.7095 22.2263 21.2029 21.0699 21.4626C19.9135 21.7223 18.1791 20.5536 17.8578 20.2939C17.6008 20.0991 13.0398 17.1773 11.4337 15.7489C10.984 15.3593 10.4701 14.5801 11.4979 13.6711L18.2433 7.1783C19.0142 6.39914 19.7851 4.58114 16.573 6.78872L7.57923 12.957C7.57923 12.957 6.55137 13.6062 4.62417 13.0219L0.448465 11.7233C0.448465 11.7233 -1.09333 10.7494 1.54057 9.77539C7.96471 6.72374 15.8664 3.60716 22.8686 0.685394Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18.9852 16.9453C18.696 17.764 17.5464 18.4412 16.6296 18.6393C16.002 18.7725 15.1836 18.8779 12.426 17.7352C9.32879 16.452 5.028 11.8812 5.028 8.83945C5.028 7.29099 5.9208 5.48789 7.482 5.48789C8.2332 5.48789 8.3988 5.50254 8.646 6.09551C8.9352 6.79412 9.6408 8.51535 9.7248 8.6918C10.0716 9.41561 9.37199 9.83934 8.86439 10.4695C8.70239 10.6592 8.5188 10.8643 8.724 11.2172C8.92801 11.5629 9.6336 12.7129 10.6704 13.6359C12.0096 14.8291 13.0956 15.21 13.4844 15.3721C13.7736 15.4921 14.1192 15.4641 14.3304 15.2385C14.598 14.9492 14.9304 14.4692 15.2688 13.9963C15.5076 13.6578 15.8112 13.6155 16.1292 13.7355C16.344 13.81 19.074 15.0778 19.1892 15.2807C19.2744 15.4283 19.2744 16.1267 18.9852 16.9453ZM12.0024 0H11.9964C5.38079 0 0 5.38242 0 12C0 14.624 0.846008 17.0584 2.28481 19.033L0.789606 23.492L5.40121 22.0184C7.29841 23.2739 9.5628 24 12.0024 24C18.618 24 24 18.6176 24 12C24 5.38242 18.618 0 12.0024 0Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-box__list-item">
+                                    <a class="socials-box__list-link" href="#">
+                                        <svg width="26" height="28" viewBox="0 0 26 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.0189 16.0374C14.0189 16.0374 14.5069 16.0794 14.7687 15.749L15.2814 15.091C15.5281 14.7662 16.1231 14.559 16.707 14.8894C17.1444 15.1442 17.569 15.4213 17.9792 15.7196C18.3657 16.0094 19.1581 16.6856 19.1608 16.6856C19.5391 17.0118 19.6269 17.4891 19.3692 17.9931L19.3664 18.0043C19.0832 18.5058 18.7237 18.9581 18.3013 19.3441L18.2917 19.3511C17.9252 19.6638 17.5647 19.8416 17.2101 19.8845C17.1581 19.8942 17.1053 19.898 17.0525 19.8957C16.8966 19.897 16.7415 19.8724 16.5933 19.8229L16.5809 19.8061C16.0353 19.6479 15.1251 19.2545 13.6076 18.4005C12.73 17.9117 11.8945 17.3478 11.11 16.715C10.7166 16.3979 10.3413 16.0581 9.98596 15.6972L9.91057 15.6202L9.87218 15.5824L9.83517 15.5432C9.48174 15.1803 9.149 14.797 8.83859 14.3952C8.21899 13.594 7.66687 12.7407 7.18814 11.8444C6.35194 10.2946 5.96675 9.36641 5.81184 8.80641L5.79539 8.79521C5.74738 8.64378 5.72377 8.48538 5.72548 8.32621C5.72267 8.27235 5.72589 8.21833 5.73508 8.16522C5.77894 7.80402 5.95349 7.43535 6.25873 7.05922L6.26558 7.04942C6.64345 6.61789 7.0863 6.25067 7.57745 5.96163L7.58704 5.96023C8.08053 5.69703 8.54935 5.78663 8.86738 6.17023C8.87012 6.17163 9.53085 6.98223 9.81324 7.37702C10.1053 7.79641 10.3766 8.23049 10.6261 8.67761C10.951 9.27261 10.7481 9.8816 10.4287 10.1336L9.78445 10.6558C9.45957 10.9246 9.50207 11.423 9.50207 11.423C9.50207 11.423 10.4562 15.1092 14.0189 16.0374ZM12.8153 5.01244C12.7695 5.01188 12.7241 5.02059 12.6816 5.03805C12.6392 5.05552 12.6005 5.0814 12.5679 5.11419C12.5353 5.14699 12.5093 5.18606 12.4916 5.22915C12.4738 5.27223 12.4646 5.31848 12.4644 5.36524C12.4642 5.41175 12.473 5.45785 12.4903 5.50089C12.5075 5.54393 12.5329 5.58308 12.565 5.6161C12.5971 5.64912 12.6352 5.67537 12.6772 5.69334C12.7192 5.71131 12.7643 5.72065 12.8098 5.72083C14.6645 5.73483 16.1738 6.34663 17.4103 7.57722C18.6358 8.79801 19.2622 10.457 19.2787 12.6326C19.2789 12.6791 19.288 12.7251 19.3056 12.768C19.3232 12.8109 19.3489 12.8499 19.3812 12.8826C19.4136 12.9154 19.4519 12.9413 19.494 12.959C19.5362 12.9766 19.5813 12.9856 19.6269 12.9854C19.6725 12.9852 19.7177 12.9758 19.7598 12.9578C19.8019 12.9397 19.8401 12.9133 19.8722 12.8802C19.9043 12.847 19.9297 12.8077 19.9468 12.7645C19.964 12.7213 19.9727 12.675 19.9723 12.6284C19.9545 10.3128 19.2636 8.43401 17.8942 7.07042C16.5371 5.71943 14.8208 5.02644 12.8153 5.01244ZM13.45 6.85063C13.4045 6.84719 13.3589 6.85294 13.3156 6.86755C13.2723 6.88216 13.2323 6.90535 13.1978 6.93577C13.1633 6.9662 13.135 7.00327 13.1145 7.04487C13.094 7.08648 13.0818 7.13179 13.0785 7.17822C13.0751 7.22465 13.0808 7.2713 13.0951 7.31551C13.1094 7.35971 13.1321 7.4006 13.1619 7.43584C13.1917 7.47107 13.228 7.49997 13.2687 7.52086C13.3094 7.54176 13.3538 7.55425 13.3993 7.55762C14.7235 7.65702 15.705 8.09942 16.4219 8.89741C17.1402 9.6996 17.4816 10.6754 17.4555 11.8948C17.4546 11.9413 17.4627 11.9875 17.4793 12.0309C17.4959 12.0742 17.5206 12.1138 17.5522 12.1473C17.5838 12.1809 17.6215 12.2077 17.6633 12.2264C17.705 12.245 17.7499 12.2551 17.7955 12.256C17.887 12.2579 17.9755 12.2227 18.0418 12.1582C18.108 12.0937 18.1466 12.005 18.1491 11.9116C18.1779 10.5424 17.7708 9.35381 16.9332 8.42001C16.0874 7.47642 14.9044 6.95843 13.4514 6.85063H13.45ZM13.9695 8.75041C13.924 8.74796 13.8784 8.75471 13.8354 8.77028C13.7924 8.78585 13.7528 8.80993 13.719 8.84114C13.6851 8.87235 13.6576 8.91008 13.638 8.95217C13.6184 8.99426 13.6072 9.03988 13.6049 9.08641C13.6 9.18015 13.6318 9.27203 13.6933 9.34185C13.7547 9.41168 13.8407 9.45374 13.9325 9.45881C14.5302 9.49101 14.9332 9.66321 15.2074 9.9502C15.4788 10.2386 15.646 10.6726 15.6776 11.3096C15.6822 11.4031 15.7228 11.4909 15.7906 11.5538C15.8585 11.6168 15.9479 11.6498 16.0395 11.6456C16.1307 11.6409 16.2165 11.5995 16.2781 11.5306C16.3397 11.4617 16.3722 11.3707 16.3685 11.2774C16.3314 10.5256 16.1217 9.8998 15.705 9.45741C15.2869 9.01781 14.6865 8.78821 13.9695 8.75041ZM23.0662 2.73046C22.3849 2.08926 19.631 0.0480756 13.498 0.0200758C13.498 0.0200758 6.26695 -0.425121 2.74123 2.87745C0.7796 4.88224 0.088712 7.81522 0.0160591 11.4524C-0.0565938 15.0882 -0.15118 21.9033 6.28066 23.7513H6.28752L6.2834 26.5723C6.2834 26.5723 6.24228 27.7133 6.9784 27.9457C7.86943 28.2285 8.39034 27.3605 9.24024 26.4253C9.70769 25.9115 10.352 25.1583 10.8372 24.5815C15.2375 24.9595 18.6207 24.0957 19.0045 23.9669C19.8928 23.6729 24.9196 23.0149 25.7352 16.2012C26.5796 9.17741 25.3281 4.73384 23.0662 2.73046ZM23.812 15.6972C23.1211 21.3867 19.0443 21.7451 18.2931 21.9915C17.9737 22.0965 15.0018 22.8511 11.2649 22.6019C11.2649 22.6019 8.48081 26.0319 7.61035 26.9251C7.47464 27.0651 7.31562 27.1211 7.2087 27.0931C7.05791 27.0553 7.01679 26.8747 7.01953 26.6101L7.04283 21.9243C1.60072 20.3815 1.91874 14.58 1.98043 11.5434C2.04212 8.50541 2.60141 6.01763 4.26146 4.34324C7.24297 1.58526 13.3842 1.99686 13.3842 1.99686C18.5713 2.02066 21.058 3.61665 21.6337 4.15005C23.5474 5.82443 24.5234 9.8284 23.8106 15.6958L23.812 15.6972Z"
+                                                fill="#45494B" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copy">
+                    Всі права захищені 2023©
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
