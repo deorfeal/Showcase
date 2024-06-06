@@ -1,0 +1,65 @@
+html,
+body {
+	height: 100%;
+	// font-family: "CocomatPro";
+	font-family: "Gilroy";
+	font-weight: 400;
+	scroll-behavior: smooth;
+	:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+
+	:focus::-moz-placeholder {
+		color: transparent;
+	}
+
+	:focus:-moz-placeholder {
+		color: transparent;
+	}
+
+	:focus:-ms-input-placeholder {
+		color: transparent;
+	}
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-small {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-smallest {
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	font-family: "CocomatPro";
+	font-weight: 700;
+	color: #5c13ee;
+
+	@include adaptiv-value("font-size", 48, 24, 1);
+	@include adaptiv-value("line-height", 74, 37, 1);
+}
+
+.body--active {
+	overflow-y: hidden;
+}
