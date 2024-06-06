@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="header__burger" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="header__menu menu">
+                    <ul class="menu__list menu-list">
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="menu-list__item menu-list__item--categories">
+                            <button class="menu-list__btn">
+                                <span>
+                                    Обладнання
+                                </span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7144 1L7.21436 8L0.714356 0.999999" stroke="#0B0B0B" />
+                                </svg>
+                            </button>
+                            <ul class="menu-list__sublist menu-list-sublist">
+                                <li class="menu-list-sublist__item">
+                                    <button class="menu-list-sublist__btn" type="button">
+                                        <a class="menu-list-sublist__btn-text" id="0" href="#">
+                                            Для АШМД
+                                        </a>
+                                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <ul class="menu-list-sublist__list" id="0">
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати ШВЛ 1
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Дефібрилятори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Аспіратори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати СЛР
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-list-sublist__item">
+                                    <button class="menu-list-sublist__btn" type="button">
+                                        <a class="menu-list-sublist__btn-text" href="#" id="1">
+                                            Операційне
+                                        </a>
+                                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <ul class="menu-list-sublist__list" id="1">
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати ШВЛ 2
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Дефібрилятори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Аспіратори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати СЛР
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-list-sublist__item">
+                                    <button class="menu-list-sublist__btn" type="button">
+                                        <a class="menu-list-sublist__btn-text" href="#" id="2">
+                                            Реанімаційне
+                                        </a>
+                                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <ul class="menu-list-sublist__list" id="2">
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати ШВЛ 3
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Дефібрилятори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Аспіратори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати СЛР
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-list-sublist__item">
+                                    <button class="menu-list-sublist__btn" type="button">
+                                        <a class="menu-list-sublist__btn-text" href="#" id="3">
+                                            Слухові апарати
+                                        </a>
+                                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <ul class="menu-list-sublist__list" id="3">
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати ШВЛ 4
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Дефібрилятори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Аспіратори
+                                            </a>
+                                        </li>
+                                        <li class="menu-list-sublist__list-item">
+                                            <a class="menu-list-sublist__list-link" href="#">
+                                                Апарати СЛР
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <form class="header__form header__form" action="#">
+                    <a class="header__form-btn" data-fancybox="" href="#search-form">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_101_15)">
+                                <path
+                                    d="M10.1486 19.44C15.2801 19.44 19.44 15.2801 19.44 10.1486C19.44 5.01709 15.2801 0.857178 10.1486 0.857178C5.01706 0.857178 0.857147 5.01709 0.857147 10.1486C0.857147 15.2801 5.01706 19.44 10.1486 19.44Z"
+                                    stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M23.1429 23.1429L16.7143 16.7144" stroke="#0B0B0B" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_101_15">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </form>
+                <div class="header__lang header-lang custom-select">
+                    <select>
+                        <option value="0">UK</option>
+                        <option value="1">UK</option>
+                        <option value="2">RU</option>
+                    </select>
+                </div>
+                <a class="header__link" href="tel:+380502431291">
+                    +38 050 243 12 91
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading-section heading-section">
+                <div class="container">
+                    <div class="heading-section__inner">
+                        <h1 class="heading-section__title">
+                            ОБЛАДНАННЯ
+                        </h1>
+                        <ul class="heading-section__breadcrumbs breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Обладнання
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Реанімаційне обладнання
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Апарати ШВЛ
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Ambulanc
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <p class="breadcrumbs__text">
+                                    Апарат ШВЛ Т5
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__product-info product-info">
+                <div class="container">
+                    <div class="product-info__inner">
+                        <div class="product-info__view product-info-view">
+                            <div class="product-info-view__content product-info-view-content">
+                                <a href="#"
+                                    class="product-info-view-content__item product-info-view-content__item--active card-item"
+                                    id="0">
+                                    <div class="card-item__img">
+                                        <img class="card-item__img-image" src="images/top-img-2.png" alt="img">
+                                    </div>
+                                    <p class="card-item__suptext">
+                                        TOP
+                                    </p>
+                                    <h3 class="card-item__title">
+                                        Ambulanc
+                                    </h3>
+                                    <p class="card-item__text">
+                                        Апарат штучної вентиляції легень Т6
+                                    </p>
+                                </a>
+                                <a href="#" class="product-info-view-content__item card-item" id="1">
+                                    <div class="card-item__img">
+                                        <img class="card-item__img-image" src="images/product-info-img-2.webp"
+                                            alt="img">
+                                    </div>
+                                    <!-- <p class="card-item__suptext">
+                                        TOP
+                                    </p> -->
+                                    <h3 class="card-item__title">
+                                        Ambulanc
+                                    </h3>
+                                    <p class="card-item__text">
+                                        Апарат штучної вентиляції легень Т6
+                                    </p>
+                                </a>
+                                <a href="#" class="product-info-view-content__item card-item" id="2">
+                                    <div class="card-item__img">
+                                        <img class="card-item__img-image" src="images/product-info-img-3.webp"
+                                            alt="img">
+                                    </div>
+                                    <!-- <p class="card-item__suptext">
+                                        TOP
+                                    </p> -->
+                                    <h3 class="card-item__title">
+                                        Ambulanc
+                                    </h3>
+                                    <p class="card-item__text">
+                                        Апарат штучної вентиляції легень Т6
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="product-info-view__swiper product-info-view-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="0">
+                                        <img class="product-info-view-slide__img" src="images/top-img-2.png" alt="img">
+                                    </div>
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="1">
+                                        <img class="product-info-view-slide__img" src="images/product-info-img-2.webp"
+                                            alt="img">
+                                    </div>
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="2">
+                                        <img class="product-info-view-slide__img" src="images/product-info-img-3.webp"
+                                            alt="img">
+                                    </div>
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="0">
+                                        <img class="product-info-view-slide__img" src="images/top-img-2.png" alt="img">
+                                    </div>
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="1">
+                                        <img class="product-info-view-slide__img" src="images/product-info-img-2.webp"
+                                            alt="img">
+                                    </div>
+                                    <div class="product-info-view-swiper__slide product-info-view-slide swiper-slide"
+                                        id="2">
+                                        <img class="product-info-view-slide__img" src="images/product-info-img-3.webp"
+                                            alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info__content product-info-content">
+                            <h2 class="product-info-content__title">
+                                Апарат штучної
+                                вентиляції легень Т5
+                            </h2>
+                            <p class="product-info-content__text">
+                                T5 – компактний апарат штучної вентиляції легень, призначений для використання при
+                                надзвичайних ситуаціях. Може використовуватися як у автомобілях швидкої допомоги, так і
+                                в лікарнях для переміщення пацієнтів між відділеннями.
+                            </p>
+                            <p class="product-info-content__suptext">
+                                Виробник:
+                                <span>
+                                    Аmbulanc
+                                </span>
+                            </p>
+                            <p class="product-info-content__from">
+                                Країна:
+                                <span>
+                                    Китай
+                                </span>
+                            </p>
+                            <p class="product-info-content__avaible">
+                                Є в наявності!
+                            </p>
+                            <button class="product-info-content__btn btn" type="submit">
+                                <span>
+                                    замовити
+                                </span>
+                                <span>
+                                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about-product about-product">
+                <div class="container">
+                    <div class="about-product__top">
+                        <button class="about-product__top-btn about-product__top-btn--active" type="button" id="0">
+                            Опис
+                        </button>
+                        <button class="about-product__top-btn" type="button" id="1">
+                            Характеристики
+                        </button>
+                        <button class="about-product__top-btn" type="button" id="2">
+                            Деталі
+                        </button>
+                    </div>
+                    <div class="about-product__inner">
+                        <div class="about-product__wrapper about-product__wrapper--active" id="0">
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Особливості
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Багатоцільовий апарат ШВЛ з додатковим підключенням 5G
+                                    Чіткий сенсорний екран з інтерактивним інтерфейсом і блокуванням екрана для
+                                    забезпечення
+                                    безпечної роботи
+                                    T5 забезпечує широкі режими вентиляції, такі як HFNC, неінвазивна та інвазивна
+                                    вентиляція тощо. Він може задовольнити різні клінічні вимоги для широкого кола
+                                    пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Портативний дизайн
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Компактний розмір і легка вага, оснащений портативною мобільною стійкою, яка
+                                    полегшує
+                                    переміщення або використання в машині швидкої допомоги.
+                                </p>
+                            </div>
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Адаптивність
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Різні режими вентиляції забезпечують чудову адаптацію до будь-яких вимогливих
+                                    клінічних
+                                    сценаріїв. Таким чином, T5 може запропонувати найбільш підходящу терапію підтримки
+                                    дихання для широкого кола пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Підключення 5G
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Підтримка інтелектуального підключення 5G для відображення та передачі даних у
+                                    режимі
+                                    реального часу.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-product__wrapper" id="1">
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Особливості 2
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Багатоцільовий апарат ШВЛ з додатковим підключенням 5G
+                                    Чіткий сенсорний екран з інтерактивним інтерфейсом і блокуванням екрана для
+                                    забезпечення
+                                    безпечної роботи
+                                    T5 забезпечує широкі режими вентиляції, такі як HFNC, неінвазивна та інвазивна
+                                    вентиляція тощо. Він може задовольнити різні клінічні вимоги для широкого кола
+                                    пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Портативний дизайн
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Компактний розмір і легка вага, оснащений портативною мобільною стійкою, яка
+                                    полегшує
+                                    переміщення або використання в машині швидкої допомоги.
+                                </p>
+                            </div>
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Адаптивність
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Різні режими вентиляції забезпечують чудову адаптацію до будь-яких вимогливих
+                                    клінічних
+                                    сценаріїв. Таким чином, T5 може запропонувати найбільш підходящу терапію підтримки
+                                    дихання для широкого кола пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Підключення 5G
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Підтримка інтелектуального підключення 5G для відображення та передачі даних у
+                                    режимі
+                                    реального часу.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-product__wrapper" id="2">
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Особливості 3
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Багатоцільовий апарат ШВЛ з додатковим підключенням 5G
+                                    Чіткий сенсорний екран з інтерактивним інтерфейсом і блокуванням екрана для
+                                    забезпечення
+                                    безпечної роботи
+                                    T5 забезпечує широкі режими вентиляції, такі як HFNC, неінвазивна та інвазивна
+                                    вентиляція тощо. Він може задовольнити різні клінічні вимоги для широкого кола
+                                    пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Портативний дизайн
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Компактний розмір і легка вага, оснащений портативною мобільною стійкою, яка
+                                    полегшує
+                                    переміщення або використання в машині швидкої допомоги.
+                                </p>
+                            </div>
+                            <div class="about-product__box">
+                                <h3 class="about-product__box-title">
+                                    Адаптивність
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Різні режими вентиляції забезпечують чудову адаптацію до будь-яких вимогливих
+                                    клінічних
+                                    сценаріїв. Таким чином, T5 може запропонувати найбільш підходящу терапію підтримки
+                                    дихання для широкого кола пацієнтів.
+                                </p>
+                                <h3 class="about-product__box-title">
+                                    Підключення 5G
+                                </h3>
+                                <p class="about-product__box-text">
+                                    Підтримка інтелектуального підключення 5G для відображення та передачі даних у
+                                    режимі
+                                    реального часу.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contact contact contact--grey">
+                <div class="big-container">
+                    <div class="contact__inner">
+                        <div class="contact__img">
+                            <img class="contact__img-image" src="images/contact-img-2.webp" alt="img">
+                        </div>
+                        <div class="container">
+                            <form class="contact__form contact-form" action="#">
+                                <h2 class="contact-form__title">
+                                    виникли питання? будемо РАДІ ВІДПОВІСТИ!
+                                </h2>
+                                <div class="contact-form__box">
+                                    <label class="contact-form__box-text">
+                                        Ім'я
+                                    </label>
+                                    <input class="contact-form__box-input" type="text">
+                                </div>
+                                <div class="contact-form__box">
+                                    <label class="contact-form__box-text">
+                                        Телефон
+                                    </label>
+                                    <input class="contact-form__box-input" type="tel">
+                                </div>
+                                <div class="contact-form__box">
+                                    <label class="contact-form__box-text">
+                                        E-mail
+                                    </label>
+                                    <input class="contact-form__box-input" type="email">
+                                </div>
+                                <div class="contact-form__box">
+                                    <p class="contact-form__box-text">
+                                        Коментар
+                                    </p>
+                                    <textarea class="contact-form__box-textarea" name="" id="" cols="30"
+                                        rows="5"></textarea>
+                                </div>
+                                <button class="contact__btn btn" type="submit">
+                                    <span>
+                                        відправити
+                                    </span>
+                                    <span>
+                                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__top top">
+                <div class="container">
+                    <h2 class="top__title">
+                        схожі товари
+                    </h2>
+                    <div class="top__inner">
+                        <a href="#" class="top__item card-item">
+                            <div class="card-item__img">
+                                <img class="card-item__img-image" src="images/top-img-1.png" alt="img">
+                            </div>
+                            <p class="card-item__suptext">
+                                TOP
+                            </p>
+                            <h3 class="card-item__title">
+                                Ambulanc
+                            </h3>
+                            <p class="card-item__text">
+                                Апарат штучної вентиляції легень Т6
+                            </p>
+                            <div class="card-item__btn btn">
+                                <span>
+                                    Детальніше
+                                </span>
+                                <span>
+                                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="#" class="top__item card-item">
+                            <div class="card-item__img">
+                                <img class="card-item__img-image" src="images/top-img-2.png" alt="img">
+                            </div>
+                            <p class="card-item__suptext">
+                                TOP
+                            </p>
+                            <h3 class="card-item__title">
+                                Ambulanc
+                            </h3>
+                            <p class="card-item__text">
+                                Апарат штучної вентиляції легень Т5
+                            </p>
+                            <div class="card-item__btn btn">
+                                <span>
+                                    Детальніше
+                                </span>
+                                <span>
+                                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="#" class="top__item card-item">
+                            <div class="card-item__img">
+                                <img class="card-item__img-image" src="images/top-img-3.png" alt="img">
+                            </div>
+                            <p class="card-item__suptext">
+                                TOP
+                            </p>
+                            <h3 class="card-item__title">
+                                Ambulanc
+                            </h3>
+                            <p class="card-item__text">
+                                Апарат штучної вентиляції легень Т7
+                            </p>
+                            <div class="card-item__btn btn">
+                                <span>
+                                    Детальніше
+                                </span>
+                                <span>
+                                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="#" class="top__item card-item">
+                            <div class="card-item__img">
+                                <img class="card-item__img-image" src="images/top-img-4.png" alt="img">
+                            </div>
+                            <p class="card-item__suptext">
+                                TOP
+                            </p>
+                            <h3 class="card-item__title">
+                                Ambulanc
+                            </h3>
+                            <p class="card-item__text">
+                                Дефібрилятор-монітор i6
+                            </p>
+                            <div class="card-item__btn btn">
+                                <span>
+                                    Детальніше
+                                </span>
+                                <span>
+                                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <form class="contact__form contact-form" id="contact-form" action="#">
+                <h2 class="contact-form__title">
+                    виникли питання? будемо РАДІ ВІДПОВІСТИ!
+                </h2>
+                <div class="contact-form__box">
+                    <label class="contact-form__box-text">
+                        Ім'я
+                    </label>
+                    <input class="contact-form__box-input" type="text">
+                </div>
+                <div class="contact-form__box">
+                    <label class="contact-form__box-text">
+                        Телефон
+                    </label>
+                    <input class="contact-form__box-input" type="tel">
+                </div>
+                <div class="contact-form__box">
+                    <label class="contact-form__box-text">
+                        E-mail
+                    </label>
+                    <input class="contact-form__box-input" type="email">
+                </div>
+                <div class="contact-form__box">
+                    <p class="contact-form__box-text">
+                        Коментар
+                    </p>
+                    <textarea class="contact-form__box-textarea" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <button class="contact__btn btn" type="submit">
+                    <span>
+                        відправити
+                    </span>
+                    <span>
+                        <svg width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                </button>
+            </form>
+            <form class="main__search-form search-form" id="search-form" action="#">
+                <div class="search-form__top search-form-top">
+                    <input class="search-form-top__input" type="text" placeholder="Пошук">
+                    <button class="search-form-top__btn" type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_101_15)">
+                                <path
+                                    d="M10.1486 19.44C15.2801 19.44 19.44 15.2801 19.44 10.1486C19.44 5.01709 15.2801 0.857178 10.1486 0.857178C5.01706 0.857178 0.857147 5.01709 0.857147 10.1486C0.857147 15.2801 5.01706 19.44 10.1486 19.44Z"
+                                    stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M23.1429 23.1429L16.7143 16.7144" stroke="#0B0B0B" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_101_15">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-form__results">
+                    <p class="search-form__results-text">
+                        Result 1
+                    </p>
+                    <p class="search-form__results-text">
+                        Result 2
+                    </p>
+                    <p class="search-form__results-text">
+                        Result ...
+                    </p>
+                </div>
+            </form>
+        </main>
+        <a class="arrow-up" href="#header">
+            <svg width="12" height="26" viewBox="0 0 12 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.53033 0.469669C6.23744 0.176777 5.76256 0.176777 5.46967 0.469669L0.696698 5.24264C0.403805 5.53553 0.403805 6.01041 0.696698 6.3033C0.989592 6.59619 1.46447 6.59619 1.75736 6.3033L6 2.06066L10.2426 6.3033C10.5355 6.59619 11.0104 6.59619 11.3033 6.3033C11.5962 6.01041 11.5962 5.53553 11.3033 5.24264L6.53033 0.469669ZM6.75 26L6.75 1L5.25 1L5.25 26L6.75 26Z" fill="#0B0B0B"/>
+                </svg>
+                
+        </a>
+        <footer class="footer">
+            <div class="container">
+                <a class="footer__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__box footer-box">
+                        <p class="footer-box__text">
+                            Ми надаємо широкий спектр діагностичного, операційного та реанімаційного обладнання!
+                        </p>
+                        <a class="footer-box__adress" href="#">
+                            м.Київ, вул.Волоська, 2/19, офіс 3
+                            info@healthdesign.com.ua
+
+                        </a>
+                        <a class="footer-box__phone" href="tel:+380502431291">
+                            +38 050 243 12 91
+                        </a>
+                        <div class="footer-box__socials">
+                            <a class="footer-box__socials-link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_199)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H19.2C20.473 0 21.6939 0.505713 22.5941 1.40589C23.4943 2.30606 24 3.52696 24 4.8V19.2C24 20.473 23.4943 21.6939 22.5941 22.5941C21.6939 23.4943 20.473 24 19.2 24H4.8C3.52696 24 2.30606 23.4943 1.40589 22.5941C0.505713 21.6939 0 20.473 0 19.2V4.8ZM4.8 2.4C4.16348 2.4 3.55303 2.65286 3.10294 3.10294C2.65286 3.55303 2.4 4.16348 2.4 4.8V19.2C2.4 19.8365 2.65286 20.447 3.10294 20.8971C3.55303 21.3471 4.16348 21.6 4.8 21.6H19.2C19.8365 21.6 20.447 21.3471 20.8971 20.8971C21.3471 20.447 21.6 19.8365 21.6 19.2V4.8C21.6 4.16348 21.3471 3.55303 20.8971 3.10294C20.447 2.65286 19.8365 2.4 19.2 2.4H4.8ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4ZM6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12ZM18.6 7.2C19.0774 7.2 19.5352 7.01036 19.8728 6.67279C20.2104 6.33523 20.4 5.87739 20.4 5.4C20.4 4.92261 20.2104 4.46477 19.8728 4.12721C19.5352 3.78964 19.0774 3.6 18.6 3.6C18.1226 3.6 17.6648 3.78964 17.3272 4.12721C16.9896 4.46477 16.8 4.92261 16.8 5.4C16.8 5.87739 16.9896 6.33523 17.3272 6.67279C17.6648 7.01036 18.1226 7.2 18.6 7.2Z"
+                                            fill="#FE0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_0_199">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a class="footer-box__socials-link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_197)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H19.2C20.473 0 21.6939 0.505713 22.5941 1.40589C23.4943 2.30606 24 3.52696 24 4.8V19.2C24 20.473 23.4943 21.6939 22.5941 22.5941C21.6939 23.4943 20.473 24 19.2 24H4.8C3.52696 24 2.30606 23.4943 1.40589 22.5941C0.505713 21.6939 0 20.473 0 19.2V4.8ZM4.8 2.4C4.16348 2.4 3.55303 2.65286 3.10294 3.10294C2.65286 3.55303 2.4 4.16348 2.4 4.8V19.2C2.4 19.8365 2.65286 20.447 3.10294 20.8971C3.55303 21.3471 4.16348 21.6 4.8 21.6H12V13.2H10.8C10.4817 13.2 10.1765 13.0736 9.95147 12.8485C9.72643 12.6235 9.6 12.3183 9.6 12C9.6 11.6817 9.72643 11.3765 9.95147 11.1515C10.1765 10.9264 10.4817 10.8 10.8 10.8H12V9C12 7.88609 12.4425 6.8178 13.2302 6.03015C14.0178 5.2425 15.0861 4.8 16.2 4.8H16.92C17.2383 4.8 17.5435 4.92643 17.7685 5.15147C17.9936 5.37652 18.12 5.68174 18.12 6C18.12 6.31826 17.9936 6.62348 17.7685 6.84853C17.5435 7.07357 17.2383 7.2 16.92 7.2H16.2C15.9636 7.2 15.7296 7.24656 15.5112 7.33702C15.2928 7.42748 15.0944 7.56006 14.9272 7.72721C14.7601 7.89435 14.6275 8.09278 14.537 8.31117C14.4466 8.52956 14.4 8.76362 14.4 9V10.8H16.92C17.2383 10.8 17.5435 10.9264 17.7685 11.1515C17.9936 11.3765 18.12 11.6817 18.12 12C18.12 12.3183 17.9936 12.6235 17.7685 12.8485C17.5435 13.0736 17.2383 13.2 16.92 13.2H14.4V21.6H19.2C19.8365 21.6 20.447 21.3471 20.8971 20.8971C21.3471 20.447 21.6 19.8365 21.6 19.2V4.8C21.6 4.16348 21.3471 3.55303 20.8971 3.10294C20.447 2.65286 19.8365 2.4 19.2 2.4H4.8Z"
+                                            fill="#FE0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_0_197">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper">
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Обладнання
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Реанімаційне обладнання
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Операційне обладнання
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Обладнання для АШМД
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    Слухові аппарати
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__consultation">
+                        <p class="footer__consultation-text">
+                            Потрібна консультація?
+                        </p>
+                        <a class="footer__consultation-link link" data-fancybox href="#contact-form">
+                            <span>
+                                Залишити заявку
+                            </span>
+                            <svg width="67" height="12" viewBox="0 0 67 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M66.5303 6.53033C66.8232 6.23744 66.8232 5.76256 66.5303 5.46967L61.7574 0.696699C61.4645 0.403806 60.9896 0.403806 60.6967 0.696699C60.4038 0.989593 60.4038 1.46447 60.6967 1.75736L64.9393 6L60.6967 10.2426C60.4038 10.5355 60.4038 11.0104 60.6967 11.3033C60.9896 11.5962 61.4645 11.5962 61.7574 11.3033L66.5303 6.53033ZM0 6.75H66V5.25H0V6.75Z"
+                                    fill="#FE0000" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
