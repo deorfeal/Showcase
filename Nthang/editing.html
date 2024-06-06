@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="img">
+                </a>
+                <form class="header__location location" action="#">
+                    <div class="location__selected">
+                        <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.72922 19.5965C1.05352 11.3684 0 10.5239 0 7.5C0 3.35785 3.35785 0 7.5 0C11.6421 0 15 3.35785 15 7.5C15 10.5239 13.9465 11.3684 8.27078 19.5965C7.89832 20.1345 7.10164 20.1345 6.72922 19.5965ZM7.5 10.625C9.2259 10.625 10.625 9.2259 10.625 7.5C10.625 5.7741 9.2259 4.375 7.5 4.375C5.7741 4.375 4.375 5.7741 4.375 7.5C4.375 9.2259 5.7741 10.625 7.5 10.625Z"
+                                fill="#18BDB9" />
+                        </svg>
+                        <span>
+                            Юго-Восточный, Хошимин
+                        </span>
+                    </div>
+                    <ul class="location__list location-list">
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Тайнгуэн
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Дельта Меконга
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Дельта Хонгхи
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Северо-Восточный
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Северо-западный
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Север центр. побережья
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Юг центр. побережья
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-list__item">
+                            <a class="location-list__link" href="#">
+                                Юго-Восточный
+                            </a>
+                            <ul class="location-list__sublist location-sublist">
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Далат
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Кантхо
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Ханой
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Тхайнгуен
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хоабинь
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хюэ
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Хошимин
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Данаг
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакльеу
+                                    </a>
+                                </li>
+                                <li class="location-sublist__item">
+                                    <a class="location-sublist__link" href="#">
+                                        Бакнинь
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </form>
+                <form class="header__search search" action="#">
+                    <div class="search__inner">
+                        <input class="search__input" type="text" placeholder="Что ищем?">
+                        <button class="search__btn" type="submit">
+                            <span>
+                                Поиск
+                            </span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.99994 13.2727C11.2132 13.2727 13.8181 10.6678 13.8181 7.45455C13.8181 4.24125 11.2132 1.63636 7.99994 1.63636C4.78665 1.63636 2.18176 4.24125 2.18176 7.45455C2.18176 10.6678 4.78665 13.2727 7.99994 13.2727Z"
+                                    stroke="white" stroke-width="1.45455" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M14.5455 14L13.0909 12.5455" stroke="white" stroke-width="1.45455"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="header__lang lang">
+                    <ul class="lang__list">
+                        <li class="lang__list-item lang__list-item--active">
+                            <a class="lang__list-link" href="#">
+                                Рус
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Eng
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Việt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <div class="breadcrumbs__pagination">
+                            <a class="pagination__link" href="#">
+                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.205987 11.765C0.479698 12.0783 0.920987 12.0783 1.1947 11.765L5.83661 6.45084C6.05446 6.20144 6.05446 5.79856 5.83661 5.54916L1.1947 0.235013C0.920988 -0.0783372 0.479699 -0.0783372 0.205988 0.235013C-0.0677232 0.548361 -0.0677233 1.05356 0.205987 1.36691L4.25021 6.0032L0.200402 10.6395C-0.0677232 10.9464 -0.0677242 11.458 0.205987 11.765Z"
+                                        fill="#18BDB9" />
+                                </svg>
+                                <span>
+                                    Назад
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="#">
+                                    Объявления
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <p class="breadcrumbs__list-text">
+                                    Редактировать
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__editing editing">
+                <div class="container">
+                    <div class="editing__inner">
+                        <div class="editing__body editing-body">
+                            <div class="editing-body__inner">
+                                <div class="editing-body__info">
+                                    <p class="editing-body__info-text">
+                                        User ID:
+                                        <span>
+                                            4200420
+                                        </span>
+                                    </p>
+                                    <p class="editing-body__info-text">
+                                        Message ID:
+                                        <span>4200420</span>
+                                    </p>
+                                </div>
+                                <div class="editing-body__date">
+                                    <p class="editing-body__date-text">
+                                        26 июня 2023 в 16:20:41
+                                    </p>
+                                    <p class="editing-body__date-text">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 7C10 9.208 8.208 11 6 11C3.792 11 2 9.208 2 7C2 4.792 3.792 3 6 3C8.208 3 10 4.792 10 7Z"
+                                                stroke="#18BDB9" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6 5V7" stroke="#18BDB9" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M4 1H8" stroke="#18BDB9" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span>
+                                            59 min
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="editing-body__category">
+                                    Электроника
+                                </p>
+                                <h2 class="editing-body__title">
+                                    Продам б/у SSD m2 NVME PCIe 3.0 x4 2280 Samsung PM981 512 GB
+                                </h2>
+                                <p class="editing-body__price">
+                                    $ 40 000
+                                </p>
+                                <p class="editing-body__text">
+                                    Lorem ipsum dolor sit amet consectetur. Aliquam venenatis cursus velit pellentesque
+                                    amet
+                                    consectetur nisl scelerisque tincidunt. Mollis viverra pellentesque iaculis
+                                    convallis
+                                    scelerisque habitant posuere. Risus sollicitudin volutpat at scelerisque consequat.
+                                    Auctor odio facilisis lectus tellus ac.
+                                </p>
+                            </div>
+                            <div class="editing-body__swiper editing-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                    <div class="editing-swiper__slide editing-swiper-slide swiper-slide">
+                                        <button class="editing-swiper-slide__button" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.80314 6.99665L13.8339 0.963569C13.9403 0.856712 14 0.71207 13.9999 0.561324C13.9998 0.410578 13.9399 0.266016 13.8334 0.159301C13.6201 -0.0527434 13.2445 -0.0538141 13.0292 0.160372L7.00001 6.19345L0.968707 0.158765C0.754394 -0.0527433 0.378811 -0.0516725 0.165569 0.159836C0.112641 0.212522 0.0707413 0.275217 0.0423165 0.34426C0.0138917 0.413303 -0.000489237 0.487313 1.27002e-05 0.561971C1.27002e-05 0.714043 0.0589487 0.856476 0.165569 0.961963L6.19633 6.99612L0.166105 13.0308C0.059691 13.1378 9.79123e-05 13.2827 0.000399243 13.4335C0.000700573 13.5844 0.0608719 13.729 0.167713 13.8356C0.271119 13.9379 0.417387 13.9968 0.568477 13.9968H0.571692C0.723319 13.9963 0.869587 13.9368 0.97085 13.8335L7.00001 7.80039L13.0313 13.8351C13.1379 13.9411 13.2804 14 13.4315 14C13.5062 14.0002 13.5803 13.9857 13.6493 13.9572C13.7184 13.9287 13.7811 13.8869 13.834 13.8341C13.8868 13.7813 13.9287 13.7186 13.9572 13.6495C13.9857 13.5805 14.0002 13.5065 14 13.4319C14 13.2803 13.9411 13.1374 13.8339 13.0319L7.80314 6.99665Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                        <img class="editing-swiper-slide__img" src="images/card-img-1.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="editing__aside editing-aside">
+                            <p class="editing-aside__text">
+                                Действия
+                            </p>
+                            <form class="editing-aside__inner" action="#">
+                                <div class="editing-aside__box">
+                                    <label class="editing-aside__box-text" for="">
+                                        Изменить категорию
+                                    </label>
+                                    <div class="editing-aside__box-custom-select custom-select">
+                                        <select>
+                                            <option value="0">Недвижимость</option>
+                                            <option value="1">Недвижимость</option>
+                                            <option value="2">Недвижимость 2</option>
+                                            <option value="3">Недвижимость 3</option>
+                                            <option value="4">Недвижимость 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="editing-aside__button" type="submit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.5 4.97L8.72 3.66C8.88 2.71 9 2 10.69 2H13.31C15 2 15.13 2.75 15.28 3.67L15.5 4.97"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M18.8499 9.13989L18.1999 19.2099C18.0899 20.7799 17.9999 21.9999 15.2099 21.9999H8.7899C5.9999 21.9999 5.9099 20.7799 5.7999 19.2099L5.1499 9.13989"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.3301 16.5H13.6601" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.5 12.5H14.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        УДАЛИТЬ
+                                    </span>
+                                </button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo-img" src="images/logo-white.svg" alt="img">
+                    </a>
+                    <p class="footer__text">
+                        Онлайн доска объявлений г. Нья Танг
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
