@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Open+Sans:wght@400;700&family=Overpass&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header">
+            <div class="container">
+                <button class="header__burger burger">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18_1927)">
+                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#151515" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_18_1927">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.49931 0.833332L14.1654 12.5C14.6256 12.9602 14.6256 13.7064 14.1654 14.1667C13.7052 14.6269 12.959 14.6269 12.4988 14.1667L0.832724 2.5C0.37251 2.03976 0.37251 1.29357 0.832724 0.833332C1.29294 0.373096 2.03909 0.373096 2.49931 0.833332Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.834268 12.5L12.5003 0.833327C12.9606 0.373089 13.7067 0.373089 14.1669 0.833326C14.6271 1.29356 14.6271 2.03975 14.1669 2.49999L2.50085 14.1666C2.04064 14.6269 1.29448 14.6269 0.834268 14.1666C0.374054 13.7064 0.374054 12.9602 0.834268 12.5Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <div class="header__inner">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#for">
+                                    Для кого
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#about">
+                                    Про авторку
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#plan">
+                                    План інтенсиву
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#recalls">
+                                    Відгуки
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#faq">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#plans">
+                                    Взяти участь
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link" target="_blank" href="https://t.me/sychynskaonebot">
+                            <img class="user-nav__link-img" src="images/telegram-icon.png" alt="telegram">
+                            <span>
+                                Telegram
+                            </span>
+                        </a>
+                        <a class="user-nav__link" target="_blank" href="mailto:one@sychynska.com">
+                            one@sychynska.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <main class="main">
+                <section class="main__heading heading" id="heading">
+                    <div class="container">
+                        <div class="heading__inner">
+                            <div class="heading__body heading-body">
+                                <h1 class="heading-body__title">
+                                    ТИ У СЕБЕ ЄДИНА
+                                </h1>
+                                <p class="heading-body__text">
+                                    Ти прекрасна, унікальна і неповторна! <br>
+                                    Будь собою справжньою! <br>
+                                    Проявляйся! <br>
+                                </p>
+                                <blockquote class="heading-body__quote">
+                                    <p class="heading-body__quote-text">
+                                        Інтенсив, який за 6 тижнів допоможе тобі почати жити життя своєї мрії.
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="heading__banner heading-banner">
+                                <div class="heading-banner__img">
+                                    <img class="heading-banner__img-image" src="images/heading-img.jpg" alt="img">
+                                </div>
+                                <blockquote class="heading-banner__quote">
+                                    <p class="heading-banner__quote-text">
+                                        МИ НЕ РОБИТИМЕМО З ТЕБЕ КОГОСЬ, КИМ ТИ НЕ Є – МИ ДОПОМОЖЕМО ТОБІ ВІДНАЙТИ СЕБЕ
+                                        СПРАВЖНЮ І РОЗКРИТИСЯ!
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="heading__wrapper">
+                                <p class="heading__subtext">
+                                    Ресурсно, дієво, кайфово.
+                                    <br> <br>
+                                    Якісно, професійно, науково.
+                                    <br> <br>
+                                    З дбайливою підтримкою та вірою в себе.
+                                </p>
+                                <a class="heading__link btn" href="#plans">
+                                    ВЗЯТИ УЧАСТЬ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__for for" id="for">
+                    <div class="container">
+                        <h2 class="for__title title ">
+                            ДЛЯ КОГО
+                        </h2>
+                        <div class="for__inner">
+                            <div class="for__box for-box">
+                                <h4 class="for-box__title">
+                                    Для жінок, які:
+                                </h4>
+                                <ul class="for-box__list">
+                                    <li class="for-box__list-item">
+                                        відчувають, що мають потенціал, але не знають, як його розкрити;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        не знають, яку справу обрати, щоб бути успішною і кайфувати в процесі роботи;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        багато працюють над собою, але не бачать результату;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        хочуть жити життя своєї мрії, проте не знають – яке воно;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        не можуть реалізуватися через страхи чи багаж минулого;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        не мають підтримки близьких і бояться, що знову не вийде;
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        відчувають, що втратили себе в декреті і готові себе віднайти.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="for__box for-box">
+                                <h4 class="for-box__title">
+                                    Цей інтенсив буде тобі корисний, якщо хоча б одна з цих фраз спадала тобі на думку:
+                                </h4>
+                                <ul class="for-box__list">
+                                    <li class="for-box__list-item">
+                                        “Я не знаю, чого хочу”
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Я вже багато разів змінювала діяльність, але так і не знаю, чи це моє”
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Не вірю в себе, нема підтримки”
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Я не вмію любити себе”
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Не управляю своїм життям” 
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Не вмію відстоювати себе”
+                                    </li>
+                                    <li class="for-box__list-item">
+                                        “Я погана мама”
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__after after" id="after">
+                    <div class="container">
+                        <div class="after__inner">
+                            <h2 class="after__title title">
+                                ПІСЛЯ ІНТЕНСИВУ ТИ:
+                            </h2>
+                            <div class="after__img">
+                                <img class="after__img-image" src="images/after-img.jpg" alt="img">
+                            </div>
+                            <div class="after__body after-body">
+                                <h2 class="after-body__title title">
+                                    ПІСЛЯ ІНТЕНСИВУ ТИ:
+                                </h2>
+                                <ul class="after-body__list">
+                                    <li class="after-body__list-item">
+                                        зможеш реалізовуватися у різних сферах життя;
+                                    </li>
+                                    <li class="after-body__list-item">
+                                        навчишся тримати баланс між власними потребами, роботою, коханням та
+                                        материнством;
+                                    </li>
+                                    <li class="after-body__list-item">
+                                        зумієш екологічно ставити себе та свої потреби на перше місце;
+                                    </li>
+                                    <li class="after-body__list-item">
+                                        почнеш жити життя своєї мрії навіть у такі непрості часи.
+                                    </li>
+                                </ul>
+                                <a class="after-body__link btn" href="#plans">
+                                    МЕНІ ЦЕ ПОТРІБНО
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__about about" id="about">
+                    <div class="container">
+                        <h2 class="about__title title">
+                            ПРО АВТОРКУ ІНТЕНСИВУ
+                        </h2>
+                        <div class="about__inner">
+                            <div class="about__img">
+                                <img class="about__img-image" src="images/about-img.jpg" alt="img">
+                            </div>
+                            <p class="about__text">
+                                Привіт! Мене звати <span>Марія Сичинська,</span> я психологиня-аспірантка і я створила
+                                цей
+                                інтенсив, бо
+                                щодня отримую від жінок питання «Як знайти своє покликання», «Як не боятися
+                                проявлятися»,
+                                «Як зрозуміти, чого я хочу» і «Як віднайти справжню себе».
+                                <br> <br>
+                                <span>
+                                    Я на власному досвіді знаю, як це – відчувати, що в мені є потенціал і водночас не
+                                    знати, як
+                                    його реалізувати.
+                                </span>
+                                Знаю, як воно – змінювати професію за професією, навчання за навчанням
+                                і
+                                боятися, що цього разу може знову не вийти. Я також добре знаю, як воно – бути «хорошою
+                                дівчинкою» і усім догоджати, забувши про себе. Ну і декрет… більшість жінок себе там
+                                втрачають, я не стала винятком.
+                                <br> <br>
+                                <span>
+                                    А ще я знаю, як себе віднайти! Як завдяки своєму навіть болісному досвіду стати ще
+                                    сильнішою
+                                    і мудрішою!
+                                </span>
+                                Як відкинути страх і проявлятися! Як йти проти системи, як відпускати старі
+                                образи, як ризикувати і як помилятися! Як падати і знову вставати, як летіти,
+                                створювати,
+                                бути корисною суспільству, заробляти гроші, сильно любити і в цій любові народжувати
+                                дітей.
+                                І як це все гармонійно поєднувати.
+                                <br> <br>
+                                <span>
+                                    Але мого досвіду мало, бо у кожного він унікальний
+                                </span>
+                                і просто скопіювати мій – не спрацює.
+                                Тому в цьому інтенсиві
+                                <span>
+                                    я зібрала команду найкращих, на мою думку,
+                                </span>
+                                експерток з кількох
+                                галузей, які найкраще розкриють найважливіші для проявлення теми.
+                                <br> <br>
+                                І знаєте що? Якби я могла якось допомогти собі тодішній, я б точно скинула посилання і
+                                трішки грошей на цей інтенсив. Це б так пришвидшило і підтримало мене!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__plan plan" id="plan">
+                    <div class="container">
+                        <h2 class="plan__title title">
+                            ПЛАН ІНТЕНСИВУ
+                        </h2>
+                        <div class="plan__inner">
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-1.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 1
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Повернення до себе справжньої.
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Ти познайомишся з істинною собою, дізнаєшся про свою тіньову сторону 
+                                            та вивільниш енергію для реалізації, відпустивши біль минулого.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-1.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span>Марія Сичинська</span>
+                                            - психологиня-аспірантка, засновниця ресурсного простору для
+                                            жінок «Дівоче коло», підприємниця та авторка найбільшого українськомовного
+                                            блогу
+                                            про виховання та стосунки в сімʼї.
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Марія Сичинська
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-2.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 2
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Самостійна та незалежна: сепарація та стосунки з батьками.
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Ти чутимеш і реалізовуватимеш власні “хочу” і більше не будеш жити
+                                            очікуваннями батьків.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-2.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span>Ірина Юськова</span> – 18 років у психології, одна з топових
+                                            психологинь в
+                                            Україні у темі стосунків дорослих дітей з дорослими батьками.
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Ірина Юськова
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-3.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 3
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Бути, а не здаватися: як не боятися проявлятися, любити себе, обирати
+                                            себе та ставитись до себе ніжно.
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Навчишся екологічно ставити свої потреби і бажання на перше місце, любити
+                                            себе
+                                            за різних обставин, обирати себе та ставитись до себе ніжно.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-3.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span>Анастасія Михайленко</span>
+                                            – психологиня-аналітикиня, спеціалізація якої – побудова
+                                            здорових стосунків з собою. Анастасія вже 8 років безумово приймає кожного
+                                            клієнта у процесі проведення терапії. 
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Анастасія Михайленко
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-4.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 4
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Професійна реалізація (від пошуку себе до кар’єрного зростання).
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Ти побачиш, куди рухатись в професійній сфері та матимеш план дій.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-4.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span> Яна Резник</span>
+                                            – карʼєрна коучиня з європейською освітою та сотнями годин досвіду роботи з
+                                            підлітками та дорослими щодо вибору професії та карʼєрного зростання.
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Яна Резник
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-5.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 5
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Твоя ефективність та організованість: як почати діяти та встигати
+                                            все, що
+                                            хочу.
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Ти навчишся управляти своїм життям і часом у ньому.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-5.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span>Ірина Пономарь</span>
+                                            –  провідна українськомовна експертка з ефективності та планування,
+                                            бізнес-консультантка і надзвичайно надихаюча жінка.
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Ірина Пономарь
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan__item plan-item">
+                                <div class="plan-item__inner">
+                                    <div class="plan-item__img">
+                                        <img class="plan-item__img-image" src="images/plan-img-6.jpg" alt="img">
+                                    </div>
+                                    <div class="plan-item__body plan-body">
+                                        <h3 class="plan-body__title">
+                                            Тиждень 6
+                                        </h3>
+                                        <h4 class="plan-body__sub-titling">
+                                            Тема - Реалізація в різних сферах життя та грамотний розподіл енергії між
+                                            ними.
+                                        </h4>
+                                        <p class="plan-body__text">
+                                            <span>Результат</span>
+                                            — Ти вмітимеш суміщати різні ролі і не втратити жодної: я-жінка, я-мама,
+                                            я-дружина, я-професіоналка тощо.
+                                        </p>
+                                        <div class="plan-body__img">
+                                            <img class="plan-body__img-image" src="images/plan-img-6.jpg" alt="img">
+                                        </div>
+                                        <p class="plan-body__text">
+                                            Експертка <br>
+                                            <span>
+                                                Марія Сичинська
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="plan-item__name">
+                                        Марія Сичинська
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan__wrap">
+                            <a class="plan__link btn" href="#plans">
+                                ЗАПИСАТИСЯ
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__plans plans" id="plans">
+                    <div class="container">
+                        <h2 class="plans__title title">
+                            МОЖЛИВОСТІ УЧАСТІ
+                        </h2>
+                        <div class="plans__inner">
+                            <div class="plans__item plans-item">
+                                <h4 class="plans-item__title">
+                                    Тариф “Мінімум”
+                                </h4>
+                                <div class="plans-item__price">
+                                    <div class="plans-item__price-sum">
+                                        3 900 грн
+                                    </div>
+                                    <div class="plans-item__price-text">
+                                        або у розстрочку 1 300 грн/міс
+                                    </div>
+                                </div>
+                                <ul class="plans-item__list">
+                                    <li class="plans-item__list-item">
+                                        Лекції від експерток з доступом на рік
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Воркбук з вправами до лекцій
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Чат для спілкування з іншими учасницями інтенсиву
+                                    </li>
+                                </ul>
+                                <a class="plans-item__link btn" target="_blank" href="https://my.sychynska.com/checkout/?add-to-cart=39061">
+                                    ОБРАТИ
+                                </a>
+                            </div>
+                            <div class="plans__item plans-item">
+                                <h4 class="plans-item__title">
+                                    Тариф “Найкраще для мене”
+                                </h4>
+                                <div class="plans-item__price">
+                                    <div class="plans-item__price-sum">
+                                        7 900 грн
+                                    </div>
+                                    <div class="plans-item__price-text">
+                                        або у розстрочку 2 634 грн/міс
+                                    </div>
+                                </div>
+                                <ul class="plans-item__list">
+                                    <li class="plans-item__list-item">
+                                        Усе що в “Мінімум”
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Супровід менторок протягом 6-ти тижнів
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Q&A вебінар щоп’ятниці
+                                    </li>
+                                </ul>
+                                <a class="plans-item__link btn" target="_blank" href="https://my.sychynska.com/checkout/?add-to-cart=39064">
+                                    ОБРАТИ
+                                </a>
+                            </div>
+                            <!-- plans-item--sold -->
+                            <div class="plans__item plans-item">
+                                <h4 class="plans-item__title">
+                                    Тариф “Індивідуальний”
+                                </h4>
+                                <div class="plans-item__subtitle">
+                                    *всього 10 місць
+                                </div>
+                                <div class="plans-item__price">
+                                    <div class="plans-item__price-sum">
+                                        49 000 грн
+                                    </div>
+                                    <div class="plans-item__price-text">
+                                        або у розстрочку 16 334 грн/міс
+                                    </div>
+                                </div>
+                                <ul class="plans-item__list">
+                                    <li class="plans-item__list-item">
+                                        Все, що в тарифі "Найкраще для мене"
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Індивідуальний супровід від коуча Ірини Пономар протягом 2-х місців від початку
+                                        інтенсиву
+                                    </li>
+                                    <li class="plans-item__list-item">
+                                        Індивідуальна консультація Марії Сичинської (можна використати протягом року).
+                                    </li>
+                                </ul>
+                                <div class="plans-item__sold">
+                                    *Всі місця продано
+                                </div>
+                                <a class="plans-item__link btn" target="_blank" href="https://my.sychynska.com/checkout/?add-to-cart=39065">
+                                    ОБРАТИ
+                                </a>
+                            </div>
+                        </div>
+                        <!-- plans__text--sold -->
+                        <p class="plans__text">
+                            *Наші менторки – експертки, які дають лекції в цьому інтенсиві – найкращі українськомовні
+                            професіоналки (кожна у своїй галузі). Це не просто куратори чи коучі. Це дійсно топові
+                            спеціалістки, до більшості з яких зараз неможливо потрапити на індивідуальну консультацію,
+                            бо
+                            кожна – максимально затребувана.
+                        </p>
+                    </div>
+                </section>
+                <section class="main__recalls recalls" id="recalls">
+                    <div class="container">
+                        <h2 class="recalls__title title">
+                            ВІДГУКИ ПРО МАРІЮ СИЧИНСЬКУ
+                        </h2>
+                        <div class="recalls__inner">
+                            <div class="recalls__swiper recalls-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Анастасія Філімоненко, 30 років
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Моє життя розділилось на до і після. Я нарешті стала незалежною в усіх
+                                            сенсах! І при цьому мої стосунки з чоловіком стали теплішими, ближчими, він
+                                            так турбується про мене тепер! Дякую вам за всі знання і практики! І за те,
+                                            що допомагаєте жінкам стати щасливими!!!
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Женя Сільченко, 43 роки
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Пишу відгук: я змогла! Завдяки вам я таки змогла знайти баланс між роботою і
+                                            материнством! Я більше не відчуваю себе поганою мамою і моя карʼєра більше
+                                            не страждає від страхів недодати щось дитині. Сини щасливі, вони стали
+                                            такими щирими зі мною і розслабленими! І мій бізнес процвітаааає. ДЯкую вам
+                                            за те, що ви робите💋
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Ганна Андрієнко, 31 рік
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Маріє, ви змінили моє життя🤍 Це звучить пафосно, але це чиста правда! Я
+                                            просто не знаю, як вам дякувати. Я стала щасливою, хоча вже не вірила, що
+                                            колись зможу! Я маю прекрасне життя і все, про що мріяла. Зараз озираюсь
+                                            назад і розумію, скільки часу було втрачено. Де ж ви були раніше?🤍
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Оксана Вишневська, 27 років
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Ваші лекції для жінок ще крутіші, ніж про виховання! Ви так легко, живо і
+                                            по-чесному подаєте інформацію, що я слухаю кожну лекцію з відкритим ротом. І
+                                            по кілька разів (не тому шо мені туго доходить, а тому що там такий
+                                            концентрат, що я щоразу чую щось, чого не почула раніше). Кожне речення
+                                            можна нотувати, але я обирала найважливіше – і вийшло 10 сторінок
+                                            конспекту)))
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Катя Голуб, 29 років
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Ну чому цього не розповідають нам в школі? Чому так мало таких хороших
+                                            спеціалістів, як ви? Я стільки грошей витратила на психологів, які нічим
+                                            мені не допомогли. Стільки зусиль було, книг, практик – і все до одного
+                                            місця. А після місяця з вами я просто розквітла. Дякую, що ви є! Я
+                                            купуватиму всі ваші курси тепер, бо знаю, як це дієво🔥🔥🔥
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Ольга Цурпатова, 38 років
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Я прочитала море книг, я знаю купу всього, але у мене ніяк не виходило
+                                            втілити це в життя. Я себе зʼїдала за це і звинувачувала, що лінива. Але ви
+                                            за 5 хвилин пояснили, чому я стою на місці і мене просто прорвало! Я
+                                            відчуваю зміни день за днем, це просто вау. Я б сказала, що це магія, але ж
+                                            ви пояснювали всі-всі процеси і я знаю, що це не магія, а моє свідоме і
+                                            несвідоме, якими тепер я рулю, а не вони мною🤟.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Слава Стеценко, 34 роки
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Марія, пройшло 4 місяці після нашої консультації і я хочу поділитися з вами
+                                            результатами: я знайшла своє покликання! Це те, про що ми з вами говорили! Я
+                                            пішла вчитися і мене паралельно взяли на крутезну роботу! Я дякую вам, що
+                                            допомогли мені почути себе і знайти себе🙏
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__name">
+                                            Марина Самойленко, 50 років
+                                        </div>
+                                        <p class="recalls-slide__text">
+                                            Памʼятаєте, як я хвилювалась, що я надто доросла і соромилась проходити
+                                            програму разом з молодшими дівчатами? Як же я помилялась! Я тут стільки
+                                            всього для себе взяла! Ви якось так даєте інформацію, що вона актуальна для
+                                            геть різного віку. Дівчата прекрасні, такі грамотні і цікаві питання
+                                            ставили! Я рада, що таки наважилась і в 50 років НАРЕШТІ знайшла себе.
+                                            Рекомендую всім роботу з Марією Сичинською, це найкраща моя інвестиція,
+                                            дійсно!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recalls-swiper__pagination swiper-pagination"></div>
+                            </div>
+                            <div class="recalls-swiper__button recalls-swiper__button--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M15 5L8 12L15 19" stroke="#5E7153" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="recalls-swiper__button recalls-swiper__button--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M9 5L16 12L9 19" stroke="#5E7153" stroke-width="1.8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__faq faq" id="faq">
+                    <div class="container">
+                        <h2 class="faq__title title">
+                            ПОШИРЕНІ ЗАПИТАННЯ ПРО ІНТЕНСИВ
+                        </h2>
+                        <div class="faq__inner">
+                            <ul class="faq__list faq-list">
+                                <li class="faq-list__item">
+                                    <p class="faq-list__question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="faq-list__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. 
+                                    </p>
+                                    <div class="faq-list__icon">
+                                        <svg width="21" height="3" viewBox="0 0 21 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="1.5" y1="1.5" x2="19.5" y2="1.5" stroke="#5E7153" stroke-width="3"
+                                                stroke-linecap="round" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="11"
+                                            viewBox="0 0 21 11" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.3737 1.2833C19.8327 0.867155 18.9556 0.867155 18.4146 1.2833L10.3897 7.45627L2.36484 1.2833C1.82385 0.867155 0.946734 0.867155 0.405744 1.2833C-0.135248 1.69945 -0.135248 2.37416 0.405744 2.7903L9.41015 9.71677C9.95114 10.1329 10.8283 10.1329 11.3693 9.71677L20.3737 2.7903C20.9147 2.37416 20.9147 1.69945 20.3737 1.2833Z"
+                                                fill="#5E7153" />
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="faq-list__item">
+                                    <p class="faq-list__question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="faq-list__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. 
+                                    </p>
+                                    <div class="faq-list__icon">
+                                        <svg width="21" height="3" viewBox="0 0 21 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="1.5" y1="1.5" x2="19.5" y2="1.5" stroke="#5E7153" stroke-width="3"
+                                                stroke-linecap="round" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="11"
+                                            viewBox="0 0 21 11" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.3737 1.2833C19.8327 0.867155 18.9556 0.867155 18.4146 1.2833L10.3897 7.45627L2.36484 1.2833C1.82385 0.867155 0.946734 0.867155 0.405744 1.2833C-0.135248 1.69945 -0.135248 2.37416 0.405744 2.7903L9.41015 9.71677C9.95114 10.1329 10.8283 10.1329 11.3693 9.71677L20.3737 2.7903C20.9147 2.37416 20.9147 1.69945 20.3737 1.2833Z"
+                                                fill="#5E7153" />
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="faq-list__item">
+                                    <p class="faq-list__question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="faq-list__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. 
+                                    </p>
+                                    <div class="faq-list__icon">
+                                        <svg width="21" height="3" viewBox="0 0 21 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="1.5" y1="1.5" x2="19.5" y2="1.5" stroke="#5E7153" stroke-width="3"
+                                                stroke-linecap="round" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="11"
+                                            viewBox="0 0 21 11" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.3737 1.2833C19.8327 0.867155 18.9556 0.867155 18.4146 1.2833L10.3897 7.45627L2.36484 1.2833C1.82385 0.867155 0.946734 0.867155 0.405744 1.2833C-0.135248 1.69945 -0.135248 2.37416 0.405744 2.7903L9.41015 9.71677C9.95114 10.1329 10.8283 10.1329 11.3693 9.71677L20.3737 2.7903C20.9147 2.37416 20.9147 1.69945 20.3737 1.2833Z"
+                                                fill="#5E7153" />
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="faq-list__item">
+                                    <p class="faq-list__question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="faq-list__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. 
+                                    </p>
+                                    <div class="faq-list__icon">
+                                        <svg width="21" height="3" viewBox="0 0 21 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="1.5" y1="1.5" x2="19.5" y2="1.5" stroke="#5E7153" stroke-width="3"
+                                                stroke-linecap="round" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="11"
+                                            viewBox="0 0 21 11" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.3737 1.2833C19.8327 0.867155 18.9556 0.867155 18.4146 1.2833L10.3897 7.45627L2.36484 1.2833C1.82385 0.867155 0.946734 0.867155 0.405744 1.2833C-0.135248 1.69945 -0.135248 2.37416 0.405744 2.7903L9.41015 9.71677C9.95114 10.1329 10.8283 10.1329 11.3693 9.71677L20.3737 2.7903C20.9147 2.37416 20.9147 1.69945 20.3737 1.2833Z"
+                                                fill="#5E7153" />
+                                        </svg>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="faq__wrap">
+                                <a class="faq__link btn" href="#plans">
+                                    ВЗЯТИ УЧАСТЬ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__contacts contacts" id="contacts">
+                    <div class="container">
+                        <div class="contacts__inner">
+                            <div class="contacts__body contacts-body">
+                                <h2 class="contacts-body__title title">
+                                    ПИШИ НАМ
+                                </h2>
+                                <p class="contacts-body__text">
+                                    Ми завжди на зв’язку, і готові відповідати на будь-які твої запитання. Пиши нам в
+                                    telegram або на пошту.
+                                </p>
+                                <div class="contacts-body__links">
+                                    <a class="contacts-body__links-link btn" target="_blank"
+                                        href="https://t.me/sychynskaonebot">
+                                        написати в telegram
+                                    </a>
+                                    <a class="contacts-body__links-link btn" target="_blank"
+                                        href="mailto:one@sychynska.com">
+                                        написати на пошту
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts__img">
+                                <img class="contacts__img-image" src="images/contacts-icon.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <nav class="footer__navigation navigation">
+                            <h4 class="navigation__title">
+                                НАВІГАЦІЯ
+                            </h4>
+                            <div class="navigation__inner">
+                                <ul class="navigation__list">
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#for">
+                                            Для кого
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#plan">
+                                            План інтенсиву
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#about">
+                                            Про авторку
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#plans">
+                                            Взяти участь
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#faq">
+                                            Поширені запитання
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#recalls">
+                                            Відгуки
+                                        </a>
+                                    </li>
+                                    <li class="navigation__list-item">
+                                        <a class="navigation__list-link" href="#contacts">
+                                            Контакти
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="navigation__wrapper">
+                                    <ul class="navigation__list">
+                                        <li class="navigation__list-item">
+                                            <a class="navigation__list-link" target="_blank"
+                                                href="https://sychynska.com/public-agreement/">
+                                                Користувацька угода
+                                            </a>
+                                        </li>
+                                        <li class="navigation__list-item">
+                                            <a class="navigation__list-link" target="_blank"
+                                                href=" https://sychynska.com/privacy-policy/">
+                                                Політика конфіденційності
+                                            </a>
+                                        </li>
+                                        <li class="navigation__list-item">
+                                            <a class="navigation__list-link" target="_blank"
+                                                href="https://sychynska.com/refund-policy/">
+                                                Політика повернення
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="navigation__box navigation-box">
+                                        <h4 class="navigation-box__title">
+                                            Контакти
+                                        </h4>
+                                        <div class="navigation-box__user-nav user-nav">
+                                            <a class="user-nav__link" target="_blank"
+                                                href="https://t.me/sychynskaonebot">
+                                                <img class="user-nav__link-img" src="images/telegram-icon.png"
+                                                    alt="telegram">
+                                                <span>
+                                                    Telegram
+                                                </span>
+                                            </a>
+                                            <a class="user-nav__link" target="_blank" href="mailto:one@sychynska.com">
+                                                one@sychynska.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
