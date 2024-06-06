@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo logo" href="#">
+                        <picture class="logo__img">
+                            <img class="logo__img-image" src="images/logo.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header__wrapper">
+                        <div class="header__top header-top">
+                            <div class="header-top__mail mail">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_17_266)">
+                                        <path
+                                            d="M9.99219 14C7.28906 14 4.58984 14 1.88672 14C0.742188 14 0 13.265 0 12.1333C0 8.71111 0 5.28889 0 1.86667C0 0.742778 0.742188 0 1.86719 0C7.28906 0 12.7109 0 18.1367 0C19.2539 0 20 0.738889 20 1.84722C20 5.28111 20 8.71889 20 12.1528C20 13.2611 19.25 14 18.1328 14C15.4219 14 12.707 14 9.99219 14ZM2.04297 1.17056C2.10938 1.24056 2.14453 1.28333 2.1875 1.32222C4.61328 3.745 7.03906 6.16778 9.46484 8.59056C9.8125 8.93667 10.1914 8.93667 10.5391 8.59056C12.9688 6.16389 15.3984 3.73722 17.8281 1.31056C17.8672 1.27167 17.8984 1.22889 17.9492 1.17056C12.6406 1.17056 7.36328 1.17056 2.04297 1.17056ZM2.03516 12.8139C7.36328 12.8139 12.6445 12.8139 17.9609 12.8139C16.2695 11.1456 14.6055 9.50445 12.9062 7.82444C12.875 7.86722 12.8438 7.93722 12.7969 7.98778C12.3125 8.47778 11.8242 8.96389 11.3359 9.45C10.5703 10.2083 9.42969 10.2083 8.66406 9.45C8.36719 9.15833 8.07812 8.86278 7.78125 8.56722C7.53906 8.32611 7.29688 8.085 7.06641 7.85556C5.39062 9.50833 3.72656 11.1456 2.03516 12.8139ZM1.18359 2.02611C1.18359 5.34333 1.18359 8.66444 1.18359 11.9117C2.82812 10.29 4.50781 8.63722 6.19531 6.97278C4.52734 5.32389 2.85547 3.675 1.18359 2.02611ZM18.8164 11.9622C18.8164 8.65667 18.8164 5.33944 18.8164 2.08056C17.1641 3.70611 15.4883 5.35889 13.8047 7.01944C15.4766 8.66833 17.1484 10.3172 18.8164 11.9622Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_17_266">
+                                            <rect width="20" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a class="mail__link" href="mailto:example@gmail.com">
+                                    example@gmail.com
+                                </a>
+                            </div>
+                            <div class="header-top__phone phone">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_17_261)">
+                                        <path
+                                            d="M6.21796 8.37655C7.51321 10.6739 9.28585 12.4555 11.5868 13.7292C11.6533 13.6627 11.7081 13.6159 11.755 13.569C12.2285 13.1118 12.6824 12.6313 13.1755 12.1976C13.8955 11.5647 14.9168 11.5608 15.6134 12.221C16.5408 13.1001 17.4408 14.0066 18.3174 14.9364C18.9591 15.6162 18.9513 16.6477 18.3643 17.3705C18.2391 17.5268 18.0982 17.6752 17.9613 17.8198C17.5621 18.23 17.163 18.6403 16.756 19.0466C15.993 19.8124 15.0616 20.0702 14.0051 19.9804C12.6707 19.8632 11.4459 19.3982 10.2602 18.8122C8.10409 17.7495 6.20231 16.3351 4.56662 14.5809C2.87615 12.7641 1.47525 10.752 0.594794 8.41562C0.266091 7.55217 0.02739 6.67309 -1.90153e-06 5.74322C-0.0234807 4.81335 0.211307 3.97725 0.876539 3.29743C1.40872 2.75826 1.92134 2.19565 2.48875 1.70337C3.3692 0.9415 4.32792 0.949314 5.17707 1.74244C6.07317 2.58245 6.93798 3.46543 7.77539 4.36404C8.42105 5.05559 8.40931 6.07922 7.7793 6.78639C7.34886 7.27477 6.87537 7.72017 6.41753 8.1851C6.36666 8.24371 6.30796 8.2945 6.21796 8.37655ZM14.3181 18.8669C15.0029 18.8708 15.5351 18.6754 15.9695 18.2261C16.4077 17.7729 16.8578 17.3236 17.296 16.8704C17.7734 16.3781 17.7734 15.9718 17.296 15.4834C16.9321 15.1122 16.5604 14.745 16.1886 14.3777C15.7777 13.9675 15.3708 13.5533 14.956 13.1509C14.5881 12.7915 14.1968 12.7876 13.8133 13.1275C13.7546 13.1783 13.6999 13.233 13.6451 13.2877C13.199 13.7331 12.7529 14.1824 12.3029 14.6239C11.9781 14.9403 11.622 15.0028 11.2307 14.8036C10.9568 14.6668 10.6828 14.5262 10.4207 14.3699C9.2389 13.6666 8.21366 12.7798 7.28624 11.7717C6.4684 10.8809 5.72099 9.94326 5.2162 8.82976C4.95011 8.2398 5.00489 7.95068 5.46664 7.50528C5.94404 7.04426 6.42144 6.57932 6.87928 6.09876C7.20016 5.75885 7.18842 5.40331 6.89885 5.04386C6.84406 4.97745 6.78536 4.91493 6.72667 4.85633C5.991 4.1179 5.25533 3.37948 4.51575 2.64496C4.03835 2.17221 3.61964 2.1683 3.14615 2.63324C2.68832 3.09036 2.22657 3.52794 1.80004 3.99288C1.59264 4.21948 1.4009 4.48516 1.29133 4.76647C1.05263 5.36815 1.12307 5.99718 1.2522 6.61448C1.44786 7.56389 1.80395 8.45469 2.23439 9.31814C3.16572 11.1818 4.40618 12.8266 5.87752 14.2918C7.74017 16.1437 9.88456 17.5697 12.3616 18.4723C13.0151 18.7106 13.692 18.8434 14.3181 18.8669Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.1172 0C11.3559 0.0468842 11.6455 0.0937683 11.9272 0.168002C13.6451 0.60168 15.1751 1.3948 16.4977 2.57081C17.6873 3.62961 18.6108 4.88377 19.2526 6.34108C19.6009 7.13811 19.8474 7.96249 19.9922 8.81813C20.047 9.13459 19.867 9.39246 19.5656 9.46278C19.2761 9.53311 18.9826 9.37292 18.8965 9.07208C18.7674 8.61496 18.6852 8.14612 18.5404 7.69291C18.0669 6.18089 17.2452 4.87595 16.1143 3.76245C15.0929 2.75835 13.9033 2.0043 12.5455 1.53936C12.0368 1.36745 11.5046 1.26197 10.9802 1.12522C10.6594 1.04317 10.4715 0.789217 10.5107 0.480563C10.5459 0.218793 10.7885 0.00390701 11.1172 0Z"
+                                            fill="white" />
+                                        <path
+                                            d="M10.3463 4.1962C10.3502 3.83284 10.6633 3.56717 11.035 3.6414C13.379 4.11415 15.0342 5.44644 15.9773 7.64218C16.1495 8.04461 16.2395 8.48219 16.3491 8.91196C16.4391 9.26359 16.2591 9.56053 15.9382 9.64257C15.629 9.72071 15.3395 9.52536 15.2377 9.17764C15.1125 8.75568 15.0264 8.31419 14.8425 7.91567C14.056 6.2044 12.7216 5.15732 10.8707 4.77053C10.5263 4.69629 10.3463 4.49704 10.3463 4.1962Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_17_261">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a class="phone__link" href="tel:8 800 004 01 25">
+                                    8 800 004 01 25<span>,</span>
+                                </a>
+                                <a class="phone__link" href="tel:8 800 004 01 25">
+                                    8 800 004 01 25
+                                </a>
+                            </div>
+                            <div class="header-top__lang lang">
+                                <div class="lang__current">
+                                    <p class="lang__current-text">
+                                        РУС
+                                    </p>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.99997 7.85018C4.82075 7.85018 4.64155 7.78175 4.50492 7.64518L0.205141 3.34536C-0.0683805 3.07184 -0.0683805 2.62837 0.205141 2.35496C0.478553 2.08155 0.921933 2.08155 1.19548 2.35496L4.99997 6.15968L8.80449 2.35509C9.07801 2.08168 9.52135 2.08168 9.79474 2.35509C10.0684 2.6285 10.0684 3.07197 9.79474 3.34549L5.49503 7.64531C5.35832 7.78191 5.17913 7.85018 4.99997 7.85018Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <ul class="lang__list">
+                                    <li class="lang__list-item">
+                                        <a class="lang__list-link" href="#">
+                                            ENG
+                                        </a>
+                                    </li>
+                                    <li class="lang__list-item">
+                                        <a class="lang__list-link" href="#">
+                                            КЗ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Продукция
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Преимущества
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Проекты
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Сертификаты
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__burger burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <main class="main">
+                <section class="main__heading heading">
+                    <div class="heading__inner">
+                        <div class="heading__swiper heading-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="heading-swiper__slide heading-slide swiper-slide">
+                                    <picture class="heading-slide__img">
+                                        <img class="heading-slide__img-image" src="images/heading-img.jpg" alt="img">
+                                    </picture>
+                                    <div class="container">
+                                        <div class="heading-slide__inner">
+                                            <h1 class="heading-slide__title">
+                                                Новая технология красоты и качества
+                                            </h1>
+                                            <a class="heading-slide__link btn" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heading-swiper__slide heading-slide swiper-slide">
+                                    <picture class="heading-slide__img">
+                                        <img class="heading-slide__img-image" src="images/heading-img.jpg" alt="img">
+                                    </picture>
+                                    <div class="container">
+                                        <div class="heading-slide__inner">
+                                            <h1 class="heading-slide__title">
+                                                Новая технология красоты и качества
+                                            </h1>
+                                            <a class="heading-slide__link btn" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heading-swiper__slide heading-slide swiper-slide">
+                                    <picture class="heading-slide__img">
+                                        <img class="heading-slide__img-image" src="images/heading-img.jpg" alt="img">
+                                    </picture>
+                                    <div class="container">
+                                        <div class="heading-slide__inner">
+                                            <h1 class="heading-slide__title">
+                                                Новая технология красоты и качества
+                                            </h1>
+                                            <a class="heading-slide__link btn" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="heading-swiper__arrows arrows">
+                                <div class="container">
+                                    <div class="arrows__inner">
+                                        <div class="arrows__arrow arrow arrow--white arrow--prev heading-arrow--prev">
+                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.223804 5.45606L5.27969 0.400057C5.42401 0.255733 5.61636 0.176514 5.82147 0.176514C6.0268 0.176514 6.21904 0.255847 6.36337 0.400057L6.8224 0.859207C6.96661 1.0033 7.04606 1.19577 7.04606 1.40099C7.04606 1.6061 6.96661 1.80505 6.8224 1.94915L3.87287 4.90517L13.2437 4.90517C13.6662 4.90517 14 5.23593 14 5.65855L14 6.30766C14 6.73028 13.6662 7.09439 13.2437 7.09439L3.83941 7.09439L6.82229 10.0669C6.9665 10.2112 7.04594 10.3985 7.04594 10.6037C7.04594 10.8087 6.9665 10.9986 6.82229 11.1429L6.36325 11.6005C6.21893 11.7449 6.02669 11.8235 5.82136 11.8235C5.61625 11.8235 5.4239 11.7438 5.27957 11.5995L0.223691 6.54361C0.0790258 6.39883 -0.000534484 6.20557 3.48414e-05 6.00012C-0.000420079 5.79399 0.0790257 5.60061 0.223804 5.45606Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="arrows__arrow arrow arrow--white arrow--next heading-arrow--prev">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2001_118)">
+                                                    <path
+                                                        d="M13.7762 6.45606L8.72031 1.40006C8.57599 1.25573 8.38364 1.17651 8.17853 1.17651C7.9732 1.17651 7.78096 1.25585 7.63663 1.40006L7.1776 1.85921C7.03339 2.0033 6.95394 2.19577 6.95394 2.40099C6.95394 2.6061 7.03339 2.80505 7.1776 2.94915L10.1271 5.90517L0.756333 5.90517C0.333833 5.90517 -4.42294e-07 6.23593 -4.79239e-07 6.65855L-5.35984e-07 7.30766C-5.72929e-07 7.73028 0.333833 8.09439 0.756333 8.09439L10.1606 8.09439L7.17771 11.0669C7.0335 11.2112 6.95406 11.3985 6.95406 11.6037C6.95406 11.8087 7.0335 11.9986 7.17771 12.1429L7.63675 12.6005C7.78107 12.7449 7.97331 12.8235 8.17864 12.8235C8.38375 12.8235 8.5761 12.7438 8.72043 12.5995L13.7763 7.54361C13.921 7.39883 14.0005 7.20557 14 7.00012C14.0004 6.79399 13.921 6.60061 13.7762 6.45606Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2001_118">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heading__details details">
+                            <div class="container">
+                                <div class="details__inner">
+                                    <div class="details__item details-item">
+                                        <h4 class="details-item__title">
+                                            Большой выбор
+                                        </h4>
+                                        <p class="details-item__text">
+                                            Мы верим, что за счет развития <br>
+                                            инфраструктуры <br>
+                                            и технологий следует и развитие культуры.
+                                        </p>
+                                    </div>
+                                    <div class="details__item details-item">
+                                        <h4 class="details-item__title">
+                                            Высокое качество
+                                        </h4>
+                                        <p class="details-item__text">
+                                            Мы верим, что за счет развития <br>
+                                            инфраструктуры и технологий следует и <br>
+                                            развитие культуры.
+                                        </p>
+                                    </div>
+                                    <div class="details__item details-item">
+                                        <h4 class="details-item__title">
+                                            Доступная цена
+                                        </h4>
+                                        <p class="details-item__text">
+                                            Мы верим, что за <br>
+                                            счет развития инфраструктуры и технологий <br>
+                                            следует и развитие культуры.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__about about block">
+                    <div class="container">
+                        <div class="about__inner">
+                            <h3 class="about__title title">
+                                О компании
+                            </h3>
+                            <p class="about__text">
+                                Мы верим, что за счет развития инфраструктуры и технологий следует и развитие культуры.
+                                <br>
+                                Люди пересаживаются на электрокары, когда появляется инфраструктура для их обслуживания,
+                                сервис начинает оказываться качественней, когда процессы автоматизируются и появляется
+                                контроль качества. Идея создания бизнеса - личное желание сделать свою жизнь и жизнь
+                                близких
+                                проще. В какой-то момент мы подумали «Почему в нашей стране все всегда так сложно и
+                                запутано, почему так сложно доверять?», и решили начать действовать - упрощать. Как?
+                                Через
+                                развитие инфраструктурных решений.
+                            </p>
+                            <picture class="about__img">
+                                <img class="about__img-image" src="images/about-img.jpg" alt="about-img">
+                            </picture>
+                            <p class="about__text">
+                                Мы верим, что за счет развития инфраструктуры и технологий следует и развитие культуры.
+                                <br>
+                                Люди пересаживаются на электрокары, когда появляется инфраструктура для их обслуживания,
+                                сервис начинает оказываться качественней, когда процессы автоматизируются и появляется
+                                контроль качества. Идея создания бизнеса - личное желание сделать свою жизнь и жизнь
+                                близких
+                                проще. В какой-то момент мы подумали «Почему в нашей стране все всегда так сложно и
+                                запутано, почему так сложно доверять?», и решили начать действовать - упрощать. Как?
+                                Через
+                                развитие инфраструктурных решений.
+                            </p>
+                            <a class="about__link btn" href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__production production block">
+                    <div class="container">
+                        <div class="production__titling">
+                            <h2 class="production__titling-title title">
+                                Наша продукция
+                            </h2>
+                            <a class="production__titling-link btn" href="#">
+                                Узнать подробнее
+                            </a>
+                        </div>
+                        <div class="production__swiper production-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-1.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-2.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-3.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-2.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-1.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-2.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-3.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="production-swiper__slide production-slide swiper-slide">
+                                    <picture class="production-slide__img">
+                                        <img class="production-slide__img-image" src="images/production-img-2.jpg"
+                                            alt="img">
+                                    </picture>
+                                    <h4 class="production-slide__title">
+                                        Одинарный кирпич
+                                    </h4>
+                                    <ul class="production-slide__list">
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Размер:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                250*120*65
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Марка:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                М-200
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Водопоглащение:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                6-8%
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Морозостойкость:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                F-100
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Вес:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                3,8 кг
+                                            </div>
+                                        </li>
+                                        <li class="production-slide__list-item">
+                                            <div class="production-slide__list-text">
+                                                Количество в поддоне:
+                                            </div>
+                                            <div class="production-slide__list-info">
+                                                420шт
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="production-slide__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__controls controls">
+                            <div class="controls__arrow arrow arrow--prev production-arrow--prev">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.223804 5.45606L5.27969 0.400057C5.42401 0.255733 5.61636 0.176514 5.82147 0.176514C6.0268 0.176514 6.21904 0.255847 6.36337 0.400057L6.8224 0.859207C6.96661 1.0033 7.04606 1.19577 7.04606 1.40099C7.04606 1.6061 6.96661 1.80505 6.8224 1.94915L3.87287 4.90517L13.2437 4.90517C13.6662 4.90517 14 5.23593 14 5.65855L14 6.30766C14 6.73028 13.6662 7.09439 13.2437 7.09439L3.83941 7.09439L6.82229 10.0669C6.9665 10.2112 7.04594 10.3985 7.04594 10.6037C7.04594 10.8087 6.9665 10.9986 6.82229 11.1429L6.36325 11.6005C6.21893 11.7449 6.02669 11.8235 5.82136 11.8235C5.61625 11.8235 5.4239 11.7438 5.27957 11.5995L0.223691 6.54361C0.0790258 6.39883 -0.000534484 6.20557 3.48414e-05 6.00012C-0.000420079 5.79399 0.0790257 5.60061 0.223804 5.45606Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="controls__pagination pagination production--pagination"></div>
+                            <div class="controls__arrow arrow arrow--next production-arrow--next">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2001_118)">
+                                        <path
+                                            d="M13.7762 6.45606L8.72031 1.40006C8.57599 1.25573 8.38364 1.17651 8.17853 1.17651C7.9732 1.17651 7.78096 1.25585 7.63663 1.40006L7.1776 1.85921C7.03339 2.0033 6.95394 2.19577 6.95394 2.40099C6.95394 2.6061 7.03339 2.80505 7.1776 2.94915L10.1271 5.90517L0.756333 5.90517C0.333833 5.90517 -4.42294e-07 6.23593 -4.79239e-07 6.65855L-5.35984e-07 7.30766C-5.72929e-07 7.73028 0.333833 8.09439 0.756333 8.09439L10.1606 8.09439L7.17771 11.0669C7.0335 11.2112 6.95406 11.3985 6.95406 11.6037C6.95406 11.8087 7.0335 11.9986 7.17771 12.1429L7.63675 12.6005C7.78107 12.7449 7.97331 12.8235 8.17864 12.8235C8.38375 12.8235 8.5761 12.7438 8.72043 12.5995L13.7763 7.54361C13.921 7.39883 14.0005 7.20557 14 7.00012C14.0004 6.79399 13.921 6.60061 13.7762 6.45606Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2001_118">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__advantages advantages block">
+                    <div class="container">
+                        <h2 class="advantages__title title title--centered">
+                            Преимущества нашей продукци
+                        </h2>
+                        <div class="advantages__inner">
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon advantages-icon">
+                                    <div class="advantages-icon__inner">
+                                        <picture class="advantages-icon__img">
+                                            <img class="advantages-icon__img-image" src="images/advantages-icon-1.svg"
+                                                alt="icon">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <p class="advantages-item__text">
+                                    Можно выкладывать рельефы со сложными поверхностями
+                                </p>
+                            </div>
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon advantages-icon">
+                                    <div class="advantages-icon__inner">
+                                        <picture class="advantages-icon__img">
+                                            <img class="advantages-icon__img-image" src="images/advantages-icon-2.svg"
+                                                alt="icon">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <p class="advantages-item__text">
+                                    Очень легко работать, выполняя кладку
+                                </p>
+                            </div>
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon advantages-icon">
+                                    <div class="advantages-icon__inner">
+                                        <picture class="advantages-icon__img">
+                                            <img class="advantages-icon__img-image" src="images/advantages-icon-3.svg"
+                                                alt="icon">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <p class="advantages-item__text">
+                                    Плитка отличается особой прочностью и морозостойкостью
+                                </p>
+                            </div>
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon advantages-icon">
+                                    <div class="advantages-icon__inner">
+                                        <picture class="advantages-icon__img">
+                                            <img class="advantages-icon__img-image" src="images/advantages-icon-4.svg"
+                                                alt="icon">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <p class="advantages-item__text">
+                                    Облегчает и упрощает работу каменщика
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__projects projects block">
+                    <div class="container">
+                        <h2 class="projects__title title">
+                            Готовые проекты
+                        </h2>
+                        <div class="projects__swiper projects-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <a class="projects-slide__wrapper" href="#">
+                                        <picture class="projects-slide__img">
+                                            <img class="projects-slide__img-image" src="images/projects-img-1.jpg"
+                                                alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <div class="projects-slide__inner">
+                                        <a class="projects-slide__wrapper" href="#">
+                                            <picture class="projects-slide__img">
+                                                <img class="projects-slide__img-image" src="images/projects-img-2.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="projects-slide__wrapper" href="#">
+                                            <picture class="projects-slide__img">
+                                                <img class="projects-slide__img-image" src="images/projects-img-3.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <a class="projects-slide__wrapper" href="#">
+                                        <picture class="projects-slide__img">
+                                            <img class="projects-slide__img-image" src="images/projects-img-4.jpg"
+                                                alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <a class="projects-slide__wrapper" href="#">
+                                        <picture class="projects-slide__img">
+                                            <img class="projects-slide__img-image" src="images/projects-img-1.jpg"
+                                                alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <div class="projects-slide__inner">
+                                        <a class="projects-slide__wrapper" href="#">
+                                            <picture class="projects-slide__img">
+                                                <img class="projects-slide__img-image" src="images/projects-img-2.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="projects-slide__wrapper" href="#">
+                                            <picture class="projects-slide__img">
+                                                <img class="projects-slide__img-image" src="images/projects-img-3.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="projects-swiper__slide projects-slide swiper-slide">
+                                    <a class="projects-slide__wrapper" href="#">
+                                        <picture class="projects-slide__img">
+                                            <img class="projects-slide__img-image" src="images/projects-img-4.jpg"
+                                                alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__controls controls">
+                            <div class="controls__arrow projects-arrow--prev arrow arrow--prev">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.223804 5.45606L5.27969 0.400057C5.42401 0.255733 5.61636 0.176514 5.82147 0.176514C6.0268 0.176514 6.21904 0.255847 6.36337 0.400057L6.8224 0.859207C6.96661 1.0033 7.04606 1.19577 7.04606 1.40099C7.04606 1.6061 6.96661 1.80505 6.8224 1.94915L3.87287 4.90517L13.2437 4.90517C13.6662 4.90517 14 5.23593 14 5.65855L14 6.30766C14 6.73028 13.6662 7.09439 13.2437 7.09439L3.83941 7.09439L6.82229 10.0669C6.9665 10.2112 7.04594 10.3985 7.04594 10.6037C7.04594 10.8087 6.9665 10.9986 6.82229 11.1429L6.36325 11.6005C6.21893 11.7449 6.02669 11.8235 5.82136 11.8235C5.61625 11.8235 5.4239 11.7438 5.27957 11.5995L0.223691 6.54361C0.0790258 6.39883 -0.000534484 6.20557 3.48414e-05 6.00012C-0.000420079 5.79399 0.0790257 5.60061 0.223804 5.45606Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="controls__pagination pagination projects--pagination"></div>
+                            <div class="controls__arrow projects-arrow--next arrow arrow--next">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2001_118)">
+                                        <path
+                                            d="M13.7762 6.45606L8.72031 1.40006C8.57599 1.25573 8.38364 1.17651 8.17853 1.17651C7.9732 1.17651 7.78096 1.25585 7.63663 1.40006L7.1776 1.85921C7.03339 2.0033 6.95394 2.19577 6.95394 2.40099C6.95394 2.6061 7.03339 2.80505 7.1776 2.94915L10.1271 5.90517L0.756333 5.90517C0.333833 5.90517 -4.42294e-07 6.23593 -4.79239e-07 6.65855L-5.35984e-07 7.30766C-5.72929e-07 7.73028 0.333833 8.09439 0.756333 8.09439L10.1606 8.09439L7.17771 11.0669C7.0335 11.2112 6.95406 11.3985 6.95406 11.6037C6.95406 11.8087 7.0335 11.9986 7.17771 12.1429L7.63675 12.6005C7.78107 12.7449 7.97331 12.8235 8.17864 12.8235C8.38375 12.8235 8.5761 12.7438 8.72043 12.5995L13.7763 7.54361C13.921 7.39883 14.0005 7.20557 14 7.00012C14.0004 6.79399 13.921 6.60061 13.7762 6.45606Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2001_118">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__services services block">
+                    <div class="container">
+                        <h2 class="services__title title">
+                            Наши услуги
+                        </h2>
+                        <div class="services__inner">
+                            <div class="services__item services-item">
+                                <picture class="services-item__img">
+                                    <img class="services-item__img-image" src="images/services-img-1.jpg" alt="img">
+                                </picture>
+                                <div class="services-item__inner">
+                                    <h4 class="services-item__title">
+                                        Очень длинное название услуги
+                                    </h4>
+                                    <p class="services-item__text">
+                                        Мы верим, что за счет развития инфраструктуры и технологий следует и развитие
+                                        культуры.
+                                        Люди пересаживаются на электрокары, когда появляется инфраструктура для их
+                                        обслуживания, сервис начинает
+                                    </p>
+                                    <a class="services-item__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services__item services-item">
+                                <picture class="services-item__img">
+                                    <img class="services-item__img-image" src="images/services-img-2.jpg" alt="img">
+                                </picture>
+                                <div class="services-item__inner">
+                                    <h4 class="services-item__title">
+                                        Очень длинное название услуги
+                                    </h4>
+                                    <p class="services-item__text">
+                                        Мы верим, что за счет развития инфраструктуры и технологий следует и развитие
+                                        культуры.
+                                        Люди пересаживаются на электрокары, когда появляется инфраструктура для их
+                                        обслуживания, сервис начинает
+                                    </p>
+                                    <a class="services-item__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services__item services-item">
+                                <picture class="services-item__img">
+                                    <img class="services-item__img-image" src="images/services-img-3.jpg" alt="img">
+                                </picture>
+                                <div class="services-item__inner">
+                                    <h4 class="services-item__title">
+                                        Очень длинное название услуги
+                                    </h4>
+                                    <p class="services-item__text">
+                                        Мы верим, что за счет развития инфраструктуры и технологий следует и развитие
+                                        культуры.
+                                        Люди пересаживаются на электрокары, когда появляется инфраструктура для их
+                                        обслуживания, сервис начинает
+                                    </p>
+                                    <a class="services-item__link btn btn--transperent" href="#">
+                                        <span>
+                                            Подробнее
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper">
+                            <div class="services__link show-popup btn">
+                                Оставить заявку
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__certificates certificates block">
+                    <div class="container">
+                        <div class="certificates__inner">
+                            <h2 class="certificates__title title">
+                                Сертификаты
+                            </h2>
+                            <div class="certificates__swiper certificates-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-1.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-1.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-2.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-2.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-3.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-3.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-4.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-4.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-5.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-5.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-6.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-6.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-1.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-1.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-2.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-2.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-3.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-3.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-4.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-4.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-5.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-5.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="certificates-swiper__slide certificates-slide swiper-slide">
+                                        <a class="certificates-slide__wrapper" href="images/certificates-img-6.jpg"
+                                            data-fancybox="gallery">
+                                            <picture class="certificates-slide__img">
+                                                <img class="certificates-slide__img-image"
+                                                    src="images/certificates-img-6.jpg" alt="img">
+                                            </picture>
+                                            <div class="certificates-slide__loupe">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M36.5845 34.5814L26.9159 24.9128C28.7887 22.5994 29.9163 19.6598 29.9163 16.4582C29.9163 9.03779 23.8786 3 16.4581 3C9.03772 3 3 9.03772 3 16.4581C3 23.8786 9.03779 29.9164 16.4582 29.9164C19.6598 29.9164 22.5994 28.7887 24.9128 26.9159L34.5814 36.5845C34.8577 36.8608 35.2203 36.9996 35.583 36.9996C35.9457 36.9996 36.3083 36.8608 36.5846 36.5845C37.1385 36.0307 37.1385 35.1353 36.5845 34.5814ZM16.4582 27.083C10.5989 27.083 5.83332 22.3174 5.83332 16.4581C5.83332 10.5989 10.5989 5.83326 16.4582 5.83326C22.3175 5.83326 27.0831 10.5989 27.0831 16.4581C27.0831 22.3174 22.3174 27.083 16.4582 27.083Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certificates__controls controls">
+                                <div class="controls__arrow arrow arrow--prev certificates-arrow--prev">
+                                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.223804 5.45606L5.27969 0.400057C5.42401 0.255733 5.61636 0.176514 5.82147 0.176514C6.0268 0.176514 6.21904 0.255847 6.36337 0.400057L6.8224 0.859207C6.96661 1.0033 7.04606 1.19577 7.04606 1.40099C7.04606 1.6061 6.96661 1.80505 6.8224 1.94915L3.87287 4.90517L13.2437 4.90517C13.6662 4.90517 14 5.23593 14 5.65855L14 6.30766C14 6.73028 13.6662 7.09439 13.2437 7.09439L3.83941 7.09439L6.82229 10.0669C6.9665 10.2112 7.04594 10.3985 7.04594 10.6037C7.04594 10.8087 6.9665 10.9986 6.82229 11.1429L6.36325 11.6005C6.21893 11.7449 6.02669 11.8235 5.82136 11.8235C5.61625 11.8235 5.4239 11.7438 5.27957 11.5995L0.223691 6.54361C0.0790258 6.39883 -0.000534484 6.20557 3.48414e-05 6.00012C-0.000420079 5.79399 0.0790257 5.60061 0.223804 5.45606Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="controls__pagination pagination certificates--pagination"></div>
+                                <div class="controls__arrow arrow arrow--next certificates-arrow--next">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2001_118)">
+                                            <path
+                                                d="M13.7762 6.45606L8.72031 1.40006C8.57599 1.25573 8.38364 1.17651 8.17853 1.17651C7.9732 1.17651 7.78096 1.25585 7.63663 1.40006L7.1776 1.85921C7.03339 2.0033 6.95394 2.19577 6.95394 2.40099C6.95394 2.6061 7.03339 2.80505 7.1776 2.94915L10.1271 5.90517L0.756333 5.90517C0.333833 5.90517 -4.42294e-07 6.23593 -4.79239e-07 6.65855L-5.35984e-07 7.30766C-5.72929e-07 7.73028 0.333833 8.09439 0.756333 8.09439L10.1606 8.09439L7.17771 11.0669C7.0335 11.2112 6.95406 11.3985 6.95406 11.6037C6.95406 11.8087 7.0335 11.9986 7.17771 12.1429L7.63675 12.6005C7.78107 12.7449 7.97331 12.8235 8.17864 12.8235C8.38375 12.8235 8.5761 12.7438 8.72043 12.5995L13.7763 7.54361C13.921 7.39883 14.0005 7.20557 14 7.00012C14.0004 6.79399 13.921 6.60061 13.7762 6.45606Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2001_118">
+                                                <rect width="14" height="14" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__contact contact block">
+                    <picture class="contact__bg">
+                        <img class="contact__bg-img" src="images/contact-bg.jpg" alt="bg">
+                    </picture>
+                    <div class="container">
+                        <div class="contact__inner">
+                            <h2 class="contact__title">
+                                <span>
+                                    Хотите заказать?
+                                </span>
+                                Оставьте заявку и мы перезвоним
+                            </h2>
+                            <form class="contact__form form" action="#">
+                                <input class="form__input" type="text" placeholder="Имя *" required>
+                                <input class="form__input" type="tel" placeholder="Номер телефона *" required>
+                                <div class="form__checkbox">
+                                    <label class="container">
+                                        Я согласен на обработку личных данных
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button class="form__button btn" type="submit">
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__info info">
+                    <div class="info__map map">
+                        <img class="map__img" src="images/map-img.jpg" alt="map" data-aos="fade">
+                    </div>
+                    <div class="container">
+                        <div class="info__inner">
+                            <div class="contact__contacts contacts" data-aos="fade-down">
+                                <div class="contacts__box contacts-box">
+                                    <h4 class="contacts-box__title">
+                                        адрес:
+                                    </h4>
+                                    <a class="contacts-box__link" href="#">
+                                        ТОО "Кирпичный завод"
+                                        ул. Бегалина, 148/14
+                                        050010 Алматы, Казахстан
+                                    </a>
+                                </div>
+                                <div class="contacts__box contacts-box">
+                                    <h4 class="contacts-box__title">
+                                        Телефоны:
+                                    </h4>
+                                    <a class="contacts-box__link" href="tel:+380674113141">
+                                        +380 67 411-31-41
+                                    </a>
+                                    <a class="contacts-box__link" href="tel:+380674113141">
+                                        +380 67 411-31-41
+                                    </a>
+                                </div>
+                                <div class="contacts__box contacts-box">
+                                    <h4 class="contacts-box__title">
+                                        Email:
+                                    </h4>
+                                    <a class="contacts-box__link" href="mailto:">
+                                        example@gmail.com
+                                    </a>
+                                </div>
+                                <div class="contacts__box contacts-box">
+                                    <h4 class="contacts-box__title">
+                                        Мы в соц. сетях:
+                                    </h4>
+                                    <div class="contacts-box__socials socials">
+                                        <ul class="socials__list">
+                                            <li class="socials__list-item">
+                                                <a class="socials__list-link" href="#">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.5488 20V10.8777H14.6096L15.0688 7.32156H11.5488V5.05147C11.5488 4.0222 11.8335 3.32076 13.3111 3.32076L15.1927 3.31999V0.13923C14.8673 0.0969453 13.7503 0 12.4503 0C9.73575 0 7.87729 1.65697 7.87729 4.69927V7.32156H4.80727V10.8777H7.87729V20H11.5488Z"
+                                                            fill="url(#paint0_linear_87_1275)" />
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_87_1275" x1="9.34733"
+                                                                y1="-4" x2="9.34733" y2="24.3636"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__list-item">
+                                                <a class="socials__list-link" href="#">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_87_1260)">
+                                                            <path
+                                                                d="M19.894 14.6C19.8698 14.5478 19.8472 14.5045 19.8262 14.4698C19.4792 13.8448 18.8161 13.0778 17.8373 12.1683L17.8166 12.1475L17.8063 12.1373L17.7958 12.1268H17.7853C17.341 11.7033 17.0597 11.4186 16.9419 11.2728C16.7264 10.9951 16.6781 10.714 16.7959 10.4292C16.8791 10.214 17.1918 9.75956 17.7331 9.06523C18.0178 8.69726 18.2433 8.40235 18.4099 8.18016C19.611 6.58339 20.1317 5.56303 19.9719 5.11869L19.9099 5.01485C19.8682 4.95234 19.7606 4.89515 19.5872 4.84299C19.4135 4.79095 19.1914 4.78234 18.9206 4.81702L15.9217 4.83774C15.8731 4.82052 15.8037 4.82213 15.7134 4.84299C15.6231 4.86385 15.5779 4.87432 15.5779 4.87432L15.5257 4.9004L15.4843 4.93173C15.4496 4.95245 15.4114 4.98888 15.3697 5.04097C15.3282 5.09287 15.2936 5.15377 15.2658 5.22318C14.9393 6.06318 14.5681 6.84417 14.1515 7.5661C13.8946 7.99659 13.6587 8.36967 13.4433 8.68555C13.2281 9.00133 13.0476 9.23399 12.9019 9.38313C12.756 9.53241 12.6244 9.652 12.5061 9.74235C12.3881 9.83273 12.298 9.87091 12.2355 9.85694C12.173 9.84297 12.1141 9.82911 12.0583 9.81525C11.9612 9.75274 11.8831 9.66772 11.8242 9.56013C11.765 9.45254 11.7252 9.31711 11.7044 9.15397C11.6836 8.99072 11.6714 8.8503 11.6679 8.73224C11.6646 8.61432 11.6661 8.44754 11.6732 8.23235C11.6804 8.01705 11.6836 7.87138 11.6836 7.79501C11.6836 7.53116 11.6888 7.24482 11.6991 6.93589C11.7096 6.62697 11.7181 6.38221 11.7252 6.20188C11.7323 6.02138 11.7356 5.83041 11.7356 5.62908C11.7356 5.42776 11.7233 5.26987 11.6991 5.15527C11.6752 5.04082 11.6385 4.92972 11.5901 4.82202C11.5414 4.71443 11.4701 4.6312 11.3766 4.57211C11.2829 4.5131 11.1664 4.46627 11.0278 4.43147C10.6598 4.34821 10.1912 4.30316 9.62185 4.29616C8.33069 4.2823 7.50105 4.36568 7.13311 4.54618C6.98733 4.62244 6.85541 4.72664 6.73746 4.85846C6.61247 5.01124 6.59504 5.09462 6.68527 5.10833C7.10186 5.17073 7.39677 5.32002 7.57035 5.55603L7.6329 5.68109C7.68155 5.77133 7.73013 5.93108 7.77875 6.16012C7.8273 6.38917 7.85863 6.64255 7.87241 6.9201C7.90706 7.42696 7.90706 7.86084 7.87241 8.22177C7.83765 8.58285 7.80483 8.86394 7.7735 9.06527C7.74217 9.2666 7.69534 9.42974 7.6329 9.55466C7.57035 9.67961 7.52873 9.75599 7.50787 9.78371C7.48704 9.81143 7.46968 9.8289 7.4559 9.83575C7.36566 9.87033 7.27182 9.88794 7.17469 9.88794C7.07742 9.88794 6.95947 9.83929 6.82065 9.74205C6.68188 9.64482 6.53785 9.51126 6.38856 9.34115C6.23928 9.171 6.07093 8.93324 5.88342 8.62782C5.69606 8.3224 5.50166 7.96143 5.30033 7.54491L5.13376 7.24285C5.02963 7.04852 4.88739 6.76557 4.70689 6.39424C4.52628 6.02277 4.36664 5.66344 4.22786 5.31633C4.17238 5.17055 4.08904 5.05957 3.97799 4.98319L3.92587 4.95186C3.89122 4.92414 3.8356 4.89471 3.7593 4.86334C3.68289 4.83201 3.60316 4.80955 3.51978 4.79572L0.666572 4.81644C0.375011 4.81644 0.177184 4.88249 0.073018 5.01441L0.0313299 5.07682C0.0105041 5.11158 0 5.16709 0 5.2435C0 5.31987 0.0208258 5.4136 0.0625139 5.52459C0.47903 6.50351 0.931983 7.4476 1.42137 8.35701C1.91076 9.26642 2.33603 9.99897 2.69692 10.554C3.05789 11.1094 3.42583 11.6337 3.80073 12.1264C4.17563 12.6193 4.42379 12.9352 4.54521 13.074C4.66677 13.213 4.76225 13.317 4.83166 13.3864L5.09204 13.6363C5.25865 13.8029 5.5033 14.0025 5.82612 14.235C6.14901 14.4677 6.50648 14.6967 6.89871 14.9225C7.291 15.1479 7.74739 15.3319 8.2681 15.4742C8.78875 15.6166 9.2955 15.6738 9.78842 15.6462H10.986C11.2288 15.6252 11.4128 15.5488 11.5379 15.417L11.5793 15.3648C11.6072 15.3234 11.6333 15.259 11.6573 15.1724C11.6817 15.0856 11.6938 14.99 11.6938 14.8861C11.6867 14.5876 11.7094 14.3186 11.7614 14.0791C11.8133 13.8397 11.8724 13.6592 11.9386 13.5377C12.0047 13.4162 12.0793 13.3137 12.1624 13.2307C12.2456 13.1474 12.3049 13.0969 12.3397 13.0796C12.3743 13.0621 12.4019 13.0503 12.4227 13.0431C12.5893 12.9876 12.7854 13.0414 13.0112 13.2047C13.2369 13.3678 13.4486 13.5693 13.6465 13.8087C13.8444 14.0483 14.0821 14.3171 14.3597 14.6156C14.6376 14.9142 14.8805 15.1361 15.0886 15.2821L15.2968 15.407C15.4359 15.4904 15.6164 15.5668 15.8386 15.6362C16.0604 15.7056 16.2547 15.7229 16.4215 15.6882L19.0872 15.6467C19.3509 15.6467 19.556 15.603 19.7015 15.5164C19.8474 15.4296 19.934 15.334 19.9619 15.23C19.9898 15.1259 19.9913 15.0078 19.9672 14.8758C19.9425 14.7441 19.9182 14.652 19.894 14.6Z"
+                                                                fill="url(#paint0_linear_87_1260)" />
+                                                        </g>
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_87_1260" x1="8.74319"
+                                                                y1="2.0125" x2="8.74319" y2="18.1952"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                            <clipPath id="clip0_87_1260">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__list-item">
+                                                <a class="socials__list-link" href="#">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_87_1263)">
+                                                            <path
+                                                                d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM9.99998 15.4686C6.98454 15.4686 4.53139 13.0154 4.53139 9.99998C4.53139 6.98454 6.98454 4.53139 9.99998 4.53139C13.0154 4.53139 15.4686 6.98454 15.4686 9.99998C15.4686 13.0154 13.0154 15.4686 9.99998 15.4686ZM15.5993 5.82106C14.7082 5.82106 13.9834 5.09627 13.9834 4.20516C13.9834 3.31405 14.7082 2.58911 15.5993 2.58911C16.4904 2.58911 17.2154 3.31405 17.2154 4.20516C17.2154 5.09627 16.4904 5.82106 15.5993 5.82106Z"
+                                                                fill="url(#paint0_linear_87_1263)" />
+                                                            <path
+                                                                d="M9.99998 5.70386C7.63121 5.70386 5.70387 7.63104 5.70387 9.99996C5.70387 12.3687 7.63121 14.2961 9.99998 14.2961C12.3689 14.2961 14.2961 12.3687 14.2961 9.99996C14.2961 7.63104 12.3689 5.70386 9.99998 5.70386Z"
+                                                                fill="url(#paint1_linear_87_1263)" />
+                                                            <path
+                                                                d="M15.5993 3.76172C15.3549 3.76172 15.1559 3.96069 15.1559 4.20514C15.1559 4.44958 15.3549 4.64856 15.5993 4.64856C15.8439 4.64856 16.0429 4.44974 16.0429 4.20514C16.0429 3.96054 15.8439 3.76172 15.5993 3.76172Z"
+                                                                fill="url(#paint2_linear_87_1263)" />
+                                                        </g>
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_87_1263" x1="8.74315"
+                                                                y1="-3.99999" x2="8.74315" y2="24.3636"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                            <linearGradient id="paint1_linear_87_1263" x1="9.46003"
+                                                                y1="3.98542" x2="9.46003" y2="16.1707"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                            <linearGradient id="paint2_linear_87_1263" x1="15.5437"
+                                                                y1="3.58435" x2="15.5437" y2="4.84205"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                            <clipPath id="clip0_87_1263">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__list-item">
+                                                <a class="socials__list-link" href="#">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19.15 4.45C18.6075 3.485 18.0188 3.3075 16.82 3.24C15.6225 3.15875 12.6112 3.125 10.0025 3.125C7.38875 3.125 4.37625 3.15875 3.18 3.23875C1.98375 3.3075 1.39375 3.48375 0.84625 4.45C0.2875 5.41375 0 7.07375 0 9.99625C0 9.99875 0 10 0 10C0 10.0025 0 10.0038 0 10.0038V10.0063C0 12.9163 0.2875 14.5887 0.84625 15.5425C1.39375 16.5075 1.9825 16.6825 3.17875 16.7638C4.37625 16.8338 7.38875 16.875 10.0025 16.875C12.6112 16.875 15.6225 16.8337 16.8212 16.765C18.02 16.6837 18.6087 16.5088 19.1513 15.5438C19.715 14.59 20 12.9175 20 10.0075C20 10.0075 20 10.0038 20 10.0013C20 10.0013 20 9.99875 20 9.9975C20 7.07375 19.715 5.41375 19.15 4.45ZM7.5 13.75V6.25L13.75 10L7.5 13.75Z"
+                                                            fill="url(#paint0_linear_87_1267)" />
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_87_1267" x1="8.74317"
+                                                                y1="0.375" x2="8.74317" y2="19.875"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__list-item">
+                                                <a class="socials__list-link" href="#">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_87_1271)">
+                                                            <path
+                                                                d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+                                                                fill="url(#paint0_linear_87_1271)" />
+                                                        </g>
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_87_1271" x1="8.74317"
+                                                                y1="-1.375" x2="8.74317" y2="21.6705"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                                <stop offset="1" stop-color="#B08B45" />
+                                                            </linearGradient>
+                                                            <clipPath id="clip0_87_1271">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contacts__box contacts-box">
+                                    <h4 class="contacts-box__title">
+                                        График работы:
+                                    </h4>
+                                    <div class="contacts-box__schedule schedule">
+                                        <p class="schedule__text">
+                                            Пн-Пт:
+                                            <span>
+                                                8:00 - 17:00
+                                            </span>
+                                        </p>
+                                        <p class="schedule__text">
+                                            Сб:
+                                            <span>
+                                                8:00 - 12:00
+                                            </span>
+                                        </p>
+                                        <p class="schedule__text">
+                                            Вс:
+                                            <span>
+                                                выходной
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__popup popup popup--consultation">
+                    <picture class="popup__bg">
+                        <img class="popup__bg-img" src="images/popup-bg.jpg" alt="bg">
+                    </picture>
+                    <div class="popup__wrapper">
+                        <div class="container">
+                            <div class="popup__inner">
+                                <div class="popup__consultation consultation">
+                                    <div class="popup__close close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <rect width="23.142" height="2.3142"
+                                                transform="matrix(0.707072 0.707141 -0.707072 0.707141 1.63623 0)"
+                                                fill="white" />
+                                            <rect width="23.142" height="2.3142"
+                                                transform="matrix(-0.707072 0.707141 -0.707072 -0.707141 17.9998 1.63644)"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="consultation__titling">
+                                        <h4 class="consultation__titling-title">
+                                            Остались вопросы?
+                                        </h4>
+                                        <p class="consultation__titling-text">
+                                            Заполните данные и наш менеджер в скором времени свяжется с Вами
+                                        </p>
+                                    </div>
+                                    <form action="#" method="post" class="consultation__form consultation-form">
+                                        <div class="consultation-form__inner">
+                                            <div class="consultation-form__box">
+                                                <input type="text" class="consultation-form__box-input"
+                                                    placeholder="Ваше имя" required>
+                                            </div>
+                                            <div class="consultation-form__box">
+                                                <input type="tel" class="consultation-form__box-input"
+                                                    placeholder="Ваш номер телефона" required>
+                                            </div>
+                                            <div class="consultation-form__box">
+                                                <textarea class="consultation-form__box-textarea" name="" id=""
+                                                    required>Ваш вопрос</textarea>
+                                            </div>
+                                        </div>
+                                        <button class="consultation-form__button btn" type="button">
+                                            Отправить
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__popup popup popup--success">
+                    <picture class="popup__bg">
+                        <img class="popup__bg-img" src="images/popup-bg.jpg" alt="bg">
+                    </picture>
+                    <div class="popup__wrapper">
+                        <div class="container">
+                            <div class="popup__inner">
+                                <div class="popup__success success">
+                                    <div class="popup__close close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <rect width="23.142" height="2.3142"
+                                                transform="matrix(0.707072 0.707141 -0.707072 0.707141 1.63623 0)"
+                                                fill="white" />
+                                            <rect width="23.142" height="2.3142"
+                                                transform="matrix(-0.707072 0.707141 -0.707072 -0.707141 17.9998 1.63644)"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="success__titling">
+                                        <h4 class="success__titling-title">
+                                            Остались вопросы?
+                                        </h4>
+                                        <p class="success__titling-text">
+                                            Заполните данные и наш менеджер в скором времени свяжется с Вами
+                                        </p>
+                                    </div>
+                                    <div class="success__icon">
+                                        <svg width="209" height="209" viewBox="0 0 209 209" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M96.5313 144.344C95.4825 144.35 94.4429 144.149 93.472 143.752C92.5011 143.356 91.618 142.771 90.8734 142.033L58.9984 110.158C57.4979 108.657 56.6549 106.622 56.6549 104.5C56.6549 102.378 57.4979 100.343 58.9984 98.8422C60.499 97.3417 62.5342 96.4987 64.6563 96.4987C66.7784 96.4987 68.8135 97.3417 70.3141 98.8422L96.5313 125.139L146.655 74.9359C148.155 73.4354 150.19 72.5924 152.313 72.5924C154.435 72.5924 156.47 73.4354 157.97 74.9359C159.471 76.4365 160.314 78.4717 160.314 80.5938C160.314 82.7159 159.471 84.751 157.97 86.2516L102.189 142.033C101.444 142.771 100.561 143.356 99.5905 143.752C98.6196 144.149 97.58 144.35 96.5313 144.344Z"
+                                                fill="url(#paint0_linear_2031_918)" />
+                                            <path
+                                                d="M104.5 208.094C84.0111 208.094 63.9823 202.018 46.9464 190.635C29.9105 179.252 16.6327 163.073 8.7919 144.144C0.951136 125.214 -1.10037 104.385 2.89682 84.2899C6.89401 64.1947 16.7604 45.736 31.2482 31.2482C45.736 16.7604 64.1947 6.89401 84.2899 2.89682C104.385 -1.10037 125.214 0.951136 144.144 8.7919C163.073 16.6327 179.252 29.9105 190.635 46.9464C202.018 63.9823 208.094 84.0111 208.094 104.5C208.094 131.975 197.179 158.324 177.752 177.752C158.324 197.179 131.975 208.094 104.5 208.094ZM104.5 16.8438C87.1633 16.8438 70.2158 21.9847 55.8008 31.6165C41.3858 41.2483 30.1507 54.9384 23.5162 70.9554C16.8817 86.9725 15.1458 104.597 18.5281 121.601C21.9103 138.605 30.2588 154.223 42.5177 166.482C54.7767 178.741 70.3955 187.09 87.3992 190.472C104.403 193.854 122.028 192.118 138.045 185.484C154.062 178.849 167.752 167.614 177.384 153.199C187.015 138.784 192.156 121.837 192.156 104.5C192.156 81.2522 182.921 58.9564 166.482 42.5177C150.044 26.079 127.748 16.8438 104.5 16.8438Z"
+                                                fill="url(#paint1_linear_2031_918)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_2031_918" x1="56.6798" y1="108.467"
+                                                    x2="160.316" y2="108.467" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_2031_918" x1="0.956094" y1="104.496"
+                                                    x2="208.099" y2="104.496" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <a class="footer__logo logo" href="#">
+                            <picture class="logo__img">
+                                <img class="logo__img-image" src="images/logo.svg" alt="logo">
+                            </picture>
+                        </a>
+                        <nav class="footer__navigation navigation">
+                            <h4 class="navigation__title">
+                                Меню:
+                            </h4>
+                            <ul class="navigation__list">
+                                <li class="navigation__list-item">
+                                    <a class="navigation__list-link" href="#">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a class="navigation__list-link" href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a class="navigation__list-link" href="#">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a class="navigation__list-link" href="#">
+                                        Продукция
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__socials socials">
+                            <h4 class="socials__title">
+                                Наши соцсети:
+                            </h4>
+                            <ul class="socials__list">
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5488 20V10.8777H14.6096L15.0688 7.32156H11.5488V5.05147C11.5488 4.0222 11.8335 3.32076 13.3111 3.32076L15.1927 3.31999V0.13923C14.8673 0.0969453 13.7503 0 12.4503 0C9.73575 0 7.87729 1.65697 7.87729 4.69927V7.32156H4.80727V10.8777H7.87729V20H11.5488Z"
+                                                fill="url(#paint0_linear_87_1275)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_1275" x1="9.34733" y1="-4"
+                                                    x2="9.34733" y2="24.3636" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_87_1260)">
+                                                <path
+                                                    d="M19.894 14.6C19.8698 14.5478 19.8472 14.5045 19.8262 14.4698C19.4792 13.8448 18.8161 13.0778 17.8373 12.1683L17.8166 12.1475L17.8063 12.1373L17.7958 12.1268H17.7853C17.341 11.7033 17.0597 11.4186 16.9419 11.2728C16.7264 10.9951 16.6781 10.714 16.7959 10.4292C16.8791 10.214 17.1918 9.75956 17.7331 9.06523C18.0178 8.69726 18.2433 8.40235 18.4099 8.18016C19.611 6.58339 20.1317 5.56303 19.9719 5.11869L19.9099 5.01485C19.8682 4.95234 19.7606 4.89515 19.5872 4.84299C19.4135 4.79095 19.1914 4.78234 18.9206 4.81702L15.9217 4.83774C15.8731 4.82052 15.8037 4.82213 15.7134 4.84299C15.6231 4.86385 15.5779 4.87432 15.5779 4.87432L15.5257 4.9004L15.4843 4.93173C15.4496 4.95245 15.4114 4.98888 15.3697 5.04097C15.3282 5.09287 15.2936 5.15377 15.2658 5.22318C14.9393 6.06318 14.5681 6.84417 14.1515 7.5661C13.8946 7.99659 13.6587 8.36967 13.4433 8.68555C13.2281 9.00133 13.0476 9.23399 12.9019 9.38313C12.756 9.53241 12.6244 9.652 12.5061 9.74235C12.3881 9.83273 12.298 9.87091 12.2355 9.85694C12.173 9.84297 12.1141 9.82911 12.0583 9.81525C11.9612 9.75274 11.8831 9.66772 11.8242 9.56013C11.765 9.45254 11.7252 9.31711 11.7044 9.15397C11.6836 8.99072 11.6714 8.8503 11.6679 8.73224C11.6646 8.61432 11.6661 8.44754 11.6732 8.23235C11.6804 8.01705 11.6836 7.87138 11.6836 7.79501C11.6836 7.53116 11.6888 7.24482 11.6991 6.93589C11.7096 6.62697 11.7181 6.38221 11.7252 6.20188C11.7323 6.02138 11.7356 5.83041 11.7356 5.62908C11.7356 5.42776 11.7233 5.26987 11.6991 5.15527C11.6752 5.04082 11.6385 4.92972 11.5901 4.82202C11.5414 4.71443 11.4701 4.6312 11.3766 4.57211C11.2829 4.5131 11.1664 4.46627 11.0278 4.43147C10.6598 4.34821 10.1912 4.30316 9.62185 4.29616C8.33069 4.2823 7.50105 4.36568 7.13311 4.54618C6.98733 4.62244 6.85541 4.72664 6.73746 4.85846C6.61247 5.01124 6.59504 5.09462 6.68527 5.10833C7.10186 5.17073 7.39677 5.32002 7.57035 5.55603L7.6329 5.68109C7.68155 5.77133 7.73013 5.93108 7.77875 6.16012C7.8273 6.38917 7.85863 6.64255 7.87241 6.9201C7.90706 7.42696 7.90706 7.86084 7.87241 8.22177C7.83765 8.58285 7.80483 8.86394 7.7735 9.06527C7.74217 9.2666 7.69534 9.42974 7.6329 9.55466C7.57035 9.67961 7.52873 9.75599 7.50787 9.78371C7.48704 9.81143 7.46968 9.8289 7.4559 9.83575C7.36566 9.87033 7.27182 9.88794 7.17469 9.88794C7.07742 9.88794 6.95947 9.83929 6.82065 9.74205C6.68188 9.64482 6.53785 9.51126 6.38856 9.34115C6.23928 9.171 6.07093 8.93324 5.88342 8.62782C5.69606 8.3224 5.50166 7.96143 5.30033 7.54491L5.13376 7.24285C5.02963 7.04852 4.88739 6.76557 4.70689 6.39424C4.52628 6.02277 4.36664 5.66344 4.22786 5.31633C4.17238 5.17055 4.08904 5.05957 3.97799 4.98319L3.92587 4.95186C3.89122 4.92414 3.8356 4.89471 3.7593 4.86334C3.68289 4.83201 3.60316 4.80955 3.51978 4.79572L0.666572 4.81644C0.375011 4.81644 0.177184 4.88249 0.073018 5.01441L0.0313299 5.07682C0.0105041 5.11158 0 5.16709 0 5.2435C0 5.31987 0.0208258 5.4136 0.0625139 5.52459C0.47903 6.50351 0.931983 7.4476 1.42137 8.35701C1.91076 9.26642 2.33603 9.99897 2.69692 10.554C3.05789 11.1094 3.42583 11.6337 3.80073 12.1264C4.17563 12.6193 4.42379 12.9352 4.54521 13.074C4.66677 13.213 4.76225 13.317 4.83166 13.3864L5.09204 13.6363C5.25865 13.8029 5.5033 14.0025 5.82612 14.235C6.14901 14.4677 6.50648 14.6967 6.89871 14.9225C7.291 15.1479 7.74739 15.3319 8.2681 15.4742C8.78875 15.6166 9.2955 15.6738 9.78842 15.6462H10.986C11.2288 15.6252 11.4128 15.5488 11.5379 15.417L11.5793 15.3648C11.6072 15.3234 11.6333 15.259 11.6573 15.1724C11.6817 15.0856 11.6938 14.99 11.6938 14.8861C11.6867 14.5876 11.7094 14.3186 11.7614 14.0791C11.8133 13.8397 11.8724 13.6592 11.9386 13.5377C12.0047 13.4162 12.0793 13.3137 12.1624 13.2307C12.2456 13.1474 12.3049 13.0969 12.3397 13.0796C12.3743 13.0621 12.4019 13.0503 12.4227 13.0431C12.5893 12.9876 12.7854 13.0414 13.0112 13.2047C13.2369 13.3678 13.4486 13.5693 13.6465 13.8087C13.8444 14.0483 14.0821 14.3171 14.3597 14.6156C14.6376 14.9142 14.8805 15.1361 15.0886 15.2821L15.2968 15.407C15.4359 15.4904 15.6164 15.5668 15.8386 15.6362C16.0604 15.7056 16.2547 15.7229 16.4215 15.6882L19.0872 15.6467C19.3509 15.6467 19.556 15.603 19.7015 15.5164C19.8474 15.4296 19.934 15.334 19.9619 15.23C19.9898 15.1259 19.9913 15.0078 19.9672 14.8758C19.9425 14.7441 19.9182 14.652 19.894 14.6Z"
+                                                    fill="url(#paint0_linear_87_1260)" />
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_1260" x1="8.74319" y1="2.0125"
+                                                    x2="8.74319" y2="18.1952" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_87_1260">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_87_1263)">
+                                                <path
+                                                    d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM9.99998 15.4686C6.98454 15.4686 4.53139 13.0154 4.53139 9.99998C4.53139 6.98454 6.98454 4.53139 9.99998 4.53139C13.0154 4.53139 15.4686 6.98454 15.4686 9.99998C15.4686 13.0154 13.0154 15.4686 9.99998 15.4686ZM15.5993 5.82106C14.7082 5.82106 13.9834 5.09627 13.9834 4.20516C13.9834 3.31405 14.7082 2.58911 15.5993 2.58911C16.4904 2.58911 17.2154 3.31405 17.2154 4.20516C17.2154 5.09627 16.4904 5.82106 15.5993 5.82106Z"
+                                                    fill="url(#paint0_linear_87_1263)" />
+                                                <path
+                                                    d="M9.99998 5.70386C7.63121 5.70386 5.70387 7.63104 5.70387 9.99996C5.70387 12.3687 7.63121 14.2961 9.99998 14.2961C12.3689 14.2961 14.2961 12.3687 14.2961 9.99996C14.2961 7.63104 12.3689 5.70386 9.99998 5.70386Z"
+                                                    fill="url(#paint1_linear_87_1263)" />
+                                                <path
+                                                    d="M15.5993 3.76172C15.3549 3.76172 15.1559 3.96069 15.1559 4.20514C15.1559 4.44958 15.3549 4.64856 15.5993 4.64856C15.8439 4.64856 16.0429 4.44974 16.0429 4.20514C16.0429 3.96054 15.8439 3.76172 15.5993 3.76172Z"
+                                                    fill="url(#paint2_linear_87_1263)" />
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_1263" x1="8.74315" y1="-3.99999"
+                                                    x2="8.74315" y2="24.3636" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_87_1263" x1="9.46003" y1="3.98542"
+                                                    x2="9.46003" y2="16.1707" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <linearGradient id="paint2_linear_87_1263" x1="15.5437" y1="3.58435"
+                                                    x2="15.5437" y2="4.84205" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_87_1263">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.15 4.45C18.6075 3.485 18.0188 3.3075 16.82 3.24C15.6225 3.15875 12.6112 3.125 10.0025 3.125C7.38875 3.125 4.37625 3.15875 3.18 3.23875C1.98375 3.3075 1.39375 3.48375 0.84625 4.45C0.2875 5.41375 0 7.07375 0 9.99625C0 9.99875 0 10 0 10C0 10.0025 0 10.0038 0 10.0038V10.0063C0 12.9163 0.2875 14.5887 0.84625 15.5425C1.39375 16.5075 1.9825 16.6825 3.17875 16.7638C4.37625 16.8338 7.38875 16.875 10.0025 16.875C12.6112 16.875 15.6225 16.8337 16.8212 16.765C18.02 16.6837 18.6087 16.5088 19.1513 15.5438C19.715 14.59 20 12.9175 20 10.0075C20 10.0075 20 10.0038 20 10.0013C20 10.0013 20 9.99875 20 9.9975C20 7.07375 19.715 5.41375 19.15 4.45ZM7.5 13.75V6.25L13.75 10L7.5 13.75Z"
+                                                fill="url(#paint0_linear_87_1267)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_1267" x1="8.74317" y1="0.375"
+                                                    x2="8.74317" y2="19.875" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_87_1271)">
+                                                <path
+                                                    d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+                                                    fill="url(#paint0_linear_87_1271)" />
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_87_1271" x1="8.74317" y1="-1.375"
+                                                    x2="8.74317" y2="21.6705" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="9.53674e-07" stop-color="#F5E8B4" />
+                                                    <stop offset="1" stop-color="#B08B45" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_87_1271">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__сonnections сonnections">
+                            <h4 class="сonnections__title">
+                                Контакты:
+                            </h4>
+                            <div class="сonnections__mail mail">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_17_266)">
+                                        <path
+                                            d="M9.99219 14C7.28906 14 4.58984 14 1.88672 14C0.742188 14 0 13.265 0 12.1333C0 8.71111 0 5.28889 0 1.86667C0 0.742778 0.742188 0 1.86719 0C7.28906 0 12.7109 0 18.1367 0C19.2539 0 20 0.738889 20 1.84722C20 5.28111 20 8.71889 20 12.1528C20 13.2611 19.25 14 18.1328 14C15.4219 14 12.707 14 9.99219 14ZM2.04297 1.17056C2.10938 1.24056 2.14453 1.28333 2.1875 1.32222C4.61328 3.745 7.03906 6.16778 9.46484 8.59056C9.8125 8.93667 10.1914 8.93667 10.5391 8.59056C12.9688 6.16389 15.3984 3.73722 17.8281 1.31056C17.8672 1.27167 17.8984 1.22889 17.9492 1.17056C12.6406 1.17056 7.36328 1.17056 2.04297 1.17056ZM2.03516 12.8139C7.36328 12.8139 12.6445 12.8139 17.9609 12.8139C16.2695 11.1456 14.6055 9.50445 12.9062 7.82444C12.875 7.86722 12.8438 7.93722 12.7969 7.98778C12.3125 8.47778 11.8242 8.96389 11.3359 9.45C10.5703 10.2083 9.42969 10.2083 8.66406 9.45C8.36719 9.15833 8.07812 8.86278 7.78125 8.56722C7.53906 8.32611 7.29688 8.085 7.06641 7.85556C5.39062 9.50833 3.72656 11.1456 2.03516 12.8139ZM1.18359 2.02611C1.18359 5.34333 1.18359 8.66444 1.18359 11.9117C2.82812 10.29 4.50781 8.63722 6.19531 6.97278C4.52734 5.32389 2.85547 3.675 1.18359 2.02611ZM18.8164 11.9622C18.8164 8.65667 18.8164 5.33944 18.8164 2.08056C17.1641 3.70611 15.4883 5.35889 13.8047 7.01944C15.4766 8.66833 17.1484 10.3172 18.8164 11.9622Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_17_266">
+                                            <rect width="20" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a class="mail__link" href="mailto:example@gmail.com">
+                                    example@gmail.com
+                                </a>
+                            </div>
+                            <div class="сonnections__phone phone">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_17_261)">
+                                        <path
+                                            d="M6.21796 8.37655C7.51321 10.6739 9.28585 12.4555 11.5868 13.7292C11.6533 13.6627 11.7081 13.6159 11.755 13.569C12.2285 13.1118 12.6824 12.6313 13.1755 12.1976C13.8955 11.5647 14.9168 11.5608 15.6134 12.221C16.5408 13.1001 17.4408 14.0066 18.3174 14.9364C18.9591 15.6162 18.9513 16.6477 18.3643 17.3705C18.2391 17.5268 18.0982 17.6752 17.9613 17.8198C17.5621 18.23 17.163 18.6403 16.756 19.0466C15.993 19.8124 15.0616 20.0702 14.0051 19.9804C12.6707 19.8632 11.4459 19.3982 10.2602 18.8122C8.10409 17.7495 6.20231 16.3351 4.56662 14.5809C2.87615 12.7641 1.47525 10.752 0.594794 8.41562C0.266091 7.55217 0.02739 6.67309 -1.90153e-06 5.74322C-0.0234807 4.81335 0.211307 3.97725 0.876539 3.29743C1.40872 2.75826 1.92134 2.19565 2.48875 1.70337C3.3692 0.9415 4.32792 0.949314 5.17707 1.74244C6.07317 2.58245 6.93798 3.46543 7.77539 4.36404C8.42105 5.05559 8.40931 6.07922 7.7793 6.78639C7.34886 7.27477 6.87537 7.72017 6.41753 8.1851C6.36666 8.24371 6.30796 8.2945 6.21796 8.37655ZM14.3181 18.8669C15.0029 18.8708 15.5351 18.6754 15.9695 18.2261C16.4077 17.7729 16.8578 17.3236 17.296 16.8704C17.7734 16.3781 17.7734 15.9718 17.296 15.4834C16.9321 15.1122 16.5604 14.745 16.1886 14.3777C15.7777 13.9675 15.3708 13.5533 14.956 13.1509C14.5881 12.7915 14.1968 12.7876 13.8133 13.1275C13.7546 13.1783 13.6999 13.233 13.6451 13.2877C13.199 13.7331 12.7529 14.1824 12.3029 14.6239C11.9781 14.9403 11.622 15.0028 11.2307 14.8036C10.9568 14.6668 10.6828 14.5262 10.4207 14.3699C9.2389 13.6666 8.21366 12.7798 7.28624 11.7717C6.4684 10.8809 5.72099 9.94326 5.2162 8.82976C4.95011 8.2398 5.00489 7.95068 5.46664 7.50528C5.94404 7.04426 6.42144 6.57932 6.87928 6.09876C7.20016 5.75885 7.18842 5.40331 6.89885 5.04386C6.84406 4.97745 6.78536 4.91493 6.72667 4.85633C5.991 4.1179 5.25533 3.37948 4.51575 2.64496C4.03835 2.17221 3.61964 2.1683 3.14615 2.63324C2.68832 3.09036 2.22657 3.52794 1.80004 3.99288C1.59264 4.21948 1.4009 4.48516 1.29133 4.76647C1.05263 5.36815 1.12307 5.99718 1.2522 6.61448C1.44786 7.56389 1.80395 8.45469 2.23439 9.31814C3.16572 11.1818 4.40618 12.8266 5.87752 14.2918C7.74017 16.1437 9.88456 17.5697 12.3616 18.4723C13.0151 18.7106 13.692 18.8434 14.3181 18.8669Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.1172 0C11.3559 0.0468842 11.6455 0.0937683 11.9272 0.168002C13.6451 0.60168 15.1751 1.3948 16.4977 2.57081C17.6873 3.62961 18.6108 4.88377 19.2526 6.34108C19.6009 7.13811 19.8474 7.96249 19.9922 8.81813C20.047 9.13459 19.867 9.39246 19.5656 9.46278C19.2761 9.53311 18.9826 9.37292 18.8965 9.07208C18.7674 8.61496 18.6852 8.14612 18.5404 7.69291C18.0669 6.18089 17.2452 4.87595 16.1143 3.76245C15.0929 2.75835 13.9033 2.0043 12.5455 1.53936C12.0368 1.36745 11.5046 1.26197 10.9802 1.12522C10.6594 1.04317 10.4715 0.789217 10.5107 0.480563C10.5459 0.218793 10.7885 0.00390701 11.1172 0Z"
+                                            fill="white" />
+                                        <path
+                                            d="M10.3463 4.1962C10.3502 3.83284 10.6633 3.56717 11.035 3.6414C13.379 4.11415 15.0342 5.44644 15.9773 7.64218C16.1495 8.04461 16.2395 8.48219 16.3491 8.91196C16.4391 9.26359 16.2591 9.56053 15.9382 9.64257C15.629 9.72071 15.3395 9.52536 15.2377 9.17764C15.1125 8.75568 15.0264 8.31419 14.8425 7.91567C14.056 6.2044 12.7216 5.15732 10.8707 4.77053C10.5263 4.69629 10.3463 4.49704 10.3463 4.1962Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_17_261">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a class="phone__link" href="tel:8 800 004 01 25">
+                                    8 800 004 01 25,
+                                </a>
+                                <a class="phone__link" href="tel:8 800 004 01 25">
+                                    8 800 004 01 25
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__bottom-copy">
+                            © 2024 Кирпичный завод
+                        </p>
+                        <a class="footer__bottom-link" href="#">
+                            Публичная оферта
+                        </a>
+                        <a class="footer__bottom-link" href="#">
+                            Glonin.kz
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
