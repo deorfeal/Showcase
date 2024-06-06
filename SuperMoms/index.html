@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermoms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner" data-aos="fade-down">
+                    <a href="#" class="header__logo logo">
+                        <img src="images/logo.svg" alt="logo" class="logo__img">
+                    </a>
+                    <div class="header__wrapper">
+                        <img class="header__bg" src="images/mobile-menu-bg.svg" alt="bg" data-aos="fade">
+                        <div class="header__close close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                                fill="none">
+                                <path
+                                    d="M6.83668 6.83671C7.0789 6.59456 7.40738 6.45853 7.74989 6.45853C8.09239 6.45853 8.42087 6.59456 8.66309 6.83671L15.4999 13.6735L22.3367 6.83671C22.4558 6.71335 22.5984 6.61494 22.7559 6.54725C22.9135 6.47955 23.083 6.44392 23.2545 6.44243C23.426 6.44094 23.5961 6.47362 23.7549 6.53857C23.9136 6.60351 24.0578 6.69942 24.1791 6.8207C24.3004 6.94198 24.3963 7.0862 24.4612 7.24494C24.5262 7.40368 24.5589 7.57377 24.5574 7.74527C24.5559 7.91678 24.5203 8.08627 24.4526 8.24386C24.3849 8.40145 24.2865 8.54398 24.1631 8.66313L17.3263 15.4999L24.1631 22.3367C24.3984 22.5803 24.5286 22.9066 24.5256 23.2453C24.5227 23.5839 24.3868 23.9079 24.1474 24.1474C23.9079 24.3869 23.5839 24.5227 23.2452 24.5257C22.9066 24.5286 22.5803 24.3984 22.3367 24.1631L15.4999 17.3263L8.66309 24.1631C8.41948 24.3984 8.09321 24.5286 7.75453 24.5257C7.41586 24.5227 7.0919 24.3869 6.85241 24.1474C6.61293 23.9079 6.47708 23.5839 6.47414 23.2453C6.4712 22.9066 6.60139 22.5803 6.83668 22.3367L13.6735 15.4999L6.83668 8.66313C6.59453 8.42091 6.4585 8.09243 6.4585 7.74992C6.4585 7.40742 6.59453 7.07894 6.83668 6.83671Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <nav class="header__navigation navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Почему мы
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <div class="navigation__list-dropdown dropdown">
+                                        <div class="dropdown__text">
+                                            <span>
+                                                Приложения
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18"
+                                                viewBox="0 0 17 18" fill="none">
+                                                <path
+                                                    d="M9.01898 11.9789L13.602 7.38772C13.678 7.31231 13.7384 7.2226 13.7796 7.12375C13.8207 7.0249 13.8419 6.91888 13.8419 6.8118C13.8419 6.70472 13.8207 6.59869 13.7796 6.49985C13.7384 6.401 13.678 6.31129 13.602 6.23588C13.45 6.0848 13.2444 6 13.0301 6C12.8158 6 12.6103 6.0848 12.4583 6.23588L8.4025 10.2511L4.38728 6.23588C4.2353 6.0848 4.02971 6 3.81541 6C3.60112 6 3.39553 6.0848 3.24355 6.23588C3.1669 6.311 3.10593 6.40059 3.06416 6.49945C3.02238 6.59831 3.00065 6.70448 3.0002 6.8118C3.00065 6.91912 3.02238 7.02529 3.06416 7.12415C3.10593 7.22301 3.1669 7.31259 3.24355 7.38772L7.82658 11.9789C7.90254 12.0612 7.99473 12.1269 8.09734 12.1719C8.19995 12.2168 8.31076 12.24 8.42278 12.24C8.5348 12.24 8.64561 12.2168 8.74822 12.1719C8.85083 12.1269 8.94302 12.0612 9.01898 11.9789Z"
+                                                    fill="#282828" />
+                                            </svg>
+                                        </div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Приложение для беременных и мам
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Мальчик или Девочка?
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Счётчик схваток
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__list-item">
+                                                <a class="dropdown__list-link" href="#">
+                                                    Календарь беременности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Блог
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#" class="navigation__list-link">
+                                        Форум
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__stores stores" data-aos="fade-right" data-aos-duration="1250">
+                            <a href="#" class="stores__appstore">
+                                <img src="images/app-store.svg" alt="google-play">
+                            </a>
+                            <a href="#" class="stores__googleplay">
+                                <img src="images/google-play.svg" alt="google-play">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="header__btn">Скачать</a>
+                    <div class="header__burger burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" viewBox="0 0 26 19" fill="none">
+                            <line x1="15.9438" y1="17.5" x2="24.4994" y2="17.5" stroke="#FF709B" stroke-width="3"
+                                stroke-linecap="round" />
+                            <line x1="9.44385" y1="9.5" x2="24.4994" y2="9.5" stroke="#FF709B" stroke-width="3"
+                                stroke-linecap="round" />
+                            <line x1="1.5" y1="1.5" x2="24.5" y2="1.5" stroke="#FF709B" stroke-width="3"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <main class="main">
+                <section class="heading">
+                    <div class="container">
+                        <div class="heading__inner">
+                            <img class="heading__bg heading__bg--desktop" src="images/heading-bg.svg" alt="bg"
+                                data-aos="fade">
+                            <img class="heading__bg heading__bg--mobile" src="images/heading-bg-mobile.svg" alt="bg"
+                                data-aos="fade">
+                            <div class="heading__body heading-body">
+                                <h2 class="heading-body__title title" data-aos="fade-right">
+                                    Приложение для беременных и мам
+                                </h2>
+                                <p class="heading-body__text text" data-aos="fade-right" data-aos-duration="1000">
+                                    Узнай всё о своей беременности. Найди подруг. Расти здоровых детей! <span>Календарь
+                                        беременности по неделям - Supermoms Club</span>
+                                </p>
+                                <div class="heading-body__stores stores" data-aos="fade-right" data-aos-duration="1250">
+                                    <a href="#" class="stores__appstore">
+                                        <img src="images/app-store.svg" alt="google-play">
+                                    </a>
+                                    <a href="#" class="stores__googleplay">
+                                        <img src="images/google-play.svg" alt="google-play">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="heading__img" data-aos="zoom-in">
+                                <img src="images/heading-img.png" alt="img" class="heading__img-image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <div class="container">
+                        <div class="advantages__inner">
+                            <div class="advantages__titling" data-aos="fade-down">
+                                <h2 class="advantages__titling-title title">
+                                    Почему выбирают Supermoms Club?
+                                </h2>
+                                <p class="advantages__titling-text text">
+                                    Статистика приложения в цифрах
+                                </p>
+                            </div>
+                            <div class="advantages__wrapper">
+                                <div class="advantages__item" data-aos="zoom-in">
+                                    <div class="advantages__item-icon">
+                                        <img src="images/advantages-1.svg" alt="img">
+                                    </div>
+                                    <p class="advantages__item-text">
+                                        <span>Доброе и отзывчивое сообщество по интересам</span><br>для беременных, мам
+                                        и тех, кто
+                                        планирует беременность
+                                    </p>
+                                </div>
+                                <div class="advantages__item" data-aos="zoom-in">
+                                    <div class="advantages__item-icon">
+                                        <img src="images/advantages-2.svg" alt="img">
+                                    </div>
+                                    <p class="advantages__item-text">
+                                        <span>> 170 000</span><br>беременных, мам и планирующих беременность уже скачали
+                                        Supermoms Club
+                                    </p>
+                                </div>
+                                <div class="advantages__item" data-aos="zoom-in">
+                                    <div class="advantages__item-icon">
+                                        <img src="images/advantages-3.svg" alt="img">
+                                    </div>
+                                    <p class="advantages__item-text">
+                                        <span>Более 100 000</span> опубликованных вопросов и <span>более 850 000</span>
+                                        оставлено ответов на них
+                                    </p>
+                                </div>
+                                <div class="advantages__item" data-aos="zoom-in">
+                                    <div class="advantages__item-icon">
+                                        <img src="images/advantages-4.svg" alt="img">
+                                    </div>
+                                    <p class="advantages__item-text">
+                                        <span>Более 20 модулей</span><br>для правильного ведения беременности и контроля
+                                        здоровья
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about about--first">
+                    <div class="container">
+                        <div class="about__inner">
+                            <img class="about__bg" src="images/about-bg-1.svg" alt="bg" data-aos="fade">
+                            <div class="about__img" data-aos="zoom-in">
+                                <img src="images/about-1.png" alt="img" class="about__img-image">
+                            </div>
+                            <div class="about__box" data-aos="fade-down">
+                                <h2 class="about__title title">
+                                    Календарь беременности по неделям
+                                </h2>
+                                <p class="about__text text">
+                                    Мы подготовили более 300 полезных статей на тему беременности и материнства.
+                                    <br>Оцифровали
+                                    официальный протокол ведения беременности РК и шлем уведомления о том, когда нужно
+                                    встать на учет, когда явиться к врачу и когда сдавать анализы.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about about--second">
+                    <div class="container">
+                        <div class="about__inner">
+                            <img class="about__bg" src="images/about-bg-2.svg" alt="bg" data-aos="fade">
+                            <div class="about__box" data-aos="fade-down">
+                                <h2 class="about__title title">
+                                    Более 20 полезных инструментов
+                                </h2>
+                                <p class="about__text text">
+                                    Умные модули для ведения беременности и контроля здоровья ждут вас в приложении.
+                                    Приложение анализирует динамику набора массы тела и уведомляет при обнаружении
+                                    отклонений. Это позволяет выявлять угрозы на ранних стадиях и сохранить вашу
+                                    беременность. Также мы подскажем о том, какие симптомы вы можете испытывать на
+                                    определенной неделе, поможем собрать сумку в роддом и контролировать схватки.
+                                </p>
+                            </div>
+                            <div class="about__img" data-aos="zoom-in">
+                                <img src="images/about-2.png" alt="img" class="about__img-image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about about--third">
+                    <div class="container">
+                        <div class="about__inner">
+                            <div class="about__img" data-aos="zoom-in">
+                                <img src="images/about-3.png" alt="img" class="about__img-image">
+                            </div>
+                            <div class="about__box" data-aos="fade-down">
+                                <h2 class="about__title title">
+                                    Йога для беременных и другие полезные видео
+                                </h2>
+                                <p class="about__text text">
+                                    Мы регулярно пополняем базу полезных видео на тему беременности и материнства- йога
+                                    для беременных, введение прикорма, как прикладывать к груди, как кормить
+                                    новорожденного
+                                    - ответы на эти и другие вопросы вы найдете в приложении Supermoms Club!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="instruments">
+                    <div class="container">
+                        <div class="instruments__inner">
+                            <div class="instruments__body instruments-body">
+                                <h2 class="instruments-body__title title" data-aos="fade-right">
+                                    Получи 20 полезных инструментов в одном!
+                                </h2>
+                                <p class="instruments-body__text text" data-aos="fade-right">
+                                    Поможем Вам сохранить беременность, родить здорового ребёнка, получить
+                                    квалифицированную помощь за счёт большого и дружного сообщества, консультаций врачей
+                                    и более 20 полезных модулей!
+                                </p>
+                                <div class="instruments-body__stores stores" data-aos="fade-right">
+                                    <a href="#" class="stores__appstore">
+                                        <img src="images/app-store.svg" alt="google-play">
+                                    </a>
+                                    <a href="#" class="stores__googleplay">
+                                        <img src="images/google-play.svg" alt="google-play">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="instruments__img">
+                                <img src="images/instruments-img.png" alt="img" class="instruments__img-image"
+                                    data-aos="zoom-out">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="app">
+                    <div class="container">
+                        <div class="app__inner">
+                            <img class="app__bg" src="images/app-bg.svg" alt="bg" data-aos="fade">
+                            <div class="app__titling" data-aos="fade-down">
+                                <h2 class="app__titling-title title">
+                                    Что ещё ждёт вас в приложении?
+                                </h2>
+                                <p class="app__titling-text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus magna.
+                                    Curabitur pulvinar risus in massa laoreet elementum.
+                                </p>
+                            </div>
+                            <div class="app__wrapper">
+                                <div class="app__swiper app-swiper swiper" data-aos="zoom-in">
+                                    <div class="swiper-wrapper">
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-1.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-2.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-3.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-4.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-5.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-6.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-7.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                        <div class="app-swiper__slide swiper-slide">
+                                            <img src="images/app-8.png" alt="img" class="app-swiper__slide-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-swiper__arrow swiper-arrow swiper-arrow--prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"
+                                        fill="none">
+                                        <path d="M11.9988 1.99805L1.99878 11.998L11.9988 21.998" stroke="#FF709B"
+                                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="app-swiper__arrow swiper-arrow swiper-arrow--next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"
+                                        fill="none">
+                                        <path d="M1.99878 21.998L11.9988 11.998L1.99878 1.99805" stroke="#FF709B"
+                                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="container">
+                        <div class="news__inner">
+                            <div class="news__box" data-aos="fade-down">
+                                <h2 class="news__title title">
+                                    Полезные статьи
+                                </h2>
+                                <p class="news__text text">
+                                    Присоединяйтесь к нашему блогу с полезными статьями про беременность, роды и
+                                    воспитание детей
+                                </p>
+                            </div>
+                            <div class="news__swiper news-swiper swiper" data-aos="zoom-in">
+                                <div class="swiper-wrapper">
+                                    <div class="news-swiper__slide news-slide news-slide--first swiper-slide">
+                                        <div class="news-slide__wrap">
+                                            <div class="news-slide__box news-box">
+                                                <h4 class="news-box__title">
+                                                    33 неделя: Страшно рожать: как обуздать тревоги и облегчить
+                                                    предстоящие роды
+                                                </h4>
+                                                <p class="news-box__text">
+                                                    Первая беременность, и, особенно, завершающие ее роды — это
+                                                    «территория неизвестности» для молодой мамочки. Как бы хорошо она ни
+                                                    готовилась к предстоящим событиям, тревожные мыслиникуда не уходят,
+                                                    а, наоборот, продолжают нарастать тем сильнее, чем ближе день «Х».
+                                                </p>
+                                                <div class="news-box__wrapping">
+                                                    <div class="news-box__date">
+                                                        10.01.2021
+                                                    </div>
+                                                    <a href="#" class="news-box__link">Подробнее</a>
+                                                </div>
+                                            </div>
+                                            <div class="news-slide__img">
+                                                <img src="images/news-1.jpg" alt="img" class="news-slide__img-image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-swiper__slide news-slide news-slide--second swiper-slide">
+                                        <div class="news-slide__wrap">
+                                            <div class="news-slide__img">
+                                                <img src="images/news-2.jpg" alt="img" class="news-slide__img-image">
+                                            </div>
+                                            <div class="news-slide__box news-box">
+                                                <h4 class="news-box__title">
+                                                    31 неделя: Почему беременные «вьют гнездо»?
+                                                </h4>
+                                                <p class="news-box__text">
+                                                    «Синдром гнездования» — интереснейший социально-психологический
+                                                    феномен. Зачастую он застает врасплох неподготовленных мамочек,
+                                                    которые не знают об этом явлении ...
+                                                </p>
+                                                <div class="news-box__wrapping">
+                                                    <div class="news-box__date">
+                                                        10.01.2021
+                                                    </div>
+                                                    <a href="#" class="news-box__link">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-swiper__slide news-slide news-slide--third swiper-slide">
+                                        <div class="news-slide__wrap">
+                                            <div class="news-slide__img">
+                                                <img src="images/news-3.jpg" alt="img" class="news-slide__img-image">
+                                            </div>
+                                            <div class="news-slide__box news-box">
+                                                <h4 class="news-box__title">
+                                                    26 неделя: Путешествия и беременность: все за и против
+                                                </h4>
+                                                <p class="news-box__text">
+                                                    26 неделя: Путешествия и беременность: все за и против гнездования»
+                                                    — интереснейший социально-психологический феномен. Зачастую он
+                                                    застает врасплох неподготовленных мамочек, которые не знают об этом
+                                                    явлении ...
+                                                </p>
+                                                <div class="news-box__wrapping">
+                                                    <div class="news-box__date">
+                                                        21.01.2021
+                                                    </div>
+                                                    <a href="#" class="news-box__link">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-swiper__slide news-slide news-slide--fourth swiper-slide">
+                                        <div class="news-slide__wrap">
+                                            <div class="news-slide__img">
+                                                <img src="images/news-4.jpg" alt="img" class="news-slide__img-image">
+                                            </div>
+                                            <div class="news-slide__box news-box">
+                                                <h4 class="news-box__title">
+                                                    21 неделя: Беременность и спорт: как можно и нельзя заниматься в
+                                                    этот период?
+                                                </h4>
+                                                <p class="news-box__text">
+                                                    Вынашивание ребенка, а также уход за ним в первые месяцы после родов
+                                                    можно сравнить с марафонской дистанцией. Чтобы выдержать предстоящие
+                                                    испытания и выйти из них победителем нужно подготовить свой
+                                                    организм. Для этого нужно соблюдать режим дня, следить за рационом,
+                                                    и, конечно же, давать телу физические нагрузки. Какие именно занятия
+                                                    допустимы? Читайте в статье
+                                                    <br> <br>
+                                                    Некоторые девушки полагают, что физическая активность во время
+                                                    беременности им не нужна. Это мнение ошибочно. Если не заниматься
+                                                    спортом, мышцы тела будут слабее, кровь будет медленнее течь по
+                                                    сосудам, и вообще все процессы в организме замедлятся. Это может
+                                                    негативно сказаться на здоровье мамы и малыша. Поэтому спорт должен
+                                                    быть в приоритете. Чем сильнее и здоровее мама, тем проще ей
+                                                    справиться с предстоящими нагрузками.
+                                                </p>
+                                                <div class="news-box__wrapping">
+                                                    <div class="news-box__date">
+                                                        10.01.2021
+                                                    </div>
+                                                    <a href="#" class="news-box__link">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-swiper__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recalls">
+                    <div class="container">
+                        <div class="recalls__inner">
+                            <img class="recalls__bg recalls__bg--desktop" src="images/recalls-bg.svg" alt="bg"
+                                data-aos="fade">
+                            <img class="recalls__bg recalls__bg--mobile" src="images/recalls-bg-mobile.svg" alt="bg"
+                                data-aos="fade">
+                            <div class="recalls__titling" data-aos="fade-down">
+                                <h2 class="recalls__titling-title title">
+                                    Отзывы
+                                </h2>
+                                <p class="recalls__titling-text text">
+                                    Тысячи женщин не могут ошибаться в выборе и доверяют нам свою беременность!
+                                </p>
+                            </div>
+                            <div class="recalls__swiper recalls-swiper swiper" data-aos="zoom-in">
+                                <div class="swiper-wrapper">
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-1.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-2.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-3.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-1.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-2.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                        <div class="recalls-slide__img">
+                                            <img src="images/recalls-3.png" alt="img" class="recalls-slide__img-image">
+                                        </div>
+                                        <div class="recalls-slide__stars stars">
+                                            <ul class="stars__list">
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                                <li class="stars__list-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <g clip-path="url(#clip0_113_8716)">
+                                                            <path
+                                                                d="M11.9988 17.268L18.1788 20.998L16.5388 13.968L21.9988 9.23805L14.8088 8.62805L11.9988 1.99805L9.18878 8.62805L1.99878 9.23805L7.45878 13.968L5.81878 20.998L11.9988 17.268Z"
+                                                                fill="#F8A401" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_113_8716">
+                                                                <rect width="24" height="24" fill="white"
+                                                                    transform="translate(-0.0012207 -0.00195312)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="recalls-slide__title">
+                                            Lorem ipsum
+                                        </h4>
+                                        <p class="recalls-slide__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus
+                                            magna. Curabitur pulvinar risus in massa laoreet elementum. Morbi sagittis
+                                            orci at fringilla condimentum. Integer a leo convallis, feugiat massa vel,
+                                            semper tellus. Nullam consequat hendrerit finibus. In hendrerit commodo
+                                            quam, vel ullamcorper sem egestas condimentum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recalls-swiper__wrap">
+                                    <div class="recalls-swiper__arrow swiper-arrow swiper-arrow--prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"
+                                            viewBox="0 0 14 24" fill="none">
+                                            <path d="M11.9988 1.99805L1.99878 11.998L11.9988 21.998" stroke="#FF709B"
+                                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="recalls-swiper__pagination pagination"></div>
+                                    <div class="recalls-swiper__arrow swiper-arrow swiper-arrow--next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"
+                                            viewBox="0 0 14 24" fill="none">
+                                            <path d="M1.99878 21.998L11.9988 11.998L1.99878 1.99805" stroke="#FF709B"
+                                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="msm">
+                    <div class="container">
+                        <div class="msm__inner">
+                            <div class="msm__titling" data-aos="fade-down">
+                                <h2 class="msm__titling-title title">
+                                    СМИ о нас
+                                </h2>
+                                <p class="msm__titling-text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                            <div class="msm__wrapper" data-aos="zoom-in">
+                                <div class="msm__img">
+                                    <img src="images/msm-1.png" alt="img" class="msm__img-image">
+                                </div>
+                                <div class="msm__img">
+                                    <img src="images/msm-2.png" alt="img" class="msm__img-image">
+                                </div>
+                                <div class="msm__img">
+                                    <img src="images/msm-3.png" alt="img" class="msm__img-image">
+                                </div>
+                                <div class="msm__img">
+                                    <img src="images/msm-4.png" alt="img" class="msm__img-image">
+                                </div>
+                                <div class="msm__img">
+                                    <img src="images/msm-5.png" alt="img" class="msm__img-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a class="arrow-up" href="#header">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="29.5" transform="rotate(-90 30 30)" fill="white" stroke="#F56E96" />
+                        <path d="M31 35L29 35L29 25L31 25L31 35Z" fill="#F56E96" />
+                        <path d="M24 31L30.5 24.5" stroke="#F56E96" stroke-width="2" />
+                        <path d="M36 31L29.5 24.5" stroke="#F56E96" stroke-width="2" />
+                    </svg>
+                </a>
+            </main>
+            <footer class="footer" data-aos="fade">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__box">
+                            <a href="#" class="footer__logo">
+                                <img src="images/logo.svg" alt="logo" class="footer__logo-img">
+                            </a>
+                            <p class="footer__text">
+                                Приложение для беременных и мам
+                            </p>
+                            <p class="footer__text">
+                                Календарь беременности Supermoms Club
+                            </p>
+                        </div>
+                        <nav class="footer__navigation footer-navigation">
+                            <ul class="footer-navigation__list">
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Почему мы
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Блог
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Форум
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__apps apps">
+                            <h4 class="apps__title">
+                                Наши приложения:
+                            </h4>
+                            <ul class="apps__list">
+                                <li class="apps__list-item">
+                                    <a href="#" class="apps__list-link">
+                                        Календарь беременности
+                                    </a>
+                                </li>
+                                <li class="apps__list-item">
+                                    <a href="#" class="apps__list-link">
+                                        Мальчик или Девочка?
+                                    </a>
+                                </li>
+                                <li class="apps__list-item">
+                                    <a href="#" class="apps__list-link">
+                                        Счётчик схваток
+                                    </a>
+                                </li>
+                                <li class="apps__list-item">
+                                    <a href="#" class="apps__list-link">
+                                        Приложение для беременных и мам
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <nav class="footer__navigation footer-navigation">
+                            <ul class="footer-navigation__list">
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Тесты и Викторины
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Пользовательское соглашение
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__list-item">
+                                    <a href="#" class="footer-navigation__list-link">
+                                        Стать Партнером
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__wrapper">
+                            <div class="footer__socials socialas">
+                                <ul class="socialas__list">
+                                    <li class="socialas__list-item">
+                                        <a href="#" class="socialas__list-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21.9988 11.998C21.9988 6.47805 17.5188 1.99805 11.9988 1.99805C6.47878 1.99805 1.99878 6.47805 1.99878 11.998C1.99878 16.838 5.43878 20.868 9.99878 21.798V14.998H7.99878V11.998H9.99878V9.49805C9.99878 7.56805 11.5688 5.99805 13.4988 5.99805H15.9988V8.99805H13.9988C13.4488 8.99805 12.9988 9.44805 12.9988 9.99805V11.998H15.9988V14.998H12.9988V21.948C18.0488 21.448 21.9988 17.188 21.9988 11.998Z"
+                                                    fill="#8896AB" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socialas__list-item">
+                                        <a href="#" class="socialas__list-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M14.9988 11.998C14.9988 12.5914 14.8228 13.1714 14.4932 13.6648C14.1635 14.1581 13.695 14.5426 13.1468 14.7697C12.5987 14.9967 11.9955 15.0562 11.4135 14.9404C10.8316 14.8246 10.297 14.5389 9.87746 14.1194C9.4579 13.6998 9.17218 13.1653 9.05642 12.5833C8.94067 12.0014 9.00008 11.3982 9.22714 10.85C9.4542 10.3018 9.83872 9.83328 10.3321 9.50364C10.8254 9.17399 11.4054 8.99805 11.9988 8.99805C12.7937 9.00052 13.5553 9.31738 14.1174 9.87946C14.6794 10.4415 14.9963 11.2032 14.9988 11.998ZM21.3738 7.87305V16.123C21.3738 17.5154 20.8207 18.8508 19.8361 19.8354C18.8515 20.8199 17.5162 21.373 16.1238 21.373H7.87378C6.48139 21.373 5.14603 20.8199 4.16147 19.8354C3.1769 18.8508 2.62378 17.5154 2.62378 16.123V7.87305C2.62378 6.48066 3.1769 5.1453 4.16147 4.16074C5.14603 3.17617 6.48139 2.62305 7.87378 2.62305H16.1238C17.5162 2.62305 18.8515 3.17617 19.8361 4.16074C20.8207 5.1453 21.3738 6.48066 21.3738 7.87305ZM16.4988 11.998C16.4988 11.108 16.2349 10.238 15.7404 9.49798C15.2459 8.75796 14.5431 8.18118 13.7209 7.84059C12.8986 7.49999 11.9938 7.41088 11.1209 7.58451C10.248 7.75815 9.44614 8.18673 8.8168 8.81607C8.18746 9.4454 7.75888 10.2472 7.58525 11.1201C7.41161 11.9931 7.50073 12.8979 7.84132 13.7201C8.18192 14.5424 8.75869 15.2452 9.49871 15.7397C10.2387 16.2341 11.1088 16.498 11.9988 16.498C13.1923 16.498 14.3368 16.0239 15.1808 15.18C16.0247 14.3361 16.4988 13.1915 16.4988 11.998ZM17.9988 7.12305C17.9988 6.90054 17.9328 6.68304 17.8092 6.49803C17.6856 6.31303 17.5099 6.16883 17.3043 6.08368C17.0987 5.99853 16.8725 5.97625 16.6543 6.01966C16.4361 6.06307 16.2356 6.17022 16.0783 6.32755C15.921 6.48489 15.8138 6.68534 15.7704 6.90357C15.727 7.1218 15.7493 7.348 15.8344 7.55357C15.9196 7.75913 16.0638 7.93483 16.2488 8.05845C16.4338 8.18207 16.6513 8.24805 16.8738 8.24805C17.1721 8.24805 17.4583 8.12952 17.6693 7.91854C17.8803 7.70756 17.9988 7.42142 17.9988 7.12305Z"
+                                                    fill="#8896AB" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socialas__list-item">
+                                        <a href="#" class="socialas__list-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M15.0718 1.99805H8.93578C3.33178 1.99805 1.99878 3.33105 1.99878 8.92505V15.061C1.99878 20.664 3.32178 21.998 8.92578 21.998H15.0618C20.6648 21.998 21.9988 20.675 21.9988 15.071V8.93505C21.9988 3.33105 20.6758 1.99805 15.0718 1.99805ZM18.1448 16.268H16.6858C16.1338 16.268 15.9678 15.821 14.9778 14.831C14.1138 13.998 13.7488 13.894 13.5298 13.894C13.2278 13.894 13.1448 13.977 13.1448 14.394V15.706C13.1448 16.061 13.0298 16.269 12.1028 16.269C11.2031 16.2086 10.3307 15.9353 9.55738 15.4716C8.78405 15.0079 8.13195 14.3671 7.65478 13.602C6.52195 12.192 5.73372 10.5372 5.35278 8.76905C5.35278 8.55005 5.43578 8.35205 5.85278 8.35205H7.31078C7.68578 8.35205 7.82078 8.51905 7.96778 8.90405C8.67578 10.988 9.88378 12.8 10.3738 12.8C10.5618 12.8 10.6438 12.717 10.6438 12.248V10.102C10.5818 9.12305 10.0618 9.04005 10.0618 8.68605C10.0685 8.59268 10.1112 8.50558 10.1811 8.44323C10.2509 8.38087 10.3422 8.34817 10.4358 8.35205H12.7278C13.0408 8.35205 13.1448 8.50805 13.1448 8.88305V11.779C13.1448 12.092 13.2798 12.196 13.3738 12.196C13.5618 12.196 13.7068 12.092 14.0508 11.748C14.7896 10.847 15.3933 9.84312 15.8428 8.76805C15.8887 8.63891 15.9757 8.52835 16.0903 8.45324C16.205 8.37813 16.341 8.34259 16.4778 8.35205H17.9368C18.3738 8.35205 18.4668 8.57105 18.3738 8.88305C17.8433 10.0715 17.1869 11.1996 16.4158 12.248C16.2588 12.488 16.1958 12.613 16.4158 12.894C16.5608 13.113 17.0718 13.54 17.4158 13.946C17.9157 14.4447 18.3308 15.0216 18.6448 15.654C18.7698 16.06 18.5608 16.269 18.1448 16.269V16.268Z"
+                                                    fill="#8896AB" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socialas__list-item">
+                                        <a href="#" class="socialas__list-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M2.00279 21.998L3.35479 17.03C2.46393 15.5029 1.99589 13.766 1.99879 11.998C1.99879 6.47505 6.47579 1.99805 11.9988 1.99805C17.5218 1.99805 21.9988 6.47505 21.9988 11.998C21.9988 17.521 17.5218 21.998 11.9988 21.998C10.2316 22.0009 8.49545 21.5332 6.96879 20.643L2.00279 21.998ZM8.38979 7.30605C8.26065 7.31407 8.13447 7.34808 8.01879 7.40605C7.91031 7.46748 7.81129 7.54427 7.72479 7.63405C7.60479 7.74705 7.53679 7.84505 7.46379 7.94005C7.0942 8.42104 6.8954 9.01147 6.89879 9.61805C6.90079 10.108 7.02879 10.585 7.22879 11.031C7.63779 11.933 8.31079 12.888 9.19979 13.773C9.41379 13.986 9.62279 14.2 9.84779 14.399C10.9512 15.3705 12.266 16.0711 13.6878 16.445L14.2568 16.532C14.4418 16.542 14.6268 16.528 14.8128 16.519C15.104 16.504 15.3884 16.4252 15.6458 16.288C15.7767 16.2206 15.9045 16.1472 16.0288 16.068C16.0288 16.068 16.0718 16.04 16.1538 15.978C16.2888 15.878 16.3718 15.807 16.4838 15.69C16.5668 15.604 16.6388 15.503 16.6938 15.388C16.7718 15.225 16.8498 14.914 16.8818 14.655C16.9058 14.457 16.8988 14.349 16.8958 14.282C16.8918 14.175 16.8028 14.064 16.7058 14.017L16.1238 13.756C16.1238 13.756 15.2538 13.377 14.7228 13.135C14.6668 13.1106 14.6068 13.0967 14.5458 13.094C14.4774 13.087 14.4082 13.0947 14.343 13.1166C14.2778 13.1385 14.2181 13.1741 14.1678 13.221V13.219C14.1628 13.219 14.0958 13.276 13.3728 14.152C13.3313 14.2078 13.2741 14.25 13.2086 14.2731C13.1431 14.2963 13.0721 14.2994 13.0048 14.282C12.9396 14.2646 12.8758 14.2426 12.8138 14.216C12.6898 14.164 12.6468 14.144 12.5618 14.107L12.5568 14.105C11.9847 13.8553 11.455 13.5179 10.9868 13.105C10.8608 12.995 10.7438 12.875 10.6238 12.759C10.2304 12.3823 9.88751 11.9561 9.60379 11.491L9.54479 11.396C9.50242 11.3322 9.46815 11.2633 9.44279 11.191C9.40479 11.044 9.50379 10.926 9.50379 10.926C9.50379 10.926 9.74679 10.66 9.85979 10.516C9.95388 10.3964 10.0417 10.2719 10.1228 10.143C10.2408 9.95305 10.2778 9.75805 10.2158 9.60705C9.93579 8.92305 9.64579 8.24205 9.34779 7.56605C9.28879 7.43205 9.11379 7.33605 8.95479 7.31705C8.90079 7.31105 8.84679 7.30505 8.79279 7.30105C8.6585 7.29437 8.52393 7.29571 8.38979 7.30505V7.30605Z"
+                                                    fill="#8896AB" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__support">
+                                <h4 class="footer__support-title">
+                                    При поддержке
+                                </h4>
+                                <a href="#" class="footer__support-logo">
+                                    <img src="images/footer__support-logo.png" alt="logo" class="footer__support-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copyright">
+                    Все права защищены © 2024 SUPERMOMS CLUB
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
