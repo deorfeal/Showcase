@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body body-other">
+
+    <div class="top-wrapper">
+        <header class="header">
+            <div class="big-container">
+                <div class="header__top header-top header-top--first">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z" fill="#D0D0D0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z" fill="#D0D0D0"/>
+                                    </svg>
+                                    
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top header-top header-top--second">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z" fill="#D0D0D0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z" fill="#D0D0D0"/>
+                                    </svg>
+                                    
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__text-section text-section">
+                <div class="text-section__box">
+                    <h1 class="text-section__box-title">
+                        Политика
+                        конфиденциальности
+                    </h1>
+                </div>
+                <div class="text-section__inner">
+                    <div class="text-section__item">
+                        <h3 class="text-section__item-title">
+                            Политика конфиденциальности
+                        </h3>
+                        <p class="text-section__item-text">
+                            Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности
+                            позволяет выполнять важные задания по разработке новых предложений. Задача организации, в
+                            особенности же сложившаяся структура организации требуют определения и уточнения новых
+                            предложений. Задача организации, в особенности же постоянный количественный рост и сфера
+                            нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых
+                            участниками в отношении поставленных задач.
+                            <br> <br>
+                            Значимость этих проблем настолько очевидна, что рамки и место обучения кадров в значительной
+                            степени обуславливает создание новых предложений. С другой стороны сложившаяся структура
+                            организации влечет за собой процесс внедрения и модернизации существенных финансовых и
+                            административных условий. Идейные соображения высшего порядка, а также постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный
+                            эксперимент проверки новых предложений.
+                            <br> <br>
+                            Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет
+                            выполнять важные задания по разработке систем массового участия. Не следует, однако
+                            забывать, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
+                            модели развития. С другой стороны консультация с широким активом позволяет выполнять важные
+                            задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                            Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за
+                            собой процесс внедрения и модернизации существенных финансовых и административных условий.
+                            <br> <br>
+                            Значимость этих проблем настолько очевидна, что рамки и место обучения кадров в значительной
+                            степени обуславливает создание новых предложений. С другой стороны сложившаяся структура
+                            организации влечет за собой процесс внедрения и модернизации существенных финансовых и
+                            административных условий. Идейные соображения высшего порядка, а также постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный
+                            эксперимент проверки новых предложений.
+                            <br> <br>
+                            Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет
+                            выполнять важные задания по разработке систем массового участия. Не следует, однако
+                            забывать, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
+                            модели развития. С другой стороны консультация с широким активом позволяет выполнять важные
+                            задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                            <br> <br>
+                            Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за
+                            собой процесс внедрения и модернизации существенных финансовых и административных условий.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-section__bottom text-section-bottom">
+                    <p class="text-section-bottom__text">
+                        поделиться
+                    </p>
+                    <span>
+
+                    </span>
+                    <div class="text-section-bottom__box">
+                        <a class="text-section-bottom__box-link" href="#">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.724 11.8675C10.9118 12.0043 11.1539 12.0385 11.3697 11.9545C11.5856 11.8699 11.7442 11.6803 11.792 11.4505C12.299 9.0001 13.5286 2.79789 13.99 0.56889C14.025 0.400889 13.9667 0.226289 13.8383 0.114089C13.71 0.00188897 13.5321 -0.0305111 13.3734 0.0300889C10.9276 0.96129 3.39515 3.86829 0.316392 5.04009C0.120979 5.11449 -0.00618444 5.30769 0.000232076 5.5195C0.00723192 5.7319 0.146062 5.9161 0.346141 5.9779C1.72686 6.4027 3.53923 6.9937 3.53923 6.9937C3.53923 6.9937 4.38622 9.6247 4.82779 10.9627C4.8832 11.1307 5.01095 11.2627 5.17953 11.3083C5.34753 11.3533 5.52719 11.3059 5.6526 11.1841C6.36192 10.4953 7.45856 9.4303 7.45856 9.4303C7.45856 9.4303 9.54218 11.0017 10.724 11.8675ZM4.30163 6.6613L5.28103 9.9841L5.49861 7.8799C5.49861 7.8799 9.28261 4.36929 11.4397 2.36829C11.5027 2.30949 11.5115 2.21109 11.459 2.14209C11.4071 2.07309 11.3114 2.05689 11.2396 2.10369C8.73953 3.74589 4.30163 6.6613 4.30163 6.6613Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                        </a>
+                        <a class="text-section-bottom__box-link" href="#">
+                            <svg width="9" height="15" viewBox="0 0 9 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.952873 7.989H2.59711V14.7581C2.59711 14.8917 2.7054 15 2.83905 15H5.62692C5.76057 15 5.86886 14.8917 5.86886 14.7581V8.02089H7.75905C7.88195 8.02089 7.98536 7.92866 7.99939 7.80658L8.28647 5.31455C8.29436 5.24598 8.27263 5.17732 8.22676 5.12589C8.18084 5.0744 8.11513 5.04494 8.04618 5.04494H5.86895V3.48281C5.86895 3.0119 6.1225 2.77311 6.62263 2.77311C6.69391 2.77311 8.04618 2.77311 8.04618 2.77311C8.17982 2.77311 8.28811 2.66477 8.28811 2.53118V0.243726C8.28811 0.110081 8.17982 0.00179032 8.04618 0.00179032H6.08432C6.07049 0.0011129 6.03976 0 5.99447 0C5.65407 0 4.47086 0.0668225 3.53621 0.926661C2.50063 1.8795 2.64458 3.02037 2.67899 3.21818V5.04489H0.952873C0.819228 5.04489 0.710938 5.15318 0.710938 5.28682V7.74702C0.710938 7.88066 0.819228 7.989 0.952873 7.989Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                        </a>
+                        <a class="text-section-bottom__box-link" href="#">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_143_342)">
+                                    <path
+                                        d="M14.3193 3.51989C14.329 3.66881 14.329 3.81774 14.329 3.96803C14.329 8.54754 11.0515 13.8291 5.05865 13.8291V13.8264C3.28832 13.8291 1.55478 13.2897 0.0644531 12.2726C0.321872 12.3056 0.580582 12.322 0.839937 12.3227C2.30703 12.3241 3.73219 11.8005 4.88639 10.8363C3.49219 10.8081 2.26961 9.84117 1.84252 8.4295C2.3309 8.5297 2.83413 8.50911 3.31349 8.36979C1.79349 8.04313 0.699937 6.62254 0.699937 4.97274V4.92881C1.15284 5.19715 1.65994 5.34607 2.17865 5.36254C0.747034 4.3448 0.305743 2.31891 1.17026 0.734992C2.82445 2.90019 5.2651 4.21646 7.8851 4.35578C7.62252 3.15205 7.98123 1.89068 8.82768 1.0445C10.1399 -0.267655 12.2038 -0.200401 13.4374 1.1948C14.167 1.04176 14.8664 0.756952 15.5064 0.353423C15.2632 1.15568 14.7541 1.83715 14.0741 2.27019C14.7199 2.18921 15.3509 2.00529 15.9451 1.7246C15.5077 2.42185 14.9567 3.02921 14.3193 3.51989Z"
+                                        fill="#D0D0D0" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_143_342">
+                                        <rect width="16" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="text-section-bottom__box-link" href="#">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_143_334)">
+                                    <path
+                                        d="M3.49149 5.14737H0.480217C0.346572 5.14737 0.238281 5.26293 0.238281 5.40543V15.7243C0.238281 15.8669 0.346572 15.9824 0.480217 15.9824H3.49149C3.62514 15.9824 3.73343 15.8669 3.73343 15.7243V5.40543C3.73343 5.26293 3.62514 5.14737 3.49149 5.14737Z"
+                                        fill="#D0D0D0" />
+                                    <path
+                                        d="M1.98706 0.0176086C0.891387 0.0176086 0 0.967389 0 2.13482C0 3.30277 0.891387 4.25291 1.98706 4.25291C3.08187 4.25291 3.97253 3.30272 3.97253 2.13482C3.97258 0.967389 3.08187 0.0176086 1.98706 0.0176086Z"
+                                        fill="#D0D0D0" />
+                                    <path
+                                        d="M11.1502 4.8909C9.94073 4.8909 9.04669 5.44548 8.50441 6.07562V5.40543C8.50441 5.26293 8.39612 5.14736 8.26248 5.14736H5.37865C5.24501 5.14736 5.13672 5.26293 5.13672 5.40543V15.7243C5.13672 15.8668 5.24501 15.9824 5.37865 15.9824H8.38335C8.51699 15.9824 8.62528 15.8668 8.62528 15.7243V10.6188C8.62528 8.89844 9.06338 8.22819 10.1877 8.22819C11.4122 8.22819 11.5095 9.30267 11.5095 10.7074V15.7243C11.5095 15.8669 11.6178 15.9824 11.7514 15.9824H14.7572C14.8909 15.9824 14.9992 15.8669 14.9992 15.7243V10.0643C14.9992 7.50607 14.5419 4.8909 11.1502 4.8909Z"
+                                        fill="#D0D0D0" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_143_334">
+                                        <rect width="15" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top footer-top">
+                    <a class="footer-top__logo" href="#">
+                        <img class="footer-top__logo-img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <p class="footer-top__text">
+                        Прогрессивная партнерская сеть. Мы обеспечиваем рекламодателей качественным траффиком, а
+                        веб-мастеров высокими конверсиями. С нами удобно!
+                    </p>
+                </div>
+                <div class="footer__content footer-content">
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            LLP «WhiteLead»
+                        </p>
+                        <p class="footer-content-box__subtext">
+                            Anexartisias 187, Limassol 3040, Кипр
+                        </p>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Сотрудничество и партнерство:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:partnership@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                partnership@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Поддержка веб-мастеров и рекламодателей:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:support@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                support@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <p class="footer-bottom__copy">
+                            2014 – 2023 , White Lead. All Rights Reserved.
+                        </p>
+                        <a class="footer-bottom__link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Пользовательское соглашение   
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Реферальная программа
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

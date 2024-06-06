@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body program-body">
+    <div class="top-wrapper">
+        <header class="header">
+            <div class="big-container">
+                <div class="header__top header-top header-top--first">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z" fill="#D0D0D0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z" fill="#D0D0D0"/>
+                                    </svg>
+                                    
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top header-top header-top--second">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <span>
+                                    
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z" fill="#D0D0D0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z" fill="#D0D0D0"/>
+                                    </svg>
+                                    
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom header-bottom">
+                    <div class="container">
+                        <div class="header-bottom__inner">
+                            <div class="header-bottom__content">
+                                <h1 class="header-bottom__content-title">
+                                    Реферальная
+                                    программа
+                                </h1>
+                                <p class="header-bottom__content-text">
+                                    зарабатывай больше - приглашая друзей
+                                </p>
+                                <a class="header-bottom__content-link btn" href="#">
+                                    присоединиться
+                                </a>
+                            </div>
+                            <div class="header-bottom__body">
+                                <img class="header-bottom__body-img" src="images/program-header-bottom-img-1.png" alt="">
+                                <img class="header-bottom__body-img" src="images/program-header-bottom-img-2.png" alt="">
+                                <img class="header-bottom__body-img" src="images/program-header-bottom-img-3.png" alt="">
+                                <img class="header-bottom__body-img" src="images/program-header-bottom-img-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/img.png" alt="">
+        </header>
+    </div>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__steps steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__wrap">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="39" cy="23.5078" r="23" fill="#50B6F3" />
+                                    <g filter="url(#filter0_b_143_553)">
+                                        <path
+                                            d="M70.9107 27.5078C73.8977 27.5078 75.1396 31.3263 72.7231 33.0802L55.3898 45.6612C54.3091 46.4456 53.8569 47.836 54.2697 49.1051L60.8904 69.4616C61.8134 72.2996 58.5621 74.6595 56.1456 72.9055L38.8124 60.3246C37.7317 59.5402 36.2683 59.5402 35.1876 60.3246L17.8544 72.9056C15.4379 74.6595 12.1866 72.2996 13.1096 69.4616L19.7303 49.1051C20.1431 47.836 19.6909 46.4456 18.6102 45.6612L1.27692 33.0802C-1.13956 31.3263 0.102349 27.5078 3.08928 27.5078C45.7338 27.5078 28.2662 27.5078 70.9107 27.5078Z"
+                                            fill="white" fill-opacity="0.22" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_143_553" x="-15" y="12.5078" width="104" height="76"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_143_553" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_143_553" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <p class="steps-item__count">
+                                    1
+                                </p>
+                                <p class="steps-item__text">
+                                    Пройдите регистрацию на платформе (если еще не сделали этого) и получите личную
+                                    партнерскую ссылку
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__wrap">
+                                <svg width="95" height="92" viewBox="0 0 95 92" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="57.1104" y="27.2057" width="12.0295" height="40.4005" rx="6.01474"
+                                        transform="rotate(45 57.1104 27.2057)" fill="#50B6F3" />
+                                    <rect x="22.7334" y="21.1929" width="3.34153" height="16.7076" rx="1.67076"
+                                        transform="rotate(-45 22.7334 21.1929)" fill="#50B6F3" />
+                                    <rect x="36.8965" y="17.6954" width="3.34152" height="9.35627" rx="1.67076"
+                                        fill="#50B6F3" />
+                                    <rect width="3.34152" height="9.35627" rx="1.67076"
+                                        transform="matrix(0 1 1 0 21.7031 32.8876)" fill="#50B6F3" />
+                                    <rect width="3.34153" height="16.7076" rx="1.67076"
+                                        transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 69.9658 71.1002)"
+                                        fill="#50B6F3" />
+                                    <rect width="3.34152" height="9.35627" rx="1.67076"
+                                        transform="matrix(0 -1 -1 0 73.4639 56.9395)" fill="#50B6F3" />
+                                    <rect x="58.2725" y="72.1316" width="3.34152" height="9.35627" rx="1.67076"
+                                        transform="rotate(180 58.2725 72.1316)" fill="#50B6F3" />
+                                    <g filter="url(#filter0_b_143_561)">
+                                        <rect x="31.584" y="43.983" width="22.7568" height="30.6665" rx="11.3784"
+                                            transform="rotate(45 31.584 43.983)" stroke="white" stroke-opacity="0.22"
+                                            stroke-width="14" />
+                                    </g>
+                                    <g filter="url(#filter1_b_143_561)">
+                                        <rect x="69.0088" y="9.89949" width="22.7568" height="30.6665" rx="11.3784"
+                                            transform="rotate(45 69.0088 9.89949)" stroke="white" stroke-opacity="0.22"
+                                            stroke-width="14" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_143_561" x="3.6123" y="37.696" width="50.3496"
+                                            height="50.3499" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_143_561" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_143_561" result="shape" />
+                                        </filter>
+                                        <filter id="filter1_b_143_561" x="41.0371" y="3.61255" width="50.3496"
+                                            height="50.3499" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_143_561" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_143_561" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <p class="steps-item__count">
+                                    2
+                                </p>
+                                <p class="steps-item__text">
+                                    Приглашайте своих друзей и партнеров используя личную партнерскую ссылку
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item steps-item">
+                            <div class="steps-item__wrap">
+                                <svg width="92" height="76" viewBox="0 0 92 76" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="92" y="57.5078" width="18" height="92" rx="9"
+                                        transform="rotate(90 92 57.5078)" fill="#50B6F3" />
+                                    <g filter="url(#filter0_b_202_22)">
+                                        <rect x="6" y="41.5078" width="21" height="32" rx="10.5" fill="white"
+                                            fill-opacity="0.22" />
+                                    </g>
+                                    <g filter="url(#filter1_b_202_22)">
+                                        <rect x="36" y="24.5078" width="21" height="49" rx="10.5" fill="white"
+                                            fill-opacity="0.22" />
+                                    </g>
+                                    <g filter="url(#filter2_b_202_22)">
+                                        <rect x="66" y="0.507812" width="21" height="73" rx="10.5" fill="white"
+                                            fill-opacity="0.22" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_202_22" x="2" y="37.5078" width="29" height="40"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_202_22" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_202_22" result="shape" />
+                                        </filter>
+                                        <filter id="filter1_b_202_22" x="32" y="20.5078" width="29" height="57"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_202_22" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_202_22" result="shape" />
+                                        </filter>
+                                        <filter id="filter2_b_202_22" x="62" y="-3.49219" width="29" height="81"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_202_22" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_202_22" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <p class="steps-item__count">
+                                    3
+                                </p>
+                                <p class="steps-item__text">
+                                    Получайте 5 % от суммы каждого депозита, который обеспечил приведенный вами
+                                    веб-мастер
+                                    или команда
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__box">
+                        <p class="steps__box-text">
+                            минимальная сумма выплаты составляет $100, сумма профита и выплаты от каждого приведенного
+                            веб-мастера или команды зависит от конкретного оффера, а вся статистика доступна в личном
+                            кабинете
+                        </p>
+                    </div>
+                </div>
+            </section> 
+            <section class="main__connection connection">
+                <div class="big-container">
+                    <div class="container">
+                        <div class="connection__inner">
+                            <div class="connection__content connection-content">
+                                <h2 class="connection-content__title">
+                                    напиши менеджеру
+                                </h2>
+                                <p class="connection-content__text">
+                                    Мы рады новым друзьям! И всегда готовы предложить классные офферы с высокими
+                                    конверсиями в
+                                    любых гео.
+                                    <br> <br>
+                                    А рекламодателям стать надежным партнером, привлекая
+                                    новых целевых клиентов.
+                                </p>
+                                <div class="connection-content__box connection-content-box">
+                                    <div class="connection-content-box__item connection-content-box-item">
+                                        <img class="connection-content-box-item__img"
+                                            src="images/connection-content-img-1.png" alt="img">
+                                        <p class="connection-content-box-item__text">
+                                            Виталий
+                                        </p>
+                                        <p class="connection-content-box-item__subtext">
+                                            Advertiser-менеджер
+                                        </p>
+                                        <a class="connection-content-box-item__row" href="#">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.5971 9.0924C13.6981 8.60465 13.7518 8.09835 13.7518 7.57875C13.7518 3.6829 10.7623 0.52455 7.07445 0.52455C6.68512 0.52455 6.30366 0.5601 5.93251 0.62775C5.33575 0.23055 4.6297 0 3.87236 0C1.73368 0 0 1.83175 0 4.0908C0 4.846 0.194472 5.5528 0.532254 6.16005C0.443703 6.61835 0.397179 7.0927 0.397179 7.5787C0.397179 11.4746 3.38667 14.6329 7.07445 14.6329C7.49217 14.6329 7.90075 14.592 8.29713 14.5145C8.84225 14.824 9.46557 15 10.1277 15C12.2664 15 14 13.1685 14 10.9092C14 10.2564 13.8546 9.63985 13.5971 9.0924ZM10.4991 10.9499C10.1902 11.4117 9.73378 11.7776 9.14246 12.0373C8.55686 12.2945 7.85489 12.4249 7.05585 12.4249C6.09679 12.4249 5.29273 12.2467 4.66515 11.895C4.21653 11.639 3.84656 11.2922 3.56576 10.8644C3.28212 10.4321 3.13825 10.0032 3.13825 9.58965C3.13825 9.33115 3.23196 9.10705 3.41682 8.92365C3.59974 8.74185 3.83416 8.64975 4.11368 8.64975C4.34313 8.64975 4.54101 8.72255 4.70193 8.86615C4.8556 9.00375 4.9875 9.20735 5.09347 9.4703C5.21179 9.7566 5.34081 9.99835 5.47707 10.1888C5.60803 10.3719 5.79644 10.5259 6.03706 10.646C6.27914 10.7671 6.60547 10.8285 7.00686 10.8285C7.55885 10.8285 8.01145 10.704 8.35188 10.4584C8.68437 10.2185 8.84604 9.9306 8.84604 9.57815C8.84604 9.29965 8.76165 9.0808 8.58815 8.90905C8.40641 8.7295 8.16674 8.58975 7.87562 8.4939C7.57215 8.39395 7.16016 8.28615 6.65057 8.17345C5.96024 8.01725 5.37342 7.83195 4.90605 7.6225C4.90425 7.62175 4.90241 7.62095 4.90061 7.6201C4.42179 7.40495 4.03587 7.1066 3.75356 6.7333C3.4668 6.3542 3.3215 5.8786 3.3215 5.31955C3.3215 4.78665 3.47404 4.3063 3.77491 3.89195C4.0735 3.4805 4.50958 3.16075 5.07099 2.94135C5.62516 2.72485 6.28435 2.61515 7.03019 2.61515C7.62653 2.61515 8.15083 2.6879 8.58843 2.83165C9.02854 2.97645 9.39959 3.172 9.69113 3.4126C9.98481 3.655 10.2032 3.91435 10.3404 4.1837C10.479 4.45575 10.5492 4.7265 10.5492 4.9884C10.5492 5.24045 10.4571 5.4695 10.2754 5.66915C10.0925 5.86995 9.8618 5.9719 9.58957 5.9719C9.34228 5.9719 9.14875 5.90815 9.01443 5.78245C8.88944 5.66575 8.75986 5.4838 8.61593 5.222C8.44943 4.8878 8.24795 4.62435 8.01675 4.4387C7.79242 4.2584 7.41729 4.16685 6.90193 4.16685C6.4233 4.16685 6.03403 4.26835 5.74499 4.46855C5.46647 4.66145 5.33116 4.88265 5.33116 5.1447C5.33116 5.30545 5.3747 5.43975 5.46429 5.55535C5.55918 5.6778 5.69303 5.78535 5.86223 5.87475C6.03772 5.96795 6.21856 6.042 6.39973 6.09485C6.58531 6.14925 6.89668 6.22985 7.32368 6.33405C7.77358 6.4361 8.19258 6.5485 8.574 6.6688C8.65062 6.69295 8.72635 6.7174 8.7998 6.7422C9.24445 6.89255 9.62871 7.078 9.94207 7.2933C10.2619 7.51335 10.5152 7.79595 10.6949 8.1333C10.8751 8.47185 10.9663 8.8899 10.9663 9.3755C10.9663 9.95675 10.809 10.4864 10.4991 10.9499Z"
+                                                    fill="#D0D0D0" />
+                                            </svg>
+                                            Skype
+                                        </a>
+                                        <a class="connection-content-box-item__row" href="#">
+                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.724 11.8675C10.9118 12.0043 11.1539 12.0385 11.3697 11.9545C11.5856 11.8699 11.7442 11.6803 11.792 11.4505C12.299 9.0001 13.5286 2.79789 13.99 0.56889C14.025 0.400889 13.9667 0.226289 13.8383 0.114089C13.71 0.00188897 13.5321 -0.0305111 13.3734 0.0300889C10.9276 0.96129 3.39515 3.86829 0.316392 5.04009C0.120979 5.11449 -0.00618444 5.30769 0.000232076 5.5195C0.00723192 5.7319 0.146062 5.9161 0.346141 5.9779C1.72686 6.4027 3.53923 6.9937 3.53923 6.9937C3.53923 6.9937 4.38622 9.6247 4.82779 10.9627C4.8832 11.1307 5.01095 11.2627 5.17953 11.3083C5.34753 11.3533 5.52719 11.3059 5.6526 11.1841C6.36192 10.4953 7.45856 9.4303 7.45856 9.4303C7.45856 9.4303 9.54218 11.0017 10.724 11.8675ZM4.30163 6.6613L5.28103 9.9841L5.49861 7.8799C5.49861 7.8799 9.28261 4.36929 11.4397 2.36829C11.5027 2.30949 11.5115 2.21109 11.459 2.14209C11.4071 2.07309 11.3114 2.05689 11.2396 2.10369C8.73953 3.74589 4.30163 6.6613 4.30163 6.6613Z"
+                                                    fill="#D0D0D0" />
+                                            </svg>
+                                            Telegram
+                                        </a>
+                                    </div>
+                                    <div class="connection-content-box__item connection-content-box-item">
+                                        <img class="connection-content-box-item__img"
+                                            src="images/connection-content-img-2.png" alt="img">
+                                        <p class="connection-content-box-item__text">
+                                            Виталина
+                                        </p>
+                                        <p class="connection-content-box-item__subtext">
+                                            Affiliate-менеджер
+                                        </p>
+                                        <a class="connection-content-box-item__row" href="#">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.5971 9.0924C13.6981 8.60465 13.7518 8.09835 13.7518 7.57875C13.7518 3.6829 10.7623 0.52455 7.07445 0.52455C6.68512 0.52455 6.30366 0.5601 5.93251 0.62775C5.33575 0.23055 4.6297 0 3.87236 0C1.73368 0 0 1.83175 0 4.0908C0 4.846 0.194472 5.5528 0.532254 6.16005C0.443703 6.61835 0.397179 7.0927 0.397179 7.5787C0.397179 11.4746 3.38667 14.6329 7.07445 14.6329C7.49217 14.6329 7.90075 14.592 8.29713 14.5145C8.84225 14.824 9.46557 15 10.1277 15C12.2664 15 14 13.1685 14 10.9092C14 10.2564 13.8546 9.63985 13.5971 9.0924ZM10.4991 10.9499C10.1902 11.4117 9.73378 11.7776 9.14246 12.0373C8.55686 12.2945 7.85489 12.4249 7.05585 12.4249C6.09679 12.4249 5.29273 12.2467 4.66515 11.895C4.21653 11.639 3.84656 11.2922 3.56576 10.8644C3.28212 10.4321 3.13825 10.0032 3.13825 9.58965C3.13825 9.33115 3.23196 9.10705 3.41682 8.92365C3.59974 8.74185 3.83416 8.64975 4.11368 8.64975C4.34313 8.64975 4.54101 8.72255 4.70193 8.86615C4.8556 9.00375 4.9875 9.20735 5.09347 9.4703C5.21179 9.7566 5.34081 9.99835 5.47707 10.1888C5.60803 10.3719 5.79644 10.5259 6.03706 10.646C6.27914 10.7671 6.60547 10.8285 7.00686 10.8285C7.55885 10.8285 8.01145 10.704 8.35188 10.4584C8.68437 10.2185 8.84604 9.9306 8.84604 9.57815C8.84604 9.29965 8.76165 9.0808 8.58815 8.90905C8.40641 8.7295 8.16674 8.58975 7.87562 8.4939C7.57215 8.39395 7.16016 8.28615 6.65057 8.17345C5.96024 8.01725 5.37342 7.83195 4.90605 7.6225C4.90425 7.62175 4.90241 7.62095 4.90061 7.6201C4.42179 7.40495 4.03587 7.1066 3.75356 6.7333C3.4668 6.3542 3.3215 5.8786 3.3215 5.31955C3.3215 4.78665 3.47404 4.3063 3.77491 3.89195C4.0735 3.4805 4.50958 3.16075 5.07099 2.94135C5.62516 2.72485 6.28435 2.61515 7.03019 2.61515C7.62653 2.61515 8.15083 2.6879 8.58843 2.83165C9.02854 2.97645 9.39959 3.172 9.69113 3.4126C9.98481 3.655 10.2032 3.91435 10.3404 4.1837C10.479 4.45575 10.5492 4.7265 10.5492 4.9884C10.5492 5.24045 10.4571 5.4695 10.2754 5.66915C10.0925 5.86995 9.8618 5.9719 9.58957 5.9719C9.34228 5.9719 9.14875 5.90815 9.01443 5.78245C8.88944 5.66575 8.75986 5.4838 8.61593 5.222C8.44943 4.8878 8.24795 4.62435 8.01675 4.4387C7.79242 4.2584 7.41729 4.16685 6.90193 4.16685C6.4233 4.16685 6.03403 4.26835 5.74499 4.46855C5.46647 4.66145 5.33116 4.88265 5.33116 5.1447C5.33116 5.30545 5.3747 5.43975 5.46429 5.55535C5.55918 5.6778 5.69303 5.78535 5.86223 5.87475C6.03772 5.96795 6.21856 6.042 6.39973 6.09485C6.58531 6.14925 6.89668 6.22985 7.32368 6.33405C7.77358 6.4361 8.19258 6.5485 8.574 6.6688C8.65062 6.69295 8.72635 6.7174 8.7998 6.7422C9.24445 6.89255 9.62871 7.078 9.94207 7.2933C10.2619 7.51335 10.5152 7.79595 10.6949 8.1333C10.8751 8.47185 10.9663 8.8899 10.9663 9.3755C10.9663 9.95675 10.809 10.4864 10.4991 10.9499Z"
+                                                    fill="#D0D0D0" />
+                                            </svg>
+                                            Skype
+                                        </a>
+                                        <a class="connection-content-box-item__row" href="#">
+                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.724 11.8675C10.9118 12.0043 11.1539 12.0385 11.3697 11.9545C11.5856 11.8699 11.7442 11.6803 11.792 11.4505C12.299 9.0001 13.5286 2.79789 13.99 0.56889C14.025 0.400889 13.9667 0.226289 13.8383 0.114089C13.71 0.00188897 13.5321 -0.0305111 13.3734 0.0300889C10.9276 0.96129 3.39515 3.86829 0.316392 5.04009C0.120979 5.11449 -0.00618444 5.30769 0.000232076 5.5195C0.00723192 5.7319 0.146062 5.9161 0.346141 5.9779C1.72686 6.4027 3.53923 6.9937 3.53923 6.9937C3.53923 6.9937 4.38622 9.6247 4.82779 10.9627C4.8832 11.1307 5.01095 11.2627 5.17953 11.3083C5.34753 11.3533 5.52719 11.3059 5.6526 11.1841C6.36192 10.4953 7.45856 9.4303 7.45856 9.4303C7.45856 9.4303 9.54218 11.0017 10.724 11.8675ZM4.30163 6.6613L5.28103 9.9841L5.49861 7.8799C5.49861 7.8799 9.28261 4.36929 11.4397 2.36829C11.5027 2.30949 11.5115 2.21109 11.459 2.14209C11.4071 2.07309 11.3114 2.05689 11.2396 2.10369C8.73953 3.74589 4.30163 6.6613 4.30163 6.6613Z"
+                                                    fill="#D0D0D0" />
+                                            </svg>
+                                            Telegram
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="connection__wrap">
+                                <div class="connection__images">
+                                    <img class="connection__images-img" src="images/connection-img-1.png" alt="img">
+                                    <img class="connection__images-img" src="images/connection-img-2.png" alt="img">
+                                    <img class="connection__images-img" src="images/connection-img-3.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top footer-top">
+                    <a class="footer-top__logo" href="#">
+                        <img class="footer-top__logo-img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <p class="footer-top__text">
+                        Прогрессивная партнерская сеть. Мы обеспечиваем рекламодателей качественным траффиком, а
+                        веб-мастеров высокими конверсиями. С нами удобно!
+                    </p>
+                </div>
+                <div class="footer__content footer-content">
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            LLP «WhiteLead»
+                        </p>
+                        <p class="footer-content-box__subtext">
+                            Anexartisias 187, Limassol 3040, Кипр
+                        </p>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Сотрудничество и партнерство:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:partnership@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                partnership@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Поддержка веб-мастеров и рекламодателей:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:support@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                support@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <p class="footer-bottom__copy">
+                            2014 – 2023 , White Lead. All Rights Reserved.
+                        </p>
+                        <a class="footer-bottom__link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Пользовательское соглашение   
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Реферальная программа
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

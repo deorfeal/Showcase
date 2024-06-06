@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body body-404">
+
+    <div class="top-wrapper">
+        <header class="header">
+            <div class="big-container">
+                <div class="header__top header-top header-top--first">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+
+                                </span>
+                                <span>
+
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z"
+                                        fill="#D0D0D0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z"
+                                        fill="#D0D0D0" />
+                                </svg>
+
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top header-top header-top--second">
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <a class="header-top__logo" href="#">
+                                <img class="header-top__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <nav class="header-top__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Вебмастерам
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Рекламодателям
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-top__lang header-top-lang">
+                                <p class="header-top-lang__text">
+                                    RU
+                                </p>
+                                <ul class="header-top-lang__list">
+                                    <li class="header-top-lang__list-item header-top-lang__list-item--acitve">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            RU
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            UA
+                                        </a>
+                                    </li>
+                                    <li class="header-top-lang__list-item">
+                                        <a class="header-top-lang__list-link" href="#">
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top__buttons">
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_502)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                    height="30.7749" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_502" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Регистрация
+                                    </span>
+                                </a>
+                                <a class="header-top__buttons-link" href="#">
+                                    <span>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                            <g filter="url(#filter0_b_135_499)">
+                                                <path
+                                                    d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                    fill="white" fill-opacity="0.22" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                    height="37.3169" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                    <feComposite in2="SourceAlpha" operator="in"
+                                                        result="effect1_backgroundBlur_135_499" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Войти
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="header-top__btn" type="button">
+                                <span>
+
+                                </span>
+                                <span>
+
+                                </span>
+                                <span>
+
+                                </span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.61956 4.61872C5.96127 4.27701 6.51529 4.27701 6.857 4.61872L16.7565 14.5182C17.0982 14.8599 17.0982 15.4139 16.7565 15.7556C16.4148 16.0974 15.8608 16.0974 15.5191 15.7556L5.61956 5.85616C5.27786 5.51445 5.27786 4.96042 5.61956 4.61872Z"
+                                        fill="#D0D0D0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.857 4.61872C16.5153 4.27701 15.9613 4.27701 15.6196 4.61872L5.72007 14.5182C5.37835 14.8599 5.37836 15.4139 5.72007 15.7556C6.06177 16.0974 6.61579 16.0974 6.9575 15.7556L16.857 5.85616C17.1987 5.51445 17.1987 4.96042 16.857 4.61872Z"
+                                        fill="#D0D0D0" />
+                                </svg>
+
+                            </button>
+                            <div class="header-top__mobile header-top-mobile">
+                                <p class="header-top-mobile__text">
+                                    Выбрать язык:
+                                </p>
+                                <div class="header-top-mobile__buttons">
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        RU
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        UA
+                                    </a>
+                                    <a class="header-top-mobile__buttons-btn" href="#">
+                                        EN
+                                    </a>
+                                </div>
+                                <div class="header-top__buttons">
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="9.5" r="7.5" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_502)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M27.2256 1.28559C28.9397 2.99972 28.9397 5.77887 27.2256 7.493L13.2293 21.4894C12.329 22.3896 11.1349 22.8171 9.95568 22.7717C8.77627 22.8172 7.58201 22.3898 6.68161 21.4894L1.2856 16.0934C-0.42853 14.3792 -0.428533 11.6001 1.28559 9.88596C2.99972 8.17183 5.77887 8.17183 7.493 9.88596L9.95543 12.3484L21.0182 1.2856C22.7323 -0.428531 25.5115 -0.428532 27.2256 1.28559Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_502" x="-4" y="-4" width="36.5117"
+                                                        height="30.7749" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_502" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_502" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Регистрация
+                                        </span>
+                                    </a>
+                                    <a class="header-top__buttons-link" href="#">
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="13.4297" cy="15.6243" r="8" fill="#50B6F3" />
+                                                <g filter="url(#filter0_b_135_499)">
+                                                    <path
+                                                        d="M26.6114 0.113532C28.1885 -0.431698 29.7004 1.08021 29.1551 2.65725L20.4037 27.9704C19.8073 29.6954 17.4015 29.7857 16.6775 28.1102L12.2479 17.8592C12.044 17.3874 11.6663 17.0122 11.1931 16.8114L1.2189 12.5797C-0.467304 11.8643 -0.384608 9.44682 1.34654 8.84831L26.6114 0.113532Z"
+                                                        fill="white" fill-opacity="0.22" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_b_135_499" x="-4" y="-4" width="37.2695"
+                                                        height="37.3169" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_135_499" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_135_499" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Войти
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__error-section error-section">
+                    <div class="container">
+                        <svg width="1071" height="561" viewBox="0 0 1071 561" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.33">
+                                <path
+                                    d="M65.7535 197.904L0 0H56.1143L111.54 173.123H82.9665L141.146 0H191.408L246.49 173.123H219.637L276.784 0H329.112L263.703 197.904H205.523L157.671 49.2179H172.818L123.933 197.904H65.7535Z"
+                                    fill="#302E35" />
+                                <path
+                                    d="M363.201 197.904V0H417.594V75.7198H498.151V0H552.544V197.904H498.151V119.431H417.594V197.904H363.201Z"
+                                    fill="#302E35" />
+                                <path d="M605.595 197.904V0H659.988V197.904H605.595Z" fill="#302E35" />
+                                <path d="M749.684 197.904V42.3343H687.373V0H866.387V42.3343H804.076V197.904H749.684Z"
+                                    fill="#302E35" />
+                                <path
+                                    d="M942.579 77.7849H1038.28V117.366H942.579V77.7849ZM948.087 156.258H1053.77V197.904H894.383V0H1049.99V41.6459H948.087V156.258Z"
+                                    fill="#302E35" />
+                                <path d="M27.7646 498.831V244.353H97.6908V444.395H222.053V498.831H27.7646Z"
+                                    fill="url(#paint0_linear_191_3)" />
+                                <path
+                                    d="M321.815 344.374H444.849V395.27H321.815V344.374ZM328.896 445.28H464.765V498.831H259.855V244.353H459.897V297.904H328.896V445.28Z"
+                                    fill="url(#paint1_linear_191_3)" />
+                                <path
+                                    d="M477.655 498.831L591.838 244.353H660.879L775.505 498.831H706.464L614.852 277.988H638.308L545.368 498.831H477.655ZM540.057 448.378L558.203 397.925H683.893L702.038 448.378H540.057Z"
+                                    fill="url(#paint2_linear_191_3)" />
+                                <path
+                                    d="M805.721 498.831V244.353H925.658C954.867 244.353 980.241 249.516 1001.78 259.843C1023.61 270.17 1040.43 284.922 1052.23 304.1C1064.33 322.983 1070.38 345.554 1070.38 371.813C1070.38 397.777 1064.33 420.349 1052.23 439.527C1040.43 458.41 1023.61 473.014 1001.78 483.341C980.241 493.668 954.867 498.831 925.658 498.831H805.721ZM875.647 443.952H923.445C939.082 443.952 952.507 441.149 963.719 435.543C975.225 429.938 984.077 421.824 990.273 411.202C996.469 400.285 999.567 387.156 999.567 371.813C999.567 356.176 996.469 343.046 990.273 332.424C984.077 321.508 975.225 313.246 963.719 307.641C952.507 302.035 939.082 299.232 923.445 299.232H875.647V443.952Z"
+                                    fill="url(#paint3_linear_191_3)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M142.747 554.152C157.175 554.152 168.871 542.456 168.871 528.028C168.871 513.6 157.175 501.904 142.747 501.904C128.319 501.904 116.623 513.6 116.623 528.028C116.623 542.456 128.319 554.152 142.747 554.152ZM142.747 560.299C160.57 560.299 175.018 545.851 175.018 528.028C175.018 510.206 160.57 495.757 142.747 495.757C124.925 495.757 110.477 510.206 110.477 528.028C110.477 545.851 124.925 560.299 142.747 560.299Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M928.003 344.892L925 351.631C923.66 354.637 920.819 356.7 917.546 357.046L910.209 357.82L915.69 362.759C918.135 364.962 919.22 368.302 918.537 371.521L917.006 378.738L923.397 375.052C926.248 373.408 929.759 373.408 932.61 375.052L939.001 378.738L937.47 371.521C936.787 368.302 937.872 364.962 940.317 362.759L945.797 357.82L938.461 357.046C935.188 356.7 932.347 354.637 931.007 351.631L928.003 344.892ZM930.811 336.092C929.728 333.663 926.279 333.663 925.196 336.092L919.385 349.128C918.939 350.13 917.992 350.818 916.901 350.933L902.707 352.431C900.062 352.71 898.997 355.99 900.972 357.771L911.575 367.325C912.39 368.06 912.751 369.173 912.524 370.246L909.562 384.208C909.011 386.81 911.8 388.837 914.105 387.508L926.468 380.377C927.418 379.829 928.589 379.829 929.539 380.377L941.902 387.508C944.206 388.837 946.996 386.81 946.444 384.208L943.483 370.246C943.255 369.173 943.617 368.06 944.432 367.325L955.034 357.771C957.01 355.99 955.945 352.71 953.299 352.431L939.106 350.933C938.015 350.818 937.068 350.13 936.621 349.128L930.811 336.092Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M228.001 392.075C190.147 430.483 164.881 475.478 153.24 501.618L147.625 499.118C159.479 472.498 185.119 426.827 223.624 387.76C262.13 348.691 313.776 315.964 377.552 315.964C457.266 315.964 511.458 366.097 562.504 415.17C563.91 416.522 565.313 417.873 566.715 419.221C616.566 467.196 663.809 512.662 729.98 512.662C785.108 512.662 823.242 500.355 851.333 481.489C879.454 462.603 897.796 436.956 913.029 409.738L918.392 412.74C902.951 440.332 884.033 466.932 854.76 486.592C825.456 506.272 786.063 518.809 729.98 518.809C661.282 518.809 612.357 471.702 563.154 424.327C561.518 422.751 559.882 421.176 558.244 419.602C506.988 370.326 454.473 322.11 377.552 322.11C316.021 322.11 265.854 353.669 228.001 392.075Z"
+                                    fill="#302E35" />
+                                <path
+                                    d="M321.815 344.374H444.85V395.27H321.815V344.374ZM328.896 445.28H464.765V498.831H259.855V244.353H459.897V297.904H328.896V445.28Z"
+                                    fill="url(#paint4_linear_191_3)" />
+                                <path
+                                    d="M477.655 498.831L591.838 244.353H660.879L775.505 498.831H706.464L614.852 277.988H638.308L545.368 498.831H477.655ZM540.058 448.378L558.203 397.925H683.893L702.038 448.378H540.058Z"
+                                    fill="url(#paint5_linear_191_3)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M915.567 405.792C917.157 405.2 918.927 406.009 919.519 407.6L925.583 423.894C926.175 425.485 925.366 427.254 923.775 427.846C922.184 428.438 920.414 427.629 919.822 426.038L913.758 409.744C913.166 408.153 913.976 406.384 915.567 405.792Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M919.518 407.6C918.926 406.009 917.156 405.2 915.565 405.792L899.271 411.856C897.68 412.448 896.871 414.217 897.463 415.808C898.055 417.399 899.824 418.209 901.415 417.617L917.709 411.552C919.3 410.96 920.11 409.191 919.518 407.6Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M129.815 515.099C131.015 513.898 132.961 513.898 134.162 515.099L155.676 536.612C156.876 537.813 156.876 539.759 155.676 540.959C154.475 542.159 152.529 542.159 151.329 540.959L129.815 519.445C128.615 518.245 128.615 516.299 129.815 515.099Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M155.675 515.099C154.474 513.898 152.528 513.898 151.328 515.099L129.814 536.613C128.614 537.813 128.614 539.759 129.814 540.959C131.014 542.159 132.96 542.159 134.161 540.959L155.675 519.445C156.875 518.245 156.875 516.299 155.675 515.099Z"
+                                    fill="#302E35" />
+                                <path
+                                    d="M159.65 366.675C159.65 392.136 139.01 412.776 113.549 412.776C88.0879 412.776 67.4478 392.136 67.4478 366.675C67.4478 341.214 88.0879 320.574 113.549 320.574C139.01 320.574 159.65 341.214 159.65 366.675Z"
+                                    fill="#343434" />
+                                <path
+                                    d="M125.948 367.556C128.984 367.01 131.347 365.143 132.159 361.084C133.276 355.54 129.188 352.327 123.493 350.037L125.759 342.564L121.225 341.188L119.016 348.464C117.823 348.102 116.6 347.756 115.382 347.413L117.603 340.09L113.073 338.715L110.805 346.186C109.817 345.908 108.847 345.634 107.906 345.349L107.912 345.327L101.659 343.426L100.186 348.284C100.186 348.284 103.554 349.237 103.48 349.281C105.315 349.84 105.59 351.091 105.483 352.067L102.901 360.58L99.2726 372.538C99.0159 373.092 98.3948 373.915 97.1106 373.527C97.1534 373.597 93.8126 372.526 93.8126 372.526L91.2651 377.684L97.1646 379.475C98.2635 379.809 99.3384 380.154 100.395 380.484L98.1063 388.043L102.635 389.418L104.903 381.94C106.141 382.343 107.34 382.719 108.515 383.074L106.256 390.517L110.79 391.893L113.081 384.349C120.836 386.222 126.756 385.915 129.599 378.934C131.888 373.315 129.959 369.911 125.948 367.556ZM113.867 352.793C116.425 353.569 124.715 355.192 123.09 360.553C121.529 365.691 113.672 362.651 111.112 361.874L113.867 352.793ZM106.681 376.471L109.721 366.459C112.793 367.39 122.699 369.428 120.913 375.32C119.2 380.97 109.756 377.402 106.681 376.471Z"
+                                    fill="#464646" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M688.106 337.688C688.105 337.688 688.104 337.687 688.103 337.686C683.141 333.083 679.905 326.92 678.932 320.222C677.959 313.523 679.31 306.693 682.759 300.868C686.207 295.043 691.547 290.574 697.889 288.206C704.23 285.838 711.192 285.712 717.614 287.851L719.145 283.254C717.178 282.599 715.167 282.126 713.138 281.836C707.458 281.023 701.63 281.637 696.193 283.667C688.815 286.423 682.602 291.622 678.59 298.399C674.577 305.177 673.006 313.124 674.138 320.918C674.972 326.661 677.236 332.066 680.68 336.656C681.91 338.296 683.291 339.831 684.811 341.241L688.106 337.688Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M729.531 292.843C729.531 292.844 729.532 292.844 729.533 292.845C734.915 297.429 738.48 303.785 739.586 310.767C740.692 317.75 739.264 324.899 735.561 330.921C731.858 336.944 726.123 341.444 719.393 343.609C712.662 345.774 705.38 345.461 698.86 342.726L696.986 347.194C698.898 347.996 700.867 348.619 702.868 349.062C708.803 350.376 715.02 350.105 720.876 348.221C728.707 345.703 735.38 340.467 739.688 333.459C743.997 326.452 745.658 318.134 744.371 310.009C743.409 303.933 740.845 298.263 736.994 293.56C735.695 291.974 734.251 290.499 732.672 289.154L729.531 292.843Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M723.478 283.652C724.522 284.99 724.284 286.921 722.947 287.966L711.122 297.198C709.784 298.243 707.853 298.005 706.808 296.667C705.764 295.329 706.001 293.398 707.339 292.353L719.164 283.121C720.502 282.076 722.433 282.314 723.478 283.652Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M722.947 287.967C724.285 286.923 724.523 284.991 723.478 283.653L714.246 271.829C713.201 270.491 711.27 270.253 709.932 271.298C708.594 272.343 708.356 274.274 709.401 275.612L718.633 287.436C719.678 288.774 721.609 289.012 722.947 287.967Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M692.018 347.076C691.078 345.663 691.461 343.756 692.874 342.815L705.364 334.504C706.777 333.564 708.685 333.947 709.625 335.36C710.565 336.774 710.182 338.681 708.769 339.622L696.28 347.933C694.867 348.873 692.959 348.49 692.018 347.076Z"
+                                    fill="#302E35" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M692.875 342.814C691.462 343.755 691.078 345.663 692.019 347.076L700.329 359.565C701.27 360.978 703.178 361.361 704.591 360.421C706.004 359.481 706.387 357.573 705.447 356.16L697.136 343.67C696.196 342.257 694.288 341.874 692.875 342.814Z"
+                                    fill="#302E35" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_191_3" x1="81.5368" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#222126" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_191_3" x1="81.5368" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#222126" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_191_3" x1="81.5368" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#222126" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_191_3" x1="81.5368" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#222126" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_191_3" x1="81.5367" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3F3E45" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_191_3" x1="81.5367" y1="270.898" x2="924.421" y2="475.926"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3F3E45" />
+                                    <stop offset="1" stop-color="#1D1C21" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="error-section__inner">
+                            <h1 class="error-section__title">
+                                404
+                            </h1>
+                            <p class="error-section__text">
+                                <span>
+                                    страница
+                                </span>
+                                 <br>
+                                не найдена
+                            </p>
+                        </div>
+                        <a class="error-section__link btn" href="#">
+                            на главную
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="images/img.png" alt="">
+        </header>
+    </div>
+    <div class="wrapper-wrapper">
+        <main class="main-main">
+          
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top footer-top">
+                    <a class="footer-top__logo" href="#">
+                        <img class="footer-top__logo-img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <p class="footer-top__text">
+                        Прогрессивная партнерская сеть. Мы обеспечиваем рекламодателей качественным траффиком, а
+                        веб-мастеров высокими конверсиями. С нами удобно!
+                    </p>
+                </div>
+                <div class="footer__content footer-content">
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            LLP «WhiteLead»
+                        </p>
+                        <p class="footer-content-box__subtext">
+                            Anexartisias 187, Limassol 3040, Кипр
+                        </p>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Сотрудничество и партнерство:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:partnership@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                partnership@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-content__box footer-content-box">
+                        <p class="footer-content-box__text">
+                            Поддержка веб-мастеров и рекламодателей:
+                        </p>
+                        <a class="footer-content-box__subtext" href="mailto:support@whitelead.com">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.88126 5.8226C7.19574 5.8226 7.52466 5.55794 7.52466 5.55794L13.7625 0.86291V0.562122C13.7625 0.251701 13.5108 0 13.2004 0H0.562123C0.251701 0 0 0.251701 0 0.562122V0.86291L6.23786 5.55794C6.23786 5.55794 6.56678 5.8226 6.88126 5.8226Z"
+                                    fill="#D0D0D0" />
+                                <path
+                                    d="M7.24903 7.29671C7.14015 7.37868 7.01063 7.41966 6.88126 7.41966C6.75189 7.41966 6.62237 7.37868 6.5135 7.29671L0 2.39404V9.43801C0 9.74843 0.251701 10.0001 0.562123 10.0001H13.2004C13.5108 10.0001 13.7625 9.74843 13.7625 9.43801V2.39404L7.24903 7.29671Z"
+                                    fill="#D0D0D0" />
+                            </svg>
+                            <p>
+                                support@whitelead.com
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <p class="footer-bottom__copy">
+                            2014 – 2023 , White Lead. All Rights Reserved.
+                        </p>
+                        <a class="footer-bottom__link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Пользовательское соглашение
+                        </a>
+                        <a class="footer-bottom__link" href="#">
+                            Реферальная программа
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
