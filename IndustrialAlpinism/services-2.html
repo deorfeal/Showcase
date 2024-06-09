@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services-2</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.aut.css">
+</head>
+
+<body class="body body-services body-services-two">
+  <div class="big-wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="container">
+          <div class="header__top header-top" data-aos="fade-down">
+            <a class="header-top__logo logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="header-top__nav header-top-nav">
+              <ul class="header-top-nav__list">
+                <li class="header-top-nav__list-item">
+                  <a class="header-top-nav__list-link" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="header-top-nav__list-item">
+                  <a class="header-top-nav__list-link header-top-nav__list-link--active" href="#">
+                    Услуги
+                  </a>
+                </li>
+                <li class="header-top-nav__list-item">
+                  <a class="header-top-nav__list-link" href="#">
+                    Цены
+                  </a>
+                </li>
+                <li class="header-top-nav__list-item">
+                  <a class="header-top-nav__list-link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+              <button class="header-top-nav-btn header-top__btn call" type="button">
+                Заказать звонок
+              </button>
+              <div class="header-top__langs">
+                <button class="header-top__langs-btn" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 512 512">
+                    <path fill="#012169" d="M0 0h512v512H0z" />
+                    <path fill="#FFF"
+                      d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z" />
+                    <path fill="#C8102E"
+                      d="m184 324 11 34L42 512H0v-3l184-185zm124-12 54 8 150 147v45L308 312zM512 0 320 196l-4-44L466 0h46zM0 1l193 189-59-8L0 49V1z" />
+                    <path fill="#FFF" d="M176 0v512h160V0H176zM0 176v160h512V176H0z" />
+                    <path fill="#C8102E" d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z" />
+                  </svg>
+                </button>
+                <button class="header-top__langs-btn" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ge" viewBox="0 0 512 512">
+                    <path fill="#fff" d="M0 0h512v512H0z" />
+                    <path fill="red" d="M205 0h102v512H205z" />
+                    <path fill="red" d="M0 205h512v102H0z" />
+                    <path fill="red" fill-rule="evenodd"
+                      d="M114.1 397.9c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.3 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9-1 15.9-1 15.9 15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1c8 0 15.9 1 15.9 1s-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.3 1-15.9 1-15.9s-15.3 3.2-33.4 4.3zm307-307c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.4 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9c0 8-1 15.9-1 15.9s15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1 15.9 1 15.9 1-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.2 1-15.9 1-15.9s-15.4 3.2-33.4 4.3zm-307 0c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.4 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9c0 8-1 15.9-1 15.9s15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1c8 0 15.9 1 15.9 1s-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.2 1-15.9 1-15.9s-15.3 3.2-33.4 4.3zm307 307c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.3 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9-1 15.9-1 15.9 15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1 15.9 1 15.9 1-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.3 1-15.9 1-15.9s-15.4 3.2-33.4 4.3z" />
+                  </svg>
+
+                </button>
+                <button class="header-top__langs-btn" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" viewBox="0 0 512 512">
+                    <g fill-rule="evenodd" stroke-width="1pt">
+                      <path fill="#fff" d="M0 0h512v512H0z" />
+                      <path fill="#0039a6" d="M0 170.7h512V512H0z" />
+                      <path fill="#d52b1e" d="M0 341.3h512V512H0z" />
+                    </g>
+                  </svg>
+
+                </button>
+              </div>
+            </nav>
+            <div class="header-top__user-nav header-top-user-nav">
+              <a class="header-top-user-nav__link" href="tel:+375 29 345 67 89">
+                +375 29 345 67 89
+              </a>
+            </div>
+            <button class="header-top__btn call" type="button">
+              Заказать звонок
+            </button>
+            <div class="header-top__langs">
+              <button class="header-top__langs-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 512 512">
+                  <path fill="#012169" d="M0 0h512v512H0z" />
+                  <path fill="#FFF"
+                    d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z" />
+                  <path fill="#C8102E"
+                    d="m184 324 11 34L42 512H0v-3l184-185zm124-12 54 8 150 147v45L308 312zM512 0 320 196l-4-44L466 0h46zM0 1l193 189-59-8L0 49V1z" />
+                  <path fill="#FFF" d="M176 0v512h160V0H176zM0 176v160h512V176H0z" />
+                  <path fill="#C8102E" d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z" />
+                </svg>
+
+              </button>
+              <button class="header-top__langs-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ge" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M0 0h512v512H0z" />
+                  <path fill="red" d="M205 0h102v512H205z" />
+                  <path fill="red" d="M0 205h512v102H0z" />
+                  <path fill="red" fill-rule="evenodd"
+                    d="M114.1 397.9c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.3 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9-1 15.9-1 15.9 15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1c8 0 15.9 1 15.9 1s-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.3 1-15.9 1-15.9s-15.3 3.2-33.4 4.3zm307-307c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.4 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9c0 8-1 15.9-1 15.9s15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1 15.9 1 15.9 1-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.2 1-15.9 1-15.9s-15.4 3.2-33.4 4.3zm-307 0c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.4 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9c0 8-1 15.9-1 15.9s15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1c8 0 15.9 1 15.9 1s-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.2 1-15.9 1-15.9s-15.3 3.2-33.4 4.3zm307 307c1.1-18 4.3-33.4 4.3-33.4s-10.6 1-15.9 1c-5.3 0-15.9-1-15.9-1s3.2 15.3 4.3 33.4c-18-1.1-33.4-4.3-33.4-4.3s1 8 1 15.9-1 15.9-1 15.9 15.3-3.2 33.4-4.3c-1.1 18-4.3 33.4-4.3 33.4s8-1 15.9-1 15.9 1 15.9 1-3.2-15.3-4.3-33.4c18 1.1 33.4 4.3 33.4 4.3s-1-10.6-1-15.9c0-5.3 1-15.9 1-15.9s-15.4 3.2-33.4 4.3z" />
+                </svg>
+
+              </button>
+              <button class="header-top__langs-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" viewBox="0 0 512 512">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path fill="#fff" d="M0 0h512v512H0z" />
+                    <path fill="#0039a6" d="M0 170.7h512V512H0z" />
+                    <path fill="#d52b1e" d="M0 341.3h512V512H0z" />
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+            <button class="header-top__burger">
+              <span>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <div class="main__services main-services" id="main-services">
+          <div class="container">
+            <div class="main-services__breadcrambs" data-aos="fade-right">
+              <a class="main-services__breadcrambs-link" href="#">Услуги </a>
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.5L5 5L1 9.5" stroke="#093038" />
+              </svg>
+              <a class="main-services__breadcrambs-link" href="#"> Клининг</a>
+            </div>
+            <!-- <div class="main-services__inner">
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Клининг
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-1.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Клининг
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Реклама
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-2.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Реклама
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Подъем
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-3.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Подъем
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Ремонт
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-4.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Ремонт
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Арбористика
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-5.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Арбористика
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+              <div class="main-services__item main-services-item" data-aos="fade-down">
+                <p class="main-services-item__text">
+                  Монтаж
+                </p>
+                <img class="main-services-item__img" src="images/services-item-img-6.png" alt="img">
+                <div class="main-services-item__box">
+                  <p class="main-services-item__box-subtext">
+                    Монтаж
+                  </p>
+                  <p class="main-services-item__box-text">
+                    Мы осуществляем подъём негабаритных грузов без лифта весом до 500 кг. на высоту до ~100 метров.
+                    Возможен подъем и более тяжёлых грузов, но в таких случаях необходимо заранее осмотреть место
+                    и разработать индивидуальную схему подъёма.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <h1 class="main-advantages__title" data-aos="fade-right">
+              Наши преимущества
+            </h1>
+          </div>
+        </div>
+        <div class="main__text-block text-block">
+          <div class="container">
+            <div class="text-block__inner">
+              <p class="text-block__text" data-aos="fade-right">
+                Профессиональная мойка фасадов — это услуга, <br>
+                включающая целый комплекс мероприятий <br>
+                по очистке стен зданий
+                от грязи, пыли, солей <br>
+                и других отложений. Услуга профессиональной <br>
+                мойки — это не просто забота о чистоте.
+                <br> <br>
+                Услуги альпинистов особенно востребованы <br>
+                в регионах с большим содержанием автомобильного смога
+                и промышленных выбросов.
+              </p>
+              <img class="text-block__img" src="images/text-block-img.png" alt="" data-aos="fade-left">
+            </div>
+          </div>
+        </div>
+        <div class="main__advantages main-advantages">
+          <div class="container">
+            <div class="main-advantages__inner">
+              <div class="main-advantages__item" data-aos="fade-down">
+                <h4 class="main-advantages__item-title">
+                  Современное оборудование
+                </h4>
+                <p class="main-advantages__item-text">
+                  Верхолазы очищают фасады зданий с использованием специального оборудования Керхер.
+                </p>
+              </div>
+              <div class="main-advantages__item" data-aos="fade-down">
+                <h4 class="main-advantages__item-title">
+                  Финансовая выгода
+                </h4>
+                <p class="main-advantages__item-text">
+                  Клиент платит только за тот фронт работ, который был выполнен в оговорённые с исполнителем сроки.
+                  Полученный результат сохраняется надолго.
+                </p>
+              </div>
+              <div class="main-advantages__item" data-aos="fade-down">
+                <h4 class="main-advantages__item-title">
+                  Привлечение техники
+                </h4>
+                <p class="main-advantages__item-text">
+                  На небольшой высоте (до 15 м) работы по очистке поверхностей от пыли, грязи и копоти производятся
+                  с использованием верхотур и телескопических подъёмников.
+                </p>
+              </div>
+              <div class="main-advantages__item" data-aos="fade-down">
+                <h4 class="main-advantages__item-title">
+                  Специальное снаряжение
+                </h4>
+                <p class="main-advantages__item-text">
+                  Очищение стен высотных зданий выполняют аккредитованные альпинисты. В арсенале сотрудников
+                  присутствует
+                  снаряжение для безопасной работы на любой высоте.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__price main-price">
+          <div class="container">
+            <h2 class="main-price__title" data-aos="fade-right">
+              Стоимость работ
+            </h2>
+            <div class="main-price__inner">
+              <div class="main-price__item" data-aos="fade-down">
+                <p class="main-price__item-text">
+                  Менее 500 м2
+                </p>
+                <p class="main-price__item-text">
+                  Менее 1000 м2
+                </p>
+                <p class="main-price__item-text">
+                  Менее 5000 м2
+                </p>
+              </div>
+              <div class="main-price__item" data-aos="fade-down">
+                <p class="main-price__item-text">
+                  Сплошное остекление
+                </p>
+                <p class="main-price__item-text">
+                  1,5 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  1,1 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  1 BYN м2
+                </p>
+              </div>
+              <div class="main-price__item" data-aos="fade-down">
+                <p class="main-price__item-text">
+                  Мойка окон
+                </p>
+                <p class="main-price__item-text">
+                  1,7 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  1,55 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  1,10 BYN м2
+                </p>
+              </div>
+              <div class="main-price__item" data-aos="fade-down">
+                <p class="main-price__item-text">
+                  Чистка отливов или подоконников за 1 п. м
+                </p>
+                <p class="main-price__item-text">
+                  0,4 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  0,3 BYN м2
+                </p>
+                <p class="main-price__item-text">
+                  0,25 BYN м2
+                </p>
+              </div>
+              <ul class="main-price__list">
+                <li class="main-price__list-item" data-aos="fade-down">
+                  <h6 class="main-price__list-title">
+                    Сплошное остекление
+                  </h6>
+                  <p class="main-price__list-subtext">
+                    Менее 500 м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1,5 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1,7 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    0,4 BYN м2
+                  </p>
+                </li>
+                <li class="main-price__list-item" data-aos="fade-down">
+                  <h6 class="main-price__list-title">
+                    Мойка окон
+                  </h6>
+                  <p class="main-price__list-subtext">
+                    Менее 1000 м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1,1 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1,55 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    0,3 BYN м2
+                  </p>
+                </li>
+                <li class="main-price__list-item" data-aos="fade-down">
+                  <h6 class="main-price__list-title">
+                    Чистка отливов или подоконников за 1 п. м
+                  </h6>
+                  <p class="main-price__list-subtext">
+                    Менее 5000 м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    1,10 BYN м2
+                  </p>
+                  <p class="main-price__list-text">
+                    0,25 BYN м2
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="main-price__wrapper" data-aos="fade-right">
+              <button class="main-price__btn" type="button">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__subscribe main-subscribe">
+          <div class="container">
+            <h2 class="main-subscribe__title" data-aos="fade-right">Подпишись на наши новости и акции</h2>
+            <form class="main-subscribe__form main-subscribe-form" action="#" data-aos="fade-down">
+              <input class="main-subscribe-form__input" type="text" placeholder="Введите почту">
+              <button class="main-subscribe-form__button" type="submit"><span>Подписаться</span>
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.52501 13.1813L9.14455 18.7653C9.68889 18.7653 9.92465 18.5213 10.2074 18.2283L12.7595 15.6833L18.0477 19.7243C19.0175 20.2883 19.7008 19.9913 19.9625 18.7933L23.4336 1.8214L23.4346 1.8204C23.7422 0.324404 22.9161 -0.260593 21.9712 0.106405L1.56778 8.25736C0.175288 8.82136 0.196371 9.63136 1.33107 9.99835L6.5474 11.6913L18.6639 3.78039C19.2341 3.38639 19.7526 3.60439 19.3261 3.99839L9.52501 13.1813Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="main__call-popup call-popup">
+          <form class="call-popup__form" action="#">
+            <p class="call-popup__form-text">
+              Введите ваш номер телефона
+            </p>
+            <input class="call-popup__form-input" type="number" placeholder="+7 ...">
+            <button class="call-popup__form-btn" type="submit">Подтвердить</button>
+            <button class="call-popup__form-close" type="button">
+
+              <svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                viewBox="0 0 512 512" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__box footer-box">
+              <h2 class="footer-box__title" data-aos="fade-right">
+                Контакты
+              </h2>
+              <a class="footer-box__link" href="tel:+375293456789" data-aos="fade-right">+375 29 345 67 89</a>
+              <a class="footer-box__link" href="mailto:ia@gmail.com" data-aos="fade-right">ia@gmail.com</a>
+              <a class="footer-box__link" href="#" data-aos="fade-right">Минск, пр. Победителей 7а — 444</a>
+              <div class="footer-box__row" data-aos="fade-right">
+                <a class="footer-box__row-link" href="#">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2219)">
+                      <path
+                        d="M40 0L-3.05176e-05 9.11951e-06V39.9999H2.88481H40V37.1151V0ZM20.1562 30.7057C18.9181 30.7057 17.7231 30.5309 16.5988 30.2071L12.5656 32.4999V28.1865C9.86419 26.1309 8.13903 23.0001 8.13903 19.4936C8.13903 13.301 13.5193 8.28113 20.1562 8.28113C26.7935 8.28113 32.1735 13.301 32.1735 19.4936C32.1735 25.6856 26.7935 30.7057 20.1562 30.7057Z"
+                        fill="#39738B" />
+                      <path
+                        d="M18.873 16.4229L12.3923 23.2844L18.2901 20.0483L21.3718 23.2844L27.8162 16.4229L21.9836 19.6022L18.873 16.4229Z"
+                        fill="#39738B" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2219">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="footer-box__row-link" href="#">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2222)">
+                      <path
+                        d="M28.9526 13.2269C28.7686 12.7282 28.475 12.2769 28.0936 11.9064C27.7231 11.5249 27.272 11.2313 26.7731 11.0473C26.3684 10.8901 25.7605 10.7031 24.6408 10.6521C23.4296 10.5969 23.0664 10.585 20 10.585C16.9333 10.585 16.5701 10.5966 15.3592 10.6518C14.2395 10.7031 13.6313 10.8901 13.2269 11.0473C12.728 11.2313 12.2766 11.5249 11.9064 11.9064C11.525 12.2769 11.2314 12.7279 11.0471 13.2269C10.8899 13.6315 10.7028 14.2397 10.6519 15.3594C10.5966 16.5704 10.5847 16.9335 10.5847 20.0002C10.5847 23.0667 10.5966 23.4298 10.6519 24.6411C10.7028 25.7607 10.8899 26.3687 11.0471 26.7733C11.2314 27.2723 11.5247 27.7233 11.9061 28.0938C12.2766 28.4753 12.7277 28.7689 13.2266 28.9529C13.6313 29.1104 14.2395 29.2974 15.3592 29.3484C16.5701 29.4036 16.933 29.4152 19.9997 29.4152C23.0667 29.4152 23.4299 29.4036 24.6405 29.3484C25.7602 29.2974 26.3684 29.1104 26.7731 28.9529C27.7747 28.5665 28.5663 27.7749 28.9526 26.7733C29.1098 26.3687 29.2969 25.7607 29.3481 24.6411C29.4034 23.4298 29.415 23.0667 29.415 20.0002C29.415 16.9335 29.4034 16.5704 29.3481 15.3594C29.2972 14.2397 29.1101 13.6315 28.9526 13.2269ZM20 25.8972C16.7429 25.8972 14.1025 23.2571 14.1025 19.9999C14.1025 16.7428 16.7429 14.1027 20 14.1027C23.2568 14.1027 25.8972 16.7428 25.8972 19.9999C25.8972 23.2571 23.2568 25.8972 20 25.8972ZM26.1304 15.2477C25.3693 15.2477 24.7522 14.6307 24.7522 13.8696C24.7522 13.1085 25.3693 12.4914 26.1304 12.4914C26.8915 12.4914 27.5085 13.1085 27.5085 13.8696C27.5082 14.6307 26.8915 15.2477 26.1304 15.2477Z"
+                        fill="#39738B" />
+                      <path
+                        d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z"
+                        fill="#39738B" />
+                      <path
+                        d="M37.1152 0.000217676H2.88483L0 5.97835e-05V37.1154C0 38.7087 7.45058e-06 40.0002 7.45058e-06 40.0002H37.1152C38.7085 40.0002 40 40 40 40V0C40 0 38.7085 0.000217676 37.1152 0.000217676ZM31.4151 24.735C31.3596 25.9576 31.1652 26.7922 30.8813 27.5228C30.2847 29.0655 29.0652 30.2849 27.5226 30.8816C26.7923 31.1654 25.9573 31.3595 24.7351 31.4153C23.5104 31.4712 23.1192 31.4846 20.0003 31.4846C16.8811 31.4846 16.4902 31.4712 15.2652 31.4153C14.043 31.3595 13.208 31.1654 12.4777 30.8816C11.7111 30.5932 11.0172 30.1412 10.4434 29.5568C9.85931 28.9834 9.40735 28.2891 9.11896 27.5228C8.83514 26.7925 8.64075 25.9576 8.58521 24.7353C8.52875 23.5103 8.51563 23.1191 8.51563 20.0002C8.51563 16.8813 8.52875 16.4901 8.5849 15.2654C8.64044 14.0429 8.83453 13.2082 9.11835 12.4776C9.40674 11.7113 9.85901 11.0171 10.4434 10.4436C11.0168 9.85922 11.7111 9.40726 12.4774 9.11887C13.208 8.83505 14.0427 8.64096 15.2652 8.58512C16.4899 8.52927 16.8811 8.51584 20 8.51584C23.1189 8.51584 23.5101 8.52927 24.7348 8.58542C25.9573 8.64096 26.792 8.83505 27.5226 9.11856C28.2889 9.40695 28.9832 9.85922 29.5569 10.4436C30.141 11.0174 30.5933 11.7113 30.8813 12.4776C31.1655 13.2082 31.3596 14.0429 31.4154 15.2654C31.4713 16.4901 31.4844 16.8813 31.4844 20.0002C31.4844 23.1191 31.4713 23.5103 31.4151 24.735Z"
+                        fill="#39738B" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2222">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="footer-box__row-link" href="#">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2226)">
+                      <path
+                        d="M37.1152 0H2.88483H0V37.1152V40H21.3672V24.5312H16.1719V18.4766H21.3672V14.0207C21.3672 8.85345 24.5218 6.04095 29.1312 6.04095C31.3388 6.04095 33.2361 6.20544 33.7891 6.27899V11.6797H30.6107C28.1027 11.6797 27.6172 12.8714 27.6172 14.6204V18.4766H33.6133L32.832 24.5312H27.6172V40H37.1152H40V0H37.1152Z"
+                        fill="#39738B" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2226">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="footer-box__row-link" href="#">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2228)">
+                      <path
+                        d="M37.1152 0H2.88483L0 0V37.1152V40H40V37.1152V0L37.1152 0ZM29.1318 15.5939C29.1406 15.7907 29.1449 15.9885 29.1449 16.1871C29.1449 22.2531 24.5276 29.248 16.0837 29.2484C13.4912 29.2484 11.0788 28.4885 9.04724 27.1863C9.40643 27.2287 9.77203 27.2498 10.1422 27.2498C12.2931 27.2498 14.2725 26.5161 15.8438 25.2847C13.8342 25.2475 12.1399 23.9203 11.5552 22.0963C11.835 22.15 12.1228 22.1793 12.4179 22.1793C12.8369 22.1793 13.2428 22.1228 13.6285 22.0175C11.528 21.597 9.94568 19.7406 9.94568 17.5177C9.94568 17.4969 9.94568 17.4783 9.94629 17.4591C10.5649 17.803 11.2723 18.0099 12.0255 18.0331C10.7928 17.2107 9.9826 15.8047 9.9826 14.212C9.9826 13.371 10.21 12.583 10.6042 11.9046C12.868 14.6823 16.2512 16.5091 20.0665 16.701C19.9878 16.3647 19.9472 16.0144 19.9472 15.6543C19.9472 13.1201 22.0032 11.0641 24.5383 11.0641C25.8588 11.0641 27.0514 11.6223 27.8891 12.5146C28.9349 12.3083 29.917 11.9263 30.8041 11.4005C30.4608 12.4719 29.7333 13.371 28.7854 13.9395C29.7141 13.8284 30.5991 13.5822 31.4215 13.2166C30.8072 14.1373 30.0281 14.946 29.1318 15.5939Z"
+                        fill="#39738B" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2228">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <p class="footer-box__copy" data-aos="fade-right">©Copyright. Industrial alpinism - Все права защищены.
+                2021</p>
+            </div>
+            <img class="footer__img" src="images/footer-map.png" alt="map" data-aos="fade-left">
+          </div>
+        </div>
+        <img class="footer__image" src="images/footer-map-phone.png" alt="map" data-aos="fade-down">
+        <p class="footer__copyright" data-aos="fade-down">
+          <span> ©Copyright. Industrial alpinism Все права защищены. 2021</span>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./js//main.js"></script>
+</body>
+
+</html>
