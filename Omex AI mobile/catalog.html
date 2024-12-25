@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main class="main">
+            <img class="main__bg" src="images/page-bg.jpg" alt="bg">
+            <section class="main__catalog catalog section">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="catalog__heading heading">
+                            <a class="heading__link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H18V3.5H1V4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                        Back
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="heading__logo horizontal-logo" href="#">
+                                <img class="horizontal-logo__img" src="images/horizontal-logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="catalog__btn btn btn--black btn--shadow">
+                            <div>
+                                <span>
+                                    Filters
+                                </span>
+                            </div>
+                        </div>
+                        <form class="catalog__form catalog-form" action="#">
+                            <div class="catalog-form__wrapper">
+                                <div class="catalog-form__inner">
+                                    <div class="catalog-form__country catalog-country catalog-country--active" id="0">
+                                        <input class="catalog-country__radio" type="radio" checked>
+                                        <span>
+                                            <img src="images/flag-icon-1.svg" alt="flag">
+                                            United States
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="1">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-2.svg" alt="flag">
+                                            United Kingdom
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="2">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-3.svg" alt="flag">
+                                            Argentina
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="3">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-4.svg" alt="flag">
+                                            Austria
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="4">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-5.svg" alt="flag">
+                                            Belgium
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="5">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-6.svg" alt="flag">
+                                            Brazil
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="6">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-7.svg" alt="flag">
+                                            Bulgaria
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="7">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-8.svg" alt="flag">
+                                            Canada
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="8">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-9.svg" alt="flag">
+                                            Chile
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="9">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-10.svg" alt="flag">
+                                            Colombia
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="10">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-7.svg" alt="flag">
+                                            Bulgaria
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="11">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-8.svg" alt="flag">
+                                            Canada
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="12">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-9.svg" alt="flag">
+                                            Chile
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="13">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-10.svg" alt="flag">
+                                            Colombia
+                                        </span>
+                                    </div>
+                                    <div class="catalog-form__country catalog-country" id="14">
+                                        <input class="catalog-country__radio" type="radio">
+                                        <span>
+                                            <img src="images/flag-icon-10.svg" alt="flag">
+                                            Colombia
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-form__wrapper">
+                                <div class="catalog-form__inner">
+                                    <div class="catalog-form__cities catalog-cities catalog-cities--active" id="0">
+                                        <div class="catalog-cities__item catalog-cities__item--active">
+                                            <input class="catalog-cities__item-radio" type="radio" checked>
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="1">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="2">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="3">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="4">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="5">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="6">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="7">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="8">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="9">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="10">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="11">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="12">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="13">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-form__cities catalog-cities" id="14">
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                New York
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                United Kingdom
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Argentina
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Austria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Belgium
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Brazil
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Bulgaria
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Chile
+                                            </span>
+                                        </div>
+                                        <div class="catalog-cities__item">
+                                            <input class="catalog-cities__item-radio" type="radio">
+                                            <span>
+                                                Colombia
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="catalog-form__search btn btn--white" type="button">
+                                <div>
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.6282 11.6095C13.5154 10.5004 14.0459 9.09362 14.0459 7.56291C14.0459 3.98247 11.1433 1.07996 7.56291 1.07996C3.98247 1.07996 1.07996 3.98247 1.07996 7.56291C1.07996 11.1433 3.98247 14.0459 7.56291 14.0459C9.09362 14.0459 10.5004 13.5154 11.6095 12.6282L15.6903 16.709C15.9716 16.9903 16.4277 16.9903 16.709 16.709C16.9903 16.4277 16.9903 15.9716 16.709 15.6903L12.6282 11.6095ZM7.56291 12.6124C4.77414 12.6124 2.51338 10.3517 2.51338 7.56291C2.51338 4.77413 4.77414 2.51338 7.56291 2.51338C10.3517 2.51338 12.6124 4.77413 12.6124 7.56291C12.6124 10.3517 10.3517 12.6124 7.56291 12.6124Z"
+                                                fill="#0F0F0F" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </button>
+                        </form>
+                        <div class="catalog__links">
+                            <a class="catalog__links-link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        <img src="images/links-logo.svg" alt="logo">
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="catalog__links-link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        Residential Proxy
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="catalog__links-link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        Mobile Proxy
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__links">
+                            <a class="catalog__links-link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        Server Proxy
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="catalog__links-link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        UDP Proxy
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

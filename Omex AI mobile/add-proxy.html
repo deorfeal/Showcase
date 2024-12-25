@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main class="main">
+            <img class="main__bg" src="images/page-bg.jpg" alt="bg">
+            <section class="main__proxy proxy section">
+                <div class="container">
+                    <div class="proxy__inner">
+                        <div class="proxy__heading heading">
+                            <a class="heading__link btn btn--black btn--shadow" href="#">
+                                <div>
+                                    <span>
+                                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H18V3.5H1V4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                        Back
+                                    </span>
+                                </div>
+                            </a>
+                            <h1 class="heading__title">
+                                Add Proxy
+                            </h1>
+                            <div class="heading__text">
+                                Done
+                            </div>
+                        </div>
+                        <h2 class="proxy__title">
+                            Proxy info
+                        </h2>
+                        <form class="proxy__form proxy-form" action="#">
+                            <div class="proxy-form__item proxy-item">
+                                <div class="proxy-item__text">
+                                    Type
+                                </div>
+                                <div class="proxy-item__choose proxy-item__choose--types">
+                                    Socks5 >
+                                </div>
+                            </div>
+                            <div class="proxy-form__item proxy-item">
+                                <input class="proxy-item__input" type="text" placeholder="Host">
+                            </div>
+                            <div class="proxy-form__item proxy-item">
+                                <input class="proxy-item__input" type="text" placeholder="Port">
+                            </div>
+                            <div class="proxy-form__item proxy-item">
+                                <div class="proxy-item__text">
+                                    Authentication
+                                </div>
+                                <div class="proxy-item__choose proxy-item__choose--authentication">
+                                    NONE >
+                                </div>
+                            </div>
+                            <div class="proxy-form__item proxy-item">
+                                <input class="proxy-item__input" type="text" placeholder="Remark">
+                            </div>
+                        </form>
+                        <a class="proxy__logo horizontal-logo" href="#">
+                            <img class="horizontal-logo__img" src="images/horizontal-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="main__popup popup types--popup authentication--popup">
+                <div class="popup__wrapper">
+                    <div class="container">
+                        <div class="popup__inner">
+                            <div class="popup__types types">
+                                <form class="types__form types-form" action="#">
+                                    <div class="types-form__inner">
+                                        <div class="types-form__item types-item types-item--active">
+                                            <input class="types-item__radio" type="radio" checked>
+                                            <span>
+                                                NONE
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                PASSWORD
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="types-form__button cls" type="button">
+                                        OK
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup popup types--popup type--popup">
+                <div class="popup__wrapper">
+                    <div class="container">
+                        <div class="popup__inner">
+                            <div class="popup__types types">
+                                <form class="types__form types-form" action="#">
+                                    <div class="types-form__inner">
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                Proxy Server Types
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                UDP
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                HTTPS
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                HTTP
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item types-item--active">
+                                            <input class="types-item__radio" type="radio" checked>
+                                            <span>
+                                                Socks5
+                                            </span>
+                                        </div>
+                                        <div class="types-form__item types-item">
+                                            <input class="types-item__radio" type="radio">
+                                            <span>
+                                                Soxks5 over TLS
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="types-form__button cls" type="button">
+                                        OK
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
