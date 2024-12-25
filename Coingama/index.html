@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/stara" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner" data-aos="fade-down">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__wrapper">
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Trading
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Staking
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Swap
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        P2P
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Wallet
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__entrance entrance">
+                            <a class="entrance__link" href="#">
+                                Sign up
+                            </a>
+                            <a class="entrance__link entrance__link--green" href="#">
+                                Sign up
+                            </a>
+                            <div class="entrance__lang lang">
+                                <div class="lang__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2110_2238)">
+                                            <path
+                                                d="M12.0002 23.7472C18.488 23.7472 23.7475 18.4878 23.7475 11.9999C23.7475 5.51211 18.488 0.252686 12.0002 0.252686C5.51236 0.252686 0.25293 5.51211 0.25293 11.9999C0.25293 18.4878 5.51236 23.7472 12.0002 23.7472Z"
+                                                stroke="white" stroke-width="0.5" stroke-miterlimit="10" />
+                                            <path
+                                                d="M12 23.7472C15.3053 23.7472 17.9848 18.4878 17.9848 11.9999C17.9848 5.51211 15.3053 0.252686 12 0.252686C8.69464 0.252686 6.01514 5.51211 6.01514 11.9999C6.01514 18.4878 8.69464 23.7472 12 23.7472Z"
+                                                stroke="white" stroke-width="0.5" stroke-miterlimit="10" />
+                                            <path d="M0.25293 12H23.7475" stroke="white" stroke-width="0.5"
+                                                stroke-miterlimit="10" />
+                                            <path d="M12 23.7472V0.252686" stroke="white" stroke-width="0.5"
+                                                stroke-miterlimit="10" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2110_2238">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="header__link" href="#">
+                        Sign up
+                    </a>
+                    <div class="header__burger burger">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4002 20.8H18.2002C17.4852 20.8 16.9002 20.215 16.9002 19.5C16.9002 18.785 17.4852 18.2 18.2002 18.2H23.4002C24.1152 18.2 24.7002 18.785 24.7002 19.5C24.7002 20.215 24.1152 20.8 23.4002 20.8ZM24.7002 6.49995C24.7002 7.21495 24.1152 7.79995 23.4002 7.79995H2.60019C1.88519 7.79995 1.3002 7.21495 1.3002 6.49995C1.3002 5.78495 1.88519 5.19995 2.60019 5.19995H23.4002C24.1152 5.19995 24.7002 5.78495 24.7002 6.49995ZM23.4002 14.3H10.4002C9.6852 14.3 9.1002 13.715 9.1002 13C9.1002 12.285 9.6852 11.7 10.4002 11.7H23.4002C24.1152 11.7 24.7002 12.285 24.7002 13C24.7002 13.715 24.1152 14.3 23.4002 14.3Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.6672 6.34413C19.4547 6.1311 19.1661 6.01138 18.8652 6.01138C18.5643 6.01138 18.2757 6.1311 18.0631 6.34413L12.5 11.8959L6.93686 6.33275C6.72431 6.11972 6.43574 6 6.13481 6C5.83388 6 5.54531 6.11972 5.33276 6.33275C4.88908 6.77644 4.88908 7.49316 5.33276 7.93685L10.8959 13.5L5.33276 19.0631C4.88908 19.5068 4.88908 20.2235 5.33276 20.6672C5.77645 21.1109 6.49317 21.1109 6.93686 20.6672L12.5 15.1041L18.0631 20.6672C18.5068 21.1109 19.2235 21.1109 19.6672 20.6672C20.1109 20.2235 20.1109 19.5068 19.6672 19.0631L14.1041 13.5L19.6672 7.93685C20.0995 7.50454 20.0995 6.77644 19.6672 6.34413Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <main class="main">
+                <section class="main__heading heading">
+                    <div class="container">
+                        <div class="heading__inner">
+                            <div class="heading__bg">
+                                <img class="heading__bg-img" src="images/heading-bg.svg" alt="bg" data-aos="zoom-in">
+                            </div>
+                            <div class="heading__body heading-body">
+                                <div class="heading-body__inner">
+                                    <h1 class="heading-body__title" data-aos="fade-right">
+                                        Trade Crypto with Confidence
+                                    </h1>
+                                    <p class="heading-body__text" data-aos="fade-right">
+                                        Coingama – Your Trusted Platform for Smart Crypto Trading
+                                    </p>
+                                </div>
+                                <div class="heading-body__links links" data-aos="fade-right">
+                                    <a class="links__link" href="#">
+                                        Start trading
+                                    </a>
+                                    <div class="links__text">
+                                        or
+                                    </div>
+                                    <div class="links__wrapper">
+                                        <a class="links__market" href="#">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.3968 9.10709C13.3164 9.10709 11.644 7.87869 9.88284 7.92309C7.55924 7.95269 5.42804 9.26989 4.22924 11.3567C1.81684 15.5451 3.60764 21.7315 5.96084 25.1355C7.11524 26.7931 8.47684 28.6579 10.2824 28.5987C12.014 28.5247 12.6652 27.4739 14.7668 27.4739C16.8536 27.4739 17.4456 28.5987 19.2808 28.5543C21.1456 28.5247 22.3296 26.8671 23.4692 25.1947C24.7864 23.2707 25.334 21.4059 25.3636 21.3023C25.3192 21.2875 21.7376 19.9111 21.6932 15.7671C21.6636 12.3039 24.52 10.6463 24.6532 10.5723C23.0252 8.18949 20.524 7.92309 19.6508 7.86389C17.3716 7.68629 15.4624 9.10709 14.3968 9.10709ZM18.2448 5.61429C19.2068 4.45989 19.8432 2.84669 19.6656 1.24829C18.2892 1.30749 16.6316 2.16589 15.64 3.32029C14.752 4.34149 13.9824 5.98429 14.1896 7.55309C15.714 7.67149 17.2828 6.76869 18.2448 5.61429Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                        <a class="links__market" href="#">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.77906 9.46217C4.80566 7.4192 6.37994 5.70181 8.32612 4.50178C10.2723 3.30176 12.5137 2.66635 14.8001 2.6665C18.124 2.6665 20.9162 3.88874 23.0511 5.87934L19.5152 9.41654C18.2362 8.1943 16.6107 7.57147 14.8001 7.57147C11.5873 7.57147 8.8678 9.74214 7.89963 12.6565C7.65297 13.3965 7.51236 14.1858 7.51236 14.9998C7.51236 15.8138 7.65297 16.6032 7.89963 17.3432C8.86903 20.2588 11.5873 22.4282 14.8001 22.4282C16.459 22.4282 17.8711 21.9904 18.9762 21.2504C19.6168 20.8286 20.1653 20.2812 20.5884 19.6415C21.0115 19.0017 21.3005 18.2828 21.4379 17.5282H14.8001V12.7576H26.4157C26.5612 13.5642 26.6401 14.4054 26.6401 15.2798C26.6401 19.0365 25.2958 22.1988 22.9623 24.3448C20.9224 26.2293 18.1301 27.3332 14.8001 27.3332C13.1803 27.3338 11.5762 27.0152 10.0796 26.3957C8.58296 25.7761 7.22309 24.8677 6.0777 23.7223C4.93232 22.5769 4.02387 21.217 3.4043 19.7204C2.78472 18.2237 2.46615 16.6197 2.4668 14.9998C2.4668 13.0092 2.94286 11.1272 3.77906 9.46217Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="heading__img">
+                                <img class="heading__img-image" src="images/heading-img.png" alt="img"
+                                    data-aos="zoom-out">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="main__digits digits">
+                    <div class="container">
+                        <div class="digits__inner">
+                            <div class="digits__item digits-item">
+                                <div class="digits-item__wrapper">
+                                    <div class="digits-item__text" data-aos="zoom-in">
+                                        Countries
+                                    </div>
+                                    <div class="digits-item__digit" data-aos="zoom-in">
+                                        200+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digits__item digits-item">
+                                <div class="digits-item__wrapper">
+                                    <div class="digits-item__text" data-aos="zoom-in">
+                                        Invested
+                                    </div>
+                                    <div class="digits-item__digit" data-aos="zoom-in">
+                                        90M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digits__item digits-item">
+                                <div class="digits-item__wrapper">
+                                    <div class="digits-item__text" data-aos="zoom-in">
+                                        Traders
+                                    </div>
+                                    <div class="digits-item__digit" data-aos="zoom-in">
+                                        20M+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digits__item digits-item">
+                                <div class="digits-item__wrapper">
+                                    <div class="digits-item__text" data-aos="zoom-in">
+                                        Trading pairs
+                                    </div>
+                                    <div class="digits-item__digit" data-aos="zoom-in">
+                                        350+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="main__market market">
+                    <div class="container">
+                        <div class="market__wrapper">
+                            <div class="market__inner">
+                                <h2 class="market__title title" data-aos="fade-up">
+                                    Crypto Market Today
+                                </h2>
+                                <div class="market__table market-table" data-aos="zoom-in">
+                                    <div class="market-table__wrapper">
+                                        <div class="market-table__top market-top">
+                                            <div class="market-top__text">
+                                                Name
+                                            </div>
+                                            <div class="market-top__wrapper">
+                                                <div class="market-top__text">
+                                                    price
+                                                </div>
+                                                <div class="market-top__text">
+                                                    24h change
+                                                </div>
+                                            </div>
+                                            <div class="market-top__text">
+                                                24h volume
+                                            </div>
+                                            <div class="market-top__text">
+                                                24h chart
+                                            </div>
+                                            <div class="market-top__text">
+                                                Action
+                                            </div>
+                                        </div>
+                                        <div class="market-table__inner">
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-1.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Bitcoin
+                                                        <span>
+                                                            BTC
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $51902.17
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +3.37% 
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $57,419,841,306
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-2.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Ethereum
+                                                        <span>
+                                                            ETH
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $2285.15
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +5.10%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $30,471,249,709
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-3.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Tether
+                                                        <span>
+                                                            USDT
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $52.62
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--bad">
+                                                        -0.05%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $94,595,955,557
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--bad">
+                                                        <img class="graph__img" src="images/graph-2.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-4.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        BNB
+                                                        <span>
+                                                            BNB
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $0.13287
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +6.67%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $2,316,950,320
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-5.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Solana
+                                                        <span>
+                                                            SOL
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $436.9
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +11.84%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $6,785,650,426
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-6.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        USDC
+                                                        <span>
+                                                            USDC
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $1
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--bad">
+                                                        -0.02%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $11,899,868,720
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--bad">
+                                                        <img class="graph__img" src="images/graph-2.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-7.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        XRP
+                                                        <span>
+                                                            XRP
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $0.9999
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +6.50% 
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $2,020,127,256
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-8.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Dogecoin
+                                                        <span>
+                                                            DOGE
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $1.0003
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +5.08%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $1,395,341,821
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-9.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Toncoin
+                                                        <span>
+                                                            TON
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $0.08545
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +5.57%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $478,176,551
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                            <div class="market-table__item market-item">
+                                                <div class="market-item__cryptocurrency cryptocurrency">
+                                                    <div class="cryptocurrency__image">
+                                                        <img src="images/crypto-icon-10.png" alt="icon">
+                                                    </div>
+                                                    <div class="cryptocurrency__text">
+                                                        Cardano
+                                                        <span>
+                                                            ADA
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__wrp">
+                                                    <div class="market-item__text">
+                                                        $293.1
+                                                    </div>
+                                                    <div class="market-item__percents market-item__percents--good">
+                                                        +6.07%
+                                                    </div>
+                                                </div>
+                                                <div class="market-item__text">
+                                                    $505,303,763
+                                                </div>
+                                                <div class="market-item__wrapper">
+                                                    <div class="market-item__graph graph graph--good">
+                                                        <img class="graph__img" src="images/graph-1.svg" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <a class="market-item__link" href="#">
+                                                    Trade
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__advantages advantages">
+                    <div class="container">
+                        <h2 class="advantages__title title" data-aos="fade-up">
+                            What is Coingama
+                        </h2>
+                        <div class="advantages__inner">
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon" data-aos="zoom-in">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2143_3585)">
+                                            <path
+                                                d="M20.5 39C30.9934 39 39.5 30.4934 39.5 20C39.5 9.50659 30.9934 1 20.5 1C10.0066 1 1.5 9.50659 1.5 20C1.5 30.4934 10.0066 39 20.5 39Z"
+                                                stroke="#24FCFF" stroke-width="1.5" stroke-miterlimit="10" />
+                                            <path
+                                                d="M20.5 39C26.0228 39 30.5 30.4934 30.5 20C30.5 9.50659 26.0228 1 20.5 1C14.9772 1 10.5 9.50659 10.5 20C10.5 30.4934 14.9772 39 20.5 39Z"
+                                                stroke="#24FCFF" stroke-width="1.5" stroke-miterlimit="10" />
+                                            <path d="M1.5 20H39.5" stroke="#24FCFF" stroke-width="1.5"
+                                                stroke-miterlimit="10" />
+                                            <path d="M20.5 39V1" stroke="#24FCFF" stroke-width="1.5"
+                                                stroke-miterlimit="10" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2143_3585">
+                                                <rect width="40" height="40" fill="white" transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="advantages-item__inner" data-aos="fade-right">
+                                    <h5 class="advantages-item__title">
+                                        Global
+                                        Reach
+                                    </h5>
+                                    <p class="advantages-item__text">
+                                        Access our platform <br>
+                                        from over 200 countries <br>
+                                        worldwide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon" data-aos="zoom-in">
+                                    <svg width="41" height="47" viewBox="0 0 41 47" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2143_3592)">
+                                            <path
+                                                d="M39.3163 7.11387C39.3163 23.042 31.9445 36.3224 20.5002 45.4631C9.05583 36.3385 1.68408 22.1552 1.68408 6.22708L20.5002 1.24854L39.3163 6.24309V7.11387Z"
+                                                stroke="#24FCFF" stroke-width="1.5" stroke-miterlimit="10" />
+                                            <path
+                                                d="M34.3121 9.78085C33.8386 21.4348 28.5505 32.0482 20.5 38.8997C12.4495 32.0482 7.42973 21.851 6.65625 9.86089L20.5 5.77881L34.3121 9.78085Z"
+                                                stroke="#24FCFF" stroke-width="1.5" stroke-miterlimit="10" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2143_3592">
+                                                <rect width="40" height="47" fill="white" transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="advantages-item__inner" data-aos="fade-right">
+                                    <h5 class="advantages-item__title">
+                                        Secure and
+                                        Trusted
+                                    </h5>
+                                    <p class="advantages-item__text">
+                                        Join millions of investors who <br>
+                                        trust Coingama with their <br>
+                                        cryptocurrency trading.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advantages__item advantages-item">
+                                <div class="advantages-item__icon" data-aos="zoom-in">
+                                    <svg width="48" height="40" viewBox="0 0 48 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2143_3597)">
+                                            <path
+                                                d="M9.33951 25.7885H39.5641C40.4808 25.7885 40.5855 25.7219 40.9391 24.8836L42.0653 22.1824C43.807 18.0307 45.5488 13.8657 47.2774 9.71396C47.3952 9.43452 47.5131 9.08854 47.5 8.79579C47.4869 8.44982 47.2643 8.2236 46.8845 8.17038C46.6357 8.13046 46.3738 8.11715 46.0988 8.11715H43.0475C32.2175 8.11715 21.3874 8.11715 10.5574 8.11715C9.88952 8.11715 9.50975 7.89094 9.18236 7.30544C8.57997 6.18768 7.95138 5.08322 7.32279 3.96545C6.7204 2.91422 6.118 1.84969 5.54179 0.785149C5.20131 0.186347 4.82154 -0.0398676 4.16676 5.25576e-05C3.59055 0.0399727 3.00125 0.026666 2.43814 0.026666C2.09766 0.0133593 1.77027 0.0133593 1.42979 0.0133593C0.866676 0.026666 0.513096 0.332721 0.5 0.811762C0.5 1.03798 0.565478 1.22427 0.696434 1.37064C0.866676 1.54363 1.14168 1.63678 1.45598 1.65009H1.75717C2.33338 1.65009 2.92268 1.65009 3.51198 1.63678C4.06199 1.61017 4.31081 1.91622 4.48105 2.20897C5.09654 3.32673 5.71204 4.41788 6.34062 5.52234C6.95612 6.6268 7.5847 7.73126 8.2002 8.83571C8.35734 9.11516 8.4752 9.44782 8.56687 9.84703C9.57523 14.012 10.5574 18.1903 11.5527 22.3553L11.7622 23.2602C11.7884 23.38 11.8146 23.4997 11.8408 23.6328L11.9324 24.1651H10.8455C10.3086 24.1517 9.78476 24.1517 9.26094 24.1651C7.42756 24.1651 6.19657 25.3893 6.118 27.2256C6.09181 28.0905 6.09181 28.7825 6.15729 29.4212C6.30134 31.0979 7.57161 32.2822 9.24784 32.3088C10.0336 32.3088 10.8062 32.3088 11.6181 32.3088H13.2158L12.9932 32.708C12.1682 34.1983 12.0241 35.5822 12.5348 36.9661C12.8753 37.8976 13.4646 38.6428 14.2765 39.2016C15.9004 40.3061 18.0481 40.2396 19.6064 39.0154C22.5137 36.5935 20.8767 32.8144 20.1565 32.3487H34.1949L33.9854 32.7346C33.4485 33.7326 33.2127 34.6507 33.252 35.6088C33.3699 38.1371 35.5306 40.1065 38.0581 39.9867C39.2498 39.9335 40.4022 39.3613 41.2141 38.4299C42.0391 37.4984 42.4582 36.3274 42.3796 35.1298C42.2225 32.5483 40.2581 30.6853 37.6914 30.6853H9.71928C8.22639 30.6853 7.72875 30.1797 7.71566 28.676V27.4119C7.75495 26.3207 8.27877 25.8018 9.33951 25.7885ZM20.4446 24.1384H13.6349L12.1289 17.7911H20.4446V24.1384ZM41.9213 18.2968L41.607 19.0819C40.9653 20.6255 40.3236 22.169 39.6688 23.7126C39.551 23.9788 39.1712 24.1384 38.9355 24.1517C38.5426 24.1651 38.1367 24.1651 37.7438 24.1651H33.0556V17.7911H41.9213L41.9475 18.044C41.9475 18.1371 41.9606 18.217 41.9213 18.2968ZM33.0425 9.8071H45.4964L44.894 11.2575C44.2654 12.7479 43.663 14.1983 43.0475 15.6488C42.9558 15.875 42.6546 16.1145 42.3927 16.1145C40.3498 16.1278 38.3069 16.1278 36.264 16.1278H33.0425V9.8071ZM22.1339 9.78049H31.3532V16.0879H22.1339V9.78049ZM22.1339 17.7911H31.3663V24.1251H22.1339V17.7911ZM11.6312 15.6488C11.2777 14.1717 10.9241 12.6947 10.5705 11.2043L10.2431 9.8071H20.4707V16.1278H17.8385C15.9528 16.1278 14.0801 16.1278 12.1943 16.1145C11.9717 16.1145 11.6836 15.8883 11.6312 15.6488ZM35.7533 33.187C36.3033 32.6281 37.0497 32.3088 37.8355 32.3088C38.6212 32.3088 39.3677 32.6281 39.9308 33.2136C40.4939 33.7858 40.7951 34.5443 40.7951 35.3427C40.7951 37.006 39.4593 38.35 37.8355 38.35C36.2116 38.35 34.889 36.9927 34.889 35.3294C34.889 34.5177 35.1902 33.7592 35.7664 33.187H35.7533ZM14.7087 33.2269C15.2718 32.6414 16.0182 32.3221 16.804 32.3088C17.5897 32.3088 18.3231 32.6148 18.8993 33.187C19.4755 33.7459 19.7898 34.5044 19.7898 35.3028V35.3294C19.7898 36.9927 18.4802 38.3367 16.8564 38.35H16.8302C15.2063 38.35 13.8706 37.0193 13.8444 35.3693C13.8444 34.5709 14.1456 33.8124 14.7087 33.2269Z"
+                                                fill="#24FCFF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2143_3597">
+                                                <rect width="47" height="40" fill="white" transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="advantages-item__inner" data-aos="fade-right">
+                                    <h5 class="advantages-item__title">
+                                        Comprehensive
+                                        Market
+                                    </h5>
+                                    <p class="advantages-item__text">
+                                        Explore and trade a vast <br>
+                                        selection of cryptocurrencies <br>
+                                        with high liquidity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__steps steps">
+                    <div class="container">
+                        <h2 class="steps__title title" data-aos="fade-up">
+                            Steps to Start Trading
+                        </h2>
+                        <div class="steps__inner" data-aos="zoom-in">
+                            <div class="steps__wrapper">
+                                <div class="steps__item steps-item">
+                                    <div class="steps-item__bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-1.svg" alt="bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-5.svg" alt="bg">
+                                    </div>
+                                    <h5 class="steps-item__title">
+                                        Create an <br>
+                                        account
+                                    </h5>
+                                    <div class="steps-item__wrapper">
+                                        <p class="steps-item__text">
+                                            Sign up on the Coingama platform in just a few minutes. Enter your email
+                                            and create a secure password. Once registered, you'll have access to
+                                            your personal dashboard.
+                                        </p>
+                                        <a class="steps-item__link" href="#">
+                                            Create Account
+                                        </a>
+                                    </div>
+                                    <div class="steps-item__arrow">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="36" height="36" rx="18" stroke="#24FCFF" />
+                                            <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z" fill="#24FCFF" />
+                                            <path d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                fill="#24FCFF" />
+                                            <path
+                                                d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                fill="#24FCFF" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="steps__item steps-item">
+                                    <div class="steps-item__bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-2.svg" alt="bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-5.svg" alt="bg">
+                                    </div>
+                                    <h5 class="steps-item__title">
+                                        Verify your identity
+                                    </h5>
+                                    <div class="steps-item__wrapper">
+                                        <p class="steps-item__text">
+                                            Description: Complete a quick and secure verification process to protect
+                                            your account and unlock full access to the platform's features.
+                                        </p>
+                                        <a class="steps-item__link" href="#">
+                                            Verify Identity
+                                        </a>
+                                    </div>
+                                    <div class="steps-item__arrow">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="36" height="36" rx="18" stroke="#24FCFF" />
+                                            <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z" fill="#24FCFF" />
+                                            <path d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                fill="#24FCFF" />
+                                            <path
+                                                d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                fill="#24FCFF" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="steps__item steps-item">
+                                    <div class="steps-item__bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-3.svg" alt="bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-5.svg" alt="bg">
+                                    </div>
+                                    <h5 class="steps-item__title">
+                                        Add funds
+                                    </h5>
+                                    <div class="steps-item__wrapper">
+                                        <p class="steps-item__text">
+                                            Choose a convenient payment method and deposit funds into your account
+                                            to start trading. We support bank cards, cryptocurrencies, and other
+                                            payment options.
+                                        </p>
+                                        <a class="steps-item__link" href="#">
+                                            Add Funds
+                                        </a>
+                                    </div>
+                                    <div class="steps-item__arrow">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="36" height="36" rx="18" stroke="#24FCFF" />
+                                            <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z" fill="#24FCFF" />
+                                            <path d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                fill="#24FCFF" />
+                                            <path
+                                                d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                fill="#24FCFF" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="steps__item steps-item">
+                                    <div class="steps-item__bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-4.svg" alt="bg">
+                                        <img class="steps-item__bg-img" src="images/steps-bg-5.svg" alt="bg">
+                                    </div>
+                                    <h5 class="steps-item__title">
+                                        Start Trading
+                                    </h5>
+                                    <div class="steps-item__wrapper">
+                                        <p class="steps-item__text">
+                                            Select a cryptocurrency to trade and open your first position. Utilize
+                                            advanced analysis tools to make the most of your investments.
+                                        </p>
+                                        <a class="steps-item__link" href="#">
+                                            Start Trading
+                                        </a>
+                                    </div>
+                                    <div class="steps-item__arrow">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="36" height="36" rx="18" stroke="#24FCFF" />
+                                            <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z" fill="#24FCFF" />
+                                            <path d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                fill="#24FCFF" />
+                                            <path
+                                                d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                fill="#24FCFF" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__partners partners" data-aos="zoom-in">
+                    <div class="container">
+                        <div class="partners__inner">
+                            <div class="partners__swiper partners-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--first">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-1.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--second">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-2.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--third">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-3.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--fourth">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-4.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--fifth">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-5.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--sixth">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-6.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="partners-swiper__slide partners-slide swiper-slide">
+                                        <div class="partners-slide__img partners-slide__img--seventh">
+                                            <img class="partners-slide__img-image" src="images/partners-icon-7.svg"
+                                                alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__about about">
+                    <div class="container">
+                        <div class="about__inner">
+                            <div class="about__bg" data-aos="zoom-out">
+                                <img class="about__bg-img" src="images/about-bg.svg" alt="bg">
+                            </div>
+                            <div class="about__body about-body">
+                                <h2 class="about-body__title title" data-aos="fade-right">
+                                    Build your crypto portfolio anywhere
+                                </h2>
+                                <p class="about-body__text" data-aos="fade-right">
+                                    We provide premium access to crypto trading for both individuals and institutions
+                                    through high liquidity, reliable order execution and constant uptime.
+                                </p>
+                                <div class="about-body__wrapper" data-aos="fade-right">
+                                    <a class="about-body__link" href="#">
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="about__img">
+                                <img class="about__img-image about__img-image--desk" src="images/about-img.png"
+                                    alt="img" data-aos="zoom-out">
+                                <img class="about__img-image about__img-image--mobile" src="images/about-img-mobile.png"
+                                    alt="img" data-aos="zoom-out">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__news news">
+                    <div class="container">
+                        <div class="news__bg">
+                            <img class="news__bg-img" src="images/news-bg.svg" alt="bg">
+                        </div>
+                        <div class="news__titling" data-aos="fade-up">
+                            <h2 class="news__titling-title title">
+                                Market News & Updates
+                            </h2>
+                            <p class="news__titling-text">
+                                Stay up to date with the latest developments and news from the cryptocurrency world.
+                            </p>
+                        </div>
+                        <div class="news__inner" data-aos="zoom-in">
+                            <div class="news__swiper news-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="news-swiper__slide news-slide swiper-slide">
+                                        <a class="news-slide__inner" href="#">
+                                            <div class="news-slide__wrapper">
+                                                <h5 class="news-slide__title">
+                                                    Bitcoin Hits New High
+                                                    of $40,000
+                                                </h5>
+                                                <p class="news-slide__text">
+                                                    Bitcoin has set a new all-time high, surpassing $40,000 per coin.
+                                                    Analysts attribute this to the emergence of interest in
+                                                    institutional slowdown and reduced market volatility.
+                                                </p>
+                                            </div>
+                                            <div class="news-slide__time">
+                                                August 15, 2024
+                                            </div>
+                                            <div class="news-slide__arrow">
+                                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.5" y="0.5" width="36" height="36" rx="18"
+                                                        stroke="#24FCFF" />
+                                                    <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                        fill="#24FCFF" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-swiper__slide news-slide swiper-slide">
+                                        <a class="news-slide__inner" href="#">
+                                            <div class="news-slide__wrapper">
+                                                <h5 class="news-slide__title">
+                                                    Ethereum Successfully Upgraded to Version 2.0
+                                                </h5>
+                                                <p class="news-slide__text">
+                                                    Ethereum has completed the transition to Ethereum 2.0, implementing
+                                                    the Proof of Stake mechanism. This should significantly reduce
+                                                    energy consumption and increase the speed of transactions on the
+                                                    platform.
+                                                </p>
+                                            </div>
+                                            <div class="news-slide__time">
+                                                August 10, 2024
+                                            </div>
+                                            <div class="news-slide__arrow">
+                                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.5" y="0.5" width="36" height="36" rx="18"
+                                                        stroke="#24FCFF" />
+                                                    <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                        fill="#24FCFF" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-swiper__slide news-slide swiper-slide">
+                                        <a class="news-slide__inner" href="#">
+                                            <div class="news-slide__wrapper">
+                                                <h5 class="news-slide__title">
+                                                    Ethereum Successfully Upgraded to Version 2.0
+                                                </h5>
+                                                <p class="news-slide__text">
+                                                    Ethereum Successfully Upgraded to Version 2.0
+                                                    Ethereum has completed the transition to Ethereum 2.0, implementing
+                                                    the Proof of Stake mechanism. This should significantly reduce
+                                                    energy consumption and increase the speed of transactions on the
+                                                    platform.
+                                                </p>
+                                            </div>
+                                            <div class="news-slide__time">
+                                                August 10, 2024
+                                            </div>
+                                            <div class="news-slide__arrow">
+                                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.5" y="0.5" width="36" height="36" rx="18"
+                                                        stroke="#24FCFF" />
+                                                    <path d="M14.094 12.8735H22.0437V13.8685H14.094V12.8735Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M23.0991 22.8734L23.0991 14.9237H24.094L24.094 22.8734H23.0991Z"
+                                                        fill="#24FCFF" />
+                                                    <path
+                                                        d="M21.2903 14.9339L21.9938 15.6375L14.2548 23.3765L13.5513 22.6729L21.2903 14.9339Z"
+                                                        fill="#24FCFF" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__funnel funnel" data-aos="fade-up">
+                            <div class="funnel__inner">
+                                <h2 class="funnel__title title">
+                                    Lets start trading now
+                                </h2>
+                                <p class="funnel__text">
+                                    Sign up in 10 seconds and unlock unlimited trading
+                                    opportunities across global markets
+                                </p>
+                                <a class="funnel__link" href="#">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" data-aos="fade">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__body footer-body">
+                            <a class="footer-body__logo logo" href="#">
+                                <img class="logo__img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <p class="footer-body__text">
+                                Lorem ipsum dolor sit amet consectetur. Id sed tempus vitae posuere faucibus. Tristique
+                                varius sed posuere duis faucibus rhoncus integer.
+                            </p>
+                            <div class="footer-body__info footer-info">
+                                <p class="footer-info__text">
+                                    Listing Request
+                                    <a href="#">
+                                        listing@coingama .com
+                                    </a>
+                                </p>
+                                <p class="footer-info__text">
+                                    Partnership
+                                    <a href="#">
+                                        support@coingama.com
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="footer-body__socials socials">
+                                <ul class="socials__list">
+                                    <li class="socials__list-item">
+                                        <a class="socials__list-link" href="#">
+                                            <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M28 2.84031C26.9699 3.32308 25.8636 3.64892 24.7004 3.79385C25.8863 3.04431 26.7975 1.85723 27.2272 0.443077C26.1165 1.13631 24.8877 1.64215 23.5793 1.91262C22.5308 0.735692 21.0376 0 19.3843 0C16.2117 0 13.6412 2.712 13.6412 6.05815C13.6412 6.53262 13.691 6.996 13.7891 7.43908C9.01475 7.18615 4.7822 4.77415 1.94824 1.10862C1.45461 2.004 1.17104 3.04431 1.17104 4.15477C1.17104 6.25754 2.18542 8.11108 3.72581 9.19846C2.78495 9.16615 1.89922 8.89477 1.12466 8.44062C1.12378 8.46554 1.12378 8.49231 1.12378 8.51631C1.12378 11.4526 3.10353 13.9015 5.73181 14.4582C5.25044 14.5957 4.74281 14.6705 4.21855 14.6705C3.84746 14.6705 3.48862 14.6326 3.13853 14.5625C3.86847 16.968 5.99087 18.72 8.50363 18.7698C6.53876 20.3945 4.06189 21.3646 1.37059 21.3646C0.906727 21.3646 0.448987 21.336 0 21.2797C2.54164 22.9966 5.56114 24 8.80558 24C19.3712 24 25.1503 14.7683 25.1503 6.76154C25.1503 6.49938 25.1433 6.23723 25.1328 5.97692C26.2557 5.12308 27.2289 4.05692 28 2.84031Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a class="socials__list-link" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M23.3694 4.13601C23.0634 3.34776 22.6553 2.68006 21.9876 2.01236C21.3199 1.34467 20.6522 0.936631 19.864 0.630603C19.1036 0.333849 18.2226 0.12983 16.9521 0.0741886L16.9305 0.0732507C15.6676 0.0183385 15.2459 0 12 0C8.7357 0 8.32767 0.00927357 7.04791 0.0741886C5.76816 0.12983 4.89645 0.333849 4.13601 0.630603C3.34776 0.936631 2.68006 1.34467 2.01236 2.01236C1.34467 2.68006 0.936631 3.34776 0.630603 4.13601C0.333849 4.89645 0.12983 5.77743 0.0741886 7.04791L0.0732508 7.06948C0.0183386 8.33236 0 8.75411 0 12C0 15.2643 0.00927357 15.6723 0.0741886 16.9521C0.12983 18.2318 0.333849 19.1036 0.630603 19.864C0.936631 20.6522 1.34467 21.3199 2.01236 21.9876C2.68006 22.6553 3.34776 23.0634 4.13601 23.3694C4.89645 23.6662 5.77743 23.8702 7.04791 23.9258L7.06943 23.9268H7.06945C8.33235 23.9817 8.75408 24 12 24C15.2643 24 15.6723 23.9907 16.9521 23.9258C18.2318 23.8702 19.1036 23.6662 19.864 23.3694C20.6522 23.0634 21.3199 22.6553 21.9876 21.9876C22.6553 21.3199 23.0634 20.6522 23.3694 19.864C23.6662 19.1036 23.8702 18.2226 23.9258 16.9521L23.9268 16.9306C23.9817 15.6677 24 15.2459 24 12C24 8.7357 23.9907 8.32767 23.9258 7.04791C23.8702 5.76816 23.6662 4.89645 23.3694 4.13601ZM20.9322 16.4322C20.8813 17.5 20.7034 18.0847 20.5508 18.4661C20.3559 18.9746 20.1101 19.3475 19.7288 19.7288C19.3474 20.1102 18.983 20.3475 18.4661 20.5508C18.0762 20.7034 17.5 20.8814 16.4322 20.9322L16.377 20.9346H16.3769C15.2596 20.9836 14.8851 21 12 21C9.06775 21 8.7203 20.9915 7.56775 20.9322C6.49996 20.8814 5.91521 20.7034 5.53386 20.5508C5.02538 20.3559 4.6525 20.1102 4.27114 19.7288C3.88979 19.3475 3.6525 18.9831 3.44911 18.4661C3.29657 18.0763 3.1186 17.5 3.06775 16.4322L3.06575 16.3863C3.01646 15.2615 2.99996 14.8849 2.99996 12C2.99996 9.07627 3.00843 8.72034 3.06775 7.5678C3.1186 6.5 3.29657 5.91525 3.44911 5.5339C3.64403 5.02542 3.88979 4.65254 4.27114 4.27119C4.6525 3.88983 5.01691 3.65254 5.53386 3.44915C5.92369 3.29661 6.49996 3.11864 7.56775 3.0678L7.61361 3.06579C8.73846 3.0165 9.11508 3 12 3C14.9237 3 15.2796 3.00847 16.4322 3.0678C17.5 3.11864 18.0847 3.29661 18.4661 3.44915C18.9745 3.64407 19.3474 3.88983 19.7288 4.27119C20.1101 4.65254 20.3474 5.01695 20.5508 5.5339C20.7034 5.92373 20.8813 6.5 20.9322 7.5678L20.9342 7.61364V7.61367C20.9835 8.73851 21 9.11514 21 12C21 14.8959 20.9833 15.2726 20.9336 16.3995L20.9322 16.4322ZM18 7.5C18.8284 7.5 19.5 6.82843 19.5 6C19.5 5.17157 18.8284 4.5 18 4.5C17.1715 4.5 16.5 5.17157 16.5 6C16.5 6.82843 17.1715 7.5 18 7.5ZM12 6C8.68868 6 5.99996 8.68872 5.99996 12C5.99996 15.3113 8.68868 18 12 18C15.3112 18 18 15.3113 18 12C18 8.68872 15.3112 6 12 6ZM9 12C9 13.6597 10.3472 15 12 15C13.6528 15 15 13.6528 15 12C15 10.3403 13.6597 9 12 9C10.3403 9 9 10.3472 9 12Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a class="socials__list-link" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.9965 0C5.38113 0 0 5.38264 0 11.9999C0 14.6242 0.846331 17.058 2.28501 19.0335L0.789802 23.4919L5.40222 22.0178C7.2993 23.2735 9.56322 24 12.0035 24C18.6189 24 24 18.6172 24 12.0001C24 5.38284 18.6189 0.000199099 12.0035 0.000199099H11.9965V0ZM8.64637 6.09542C8.41369 5.53815 8.23734 5.51704 7.88483 5.50271C7.75098 5.49408 7.6169 5.48943 7.48277 5.48877C7.02417 5.48877 6.54468 5.62276 6.25547 5.91902C5.90296 6.27879 5.02837 7.1182 5.02837 8.83961C5.02837 10.561 6.28373 12.2259 6.45292 12.4588C6.62927 12.6914 8.90035 16.2752 12.4266 17.7358C15.1841 18.8786 16.0024 18.7727 16.63 18.6387C17.5468 18.4412 18.6964 17.7636 18.9857 16.9455C19.2749 16.127 19.2749 15.4286 19.1901 15.2805C19.1055 15.1323 18.8726 15.0479 18.5201 14.8713C18.1676 14.6949 16.4536 13.8483 16.1292 13.7355C15.8117 13.6156 15.5086 13.658 15.2689 13.9967C14.9304 14.4693 14.5989 14.9492 14.3308 15.2383C14.1193 15.464 13.7735 15.4923 13.4845 15.3722C13.0966 15.2102 12.0106 14.8289 10.6704 13.6367C9.63362 12.7127 8.92841 11.5629 8.724 11.2172C8.51938 10.8646 8.7029 10.6598 8.86492 10.4694C9.04127 10.2506 9.21046 10.0955 9.38681 9.89085C9.56316 9.68638 9.66189 9.58045 9.77475 9.34054C9.89477 9.10779 9.80998 8.86788 9.72538 8.69148C9.64079 8.51508 8.93558 6.79366 8.64637 6.09542V6.09542Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a class="socials__list-link" href="#">
+                                            <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.9568 15.8447L21.3401 23.6757C22.52 24.3338 23.3781 24.0047 23.6785 22.557L27.9047 2.20069C28.3338 0.4239 27.2397 -0.365783 26.1027 0.160673L1.30297 9.94397C-0.391818 10.6459 -0.370365 11.6111 1.00263 12.0279L7.37418 14.0679L22.1124 4.56974C22.7989 4.13102 23.4425 4.37232 22.9276 4.8549L10.9568 15.8447Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="footer-body__email email" action="#">
+                                <input class="email__input" type="email" required placeholder="Enter email">
+                                <button class="email__button" type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        <nav class="footer__nav nav">
+                            <div class="nav__wrapper">
+                                <h5 class="nav__title">
+                                    Products
+                                </h5>
+                                <ul class="nav__list nav-list">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Spot traiding
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Futures traiding
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Options traiding
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Wallet
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Instant swap
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            P2P trading
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Defi Staking
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Bequm Visa Card
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav__wrapper">
+                                <h5 class="nav__title">
+                                    Services
+                                </h5>
+                                <ul class="nav__list nav-list">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            24/7 Support chat
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Copy trading
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Trading bots
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            ETH 2.0 staking
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Launchpad
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Savings
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Bequm ventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav__wrapper">
+                                <h5 class="nav__title">
+                                    Information
+                                </h5>
+                                <ul class="nav__list nav-list">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Fees
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Platform status
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Wallet security
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Indices
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Trading API
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Token listing
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Referral system
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Bug Bounty
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav__wrapper">
+                                <h5 class="nav__title">
+                                    Legal
+                                </h5>
+                                <ul class="nav__list nav-list">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Terms of service
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Privacy notice
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Cookies policy
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            AML & KYC policy
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Risk Disclosure Statement
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Regulatory License
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Special Treatment
+                                        </a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__link" href="#">
+                                            Law Enforcement Requests
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
