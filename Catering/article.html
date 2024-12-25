@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner" data-aos="fade-down">
+                    <a class="header__logo logo" href="#">
+                        <picture class="logo__img">
+                            <img class="logo__img-image" src="images/logo.svg" alt="logo">
+                        </picture>
+                        <picture class="logo__img">
+                            <img class="logo__img-image" src="images/yellow-logo.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list menu-list">
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__current">
+                            RU
+                        </div>
+                        <ul class="lang__list">
+                            <li class="lang__list-item">
+                                <a class="lang__list-link" href="#">
+                                    KZ
+                                </a>
+                            </li>
+                            <li class="lang__list-item">
+                                <a class="lang__list-link" href="#">
+                                    EN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__burger burger">
+                        <svg width="40" height="13" viewBox="0 0 40 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="3" rx="1.5" fill="white" />
+                            <rect x="25" y="10" width="15" height="3" rx="1.5" fill="white" />
+                        </svg>
+                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="28.2842" width="40" height="3" rx="1.5" transform="rotate(-45 1 28.2842)"
+                                fill="#231F20" />
+                            <rect width="40" height="3" rx="1.5"
+                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 31.002 28.2842)"
+                                fill="#231F20" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <main class="main">
+                <section class="main__heading heading heading--article">
+                    <picture class="heading__bg">
+                        <img class="heading__bg-img" src="images/heading-img-4.jpg" alt="img">
+                    </picture>
+                    <div class="container">
+                        <div class="heading__inner">
+                            <div class="heading__breadcrumbs breadcrumbs">
+                                <div class="container">
+                                    <ul class="breadcrumbs__list breadcrumbs-list" data-aos="fade-right">
+                                        <li class="breadcrumbs-list__item">
+                                            <a class="breadcrumbs-list__link" href="#">
+                                                Главная
+                                            </a>
+                                            <span>
+                                                >
+                                            </span>
+                                        </li>
+                                        <li class="breadcrumbs-list__item">
+                                            <a class="breadcrumbs-list__link" href="#">
+                                                Новости
+                                            </a>
+                                            <span>
+                                                >
+                                            </span>
+                                        </li>
+                                        <li class="breadcrumbs-list__item">
+                                            Как выбрать идеальный кейтеринг для вашего события
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="heading__titling heading-titling" data-aos="zoom-out">
+                                <h1 class="heading-titling__title">
+                                    Как выбрать идеальный кейтеринг <br>
+                                    для вашего события
+                                </h1>
+                            </div>
+                            <div class="heading__info heading-info" data-aos="fade-up">
+                                <div class="heading-info__box">
+                                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.50447 5.5C5.50447 6.00115 5.70746 6.48177 6.06879 6.83613C6.43012 7.19049 6.92019 7.38957 7.43118 7.38957C7.94218 7.38957 8.43225 7.19049 8.79358 6.83613C9.15491 6.48177 9.3579 6.00115 9.3579 5.5C9.3579 4.99885 9.15491 4.51824 8.79358 4.16387C8.43225 3.80951 7.94218 3.61043 7.43118 3.61043C6.92019 3.61043 6.43012 3.80951 6.06879 4.16387C5.70746 4.51824 5.50447 4.99885 5.50447 5.5V5.5ZM14.9007 5.06472C13.2698 1.69555 10.8047 0 7.5 0C4.19361 0 1.73017 1.69555 0.0993382 5.06641C0.0339251 5.20225 0 5.35062 0 5.50084C0 5.65107 0.0339251 5.79943 0.0993382 5.93528C1.73017 9.30445 4.19533 11 7.5 11C10.8064 11 13.2698 9.30445 14.9007 5.93359C15.0331 5.66028 15.0331 5.3431 14.9007 5.06472V5.06472ZM7.43118 8.46933C5.75907 8.46933 4.40349 7.13988 4.40349 5.5C4.40349 3.86012 5.75907 2.53067 7.43118 2.53067C9.1033 2.53067 10.4589 3.86012 10.4589 5.5C10.4589 7.13988 9.1033 8.46933 7.43118 8.46933Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span>
+                                        302
+                                    </span>
+                                </div>
+                                <div class="heading-info__box">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.5 3.28125C6.0496 3.28125 4.6586 3.85742 3.63301 4.88301C2.60742 5.9086 2.03125 7.2996 2.03125 8.75C2.03125 10.2004 2.60742 11.5914 3.63301 12.617C4.6586 13.6426 6.0496 14.2187 7.5 14.2188C8.9504 14.2187 10.3414 13.6426 11.367 12.617C12.3926 11.5914 12.9688 10.2004 12.9688 8.75C12.9688 7.2996 12.3926 5.9086 11.367 4.88301C10.3414 3.85742 8.9504 3.28125 7.5 3.28125ZM7.96875 6.25C7.96875 6.12568 7.91936 6.00645 7.83146 5.91854C7.74355 5.83064 7.62432 5.78125 7.5 5.78125C7.37568 5.78125 7.25645 5.83064 7.16854 5.91854C7.08064 6.00645 7.03125 6.12568 7.03125 6.25V8.75C7.03125 8.87432 7.08064 8.99355 7.16854 9.08146C7.25645 9.16936 7.37568 9.21875 7.5 9.21875C7.62432 9.21875 7.74355 9.16936 7.83146 9.08146C7.91936 8.99355 7.96875 8.87432 7.96875 8.75V6.25ZM5.15625 1.25C5.15625 1.12568 5.20564 1.00645 5.29354 0.918544C5.38145 0.830636 5.50068 0.78125 5.625 0.78125H9.375C9.49932 0.78125 9.61855 0.830636 9.70646 0.918544C9.79436 1.00645 9.84375 1.12568 9.84375 1.25C9.84375 1.37432 9.79436 1.49355 9.70646 1.58146C9.61855 1.66936 9.49932 1.71875 9.375 1.71875H5.625C5.50068 1.71875 5.38145 1.66936 5.29354 1.58146C5.20564 1.49355 5.15625 1.37432 5.15625 1.25Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span>
+                                        7 мин.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__article article">
+                    <div class="container">
+                        <div class="article__inner">
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Определите формат вашего мероприятия
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Первым делом нужно решить, какого рода мероприятие вы планируете: это может быть
+                                    корпоратив, свадьба, день рождения, деловой ужин или вечеринка на свежем воздухе.
+                                    Формат события определяет многое: от стиля подачи блюд до обслуживания. Например,
+                                    для деловых мероприятий больше подойдет шведский стол или фуршет, тогда как для
+                                    свадьбы лучше организовать полноценный банкет с официантами.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Определите бюджет
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Кейтеринговые услуги могут значительно варьироваться по стоимости. Определите свой
+                                    бюджет заранее, чтобы избежать неожиданных затрат. Не стесняйтесь обсуждать этот
+                                    вопрос с представителями кейтеринговой компании: хорошие компании предложат вам
+                                    оптимальные варианты в рамках вашего бюджета.
+                                </p>
+                            </div>
+                            <picture data-aos="zoom-in">
+                                <img src="images/article-img-1.jpg" alt="img">
+                            </picture>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Изучите меню и кулинарные предпочтения гостей
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Важно, чтобы предлагаемые блюда соответствовали вкусам и предпочтениям ваших гостей.
+                                    Уточните у кейтеринговой компании, возможно ли скорректировать меню с учетом
+                                    вегетарианских, веганских, безглютеновых или других особых запросов.
+                                    Профессиональные компании всегда готовы предложить несколько вариантов на выбор.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Уровень сервиса и профессионализма
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Важно, чтобы предлагаемые блюда соответствовали вкусам и предпочтениям ваших гостей.
+                                    Уточните у кейтеринговой компании, возможно ли скорректировать меню с учетом
+                                    вегетарианских, веганских, безглютеновых или других особых запросов.
+                                    Профессиональные компании всегда готовы предложить несколько вариантов на выбор.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Логистика и оборудование
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Уточните у компании, какие вопросы они берут на себя: транспортировка, установка
+                                    оборудования, уборка после мероприятия. Это особенно важно, если вы планируете
+                                    проводить событие в нестандартных условиях, например, на природе.
+                                </p>
+                            </div>
+                            <picture data-aos="zoom-in">
+                                <img src="images/article-img-2.jpg" alt="img">
+                            </picture>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Гибкость и готовность к изменениям
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Идеальный кейтеринг — это тот, кто готов адаптироваться к непредвиденным
+                                    обстоятельствам. Проверьте, насколько гибка компания в плане изменения заказа,
+                                    количества гостей или погодных условий.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 data-aos="fade-right">
+                                    Заключение
+                                </h2>
+                                <p data-aos="fade-right">
+                                    Выбор идеального кейтеринга — это процесс, требующий внимания к множеству деталей, и
+                                    он играет ключевую роль в успехе вашего мероприятия. Важно понимать, что кейтеринг —
+                                    это не просто доставка еды и напитков. Это целый комплекс услуг, который включает в
+                                    себя создание гастрономического опыта, оформление, сервировку, профессиональное
+                                    обслуживание и даже атмосферу. Именно эти элементы в совокупности формируют
+                                    впечатления ваших гостей и определяют, насколько гармоничным и успешным будет
+                                    мероприятие.
+                                </p>
+                                <p data-aos="fade-right">
+                                    Когда вы выбираете кейтеринговую компанию, вы фактически доверяете ей важнейшую
+                                    часть своего события. Вкусные блюда могут вызвать улыбки, впечатляющие подачи —
+                                    восхищение, а заботливое обслуживание — ощущение уюта и комфорта. Всё это создаёт
+                                    атмосферу, которую гости будут помнить ещё долго после окончания мероприятия.
+                                    Поэтому подход к выбору кейтеринга должен быть таким же тщательным и продуманным,
+                                    как и к любому другому аспекту подготовки.
+                                </p>
+                                <p data-aos="fade-right">
+                                    Определение формата мероприятия — это первый шаг. От него зависят многие ключевые
+                                    моменты: будет ли это роскошный банкет или неформальный пикник на природе, строгий
+                                    деловой ужин или весёлая вечеринка. Каждое событие имеет свои особенности, и хорошая
+                                    кейтеринговая компания должна быть готова учесть их все. Например, на свадьбе важна
+                                    романтика, на деловом ужине — сдержанность и лаконичность, а на корпоративной
+                                    вечеринке — лёгкость и веселье. Кейтеринг должен гармонично вписываться в общую
+                                    концепцию мероприятия.
+                                </p>
+                                <p data-aos="fade-right">
+                                    Однако важно не только выбрать подходящий формат, но и грамотно распределить бюджет.
+                                    Кейтеринг — это та сфера, где важно найти баланс между ценой и качеством. Дорогие
+                                    услуги не всегда гарантируют исключительное качество, но чрезмерная экономия может
+                                    обернуться неприятными сюрпризами. Опытные компании предложат несколько вариантов на
+                                    выбор, учитывая ваш бюджет и потребности. Здесь важен диалог: не стесняйтесь
+                                    обсуждать ваши финансовые возможности и ожидания, ведь это поможет избежать
+                                    разочарований.
+                                </p>
+                                <p data-aos="fade-right">
+                                    Не менее важным аспектом является знание предпочтений ваших гостей. Любое
+                                    мероприятие — это, в первую очередь, забота о людях, и здесь нельзя допускать
+                                    ошибок. Возможно, среди гостей будут вегетарианцы, люди с аллергиями или особыми
+                                    диетами, и это нужно учитывать при составлении меню. Хороший кейтеринг предложит
+                                    гибкость и вариативность блюд, чтобы каждый гость почувствовал себя комфортно и
+                                    удовлетворённо.
+                                </p>
+                                <p data-aos="fade-right">
+                                    Таким образом, выбор кейтеринга — это важное решение, которое требует времени,
+                                    внимания и тщательного анализа. Но если подойти к этому вопросу с умом, ваш праздник
+                                    станет событием, которое надолго запомнится вам и вашим гостям.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mani__offers offers">
+                    <div class="container">
+                        <h2 class="offers__title title" data-aos="fade-right">
+                            Вам также будет интересно:
+                        </h2>
+                        <div class="offers__swiper offers-swiper swiper" data-aos="zoom-in">
+                            <div class="swiper-wrapper">
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-1.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Как выбрать идеальный кейтеринг для вашего события
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Когда дело касается организации мероприятия, кейтеринг — это один из
+                                            ключевых
+                                            элементов успеха.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-14.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                5 советов по созданию идеального меню для банкета
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Правильно составленное меню может превратить любое мероприятие в настоящий
+                                            гастрономический праздник.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-10.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Почему кейтеринг — это не просто еда, а целое искусство
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Кейтеринг включает в себя больше, чем просто приготовление блюд — это
+                                            создание
+                                            атмосферы и впечатлений.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-16.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Как кейтеринг экономит ваше время и нервы на мероприятиях
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Организация любого события — это множество деталей, и кейтеринг берет на
+                                            себя важную
+                                            часть забот.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-1.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Как выбрать идеальный кейтеринг для вашего события
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Когда дело касается организации мероприятия, кейтеринг — это один из
+                                            ключевых
+                                            элементов успеха.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-14.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                5 советов по созданию идеального меню для банкета
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Правильно составленное меню может превратить любое мероприятие в настоящий
+                                            гастрономический праздник.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-10.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Почему кейтеринг — это не просто еда, а целое искусство
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Кейтеринг включает в себя больше, чем просто приготовление блюд — это
+                                            создание
+                                            атмосферы и впечатлений.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offers-swiper__slide offers-slide swiper-slide">
+                                    <div class="offers-slide__news news">
+                                        <a class="news__view news-view" href="#">
+                                            <picture class="news-view__img">
+                                                <img class="news-view__img-image" src="images/articles-img-16.jpg"
+                                                    alt="img">
+                                            </picture>
+                                        </a>
+                                        <a class="news__title" href="#">
+                                            <h5 class="news__title-text">
+                                                Как кейтеринг экономит ваше время и нервы на мероприятиях
+                                            </h5>
+                                        </a>
+                                        <p class="news__text">
+                                            Организация любого события — это множество деталей, и кейтеринг берет на
+                                            себя важную
+                                            часть забот.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" data-aos="fade">
+                <div class="container">
+                    <div class="footer__inner">
+                        <a class="footer__logo logo" href="#">
+                            <picture class="logo__img">
+                                <img class="logo__img-image" src="images/logo.svg" alt="logo">
+                            </picture>
+                        </a>
+                        <div class="footer__wrapper">
+                            <div class="footer__box footer-box">
+                                <h5 class="footer-box__title">
+                                    КАРТА САЙТА
+                                </h5>
+                                <nav class="footer-box__nav nav">
+                                    <ul class="nav__list nav-list">
+                                        <li class="nav-list__item">
+                                            <a class="nav-list__link" href="#">
+                                                Главная
+                                            </a>
+                                        </li>
+                                        <li class="nav-list__item">
+                                            <a class="nav-list__link" href="#">
+                                                О компании
+                                            </a>
+                                        </li>
+                                        <li class="nav-list__item">
+                                            <a class="nav-list__link" href="#">
+                                                Услуги
+                                            </a>
+                                        </li>
+                                        <li class="nav-list__item">
+                                            <a class="nav-list__link" href="#">
+                                                Новости
+                                            </a>
+                                        </li>
+                                        <li class="nav-list__item">
+                                            <a class="nav-list__link" href="#">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="footer__box footer-box">
+                                <h5 class="footer-box__title">
+                                    АДРЕС
+                                </h5>
+                                <a class="footer-box__location" href="#">
+                                    Республика Казахстан, г. Атырау <br>
+                                    Резиденция Шагала, ​Проспект Азаттык 2, <br>
+                                    блок Анекс 3, 2 этаж
+                                </a>
+                            </div>
+                            <div class="footer__box footer-box">
+                                <h5 class="footer-box__title">
+                                    КОНТАКТЫ
+                                </h5>
+                                <ul class="footer-box__list footer-list ">
+                                    <li class="footer-list__item">
+                                        <a class="footer-list__link" href="tel:+77272413333">
+                                            Тел: + 7 (727) 241-33-33
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a class="footer-list__link" href="tel:+77122766652">
+                                            Факс: + 7 (7122) 76-66-52
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a class="footer-list__link" href="mailto:info@cocrealty.kz">
+                                            info@cocrealty.kz
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__socials socials">
+                            <ul class="socials__list">
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2186_2314)">
+                                                <path
+                                                    d="M17.5482 26V16.8777H20.6089L21.0681 13.3216H17.5482V11.0515C17.5482 10.0222 17.8329 9.32076 19.3105 9.32076L21.192 9.31999V6.13923C20.8667 6.09695 19.7497 6 18.4497 6C15.7351 6 13.8767 7.65697 13.8767 10.6993V13.3216H10.8066V16.8777H13.8767V26H17.5482Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2186_2314">
+                                                    <rect width="20" height="20" fill="white"
+                                                        transform="translate(6 6)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.8 6H20.2C23.4 6 26 8.6 26 11.8V20.2C26 21.7383 25.3889 23.2135 24.3012 24.3012C23.2135 25.3889 21.7383 26 20.2 26H11.8C8.6 26 6 23.4 6 20.2V11.8C6 10.2617 6.61107 8.78649 7.69878 7.69878C8.78649 6.61107 10.2617 6 11.8 6ZM11.6 8C10.6452 8 9.72955 8.37928 9.05442 9.05442C8.37928 9.72955 8 10.6452 8 11.6V20.4C8 22.39 9.61 24 11.6 24H20.4C21.3548 24 22.2705 23.6207 22.9456 22.9456C23.6207 22.2705 24 21.3548 24 20.4V11.6C24 9.61 22.39 8 20.4 8H11.6ZM21.25 9.5C21.5815 9.5 21.8995 9.6317 22.1339 9.86612C22.3683 10.1005 22.5 10.4185 22.5 10.75C22.5 11.0815 22.3683 11.3995 22.1339 11.6339C21.8995 11.8683 21.5815 12 21.25 12C20.9185 12 20.6005 11.8683 20.3661 11.6339C20.1317 11.3995 20 11.0815 20 10.75C20 10.4185 20.1317 10.1005 20.3661 9.86612C20.6005 9.6317 20.9185 9.5 21.25 9.5ZM16 11C17.3261 11 18.5979 11.5268 19.5355 12.4645C20.4732 13.4021 21 14.6739 21 16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21C14.6739 21 13.4021 20.4732 12.4645 19.5355C11.5268 18.5979 11 17.3261 11 16C11 14.6739 11.5268 13.4021 12.4645 12.4645C13.4021 11.5268 14.6739 11 16 11ZM16 13C15.2044 13 14.4413 13.3161 13.8787 13.8787C13.3161 14.4413 13 15.2044 13 16C13 16.7956 13.3161 17.5587 13.8787 18.1213C14.4413 18.6839 15.2044 19 16 19C16.7956 19 17.5587 18.6839 18.1213 18.1213C18.6839 17.5587 19 16.7956 19 16C19 15.2044 18.6839 14.4413 18.1213 13.8787C17.5587 13.3161 16.7956 13 16 13Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__list-item">
+                                    <a class="socials__list-link" href="#">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 6C10.48 6 6 10.48 6 16C6 21.52 10.48 26 16 26C21.52 26 26 21.52 26 16C26 10.48 21.52 6 16 6ZM20.64 12.8C20.49 14.38 19.84 18.22 19.51 19.99C19.37 20.74 19.09 20.99 18.83 21.02C18.25 21.07 17.81 20.64 17.25 20.27C16.37 19.69 15.87 19.33 15.02 18.77C14.03 18.12 14.67 17.76 15.24 17.18C15.39 17.03 17.95 14.7 18 14.49C18.0069 14.4582 18.006 14.4252 17.9973 14.3938C17.9886 14.3624 17.9724 14.3337 17.95 14.31C17.89 14.26 17.81 14.28 17.74 14.29C17.65 14.31 16.25 15.24 13.52 17.08C13.12 17.35 12.76 17.49 12.44 17.48C12.08 17.47 11.4 17.28 10.89 17.11C10.26 16.91 9.77 16.8 9.81 16.45C9.83 16.27 10.08 16.09 10.55 15.9C13.47 14.63 15.41 13.79 16.38 13.39C19.16 12.23 19.73 12.03 20.11 12.03C20.19 12.03 20.38 12.05 20.5 12.15C20.6 12.23 20.63 12.34 20.64 12.42C20.63 12.48 20.65 12.66 20.64 12.8Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="footer__links links">
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Корпоративный кейтеринг
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Банкетный сервис
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Кейтеринг для фуршетов
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Выездное обслуживание
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Кофе-брейки и ланчи
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Праздничное меню на заказ
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Доставка готовых блюд
+                            </a>
+                        </li>
+                        <li class="links__item">
+                            <a class="links__link" href="#">
+                                Персональный шеф-повар
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__copy">
+                        ©2024. Все права защищены
+                    </p>
+                </div>
+            </footer> 
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
