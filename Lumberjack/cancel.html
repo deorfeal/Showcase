@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__location location">
+                        <div class="location__select location-select">
+                            <div class="location-select__current">
+                                на
+                                <span>
+                                    Оболоні
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11"
+                                fill="none">
+                                <path
+                                    d="M9.10607 4.10607L9.21213 4L9.10607 3.89393L8.57574 3.3636L8.46967 3.25754L8.3636 3.3636L4.75736 6.96985L1.15111 3.3636L1.04505 3.25754L0.938983 3.3636L0.408653 3.89393L0.302587 4L0.408653 4.10607L4.0149 7.71231L4.12096 7.81838L4.65129 8.34871L4.75736 8.45477L4.86343 8.34871L5.39376 7.81838L5.49982 7.71231L9.10607 4.10607Z"
+                                    fill="#C6262D" stroke="#C6262D" stroke-width="0.3" />
+                            </svg>
+                            <ul class="location-select__list">
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 2
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 3
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="location__streat">
+                            вул. Оболоньська набережна, 19 (корпус 3)
+                        </div>
+                    </div>
+                </div>
+                <a class="header__link" href="#">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.0215 7H3.9785C3.3214 7.00079 2.69145 7.26218 2.22681 7.72681C1.76218 8.19145 1.50079 8.8214 1.5 9.4785V12H10.5V9.4785C10.4992 8.8214 10.2378 8.19145 9.77319 7.72681C9.30855 7.26218 8.6786 7.00079 8.0215 7Z"
+                            fill="#C6262D" />
+                        <path
+                            d="M6 6C7.65685 6 9 4.65685 9 3C9 1.34315 7.65685 0 6 0C4.34315 0 3 1.34315 3 3C3 4.65685 4.34315 6 6 6Z"
+                            fill="#C6262D" />
+                    </svg>
+                    <span>
+                        Увійти
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__appointment appointment">
+                <div class="container">
+                    <div class="appointment__confirmation confirmation confirmation--canceled">
+                        <div class="confirmation__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="none">
+                                <path
+                                    d="M12 0.707L11.293 0L6 5.293L0.707 0L0 0.707L5.293 6L0 11.293L0.707 12L6 6.707L11.293 12L12 11.293L6.707 6L12 0.707Z"
+                                    fill="#241C12" fill-opacity="0.2" />
+                            </svg>
+                        </div>
+                        <div class="confirmation__inner">
+                            <div class="confirmation__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="38" viewBox="0 0 23 38"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_26_12529)">
+                                        <path
+                                            d="M22.9997 2.21009C22.7566 4.18999 22.5135 6.16989 22.2648 8.19536C22.0758 8.17215 21.9222 8.15329 21.7686 8.13443C19.4561 7.8505 17.1414 7.57143 14.8303 7.27737C14.4389 7.2276 14.1119 7.29539 13.7723 7.50727C11.6482 8.82959 9.51261 10.1334 7.3798 11.4426C7.29469 11.4939 7.20831 11.5415 7.09412 11.6063C6.28998 10.5087 5.70438 9.31968 5.31072 8.0326C4.65853 5.90679 4.62384 3.73344 4.82598 1.54291C4.87379 1.02793 4.94185 0.51543 5 0C11.0005 0.736764 17.0009 1.47353 22.9997 2.21009Z"
+                                            fill="#241C12" fill-opacity="0.3" />
+                                        <path
+                                            d="M14.2168 9.14668C16.5377 9.43164 18.8214 9.71205 21.127 9.99515C21.1344 10.0612 21.155 10.1305 21.1471 10.1946C20.9595 11.7085 20.7738 13.2208 20.571 14.7328C20.5459 14.9233 20.4531 15.121 20.341 15.2802C19.7088 16.1878 19.075 17.0934 18.4127 17.9801C17.9883 18.5483 17.7266 19.1586 17.6414 19.8661C17.2503 23.0939 16.8407 26.3178 16.4394 29.5445C15.933 33.6269 13.3152 36.1513 9.21152 36.5435C8.02402 36.6564 6.85934 36.4997 5.68984 36.3544C5.07903 36.2777 4.4678 36.2044 3.82808 36.1258C4.02124 34.5527 4.20921 33.0218 4.4034 31.4402C4.9756 31.5105 5.52923 31.5784 6.08117 31.6462C6.70907 31.7233 7.33676 31.8021 7.96656 31.8777C9.77026 32.0906 11.1507 31.1739 11.6521 29.421C11.7356 29.1314 11.7961 28.8339 11.8328 28.5351C12.1429 26.0511 12.4463 23.5664 12.7514 21.0818C13.2052 17.3853 13.6591 13.6888 14.1128 9.994C14.1459 9.72394 14.1789 9.45556 14.2168 9.14668Z"
+                                            fill="#241C12" fill-opacity="0.3" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_26_12529">
+                                            <rect width="22.387" height="37.9417" fill="white"
+                                                transform="translate(0.613281)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="confirmation__title">
+                                Запис скасовано
+                            </h3>
+                        </div>
+                        <a class="confirmation__link btn" href="#">
+                            Записатися знову
+                        </a>
+                    </div>
+                    <div class="appointment__info info">
+                        <div class="info__map info-map" id="info-map"></div>
+                        <div class="info__inner">
+                            <h4 class="info__title">
+                                Lumberjack на Осокорки
+                            </h4>
+                            <div class="info__text">
+                                вул. Дніпропетровська набережна, б. 259Б
+                            </div>
+                            <div class="info__contacts info-contacts">
+                                <a class="info-contacts__link" href="tel:+38 097 42 42 420">
+                                    <span>
+                                        +38 097 42 42 420
+                                    </span>
+                                </a>
+                                <a class="info-contacts__link" href="mailto:lumberjack.barberhouse">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_26_11998)">
+                                            <path
+                                                d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                fill="#C6262D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_26_11998">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        lumberjack.barberhouse
+                                    </span>
+                                </a>
+                                <a class="info-contacts__link" href="mailto:@lumberjack.barbershop">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_26_11998)">
+                                            <path
+                                                d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                fill="#C6262D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_26_11998">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>
+                                        @lumberjack.barbershop
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copy">
+                    <span>
+                        by
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                            d="M6.24825 0.531032C6.21563 1.15354 6.183 1.77605 6.14963 2.41289C6.09019 2.40978 6.04189 2.40725 5.9936 2.40472C5.26654 2.36661 4.53887 2.33007 3.81198 2.28879C3.68888 2.2818 3.58842 2.31006 3.48719 2.38352C2.85384 2.84204 2.21652 3.29503 1.58018 3.74967C1.55477 3.76749 1.52887 3.78423 1.49469 3.80692C1.22008 3.48228 1.01161 3.12439 0.860833 2.73174C0.611178 2.08326 0.552987 1.40649 0.568252 0.719215C0.571931 0.557632 0.581976 0.396383 0.588867 0.234436C2.4755 0.333311 4.36214 0.432185 6.24825 0.531032Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                        <path
+                            d="M3.66152 2.8849C4.39123 2.92314 5.10927 2.96077 5.8342 2.99876C5.83792 3.01918 5.84586 3.04035 5.8448 3.06051C5.81932 3.53653 5.7944 4.01203 5.76415 4.48779C5.76048 4.54773 5.73585 4.61137 5.70439 4.66346C5.52706 4.96016 5.34923 5.2563 5.1621 5.54716C5.04218 5.73352 4.97391 5.9295 4.96278 6.15189C4.9112 7.16667 4.8538 8.18062 4.79903 9.19523C4.73016 10.4789 3.96911 11.3229 2.6984 11.5347C2.33067 11.5957 1.96418 11.5723 1.59643 11.5525C1.40434 11.5419 1.2122 11.5323 1.01107 11.5218C1.03699 11.0272 1.06221 10.5458 1.08827 10.0486C1.26818 10.058 1.44225 10.0671 1.61579 10.0762C1.81321 10.0866 2.01061 10.0974 2.20858 10.1073C2.77551 10.1343 3.18586 9.81846 3.30394 9.26109C3.32367 9.169 3.33605 9.07492 3.34097 8.98099C3.3835 8.19988 3.42391 7.41866 3.46485 6.63747C3.52576 5.47524 3.58667 4.31301 3.64756 3.15131C3.65201 3.0664 3.65643 2.98201 3.66152 2.8849Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                    </svg>
+                    <span>
+                        Lumberjack.booking
+                    </span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

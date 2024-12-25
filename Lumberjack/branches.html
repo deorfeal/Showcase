@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__location location">
+                        <div class="location__select location-select">
+                            <div class="location-select__current">
+                                на
+                                <span>
+                                    Оболоні
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11"
+                                fill="none">
+                                <path
+                                    d="M9.10607 4.10607L9.21213 4L9.10607 3.89393L8.57574 3.3636L8.46967 3.25754L8.3636 3.3636L4.75736 6.96985L1.15111 3.3636L1.04505 3.25754L0.938983 3.3636L0.408653 3.89393L0.302587 4L0.408653 4.10607L4.0149 7.71231L4.12096 7.81838L4.65129 8.34871L4.75736 8.45477L4.86343 8.34871L5.39376 7.81838L5.49982 7.71231L9.10607 4.10607Z"
+                                    fill="#C6262D" stroke="#C6262D" stroke-width="0.3" />
+                            </svg>
+                            <ul class="location-select__list">
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 2
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 3
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="location__streat">
+                            вул. Оболоньська набережна, 19 (корпус 3)
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrap">
+                    <a class="header__link" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.0215 7H3.9785C3.3214 7.00079 2.69145 7.26218 2.22681 7.72681C1.76218 8.19145 1.50079 8.8214 1.5 9.4785V12H10.5V9.4785C10.4992 8.8214 10.2378 8.19145 9.77319 7.72681C9.30855 7.26218 8.6786 7.00079 8.0215 7Z"
+                                fill="#C6262D" />
+                            <path
+                                d="M6 6C7.65685 6 9 4.65685 9 3C9 1.34315 7.65685 0 6 0C4.34315 0 3 1.34315 3 3C3 4.65685 4.34315 6 6 6Z"
+                                fill="#C6262D" />
+                        </svg>
+                        <span>
+                            Увійти
+                        </span>
+                    </a>
+                    <div class="header__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="none">
+                            <path d="M16 0.942667L15.0573 0L8 7.05733L0.942667 0L0 0.942667L7.05733 8L0 15.0573L0.942667 16L8 8.94267L15.0573 16L16 15.0573L8.94267 8L16 0.942667Z" fill="#C6262D"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M21.7998 15.2L16.7086 20.2912L17.345 20.9276L22.4362 15.8364L21.7998 15.2Z"
+                                fill="#241C12" fill-opacity="0.2" />
+                            <path d="M22.4362 24.746L17.345 19.6548L16.7086 20.2912L21.7998 25.3823L22.4362 24.746Z"
+                                fill="#241C12" fill-opacity="0.2" />
+                            <path
+                                d="M21.7291 15.1293L21.7998 15.0586L21.8705 15.1293L22.5069 15.7657L22.5776 15.8364L22.5069 15.9071L18.1228 20.2912L22.5069 24.6752L22.5776 24.746L22.5069 24.8167L21.8705 25.4531L21.7998 25.5238L21.7291 25.4531L17.345 21.069L17.2743 20.9983L16.6379 20.3619L16.5672 20.2912L16.6379 20.2205L17.2743 19.5841L17.345 19.5134L21.7291 15.1293Z"
+                                stroke="#241C12" stroke-opacity="0.2" stroke-width="0.2" />
+                        </svg>
+                        <a class="breadcrumbs__link" href="#">
+                            Оберіть філію
+                            <span>
+                                / 9
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="main__branches branches">
+                <div class="container">
+                    <div class="branches__tubs tubs">
+                        <div class="tubs__button tubs-button tubs-button--active" id="0">
+                            списком
+                        </div>
+                        <div class="tubs__button tubs-button" id="1">
+                            на мапі
+                        </div>
+                    </div>
+                    <div class="branches__inner">
+                        <div class="branches__maps maps maps--active">
+                            <p class="maps__text">
+                                Вказано найближчий доступний сеанс для запису
+                            </p>
+                            <div class="maps__inner">
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Осокорки
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item maps-item--choice">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                        <div class="maps-item-map__text">
+                                            ваш останній вибір
+                                        </div>
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Оболонь
+                                        </h3>
+                                        <div class="maps-item__row-text">
+                                            ваш останній вибір
+                                        </div>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Оболоньська набережна, 19 (корпус 3)
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Теремки
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        метро Ломоносова, б. 48
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Виноградар
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Вишнгородська, 32/2
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Печерськ
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Троещина
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Позняки
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Подол
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="maps__item maps-item">
+                                    <div class="maps-item__map maps-item-map">
+                                        <img class="maps-item-map__img" src="images/map-img-1.jpg" alt="map">
+                                    </div>
+                                    <div class="maps-item__row">
+                                        <h3 class="maps-item__row-title">
+                                            Русановка
+                                        </h3>
+                                    </div>
+                                    <p class="maps-item__text">
+                                        вул. Дніпропетровська набережна, б. 259Б
+                                    </p>
+                                    <div class="maps-item__date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <g clip-path="url(#clip0_3_589)">
+                                                <path
+                                                    d="M12 2.5V4H0V2.5C0 1.673 0.673 1 1.5 1H3V0H4V1H8V0H9V1H10.5C11.327 1 12 1.673 12 2.5ZM12 8.5C12 10.43 10.4295 12 8.5 12C6.5705 12 5 10.43 5 8.5C5 6.57 6.5705 5 8.5 5C10.4295 5 12 6.57 12 8.5ZM9.8535 9.1465L9 8.293V7H8V8.707L9.1465 9.8535L9.8535 9.1465ZM4 8.5C4 7.0855 4.654 5.825 5.6745 5H0V12H5.6745C4.654 11.175 4 9.9145 4 8.5Z"
+                                                    fill="#C6262D" fill-opacity="0.4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3_589">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            27 грудня в 16:20
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="branches__map map">
+                            <div class="map__view map-view" id="map"></div>
+                            <div class="map__info map-info">
+                                <div class="map-info__wrapper">
+                                    <div class="map-info__place place place--active" id="0">
+                                        <h3 class="place__title">
+                                            Lumberjack на Оболоні
+                                        </h3>
+                                        <p class="place__location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.4375 0C5.92959 0.00170632 4.48391 0.619691 3.41766 1.71837C2.3514 2.81704 1.75166 4.30668 1.75 5.86044C1.75 8.95592 6.5275 13.2053 7.07009 13.68L7.4375 14L7.80491 13.68C8.3475 13.2053 13.125 8.95592 13.125 5.86044C13.1233 4.30668 12.5236 2.81704 11.4573 1.71837C10.3911 0.619691 8.94541 0.00170632 7.4375 0ZM7.4375 8.79066C6.87506 8.79066 6.32525 8.6188 5.8576 8.29683C5.38995 7.97485 5.02545 7.51721 4.81022 6.98178C4.59498 6.44636 4.53867 5.85719 4.64839 5.28878C4.75812 4.72037 5.02896 4.19826 5.42667 3.78846C5.82437 3.37866 6.33108 3.09959 6.88271 2.98652C7.43435 2.87346 8.00613 2.93149 8.52576 3.15327C9.04538 3.37505 9.48952 3.75062 9.80199 4.2325C10.1145 4.71437 10.2812 5.2809 10.2812 5.86044C10.2803 6.63729 9.98045 7.38207 9.44734 7.93139C8.91423 8.48071 8.19143 8.78973 7.4375 8.79066Z"
+                                                    fill="#C6262D" />
+                                            </svg>
+                                            <span>
+                                                вул. Оболоньська набережна, 19 (корпус 3)
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="map-info__place place" id="1">
+                                        <h3 class="place__title">
+                                            Lumberjack на Оболоні
+                                        </h3>
+                                        <p class="place__location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.4375 0C5.92959 0.00170632 4.48391 0.619691 3.41766 1.71837C2.3514 2.81704 1.75166 4.30668 1.75 5.86044C1.75 8.95592 6.5275 13.2053 7.07009 13.68L7.4375 14L7.80491 13.68C8.3475 13.2053 13.125 8.95592 13.125 5.86044C13.1233 4.30668 12.5236 2.81704 11.4573 1.71837C10.3911 0.619691 8.94541 0.00170632 7.4375 0ZM7.4375 8.79066C6.87506 8.79066 6.32525 8.6188 5.8576 8.29683C5.38995 7.97485 5.02545 7.51721 4.81022 6.98178C4.59498 6.44636 4.53867 5.85719 4.64839 5.28878C4.75812 4.72037 5.02896 4.19826 5.42667 3.78846C5.82437 3.37866 6.33108 3.09959 6.88271 2.98652C7.43435 2.87346 8.00613 2.93149 8.52576 3.15327C9.04538 3.37505 9.48952 3.75062 9.80199 4.2325C10.1145 4.71437 10.2812 5.2809 10.2812 5.86044C10.2803 6.63729 9.98045 7.38207 9.44734 7.93139C8.91423 8.48071 8.19143 8.78973 7.4375 8.79066Z"
+                                                    fill="#C6262D" />
+                                            </svg>
+                                            <span>
+                                                вул. Оболоньська набережна, 14 (корпус 2)
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="map-info__place place" id="2">
+                                        <h3 class="place__title">
+                                            Lumberjack на Оболоні
+                                        </h3>
+                                        <p class="place__location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M7.4375 0C5.92959 0.00170632 4.48391 0.619691 3.41766 1.71837C2.3514 2.81704 1.75166 4.30668 1.75 5.86044C1.75 8.95592 6.5275 13.2053 7.07009 13.68L7.4375 14L7.80491 13.68C8.3475 13.2053 13.125 8.95592 13.125 5.86044C13.1233 4.30668 12.5236 2.81704 11.4573 1.71837C10.3911 0.619691 8.94541 0.00170632 7.4375 0ZM7.4375 8.79066C6.87506 8.79066 6.32525 8.6188 5.8576 8.29683C5.38995 7.97485 5.02545 7.51721 4.81022 6.98178C4.59498 6.44636 4.53867 5.85719 4.64839 5.28878C4.75812 4.72037 5.02896 4.19826 5.42667 3.78846C5.82437 3.37866 6.33108 3.09959 6.88271 2.98652C7.43435 2.87346 8.00613 2.93149 8.52576 3.15327C9.04538 3.37505 9.48952 3.75062 9.80199 4.2325C10.1145 4.71437 10.2812 5.2809 10.2812 5.86044C10.2803 6.63729 9.98045 7.38207 9.44734 7.93139C8.91423 8.48071 8.19143 8.78973 7.4375 8.79066Z"
+                                                    fill="#C6262D" />
+                                            </svg>
+                                            <span>
+                                                вул. Оболоньська набережна, 10 (корпус 1)
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="map-info__wrapper">
+                                    <div class="map-info__time map-info-time map-info-time--active" id="0">
+                                        <p class="map-info-time__text">
+                                            Найближчий доступний сеанс для запису
+                                        </p>
+                                        <p class="map-info-time__date">
+                                            28 грудня о 16:20
+                                        </p>
+                                    </div>
+                                    <div class="map-info__time map-info-time" id="1">
+                                        <p class="map-info-time__text">
+                                            Найближчий доступний сеанс для запису
+                                        </p>
+                                        <p class="map-info-time__date">
+                                            29 грудня о 16:20
+                                        </p>
+                                    </div>
+                                    <div class="map-info__time map-info-time" id="2">
+                                        <p class="map-info-time__text">
+                                            Найближчий доступний сеанс для запису
+                                        </p>
+                                        <p class="map-info-time__date">
+                                            30 грудня о 16:20
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="map__button btn">
+                                <span>
+                                    Продовжити запис
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M4.30626 1.09395L4.2002 0.98788L4.09413 1.09395L3.45773 1.73034L3.35167 1.83641L3.45773 1.94247L7.80644 6.29118L3.45773 10.6399L3.35167 10.746L3.45773 10.852L4.09413 11.4884L4.2002 11.5945L4.30626 11.4884L8.65497 7.13971L8.76103 7.03364L9.39743 6.39725L9.5035 6.29118L9.39743 6.18511L8.76103 5.54872L8.65497 5.44265L4.30626 1.09395Z"
+                                        fill="white" stroke="white" stroke-width="0.3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copy">
+                    <span>
+                        by
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                            d="M6.24825 0.531032C6.21563 1.15354 6.183 1.77605 6.14963 2.41289C6.09019 2.40978 6.04189 2.40725 5.9936 2.40472C5.26654 2.36661 4.53887 2.33007 3.81198 2.28879C3.68888 2.2818 3.58842 2.31006 3.48719 2.38352C2.85384 2.84204 2.21652 3.29503 1.58018 3.74967C1.55477 3.76749 1.52887 3.78423 1.49469 3.80692C1.22008 3.48228 1.01161 3.12439 0.860833 2.73174C0.611178 2.08326 0.552987 1.40649 0.568252 0.719215C0.571931 0.557632 0.581976 0.396383 0.588867 0.234436C2.4755 0.333311 4.36214 0.432185 6.24825 0.531032Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                        <path
+                            d="M3.66152 2.8849C4.39123 2.92314 5.10927 2.96077 5.8342 2.99876C5.83792 3.01918 5.84586 3.04035 5.8448 3.06051C5.81932 3.53653 5.7944 4.01203 5.76415 4.48779C5.76048 4.54773 5.73585 4.61137 5.70439 4.66346C5.52706 4.96016 5.34923 5.2563 5.1621 5.54716C5.04218 5.73352 4.97391 5.9295 4.96278 6.15189C4.9112 7.16667 4.8538 8.18062 4.79903 9.19523C4.73016 10.4789 3.96911 11.3229 2.6984 11.5347C2.33067 11.5957 1.96418 11.5723 1.59643 11.5525C1.40434 11.5419 1.2122 11.5323 1.01107 11.5218C1.03699 11.0272 1.06221 10.5458 1.08827 10.0486C1.26818 10.058 1.44225 10.0671 1.61579 10.0762C1.81321 10.0866 2.01061 10.0974 2.20858 10.1073C2.77551 10.1343 3.18586 9.81846 3.30394 9.26109C3.32367 9.169 3.33605 9.07492 3.34097 8.98099C3.3835 8.19988 3.42391 7.41866 3.46485 6.63747C3.52576 5.47524 3.58667 4.31301 3.64756 3.15131C3.65201 3.0664 3.65643 2.98201 3.66152 2.8849Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                    </svg>
+                    <span>
+                        Lumberjack.booking
+                    </span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

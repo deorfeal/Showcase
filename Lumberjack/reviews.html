@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__location location">
+                        <div class="location__select location-select">
+                            <div class="location-select__current">
+                                на
+                                <span>
+                                    Оболоні
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11"
+                                fill="none">
+                                <path
+                                    d="M9.10607 4.10607L9.21213 4L9.10607 3.89393L8.57574 3.3636L8.46967 3.25754L8.3636 3.3636L4.75736 6.96985L1.15111 3.3636L1.04505 3.25754L0.938983 3.3636L0.408653 3.89393L0.302587 4L0.408653 4.10607L4.0149 7.71231L4.12096 7.81838L4.65129 8.34871L4.75736 8.45477L4.86343 8.34871L5.39376 7.81838L5.49982 7.71231L9.10607 4.10607Z"
+                                    fill="#C6262D" stroke="#C6262D" stroke-width="0.3" />
+                            </svg>
+                            <ul class="location-select__list">
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 2
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 3
+                                    </a>
+                                </li>
+                                <li class="location-select__list-item">
+                                    <a class="location-select__list-link" href="#">
+                                        на Оболоні 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="location__streat">
+                            вул. Оболоньська набережна, 19 (корпус 3)
+                        </div>
+                    </div>
+                </div>
+                <a class="header__link" href="#">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.0215 7H3.9785C3.3214 7.00079 2.69145 7.26218 2.22681 7.72681C1.76218 8.19145 1.50079 8.8214 1.5 9.4785V12H10.5V9.4785C10.4992 8.8214 10.2378 8.19145 9.77319 7.72681C9.30855 7.26218 8.6786 7.00079 8.0215 7Z"
+                            fill="#C6262D" />
+                        <path
+                            d="M6 6C7.65685 6 9 4.65685 9 3C9 1.34315 7.65685 0 6 0C4.34315 0 3 1.34315 3 3C3 4.65685 4.34315 6 6 6Z"
+                            fill="#C6262D" />
+                    </svg>
+                    <span>
+                        Увійти
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M21.7998 15.2L16.7086 20.2912L17.345 20.9276L22.4362 15.8364L21.7998 15.2Z"
+                                fill="#241C12" fill-opacity="0.2" />
+                            <path d="M22.4362 24.746L17.345 19.6548L16.7086 20.2912L21.7998 25.3823L22.4362 24.746Z"
+                                fill="#241C12" fill-opacity="0.2" />
+                            <path
+                                d="M21.7291 15.1293L21.7998 15.0586L21.8705 15.1293L22.5069 15.7657L22.5776 15.8364L22.5069 15.9071L18.1228 20.2912L22.5069 24.6752L22.5776 24.746L22.5069 24.8167L21.8705 25.4531L21.7998 25.5238L21.7291 25.4531L17.345 21.069L17.2743 20.9983L16.6379 20.3619L16.5672 20.2912L16.6379 20.2205L17.2743 19.5841L17.345 19.5134L21.7291 15.1293Z"
+                                stroke="#241C12" stroke-opacity="0.2" stroke-width="0.2" />
+                        </svg>
+                        <a class="breadcrumbs__link" href="#">
+                            Відгуки про фахівця
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="main__reviews reviews">
+                <div class="reviews__expert reviews-expert">
+                    <div class="container">
+                        <div class="reviews-expert__inner">
+                            <div class="reviews-expert__info reviews-info">
+                                <div class="reviews-info__img">
+                                    <img class="reviews-info__img-image" src="images/expert-img-1.png" alt="img">
+                                </div>
+                                <div class="reviews-info__inner">
+                                    <div class="reviews-info__name">
+                                        Констянтин Констянтинович
+                                    </div>
+                                    <div class="reviews-info__position">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"
+                                            fill="none">
+                                            <g clip-path="url(#clip0_32_14099)">
+                                                <path
+                                                    d="M8.027 1.91872C7.96261 2.65471 7.89822 3.3907 7.83235 4.14364C7.76207 4.13749 7.70498 4.13249 7.64788 4.1275C6.78828 4.05229 5.92789 3.97892 5.06862 3.89995C4.92311 3.88658 4.80295 3.9159 4.68 3.99872C3.91085 4.51562 3.13724 5.02581 2.36471 5.538C2.33387 5.55806 2.30251 5.57681 2.26109 5.60227C1.94925 5.20639 1.71713 4.77386 1.55478 4.30254C1.28589 3.52411 1.24496 2.72011 1.29147 1.90668C1.30251 1.71544 1.32108 1.52486 1.33594 1.33333C3.5665 1.52848 5.79707 1.72363 8.027 1.91872Z"
+                                                    fill="#C6262D" />
+                                                <path
+                                                    d="M4.86577 4.59979C5.72851 4.67527 6.57744 4.74954 7.43453 4.82453C7.43809 4.84887 7.44662 4.87427 7.44453 4.89811C7.39466 5.46088 7.34548 6.02306 7.28996 6.58533C7.28313 6.65618 7.25134 6.73053 7.21191 6.79094C6.9896 7.13503 6.76672 7.47844 6.53304 7.81522C6.38329 8.03099 6.29432 8.2603 6.27194 8.52325C6.16887 9.72309 6.05895 10.9217 5.95211 12.1212C5.81743 13.6388 4.88109 14.6071 3.36722 14.8053C2.92913 14.8624 2.49601 14.8195 2.06124 14.7808C1.83416 14.7603 1.60697 14.7411 1.36917 14.7203C1.42033 14.1355 1.47012 13.5664 1.52155 12.9785C1.73426 12.9971 1.94006 13.0151 2.14523 13.033C2.37864 13.0535 2.612 13.0745 2.84609 13.0944C3.51648 13.1498 4.01559 12.7927 4.1785 12.1374C4.20568 12.0291 4.22423 11.9182 4.23395 11.8071C4.31664 10.8837 4.39681 9.96005 4.47762 9.03645C4.59783 7.66235 4.71805 6.28824 4.83822 4.91477C4.847 4.81438 4.85573 4.71461 4.86577 4.59979Z"
+                                                    fill="#C6262D" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_32_14099">
+                                                    <rect width="8.05995" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            ТОП Барбер
+                                        </span>
+                                    </div>
+                                    <div class="reviews-info__rait">
+                                        <div class="reviews-info__rait-raiting raiting">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                viewBox="0 0 12 12" fill="none">
+                                                <g clip-path="url(#clip0_224_1132)">
+                                                    <path
+                                                        d="M6 0L7.79862 3.52441L11.7063 4.1459L8.91023 6.94559L9.52671 10.8541L6 9.06L2.47329 10.8541L3.08977 6.94559L0.293661 4.1459L4.20138 3.52441L6 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_224_1132">
+                                                        <rect width="12" height="12" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div class="raiting__text">
+                                                4.8
+                                            </div>
+                                        </div>
+                                        <div class="reviews-info__rait-count">
+                                            88 888
+                                            <span>
+                                                відгуків
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="reviews-expert__link btn" href="#">
+                                <span>
+                                    Лишити відгук
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="reviews__inner">
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Чудовий барбер. Мені дуже сподобалось, хочу ще!
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Я доволен, Любомир профессионал! Подстриг и побрил круто, идите к ниму смело,он делал девежения бритвой и машинкой явно больше тысячи раз. Мне идёт та стрижка волос и бороды которою он сделал, хотя я немог сказать что хочу, просто сказал ему что надо подровнять и хочу что бы было красиво.Я доволен! Касательно атмосферы было уютно, я был один из немногих посетителей, был четверг, рабочее время..ребята общались свободно и спокойно,было приятно находится в их обществе. Примерно час длилось весьма приятное мероприятие. Всем добра.
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Чудовий барбер. Мені дуже сподобалось, хочу ще!
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Я доволен, Любомир профессионал! Подстриг и побрил круто, идите к ниму смело,он делал девежения бритвой и машинкой явно больше тысячи раз. Мне идёт та стрижка волос и бороды которою он сделал, хотя я немог сказать что хочу, просто сказал ему что надо подровнять и хочу что бы было красиво.Я доволен! Касательно атмосферы было уютно, я был один из немногих посетителей, был четверг, рабочее время..ребята общались свободно и спокойно,было приятно находится в их обществе. Примерно час длилось весьма приятное мероприятие. Всем добра.
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Я доволен, Любомир профессионал! Подстриг и побрил круто, идите к ниму смело,он делал девежения бритвой и машинкой явно больше тысячи раз. Мне идёт та стрижка волос и бороды которою он сделал, хотя я немог сказать что хочу, просто сказал ему что надо подровнять и хочу что бы было красиво.Я доволен! Касательно атмосферы было уютно, я был один из немногих посетителей, был четверг, рабочее время..ребята общались свободно и спокойно,было приятно находится в их обществе. Примерно час длилось весьма приятное мероприятие. Всем добра.
+                            </p>
+                        </div>
+                              <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Я доволен, Любомир профессионал! Подстриг и побрил круто, идите к ниму смело,он делал девежения бритвой и машинкой явно больше тысячи раз. Мне идёт та стрижка волос и бороды которою он сделал, хотя я немог сказать что хочу, просто сказал ему что надо подровнять и хочу что бы было красиво.Я доволен! Касательно атмосферы было уютно, я был один из немногих посетителей, был четверг, рабочее время..ребята общались свободно и спокойно,было приятно находится в их обществе. Примерно час длилось весьма приятное мероприятие. Всем добра.
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Чудовий барбер. Мені дуже сподобалось, хочу ще!
+                            </p>
+                        </div>
+                        <div class="reviews__item reviews-item">
+                            <div class="reviews-item__name">
+                                Анатолій Анатольйович
+                            </div>
+                            <div class="reviews-item__info reviews-item-info">
+                                <div class="reviews-item-info__stars stars">
+                                    <ul class="stars__list">
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14365)">
+                                                    <path
+                                                        d="M8 0L10.3982 4.69921L15.6085 5.52786L11.8803 9.26079L12.7023 14.4721L8 12.08L3.29772 14.4721L4.11969 9.26079L0.391548 5.52786L5.60184 4.69921L8 0Z"
+                                                        fill="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14365">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                        <li class="stars__list-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_32_14371)">
+                                                    <path
+                                                        d="M8 1.09996L9.95281 4.92649L10.0684 5.15305L10.3196 5.193L14.5623 5.86777L11.5265 8.90746L11.3468 9.08744L11.3864 9.33869L12.0557 13.5822L8.22671 11.6344L8 11.519L7.77329 11.6344L3.94426 13.5822L4.61358 9.33869L4.65321 9.08744L4.47347 8.90746L1.43767 5.86777L5.68037 5.193L5.93157 5.15305L6.04719 4.92649L8 1.09996Z"
+                                                        stroke="#C6262D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_32_14371">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-item-info__date">
+                                    20 грудня 2023
+                                </div>
+                            </div>
+                            <p class="reviews-item__text">
+                                Чудовий барбер. Мені дуже сподобалось, хочу ще!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copy">
+                    <span>
+                        by
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                            d="M6.24825 0.531032C6.21563 1.15354 6.183 1.77605 6.14963 2.41289C6.09019 2.40978 6.04189 2.40725 5.9936 2.40472C5.26654 2.36661 4.53887 2.33007 3.81198 2.28879C3.68888 2.2818 3.58842 2.31006 3.48719 2.38352C2.85384 2.84204 2.21652 3.29503 1.58018 3.74967C1.55477 3.76749 1.52887 3.78423 1.49469 3.80692C1.22008 3.48228 1.01161 3.12439 0.860833 2.73174C0.611178 2.08326 0.552987 1.40649 0.568252 0.719215C0.571931 0.557632 0.581976 0.396383 0.588867 0.234436C2.4755 0.333311 4.36214 0.432185 6.24825 0.531032Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                        <path
+                            d="M3.66152 2.8849C4.39123 2.92314 5.10927 2.96077 5.8342 2.99876C5.83792 3.01918 5.84586 3.04035 5.8448 3.06051C5.81932 3.53653 5.7944 4.01203 5.76415 4.48779C5.76048 4.54773 5.73585 4.61137 5.70439 4.66346C5.52706 4.96016 5.34923 5.2563 5.1621 5.54716C5.04218 5.73352 4.97391 5.9295 4.96278 6.15189C4.9112 7.16667 4.8538 8.18062 4.79903 9.19523C4.73016 10.4789 3.96911 11.3229 2.6984 11.5347C2.33067 11.5957 1.96418 11.5723 1.59643 11.5525C1.40434 11.5419 1.2122 11.5323 1.01107 11.5218C1.03699 11.0272 1.06221 10.5458 1.08827 10.0486C1.26818 10.058 1.44225 10.0671 1.61579 10.0762C1.81321 10.0866 2.01061 10.0974 2.20858 10.1073C2.77551 10.1343 3.18586 9.81846 3.30394 9.26109C3.32367 9.169 3.33605 9.07492 3.34097 8.98099C3.3835 8.19988 3.42391 7.41866 3.46485 6.63747C3.52576 5.47524 3.58667 4.31301 3.64756 3.15131C3.65201 3.0664 3.65643 2.98201 3.66152 2.8849Z"
+                            fill="#241C12" fill-opacity="0.2" />
+                    </svg>
+                    <span>
+                        Lumberjack.booking
+                    </span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
